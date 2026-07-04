@@ -1,0 +1,44 @@
+name: Deploy to Netlify
+
+# Continuous deployment: every push to main validates the datasets, rebuilds
+# the site (pages + sitemap + OG images), and deploys to production on Netlify.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: netlify-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate data and build site
+        run: npm run build
+
+      - name: Deploy to Netlify (production)
+        run: >-
+          npx --yes netlify-cli@17 deploy
+          --prod
+          --dir=.
+          --site "$NETLIFY_SITE_ID"
+          --message "CD ${GITHUB_SHA::7}: ${GITHUB_EVENT_HEAD_COMMIT_MESSAGE:-push}"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          GITHUB_EVENT_HEAD_COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
