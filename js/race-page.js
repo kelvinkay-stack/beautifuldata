@@ -21,7 +21,8 @@ async function boot() {
   const ui = controls.mountControls(controller, {
     playBtn: document.getElementById('btn-play'),
     restartBtn: document.getElementById('btn-restart'),
-    speedBtn: document.getElementById('btn-speed'),
+    speedRange: document.getElementById('speed-range'),
+    speedVal: document.getElementById('speed-val'),
     scrub: document.getElementById('scrub'),
     callout: document.getElementById('callout'),
     stepNote: document.getElementById('step-note'),

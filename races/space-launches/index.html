@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Objects Launched Into Space by Country (1957–2025) — Overtake</title>
+  <meta name="description" content="The space age as a running tally of every satellite, probe and crewed craft each nation has put into orbit or beyond. Animated bar chart race, 1957–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/space-launches/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Objects Launched Into Space by Country (1957–2025) — Overtake">
+  <meta property="og:description" content="The space age as a running tally of every satellite, probe and crewed craft each nation has put into orbit or beyond. Animated bar chart race, 1957–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/space-launches/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/space-launches.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Objects Launched Into Space by Country (1957–2025) — Overtake">
+  <meta name="twitter:description" content="The space age as a running tally of every satellite, probe and crewed craft each nation has put into orbit or beyond. Animated bar chart race, 1957–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/space-launches.png">
+  <link rel="stylesheet" href="/css/site.css?v=eca578321a">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=eca578321a","/js/engine/renderer.js":"/js/engine/renderer.js?v=eca578321a","/js/engine/format.js":"/js/engine/format.js?v=eca578321a","/js/engine/controller.js":"/js/engine/controller.js?v=eca578321a","/js/engine/controls.js":"/js/engine/controls.js?v=eca578321a","/js/engine/preview.js":"/js/engine/preview.js?v=eca578321a"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Objects Launched Into Space by Country","description":"The space age as a running tally of every satellite, probe and crewed craft each nation has put into orbit or beyond. The USSR and USA trade the lead through the Cold War, then a quiet revolution arrives: commercial mega-constellations send the United States' count vertical in the 2020s. Cumulative, so each launch adds to a country's total forever.","url":"https://beautifuldata.netlify.app/races/space-launches/","temporalCoverage":"1957/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.unoosa.org/oosa/osoindex/"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world" aria-current="true">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="world" data-race-id="space-launches">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#world">World &amp; Nations</a><span aria-hidden="true">/</span><span>1957–2025</span></p>
+    <h1>Objects Launched Into Space by Country</h1>
+    <p class="blurb">The space age as a running tally of every satellite, probe and crewed craft each nation has put into orbit or beyond. The USSR and USA trade the lead through the Cold War, then a quiet revolution arrives: commercial mega-constellations send the United States' count vertical in the 2020s. Cumulative, so each launch adds to a country's total forever.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Objects Launched Into Space by Country"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1957" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://www.unoosa.org/oosa/osoindex/" rel="noopener">UNOOSA Online Index &amp; Jonathan's Space Report</a></span>
+    <span>Cumulative count of objects launched into space attributed to each launching state/operator's country. Recent US totals are dominated by Starlink.</span>
+    <span>Updated 2026-07-03</span>
+  </p>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1957.75">
+        <span class="m-year num">1957</span>
+        <span class="m-title">Sputnik opens the space age</span>
+      </button></li>
+      <li><button type="button" data-t="1966">
+        <span class="m-year num">1966</span>
+        <span class="m-title">America pulls ahead</span>
+      </button></li>
+      <li><button type="button" data-t="1975">
+        <span class="m-year num">1975</span>
+        <span class="m-title">The USSR retakes the lead</span>
+      </button></li>
+      <li><button type="button" data-t="2010">
+        <span class="m-year num">2010</span>
+        <span class="m-title">China joins the front rank</span>
+      </button></li>
+      <li><button type="button" data-t="2021">
+        <span class="m-year num">2021</span>
+        <span class="m-title">The Starlink vertical</span>
+      </button></li>
+  </ul>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/gold-reserves/"><span class="dir">← Previous race</span>Gold Reserves</a>
+    <a href="/races/empires/" style="text-align:right"><span class="dir">Next race →</span>Empires</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Overtake — 41 races across 9 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=eca578321a"></script>
+</body>
+</html>

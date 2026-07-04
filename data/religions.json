@@ -1,0 +1,63 @@
+{
+  "id": "religions",
+  "title": "Major Religions by Followers",
+  "shortTitle": "World Religions",
+  "category": "history",
+  "unit": {
+    "label": "Adherents",
+    "format": "si",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 0,
+    "multiplier": 1000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "yearEra",
+  "blurb": "Two thousand years of belief as a race for followers. Folk faiths and Hinduism open the story; Christianity is adopted by Rome, Islam spreads explosively after 632, and the twentieth century's great surprise is the rise of the religiously unaffiliated. Counts are reconstructions, so read the shape, not the decimals.",
+  "source": {
+    "name": "Pew Research Center; historical estimates from Barrett's World Christian Encyclopedia and demographers",
+    "url": "https://www.pewresearch.org/religion/",
+    "note": "Illustrative: pre-modern adherent counts are scholarly reconstructions; modern figures follow Pew's Global Religious Landscape and 2020-2025 projections."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "christianity", "label": "Christianity", "color": "#4C8DFF" },
+    { "id": "islam", "label": "Islam", "color": "#34D399" },
+    { "id": "hinduism", "label": "Hinduism", "color": "#FF8C42" },
+    { "id": "buddhism", "label": "Buddhism", "color": "#FFD84D" },
+    { "id": "chinese", "label": "Chinese Traditional", "color": "#F43F5E" },
+    { "id": "folk", "label": "Folk / Indigenous", "color": "#A3E635" },
+    { "id": "judaism", "label": "Judaism", "color": "#67E8F9" },
+    { "id": "nonreligious", "label": "Nonreligious", "color": "#94A3B8" },
+    { "id": "sikhism", "label": "Sikhism", "color": "#FFB020" },
+    { "id": "taoism", "label": "Taoism", "color": "#E879F9" }
+  ],
+  "keyframes": [
+    { "t": 1, "values": { "hinduism": 45, "chinese": 40, "folk": 60, "buddhism": 22, "judaism": 5, "taoism": 5, "christianity": 0 } },
+    { "t": 100, "values": { "hinduism": 50, "chinese": 42, "folk": 60, "buddhism": 26, "judaism": 5, "taoism": 6, "christianity": 1 } },
+    { "t": 300, "values": { "hinduism": 55, "chinese": 44, "folk": 58, "buddhism": 30, "judaism": 5, "taoism": 7, "christianity": 6 } },
+    { "t": 500, "values": { "hinduism": 58, "chinese": 45, "folk": 55, "buddhism": 34, "christianity": 22, "judaism": 4, "taoism": 8, "islam": 0 } },
+    { "t": 632, "values": { "hinduism": 60, "chinese": 46, "folk": 54, "buddhism": 37, "christianity": 26, "judaism": 4, "taoism": 9, "islam": 1 } },
+    { "t": 750, "values": { "hinduism": 62, "chinese": 47, "folk": 52, "buddhism": 40, "christianity": 28, "islam": 22, "judaism": 4, "taoism": 10 } },
+    { "t": 1000, "values": { "hinduism": 65, "chinese": 50, "folk": 50, "buddhism": 44, "christianity": 32, "islam": 38, "judaism": 3, "taoism": 11 } },
+    { "t": 1200, "values": { "hinduism": 70, "chinese": 55, "folk": 48, "islam": 55, "christianity": 40, "buddhism": 46, "judaism": 3, "taoism": 12 } },
+    { "t": 1500, "values": { "hinduism": 85, "chinese": 70, "islam": 78, "christianity": 76, "folk": 50, "buddhism": 52, "judaism": 2, "taoism": 14 } },
+    { "t": 1700, "values": { "christianity": 130, "islam": 100, "hinduism": 100, "chinese": 95, "folk": 55, "buddhism": 62, "judaism": 2, "taoism": 16 } },
+    { "t": 1800, "values": { "christianity": 210, "hinduism": 135, "islam": 130, "chinese": 120, "buddhism": 90, "folk": 60, "judaism": 3, "taoism": 20 } },
+    { "t": 1900, "values": { "christianity": 560, "islam": 200, "hinduism": 230, "chinese": 200, "buddhism": 130, "folk": 110, "nonreligious": 3, "judaism": 12, "taoism": 30, "sikhism": 3 } },
+    { "t": 1950, "values": { "christianity": 870, "islam": 350, "hinduism": 320, "chinese": 200, "buddhism": 200, "nonreligious": 200, "folk": 150, "judaism": 12, "sikhism": 7, "taoism": 30 } },
+    { "t": 1970, "values": { "christianity": 1230, "islam": 570, "hinduism": 460, "nonreligious": 530, "buddhism": 235, "chinese": 230, "folk": 165, "judaism": 12, "sikhism": 11, "taoism": 30 } },
+    { "t": 2000, "values": { "christianity": 2000, "islam": 1290, "hinduism": 830, "nonreligious": 1050, "buddhism": 460, "chinese": 380, "folk": 380, "judaism": 14, "sikhism": 22, "taoism": 30 } },
+    { "t": 2010, "values": { "christianity": 2170, "islam": 1600, "nonreligious": 1130, "hinduism": 1030, "buddhism": 490, "folk": 400, "chinese": 390, "judaism": 14, "sikhism": 25, "taoism": 30 } },
+    { "t": 2025, "values": { "christianity": 2400, "islam": 2000, "nonreligious": 1250, "hinduism": 1200, "buddhism": 520, "folk": 430, "chinese": 400, "sikhism": 30, "judaism": 15, "taoism": 30 } }
+  ],
+  "milestones": [
+    { "t": 1, "title": "A world of folk faiths", "text": "At the dawn of the Common Era, belief means local folk cults, Chinese ancestral rites, and a booming Hindu tradition." },
+    { "t": 380, "title": "Rome embraces Christianity", "text": "Emperor Theodosius makes Christianity Rome's state religion, launching centuries of expansion across Europe." },
+    { "t": 632, "title": "Islam spreads after 632", "text": "From the death of Muhammad, Islam expands with startling speed across Arabia, Persia, North Africa and beyond." },
+    { "t": 1970, "title": "The rise of the nonreligious", "text": "Communism and secularization make the religiously unaffiliated one of the largest groups on Earth within decades." },
+    { "t": 2025, "title": "Islam closes on Christianity", "text": "Islam, the fastest-growing major religion, now trails Christianity for the top spot and is projected to catch it." }
+  ]
+}

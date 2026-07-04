@@ -1,0 +1,56 @@
+{
+  "id": "world-population-region",
+  "title": "World Population by Region",
+  "shortTitle": "Pop by Region",
+  "category": "history",
+  "unit": {
+    "label": "Population",
+    "format": "si",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 0,
+    "multiplier": 1000000
+  },
+  "scale": "linear",
+  "topN": 8,
+  "timeLabel": "yearEra",
+  "blurb": "Twenty-five centuries of humanity, sorted by where people live. Asia leads from the start and never lets go, but the drama is beneath it: Europe's industrial surge, the twentieth-century population explosion, and Africa racing past Europe toward second place.",
+  "source": {
+    "name": "Angus Maddison, Colin McEvedy & Jones historical estimates; UN World Population Prospects",
+    "url": "https://population.un.org/wpp/",
+    "note": "Pre-1950 figures are demographers' estimates with wide error bands; 1950 onward follows UN World Population Prospects."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "asia", "label": "Asia", "color": "#FFD84D" },
+    { "id": "africa", "label": "Africa", "color": "#FF8C42" },
+    { "id": "europe", "label": "Europe", "color": "#4C8DFF" },
+    { "id": "mena", "label": "Middle East & N. Africa", "color": "#23C8A8" },
+    { "id": "latam", "label": "Latin America & Carib.", "color": "#F43F5E" },
+    { "id": "northam", "label": "Northern America", "color": "#B388FF" },
+    { "id": "oceania", "label": "Oceania", "color": "#67E8F9" }
+  ],
+  "keyframes": [
+    { "t": -500, "values": { "asia": 75, "europe": 18, "mena": 22, "africa": 12, "latam": 7, "northam": 2, "oceania": 1 } },
+    { "t": 1, "values": { "asia": 170, "europe": 35, "mena": 28, "africa": 25, "latam": 10, "northam": 3, "oceania": 1 } },
+    { "t": 500, "values": { "asia": 140, "europe": 33, "mena": 26, "africa": 30, "latam": 12, "northam": 3, "oceania": 1 } },
+    { "t": 1000, "values": { "asia": 185, "europe": 43, "mena": 30, "africa": 40, "latam": 16, "northam": 3, "oceania": 1 } },
+    { "t": 1300, "values": { "asia": 245, "europe": 80, "mena": 32, "africa": 50, "latam": 25, "northam": 3, "oceania": 2 } },
+    { "t": 1500, "values": { "asia": 280, "europe": 84, "mena": 33, "africa": 55, "latam": 30, "northam": 3, "oceania": 2 } },
+    { "t": 1700, "values": { "asia": 400, "europe": 125, "mena": 35, "africa": 65, "latam": 20, "northam": 3, "oceania": 2 } },
+    { "t": 1800, "values": { "asia": 640, "europe": 200, "africa": 90, "mena": 40, "latam": 25, "northam": 7, "oceania": 2 } },
+    { "t": 1850, "values": { "asia": 750, "europe": 275, "africa": 100, "mena": 45, "latam": 38, "northam": 26, "oceania": 2 } },
+    { "t": 1900, "values": { "asia": 950, "europe": 400, "africa": 110, "northam": 90, "latam": 75, "mena": 50, "oceania": 6 } },
+    { "t": 1950, "values": { "asia": 1400, "europe": 550, "africa": 180, "latam": 170, "northam": 170, "mena": 100, "oceania": 13 } },
+    { "t": 1970, "values": { "asia": 2140, "europe": 660, "africa": 290, "latam": 290, "northam": 230, "mena": 160, "oceania": 20 } },
+    { "t": 2000, "values": { "asia": 3720, "europe": 725, "africa": 640, "latam": 525, "northam": 315, "mena": 340, "oceania": 31 } },
+    { "t": 2025, "values": { "asia": 4800, "africa": 1500, "europe": 745, "latam": 665, "mena": 520, "northam": 380, "oceania": 46 } }
+  ],
+  "milestones": [
+    { "t": 1, "title": "Asia's enduring dominance", "text": "From antiquity, Asia holds more people than the rest of the world combined, anchored by China and India." },
+    { "t": 1850, "title": "Europe's industrial peak", "text": "The Industrial Revolution drives Europe to its highest-ever share of world population as death rates plunge." },
+    { "t": 1950, "title": "The great global surge", "text": "Post-war medicine and falling mortality trigger the fastest population growth in human history worldwide." },
+    { "t": 1996, "title": "Africa passes Europe", "text": "Africa overtakes Europe for second place and, with the youngest population on Earth, keeps climbing fast." }
+  ]
+}

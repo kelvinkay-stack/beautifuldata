@@ -7,10 +7,14 @@ const ICON_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="tru
 const ICON_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.4v14H7zM13.6 5H17v14h-3.6z"/></svg>';
 const ICON_RESTART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10a8 8 0 1 1 2 6.9"/><path d="M4 4v6h6" stroke-linejoin="round"/></svg>';
 
-const SPEEDS = [0.5, 1, 1.5, 2];
+const SPEED_MIN = 0.25;
+const SPEED_MAX = 3;
+
+const fmtSpeed = (v) =>
+  `${(Math.round(v * 100) / 100).toFixed(2).replace(/0+$/, '').replace(/\.$/, '')}×`;
 
 export function mountControls(controller, els, dataset) {
-  const { playBtn, restartBtn, speedBtn, scrub, callout, stepNote } = els;
+  const { playBtn, restartBtn, speedRange, speedVal, scrub, callout, stepNote } = els;
   const model = controller.model;
 
   playBtn.innerHTML = ICON_PLAY;
@@ -69,16 +73,27 @@ export function mountControls(controller, els, dataset) {
   playBtn.addEventListener('click', () => controller.toggle());
   restartBtn.addEventListener('click', () => controller.restart(true));
 
-  let speedIdx = 1;
-  speedBtn.textContent = '1×';
-  speedBtn.addEventListener('click', () => {
-    speedIdx = (speedIdx + 1) % SPEEDS.length;
-    controller.setSpeed(SPEEDS[speedIdx]);
-    speedBtn.textContent = SPEEDS[speedIdx] + '×';
-  });
+  /* ---- speed slider ---- */
+  function setSpeedUI(v, { fromInput = false } = {}) {
+    const s = Math.min(SPEED_MAX, Math.max(SPEED_MIN, v));
+    controller.setSpeed(s);
+    if (!fromInput) speedRange.value = String(s);
+    const pct = ((s - SPEED_MIN) / (SPEED_MAX - SPEED_MIN)) * 100;
+    speedRange.style.setProperty('--fill', pct.toFixed(1) + '%');
+    speedRange.setAttribute('aria-valuetext', fmtSpeed(s));
+    speedVal.textContent = fmtSpeed(s);
+  }
+  speedRange.min = String(SPEED_MIN);
+  speedRange.max = String(SPEED_MAX);
+  speedRange.addEventListener('input', () =>
+    setSpeedUI(parseFloat(speedRange.value), { fromInput: true }));
+  setSpeedUI(1);
 
   /* ---- keyboard ---- */
   window.addEventListener('keydown', (ev) => {
+    // speed nudges work anywhere, including while the slider is focused
+    if (ev.key === '[') { setSpeedUI(controller.speed - 0.25); return; }
+    if (ev.key === ']') { setSpeedUI(controller.speed + 0.25); return; }
     if (ev.target.closest('input, textarea, select')) return;
     if (ev.key === ' ') { ev.preventDefault(); controller.toggle(); }
     else if (ev.key === 'ArrowRight') { controller.pause(); controller.stepBy(1); }

@@ -369,15 +369,39 @@ button { font: inherit; color: inherit; }
 .t-btn.secondary:hover { color: var(--text); }
 .t-btn svg { width: 18px; height: 18px; }
 
-.speed-btn {
+/* fine-grained speed slider */
+.speed {
   flex: none;
-  background: transparent; border: 1px solid var(--line-strong);
-  color: var(--text-dim); border-radius: 999px;
-  min-width: 52px; height: 32px; padding: 0 10px;
-  font-family: var(--font-num); font-size: var(--fs-12);
-  cursor: pointer;
+  display: flex; align-items: center; gap: var(--sp-2);
+  color: var(--text-faint);
 }
-.speed-btn:hover { color: var(--text); }
+.speed-ico { width: 16px; height: 16px; flex: none; }
+.speed-range {
+  -webkit-appearance: none; appearance: none;
+  width: 104px; height: 4px; flex: none;
+  border-radius: 2px; cursor: pointer;
+  /* --fill is updated by JS to paint the accent up to the thumb */
+  background: linear-gradient(to right,
+    var(--accent) 0 var(--fill, 34.6%), var(--track) var(--fill, 34.6%) 100%);
+}
+.speed-range::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--text); border: none; cursor: pointer;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 30%, transparent);
+  transition: transform 0.12s var(--ease-snap);
+}
+.speed-range::-webkit-slider-thumb:active { transform: scale(1.15); }
+.speed-range::-moz-range-thumb {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--text); border: none; cursor: pointer;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+.speed-range:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.speed-val {
+  min-width: 3.4ch; text-align: right;
+  color: var(--text-dim); font-size: var(--fs-12);
+}
 
 /* scrub bar with milestone markers */
 .scrub {
@@ -500,6 +524,8 @@ button { font: inherit; color: inherit; }
   .transport { flex-wrap: wrap; gap: var(--sp-2) var(--sp-3); padding: var(--sp-3); }
   .scrub { order: -1; flex-basis: 100%; height: 38px; }
   .scrub .mstone .tip { display: none; }
+  .speed { margin-left: auto; }
+  .speed-range { width: 84px; }
   .hub-hero { padding-top: var(--sp-6); }
   .race-main { padding-top: var(--sp-4); }
   .callout { top: auto; bottom: var(--sp-3); right: var(--sp-3); left: var(--sp-3); max-width: none; }

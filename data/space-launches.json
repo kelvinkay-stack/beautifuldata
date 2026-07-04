@@ -1,0 +1,59 @@
+{
+  "id": "space-launches",
+  "title": "Objects Launched Into Space by Country",
+  "shortTitle": "Space Launches",
+  "category": "world",
+  "unit": { "label": "Cumulative objects launched", "format": "plain", "prefix": "", "suffix": "", "decimals": 0 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The space age as a running tally of every satellite, probe and crewed craft each nation has put into orbit or beyond. The USSR and USA trade the lead through the Cold War, then a quiet revolution arrives: commercial mega-constellations send the United States' count vertical in the 2020s. Cumulative, so each launch adds to a country's total forever.",
+  "source": {
+    "name": "UNOOSA Online Index & Jonathan's Space Report",
+    "url": "https://www.unoosa.org/oosa/osoindex/",
+    "note": "Cumulative count of objects launched into space attributed to each launching state/operator's country. Recent US totals are dominated by Starlink."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "ussr", "label": "USSR / Russia", "color": "#F43F5E" },
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "china", "label": "China", "color": "#FFD84D" },
+    { "id": "uk", "label": "United Kingdom", "color": "#94A3B8" },
+    { "id": "japan", "label": "Japan", "color": "#FF8C42" },
+    { "id": "france", "label": "France", "color": "#67E8F9" },
+    { "id": "india", "label": "India", "color": "#34D399" },
+    { "id": "esa", "label": "ESA (Europe)", "color": "#B388FF" },
+    { "id": "canada", "label": "Canada", "color": "#FF5C4D" }
+  ],
+  "keyframes": [
+    { "t": 1957, "values": { "ussr": 2 } },
+    { "t": 1958, "values": { "ussr": 3, "usa": 7 } },
+    { "t": 1960, "values": { "ussr": 12, "usa": 30 } },
+    { "t": 1962, "values": { "ussr": 40, "usa": 100, "uk": 1 } },
+    { "t": 1965, "values": { "ussr": 120, "usa": 380, "uk": 2, "france": 1, "canada": 1 } },
+    { "t": 1968, "values": { "ussr": 280, "usa": 560, "uk": 3, "france": 3, "canada": 2 } },
+    { "t": 1970, "values": { "ussr": 420, "usa": 640, "france": 6, "japan": 1, "china": 1, "uk": 4, "canada": 3 } },
+    { "t": 1975, "values": { "ussr": 850, "usa": 780, "france": 12, "japan": 6, "china": 4, "uk": 5, "canada": 5 } },
+    { "t": 1980, "values": { "ussr": 1350, "usa": 900, "japan": 16, "france": 18, "china": 9, "esa": 3, "canada": 6 } },
+    { "t": 1985, "values": { "ussr": 1950, "usa": 1050, "japan": 28, "china": 15, "france": 24, "esa": 8, "india": 4 } },
+    { "t": 1990, "values": { "ussr": 2550, "usa": 1200, "japan": 45, "china": 27, "esa": 18, "france": 30, "india": 9 } },
+    { "t": 1995, "values": { "ussr": 2950, "usa": 1350, "japan": 62, "china": 38, "esa": 30, "india": 15 } },
+    { "t": 2000, "values": { "ussr": 3180, "usa": 1600, "japan": 82, "china": 50, "esa": 45, "india": 22 } },
+    { "t": 2005, "values": { "ussr": 3320, "usa": 1780, "china": 75, "japan": 100, "esa": 60, "india": 30 } },
+    { "t": 2010, "values": { "ussr": 3480, "usa": 1980, "china": 130, "japan": 125, "esa": 80, "india": 45 } },
+    { "t": 2015, "values": { "ussr": 3620, "usa": 2350, "china": 230, "japan": 155, "esa": 105, "india": 75 } },
+    { "t": 2018, "values": { "ussr": 3700, "usa": 2700, "china": 330, "japan": 175, "india": 105, "esa": 120 } },
+    { "t": 2020, "values": { "ussr": 3760, "usa": 4200, "china": 430, "japan": 195, "india": 130, "esa": 130 } },
+    { "t": 2022, "values": { "ussr": 3820, "usa": 7200, "china": 620, "japan": 220, "india": 170, "esa": 140 } },
+    { "t": 2024, "values": { "ussr": 3880, "usa": 11200, "china": 950, "japan": 250, "india": 210, "esa": 150 } },
+    { "t": 2025, "values": { "ussr": 3900, "usa": 12800, "china": 1150, "japan": 265, "india": 230, "esa": 155 } }
+  ],
+  "milestones": [
+    { "t": 1957.75, "title": "Sputnik opens the space age", "text": "The USSR launches the first artificial satellite in October 1957, and for a moment holds the entire scoreboard alone." },
+    { "t": 1966.0, "title": "America pulls ahead", "text": "Fuelled by the Apollo build-up, the United States launches at a furious pace and overtakes the Soviet total in the mid-1960s." },
+    { "t": 1975.0, "title": "The USSR retakes the lead", "text": "A relentless cadence of Kosmos satellites pushes the Soviet cumulative count back in front, where it stays for decades." },
+    { "t": 2010.0, "title": "China joins the front rank", "text": "China's launch rate accelerates past Japan and Europe, becoming the clear third space power of the 21st century." },
+    { "t": 2021.0, "title": "The Starlink vertical", "text": "Commercial mega-constellations send thousands of small satellites up at once, and the US total goes nearly vertical." }
+  ]
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Major Religions by Followers (1 CE–2025) — Overtake</title>
+  <meta name="description" content="Two thousand years of belief as a race for followers. Animated bar chart race, 1 CE–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/religions/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Major Religions by Followers (1 CE–2025) — Overtake">
+  <meta property="og:description" content="Two thousand years of belief as a race for followers. Animated bar chart race, 1 CE–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/religions/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/religions.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Major Religions by Followers (1 CE–2025) — Overtake">
+  <meta name="twitter:description" content="Two thousand years of belief as a race for followers. Animated bar chart race, 1 CE–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/religions.png">
+  <link rel="stylesheet" href="/css/site.css?v=eca578321a">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=eca578321a","/js/engine/renderer.js":"/js/engine/renderer.js?v=eca578321a","/js/engine/format.js":"/js/engine/format.js?v=eca578321a","/js/engine/controller.js":"/js/engine/controller.js?v=eca578321a","/js/engine/controls.js":"/js/engine/controls.js?v=eca578321a","/js/engine/preview.js":"/js/engine/preview.js?v=eca578321a"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Major Religions by Followers","description":"Two thousand years of belief as a race for followers. Folk faiths and Hinduism open the story; Christianity is adopted by Rome, Islam spreads explosively after 632, and the twentieth century's great surprise is the rise of the religiously unaffiliated. Counts are reconstructions, so read the shape, not the decimals.","url":"https://beautifuldata.netlify.app/races/religions/","temporalCoverage":"1/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.pewresearch.org/religion/"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#history" aria-current="true">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="history" data-race-id="religions">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#history">History &amp; Antiquity</a><span aria-hidden="true">/</span><span>1 CE–2025</span></p>
+    <h1>Major Religions by Followers</h1>
+    <p class="blurb">Two thousand years of belief as a race for followers. Folk faiths and Hinduism open the story; Christianity is adopted by Rome, Islam spreads explosively after 632, and the twentieth century's great surprise is the rise of the religiously unaffiliated. Counts are reconstructions, so read the shape, not the decimals.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Major Religions by Followers"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1 CE" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://www.pewresearch.org/religion/" rel="noopener">Pew Research Center; historical estimates from Barrett's World Christian Encyclopedia and demographers</a></span>
+    <span>Illustrative: pre-modern adherent counts are scholarly reconstructions; modern figures follow Pew's Global Religious Landscape and 2020-2025 projections.</span>
+    <span class="quality-flag">illustrative data</span>
+    <span>Updated 2026-07-03</span>
+  </p>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1">
+        <span class="m-year num">1 CE</span>
+        <span class="m-title">A world of folk faiths</span>
+      </button></li>
+      <li><button type="button" data-t="380">
+        <span class="m-year num">380 CE</span>
+        <span class="m-title">Rome embraces Christianity</span>
+      </button></li>
+      <li><button type="button" data-t="632">
+        <span class="m-year num">632 CE</span>
+        <span class="m-title">Islam spreads after 632</span>
+      </button></li>
+      <li><button type="button" data-t="1970">
+        <span class="m-year num">1970</span>
+        <span class="m-title">The rise of the nonreligious</span>
+      </button></li>
+      <li><button type="button" data-t="2025">
+        <span class="m-year num">2025</span>
+        <span class="m-title">Islam closes on Christianity</span>
+      </button></li>
+  </ul>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/world-gdp-share/"><span class="dir">← Previous race</span>World GDP Share</a>
+    <a href="/races/world-population-region/" style="text-align:right"><span class="dir">Next race →</span>Pop by Region</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Overtake — 41 races across 9 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=eca578321a"></script>
+</body>
+</html>

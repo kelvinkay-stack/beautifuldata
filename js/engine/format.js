@@ -42,6 +42,11 @@ export function formatTime(t, timeLabel = 'year') {
     const m = Math.min(11, Math.floor((t - year) * 12));
     return `${MONTHS[m]} ${year}`;
   }
+  if (timeLabel === 'yearEra') {
+    // negative years are BCE; there is no year 0 in the data
+    if (year < 0) return `${-year} BCE`;
+    return year < 1000 ? `${year} CE` : String(year);
+  }
   return String(year);
 }
 

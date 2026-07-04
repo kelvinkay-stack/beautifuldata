@@ -1,0 +1,59 @@
+{
+  "id": "world-gdp-share",
+  "title": "Share of World GDP",
+  "shortTitle": "World GDP Share",
+  "category": "history",
+  "unit": {
+    "label": "Share of world GDP",
+    "format": "percent",
+    "decimals": 1
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "yearEra",
+  "blurb": "Two thousand years of the world economy as slices of a single pie, in PPP terms from the Maddison Project. For most of history India and China together made up more than half of global output; China peaked near a third of the world around 1820. Then Western Europe and the United States surged ahead in the industrial age — before China's dramatic return to the top in the 2010s.",
+  "source": {
+    "name": "Maddison Project Database",
+    "url": "https://www.rug.nl/ggdc/historicaldevelopment/maddison/",
+    "note": "Historical GDP (PPP) estimates; pre-modern figures are scholarly reconstructions with wide uncertainty."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "china", "label": "China", "color": "#F43F5E" },
+    { "id": "india", "label": "India", "color": "#FF8C42" },
+    { "id": "west-europe", "label": "Western Europe", "color": "#4C8DFF" },
+    { "id": "usa", "label": "United States", "color": "#67E8F9" },
+    { "id": "japan", "label": "Japan", "color": "#FF6FA5" },
+    { "id": "east-europe-russia", "label": "E. Europe & Russia/USSR", "color": "#D4D4D8" },
+    { "id": "middle-east", "label": "Middle East", "color": "#FFD84D" },
+    { "id": "africa", "label": "Africa", "color": "#A3E635" },
+    { "id": "latin-america", "label": "Latin America", "color": "#34D399" },
+    { "id": "se-asia", "label": "Southeast Asia", "color": "#B388FF" }
+  ],
+  "keyframes": [
+    { "t": 1, "values": { "india": 32.0, "china": 26.0, "west-europe": 10.8, "east-europe-russia": 5.0, "middle-east": 8.0, "africa": 6.0, "latin-america": 2.4, "se-asia": 4.0, "japan": 1.2 } },
+    { "t": 1000, "values": { "india": 28.0, "china": 22.7, "west-europe": 9.1, "east-europe-russia": 6.0, "middle-east": 10.0, "africa": 6.5, "latin-america": 3.8, "se-asia": 5.0, "japan": 2.7 } },
+    { "t": 1500, "values": { "china": 25.0, "india": 24.5, "west-europe": 17.8, "east-europe-russia": 6.5, "middle-east": 7.0, "africa": 5.9, "latin-america": 2.9, "se-asia": 4.0, "japan": 3.1 } },
+    { "t": 1600, "values": { "china": 29.0, "india": 22.4, "west-europe": 19.8, "east-europe-russia": 6.8, "middle-east": 6.0, "africa": 5.3, "latin-america": 2.2, "se-asia": 3.8, "japan": 2.9 } },
+    { "t": 1700, "values": { "china": 22.3, "india": 24.4, "west-europe": 21.9, "east-europe-russia": 7.5, "middle-east": 5.5, "africa": 4.9, "latin-america": 1.7, "se-asia": 3.6, "japan": 4.1 } },
+    { "t": 1820, "values": { "china": 33.0, "india": 16.0, "west-europe": 23.0, "east-europe-russia": 9.0, "usa": 1.8, "middle-east": 3.4, "africa": 4.5, "latin-america": 2.0, "se-asia": 3.5, "japan": 3.0 } },
+    { "t": 1870, "values": { "west-europe": 33.0, "china": 17.1, "india": 12.1, "usa": 8.9, "east-europe-russia": 11.7, "middle-east": 2.2, "africa": 3.6, "latin-america": 2.5, "se-asia": 3.4, "japan": 2.3 } },
+    { "t": 1900, "values": { "west-europe": 33.0, "usa": 15.8, "china": 11.0, "india": 8.6, "east-europe-russia": 13.1, "japan": 2.6, "middle-east": 1.8, "africa": 3.0, "latin-america": 3.5, "se-asia": 3.3 } },
+    { "t": 1913, "values": { "west-europe": 33.0, "usa": 19.0, "china": 8.9, "india": 7.6, "east-europe-russia": 13.0, "japan": 2.6, "middle-east": 1.6, "africa": 2.9, "latin-america": 4.5, "se-asia": 3.5 } },
+    { "t": 1940, "values": { "usa": 24.0, "west-europe": 26.0, "east-europe-russia": 13.0, "china": 6.0, "india": 5.5, "japan": 4.4, "middle-east": 1.7, "africa": 3.4, "latin-america": 6.0, "se-asia": 3.6 } },
+    { "t": 1950, "values": { "usa": 27.3, "west-europe": 26.3, "east-europe-russia": 13.1, "china": 4.5, "india": 4.2, "japan": 3.0, "middle-east": 2.5, "africa": 3.8, "latin-america": 7.9, "se-asia": 3.8 } },
+    { "t": 1973, "values": { "usa": 22.0, "west-europe": 25.7, "east-europe-russia": 13.8, "japan": 7.8, "china": 4.6, "india": 3.1, "middle-east": 3.9, "africa": 3.5, "latin-america": 8.7, "se-asia": 4.5 } },
+    { "t": 1990, "values": { "usa": 21.4, "west-europe": 22.0, "east-europe-russia": 9.8, "japan": 8.6, "china": 7.8, "india": 4.1, "middle-east": 4.3, "africa": 3.3, "latin-america": 8.3, "se-asia": 5.6 } },
+    { "t": 2000, "values": { "usa": 21.9, "west-europe": 20.0, "china": 11.8, "japan": 7.2, "india": 5.2, "east-europe-russia": 5.9, "middle-east": 4.4, "africa": 3.2, "latin-america": 7.9, "se-asia": 6.4 } },
+    { "t": 2010, "values": { "china": 16.9, "usa": 19.0, "west-europe": 17.0, "india": 6.6, "japan": 5.6, "east-europe-russia": 5.7, "middle-east": 4.8, "africa": 3.6, "latin-america": 7.8, "se-asia": 6.8 } },
+    { "t": 2025, "values": { "china": 19.0, "usa": 15.0, "west-europe": 13.0, "india": 8.0, "east-europe-russia": 4.6, "japan": 3.6, "middle-east": 5.0, "africa": 4.5, "latin-america": 6.8, "se-asia": 7.5 } }
+  ],
+  "milestones": [
+    { "t": 1, "title": "Asia's ancient dominance", "text": "At the dawn of the Common Era India and China together produce well over half of world output; Western Europe is a minor player." },
+    { "t": 1820, "title": "China's peak: a third of the world", "text": "On the eve of industrialization China accounts for about a third of global GDP — its high-water mark in the pre-modern era." },
+    { "t": 1870, "title": "Western Europe overtakes Asia", "text": "The Industrial Revolution vaults Western Europe past China and India to roughly a third of world output." },
+    { "t": 1950, "title": "The American century", "text": "After two world wars the United States alone commands over a quarter of world GDP, rivaling all of Western Europe combined." },
+    { "t": 2010, "title": "China returns to #1", "text": "Three decades of breakneck growth carry China back to the top of the table, reclaiming the lead it lost around 1870." }
+  ]
+}

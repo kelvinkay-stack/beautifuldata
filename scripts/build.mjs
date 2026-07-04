@@ -70,10 +70,17 @@ const catById = new Map(site.categories.map((c) => [c.id, c]));
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-const yearOf = (t) => String(Math.floor(t));
+const yearOf = (t, timeLabel) => {
+  const y = Math.floor(t);
+  if (timeLabel === 'yearEra') {
+    if (y < 0) return `${-y} BCE`;
+    return y < 1000 ? `${y} CE` : String(y);
+  }
+  return String(y);
+};
 const spanOf = (ds) => {
   const kf = ds.keyframes;
-  return `${yearOf(kf[0].t)}–${yearOf(kf[kf.length - 1].t)}`;
+  return `${yearOf(kf[0].t, ds.timeLabel)}–${yearOf(kf[kf.length - 1].t, ds.timeLabel)}`;
 };
 
 /* linear sample of entity values at time t (preview + OG only) */
@@ -131,6 +138,7 @@ const ICONS = {
   coin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="6.5" rx="7.5" ry="3.5"/><path d="M4.5 6.5v11c0 1.9 3.4 3.5 7.5 3.5s7.5-1.6 7.5-3.5v-11M4.5 12c0 1.9 3.4 3.5 7.5 3.5s7.5-1.6 7.5-3.5"/></svg>',
   globe: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.4 4 5.6 4 9s-1.4 6.6-4 9c-2.6-2.4-4-5.6-4-9s1.4-6.6 4-9z"/></svg>',
   controller: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 8.5h10a4.5 4.5 0 0 1 4.5 4.5l-.7 3.5a2.5 2.5 0 0 1-4.5.8L15 15H9l-1.3 2.3a2.5 2.5 0 0 1-4.5-.8L2.5 13A4.5 4.5 0 0 1 7 8.5z"/><path d="M6 11.5v2M5 12.5h2M15.5 11.5h.01M18 13h.01" stroke-linecap="round"/></svg>',
+  column: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M4.5 6l1-2.5h13l1 2.5M6.5 6v12M11 6v12M13 6v12M17.5 6v12M3.5 18h17l1 2.5H2.5z" stroke-linejoin="round"/></svg>',
 };
 
 const wordmark = (href = '/') => `
@@ -252,7 +260,7 @@ ${header()}
     <div class="hero-stats num">
       <span><b>${races.length}</b> races</span>
       <span><b>${site.categories.length}</b> categories</span>
-      <span><b>${yearOf(t0)}–${yearOf(t1)}</b> covered</span>
+      <span><b>${yearOf(t0, 'yearEra')}–${yearOf(t1, 'yearEra')}</b> covered</span>
     </div>
   </section>
 ${zones}
@@ -292,7 +300,7 @@ function buildRacePage(r, i) {
 
   const milestoneItems = (ds.milestones || []).map((m) => `
       <li><button type="button" data-t="${m.t}">
-        <span class="m-year num">${yearOf(m.t)}</span>
+        <span class="m-year num">${yearOf(m.t, ds.timeLabel)}</span>
         <span class="m-title">${esc(m.title)}</span>
       </button></li>`).join('');
 
@@ -323,10 +331,14 @@ ${header(cat.id)}
     <div class="transport">
       <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
       <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
-      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="${yearOf(t0)}" aria-valuemax="${yearOf(t1)}">
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="${yearOf(t0, ds.timeLabel)}" aria-valuemax="${yearOf(t1, ds.timeLabel)}">
         <div class="track"></div><div class="fill"></div><div class="thumb"></div>
       </div>
-      <button class="speed-btn" id="btn-speed" type="button" aria-label="Playback speed">1×</button>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
     </div>
     <p class="step-note" id="step-note"></p>
   </figure>

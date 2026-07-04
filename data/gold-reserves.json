@@ -1,0 +1,56 @@
+{
+  "id": "gold-reserves",
+  "title": "Central Bank Gold Reserves",
+  "shortTitle": "Gold Reserves",
+  "category": "economy",
+  "unit": { "label": "Official gold holdings", "format": "plain", "prefix": "", "suffix": " t", "decimals": 0 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Who holds the world's monetary gold, in tonnes, since the Bretton Woods era. The United States has sat on the largest hoard for the whole period — most of it still in Fort Knox and the New York Fed — while Europe's old powers drift down and China and Russia quietly stack bullion in the 2000s. A snapshot race that moves slowly, then in bursts.",
+  "source": {
+    "name": "World Gold Council & IMF IFS",
+    "url": "https://www.gold.org/goldhub/data/gold-reserves-by-country",
+    "note": "Official reserve holdings in metric tonnes. Some national figures (notably China) are updated infrequently and are widely believed to understate true holdings."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "germany", "label": "Germany", "color": "#FFD84D" },
+    { "id": "imf", "label": "IMF", "color": "#94A3B8" },
+    { "id": "italy", "label": "Italy", "color": "#34D399" },
+    { "id": "france", "label": "France", "color": "#67E8F9" },
+    { "id": "china", "label": "China", "color": "#F43F5E" },
+    { "id": "russia", "label": "Russia", "color": "#FF5C4D" },
+    { "id": "switzerland", "label": "Switzerland", "color": "#FF8C42" },
+    { "id": "uk", "label": "United Kingdom", "color": "#B388FF" },
+    { "id": "india", "label": "India", "color": "#A3E635" },
+    { "id": "netherlands", "label": "Netherlands", "color": "#2FB4FF" },
+    { "id": "japan", "label": "Japan", "color": "#E879F9" }
+  ],
+  "keyframes": [
+    { "t": 1950, "values": { "usa": 20279, "switzerland": 1400, "uk": 2543, "france": 1500, "italy": 227, "netherlands": 900, "germany": 0 } },
+    { "t": 1955, "values": { "usa": 19331, "switzerland": 1800, "uk": 2000, "france": 1000, "germany": 1300, "italy": 300, "netherlands": 1100 } },
+    { "t": 1960, "values": { "usa": 15822, "switzerland": 2400, "germany": 2640, "france": 1640, "uk": 2500, "italy": 1400, "netherlands": 1450 } },
+    { "t": 1965, "values": { "usa": 12499, "germany": 3820, "switzerland": 2800, "france": 3140, "italy": 2100, "uk": 2000, "netherlands": 1650 } },
+    { "t": 1970, "values": { "usa": 9839, "germany": 3537, "switzerland": 2427, "france": 3139, "italy": 2565, "netherlands": 1588, "uk": 1198 } },
+    { "t": 1980, "values": { "usa": 8221, "germany": 2960, "switzerland": 2590, "france": 2546, "italy": 2074, "netherlands": 1367, "imf": 3217 } },
+    { "t": 1990, "values": { "usa": 8146, "germany": 2960, "imf": 3217, "switzerland": 2590, "france": 2546, "italy": 2074, "netherlands": 1367 } },
+    { "t": 2000, "values": { "usa": 8137, "germany": 3469, "imf": 3217, "france": 3025, "italy": 2452, "switzerland": 2419, "netherlands": 912, "japan": 764, "china": 395 } },
+    { "t": 2005, "values": { "usa": 8135, "germany": 3428, "imf": 3217, "france": 2856, "italy": 2452, "switzerland": 1290, "china": 600, "japan": 765, "netherlands": 716 } },
+    { "t": 2009, "values": { "usa": 8133, "germany": 3407, "imf": 3005, "italy": 2452, "france": 2445, "china": 1054, "switzerland": 1040, "japan": 765, "netherlands": 613, "india": 558 } },
+    { "t": 2013, "values": { "usa": 8133, "germany": 3387, "imf": 2814, "italy": 2452, "france": 2435, "china": 1054, "switzerland": 1040, "russia": 1015, "japan": 765, "india": 558 } },
+    { "t": 2016, "values": { "usa": 8133, "germany": 3378, "imf": 2814, "italy": 2452, "france": 2436, "china": 1842, "russia": 1615, "switzerland": 1040, "japan": 765, "india": 558 } },
+    { "t": 2019, "values": { "usa": 8133, "germany": 3367, "imf": 2814, "italy": 2452, "france": 2436, "russia": 2242, "china": 1948, "switzerland": 1040, "japan": 765, "india": 618 } },
+    { "t": 2022, "values": { "usa": 8133, "germany": 3355, "imf": 2814, "italy": 2452, "france": 2437, "russia": 2299, "china": 2011, "switzerland": 1040, "japan": 846, "india": 787 } },
+    { "t": 2024, "values": { "usa": 8133, "germany": 3352, "imf": 2814, "italy": 2452, "france": 2437, "russia": 2333, "china": 2264, "switzerland": 1040, "india": 854, "japan": 846 } },
+    { "t": 2025, "values": { "usa": 8133, "germany": 3350, "imf": 2814, "italy": 2452, "france": 2437, "russia": 2340, "china": 2300, "switzerland": 1040, "india": 880, "japan": 846 } }
+  ],
+  "milestones": [
+    { "t": 1960.0, "title": "America's post-war hoard", "text": "After Bretton Woods the US holds over 20,000 tonnes — the largest concentration of monetary gold ever assembled." },
+    { "t": 1971.0, "title": "The gold window closes", "text": "As the US redeems dollars for bullion, its reserves fall by more than half from their peak before Nixon ends convertibility in 1971." },
+    { "t": 2009.0, "title": "China starts stacking", "text": "China discloses a jump past 1,000 tonnes, beginning a two-decade climb up the rankings that is still going." },
+    { "t": 2018.0, "title": "Russia's bullion pivot", "text": "Sanctions push Russia to swap dollars for gold, vaulting it past France and Italy toward the top five." }
+  ]
+}

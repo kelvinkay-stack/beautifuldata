@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World Population by Region (500 BCE–2025) — Overtake</title>
+  <meta name="description" content="Twenty-five centuries of humanity, sorted by where people live. Animated bar chart race, 500 BCE–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/world-population-region/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="World Population by Region (500 BCE–2025) — Overtake">
+  <meta property="og:description" content="Twenty-five centuries of humanity, sorted by where people live. Animated bar chart race, 500 BCE–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/world-population-region/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/world-population-region.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="World Population by Region (500 BCE–2025) — Overtake">
+  <meta name="twitter:description" content="Twenty-five centuries of humanity, sorted by where people live. Animated bar chart race, 500 BCE–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/world-population-region.png">
+  <link rel="stylesheet" href="/css/site.css?v=eca578321a">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=eca578321a","/js/engine/renderer.js":"/js/engine/renderer.js?v=eca578321a","/js/engine/format.js":"/js/engine/format.js?v=eca578321a","/js/engine/controller.js":"/js/engine/controller.js?v=eca578321a","/js/engine/controls.js":"/js/engine/controls.js?v=eca578321a","/js/engine/preview.js":"/js/engine/preview.js?v=eca578321a"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"World Population by Region","description":"Twenty-five centuries of humanity, sorted by where people live. Asia leads from the start and never lets go, but the drama is beneath it: Europe's industrial surge, the twentieth-century population explosion, and Africa racing past Europe toward second place.","url":"https://beautifuldata.netlify.app/races/world-population-region/","temporalCoverage":"-500/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://population.un.org/wpp/"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#history" aria-current="true">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="history" data-race-id="world-population-region">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#history">History &amp; Antiquity</a><span aria-hidden="true">/</span><span>500 BCE–2025</span></p>
+    <h1>World Population by Region</h1>
+    <p class="blurb">Twenty-five centuries of humanity, sorted by where people live. Asia leads from the start and never lets go, but the drama is beneath it: Europe's industrial surge, the twentieth-century population explosion, and Africa racing past Europe toward second place.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: World Population by Region"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="500 BCE" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://population.un.org/wpp/" rel="noopener">Angus Maddison, Colin McEvedy &amp; Jones historical estimates; UN World Population Prospects</a></span>
+    <span>Pre-1950 figures are demographers' estimates with wide error bands; 1950 onward follows UN World Population Prospects.</span>
+    <span>Updated 2026-07-03</span>
+  </p>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1">
+        <span class="m-year num">1 CE</span>
+        <span class="m-title">Asia's enduring dominance</span>
+      </button></li>
+      <li><button type="button" data-t="1850">
+        <span class="m-year num">1850</span>
+        <span class="m-title">Europe's industrial peak</span>
+      </button></li>
+      <li><button type="button" data-t="1950">
+        <span class="m-year num">1950</span>
+        <span class="m-title">The great global surge</span>
+      </button></li>
+      <li><button type="button" data-t="1996">
+        <span class="m-year num">1996</span>
+        <span class="m-title">Africa passes Europe</span>
+      </button></li>
+  </ul>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/religions/"><span class="dir">← Previous race</span>World Religions</a>
+    <a href="/races/apple-products/" style="text-align:right"><span class="dir">Next race →</span>Apple Products</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Overtake — 41 races across 9 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=eca578321a"></script>
+</body>
+</html>

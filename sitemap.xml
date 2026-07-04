@@ -199,6 +199,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://beautifuldata.netlify.app/races/gold-reserves/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/space-launches/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/empires/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/world-gdp-share/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/religions/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/world-population-region/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://beautifuldata.netlify.app/races/apple-products/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>yearly</changefreq>

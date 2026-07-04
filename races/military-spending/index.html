@@ -20,8 +20,8 @@
   <meta name="twitter:title" content="Military Spending by Country (1960–2024) — Overtake">
   <meta name="twitter:description" content="Six decades of the world's defense budgets, from the Cold War arms race to today. Animated bar chart race, 1960–2024.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/military-spending.png">
-  <link rel="stylesheet" href="/css/site.css?v=5fed46935c">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=5fed46935c","/js/engine/renderer.js":"/js/engine/renderer.js?v=5fed46935c","/js/engine/format.js":"/js/engine/format.js?v=5fed46935c","/js/engine/controller.js":"/js/engine/controller.js?v=5fed46935c","/js/engine/controls.js":"/js/engine/controls.js?v=5fed46935c","/js/engine/preview.js":"/js/engine/preview.js?v=5fed46935c"}}</script>
+  <link rel="stylesheet" href="/css/site.css?v=eca578321a">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=eca578321a","/js/engine/renderer.js":"/js/engine/renderer.js?v=eca578321a","/js/engine/format.js":"/js/engine/format.js?v=eca578321a","/js/engine/controller.js":"/js/engine/controller.js?v=eca578321a","/js/engine/controls.js":"/js/engine/controls.js?v=eca578321a","/js/engine/preview.js":"/js/engine/preview.js?v=eca578321a"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Military Spending by Country","description":"Six decades of the world's defense budgets, from the Cold War arms race to today. The United States outspends everyone throughout, surging after 9/11, while the Soviet Union's massive military collapses with the USSR in 1991 and China rises to a clear #2. Russia's spending spikes sharply after its 2022 invasion of Ukraine.","url":"https://beautifuldata.netlify.app/races/military-spending/","temporalCoverage":"1960/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.sipri.org/databases/milex"}</script>
 </head>
 <body>
@@ -42,6 +42,7 @@
       <a href="/#economy" aria-current="true">Money</a>
       <a href="/#world">World</a>
       <a href="/#play">Games</a>
+      <a href="/#history">History</a>
       <a href="/#wildcard">Wildcard</a>
     </nav>
   </div>
@@ -64,7 +65,11 @@
       <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1960" aria-valuemax="2024">
         <div class="track"></div><div class="fill"></div><div class="thumb"></div>
       </div>
-      <button class="speed-btn" id="btn-speed" type="button" aria-label="Playback speed">1×</button>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
     </div>
     <p class="step-note" id="step-note"></p>
   </figure>
@@ -107,10 +112,10 @@
 
 <footer class="site-footer">
   <div class="inner">
-    <span>Overtake — 35 races across 8 categories. Data sources are cited on every race page.</span>
+    <span>Overtake — 41 races across 9 categories. Data sources are cited on every race page.</span>
     <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=5fed46935c"></script>
+<script type="module" src="/js/race-page.js?v=eca578321a"></script>
 </body>
 </html>

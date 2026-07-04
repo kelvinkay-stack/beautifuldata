@@ -70,6 +70,15 @@
       "blurb": "Consoles, franchises and prize pools — the leaderboards of how the world plays."
     },
     {
+      "id": "history",
+      "label": "History & Antiquity",
+      "short": "History",
+      "accent": "#C77B4A",
+      "accentSoft": "rgba(199,123,74,0.15)",
+      "motif": "column",
+      "blurb": "The longest races on the site — empires, economies and faiths measured across millennia, from antiquity to now."
+    },
+    {
       "id": "wildcard",
       "label": "Wildcard",
       "short": "Wildcard",
@@ -112,6 +121,12 @@
     { "id": "game-franchises", "category": "play" },
     { "id": "esports-prizes", "category": "play" },
     { "id": "top-websites", "category": "play" },
+    { "id": "gold-reserves", "category": "economy" },
+    { "id": "space-launches", "category": "world" },
+    { "id": "empires", "category": "history" },
+    { "id": "world-gdp-share", "category": "history" },
+    { "id": "religions", "category": "history" },
+    { "id": "world-population-region", "category": "history" },
     { "id": "apple-products", "category": "wildcard" },
     { "id": "programming-languages", "category": "wildcard" },
     { "id": "crypto", "category": "wildcard" }
