@@ -1,0 +1,63 @@
+{
+  "id": "game-franchises",
+  "title": "Best-Selling Video Game Franchises",
+  "shortTitle": "Game Franchises",
+  "category": "play",
+  "unit": { "label": "Cumulative units sold", "format": "si", "prefix": "", "suffix": "", "decimals": 0, "multiplier": 1000000 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The biggest game series ever made, racing by cumulative copies sold across every platform. Mario's four-decade head start meets Tetris's viral ubiquity, Pokémon's monster catalogue, and the streaming-era juggernauts Minecraft and Grand Theft Auto. Totals span every entry in each franchise, so a bar climbs with every new hit release.",
+  "source": {
+    "name": "Publisher sales reports & Wikipedia franchise totals",
+    "url": "https://en.wikipedia.org/wiki/List_of_best-selling_video_game_franchises",
+    "note": "Illustrative reconstruction: franchise totals aggregate lifetime unit sales across all titles; historical year-by-year splits are estimated from release timelines."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "mario", "label": "Super Mario", "color": "#F43F5E" },
+    { "id": "tetris", "label": "Tetris", "color": "#B388FF" },
+    { "id": "pokemon", "label": "Pokémon", "color": "#FFD84D" },
+    { "id": "cod", "label": "Call of Duty", "color": "#94A3B8" },
+    { "id": "gta", "label": "Grand Theft Auto", "color": "#34D399" },
+    { "id": "minecraft", "label": "Minecraft", "color": "#86EFAC" },
+    { "id": "fifa", "label": "FIFA / EA Sports FC", "color": "#4C8DFF" },
+    { "id": "zelda", "label": "The Legend of Zelda", "color": "#A3E635" },
+    { "id": "sims", "label": "The Sims", "color": "#67E8F9" },
+    { "id": "sonic", "label": "Sonic the Hedgehog", "color": "#2FB4FF" },
+    { "id": "finalfantasy", "label": "Final Fantasy", "color": "#8B5CF6" },
+    { "id": "wii", "label": "Wii Series", "color": "#FF8C42" },
+    { "id": "leagueoflegends", "label": "League of Legends", "color": "#23C8A8" },
+    { "id": "assassins", "label": "Assassin's Creed", "color": "#E879F9" },
+    { "id": "pacman", "label": "Pac-Man", "color": "#FFB020" }
+  ],
+  "keyframes": [
+    { "t": 1985, "values": { "mario": 12, "pacman": 20, "tetris": 0 } },
+    { "t": 1988, "values": { "mario": 45, "pacman": 26, "tetris": 5 } },
+    { "t": 1990, "values": { "mario": 70, "pacman": 30, "tetris": 30, "finalfantasy": 2, "zelda": 4 } },
+    { "t": 1993, "values": { "mario": 100, "pacman": 33, "tetris": 60, "finalfantasy": 8, "zelda": 10, "sonic": 15 } },
+    { "t": 1996, "values": { "mario": 130, "tetris": 75, "pokemon": 10, "finalfantasy": 16, "zelda": 16, "sonic": 25 } },
+    { "t": 1999, "values": { "mario": 160, "tetris": 90, "pokemon": 75, "finalfantasy": 33, "zelda": 25, "sonic": 33, "gta": 2 } },
+    { "t": 2001, "values": { "mario": 175, "tetris": 100, "pokemon": 110, "finalfantasy": 45, "zelda": 30, "gta": 15, "sims": 6 } },
+    { "t": 2004, "values": { "mario": 195, "tetris": 115, "pokemon": 140, "finalfantasy": 65, "gta": 45, "sims": 40, "cod": 3 } },
+    { "t": 2006, "values": { "mario": 210, "tetris": 125, "pokemon": 155, "finalfantasy": 80, "gta": 60, "sims": 75, "cod": 12, "wii": 20 } },
+    { "t": 2008, "values": { "mario": 250, "tetris": 135, "pokemon": 180, "finalfantasy": 90, "gta": 75, "sims": 100, "cod": 35, "wii": 90, "fifa": 40 } },
+    { "t": 2010, "values": { "mario": 280, "tetris": 155, "pokemon": 200, "finalfantasy": 100, "gta": 100, "sims": 125, "cod": 75, "wii": 150, "fifa": 65, "minecraft": 1 } },
+    { "t": 2012, "values": { "mario": 310, "tetris": 175, "pokemon": 220, "cod": 130, "gta": 125, "sims": 150, "wii": 190, "fifa": 100, "minecraft": 20, "leagueoflegends": 5 } },
+    { "t": 2014, "values": { "mario": 330, "tetris": 200, "pokemon": 245, "cod": 175, "gta": 185, "minecraft": 60, "sims": 175, "wii": 200, "fifa": 130, "leagueoflegends": 30 } },
+    { "t": 2016, "values": { "mario": 350, "tetris": 300, "pokemon": 280, "cod": 250, "gta": 250, "minecraft": 120, "fifa": 165, "sims": 190, "wii": 205, "assassins": 100 } },
+    { "t": 2018, "values": { "mario": 375, "tetris": 400, "pokemon": 300, "cod": 300, "gta": 290, "minecraft": 180, "fifa": 200, "sims": 200, "assassins": 140 } },
+    { "t": 2020, "values": { "mario": 600, "tetris": 500, "pokemon": 380, "cod": 375, "gta": 345, "minecraft": 200, "fifa": 260, "sims": 210, "assassins": 155 } },
+    { "t": 2022, "values": { "mario": 800, "tetris": 520, "pokemon": 480, "cod": 425, "gta": 385, "minecraft": 238, "fifa": 325, "sims": 220, "assassins": 200 } },
+    { "t": 2024, "values": { "mario": 870, "tetris": 520, "pokemon": 489, "cod": 500, "gta": 425, "minecraft": 300, "fifa": 355, "sims": 230, "assassins": 220 } },
+    { "t": 2025, "values": { "mario": 890, "tetris": 520, "pokemon": 495, "cod": 510, "gta": 445, "minecraft": 350, "fifa": 365, "sims": 235, "assassins": 225 } }
+  ],
+  "milestones": [
+    { "t": 1989.5, "title": "Tetris goes everywhere", "text": "Bundled with the Game Boy, Tetris becomes the most viral puzzle game in history and rockets up the all-time chart." },
+    { "t": 1998.0, "title": "Pokémon mania", "text": "Pokémon Red and Blue ignite a global craze, and the franchise climbs from nothing to challenge Mario within a decade." },
+    { "t": 2013.5, "title": "GTA V, a cultural juggernaut", "text": "Grand Theft Auto V becomes one of the best-selling single releases ever, hauling the franchise up the leaderboard." },
+    { "t": 2019.0, "title": "Minecraft, the best-selling game", "text": "Minecraft passes 200M copies to become the best-selling single video game of all time, still climbing years after release." },
+    { "t": 2021.0, "title": "Mario's forty-year lead", "text": "Counting every platformer, kart racer and spin-off, Super Mario stays the best-selling franchise in the medium's history." }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "id": "tallest-buildings",
+  "title": "World's Tallest Buildings",
+  "shortTitle": "Tallest Buildings",
+  "category": "science",
+  "unit": {
+    "label": "Architectural height",
+    "format": "plain",
+    "prefix": "",
+    "suffix": " m",
+    "decimals": 0
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The architectural height of the world's tallest completed buildings, from the first steel-frame giants of New York to today's Gulf and Asian supertalls. New York owned this board for seven decades before the crown moved to Chicago, Kuala Lumpur, Taipei and finally Dubai, where the Burj Khalifa still towers 149 m over its nearest rival.",
+  "source": {
+    "name": "CTBUH",
+    "url": "https://www.ctbuh.org",
+    "note": "Architectural height per CTBUH criteria (spires count, antennas don't). Petronas twin towers shown as one entry."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "park-row",
+      "label": "Park Row Building",
+      "color": "#94A3B8"
+    },
+    {
+      "id": "philadelphia-city-hall",
+      "label": "Philadelphia City Hall",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "singer",
+      "label": "Singer Building",
+      "color": "#FCA5A5"
+    },
+    {
+      "id": "met-life",
+      "label": "Met Life Tower",
+      "color": "#FDE68A"
+    },
+    {
+      "id": "woolworth",
+      "label": "Woolworth Building",
+      "color": "#86EFAC"
+    },
+    {
+      "id": "40-wall",
+      "label": "40 Wall Street",
+      "color": "#D4D4D8"
+    },
+    {
+      "id": "chrysler",
+      "label": "Chrysler Building",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "empire-state",
+      "label": "Empire State Building",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "70-pine",
+      "label": "70 Pine Street",
+      "color": "#E2B93B"
+    },
+    {
+      "id": "30-rock",
+      "label": "30 Rockefeller Plaza",
+      "color": "#B45309"
+    },
+    {
+      "id": "hancock",
+      "label": "John Hancock Center",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "wtc-north",
+      "label": "World Trade Center (North)",
+      "color": "#6E7BFF"
+    },
+    {
+      "id": "willis",
+      "label": "Willis Tower (Sears)",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "bank-of-china",
+      "label": "Bank of China Tower",
+      "color": "#34D399"
+    },
+    {
+      "id": "petronas",
+      "label": "Petronas Towers",
+      "color": "#A3E635"
+    },
+    {
+      "id": "jin-mao",
+      "label": "Jin Mao Tower",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "taipei-101",
+      "label": "Taipei 101",
+      "color": "#FFB020"
+    },
+    {
+      "id": "swfc",
+      "label": "Shanghai World Financial Ctr",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "burj-khalifa",
+      "label": "Burj Khalifa",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "icc",
+      "label": "Intl Commerce Centre",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "abraj-al-bait",
+      "label": "Abraj Al-Bait Clock Tower",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "one-wtc",
+      "label": "One World Trade Center",
+      "color": "#E879F9"
+    },
+    {
+      "id": "shanghai-tower",
+      "label": "Shanghai Tower",
+      "color": "#B388FF"
+    },
+    {
+      "id": "gz-ctf",
+      "label": "Guangzhou CTF Centre",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "ping-an",
+      "label": "Ping An Finance Centre",
+      "color": "#0EA5E9"
+    },
+    {
+      "id": "lotte-world",
+      "label": "Lotte World Tower",
+      "color": "#F97316"
+    },
+    {
+      "id": "citic-tower",
+      "label": "CITIC Tower (China Zun)",
+      "color": "#10B981"
+    },
+    {
+      "id": "tj-ctf",
+      "label": "Tianjin CTF Centre",
+      "color": "#EAB308"
+    },
+    {
+      "id": "merdeka-118",
+      "label": "Merdeka 118",
+      "color": "#DC2626"
+    }
+  ],
+  "keyframes": [
+    { "t": 1899, "values": { "park-row": 119, "philadelphia-city-hall": 0 } },
+    { "t": 1901, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 0 } },
+    { "t": 1908, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 187, "met-life": 0 } },
+    { "t": 1909, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 187, "met-life": 213, "woolworth": 0 } },
+    { "t": 1913, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 187, "met-life": 213, "woolworth": 241, "40-wall": 0 } },
+    { "t": 1930.3, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 187, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 0 } },
+    { "t": 1930.4, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 187, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 0 } },
+    { "t": 1931.3, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 187, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 0 } },
+    { "t": 1932, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 187, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 0 } },
+    { "t": 1933, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 187, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259 } },
+    { "t": 1950, "values": { "park-row": 119, "philadelphia-city-hall": 167, "singer": 187, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259 } },
+    { "t": 1968, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 0 } },
+    { "t": 1969, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "wtc-north": 0 } },
+    { "t": 1972, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "wtc-north": 417, "willis": 0 } },
+    { "t": 1973.5, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "wtc-north": 417, "willis": 442, "bank-of-china": 0 } },
+    { "t": 1990, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "wtc-north": 417, "willis": 442, "bank-of-china": 367, "petronas": 0 } },
+    { "t": 1998, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "wtc-north": 417, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 0 } },
+    { "t": 1999, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "wtc-north": 417, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421 } },
+    { "t": 2001.7, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 0 } },
+    { "t": 2004, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 0 } },
+    { "t": 2008, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 0, "icc": 0 } },
+    { "t": 2010, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 0 } },
+    { "t": 2012, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 601, "one-wtc": 0 } },
+    { "t": 2014, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 601, "one-wtc": 541, "shanghai-tower": 0 } },
+    { "t": 2015, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 601, "one-wtc": 541, "shanghai-tower": 632, "gz-ctf": 0 } },
+    { "t": 2016, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 601, "one-wtc": 541, "shanghai-tower": 632, "gz-ctf": 530, "ping-an": 0, "lotte-world": 0 } },
+    { "t": 2017, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 601, "one-wtc": 541, "shanghai-tower": 632, "gz-ctf": 530, "ping-an": 599, "lotte-world": 555, "citic-tower": 0 } },
+    { "t": 2018, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 601, "one-wtc": 541, "shanghai-tower": 632, "gz-ctf": 530, "ping-an": 599, "lotte-world": 555, "citic-tower": 528, "tj-ctf": 0 } },
+    { "t": 2019, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 601, "one-wtc": 541, "shanghai-tower": 632, "gz-ctf": 530, "ping-an": 599, "lotte-world": 555, "citic-tower": 528, "tj-ctf": 530, "merdeka-118": 0 } },
+    { "t": 2023, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 601, "one-wtc": 541, "shanghai-tower": 632, "gz-ctf": 530, "ping-an": 599, "lotte-world": 555, "citic-tower": 528, "tj-ctf": 530, "merdeka-118": 679 } },
+    { "t": 2026.5, "values": { "park-row": 119, "philadelphia-city-hall": 167, "met-life": 213, "woolworth": 241, "40-wall": 283, "chrysler": 319, "empire-state": 381, "70-pine": 290, "30-rock": 259, "hancock": 344, "willis": 442, "bank-of-china": 367, "petronas": 452, "jin-mao": 421, "taipei-101": 508, "swfc": 492, "burj-khalifa": 828, "icc": 484, "abraj-al-bait": 601, "one-wtc": 541, "shanghai-tower": 632, "gz-ctf": 530, "ping-an": 599, "lotte-world": 555, "citic-tower": 528, "tj-ctf": 530, "merdeka-118": 679 } }
+  ],
+  "milestones": [
+    {
+      "t": 1930.4,
+      "title": "Chrysler's secret spire",
+      "text": "A 38 m spire assembled inside the Chrysler Building is hoisted into place, snatching the world title from rival 40 Wall Street."
+    },
+    {
+      "t": 1931.3,
+      "title": "Empire State Building",
+      "text": "Built in just 13 months, the 381 m Empire State Building begins a record 40-year reign as the world's tallest."
+    },
+    {
+      "t": 1972,
+      "title": "WTC ends a 40-year reign",
+      "text": "The World Trade Center's North Tower (417 m) finally dethrones the Empire State Building."
+    },
+    {
+      "t": 1973.5,
+      "title": "Sears Tower tops out",
+      "text": "Chicago's 442 m Sears (now Willis) Tower takes the crown barely a year later and holds it for a quarter century."
+    },
+    {
+      "t": 1998,
+      "title": "Petronas controversy",
+      "text": "Petronas' spires edge out Sears' roof, 452 m to 442 m. CTBUH rules spires count toward height — antennas don't."
+    },
+    {
+      "t": 2004,
+      "title": "Taipei 101",
+      "text": "At 508 m, Taipei 101 is the first building past the half-kilometre mark."
+    },
+    {
+      "t": 2010,
+      "title": "Burj Khalifa: 828 m",
+      "text": "Dubai's Burj Khalifa obliterates every record, standing 320 m taller than the previous champion — a gap unmatched in history."
+    },
+    {
+      "t": 2023,
+      "title": "Merdeka 118",
+      "text": "Kuala Lumpur's 679 m Merdeka 118 becomes the world's second-tallest building, 25 years after Petronas held the top spot."
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "id": "streaming-music",
+  "title": "Music Streamers by Subscribers",
+  "shortTitle": "Streamers",
+  "category": "culture",
+  "unit": {
+    "label": "Paid subscribers",
+    "format": "si",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 1,
+    "multiplier": 1000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Paid music streaming starts as a European experiment, then becomes the music industry’s main growth engine. Spotify builds the early lead, while Apple Music proves that distribution power can create a huge second-place business almost instantly.",
+  "source": {
+    "name": "Company reports, IFPI and public subscriber disclosures",
+    "url": "https://investors.spotify.com/financials/default.aspx",
+    "note": "Paid subscriber counts; services disclose on different schedules, and some later figures are analyst estimates."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "spotify",
+      "label": "Spotify",
+      "color": "#34D399"
+    },
+    {
+      "id": "apple",
+      "label": "Apple Music",
+      "color": "#D4D4D8"
+    },
+    {
+      "id": "amazon",
+      "label": "Amazon Music",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube Music",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "tencent",
+      "label": "Tencent Music",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "pandora",
+      "label": "Pandora",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "deezer",
+      "label": "Deezer",
+      "color": "#B388FF"
+    },
+    {
+      "id": "tidal",
+      "label": "Tidal",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "napster",
+      "label": "Napster/Rhapsody",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "gaana",
+      "label": "Gaana",
+      "color": "#FFB020"
+    },
+    {
+      "id": "netease",
+      "label": "NetEase Cloud Music",
+      "color": "#F43F5E"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 2008,
+      "values": {
+        "spotify": 0.1,
+        "amazon": 0,
+        "pandora": 0.1,
+        "deezer": 0.2,
+        "napster": 0.7
+      }
+    },
+    {
+      "t": 2009,
+      "values": {
+        "spotify": 0.5,
+        "amazon": 0,
+        "pandora": 0.2,
+        "deezer": 0.4,
+        "napster": 0.8
+      }
+    },
+    {
+      "t": 2010,
+      "values": {
+        "spotify": 1,
+        "amazon": 0.5,
+        "pandora": 0.5,
+        "deezer": 0.8,
+        "napster": 0.9
+      }
+    },
+    {
+      "t": 2011,
+      "values": {
+        "spotify": 2.5,
+        "amazon": 1,
+        "pandora": 1,
+        "deezer": 1.5,
+        "napster": 1
+      }
+    },
+    {
+      "t": 2012,
+      "values": {
+        "spotify": 5,
+        "amazon": 2,
+        "tencent": 3,
+        "pandora": 2,
+        "deezer": 3,
+        "napster": 1.1
+      }
+    },
+    {
+      "t": 2013,
+      "values": {
+        "spotify": 8,
+        "amazon": 4,
+        "tencent": 6,
+        "pandora": 3.3,
+        "deezer": 5,
+        "tidal": 0,
+        "napster": 1.3,
+        "gaana": 0,
+        "netease": 0
+      }
+    },
+    {
+      "t": 2014,
+      "values": {
+        "spotify": 15,
+        "apple": 0,
+        "amazon": 7,
+        "youtube": 0,
+        "tencent": 10,
+        "pandora": 3.5,
+        "deezer": 6,
+        "tidal": 0.5,
+        "napster": 1.5,
+        "gaana": 0.5,
+        "netease": 1
+      }
+    },
+    {
+      "t": 2015,
+      "values": {
+        "spotify": 28,
+        "apple": 6.5,
+        "amazon": 10,
+        "youtube": 2,
+        "tencent": 15,
+        "pandora": 3.9,
+        "deezer": 6.3,
+        "tidal": 1,
+        "napster": 3,
+        "gaana": 1.5,
+        "netease": 3
+      }
+    },
+    {
+      "t": 2016,
+      "values": {
+        "spotify": 48,
+        "apple": 20,
+        "amazon": 16,
+        "youtube": 5,
+        "tencent": 20,
+        "pandora": 4.3,
+        "deezer": 6.9,
+        "tidal": 3,
+        "napster": 3.5,
+        "gaana": 3,
+        "netease": 6
+      }
+    },
+    {
+      "t": 2017,
+      "values": {
+        "spotify": 71,
+        "apple": 30,
+        "amazon": 22,
+        "youtube": 8,
+        "tencent": 28,
+        "pandora": 5.5,
+        "deezer": 7,
+        "tidal": 3.5,
+        "napster": 4,
+        "gaana": 5,
+        "netease": 10
+      }
+    },
+    {
+      "t": 2018,
+      "values": {
+        "spotify": 96,
+        "apple": 45,
+        "amazon": 32,
+        "youtube": 15,
+        "tencent": 35,
+        "pandora": 6.2,
+        "deezer": 7,
+        "tidal": 4,
+        "napster": 4.5,
+        "gaana": 8,
+        "netease": 15
+      }
+    },
+    {
+      "t": 2019,
+      "values": {
+        "spotify": 124,
+        "apple": 60,
+        "amazon": 55,
+        "youtube": 20,
+        "tencent": 40,
+        "pandora": 6.3,
+        "deezer": 7,
+        "tidal": 4.5,
+        "napster": 5,
+        "gaana": 12,
+        "netease": 20
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "spotify": 155,
+        "apple": 72,
+        "amazon": 68,
+        "youtube": 30,
+        "tencent": 52,
+        "pandora": 6.3,
+        "deezer": 7,
+        "tidal": 5,
+        "napster": 5,
+        "gaana": 20,
+        "netease": 30
+      }
+    },
+    {
+      "t": 2021,
+      "values": {
+        "spotify": 180,
+        "apple": 78,
+        "amazon": 82,
+        "youtube": 50,
+        "tencent": 66,
+        "pandora": 6.3,
+        "deezer": 9.6,
+        "tidal": 5.2,
+        "napster": 5,
+        "gaana": 25,
+        "netease": 35
+      }
+    },
+    {
+      "t": 2022,
+      "values": {
+        "spotify": 205,
+        "apple": 88,
+        "amazon": 92,
+        "youtube": 80,
+        "tencent": 88,
+        "pandora": 6.1,
+        "deezer": 9.4,
+        "tidal": 5.5,
+        "napster": 4.8,
+        "gaana": 30,
+        "netease": 40
+      }
+    },
+    {
+      "t": 2023,
+      "values": {
+        "spotify": 236,
+        "apple": 93,
+        "amazon": 100,
+        "youtube": 100,
+        "tencent": 106,
+        "pandora": 6,
+        "deezer": 10.5,
+        "tidal": 5.8,
+        "napster": 4.5,
+        "gaana": 32,
+        "netease": 44
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "spotify": 263,
+        "apple": 97,
+        "amazon": 108,
+        "youtube": 115,
+        "tencent": 117,
+        "pandora": 5.8,
+        "deezer": 11.7,
+        "tidal": 6,
+        "napster": 4.2,
+        "gaana": 34,
+        "netease": 48
+      }
+    },
+    {
+      "t": 2025,
+      "values": {
+        "spotify": 290,
+        "apple": 105,
+        "amazon": 116,
+        "youtube": 130,
+        "tencent": 130,
+        "pandora": 5.5,
+        "deezer": 12.5,
+        "tidal": 6.2,
+        "napster": 4,
+        "gaana": 35,
+        "netease": 52
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 2011.5,
+      "title": "Spotify enters the US",
+      "text": "Spotify’s American launch turns a European streaming story into a global one."
+    },
+    {
+      "t": 2015.5,
+      "title": "Apple Music launches",
+      "text": "Apple converts iTunes-era distribution into tens of millions of paid streaming subscribers."
+    },
+    {
+      "t": 2020.8,
+      "title": "Lockdown streaming boom",
+      "text": "Streaming subscriptions keep climbing while touring collapses, cementing the format’s industry role."
+    },
+    {
+      "t": 2024,
+      "title": "Spotify passes 250M paid",
+      "text": "Spotify’s paid base clears a quarter-billion subscribers, keeping it comfortably ahead of the field."
+    }
+  ]
+}

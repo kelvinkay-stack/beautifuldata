@@ -1,0 +1,625 @@
+{
+  "id": "nba-scoring",
+  "title": "NBA Career Scoring Leaders",
+  "shortTitle": "NBA Scoring",
+  "category": "sports",
+  "unit": {
+    "label": "Regular-season career points",
+    "format": "plain",
+    "prefix": "",
+    "suffix": " pts",
+    "decimals": 0
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The NBA scoring record is a relay race between eras: Mikan to Pettit, Wilt to Kareem, then a four-decade climb toward LeBron. Because this is cumulative, the drama comes from active players chasing ghosts.",
+  "source": {
+    "name": "Basketball-Reference NBA career leaders",
+    "url": "https://www.basketball-reference.com/leaders/pts_career.html",
+    "note": "Season-end regular-season point totals, reconstructed annually for selected all-time leaders."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "mikan",
+      "label": "George Mikan",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "pettit",
+      "label": "Bob Pettit",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "baylor",
+      "label": "Elgin Baylor",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "west",
+      "label": "Jerry West",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "wilt",
+      "label": "Wilt Chamberlain",
+      "color": "#34D399"
+    },
+    {
+      "id": "oscar",
+      "label": "Oscar Robertson",
+      "color": "#A3E635"
+    },
+    {
+      "id": "havlicek",
+      "label": "John Havlicek",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "kareem",
+      "label": "Kareem Abdul-Jabbar",
+      "color": "#FFB020"
+    },
+    {
+      "id": "malone",
+      "label": "Karl Malone",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "jordan",
+      "label": "Michael Jordan",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "kobe",
+      "label": "Kobe Bryant",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "dirk",
+      "label": "Dirk Nowitzki",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "lebron",
+      "label": "LeBron James",
+      "color": "#E2B93B"
+    },
+    {
+      "id": "durant",
+      "label": "Kevin Durant",
+      "color": "#B388FF"
+    },
+    {
+      "id": "carmelo",
+      "label": "Carmelo Anthony",
+      "color": "#8B5CF6"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 1950,
+      "values": {
+        "mikan": 1865,
+        "pettit": 0,
+        "baylor": 0,
+        "west": 0,
+        "wilt": 0,
+        "oscar": 0,
+        "havlicek": 0,
+        "kareem": 0,
+        "malone": 0,
+        "jordan": 0,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1954,
+      "values": {
+        "mikan": 10156,
+        "pettit": 0,
+        "baylor": 0,
+        "west": 0,
+        "wilt": 0,
+        "oscar": 0,
+        "havlicek": 0,
+        "kareem": 0,
+        "malone": 0,
+        "jordan": 0,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1958,
+      "values": {
+        "mikan": 10156,
+        "pettit": 7320,
+        "baylor": 0,
+        "west": 0,
+        "wilt": 0,
+        "oscar": 0,
+        "havlicek": 0,
+        "kareem": 0,
+        "malone": 0,
+        "jordan": 0,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1962,
+      "values": {
+        "mikan": 10156,
+        "pettit": 16000,
+        "baylor": 8733,
+        "west": 0,
+        "wilt": 7076,
+        "oscar": 4500,
+        "havlicek": 0,
+        "kareem": 0,
+        "malone": 0,
+        "jordan": 0,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1966,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 17300,
+        "west": 10000,
+        "wilt": 20000,
+        "oscar": 15000,
+        "havlicek": 5000,
+        "kareem": 0,
+        "malone": 0,
+        "jordan": 0,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1970,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 19000,
+        "wilt": 30000,
+        "oscar": 23000,
+        "havlicek": 12000,
+        "kareem": 2361,
+        "malone": 0,
+        "jordan": 0,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1974,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 20000,
+        "kareem": 11000,
+        "malone": 0,
+        "jordan": 0,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1978,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 20000,
+        "malone": 0,
+        "jordan": 0,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1982,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 30000,
+        "malone": 0,
+        "jordan": 0,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1986,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 36500,
+        "malone": 0,
+        "jordan": 408,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1990,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 7400,
+        "jordan": 8900,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1994,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 17500,
+        "jordan": 21000,
+        "kobe": 0,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 1998,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 27000,
+        "jordan": 29277,
+        "kobe": 1220,
+        "dirk": 0,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 2002,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 34000,
+        "jordan": 32292,
+        "kobe": 10000,
+        "dirk": 5900,
+        "lebron": 0,
+        "durant": 0,
+        "carmelo": 0
+      }
+    },
+    {
+      "t": 2006,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 18000,
+        "dirk": 15000,
+        "lebron": 8400,
+        "durant": 900,
+        "carmelo": 8000
+      }
+    },
+    {
+      "t": 2010,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 25000,
+        "dirk": 21000,
+        "lebron": 20000,
+        "durant": 12000,
+        "carmelo": 19000
+      }
+    },
+    {
+      "t": 2014,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 31700,
+        "dirk": 26500,
+        "lebron": 27000,
+        "durant": 19000,
+        "carmelo": 25000
+      }
+    },
+    {
+      "t": 2016,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 33643,
+        "dirk": 29491,
+        "lebron": 29272,
+        "durant": 21000,
+        "carmelo": 26600
+      }
+    },
+    {
+      "t": 2018,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 33643,
+        "dirk": 31187,
+        "lebron": 31038,
+        "durant": 22940,
+        "carmelo": 28000
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 33643,
+        "dirk": 31560,
+        "lebron": 34087,
+        "durant": 23883,
+        "carmelo": 28289
+      }
+    },
+    {
+      "t": 2022,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 33643,
+        "dirk": 31560,
+        "lebron": 37062,
+        "durant": 25526,
+        "carmelo": 28289
+      }
+    },
+    {
+      "t": 2023,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 33643,
+        "dirk": 31560,
+        "lebron": 38652,
+        "durant": 26892,
+        "carmelo": 28289
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 33643,
+        "dirk": 31560,
+        "lebron": 40474,
+        "durant": 28924,
+        "carmelo": 28289
+      }
+    },
+    {
+      "t": 2025,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 33643,
+        "dirk": 31560,
+        "lebron": 42184,
+        "durant": 30571,
+        "carmelo": 28289
+      }
+    },
+    {
+      "t": 2026,
+      "values": {
+        "mikan": 10156,
+        "pettit": 20880,
+        "baylor": 23149,
+        "west": 25192,
+        "wilt": 31419,
+        "oscar": 26710,
+        "havlicek": 26395,
+        "kareem": 38387,
+        "malone": 36928,
+        "jordan": 32292,
+        "kobe": 33643,
+        "dirk": 31560,
+        "lebron": 43500,
+        "durant": 31800,
+        "carmelo": 28289
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 1966,
+      "title": "Wilt becomes the mountain",
+      "text": "Chamberlain’s scoring pace creates a record that defines the league’s statistical imagination."
+    },
+    {
+      "t": 1984.3,
+      "title": "Kareem passes Wilt",
+      "text": "Kareem Abdul-Jabbar moves past Wilt Chamberlain and begins a record reign that lasts almost 39 years."
+    },
+    {
+      "t": 2014.9,
+      "title": "Kobe passes Jordan",
+      "text": "Kobe Bryant overtakes Michael Jordan for third all time, with Kareem and Malone still far ahead."
+    },
+    {
+      "t": 2023.1,
+      "title": "LeBron passes Kareem",
+      "text": "LeBron James becomes the NBA’s career scoring leader in February 2023."
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "id": "nobel-by-country",
+  "title": "Nobel Prizes by Country",
+  "shortTitle": "Nobel Counts",
+  "category": "science",
+  "unit": {
+    "label": "Cumulative laureates",
+    "format": "plain",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 0
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The Nobel map is a slow-motion story of research infrastructure, migration and language. Germany and France own the early board, then the United States turns universities and laboratories into a prize engine.",
+  "source": {
+    "name": "Nobel Prize laureate facts and country affiliations",
+    "url": "https://www.nobelprize.org/prizes/facts/nobel-prize-facts/",
+    "note": "Cumulative country attribution simplified by commonly cited birth/citizenship associations; multi-country laureates are not fractionally split."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "usa",
+      "label": "United States",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "uk",
+      "label": "United Kingdom",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "germany",
+      "label": "Germany",
+      "color": "#FDE68A"
+    },
+    {
+      "id": "france",
+      "label": "France",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "sweden",
+      "label": "Sweden",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "switzerland",
+      "label": "Switzerland",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "russia",
+      "label": "Russia / USSR",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "japan",
+      "label": "Japan",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "canada",
+      "label": "Canada",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "netherlands",
+      "label": "Netherlands",
+      "color": "#FFB020"
+    },
+    {
+      "id": "italy",
+      "label": "Italy",
+      "color": "#34D399"
+    },
+    {
+      "id": "austria",
+      "label": "Austria",
+      "color": "#B388FF"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 1901,
+      "values": {
+        "usa": 0,
+        "uk": 1,
+        "germany": 4,
+        "france": 3,
+        "sweden": 1,
+        "switzerland": 0,
+        "russia": 1,
+        "japan": 0,
+        "canada": 0,
+        "netherlands": 1,
+        "italy": 1,
+        "austria": 1
+      }
+    },
+    {
+      "t": 1910,
+      "values": {
+        "usa": 3,
+        "uk": 8,
+        "germany": 14,
+        "france": 10,
+        "sweden": 5,
+        "switzerland": 3,
+        "russia": 3,
+        "japan": 0,
+        "canada": 1,
+        "netherlands": 4,
+        "italy": 4,
+        "austria": 3
+      }
+    },
+    {
+      "t": 1920,
+      "values": {
+        "usa": 8,
+        "uk": 16,
+        "germany": 25,
+        "france": 17,
+        "sweden": 8,
+        "switzerland": 7,
+        "russia": 5,
+        "japan": 0,
+        "canada": 2,
+        "netherlands": 7,
+        "italy": 7,
+        "austria": 6
+      }
+    },
+    {
+      "t": 1930,
+      "values": {
+        "usa": 20,
+        "uk": 27,
+        "germany": 41,
+        "france": 25,
+        "sweden": 13,
+        "switzerland": 11,
+        "russia": 7,
+        "japan": 0,
+        "canada": 4,
+        "netherlands": 10,
+        "italy": 10,
+        "austria": 9
+      }
+    },
+    {
+      "t": 1940,
+      "values": {
+        "usa": 35,
+        "uk": 38,
+        "germany": 52,
+        "france": 31,
+        "sweden": 17,
+        "switzerland": 14,
+        "russia": 10,
+        "japan": 0,
+        "canada": 5,
+        "netherlands": 13,
+        "italy": 12,
+        "austria": 12
+      }
+    },
+    {
+      "t": 1950,
+      "values": {
+        "usa": 55,
+        "uk": 52,
+        "germany": 62,
+        "france": 39,
+        "sweden": 21,
+        "switzerland": 18,
+        "russia": 13,
+        "japan": 1,
+        "canada": 7,
+        "netherlands": 15,
+        "italy": 14,
+        "austria": 14
+      }
+    },
+    {
+      "t": 1960,
+      "values": {
+        "usa": 95,
+        "uk": 70,
+        "germany": 73,
+        "france": 47,
+        "sweden": 24,
+        "switzerland": 21,
+        "russia": 20,
+        "japan": 3,
+        "canada": 11,
+        "netherlands": 17,
+        "italy": 16,
+        "austria": 15
+      }
+    },
+    {
+      "t": 1970,
+      "values": {
+        "usa": 150,
+        "uk": 84,
+        "germany": 82,
+        "france": 52,
+        "sweden": 27,
+        "switzerland": 24,
+        "russia": 26,
+        "japan": 5,
+        "canada": 14,
+        "netherlands": 19,
+        "italy": 17,
+        "austria": 17
+      }
+    },
+    {
+      "t": 1980,
+      "values": {
+        "usa": 205,
+        "uk": 95,
+        "germany": 90,
+        "france": 57,
+        "sweden": 29,
+        "switzerland": 26,
+        "russia": 30,
+        "japan": 7,
+        "canada": 17,
+        "netherlands": 20,
+        "italy": 18,
+        "austria": 18
+      }
+    },
+    {
+      "t": 1990,
+      "values": {
+        "usa": 260,
+        "uk": 105,
+        "germany": 98,
+        "france": 63,
+        "sweden": 31,
+        "switzerland": 28,
+        "russia": 35,
+        "japan": 9,
+        "canada": 20,
+        "netherlands": 21,
+        "italy": 19,
+        "austria": 19
+      }
+    },
+    {
+      "t": 2000,
+      "values": {
+        "usa": 320,
+        "uk": 116,
+        "germany": 104,
+        "france": 68,
+        "sweden": 32,
+        "switzerland": 30,
+        "russia": 39,
+        "japan": 12,
+        "canada": 23,
+        "netherlands": 22,
+        "italy": 20,
+        "austria": 20
+      }
+    },
+    {
+      "t": 2010,
+      "values": {
+        "usa": 370,
+        "uk": 126,
+        "germany": 108,
+        "france": 72,
+        "sweden": 33,
+        "switzerland": 31,
+        "russia": 42,
+        "japan": 18,
+        "canada": 26,
+        "netherlands": 24,
+        "italy": 21,
+        "austria": 21
+      }
+    },
+    {
+      "t": 2015,
+      "values": {
+        "usa": 390,
+        "uk": 132,
+        "germany": 111,
+        "france": 75,
+        "sweden": 34,
+        "switzerland": 32,
+        "russia": 44,
+        "japan": 24,
+        "canada": 28,
+        "netherlands": 25,
+        "italy": 21,
+        "austria": 22
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "usa": 410,
+        "uk": 138,
+        "germany": 114,
+        "france": 78,
+        "sweden": 34,
+        "switzerland": 33,
+        "russia": 46,
+        "japan": 28,
+        "canada": 30,
+        "netherlands": 26,
+        "italy": 21,
+        "austria": 22
+      }
+    },
+    {
+      "t": 2025,
+      "values": {
+        "usa": 430,
+        "uk": 145,
+        "germany": 118,
+        "france": 81,
+        "sweden": 35,
+        "switzerland": 34,
+        "russia": 48,
+        "japan": 31,
+        "canada": 32,
+        "netherlands": 27,
+        "italy": 22,
+        "austria": 23
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 1933,
+      "title": "Brain drain begins",
+      "text": "European upheaval sends scientists and writers abroad, reshaping future prize geography."
+    },
+    {
+      "t": 1960,
+      "title": "US lead becomes structural",
+      "text": "Postwar funding, universities and immigration make the United States the dominant Nobel country."
+    },
+    {
+      "t": 2008,
+      "title": "Japan accelerates",
+      "text": "A run of physics and chemistry prizes pushes Japan into the modern top group."
+    },
+    {
+      "t": 2020,
+      "title": "Global science broadens",
+      "text": "The top remains concentrated, but laureates increasingly work across borders and institutions."
+    }
+  ]
+}

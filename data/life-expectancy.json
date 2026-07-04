@@ -1,0 +1,403 @@
+{
+  "id": "life-expectancy",
+  "title": "Global Life Expectancy Leaders",
+  "shortTitle": "Life Expectancy",
+  "category": "science",
+  "unit": {
+    "label": "Life expectancy at birth",
+    "format": "plain",
+    "prefix": "",
+    "suffix": " yrs",
+    "decimals": 1
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Life expectancy is a ranking where every overtake is also a public-health story. The top shifts from early modern small states to Japan, Hong Kong and Europe’s longest-lived places as infant mortality collapses and chronic disease becomes the frontier.",
+  "source": {
+    "name": "World Bank, UN WPP and Our World in Data",
+    "url": "https://ourworldindata.org/life-expectancy",
+    "note": "Selected long-lived countries/territories, rounded from international life-expectancy series. Microstate values are included when historically prominent."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "norway",
+      "label": "Norway",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "sweden",
+      "label": "Sweden",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "iceland",
+      "label": "Iceland",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "switzerland",
+      "label": "Switzerland",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "japan",
+      "label": "Japan",
+      "color": "#34D399"
+    },
+    {
+      "id": "hongkong",
+      "label": "Hong Kong",
+      "color": "#A3E635"
+    },
+    {
+      "id": "spain",
+      "label": "Spain",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "italy",
+      "label": "Italy",
+      "color": "#FFB020"
+    },
+    {
+      "id": "australia",
+      "label": "Australia",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "singapore",
+      "label": "Singapore",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "france",
+      "label": "France",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "canada",
+      "label": "Canada",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "usa",
+      "label": "United States",
+      "color": "#E879F9"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 1900,
+      "values": {
+        "norway": 52,
+        "sweden": 55,
+        "iceland": 48,
+        "switzerland": 49,
+        "japan": 44,
+        "hongkong": 39,
+        "spain": 35,
+        "italy": 43,
+        "australia": 51,
+        "singapore": 34,
+        "france": 46,
+        "canada": 50,
+        "usa": 47
+      }
+    },
+    {
+      "t": 1910,
+      "values": {
+        "norway": 57,
+        "sweden": 58,
+        "iceland": 53,
+        "switzerland": 54,
+        "japan": 44,
+        "hongkong": 42,
+        "spain": 42,
+        "italy": 47,
+        "australia": 55,
+        "singapore": 39,
+        "france": 50,
+        "canada": 53,
+        "usa": 51
+      }
+    },
+    {
+      "t": 1920,
+      "values": {
+        "norway": 59,
+        "sweden": 60,
+        "iceland": 57,
+        "switzerland": 58,
+        "japan": 43,
+        "hongkong": 45,
+        "spain": 41,
+        "italy": 49,
+        "australia": 59,
+        "singapore": 43,
+        "france": 52,
+        "canada": 56,
+        "usa": 54
+      }
+    },
+    {
+      "t": 1930,
+      "values": {
+        "norway": 64,
+        "sweden": 63,
+        "iceland": 61,
+        "switzerland": 62,
+        "japan": 46,
+        "hongkong": 50,
+        "spain": 50,
+        "italy": 54,
+        "australia": 63,
+        "singapore": 49,
+        "france": 56,
+        "canada": 60,
+        "usa": 59
+      }
+    },
+    {
+      "t": 1940,
+      "values": {
+        "norway": 66,
+        "sweden": 66,
+        "iceland": 65,
+        "switzerland": 65,
+        "japan": 50,
+        "hongkong": 55,
+        "spain": 52,
+        "italy": 56,
+        "australia": 65,
+        "singapore": 53,
+        "france": 58,
+        "canada": 63,
+        "usa": 63
+      }
+    },
+    {
+      "t": 1950,
+      "values": {
+        "norway": 72,
+        "sweden": 71,
+        "iceland": 72,
+        "switzerland": 69,
+        "japan": 60,
+        "hongkong": 61,
+        "spain": 62,
+        "italy": 66,
+        "australia": 69,
+        "singapore": 60,
+        "france": 66,
+        "canada": 68,
+        "usa": 68
+      }
+    },
+    {
+      "t": 1960,
+      "values": {
+        "norway": 73.5,
+        "sweden": 73.1,
+        "iceland": 74,
+        "switzerland": 71.5,
+        "japan": 68,
+        "hongkong": 67,
+        "spain": 69,
+        "italy": 69.5,
+        "australia": 70.9,
+        "singapore": 65,
+        "france": 70,
+        "canada": 71,
+        "usa": 69.7
+      }
+    },
+    {
+      "t": 1970,
+      "values": {
+        "norway": 74.2,
+        "sweden": 74.7,
+        "iceland": 75.5,
+        "switzerland": 73.8,
+        "japan": 72,
+        "hongkong": 72.5,
+        "spain": 72,
+        "italy": 72,
+        "australia": 70.8,
+        "singapore": 68,
+        "france": 72,
+        "canada": 72.8,
+        "usa": 70.8
+      }
+    },
+    {
+      "t": 1980,
+      "values": {
+        "norway": 75.8,
+        "sweden": 75.8,
+        "iceland": 77,
+        "switzerland": 76.2,
+        "japan": 76,
+        "hongkong": 76.8,
+        "spain": 75.4,
+        "italy": 75.5,
+        "australia": 74.6,
+        "singapore": 72,
+        "france": 74.3,
+        "canada": 75.1,
+        "usa": 73.7
+      }
+    },
+    {
+      "t": 1990,
+      "values": {
+        "norway": 77.1,
+        "sweden": 77.5,
+        "iceland": 78.2,
+        "switzerland": 77.5,
+        "japan": 78.8,
+        "hongkong": 78.5,
+        "spain": 77,
+        "italy": 77,
+        "australia": 77,
+        "singapore": 75,
+        "france": 77,
+        "canada": 77.4,
+        "usa": 75.2
+      }
+    },
+    {
+      "t": 2000,
+      "values": {
+        "norway": 78.7,
+        "sweden": 79.6,
+        "iceland": 80.3,
+        "switzerland": 79.7,
+        "japan": 81.1,
+        "hongkong": 81,
+        "spain": 79.3,
+        "italy": 79.8,
+        "australia": 79.2,
+        "singapore": 78,
+        "france": 79,
+        "canada": 79.2,
+        "usa": 76.8
+      }
+    },
+    {
+      "t": 2010,
+      "values": {
+        "norway": 81,
+        "sweden": 81.5,
+        "iceland": 81.9,
+        "switzerland": 82.2,
+        "japan": 83,
+        "hongkong": 83,
+        "spain": 82,
+        "italy": 82,
+        "australia": 81.7,
+        "singapore": 82,
+        "france": 81.6,
+        "canada": 81.2,
+        "usa": 78.5
+      }
+    },
+    {
+      "t": 2015,
+      "values": {
+        "norway": 82.1,
+        "sweden": 82.2,
+        "iceland": 82.9,
+        "switzerland": 83.2,
+        "japan": 83.8,
+        "hongkong": 84.3,
+        "spain": 83,
+        "italy": 83.5,
+        "australia": 82.4,
+        "singapore": 83.6,
+        "france": 82.7,
+        "canada": 82,
+        "usa": 78.8
+      }
+    },
+    {
+      "t": 2019,
+      "values": {
+        "norway": 83,
+        "sweden": 83.1,
+        "iceland": 83.2,
+        "switzerland": 84,
+        "japan": 84.4,
+        "hongkong": 85.2,
+        "spain": 83.8,
+        "italy": 83.6,
+        "australia": 83.1,
+        "singapore": 84.6,
+        "france": 83,
+        "canada": 82.6,
+        "usa": 78.9
+      }
+    },
+    {
+      "t": 2021,
+      "values": {
+        "norway": 83.2,
+        "sweden": 83,
+        "iceland": 83.5,
+        "switzerland": 83.9,
+        "japan": 84.8,
+        "hongkong": 85.5,
+        "spain": 83.1,
+        "italy": 82.9,
+        "australia": 83.2,
+        "singapore": 83.5,
+        "france": 82.5,
+        "canada": 82.7,
+        "usa": 76.4
+      }
+    },
+    {
+      "t": 2023,
+      "values": {
+        "norway": 83.5,
+        "sweden": 83.2,
+        "iceland": 83.8,
+        "switzerland": 84.3,
+        "japan": 84.6,
+        "hongkong": 85.3,
+        "spain": 83.8,
+        "italy": 83.5,
+        "australia": 83.7,
+        "singapore": 84.1,
+        "france": 83.1,
+        "canada": 83,
+        "usa": 77.5
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 1918,
+      "title": "Pandemic shock",
+      "text": "The 1918 influenza pandemic interrupts a century of otherwise steady survival gains."
+    },
+    {
+      "t": 1960,
+      "title": "Japan catches up fast",
+      "text": "Postwar public health and income growth pull Japan from mid-pack toward the top."
+    },
+    {
+      "t": 1985,
+      "title": "East Asia moves ahead",
+      "text": "Japan and Hong Kong become the new longevity benchmark for rich countries."
+    },
+    {
+      "t": 2020.5,
+      "title": "COVID interrupts gains",
+      "text": "The pandemic knocks several countries backward, most sharply where older populations and outbreaks collide."
+    }
+  ]
+}

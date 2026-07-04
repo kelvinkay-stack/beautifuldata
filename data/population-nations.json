@@ -1,0 +1,66 @@
+{
+  "id": "population-nations",
+  "title": "Most Populous Countries",
+  "shortTitle": "World Population",
+  "category": "world",
+  "unit": {
+    "label": "Population",
+    "format": "si",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 2,
+    "multiplier": 1000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "For over 70 years China stood as the world's most populous nation, but decades of the one-child policy and India's steady growth set up the great crossover. In 2023 India overtook China to become the most populous country on Earth, while Nigeria climbs relentlessly toward the top tier.",
+  "source": {
+    "name": "UN World Population Prospects 2024",
+    "url": "https://population.un.org/wpp/",
+    "note": "Mid-year population estimates; Russia used in place of the USSR for continuity."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "china", "label": "China", "color": "#FF5C4D" },
+    { "id": "india", "label": "India", "color": "#FF8C42" },
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "indonesia", "label": "Indonesia", "color": "#23C8A8" },
+    { "id": "pakistan", "label": "Pakistan", "color": "#34D399" },
+    { "id": "nigeria", "label": "Nigeria", "color": "#A3E635" },
+    { "id": "brazil", "label": "Brazil", "color": "#FFD84D" },
+    { "id": "bangladesh", "label": "Bangladesh", "color": "#2FB4FF" },
+    { "id": "russia", "label": "Russia", "color": "#94A3B8" },
+    { "id": "japan", "label": "Japan", "color": "#F43F5E" },
+    { "id": "mexico", "label": "Mexico", "color": "#8B5CF6" },
+    { "id": "ethiopia", "label": "Ethiopia", "color": "#67E8F9" },
+    { "id": "philippines", "label": "Philippines", "color": "#E879F9" },
+    { "id": "germany", "label": "Germany", "color": "#C4B5A0" }
+  ],
+  "keyframes": [
+    { "t": 1950, "values": { "china": 544, "india": 357, "usa": 159, "russia": 103, "japan": 84, "indonesia": 70, "germany": 70, "brazil": 54, "pakistan": 37, "bangladesh": 38, "nigeria": 38, "mexico": 28, "philippines": 18, "ethiopia": 18 } },
+    { "t": 1955, "values": { "china": 601, "india": 390, "usa": 172, "russia": 111, "japan": 89, "indonesia": 78, "germany": 71, "brazil": 62, "pakistan": 41, "bangladesh": 44, "nigeria": 42, "mexico": 32, "philippines": 21, "ethiopia": 20 } },
+    { "t": 1960, "values": { "china": 654, "india": 445, "usa": 187, "russia": 120, "japan": 93, "indonesia": 88, "germany": 73, "brazil": 72, "pakistan": 45, "bangladesh": 49, "nigeria": 45, "mexico": 37, "philippines": 26, "ethiopia": 22 } },
+    { "t": 1965, "values": { "china": 715, "india": 502, "usa": 199, "russia": 128, "japan": 99, "indonesia": 101, "germany": 76, "brazil": 84, "pakistan": 51, "bangladesh": 56, "nigeria": 51, "mexico": 44, "philippines": 31, "ethiopia": 25 } },
+    { "t": 1970, "values": { "china": 822, "india": 555, "usa": 209, "russia": 130, "japan": 105, "indonesia": 115, "germany": 78, "brazil": 96, "pakistan": 59, "bangladesh": 65, "nigeria": 56, "mexico": 51, "philippines": 36, "ethiopia": 29 } },
+    { "t": 1975, "values": { "china": 916, "india": 616, "usa": 216, "russia": 134, "japan": 112, "indonesia": 130, "germany": 79, "brazil": 108, "pakistan": 66, "bangladesh": 71, "nigeria": 63, "mexico": 60, "philippines": 42, "ethiopia": 33 } },
+    { "t": 1980, "values": { "china": 982, "india": 696, "usa": 227, "russia": 139, "japan": 117, "indonesia": 148, "germany": 78, "brazil": 122, "pakistan": 78, "bangladesh": 81, "nigeria": 73, "mexico": 68, "philippines": 48, "ethiopia": 36 } },
+    { "t": 1985, "values": { "china": 1051, "india": 784, "usa": 238, "russia": 143, "japan": 121, "indonesia": 165, "germany": 78, "brazil": 136, "pakistan": 92, "bangladesh": 92, "nigeria": 85, "mexico": 76, "philippines": 55, "ethiopia": 41 } },
+    { "t": 1990, "values": { "china": 1153, "india": 873, "usa": 250, "russia": 148, "japan": 124, "indonesia": 182, "germany": 79, "brazil": 150, "pakistan": 108, "bangladesh": 103, "nigeria": 95, "mexico": 84, "philippines": 62, "ethiopia": 48 } },
+    { "t": 1995, "values": { "china": 1226, "india": 964, "usa": 266, "russia": 148, "japan": 125, "indonesia": 199, "germany": 82, "brazil": 163, "pakistan": 124, "bangladesh": 116, "nigeria": 108, "mexico": 92, "philippines": 70, "ethiopia": 57 } },
+    { "t": 2000, "values": { "china": 1290, "india": 1059, "usa": 282, "russia": 147, "japan": 126, "indonesia": 214, "germany": 82, "brazil": 175, "pakistan": 142, "bangladesh": 129, "nigeria": 123, "mexico": 98, "philippines": 78, "ethiopia": 67 } },
+    { "t": 2005, "values": { "china": 1330, "india": 1147, "usa": 295, "russia": 144, "japan": 128, "indonesia": 229, "germany": 82, "brazil": 186, "pakistan": 164, "bangladesh": 141, "nigeria": 139, "mexico": 106, "philippines": 86, "ethiopia": 78 } },
+    { "t": 2010, "values": { "china": 1368, "india": 1234, "usa": 309, "russia": 143, "japan": 128, "indonesia": 244, "germany": 81, "brazil": 196, "pakistan": 184, "bangladesh": 149, "nigeria": 160, "mexico": 114, "philippines": 94, "ethiopia": 90 } },
+    { "t": 2015, "values": { "china": 1393, "india": 1310, "usa": 320, "russia": 144, "japan": 127, "indonesia": 259, "germany": 82, "brazil": 205, "pakistan": 210, "bangladesh": 157, "nigeria": 183, "mexico": 122, "philippines": 102, "ethiopia": 103 } },
+    { "t": 2020, "values": { "china": 1411, "india": 1396, "usa": 331, "russia": 145, "japan": 125, "indonesia": 271, "germany": 83, "brazil": 213, "pakistan": 235, "bangladesh": 165, "nigeria": 208, "mexico": 126, "philippines": 112, "ethiopia": 118 } },
+    { "t": 2023, "values": { "china": 1410, "india": 1428, "usa": 335, "russia": 144, "japan": 123, "indonesia": 278, "germany": 83, "brazil": 216, "pakistan": 247, "bangladesh": 173, "nigeria": 224, "mexico": 128, "philippines": 118, "ethiopia": 128 } },
+    { "t": 2025, "values": { "china": 1408, "india": 1446, "usa": 337, "russia": 144, "japan": 123, "indonesia": 284, "germany": 84, "brazil": 213, "pakistan": 255, "bangladesh": 175, "nigeria": 233, "mexico": 131, "philippines": 116, "ethiopia": 135 } }
+  ],
+  "milestones": [
+    { "t": 1979, "title": "China's one-child policy", "text": "China begins its one-child policy, slowing the growth of the world's most populous nation for decades." },
+    { "t": 2000, "title": "India crosses one billion", "text": "India's population passes one billion, closing in on China's lead." },
+    { "t": 2010, "title": "Nigeria's climb", "text": "Nigeria surpasses Japan and Russia, cementing its place as Africa's demographic giant." },
+    { "t": 2023, "title": "India overtakes China", "text": "India becomes the world's most populous country at roughly 1.43 billion people, ending China's decades-long reign." }
+  ]
+}

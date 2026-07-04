@@ -1,0 +1,62 @@
+{
+  "id": "programming-languages",
+  "title": "Programming Language Popularity",
+  "shortTitle": "Prog. Languages",
+  "category": "wildcard",
+  "unit": { "label": "Popularity index share", "format": "percent", "prefix": "", "suffix": "%", "decimals": 1 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Three decades of what programmers actually write, tracked as each language's share of a popularity index. Java storms the enterprise 2000s, JavaScript rides the web, and Python climbs from a scripting curiosity to the language of data and AI — finally taking the top spot. A snapshot race, so shares rise and fall as fashions turn over.",
+  "source": {
+    "name": "TIOBE Index & Stack Overflow surveys",
+    "url": "https://www.tiobe.com/tiobe-index/",
+    "note": "Illustrative: blended from TIOBE ratings and developer-survey data, normalized to a share of the tracked top languages. Indices measure buzz and search share, not lines of code."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "c", "label": "C", "color": "#94A3B8" },
+    { "id": "cpp", "label": "C++", "color": "#6E7BFF" },
+    { "id": "java", "label": "Java", "color": "#FF8C42" },
+    { "id": "python", "label": "Python", "color": "#4C8DFF" },
+    { "id": "javascript", "label": "JavaScript", "color": "#FFD84D" },
+    { "id": "csharp", "label": "C#", "color": "#8B5CF6" },
+    { "id": "php", "label": "PHP", "color": "#B388FF" },
+    { "id": "vb", "label": "Visual Basic", "color": "#67E8F9" },
+    { "id": "perl", "label": "Perl", "color": "#E879F9" },
+    { "id": "sql", "label": "SQL", "color": "#34D399" },
+    { "id": "ruby", "label": "Ruby", "color": "#F43F5E" },
+    { "id": "go", "label": "Go", "color": "#2FB4FF" },
+    { "id": "swift", "label": "Swift", "color": "#FF5C4D" },
+    { "id": "objc", "label": "Objective-C", "color": "#A3E635" },
+    { "id": "typescript", "label": "TypeScript", "color": "#2563EB" },
+    { "id": "rust", "label": "Rust", "color": "#C4B5A0" },
+    { "id": "delphi", "label": "Delphi / Pascal", "color": "#86EFAC" }
+  ],
+  "keyframes": [
+    { "t": 1996, "values": { "c": 22, "cpp": 18, "vb": 12, "perl": 8, "delphi": 7, "java": 4, "sql": 6 } },
+    { "t": 1998, "values": { "c": 20, "cpp": 17, "java": 12, "vb": 12, "perl": 10, "delphi": 7, "sql": 6, "php": 2 } },
+    { "t": 2000, "values": { "c": 17, "cpp": 16, "java": 18, "vb": 11, "perl": 10, "php": 5, "sql": 6, "delphi": 6 } },
+    { "t": 2002, "values": { "c": 16, "cpp": 15, "java": 22, "vb": 9, "perl": 9, "php": 8, "csharp": 3, "sql": 6, "python": 2 } },
+    { "t": 2004, "values": { "c": 16, "cpp": 14, "java": 20, "php": 11, "vb": 8, "perl": 8, "csharp": 6, "python": 3, "sql": 6 } },
+    { "t": 2006, "values": { "c": 16, "cpp": 12, "java": 20, "php": 10, "csharp": 8, "vb": 8, "perl": 6, "python": 4, "javascript": 3, "ruby": 3 } },
+    { "t": 2008, "values": { "c": 16, "cpp": 11, "java": 19, "php": 9, "csharp": 9, "vb": 7, "python": 5, "javascript": 4, "perl": 5, "ruby": 3, "objc": 2 } },
+    { "t": 2010, "values": { "c": 17, "cpp": 10, "java": 18, "csharp": 10, "php": 8, "python": 6, "javascript": 5, "objc": 4, "vb": 6, "perl": 4, "ruby": 3 } },
+    { "t": 2012, "values": { "c": 17, "cpp": 10, "java": 17, "csharp": 9, "objc": 8, "php": 7, "python": 7, "javascript": 6, "vb": 5, "perl": 3, "ruby": 3 } },
+    { "t": 2014, "values": { "c": 16, "java": 16, "cpp": 9, "csharp": 8, "python": 9, "javascript": 7, "php": 6, "objc": 7, "vb": 4, "sql": 4 } },
+    { "t": 2016, "values": { "java": 17, "c": 13, "cpp": 8, "python": 12, "csharp": 8, "javascript": 8, "php": 6, "vb": 4, "swift": 4, "objc": 3, "sql": 4 } },
+    { "t": 2018, "values": { "java": 15, "python": 15, "c": 12, "cpp": 8, "javascript": 9, "csharp": 7, "php": 5, "swift": 4, "go": 3, "sql": 4, "typescript": 2 } },
+    { "t": 2020, "values": { "python": 18, "java": 13, "c": 12, "cpp": 8, "javascript": 9, "csharp": 7, "php": 4, "sql": 4, "go": 3, "swift": 3, "typescript": 3 } },
+    { "t": 2022, "values": { "python": 20, "c": 12, "java": 11, "cpp": 9, "javascript": 9, "csharp": 6, "sql": 4, "php": 3, "go": 3, "typescript": 3, "rust": 2, "swift": 2 } },
+    { "t": 2024, "values": { "python": 23, "cpp": 10, "c": 9, "java": 9, "javascript": 8, "csharp": 6, "go": 4, "sql": 4, "typescript": 3, "rust": 3, "php": 2 } },
+    { "t": 2025, "values": { "python": 25, "cpp": 10, "c": 9, "java": 8, "javascript": 8, "csharp": 6, "go": 4, "sql": 4, "typescript": 4, "rust": 3, "php": 2 } }
+  ],
+  "milestones": [
+    { "t": 2001.0, "title": "Java takes the enterprise", "text": "\"Write once, run anywhere\" makes Java the default for business software, and it leads the popularity index for most of a decade." },
+    { "t": 2005.0, "title": "PHP and the LAMP web", "text": "The open-source web stack pushes PHP into the top tier as every startup ships a database-backed site." },
+    { "t": 2010.5, "title": "Objective-C rides the iPhone", "text": "The App Store gold rush briefly lifts Apple's Objective-C into the top ten before Swift replaces it." },
+    { "t": 2019.0, "title": "Python overtakes Java", "text": "Data science, machine learning and teaching all standardize on Python, and it passes Java to lead the index." },
+    { "t": 2024.0, "title": "Python and the AI era", "text": "With deep learning built on Python tooling, its share reaches highs no single language had held in the index's history." }
+  ]
+}

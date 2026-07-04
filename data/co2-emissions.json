@@ -1,0 +1,69 @@
+{
+  "id": "co2-emissions",
+  "title": "Annual CO₂ Emissions by Country",
+  "shortTitle": "CO2 Emissions",
+  "category": "world",
+  "unit": {
+    "label": "Annual CO₂ emissions",
+    "format": "si",
+    "prefix": "",
+    "suffix": "t",
+    "decimals": 1,
+    "multiplier": 1000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "For most of the 20th century the United States was the world's largest emitter of carbon dioxide, powering its industrial rise on coal and oil. But China's breakneck growth changed everything: in 2006 it overtook the US, and by the 2020s it emitted more than the US and Europe combined, with India rising fast behind.",
+  "source": {
+    "name": "Global Carbon Project / Our World in Data",
+    "url": "https://ourworldindata.org/co2-emissions",
+    "note": "Production-based (territorial) fossil CO₂ emissions in million tonnes; USSR shown as Russia."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "china", "label": "China", "color": "#FF5C4D" },
+    { "id": "russia", "label": "Russia / USSR", "color": "#94A3B8" },
+    { "id": "india", "label": "India", "color": "#FF8C42" },
+    { "id": "japan", "label": "Japan", "color": "#F43F5E" },
+    { "id": "germany", "label": "Germany", "color": "#C4B5A0" },
+    { "id": "iran", "label": "Iran", "color": "#34D399" },
+    { "id": "south-korea", "label": "South Korea", "color": "#E879F9" },
+    { "id": "saudi", "label": "Saudi Arabia", "color": "#A3E635" },
+    { "id": "indonesia", "label": "Indonesia", "color": "#23C8A8" },
+    { "id": "uk", "label": "United Kingdom", "color": "#2FB4FF" },
+    { "id": "canada", "label": "Canada", "color": "#FFD84D" }
+  ],
+  "keyframes": [
+    { "t": 1900, "values": { "usa": 663, "uk": 420, "germany": 280, "russia": 90, "canada": 18, "japan": 22, "india": 24 } },
+    { "t": 1910, "values": { "usa": 1080, "uk": 500, "germany": 380, "russia": 130, "canada": 32, "japan": 34, "india": 33 } },
+    { "t": 1920, "values": { "usa": 1550, "uk": 470, "germany": 360, "russia": 90, "canada": 42, "japan": 55, "india": 40 } },
+    { "t": 1930, "values": { "usa": 1580, "uk": 440, "germany": 420, "russia": 200, "canada": 48, "japan": 90, "india": 50 } },
+    { "t": 1940, "values": { "usa": 1900, "uk": 480, "germany": 540, "russia": 400, "canada": 60, "japan": 130, "india": 60 } },
+    { "t": 1950, "values": { "usa": 2500, "russia": 620, "uk": 540, "germany": 500, "japan": 110, "india": 82, "canada": 90, "iran": 4, "saudi": 2, "indonesia": 6, "south-korea": 2 } },
+    { "t": 1955, "values": { "usa": 2740, "russia": 830, "uk": 560, "germany": 640, "japan": 150, "india": 110, "canada": 110, "iran": 8, "saudi": 4, "indonesia": 8, "south-korea": 4 } },
+    { "t": 1960, "values": { "usa": 2890, "russia": 1290, "uk": 590, "germany": 730, "japan": 230, "india": 130, "canada": 130, "iran": 15, "saudi": 6, "indonesia": 12, "south-korea": 6 } },
+    { "t": 1965, "values": { "usa": 3390, "russia": 1610, "germany": 780, "uk": 620, "japan": 380, "india": 170, "canada": 170, "iran": 25, "saudi": 12, "indonesia": 15, "south-korea": 10 } },
+    { "t": 1970, "values": { "usa": 4290, "russia": 2000, "germany": 820, "japan": 780, "uk": 640, "india": 210, "canada": 250, "iran": 40, "saudi": 22, "indonesia": 25, "south-korea": 20 } },
+    { "t": 1975, "values": { "usa": 4470, "russia": 2410, "germany": 810, "japan": 900, "uk": 600, "india": 260, "canada": 300, "iran": 80, "saudi": 55, "indonesia": 40, "south-korea": 45 } },
+    { "t": 1980, "values": { "usa": 4780, "russia": 2790, "germany": 850, "japan": 940, "uk": 590, "india": 330, "canada": 430, "iran": 120, "saudi": 130, "indonesia": 60, "south-korea": 70 } },
+    { "t": 1985, "values": { "usa": 4550, "russia": 3100, "china": 1860, "germany": 820, "japan": 950, "uk": 560, "india": 460, "canada": 420, "iran": 140, "saudi": 150, "indonesia": 80, "south-korea": 100 } },
+    { "t": 1990, "values": { "usa": 5120, "russia": 2530, "china": 2420, "germany": 1020, "japan": 1080, "uk": 590, "india": 600, "canada": 450, "iran": 200, "saudi": 180, "indonesia": 140, "south-korea": 240 } },
+    { "t": 1995, "values": { "usa": 5390, "china": 3320, "russia": 1660, "japan": 1170, "germany": 900, "india": 800, "uk": 550, "canada": 480, "iran": 260, "saudi": 240, "south-korea": 370, "indonesia": 200 } },
+    { "t": 2000, "values": { "usa": 5870, "china": 3550, "russia": 1580, "japan": 1240, "india": 970, "germany": 860, "uk": 550, "canada": 540, "south-korea": 450, "iran": 340, "saudi": 280, "indonesia": 270 } },
+    { "t": 2005, "values": { "usa": 5980, "china": 5980, "russia": 1620, "japan": 1250, "india": 1180, "germany": 810, "canada": 560, "uk": 550, "south-korea": 500, "iran": 450, "saudi": 360, "indonesia": 340 } },
+    { "t": 2006, "values": { "china": 6550, "usa": 5910, "russia": 1650, "japan": 1250, "india": 1260, "germany": 810, "canada": 560, "uk": 550, "south-korea": 510, "iran": 470, "saudi": 380, "indonesia": 360 } },
+    { "t": 2010, "values": { "china": 8770, "usa": 5700, "india": 1660, "russia": 1670, "japan": 1170, "germany": 790, "iran": 570, "south-korea": 590, "canada": 560, "saudi": 480, "uk": 500, "indonesia": 450 } },
+    { "t": 2015, "values": { "china": 9970, "usa": 5290, "india": 2270, "russia": 1660, "japan": 1220, "germany": 780, "iran": 630, "south-korea": 620, "saudi": 580, "canada": 570, "indonesia": 490, "uk": 400 } },
+    { "t": 2019, "values": { "china": 10700, "usa": 5260, "india": 2620, "russia": 1680, "japan": 1120, "germany": 700, "iran": 730, "south-korea": 620, "saudi": 620, "indonesia": 620, "canada": 580, "uk": 350 } },
+    { "t": 2023, "values": { "china": 11900, "usa": 4910, "india": 3060, "russia": 1830, "japan": 990, "iran": 780, "indonesia": 730, "saudi": 660, "germany": 610, "south-korea": 570, "canada": 550, "uk": 300 } }
+  ],
+  "milestones": [
+    { "t": 1920, "title": "American industrial dominance", "text": "The United States surges ahead on coal and oil, emitting more CO₂ than any other nation for over eight decades." },
+    { "t": 1965, "title": "Soviet industrial rise", "text": "The USSR becomes the world's second-largest emitter as its heavy industry expands." },
+    { "t": 2006, "title": "China overtakes the US", "text": "China surpasses the United States to become the world's largest CO₂ emitter, driven by explosive coal-powered growth." },
+    { "t": 2015, "title": "India rises to third", "text": "India overtakes Russia to become the third-largest emitter as its economy and energy demand climb." }
+  ]
+}

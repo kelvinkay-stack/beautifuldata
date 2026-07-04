@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weeks at ATP World No. 1 (1973–2026) — Overtake</title>
+  <meta name="description" content="The ATP computer rankings launched in August 1973, and every week since has crowned exactly one world No. Animated bar chart race, 1973–2026.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/atp-weeks/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Weeks at ATP World No. 1 (1973–2026) — Overtake">
+  <meta property="og:description" content="The ATP computer rankings launched in August 1973, and every week since has crowned exactly one world No. Animated bar chart race, 1973–2026.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/atp-weeks/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/atp-weeks.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Weeks at ATP World No. 1 (1973–2026) — Overtake">
+  <meta name="twitter:description" content="The ATP computer rankings launched in August 1973, and every week since has crowned exactly one world No. Animated bar chart race, 1973–2026.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/atp-weeks.png">
+  <link rel="stylesheet" href="/css/site.css?v=5fed46935c">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=5fed46935c","/js/engine/renderer.js":"/js/engine/renderer.js?v=5fed46935c","/js/engine/format.js":"/js/engine/format.js?v=5fed46935c","/js/engine/controller.js":"/js/engine/controller.js?v=5fed46935c","/js/engine/controls.js":"/js/engine/controls.js?v=5fed46935c","/js/engine/preview.js":"/js/engine/preview.js?v=5fed46935c"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Weeks at ATP World No. 1","description":"The ATP computer rankings launched in August 1973, and every week since has crowned exactly one world No. 1. This race counts those weeks as they pile up — from Connors' 160-week grip through Sampras and Federer to Djokovic's record 428.","url":"https://beautifuldata.netlify.app/races/atp-weeks/","temporalCoverage":"1973/2026","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.atptour.com/en/rankings"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports" aria-current="true">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="sports" data-race-id="atp-weeks">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#sports">Sports</a><span aria-hidden="true">/</span><span>1973–2026</span></p>
+    <h1>Weeks at ATP World No. 1</h1>
+    <p class="blurb">The ATP computer rankings launched in August 1973, and every week since has crowned exactly one world No. 1. This race counts those weeks as they pile up — from Connors' 160-week grip through Sampras and Federer to Djokovic's record 428.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Weeks at ATP World No. 1"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1973" aria-valuemax="2026">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <button class="speed-btn" id="btn-speed" type="button" aria-label="Playback speed">1×</button>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://www.atptour.com/en/rankings" rel="noopener">ATP Tour</a></span>
+    <span>Career week totals per ATP; within-year accumulation is approximated between year-end keyframes.</span>
+    <span>Updated 2026-07-03</span>
+  </p>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1973.65">
+        <span class="m-year num">1973</span>
+        <span class="m-title">Nastase tops the first rankings</span>
+      </button></li>
+      <li><button type="button" data-t="1974.6">
+        <span class="m-year num">1974</span>
+        <span class="m-title">Connors begins 160-week reign</span>
+      </button></li>
+      <li><button type="button" data-t="1985.7">
+        <span class="m-year num">1985</span>
+        <span class="m-title">Lendl's machine era</span>
+      </button></li>
+      <li><button type="button" data-t="1996.5">
+        <span class="m-year num">1996</span>
+        <span class="m-title">Sampras owns the 90s</span>
+      </button></li>
+      <li><button type="button" data-t="2004.1">
+        <span class="m-year num">2004</span>
+        <span class="m-title">Federer era begins</span>
+      </button></li>
+      <li><button type="button" data-t="2021.17">
+        <span class="m-year num">2021</span>
+        <span class="m-title">Djokovic passes Federer</span>
+      </button></li>
+      <li><button type="button" data-t="2024.45">
+        <span class="m-year num">2024</span>
+        <span class="m-title">Sinner ends the Big-3 era</span>
+      </button></li>
+  </ul>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/ev-sales/"><span class="dir">← Previous race</span>EV Sales</a>
+    <a href="/races/olympic-golds/" style="text-align:right"><span class="dir">Next race →</span>Olympic Golds</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Overtake — 35 races across 8 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=5fed46935c"></script>
+</body>
+</html>

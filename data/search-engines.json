@@ -1,0 +1,421 @@
+{
+  "id": "search-engines",
+  "title": "Search Engine Market Share",
+  "shortTitle": "Search Engines",
+  "category": "tech",
+  "unit": {
+    "label": "Global search share",
+    "format": "percent",
+    "prefix": "",
+    "suffix": "%",
+    "decimals": 1
+  },
+  "scale": "linear",
+  "topN": 8,
+  "timeLabel": "year",
+  "blurb": "The web search race starts as a portal war and ends as one of the most durable monopolies on the internet. Google does not just win the board; it turns the rest of the field into a fight for the scraps.",
+  "source": {
+    "name": "StatCounter Global Stats and industry archives",
+    "url": "https://gs.statcounter.com/search-engine-market-share",
+    "note": "Annual global shares, with pre-2009 values reconstructed from historic industry estimates. Treat early portal-era values as approximate."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "yahoo",
+      "label": "Yahoo",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "altavista",
+      "label": "AltaVista",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "aol",
+      "label": "AOL",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "lycos",
+      "label": "Lycos",
+      "color": "#FFB020"
+    },
+    {
+      "id": "ask",
+      "label": "Ask Jeeves",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "google",
+      "label": "Google",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "msn",
+      "label": "MSN / Bing",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "baidu",
+      "label": "Baidu",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "yandex",
+      "label": "Yandex",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "duckduckgo",
+      "label": "DuckDuckGo",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "naver",
+      "label": "Naver",
+      "color": "#34D399"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 1996,
+      "values": {
+        "yahoo": 32,
+        "altavista": 21,
+        "aol": 16,
+        "lycos": 12,
+        "ask": 3,
+        "google": 0,
+        "msn": 2
+      }
+    },
+    {
+      "t": 1997,
+      "values": {
+        "yahoo": 34,
+        "altavista": 20,
+        "aol": 15,
+        "lycos": 11,
+        "ask": 4,
+        "google": 0.5,
+        "msn": 2
+      }
+    },
+    {
+      "t": 1998,
+      "values": {
+        "yahoo": 36,
+        "altavista": 17,
+        "aol": 13,
+        "lycos": 10,
+        "ask": 5,
+        "google": 2,
+        "msn": 3
+      }
+    },
+    {
+      "t": 1999,
+      "values": {
+        "yahoo": 34,
+        "altavista": 13,
+        "aol": 10,
+        "lycos": 8,
+        "ask": 6,
+        "google": 7,
+        "msn": 4
+      }
+    },
+    {
+      "t": 2000,
+      "values": {
+        "yahoo": 30,
+        "altavista": 9,
+        "aol": 8,
+        "lycos": 6,
+        "ask": 7,
+        "google": 14,
+        "msn": 5,
+        "baidu": 0,
+        "naver": 0.4
+      }
+    },
+    {
+      "t": 2001,
+      "values": {
+        "yahoo": 25,
+        "altavista": 6,
+        "aol": 6,
+        "lycos": 4,
+        "ask": 7,
+        "google": 25,
+        "msn": 6,
+        "baidu": 0.4,
+        "yandex": 0.1,
+        "naver": 0.5
+      }
+    },
+    {
+      "t": 2002,
+      "values": {
+        "yahoo": 20,
+        "altavista": 4,
+        "aol": 5,
+        "lycos": 2.5,
+        "ask": 6,
+        "google": 38,
+        "msn": 8,
+        "baidu": 1,
+        "yandex": 0.2,
+        "naver": 0.6
+      }
+    },
+    {
+      "t": 2003,
+      "values": {
+        "yahoo": 18,
+        "altavista": 2.5,
+        "aol": 4,
+        "lycos": 1.5,
+        "ask": 5,
+        "google": 48,
+        "msn": 10,
+        "baidu": 1.6,
+        "yandex": 0.3,
+        "naver": 0.7
+      }
+    },
+    {
+      "t": 2004,
+      "values": {
+        "yahoo": 15,
+        "altavista": 1.5,
+        "aol": 3,
+        "lycos": 1,
+        "ask": 4,
+        "google": 55,
+        "msn": 12,
+        "baidu": 2.2,
+        "yandex": 0.5,
+        "naver": 0.8
+      }
+    },
+    {
+      "t": 2005,
+      "values": {
+        "yahoo": 12,
+        "altavista": 1,
+        "aol": 2.5,
+        "lycos": 0.6,
+        "ask": 3.5,
+        "google": 62,
+        "msn": 11,
+        "baidu": 3,
+        "yandex": 0.7,
+        "naver": 0.9
+      }
+    },
+    {
+      "t": 2006,
+      "values": {
+        "yahoo": 10,
+        "altavista": 0.6,
+        "aol": 2,
+        "lycos": 0.3,
+        "ask": 3,
+        "google": 68,
+        "msn": 10,
+        "baidu": 4,
+        "yandex": 1,
+        "naver": 1
+      }
+    },
+    {
+      "t": 2007,
+      "values": {
+        "yahoo": 8,
+        "altavista": 0.4,
+        "aol": 1.5,
+        "lycos": 0.2,
+        "ask": 2.6,
+        "google": 72,
+        "msn": 9,
+        "baidu": 5,
+        "yandex": 1.2,
+        "naver": 1.1
+      }
+    },
+    {
+      "t": 2008,
+      "values": {
+        "yahoo": 6,
+        "altavista": 0.2,
+        "aol": 1.1,
+        "lycos": 0.1,
+        "ask": 2.2,
+        "google": 76,
+        "msn": 8.5,
+        "baidu": 6,
+        "yandex": 1.4,
+        "duckduckgo": 0,
+        "naver": 1.2
+      }
+    },
+    {
+      "t": 2009,
+      "values": {
+        "yahoo": 5,
+        "altavista": 0.1,
+        "aol": 0.9,
+        "ask": 1.7,
+        "google": 88,
+        "msn": 3.3,
+        "baidu": 0.8,
+        "yandex": 0.4,
+        "duckduckgo": 0,
+        "naver": 0.2
+      }
+    },
+    {
+      "t": 2010,
+      "values": {
+        "yahoo": 4,
+        "altavista": 0.1,
+        "aol": 0.7,
+        "ask": 1.4,
+        "google": 90,
+        "msn": 3.5,
+        "baidu": 0.7,
+        "yandex": 0.5,
+        "duckduckgo": 0.1,
+        "naver": 0.2
+      }
+    },
+    {
+      "t": 2012,
+      "values": {
+        "yahoo": 3.2,
+        "aol": 0.4,
+        "ask": 1,
+        "google": 91,
+        "msn": 3.8,
+        "baidu": 0.6,
+        "yandex": 0.6,
+        "duckduckgo": 0.2,
+        "naver": 0.2
+      }
+    },
+    {
+      "t": 2014,
+      "values": {
+        "yahoo": 2.8,
+        "aol": 0.2,
+        "ask": 0.5,
+        "google": 90.4,
+        "msn": 4.2,
+        "baidu": 0.9,
+        "yandex": 0.8,
+        "duckduckgo": 0.5,
+        "naver": 0.2
+      }
+    },
+    {
+      "t": 2016,
+      "values": {
+        "yahoo": 2.2,
+        "aol": 0.1,
+        "ask": 0.2,
+        "google": 91.2,
+        "msn": 3.9,
+        "baidu": 1,
+        "yandex": 0.7,
+        "duckduckgo": 0.7,
+        "naver": 0.2
+      }
+    },
+    {
+      "t": 2018,
+      "values": {
+        "yahoo": 2.1,
+        "ask": 0.1,
+        "google": 92.1,
+        "msn": 3.1,
+        "baidu": 1.1,
+        "yandex": 0.6,
+        "duckduckgo": 0.5,
+        "naver": 0.2
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "yahoo": 1.6,
+        "google": 92.5,
+        "msn": 2.8,
+        "baidu": 1.2,
+        "yandex": 0.6,
+        "duckduckgo": 0.6,
+        "naver": 0.2
+      }
+    },
+    {
+      "t": 2022,
+      "values": {
+        "yahoo": 1.3,
+        "google": 92.1,
+        "msn": 3.2,
+        "baidu": 1,
+        "yandex": 0.5,
+        "duckduckgo": 0.7,
+        "naver": 0.2
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "yahoo": 1.2,
+        "google": 91.5,
+        "msn": 3.9,
+        "baidu": 0.8,
+        "yandex": 0.4,
+        "duckduckgo": 0.7,
+        "naver": 0.2
+      }
+    },
+    {
+      "t": 2025,
+      "values": {
+        "yahoo": 1.1,
+        "google": 90.8,
+        "msn": 4.1,
+        "baidu": 0.7,
+        "yandex": 0.4,
+        "duckduckgo": 0.7,
+        "naver": 0.2
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 1998.75,
+      "title": "Google arrives",
+      "text": "A tiny Stanford-born search engine launches into a field dominated by portals and directories."
+    },
+    {
+      "t": 2001.2,
+      "title": "Google passes Yahoo",
+      "text": "Google becomes the default mental model for search, overtaking the portal era in usage and mindshare."
+    },
+    {
+      "t": 2009.5,
+      "title": "Bing replaces MSN",
+      "text": "Microsoft relaunches search as Bing, beginning a long second-place fight rather than a true Google challenge."
+    },
+    {
+      "t": 2023.2,
+      "title": "AI search pressure",
+      "text": "Chat-style search renews attention on the category, but the market-share board barely moves."
+    }
+  ]
+}

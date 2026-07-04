@@ -1,0 +1,70 @@
+{
+  "id": "gdp-nations",
+  "title": "Largest Economies by GDP",
+  "shortTitle": "GDP by Nation",
+  "category": "economy",
+  "unit": {
+    "label": "Nominal GDP",
+    "format": "si",
+    "prefix": "$",
+    "suffix": "",
+    "decimals": 1,
+    "multiplier": 1000000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Sixty-five years of the world economy measured in nominal US dollars. The United States leads throughout, but the drama is behind it: Japan's bubble-era surge to #2, China's staggering climb past Japan in 2010, and India edging past its former colonizer Britain around 2022.",
+  "source": {
+    "name": "World Bank",
+    "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+    "note": "Nominal GDP in current USD; recent years partly estimated."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "china", "label": "China", "color": "#F43F5E" },
+    { "id": "japan", "label": "Japan", "color": "#FF5C4D" },
+    { "id": "germany", "label": "Germany", "color": "#FFD84D" },
+    { "id": "uk", "label": "United Kingdom", "color": "#2FB4FF" },
+    { "id": "france", "label": "France", "color": "#6E7BFF" },
+    { "id": "india", "label": "India", "color": "#FF8C42" },
+    { "id": "italy", "label": "Italy", "color": "#34D399" },
+    { "id": "brazil", "label": "Brazil", "color": "#A3E635" },
+    { "id": "canada", "label": "Canada", "color": "#E879F9" },
+    { "id": "russia", "label": "Russia", "color": "#94A3B8" },
+    { "id": "skorea", "label": "South Korea", "color": "#23C8A8" },
+    { "id": "spain", "label": "Spain", "color": "#FFB020" },
+    { "id": "australia", "label": "Australia", "color": "#67E8F9" },
+    { "id": "mexico", "label": "Mexico", "color": "#86EFAC" }
+  ],
+  "keyframes": [
+    { "t": 1960, "values": { "usa": 543, "uk": 73, "france": 62, "china": 60, "japan": 44, "germany": 92, "italy": 40, "canada": 41, "india": 37, "brazil": 15, "australia": 19, "spain": 12, "mexico": 13 } },
+    { "t": 1965, "values": { "usa": 744, "germany": 120, "uk": 101, "france": 102, "japan": 91, "china": 70, "italy": 67, "canada": 54, "india": 60, "brazil": 21, "australia": 28, "spain": 24, "mexico": 21 } },
+    { "t": 1970, "values": { "usa": 1073, "germany": 216, "japan": 213, "france": 149, "uk": 131, "italy": 113, "china": 92, "canada": 89, "india": 62, "brazil": 42, "australia": 44, "spain": 41, "mexico": 35 } },
+    { "t": 1975, "values": { "usa": 1685, "germany": 476, "japan": 521, "france": 361, "uk": 241, "italy": 226, "china": 163, "canada": 174, "india": 98, "brazil": 124, "australia": 92, "spain": 111, "mexico": 89 } },
+    { "t": 1980, "values": { "usa": 2857, "japan": 1128, "germany": 854, "france": 702, "uk": 564, "italy": 477, "china": 191, "canada": 274, "brazil": 235, "india": 186, "australia": 165, "spain": 231, "mexico": 229 } },
+    { "t": 1985, "values": { "usa": 4339, "japan": 1399, "germany": 725, "france": 573, "uk": 534, "italy": 452, "china": 310, "canada": 366, "brazil": 223, "india": 238, "australia": 180, "spain": 179, "mexico": 197 } },
+    { "t": 1990, "values": { "usa": 5963, "japan": 3133, "germany": 1772, "france": 1275, "uk": 1093, "italy": 1177, "china": 361, "canada": 596, "brazil": 455, "spain": 535, "india": 321, "australia": 311, "russia": 517, "mexico": 297 } },
+    { "t": 1995, "values": { "usa": 7640, "japan": 5545, "germany": 2588, "france": 1611, "uk": 1338, "italy": 1170, "china": 735, "brazil": 770, "canada": 604, "spain": 613, "india": 366, "skorea": 566, "australia": 368, "russia": 396, "mexico": 361 } },
+    { "t": 2000, "values": { "usa": 10251, "japan": 4968, "germany": 1948, "uk": 1665, "france": 1362, "china": 1211, "italy": 1147, "canada": 744, "brazil": 655, "india": 468, "spain": 596, "skorea": 576, "mexico": 708, "australia": 415, "russia": 260 } },
+    { "t": 2005, "values": { "usa": 13037, "japan": 4831, "germany": 2846, "china": 2286, "uk": 2543, "france": 2196, "italy": 1853, "canada": 1170, "spain": 1157, "india": 820, "brazil": 892, "skorea": 935, "mexico": 877, "russia": 764, "australia": 693 } },
+    { "t": 2008, "values": { "usa": 14713, "japan": 5106, "china": 4594, "germany": 3752, "france": 2934, "uk": 2929, "italy": 2402, "brazil": 1696, "russia": 1661, "spain": 1635, "canada": 1543, "india": 1199, "mexico": 1099, "skorea": 1047, "australia": 1055 } },
+    { "t": 2010, "values": { "usa": 15049, "china": 6087, "japan": 5759, "germany": 3423, "france": 2647, "uk": 2491, "brazil": 2209, "italy": 2136, "india": 1676, "russia": 1525, "canada": 1617, "spain": 1420, "australia": 1147, "mexico": 1057, "skorea": 1144 } },
+    { "t": 2012, "values": { "usa": 16254, "china": 8532, "japan": 6272, "germany": 3544, "france": 2683, "uk": 2707, "brazil": 2465, "russia": 2210, "italy": 2087, "india": 1828, "canada": 1824, "australia": 1543, "spain": 1324, "mexico": 1201, "skorea": 1278 } },
+    { "t": 2014, "values": { "usa": 17608, "china": 10476, "japan": 4897, "germany": 3890, "uk": 3065, "france": 2853, "brazil": 2456, "italy": 2151, "india": 2039, "russia": 2059, "canada": 1805, "australia": 1467, "skorea": 1484, "spain": 1376, "mexico": 1315 } },
+    { "t": 2016, "values": { "usa": 18745, "china": 11233, "japan": 5003, "germany": 3467, "uk": 2689, "france": 2472, "india": 2295, "italy": 1877, "brazil": 1796, "canada": 1527, "skorea": 1500, "russia": 1277, "australia": 1265, "spain": 1237, "mexico": 1078 } },
+    { "t": 2018, "values": { "usa": 20657, "china": 13895, "japan": 5041, "germany": 3975, "uk": 2871, "france": 2790, "india": 2703, "italy": 2092, "brazil": 1917, "canada": 1725, "skorea": 1725, "russia": 1657, "australia": 1434, "spain": 1422, "mexico": 1223 } },
+    { "t": 2020, "values": { "usa": 21323, "china": 14688, "japan": 5040, "germany": 3889, "uk": 2704, "india": 2668, "france": 2647, "italy": 1897, "canada": 1655, "skorea": 1638, "russia": 1489, "brazil": 1476, "australia": 1327, "spain": 1276, "mexico": 1121 } },
+    { "t": 2022, "values": { "usa": 25744, "china": 17963, "japan": 4256, "germany": 4082, "india": 3417, "uk": 3089, "france": 2782, "canada": 2161, "italy": 2050, "brazil": 1920, "russia": 2240, "skorea": 1674, "australia": 1693, "spain": 1418, "mexico": 1466 } },
+    { "t": 2024, "values": { "usa": 27361, "china": 17795, "germany": 4526, "japan": 4110, "india": 3937, "uk": 3340, "france": 3031, "italy": 2255, "brazil": 2174, "canada": 2242, "russia": 2021, "mexico": 1789, "australia": 1802, "skorea": 1713, "spain": 1620 } }
+  ],
+  "milestones": [
+    { "t": 1968, "title": "Japan becomes #2 economy", "text": "Japan overtakes West Germany to become the world's second-largest economy behind the US, a rank it holds for over 40 years." },
+    { "t": 1990, "title": "Japan's bubble peaks", "text": "At the height of its asset bubble, Japan's economy tops $3T, more than half the size of the US." },
+    { "t": 2010, "title": "China passes Japan", "text": "China overtakes Japan to become the world's #2 economy, capping three decades of double-digit growth." },
+    { "t": 2014, "title": "China nears $10T", "text": "China's nominal GDP crosses $10T, roughly 60% of the US and pulling far ahead of every rival for #2." },
+    { "t": 2022, "title": "India passes the UK", "text": "India overtakes its former colonial ruler Britain to become the world's fifth-largest economy." }
+  ]
+}

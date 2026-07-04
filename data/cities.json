@@ -1,0 +1,467 @@
+{
+  "id": "cities",
+  "title": "World’s Most Populous Cities",
+  "shortTitle": "Megacities",
+  "category": "science",
+  "unit": {
+    "label": "Urban population",
+    "format": "si",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 1,
+    "multiplier": 1000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The largest-city race is the story of world urbanization moving east, west, then east again. Ancient capitals yield to imperial London and New York, before Tokyo, Shanghai, Delhi and Lagos reveal the scale of the modern megacity.",
+  "source": {
+    "name": "Chandler, UN World Urbanization Prospects and citypopulation.de",
+    "url": "https://population.un.org/wup/",
+    "note": "Urban agglomeration estimates at broad historical intervals; pre-1900 values are especially approximate."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "chang-an",
+      "label": "Chang'an / Xi'an",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "baghdad",
+      "label": "Baghdad",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "kaifeng",
+      "label": "Kaifeng",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "constantinople",
+      "label": "Constantinople",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "beijing",
+      "label": "Beijing",
+      "color": "#34D399"
+    },
+    {
+      "id": "london",
+      "label": "London",
+      "color": "#A3E635"
+    },
+    {
+      "id": "newyork",
+      "label": "New York",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "tokyo",
+      "label": "Tokyo",
+      "color": "#FFB020"
+    },
+    {
+      "id": "shanghai",
+      "label": "Shanghai",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "mexico-city",
+      "label": "Mexico City",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "sao-paulo",
+      "label": "Sao Paulo",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "delhi",
+      "label": "Delhi",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "mumbai",
+      "label": "Mumbai",
+      "color": "#E879F9"
+    },
+    {
+      "id": "lagos",
+      "label": "Lagos",
+      "color": "#B388FF"
+    },
+    {
+      "id": "jakarta",
+      "label": "Jakarta",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "cairo",
+      "label": "Cairo",
+      "color": "#6E7BFF"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 600,
+      "values": {
+        "chang-an": 0.6,
+        "baghdad": 0,
+        "kaifeng": 0.1,
+        "constantinople": 0.5,
+        "beijing": 0.1,
+        "london": 0.02,
+        "newyork": 0,
+        "tokyo": 0,
+        "shanghai": 0,
+        "mexico-city": 0,
+        "sao-paulo": 0,
+        "delhi": 0.1,
+        "mumbai": 0,
+        "lagos": 0,
+        "jakarta": 0,
+        "cairo": 0.2
+      }
+    },
+    {
+      "t": 800,
+      "values": {
+        "chang-an": 1,
+        "baghdad": 0.7,
+        "kaifeng": 0.2,
+        "constantinople": 0.4,
+        "beijing": 0.2,
+        "london": 0.03,
+        "newyork": 0,
+        "tokyo": 0,
+        "shanghai": 0,
+        "mexico-city": 0,
+        "sao-paulo": 0,
+        "delhi": 0.15,
+        "mumbai": 0,
+        "lagos": 0,
+        "jakarta": 0,
+        "cairo": 0.3
+      }
+    },
+    {
+      "t": 1000,
+      "values": {
+        "chang-an": 0.4,
+        "baghdad": 1,
+        "kaifeng": 0.8,
+        "constantinople": 0.45,
+        "beijing": 0.5,
+        "london": 0.04,
+        "newyork": 0,
+        "tokyo": 0,
+        "shanghai": 0,
+        "mexico-city": 0,
+        "sao-paulo": 0,
+        "delhi": 0.2,
+        "mumbai": 0,
+        "lagos": 0,
+        "jakarta": 0,
+        "cairo": 0.4
+      }
+    },
+    {
+      "t": 1200,
+      "values": {
+        "chang-an": 0.3,
+        "baghdad": 0.3,
+        "kaifeng": 1,
+        "constantinople": 0.4,
+        "beijing": 0.8,
+        "london": 0.08,
+        "newyork": 0,
+        "tokyo": 0.1,
+        "shanghai": 0,
+        "mexico-city": 0.15,
+        "sao-paulo": 0,
+        "delhi": 0.25,
+        "mumbai": 0,
+        "lagos": 0,
+        "jakarta": 0,
+        "cairo": 0.45
+      }
+    },
+    {
+      "t": 1400,
+      "values": {
+        "chang-an": 0.2,
+        "baghdad": 0.15,
+        "kaifeng": 0.3,
+        "constantinople": 0.25,
+        "beijing": 1,
+        "london": 0.1,
+        "newyork": 0,
+        "tokyo": 0.2,
+        "shanghai": 0.1,
+        "mexico-city": 0.2,
+        "sao-paulo": 0,
+        "delhi": 0.4,
+        "mumbai": 0,
+        "lagos": 0,
+        "jakarta": 0.03,
+        "cairo": 0.4
+      }
+    },
+    {
+      "t": 1600,
+      "values": {
+        "chang-an": 0.3,
+        "baghdad": 0.1,
+        "kaifeng": 0.2,
+        "constantinople": 0.7,
+        "beijing": 0.9,
+        "london": 0.2,
+        "newyork": 0.01,
+        "tokyo": 0.5,
+        "shanghai": 0.2,
+        "mexico-city": 0.25,
+        "sao-paulo": 0.02,
+        "delhi": 0.5,
+        "mumbai": 0.05,
+        "lagos": 0.02,
+        "jakarta": 0.08,
+        "cairo": 0.35
+      }
+    },
+    {
+      "t": 1800,
+      "values": {
+        "chang-an": 0.4,
+        "baghdad": 0.15,
+        "kaifeng": 0.25,
+        "constantinople": 0.6,
+        "beijing": 1.1,
+        "london": 1.1,
+        "newyork": 0.06,
+        "tokyo": 1,
+        "shanghai": 0.4,
+        "mexico-city": 0.14,
+        "sao-paulo": 0.03,
+        "delhi": 0.5,
+        "mumbai": 0.2,
+        "lagos": 0.04,
+        "jakarta": 0.15,
+        "cairo": 0.25
+      }
+    },
+    {
+      "t": 1850,
+      "values": {
+        "chang-an": 0.45,
+        "baghdad": 0.18,
+        "kaifeng": 0.3,
+        "constantinople": 0.8,
+        "beijing": 1.3,
+        "london": 2.3,
+        "newyork": 0.7,
+        "tokyo": 1.3,
+        "shanghai": 0.8,
+        "mexico-city": 0.2,
+        "sao-paulo": 0.06,
+        "delhi": 0.6,
+        "mumbai": 0.6,
+        "lagos": 0.08,
+        "jakarta": 0.3,
+        "cairo": 0.4
+      }
+    },
+    {
+      "t": 1900,
+      "values": {
+        "chang-an": 0.4,
+        "baghdad": 0.2,
+        "kaifeng": 0.5,
+        "constantinople": 1.1,
+        "beijing": 1.6,
+        "london": 6.5,
+        "newyork": 3.4,
+        "tokyo": 1.5,
+        "shanghai": 1,
+        "mexico-city": 0.5,
+        "sao-paulo": 0.24,
+        "delhi": 0.8,
+        "mumbai": 0.9,
+        "lagos": 0.14,
+        "jakarta": 0.6,
+        "cairo": 0.6
+      }
+    },
+    {
+      "t": 1950,
+      "values": {
+        "chang-an": 0.8,
+        "baghdad": 0.6,
+        "kaifeng": 0.7,
+        "constantinople": 1,
+        "beijing": 4.2,
+        "london": 8.4,
+        "newyork": 12.3,
+        "tokyo": 11.3,
+        "shanghai": 5.3,
+        "mexico-city": 3.4,
+        "sao-paulo": 2.3,
+        "delhi": 1.4,
+        "mumbai": 2.9,
+        "lagos": 0.33,
+        "jakarta": 1.5,
+        "cairo": 2.4
+      }
+    },
+    {
+      "t": 1970,
+      "values": {
+        "chang-an": 1.5,
+        "baghdad": 1.8,
+        "kaifeng": 1,
+        "constantinople": 2,
+        "beijing": 7.7,
+        "london": 7.5,
+        "newyork": 16.2,
+        "tokyo": 23.3,
+        "shanghai": 11,
+        "mexico-city": 8.8,
+        "sao-paulo": 8.1,
+        "delhi": 3.5,
+        "mumbai": 5.8,
+        "lagos": 1.4,
+        "jakarta": 4.5,
+        "cairo": 5.6
+      }
+    },
+    {
+      "t": 1990,
+      "values": {
+        "chang-an": 2.5,
+        "baghdad": 3.8,
+        "kaifeng": 1.4,
+        "constantinople": 6.6,
+        "beijing": 10.8,
+        "london": 7,
+        "newyork": 16.1,
+        "tokyo": 32.5,
+        "shanghai": 13.3,
+        "mexico-city": 15.6,
+        "sao-paulo": 15.1,
+        "delhi": 9.7,
+        "mumbai": 12.4,
+        "lagos": 5.7,
+        "jakarta": 8.2,
+        "cairo": 9.9
+      }
+    },
+    {
+      "t": 2000,
+      "values": {
+        "chang-an": 3.2,
+        "baghdad": 5.4,
+        "kaifeng": 1.8,
+        "constantinople": 8.8,
+        "beijing": 13.5,
+        "london": 7.2,
+        "newyork": 17.8,
+        "tokyo": 34.5,
+        "shanghai": 16.7,
+        "mexico-city": 18,
+        "sao-paulo": 17.1,
+        "delhi": 15.7,
+        "mumbai": 16.4,
+        "lagos": 8.7,
+        "jakarta": 11,
+        "cairo": 13.6
+      }
+    },
+    {
+      "t": 2010,
+      "values": {
+        "chang-an": 4.5,
+        "baghdad": 7.2,
+        "kaifeng": 3,
+        "constantinople": 13.3,
+        "beijing": 18,
+        "london": 8.2,
+        "newyork": 19.6,
+        "tokyo": 37,
+        "shanghai": 20.2,
+        "mexico-city": 20.1,
+        "sao-paulo": 19.7,
+        "delhi": 22.2,
+        "mumbai": 18.8,
+        "lagos": 12.6,
+        "jakarta": 26.1,
+        "cairo": 16.9
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "chang-an": 8.7,
+        "baghdad": 8.8,
+        "kaifeng": 5,
+        "constantinople": 15.5,
+        "beijing": 20.5,
+        "london": 9,
+        "newyork": 20.1,
+        "tokyo": 37.4,
+        "shanghai": 27.1,
+        "mexico-city": 21.8,
+        "sao-paulo": 22,
+        "delhi": 31.2,
+        "mumbai": 20.7,
+        "lagos": 15.4,
+        "jakarta": 33.4,
+        "cairo": 21.3
+      }
+    },
+    {
+      "t": 2025,
+      "values": {
+        "chang-an": 9.5,
+        "baghdad": 9.5,
+        "kaifeng": 5.5,
+        "constantinople": 16,
+        "beijing": 21.5,
+        "london": 9.1,
+        "newyork": 20.2,
+        "tokyo": 37.1,
+        "shanghai": 29.9,
+        "mexico-city": 22.5,
+        "sao-paulo": 22.8,
+        "delhi": 34.7,
+        "mumbai": 22.1,
+        "lagos": 17.2,
+        "jakarta": 35.4,
+        "cairo": 22.6
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 800,
+      "title": "Chang'an reaches a million",
+      "text": "Tang-era Chang’an becomes one of history’s first truly million-person capitals."
+    },
+    {
+      "t": 1850,
+      "title": "London industrializes",
+      "text": "Industrial Britain turns London into the first modern megacity."
+    },
+    {
+      "t": 1950,
+      "title": "Tokyo surges after war",
+      "text": "Postwar Japan begins the growth wave that will make Tokyo the largest urban area on Earth."
+    },
+    {
+      "t": 2020,
+      "title": "Delhi closes on Tokyo",
+      "text": "India’s capital region becomes the leading challenger to Tokyo’s long megacity reign."
+    }
+  ]
+}

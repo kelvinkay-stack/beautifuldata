@@ -1,0 +1,57 @@
+{
+  "id": "esports-prizes",
+  "title": "Esports Prize Money by Game",
+  "shortTitle": "Esports Prizes",
+  "category": "play",
+  "unit": { "label": "Cumulative prize money awarded", "format": "si", "prefix": "$", "suffix": "", "decimals": 0, "multiplier": 1000000 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Competitive gaming's money race, tracking total prize winnings paid out per title since the modern esports era began. Dota 2's crowdfunded International tournaments detonate the all-time totals, while Counter-Strike, League of Legends and Fortnite build empires of their own. Bars are cumulative, so each season's tournaments stack onto a game's running total.",
+  "source": {
+    "name": "Esports Earnings",
+    "url": "https://www.esportsearnings.com/",
+    "note": "Values in $ millions, cumulative tracked tournament prize pools per game. 2010 onward; earlier arcade/LAN eras excluded."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "dota2", "label": "Dota 2", "color": "#F43F5E" },
+    { "id": "csgo", "label": "Counter-Strike", "color": "#FFB020" },
+    { "id": "lol", "label": "League of Legends", "color": "#4C8DFF" },
+    { "id": "fortnite", "label": "Fortnite", "color": "#B388FF" },
+    { "id": "sc2", "label": "StarCraft II", "color": "#67E8F9" },
+    { "id": "cod", "label": "Call of Duty", "color": "#94A3B8" },
+    { "id": "overwatch", "label": "Overwatch", "color": "#FF8C42" },
+    { "id": "pubg", "label": "PUBG", "color": "#A3E635" },
+    { "id": "arenafps", "label": "Arena of Valor / MLBB", "color": "#34D399" },
+    { "id": "valorant", "label": "Valorant", "color": "#FF5C4D" },
+    { "id": "rocketleague", "label": "Rocket League", "color": "#2FB4FF" },
+    { "id": "hearthstone", "label": "Hearthstone", "color": "#E2B93B" },
+    { "id": "apex", "label": "Apex Legends", "color": "#E879F9" }
+  ],
+  "keyframes": [
+    { "t": 2010, "values": { "sc2": 1, "csgo": 2, "cod": 1 } },
+    { "t": 2011, "values": { "sc2": 5, "csgo": 3, "lol": 2, "dota2": 1, "cod": 2 } },
+    { "t": 2012, "values": { "sc2": 12, "csgo": 4, "lol": 8, "dota2": 4, "cod": 4 } },
+    { "t": 2013, "values": { "sc2": 18, "csgo": 6, "lol": 16, "dota2": 12, "cod": 7 } },
+    { "t": 2014, "values": { "sc2": 24, "csgo": 12, "lol": 28, "dota2": 40, "cod": 12 } },
+    { "t": 2015, "values": { "sc2": 28, "csgo": 22, "lol": 42, "dota2": 68, "cod": 18, "hearthstone": 4 } },
+    { "t": 2016, "values": { "sc2": 30, "csgo": 40, "lol": 55, "dota2": 100, "cod": 25, "overwatch": 3, "hearthstone": 9 } },
+    { "t": 2017, "values": { "sc2": 32, "csgo": 62, "lol": 68, "dota2": 140, "cod": 32, "overwatch": 12, "pubg": 2, "hearthstone": 12 } },
+    { "t": 2018, "values": { "sc2": 34, "csgo": 82, "lol": 78, "dota2": 180, "cod": 40, "overwatch": 28, "pubg": 12, "fortnite": 20, "arenafps": 15 } },
+    { "t": 2019, "values": { "sc2": 35, "csgo": 100, "lol": 82, "dota2": 220, "cod": 45, "overwatch": 38, "pubg": 22, "fortnite": 105, "arenafps": 30, "rocketleague": 12 } },
+    { "t": 2020, "values": { "csgo": 112, "lol": 88, "dota2": 227, "cod": 50, "overwatch": 42, "pubg": 30, "fortnite": 130, "arenafps": 45, "valorant": 2, "rocketleague": 16 } },
+    { "t": 2021, "values": { "csgo": 128, "lol": 92, "dota2": 267, "cod": 58, "overwatch": 45, "pubg": 42, "fortnite": 145, "arenafps": 62, "valorant": 12, "rocketleague": 22 } },
+    { "t": 2022, "values": { "csgo": 145, "lol": 100, "dota2": 305, "cod": 68, "overwatch": 48, "pubg": 55, "fortnite": 155, "arenafps": 80, "valorant": 32, "rocketleague": 28, "apex": 10 } },
+    { "t": 2023, "values": { "csgo": 160, "lol": 108, "dota2": 320, "cod": 78, "pubg": 68, "fortnite": 165, "arenafps": 95, "valorant": 55, "rocketleague": 33, "apex": 18 } },
+    { "t": 2024, "values": { "csgo": 178, "lol": 115, "dota2": 340, "cod": 85, "pubg": 80, "fortnite": 175, "arenafps": 110, "valorant": 82, "rocketleague": 38, "apex": 24 } },
+    { "t": 2025, "values": { "csgo": 190, "lol": 120, "dota2": 350, "cod": 90, "pubg": 88, "fortnite": 182, "arenafps": 120, "valorant": 105, "rocketleague": 42, "apex": 28 } }
+  ],
+  "milestones": [
+    { "t": 2013.5, "title": "The International changes everything", "text": "Dota 2 lets fans crowdfund its prize pool, and The International explodes past every other game's winnings almost overnight." },
+    { "t": 2018.5, "title": "Fortnite's $30M World Cup", "text": "Epic Games pours prize money into Fortnite, and a 16-year-old wins $3M at the 2019 World Cup solo final." },
+    { "t": 2019.0, "title": "Dota 2 crosses $200M", "text": "A single International hands out over $34M, pushing Dota 2's all-time total past every rival by a wide margin." },
+    { "t": 2023.5, "title": "Valorant's rapid climb", "text": "Riot's tactical shooter scales its prize circuit fast, overtaking older titles within a few seasons of launch." }
+  ]
+}

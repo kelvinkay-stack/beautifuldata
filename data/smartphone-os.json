@@ -1,0 +1,64 @@
+{
+  "id": "smartphone-os",
+  "title": "Smartphone OS Market Share",
+  "shortTitle": "Phone OS Share",
+  "category": "tech",
+  "unit": {
+    "label": "Share of smartphone sales",
+    "format": "percent",
+    "prefix": "",
+    "suffix": "%",
+    "decimals": 1
+  },
+  "scale": "linear",
+  "topN": 8,
+  "timeLabel": "year",
+  "blurb": "In 2007 Nokia's Symbian owned nearly two thirds of all smartphone sales, with BlackBerry and Windows Mobile fighting for the rest. Then the iPhone and Android arrived and rewrote the market in under four years. By 2013 it was a duopoly — and it never stopped being one.",
+  "source": {
+    "name": "Gartner / StatCounter",
+    "url": "https://gs.statcounter.com/os-market-share/mobile/worldwide",
+    "note": "Gartner sell-through data through ~2016; StatCounter-informed estimates after. Methodologies differ; shares rounded to 0.1%."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "symbian", "label": "Symbian", "color": "#2FB4FF" },
+    { "id": "blackberry", "label": "BlackBerry OS", "color": "#94A3B8" },
+    { "id": "windows", "label": "Windows Mobile / Phone", "color": "#E879F9" },
+    { "id": "ios", "label": "iOS", "color": "#D4D4D8" },
+    { "id": "android", "label": "Android", "color": "#A3E635" },
+    { "id": "palm", "label": "Palm / webOS", "color": "#FF8C42" },
+    { "id": "bada", "label": "bada", "color": "#23C8A8" },
+    { "id": "kaios", "label": "KaiOS", "color": "#B388FF" },
+    { "id": "other", "label": "Other", "color": "#C4B5A0" }
+  ],
+  "keyframes": [
+    { "t": 2007, "values": { "symbian": 63.5, "windows": 12.0, "blackberry": 9.6, "ios": 2.7, "palm": 1.4, "android": 0, "other": 10.8 } },
+    { "t": 2008, "values": { "symbian": 52.4, "blackberry": 16.6, "windows": 11.8, "ios": 8.2, "palm": 1.8, "android": 0.5, "other": 8.7 } },
+    { "t": 2009, "values": { "symbian": 46.9, "blackberry": 19.9, "ios": 14.4, "windows": 8.7, "android": 3.9, "palm": 1.2, "bada": 0, "other": 5.0 } },
+    { "t": 2010, "values": { "symbian": 37.6, "android": 22.7, "blackberry": 16.0, "ios": 15.7, "windows": 4.2, "bada": 0.9, "palm": 0.6, "other": 2.3 } },
+    { "t": 2011, "values": { "android": 46.4, "symbian": 19.2, "ios": 18.2, "blackberry": 10.1, "bada": 2.1, "windows": 1.9, "palm": 0.3, "other": 1.8 } },
+    { "t": 2012, "values": { "android": 66.4, "ios": 19.1, "blackberry": 5.0, "symbian": 3.3, "windows": 2.5, "bada": 1.3, "other": 2.4 } },
+    { "t": 2013, "values": { "android": 78.4, "ios": 15.6, "windows": 3.2, "blackberry": 1.9, "symbian": 0.3, "bada": 0.2, "other": 0.4 } },
+    { "t": 2014, "values": { "android": 80.7, "ios": 15.4, "windows": 2.8, "blackberry": 0.6, "other": 0.5 } },
+    { "t": 2015, "values": { "android": 81.6, "ios": 15.9, "windows": 1.7, "blackberry": 0.3, "other": 0.5 } },
+    { "t": 2016, "values": { "android": 84.8, "ios": 14.4, "windows": 0.4, "blackberry": 0.1, "kaios": 0, "other": 0.3 } },
+    { "t": 2017, "values": { "android": 85.9, "ios": 13.8, "kaios": 0.1, "windows": 0.1, "other": 0.1 } },
+    { "t": 2018, "values": { "android": 84.3, "ios": 14.5, "kaios": 1.0, "other": 0.2 } },
+    { "t": 2019, "values": { "android": 85.5, "ios": 13.5, "kaios": 0.8, "other": 0.2 } },
+    { "t": 2020, "values": { "android": 84.1, "ios": 15.5, "kaios": 0.3, "other": 0.1 } },
+    { "t": 2021, "values": { "android": 80.0, "ios": 19.7, "kaios": 0.2, "other": 0.1 } },
+    { "t": 2022, "values": { "android": 78.0, "ios": 21.7, "kaios": 0.1, "other": 0.2 } },
+    { "t": 2023, "values": { "android": 76.0, "ios": 23.7, "other": 0.3 } },
+    { "t": 2024, "values": { "android": 74.0, "ios": 25.7, "other": 0.3 } },
+    { "t": 2025, "values": { "android": 72.0, "ios": 27.7, "other": 0.3 } }
+  ],
+  "milestones": [
+    { "t": 2007.5, "title": "iPhone goes on sale", "text": "Apple enters with 2.7% of a Symbian-dominated market. Ballmer laughs; the industry never recovers." },
+    { "t": 2008.75, "title": "Android arrives", "text": "The HTC Dream/G1 ships with Google's open-source OS — a rounding error at launch, on every carrier within two years." },
+    { "t": 2010.5, "title": "Android passes Symbian", "text": "By Q4 2010 Android outsells Nokia's Symbian, ending its decade as the world's #1 smartphone OS after barely two years on sale." },
+    { "t": 2011.1, "title": "Nokia bets on Windows Phone", "text": "The 'burning platform' memo: Nokia abandons Symbian for Microsoft's OS. Neither survives the decade." },
+    { "t": 2013.5, "title": "Symbian ships its last phone", "text": "The Nokia 808 PureView is Symbian's swan song. From 63% of the market to zero in six years." },
+    { "t": 2017.0, "title": "A duopoly settles in", "text": "Windows Phone is discontinued and BlackBerry goes Android. Every smartphone sold now runs iOS or Android." }
+  ]
+}

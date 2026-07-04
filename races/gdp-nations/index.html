@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Largest Economies by GDP (1960–2024) — Overtake</title>
+  <meta name="description" content="Sixty-five years of the world economy measured in nominal US dollars. Animated bar chart race, 1960–2024.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/gdp-nations/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Largest Economies by GDP (1960–2024) — Overtake">
+  <meta property="og:description" content="Sixty-five years of the world economy measured in nominal US dollars. Animated bar chart race, 1960–2024.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/gdp-nations/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/gdp-nations.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Largest Economies by GDP (1960–2024) — Overtake">
+  <meta name="twitter:description" content="Sixty-five years of the world economy measured in nominal US dollars. Animated bar chart race, 1960–2024.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/gdp-nations.png">
+  <link rel="stylesheet" href="/css/site.css?v=5fed46935c">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=5fed46935c","/js/engine/renderer.js":"/js/engine/renderer.js?v=5fed46935c","/js/engine/format.js":"/js/engine/format.js?v=5fed46935c","/js/engine/controller.js":"/js/engine/controller.js?v=5fed46935c","/js/engine/controls.js":"/js/engine/controls.js?v=5fed46935c","/js/engine/preview.js":"/js/engine/preview.js?v=5fed46935c"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Largest Economies by GDP","description":"Sixty-five years of the world economy measured in nominal US dollars. The United States leads throughout, but the drama is behind it: Japan's bubble-era surge to #2, China's staggering climb past Japan in 2010, and India edging past its former colonizer Britain around 2022.","url":"https://beautifuldata.netlify.app/races/gdp-nations/","temporalCoverage":"1960/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy" aria-current="true">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="economy" data-race-id="gdp-nations">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#economy">Money &amp; Markets</a><span aria-hidden="true">/</span><span>1960–2024</span></p>
+    <h1>Largest Economies by GDP</h1>
+    <p class="blurb">Sixty-five years of the world economy measured in nominal US dollars. The United States leads throughout, but the drama is behind it: Japan's bubble-era surge to #2, China's staggering climb past Japan in 2010, and India edging past its former colonizer Britain around 2022.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Largest Economies by GDP"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1960" aria-valuemax="2024">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <button class="speed-btn" id="btn-speed" type="button" aria-label="Playback speed">1×</button>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" rel="noopener">World Bank</a></span>
+    <span>Nominal GDP in current USD; recent years partly estimated.</span>
+    <span>Updated 2026-07-03</span>
+  </p>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1968">
+        <span class="m-year num">1968</span>
+        <span class="m-title">Japan becomes #2 economy</span>
+      </button></li>
+      <li><button type="button" data-t="1990">
+        <span class="m-year num">1990</span>
+        <span class="m-title">Japan's bubble peaks</span>
+      </button></li>
+      <li><button type="button" data-t="2010">
+        <span class="m-year num">2010</span>
+        <span class="m-title">China passes Japan</span>
+      </button></li>
+      <li><button type="button" data-t="2014">
+        <span class="m-year num">2014</span>
+        <span class="m-title">China nears $10T</span>
+      </button></li>
+      <li><button type="button" data-t="2022">
+        <span class="m-year num">2022</span>
+        <span class="m-title">India passes the UK</span>
+      </button></li>
+  </ul>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/cities/"><span class="dir">← Previous race</span>Megacities</a>
+    <a href="/races/billionaires/" style="text-align:right"><span class="dir">Next race →</span>Richest Person</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Overtake — 35 races across 8 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=5fed46935c"></script>
+</body>
+</html>

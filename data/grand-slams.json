@@ -1,0 +1,760 @@
+{
+  "id": "grand-slams",
+  "title": "Grand Slam Singles Titles",
+  "shortTitle": "Grand Slams",
+  "category": "sports",
+  "unit": {
+    "label": "Cumulative singles majors",
+    "format": "plain",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 0
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Tennis’ Grand Slam race looks slow for decades, then detonates in the Big Three era. Federer raises the ceiling, Nadal turns clay into a fortress, and Djokovic keeps the scoreboard moving after everyone thinks it should stop.",
+  "source": {
+    "name": "International Tennis Federation major title records",
+    "url": "https://www.itftennis.com/en/about-us/tennis-history/grand-slam-overview/",
+    "note": "Men’s singles cumulative major titles by calendar year. Amateur/pro-era context is simplified for readability."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "tilden",
+      "label": "Bill Tilden",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "lacoste",
+      "label": "Rene Lacoste",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "perry",
+      "label": "Fred Perry",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "budge",
+      "label": "Don Budge",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "laver",
+      "label": "Rod Laver",
+      "color": "#34D399"
+    },
+    {
+      "id": "rosewall",
+      "label": "Ken Rosewall",
+      "color": "#A3E635"
+    },
+    {
+      "id": "borg",
+      "label": "Bjorn Borg",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "connors",
+      "label": "Jimmy Connors",
+      "color": "#FFB020"
+    },
+    {
+      "id": "mcenroe",
+      "label": "John McEnroe",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "lendl",
+      "label": "Ivan Lendl",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "sampras",
+      "label": "Pete Sampras",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "agassi",
+      "label": "Andre Agassi",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "federer",
+      "label": "Roger Federer",
+      "color": "#D4D4D8"
+    },
+    {
+      "id": "nadal",
+      "label": "Rafael Nadal",
+      "color": "#B45309"
+    },
+    {
+      "id": "djokovic",
+      "label": "Novak Djokovic",
+      "color": "#86EFAC"
+    },
+    {
+      "id": "alcaraz",
+      "label": "Carlos Alcaraz",
+      "color": "#6E7BFF"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 1920,
+      "values": {
+        "tilden": 2,
+        "lacoste": 0,
+        "perry": 0,
+        "budge": 0,
+        "laver": 0,
+        "rosewall": 0,
+        "borg": 0,
+        "connors": 0,
+        "mcenroe": 0,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1925,
+      "values": {
+        "tilden": 8,
+        "lacoste": 3,
+        "perry": 0,
+        "budge": 0,
+        "laver": 0,
+        "rosewall": 0,
+        "borg": 0,
+        "connors": 0,
+        "mcenroe": 0,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1930,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 0,
+        "budge": 0,
+        "laver": 0,
+        "rosewall": 0,
+        "borg": 0,
+        "connors": 0,
+        "mcenroe": 0,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1935,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 6,
+        "budge": 0,
+        "laver": 0,
+        "rosewall": 0,
+        "borg": 0,
+        "connors": 0,
+        "mcenroe": 0,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1940,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 0,
+        "rosewall": 0,
+        "borg": 0,
+        "connors": 0,
+        "mcenroe": 0,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1950,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 0,
+        "rosewall": 0,
+        "borg": 0,
+        "connors": 0,
+        "mcenroe": 0,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1960,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 4,
+        "rosewall": 5,
+        "borg": 0,
+        "connors": 0,
+        "mcenroe": 0,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1965,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 6,
+        "rosewall": 8,
+        "borg": 0,
+        "connors": 0,
+        "mcenroe": 0,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1970,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 0,
+        "connors": 0,
+        "mcenroe": 0,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1975,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 6,
+        "connors": 5,
+        "mcenroe": 1,
+        "lendl": 0,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1980,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 4,
+        "lendl": 1,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1985,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 5,
+        "sampras": 0,
+        "agassi": 0,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1990,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 2,
+        "agassi": 1,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 1995,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 7,
+        "agassi": 3,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2000,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 13,
+        "agassi": 6,
+        "federer": 0,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2003,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 1,
+        "nadal": 0,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2005,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 6,
+        "nadal": 1,
+        "djokovic": 0,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2007,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 12,
+        "nadal": 3,
+        "djokovic": 3,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2009,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 15,
+        "nadal": 6,
+        "djokovic": 5,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2011,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 16,
+        "nadal": 10,
+        "djokovic": 10,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2013,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 17,
+        "nadal": 13,
+        "djokovic": 12,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2015,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 17,
+        "nadal": 14,
+        "djokovic": 12,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2017,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 19,
+        "nadal": 16,
+        "djokovic": 12,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2019,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 20,
+        "nadal": 19,
+        "djokovic": 16,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2021,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 20,
+        "nadal": 20,
+        "djokovic": 20,
+        "alcaraz": 0
+      }
+    },
+    {
+      "t": 2022,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 20,
+        "nadal": 22,
+        "djokovic": 21,
+        "alcaraz": 1
+      }
+    },
+    {
+      "t": 2023,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 20,
+        "nadal": 22,
+        "djokovic": 24,
+        "alcaraz": 2
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 20,
+        "nadal": 22,
+        "djokovic": 24,
+        "alcaraz": 4
+      }
+    },
+    {
+      "t": 2025,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 20,
+        "nadal": 22,
+        "djokovic": 24,
+        "alcaraz": 5
+      }
+    },
+    {
+      "t": 2026,
+      "values": {
+        "tilden": 10,
+        "lacoste": 7,
+        "perry": 8,
+        "budge": 6,
+        "laver": 11,
+        "rosewall": 8,
+        "borg": 11,
+        "connors": 8,
+        "mcenroe": 7,
+        "lendl": 8,
+        "sampras": 14,
+        "agassi": 8,
+        "federer": 20,
+        "nadal": 22,
+        "djokovic": 24,
+        "alcaraz": 6
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 1969,
+      "title": "Laver completes the Slam",
+      "text": "Rod Laver wins all four majors in 1969, still the last men’s calendar-year Grand Slam."
+    },
+    {
+      "t": 2009,
+      "title": "Federer passes Sampras",
+      "text": "Federer wins Wimbledon 2009 for his 15th major, passing Sampras’ record of 14."
+    },
+    {
+      "t": 2022,
+      "title": "Nadal reaches 22",
+      "text": "Nadal opens the year with Australian and French Open titles, briefly taking the lead alone."
+    },
+    {
+      "t": 2023,
+      "title": "Djokovic hits 24",
+      "text": "Djokovic wins three majors in 2023 and pushes the men’s record to 24."
+    }
+  ]
+}

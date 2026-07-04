@@ -1,0 +1,16 @@
+{
+  "name": "overtake",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Overtake — rankings over time, animated. Static site.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.mjs",
+    "build": "node scripts/validate-data.mjs && node scripts/build.mjs",
+    "og": "node scripts/build.mjs",
+    "serve": "python3 -m http.server 8123"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "id": "ev-sales",
+  "title": "EV Makers by Annual Sales",
+  "shortTitle": "EV Sales",
+  "category": "tech",
+  "unit": {
+    "label": "Battery-electric vehicles sold",
+    "format": "si",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 2
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Battery-electric sales begin as a Tesla story and quickly become a China scale story. The overtake to watch is BYD turning from battery supplier into the volume heavyweight of the EV era.",
+  "source": {
+    "name": "Company delivery reports, EV-Volumes and IEA Global EV Outlook",
+    "url": "https://www.iea.org/reports/global-ev-outlook-2025",
+    "note": "Annual BEV unit estimates by manufacturer group. Plug-in hybrids are excluded where separable; several early years are reconstructed."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "tesla",
+      "label": "Tesla",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "byd",
+      "label": "BYD",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "saic",
+      "label": "SAIC-GM-Wuling",
+      "color": "#FFB020"
+    },
+    {
+      "id": "volkswagen",
+      "label": "Volkswagen Group",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "bmw",
+      "label": "BMW Group",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "hyundai",
+      "label": "Hyundai-Kia",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "geely",
+      "label": "Geely / Zeekr",
+      "color": "#A3E635"
+    },
+    {
+      "id": "nio",
+      "label": "NIO",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "xpeng",
+      "label": "XPeng",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "renault",
+      "label": "Renault-Nissan",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "gac",
+      "label": "GAC Aion",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "li-auto",
+      "label": "Li Auto",
+      "color": "#C4B5A0"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 2010,
+      "values": {
+        "tesla": 1.5,
+        "byd": 0,
+        "saic": 0,
+        "volkswagen": 0,
+        "bmw": 0,
+        "hyundai": 0,
+        "geely": 0,
+        "renault": 0,
+        "gac": 0
+      }
+    },
+    {
+      "t": 2011,
+      "values": {
+        "tesla": 2.5,
+        "byd": 1,
+        "saic": 0,
+        "volkswagen": 0,
+        "bmw": 0,
+        "hyundai": 0,
+        "geely": 0,
+        "renault": 1,
+        "gac": 0
+      }
+    },
+    {
+      "t": 2012,
+      "values": {
+        "tesla": 2.7,
+        "byd": 2,
+        "saic": 0,
+        "volkswagen": 0.5,
+        "bmw": 0,
+        "hyundai": 0,
+        "geely": 0,
+        "renault": 10,
+        "gac": 0
+      }
+    },
+    {
+      "t": 2013,
+      "values": {
+        "tesla": 22,
+        "byd": 6,
+        "saic": 0,
+        "volkswagen": 3,
+        "bmw": 1,
+        "hyundai": 0,
+        "geely": 0,
+        "renault": 18,
+        "gac": 0
+      }
+    },
+    {
+      "t": 2014,
+      "values": {
+        "tesla": 32,
+        "byd": 18,
+        "saic": 1,
+        "volkswagen": 10,
+        "bmw": 5,
+        "hyundai": 1,
+        "geely": 2,
+        "nio": 0,
+        "renault": 25,
+        "gac": 0
+      }
+    },
+    {
+      "t": 2015,
+      "values": {
+        "tesla": 50,
+        "byd": 40,
+        "saic": 5,
+        "volkswagen": 18,
+        "bmw": 12,
+        "hyundai": 3,
+        "geely": 5,
+        "nio": 0,
+        "xpeng": 0,
+        "renault": 45,
+        "gac": 1
+      }
+    },
+    {
+      "t": 2016,
+      "values": {
+        "tesla": 76,
+        "byd": 60,
+        "saic": 12,
+        "volkswagen": 25,
+        "bmw": 24,
+        "hyundai": 8,
+        "geely": 12,
+        "nio": 1,
+        "xpeng": 0,
+        "renault": 62,
+        "gac": 4
+      }
+    },
+    {
+      "t": 2017,
+      "values": {
+        "tesla": 101,
+        "byd": 95,
+        "saic": 25,
+        "volkswagen": 45,
+        "bmw": 32,
+        "hyundai": 18,
+        "geely": 25,
+        "nio": 11,
+        "xpeng": 1,
+        "renault": 72,
+        "gac": 8
+      }
+    },
+    {
+      "t": 2018,
+      "values": {
+        "tesla": 245,
+        "byd": 103,
+        "saic": 35,
+        "volkswagen": 75,
+        "bmw": 50,
+        "hyundai": 40,
+        "geely": 35,
+        "nio": 14,
+        "xpeng": 4,
+        "renault": 92,
+        "gac": 20,
+        "li-auto": 0
+      }
+    },
+    {
+      "t": 2019,
+      "values": {
+        "tesla": 367,
+        "byd": 145,
+        "saic": 60,
+        "volkswagen": 140,
+        "bmw": 74,
+        "hyundai": 70,
+        "geely": 45,
+        "nio": 20,
+        "xpeng": 16,
+        "renault": 120,
+        "gac": 42,
+        "li-auto": 1
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "tesla": 500,
+        "byd": 131,
+        "saic": 170,
+        "volkswagen": 230,
+        "bmw": 103,
+        "hyundai": 100,
+        "geely": 68,
+        "nio": 44,
+        "xpeng": 27,
+        "renault": 115,
+        "gac": 60,
+        "li-auto": 33
+      }
+    },
+    {
+      "t": 2021,
+      "values": {
+        "tesla": 936,
+        "byd": 321,
+        "saic": 456,
+        "volkswagen": 452,
+        "bmw": 216,
+        "hyundai": 160,
+        "geely": 110,
+        "nio": 91,
+        "xpeng": 98,
+        "renault": 165,
+        "gac": 120,
+        "li-auto": 90
+      }
+    },
+    {
+      "t": 2022,
+      "values": {
+        "tesla": 1314,
+        "byd": 911,
+        "saic": 524,
+        "volkswagen": 572,
+        "bmw": 280,
+        "hyundai": 260,
+        "geely": 251,
+        "nio": 122,
+        "xpeng": 121,
+        "renault": 183,
+        "gac": 271,
+        "li-auto": 133
+      }
+    },
+    {
+      "t": 2023,
+      "values": {
+        "tesla": 1810,
+        "byd": 1574,
+        "saic": 640,
+        "volkswagen": 770,
+        "bmw": 376,
+        "hyundai": 375,
+        "geely": 487,
+        "nio": 160,
+        "xpeng": 142,
+        "renault": 220,
+        "gac": 480,
+        "li-auto": 376
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "tesla": 1790,
+        "byd": 1760,
+        "saic": 720,
+        "volkswagen": 745,
+        "bmw": 427,
+        "hyundai": 450,
+        "geely": 780,
+        "nio": 222,
+        "xpeng": 190,
+        "renault": 260,
+        "gac": 450,
+        "li-auto": 500
+      }
+    },
+    {
+      "t": 2025,
+      "values": {
+        "tesla": 1850,
+        "byd": 2050,
+        "saic": 760,
+        "volkswagen": 820,
+        "bmw": 480,
+        "hyundai": 520,
+        "geely": 980,
+        "nio": 260,
+        "xpeng": 240,
+        "renault": 300,
+        "gac": 520,
+        "li-auto": 620
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 2012.5,
+      "title": "Model S changes the stakes",
+      "text": "Tesla proves an EV can be premium, long-range and desirable instead of just experimental."
+    },
+    {
+      "t": 2020.7,
+      "title": "China scale kicks in",
+      "text": "Low-cost Chinese EVs and city cars turn electric volume from a niche into a mass-market race."
+    },
+    {
+      "t": 2023.9,
+      "title": "BYD catches Tesla",
+      "text": "BYD closes the BEV gap and briefly overtakes Tesla in quarterly electric-only deliveries."
+    },
+    {
+      "t": 2024.4,
+      "title": "Legacy automakers cluster",
+      "text": "VW, Hyundai-Kia and BMW settle into the second pack while the Chinese brands keep accelerating."
+    }
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "id": "olympic-golds",
+  "title": "Olympic Gold Medals by Country",
+  "shortTitle": "Olympic Golds",
+  "category": "sports",
+  "unit": {
+    "label": "Cumulative Summer Olympic gold medals",
+    "format": "plain",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 0
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The Summer Olympics leaderboard is a century-long geopolitical race hiding inside a sports table. The United States builds an early lead, the Soviet Union arrives like a shockwave, and modern China turns the board into a three-power chase.",
+  "source": {
+    "name": "Olympedia and IOC medal tables",
+    "url": "https://www.olympedia.org/statistics/medal/country",
+    "note": "Cumulative Summer Games gold medals, attributed to present/common Olympic country names; historical delegation edge cases are simplified."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "usa",
+      "label": "United States",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "gbr",
+      "label": "Great Britain",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "france",
+      "label": "France",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "germany",
+      "label": "Germany",
+      "color": "#FDE68A"
+    },
+    {
+      "id": "italy",
+      "label": "Italy",
+      "color": "#34D399"
+    },
+    {
+      "id": "sweden",
+      "label": "Sweden",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "ussr",
+      "label": "Soviet Union",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "russia",
+      "label": "Russia",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "china",
+      "label": "China",
+      "color": "#FFB020"
+    },
+    {
+      "id": "australia",
+      "label": "Australia",
+      "color": "#A3E635"
+    },
+    {
+      "id": "japan",
+      "label": "Japan",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "hungary",
+      "label": "Hungary",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "netherlands",
+      "label": "Netherlands",
+      "color": "#FF8C42"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 1896,
+      "values": {
+        "usa": 11,
+        "gbr": 2,
+        "france": 5,
+        "germany": 6,
+        "italy": 0,
+        "sweden": 0,
+        "australia": 2,
+        "japan": 0,
+        "hungary": 2,
+        "netherlands": 0
+      }
+    },
+    {
+      "t": 1900,
+      "values": {
+        "usa": 30,
+        "gbr": 17,
+        "france": 31,
+        "germany": 10,
+        "italy": 2,
+        "sweden": 1,
+        "australia": 5,
+        "japan": 0,
+        "hungary": 3,
+        "netherlands": 1
+      }
+    },
+    {
+      "t": 1904,
+      "values": {
+        "usa": 108,
+        "gbr": 18,
+        "france": 31,
+        "germany": 14,
+        "italy": 2,
+        "sweden": 1,
+        "australia": 5,
+        "japan": 0,
+        "hungary": 5,
+        "netherlands": 1
+      }
+    },
+    {
+      "t": 1908,
+      "values": {
+        "usa": 131,
+        "gbr": 74,
+        "france": 36,
+        "germany": 17,
+        "italy": 4,
+        "sweden": 9,
+        "australia": 5,
+        "japan": 0,
+        "hungary": 8,
+        "netherlands": 1
+      }
+    },
+    {
+      "t": 1912,
+      "values": {
+        "usa": 156,
+        "gbr": 84,
+        "france": 43,
+        "germany": 23,
+        "italy": 7,
+        "sweden": 32,
+        "australia": 6,
+        "japan": 0,
+        "hungary": 11,
+        "netherlands": 1
+      }
+    },
+    {
+      "t": 1920,
+      "values": {
+        "usa": 197,
+        "gbr": 99,
+        "france": 52,
+        "germany": 23,
+        "italy": 20,
+        "sweden": 51,
+        "australia": 6,
+        "japan": 0,
+        "hungary": 14,
+        "netherlands": 5
+      }
+    },
+    {
+      "t": 1924,
+      "values": {
+        "usa": 242,
+        "gbr": 108,
+        "france": 65,
+        "germany": 23,
+        "italy": 28,
+        "sweden": 55,
+        "australia": 9,
+        "japan": 0,
+        "hungary": 16,
+        "netherlands": 9
+      }
+    },
+    {
+      "t": 1928,
+      "values": {
+        "usa": 267,
+        "gbr": 111,
+        "france": 71,
+        "germany": 33,
+        "italy": 35,
+        "sweden": 62,
+        "australia": 12,
+        "japan": 2,
+        "hungary": 20,
+        "netherlands": 15
+      }
+    },
+    {
+      "t": 1932,
+      "values": {
+        "usa": 308,
+        "gbr": 115,
+        "france": 81,
+        "germany": 36,
+        "italy": 47,
+        "sweden": 71,
+        "australia": 15,
+        "japan": 9,
+        "hungary": 26,
+        "netherlands": 17
+      }
+    },
+    {
+      "t": 1936,
+      "values": {
+        "usa": 332,
+        "gbr": 119,
+        "france": 88,
+        "germany": 69,
+        "italy": 55,
+        "sweden": 77,
+        "australia": 15,
+        "japan": 15,
+        "hungary": 36,
+        "netherlands": 23
+      }
+    },
+    {
+      "t": 1948,
+      "values": {
+        "usa": 370,
+        "gbr": 122,
+        "france": 98,
+        "germany": 69,
+        "italy": 63,
+        "sweden": 93,
+        "ussr": 0,
+        "china": 0,
+        "australia": 17,
+        "japan": 15,
+        "hungary": 46,
+        "netherlands": 28
+      }
+    },
+    {
+      "t": 1952,
+      "values": {
+        "usa": 410,
+        "gbr": 128,
+        "france": 104,
+        "germany": 93,
+        "italy": 71,
+        "sweden": 105,
+        "ussr": 22,
+        "china": 0,
+        "australia": 23,
+        "japan": 16,
+        "hungary": 58,
+        "netherlands": 28
+      }
+    },
+    {
+      "t": 1956,
+      "values": {
+        "usa": 442,
+        "gbr": 134,
+        "france": 110,
+        "germany": 99,
+        "italy": 79,
+        "sweden": 113,
+        "ussr": 59,
+        "china": 0,
+        "australia": 36,
+        "japan": 20,
+        "hungary": 67,
+        "netherlands": 28
+      }
+    },
+    {
+      "t": 1960,
+      "values": {
+        "usa": 476,
+        "gbr": 136,
+        "france": 110,
+        "germany": 111,
+        "italy": 92,
+        "sweden": 114,
+        "ussr": 102,
+        "china": 0,
+        "australia": 44,
+        "japan": 24,
+        "hungary": 73,
+        "netherlands": 28
+      }
+    },
+    {
+      "t": 1964,
+      "values": {
+        "usa": 512,
+        "gbr": 140,
+        "france": 111,
+        "germany": 121,
+        "italy": 102,
+        "sweden": 116,
+        "ussr": 132,
+        "china": 0,
+        "australia": 50,
+        "japan": 40,
+        "hungary": 83,
+        "netherlands": 30
+      }
+    },
+    {
+      "t": 1968,
+      "values": {
+        "usa": 557,
+        "gbr": 145,
+        "france": 118,
+        "germany": 146,
+        "italy": 105,
+        "sweden": 119,
+        "ussr": 161,
+        "china": 0,
+        "australia": 55,
+        "japan": 51,
+        "hungary": 91,
+        "netherlands": 33
+      }
+    },
+    {
+      "t": 1972,
+      "values": {
+        "usa": 590,
+        "gbr": 149,
+        "france": 120,
+        "germany": 166,
+        "italy": 110,
+        "sweden": 123,
+        "ussr": 211,
+        "china": 0,
+        "australia": 63,
+        "japan": 64,
+        "hungary": 97,
+        "netherlands": 36
+      }
+    },
+    {
+      "t": 1976,
+      "values": {
+        "usa": 624,
+        "gbr": 152,
+        "france": 122,
+        "germany": 206,
+        "italy": 112,
+        "sweden": 127,
+        "ussr": 260,
+        "china": 0,
+        "australia": 63,
+        "japan": 73,
+        "hungary": 101,
+        "netherlands": 41
+      }
+    },
+    {
+      "t": 1980,
+      "values": {
+        "usa": 624,
+        "gbr": 157,
+        "france": 128,
+        "germany": 253,
+        "italy": 120,
+        "sweden": 130,
+        "ussr": 340,
+        "china": 0,
+        "australia": 68,
+        "japan": 73,
+        "hungary": 108,
+        "netherlands": 43
+      }
+    },
+    {
+      "t": 1984,
+      "values": {
+        "usa": 707,
+        "gbr": 162,
+        "france": 133,
+        "germany": 270,
+        "italy": 134,
+        "sweden": 132,
+        "ussr": 340,
+        "china": 15,
+        "australia": 72,
+        "japan": 83,
+        "hungary": 108,
+        "netherlands": 48
+      }
+    },
+    {
+      "t": 1988,
+      "values": {
+        "usa": 743,
+        "gbr": 167,
+        "france": 139,
+        "germany": 283,
+        "italy": 140,
+        "sweden": 132,
+        "ussr": 395,
+        "china": 20,
+        "australia": 75,
+        "japan": 87,
+        "hungary": 119,
+        "netherlands": 50
+      }
+    },
+    {
+      "t": 1992,
+      "values": {
+        "usa": 780,
+        "gbr": 172,
+        "france": 147,
+        "germany": 315,
+        "italy": 146,
+        "sweden": 134,
+        "ussr": 440,
+        "russia": 45,
+        "china": 36,
+        "australia": 82,
+        "japan": 90,
+        "hungary": 130,
+        "netherlands": 52
+      }
+    },
+    {
+      "t": 1996,
+      "values": {
+        "usa": 824,
+        "gbr": 173,
+        "france": 162,
+        "germany": 335,
+        "italy": 159,
+        "sweden": 136,
+        "russia": 71,
+        "china": 52,
+        "australia": 91,
+        "japan": 93,
+        "hungary": 137,
+        "netherlands": 56
+      }
+    },
+    {
+      "t": 2000,
+      "values": {
+        "usa": 864,
+        "gbr": 184,
+        "france": 175,
+        "germany": 348,
+        "italy": 172,
+        "sweden": 139,
+        "russia": 103,
+        "china": 80,
+        "australia": 107,
+        "japan": 98,
+        "hungary": 145,
+        "netherlands": 68
+      }
+    },
+    {
+      "t": 2004,
+      "values": {
+        "usa": 900,
+        "gbr": 193,
+        "france": 186,
+        "germany": 361,
+        "italy": 182,
+        "sweden": 143,
+        "russia": 130,
+        "china": 112,
+        "australia": 124,
+        "japan": 114,
+        "hungary": 153,
+        "netherlands": 72
+      }
+    },
+    {
+      "t": 2008,
+      "values": {
+        "usa": 936,
+        "gbr": 212,
+        "france": 193,
+        "germany": 377,
+        "italy": 190,
+        "sweden": 143,
+        "russia": 153,
+        "china": 163,
+        "australia": 138,
+        "japan": 123,
+        "hungary": 156,
+        "netherlands": 79
+      }
+    },
+    {
+      "t": 2012,
+      "values": {
+        "usa": 982,
+        "gbr": 241,
+        "france": 204,
+        "germany": 388,
+        "italy": 198,
+        "sweden": 144,
+        "russia": 177,
+        "china": 201,
+        "australia": 145,
+        "japan": 130,
+        "hungary": 164,
+        "netherlands": 85
+      }
+    },
+    {
+      "t": 2016,
+      "values": {
+        "usa": 1028,
+        "gbr": 268,
+        "france": 214,
+        "germany": 405,
+        "italy": 206,
+        "sweden": 146,
+        "russia": 196,
+        "china": 227,
+        "australia": 153,
+        "japan": 142,
+        "hungary": 172,
+        "netherlands": 93
+      }
+    },
+    {
+      "t": 2021,
+      "values": {
+        "usa": 1067,
+        "gbr": 290,
+        "france": 224,
+        "germany": 415,
+        "italy": 216,
+        "sweden": 149,
+        "russia": 216,
+        "china": 265,
+        "australia": 170,
+        "japan": 169,
+        "hungary": 178,
+        "netherlands": 103
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "usa": 1107,
+        "gbr": 304,
+        "france": 240,
+        "germany": 428,
+        "italy": 228,
+        "sweden": 150,
+        "russia": 226,
+        "china": 305,
+        "australia": 188,
+        "japan": 189,
+        "hungary": 184,
+        "netherlands": 118
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 1936,
+      "title": "Berlin resets the board",
+      "text": "Germany piles up golds at home, turning the medal table into a propaganda stage."
+    },
+    {
+      "t": 1952,
+      "title": "Soviet Union enters",
+      "text": "The USSR appears in Helsinki and immediately becomes the United States’ first true Olympic rival."
+    },
+    {
+      "t": 1984,
+      "title": "Boycott games swing hard",
+      "text": "The Los Angeles Games inflate the US lead after the Soviet-led boycott removes much of the rival field."
+    },
+    {
+      "t": 2008,
+      "title": "China tops a home Games",
+      "text": "China wins the most golds in Beijing, announcing itself as a permanent Summer Olympics superpower."
+    }
+  ]
+}

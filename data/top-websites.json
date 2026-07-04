@@ -1,0 +1,61 @@
+{
+  "id": "top-websites",
+  "title": "Most-Visited Websites",
+  "shortTitle": "Top Websites",
+  "category": "play",
+  "unit": { "label": "Monthly visits", "format": "si", "prefix": "", "suffix": "", "decimals": 0, "multiplier": 1000000 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Where the web's attention actually goes, ranked by estimated monthly visits since the dot-com years. Yahoo and AOL rule the portal era, Google becomes the front door to everything, and YouTube's video tide rises until it rivals search itself. A snapshot race — bars rise and fall as the internet's habits change.",
+  "source": {
+    "name": "Similarweb, Alexa archives & comScore",
+    "url": "https://www.similarweb.com/top-websites/",
+    "note": "Illustrative reconstruction: monthly visit estimates in millions, blended from historical Alexa ranks and modern Similarweb data. Pre-2010 figures are approximate."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "yahoo", "label": "Yahoo", "color": "#B388FF" },
+    { "id": "aol", "label": "AOL", "color": "#67E8F9" },
+    { "id": "msn", "label": "MSN", "color": "#4C8DFF" },
+    { "id": "google", "label": "Google", "color": "#FFD84D" },
+    { "id": "youtube", "label": "YouTube", "color": "#F43F5E" },
+    { "id": "facebook", "label": "Facebook", "color": "#2563EB" },
+    { "id": "wikipedia", "label": "Wikipedia", "color": "#D4D4D8" },
+    { "id": "myspace", "label": "MySpace", "color": "#94A3B8" },
+    { "id": "amazon", "label": "Amazon", "color": "#FF8C42" },
+    { "id": "baidu", "label": "Baidu", "color": "#34D399" },
+    { "id": "twitter", "label": "Twitter / X", "color": "#86EFAC" },
+    { "id": "ebay", "label": "eBay", "color": "#A3E635" },
+    { "id": "instagram", "label": "Instagram", "color": "#E879F9" },
+    { "id": "reddit", "label": "Reddit", "color": "#FF5C4D" },
+    { "id": "tiktok", "label": "TikTok", "color": "#2FB4FF" },
+    { "id": "pornhub", "label": "Adult (aggregate)", "color": "#5C6577" },
+    { "id": "chatgpt", "label": "ChatGPT", "color": "#23C8A8" }
+  ],
+  "keyframes": [
+    { "t": 1998, "values": { "yahoo": 40, "aol": 35, "msn": 20 } },
+    { "t": 2000, "values": { "yahoo": 120, "aol": 95, "msn": 90, "google": 20, "ebay": 30 } },
+    { "t": 2002, "values": { "yahoo": 230, "aol": 180, "msn": 210, "google": 150, "ebay": 90 } },
+    { "t": 2004, "values": { "yahoo": 320, "aol": 200, "msn": 280, "google": 320, "ebay": 140, "myspace": 40 } },
+    { "t": 2006, "values": { "yahoo": 480, "aol": 210, "msn": 390, "google": 520, "myspace": 260, "ebay": 200, "wikipedia": 120, "youtube": 200 } },
+    { "t": 2008, "values": { "yahoo": 560, "msn": 420, "google": 780, "myspace": 320, "youtube": 500, "facebook": 250, "wikipedia": 250, "ebay": 240, "baidu": 200 } },
+    { "t": 2010, "values": { "yahoo": 600, "msn": 400, "google": 1100, "youtube": 800, "facebook": 700, "wikipedia": 340, "baidu": 350, "amazon": 280, "myspace": 120, "twitter": 120 } },
+    { "t": 2012, "values": { "yahoo": 620, "google": 1600, "youtube": 1200, "facebook": 1100, "wikipedia": 430, "baidu": 550, "amazon": 400, "twitter": 300, "msn": 320 } },
+    { "t": 2014, "values": { "yahoo": 560, "google": 2100, "youtube": 1700, "facebook": 1500, "wikipedia": 500, "baidu": 700, "amazon": 550, "twitter": 500, "reddit": 160, "instagram": 200 } },
+    { "t": 2016, "values": { "yahoo": 480, "google": 2800, "youtube": 2400, "facebook": 2000, "wikipedia": 550, "baidu": 850, "amazon": 750, "twitter": 700, "reddit": 350, "instagram": 500, "pornhub": 900 } },
+    { "t": 2018, "values": { "google": 3400, "youtube": 3000, "facebook": 2300, "wikipedia": 600, "baidu": 950, "amazon": 1000, "twitter": 900, "reddit": 700, "instagram": 900, "tiktok": 200, "pornhub": 1100, "yahoo": 400 } },
+    { "t": 2020, "values": { "google": 4200, "youtube": 3800, "facebook": 2100, "wikipedia": 700, "baidu": 1000, "amazon": 1600, "twitter": 1100, "reddit": 1200, "instagram": 1400, "tiktok": 900, "pornhub": 1300 } },
+    { "t": 2022, "values": { "google": 5500, "youtube": 4600, "facebook": 1900, "wikipedia": 750, "baidu": 950, "amazon": 2100, "twitter": 1300, "reddit": 1600, "instagram": 2000, "tiktok": 1600, "pornhub": 1400, "chatgpt": 50 } },
+    { "t": 2024, "values": { "google": 6200, "youtube": 5200, "facebook": 1800, "wikipedia": 780, "baidu": 900, "amazon": 2400, "twitter": 1000, "reddit": 1800, "instagram": 2400, "tiktok": 2100, "pornhub": 1400, "chatgpt": 1600 } },
+    { "t": 2025, "values": { "google": 6400, "youtube": 5400, "facebook": 1750, "wikipedia": 790, "amazon": 2500, "twitter": 950, "reddit": 1900, "instagram": 2500, "tiktok": 2300, "chatgpt": 2600, "pornhub": 1400 } }
+  ],
+  "milestones": [
+    { "t": 2000.5, "title": "The portal era", "text": "Yahoo, AOL and MSN are the web's front doors, bundling mail, news and search into destinations users open first every day." },
+    { "t": 2004.0, "title": "Google catches Yahoo", "text": "A clean search box beats the cluttered portal. Google overtakes Yahoo in traffic and never looks back." },
+    { "t": 2009.5, "title": "YouTube and Facebook surge", "text": "Video and the social feed become the two biggest reasons to open a browser, closing fast on search." },
+    { "t": 2021.0, "title": "TikTok arrives at the top", "text": "TikTok's algorithmic feed pulls billions of visits, gate-crashing a top ten that had been stable for years." },
+    { "t": 2024.0, "title": "ChatGPT breaks the top tier", "text": "Two years after launch, ChatGPT ranks among the most-visited sites on earth — a new kind of front door to the web." }
+  ]
+}

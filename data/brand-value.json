@@ -1,0 +1,67 @@
+{
+  "id": "brand-value",
+  "title": "Most Valuable Brands",
+  "shortTitle": "Top Brands",
+  "category": "economy",
+  "unit": {
+    "label": "Brand value",
+    "format": "si",
+    "prefix": "$",
+    "suffix": "",
+    "decimals": 1,
+    "multiplier": 1000000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "A quarter-century of Interbrand's Best Global Brands ranking. Coca-Cola held the #1 spot for over a decade before Apple seized it in 2013 and never let go, soaring past $500B. Watch Nokia rise into the top five in the mid-2000s and then collapse, while Google and Amazon climb into the elite.",
+  "source": {
+    "name": "Interbrand",
+    "url": "https://interbrand.com/best-global-brands/",
+    "note": "Interbrand's annual brand-value estimates; methodology revised over time, so figures are not strictly comparable across all years."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "cocacola", "label": "Coca-Cola", "color": "#F43F5E" },
+    { "id": "apple", "label": "Apple", "color": "#D4D4D8" },
+    { "id": "google", "label": "Google", "color": "#4C8DFF" },
+    { "id": "microsoft", "label": "Microsoft", "color": "#34D399" },
+    { "id": "amazon", "label": "Amazon", "color": "#FF8C42" },
+    { "id": "ibm", "label": "IBM", "color": "#2FB4FF" },
+    { "id": "ge", "label": "General Electric", "color": "#94A3B8" },
+    { "id": "nokia", "label": "Nokia", "color": "#6E7BFF" },
+    { "id": "mcdonalds", "label": "McDonald's", "color": "#FFD84D" },
+    { "id": "toyota", "label": "Toyota", "color": "#FF5C4D" },
+    { "id": "samsung", "label": "Samsung", "color": "#67E8F9" },
+    { "id": "intel", "label": "Intel", "color": "#23C8A8" },
+    { "id": "disney", "label": "Disney", "color": "#E879F9" },
+    { "id": "mercedes", "label": "Mercedes-Benz", "color": "#C4B5A0" },
+    { "id": "marlboro", "label": "Marlboro", "color": "#A3E635" }
+  ],
+  "keyframes": [
+    { "t": 2000, "values": { "cocacola": 72.5, "microsoft": 70.2, "ibm": 53.2, "intel": 39, "nokia": 38.5, "ge": 38.1, "disney": 33.6, "mcdonalds": 27.9, "marlboro": 22.1, "toyota": 18.9, "apple": 6.6, "samsung": 5.2 } },
+    { "t": 2002, "values": { "cocacola": 69.6, "microsoft": 64.1, "ibm": 51.2, "ge": 41.3, "intel": 30.9, "nokia": 30, "disney": 29.3, "mcdonalds": 26.4, "marlboro": 24.2, "toyota": 20.5, "apple": 5.3, "samsung": 8.3 } },
+    { "t": 2004, "values": { "cocacola": 67.4, "microsoft": 61.4, "ibm": 53.8, "ge": 44.1, "intel": 33.5, "disney": 27.1, "mcdonalds": 25, "nokia": 24, "toyota": 22.7, "marlboro": 22.1, "samsung": 12.6, "apple": 6.9 } },
+    { "t": 2006, "values": { "cocacola": 67, "microsoft": 56.9, "ibm": 56.2, "ge": 48.9, "intel": 32.3, "nokia": 30.1, "toyota": 27.9, "disney": 27.8, "mcdonalds": 27.5, "samsung": 16.2, "marlboro": 21.4, "apple": 9.1, "google": 12.4 } },
+    { "t": 2008, "values": { "cocacola": 66.7, "ibm": 59, "microsoft": 59, "ge": 53.1, "nokia": 35.9, "toyota": 34.1, "intel": 31.3, "mcdonalds": 31, "disney": 29.3, "google": 25.6, "samsung": 17.7, "apple": 13.7, "mercedes": 25.6 } },
+    { "t": 2009, "values": { "cocacola": 68.7, "ibm": 60.2, "microsoft": 56.6, "ge": 47.8, "nokia": 34.9, "mcdonalds": 32.3, "google": 32, "toyota": 31.3, "intel": 30.6, "disney": 28.4, "apple": 15.4, "samsung": 17.5, "mercedes": 23.9 } },
+    { "t": 2010, "values": { "cocacola": 70.5, "ibm": 64.7, "microsoft": 60.9, "google": 43.6, "ge": 42.8, "mcdonalds": 33.6, "intel": 32, "nokia": 29.5, "disney": 28.7, "toyota": 26.2, "apple": 21.1, "samsung": 19.5, "mercedes": 25.2 } },
+    { "t": 2011, "values": { "cocacola": 71.9, "ibm": 69.9, "microsoft": 59, "google": 55.3, "ge": 42.8, "mcdonalds": 35.6, "intel": 35.2, "apple": 33.5, "disney": 29.0, "toyota": 27.8, "samsung": 23.4, "nokia": 25, "mercedes": 27.4 } },
+    { "t": 2012, "values": { "cocacola": 77.8, "apple": 76.6, "ibm": 75.5, "google": 69.7, "microsoft": 57.9, "ge": 43.7, "mcdonalds": 40.1, "intel": 39.4, "samsung": 32.9, "toyota": 30.3, "disney": 27.4, "mercedes": 30.1, "nokia": 21 } },
+    { "t": 2013, "values": { "apple": 98.3, "google": 93.3, "cocacola": 79.2, "ibm": 78.8, "microsoft": 59.5, "ge": 46.9, "mcdonalds": 42, "samsung": 39.6, "intel": 37.3, "toyota": 35.3, "mercedes": 31.9, "disney": 28.1 } },
+    { "t": 2014, "values": { "apple": 118.9, "google": 107.4, "cocacola": 81.6, "ibm": 72.2, "microsoft": 61.2, "ge": 45.5, "samsung": 45.5, "toyota": 42.4, "mcdonalds": 42.3, "mercedes": 34.3, "intel": 34.2, "disney": 32.2 } },
+    { "t": 2016, "values": { "apple": 178.1, "google": 133.3, "cocacola": 73.1, "microsoft": 72.8, "toyota": 53.6, "ibm": 52.5, "samsung": 51.8, "amazon": 50.3, "mercedes": 43.5, "ge": 43.1, "mcdonalds": 39.4, "disney": 38.8, "intel": 36.9 } },
+    { "t": 2018, "values": { "apple": 214.5, "google": 155.5, "amazon": 100.8, "microsoft": 92.7, "cocacola": 66.3, "samsung": 59.9, "toyota": 53.4, "mercedes": 48.6, "mcdonalds": 43.4, "disney": 39.9, "ge": 32.8, "intel": 43.3, "ibm": 42.9 } },
+    { "t": 2020, "values": { "apple": 322.9, "amazon": 200.7, "microsoft": 166, "google": 165.4, "samsung": 62.3, "cocacola": 56.9, "toyota": 51.6, "mercedes": 49.3, "mcdonalds": 42.8, "disney": 40.8, "intel": 36.9, "ibm": 34.9 } },
+    { "t": 2022, "values": { "apple": 482.2, "microsoft": 278.3, "amazon": 274.8, "google": 251.8, "samsung": 87.7, "toyota": 59.8, "cocacola": 57.5, "mercedes": 56.1, "disney": 50.3, "mcdonalds": 48.6, "intel": 32.9, "ibm": 34.2 } },
+    { "t": 2024, "values": { "apple": 488.9, "microsoft": 352.5, "amazon": 298.1, "google": 291.3, "samsung": 100.5, "toyota": 64.6, "cocacola": 61.2, "mercedes": 58.8, "mcdonalds": 53.4, "disney": 47.7, "intel": 30.1, "ibm": 37.9 } }
+  ],
+  "milestones": [
+    { "t": 2000, "title": "Coca-Cola reigns supreme", "text": "Coca-Cola tops Interbrand's inaugural rankings as the world's most valuable brand, ahead of Microsoft and IBM." },
+    { "t": 2008, "title": "Nokia's peak before the fall", "text": "Nokia sits among the world's top five brands at the height of its mobile-phone dominance, just before the smartphone era erases its lead." },
+    { "t": 2013, "title": "Apple passes Coca-Cola", "text": "Apple overtakes Coca-Cola as the world's most valuable brand, ending Coke's 13-year reign at #1." },
+    { "t": 2018, "title": "Amazon breaks $100B", "text": "Amazon's brand value crosses $100B, vaulting it into the top three as e-commerce reshapes retail." },
+    { "t": 2022, "title": "Apple nears half a trillion", "text": "Apple's brand value approaches $500B, roughly the size of the next two brands combined." }
+  ]
+}

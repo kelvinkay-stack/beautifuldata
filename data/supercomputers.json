@@ -1,0 +1,239 @@
+{
+  "id": "supercomputers",
+  "title": "Fastest Supercomputers",
+  "shortTitle": "Supercomputers",
+  "category": "science",
+  "unit": {
+    "label": "LINPACK Rmax",
+    "format": "si",
+    "prefix": "",
+    "suffix": "FLOPS",
+    "decimals": 1
+  },
+  "scale": "log",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Measured LINPACK performance (Rmax) of the world's fastest supercomputers, from each June TOP500 list. The race spans eight orders of magnitude in three decades: 59.7 gigaflops in 1993 to 1.74 exaflops today, with the crown ricocheting between US national labs, Japan and China along the way.",
+  "source": {
+    "name": "TOP500.org",
+    "url": "https://www.top500.org",
+    "note": "June lists, yearly. Machines enter at their debut Rmax rather than growing in; November debuts appear at the following June keyframe."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "cm-5",
+      "label": "TMC CM-5 (LANL)",
+      "color": "#94A3B8"
+    },
+    {
+      "id": "nwt",
+      "label": "Numerical Wind Tunnel",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "paragon",
+      "label": "Intel Paragon XP/S",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "sr2201",
+      "label": "Hitachi SR2201",
+      "color": "#FDE68A"
+    },
+    {
+      "id": "cp-pacs",
+      "label": "CP-PACS",
+      "color": "#86EFAC"
+    },
+    {
+      "id": "asci-red",
+      "label": "ASCI Red",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "cray-t3e",
+      "label": "Cray T3E-1200",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "blue-pacific",
+      "label": "ASCI Blue Pacific",
+      "color": "#D4D4D8"
+    },
+    {
+      "id": "asci-white",
+      "label": "ASCI White",
+      "color": "#E2B93B"
+    },
+    {
+      "id": "earth-simulator",
+      "label": "Earth Simulator",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "blue-gene-l",
+      "label": "Blue Gene/L",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "roadrunner",
+      "label": "Roadrunner",
+      "color": "#FFB020"
+    },
+    {
+      "id": "jaguar",
+      "label": "Jaguar",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "tianhe-1a",
+      "label": "Tianhe-1A",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "k-computer",
+      "label": "K computer",
+      "color": "#E879F9"
+    },
+    {
+      "id": "sequoia",
+      "label": "Sequoia",
+      "color": "#B388FF"
+    },
+    {
+      "id": "titan",
+      "label": "Titan",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "tianhe-2",
+      "label": "Tianhe-2A",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "taihulight",
+      "label": "Sunway TaihuLight",
+      "color": "#A3E635"
+    },
+    {
+      "id": "summit",
+      "label": "Summit",
+      "color": "#34D399"
+    },
+    {
+      "id": "sierra",
+      "label": "Sierra",
+      "color": "#6E7BFF"
+    },
+    {
+      "id": "fugaku",
+      "label": "Fugaku",
+      "color": "#DC2626"
+    },
+    {
+      "id": "frontier",
+      "label": "Frontier",
+      "color": "#FF9E2C"
+    },
+    {
+      "id": "lumi",
+      "label": "LUMI",
+      "color": "#10B981"
+    },
+    {
+      "id": "aurora",
+      "label": "Aurora",
+      "color": "#0EA5E9"
+    },
+    {
+      "id": "el-capitan",
+      "label": "El Capitan",
+      "color": "#EAB308"
+    },
+    {
+      "id": "jupiter",
+      "label": "JUPITER Booster",
+      "color": "#B45309"
+    }
+  ],
+  "keyframes": [
+    { "t": 1993.45, "values": { "cm-5": 59700000000 } },
+    { "t": 1994.45, "values": { "cm-5": 59700000000, "nwt": 124200000000, "paragon": 143400000000 } },
+    { "t": 1995.45, "values": { "cm-5": 59700000000, "nwt": 170000000000, "paragon": 143400000000 } },
+    { "t": 1996.45, "values": { "cm-5": 59700000000, "nwt": 170000000000, "paragon": 143400000000, "sr2201": 220400000000 } },
+    { "t": 1997.45, "values": { "nwt": 170000000000, "paragon": 143400000000, "sr2201": 220400000000, "cp-pacs": 368200000000, "asci-red": 1068000000000 } },
+    { "t": 1998.45, "values": { "nwt": 170000000000, "paragon": 143400000000, "sr2201": 220400000000, "cp-pacs": 368200000000, "asci-red": 1338000000000, "cray-t3e": 891500000000 } },
+    { "t": 1999.45, "values": { "nwt": 170000000000, "paragon": 143400000000, "sr2201": 220400000000, "cp-pacs": 368200000000, "asci-red": 2121000000000, "cray-t3e": 891500000000, "blue-pacific": 2144000000000.0002 } },
+    { "t": 2000.45, "values": { "sr2201": 220400000000, "cp-pacs": 368200000000, "asci-red": 2379000000000, "cray-t3e": 891500000000, "blue-pacific": 2144000000000.0002 } },
+    { "t": 2001.45, "values": { "cp-pacs": 368200000000, "asci-red": 2379000000000, "cray-t3e": 891500000000, "blue-pacific": 2144000000000.0002, "asci-white": 7226000000000 } },
+    { "t": 2002.45, "values": { "asci-red": 2379000000000, "cray-t3e": 891500000000, "blue-pacific": 2144000000000.0002, "asci-white": 7226000000000, "earth-simulator": 35860000000000 } },
+    { "t": 2003.45, "values": { "asci-red": 2379000000000, "blue-pacific": 2144000000000.0002, "asci-white": 7226000000000, "earth-simulator": 35860000000000 } },
+    { "t": 2004.45, "values": { "asci-red": 2379000000000, "blue-pacific": 2144000000000.0002, "asci-white": 7226000000000, "earth-simulator": 35860000000000 } },
+    { "t": 2005.45, "values": { "asci-red": 2379000000000, "asci-white": 7226000000000, "earth-simulator": 35860000000000, "blue-gene-l": 136800000000000.02 } },
+    { "t": 2006.45, "values": { "asci-white": 7226000000000, "earth-simulator": 35860000000000, "blue-gene-l": 280600000000000.03 } },
+    { "t": 2007.45, "values": { "earth-simulator": 35860000000000, "blue-gene-l": 280600000000000.03 } },
+    { "t": 2008.45, "values": { "earth-simulator": 35860000000000, "blue-gene-l": 478200000000000, "roadrunner": 1026000000000000 } },
+    { "t": 2009.45, "values": { "blue-gene-l": 478200000000000, "roadrunner": 1105000000000000, "jaguar": 1059000000000000 } },
+    { "t": 2010.45, "values": { "blue-gene-l": 478200000000000, "roadrunner": 1105000000000000, "jaguar": 1759000000000000 } },
+    { "t": 2011.45, "values": { "blue-gene-l": 478200000000000, "roadrunner": 1105000000000000, "jaguar": 1759000000000000, "tianhe-1a": 2566000000000000, "k-computer": 8162000000000001 } },
+    { "t": 2012.45, "values": { "roadrunner": 1105000000000000, "jaguar": 1759000000000000, "tianhe-1a": 2566000000000000, "k-computer": 10510000000000000, "sequoia": 16320000000000000 } },
+    { "t": 2013.45, "values": { "tianhe-1a": 2566000000000000, "k-computer": 10510000000000000, "sequoia": 17170000000000002, "titan": 17590000000000000, "tianhe-2": 33860000000000000 } },
+    { "t": 2014.45, "values": { "tianhe-1a": 2566000000000000, "k-computer": 10510000000000000, "sequoia": 17170000000000002, "titan": 17590000000000000, "tianhe-2": 33860000000000000 } },
+    { "t": 2015.45, "values": { "tianhe-1a": 2566000000000000, "k-computer": 10510000000000000, "sequoia": 17170000000000002, "titan": 17590000000000000, "tianhe-2": 33860000000000000 } },
+    { "t": 2016.45, "values": { "k-computer": 10510000000000000, "sequoia": 17170000000000002, "titan": 17590000000000000, "tianhe-2": 33860000000000000, "taihulight": 93010000000000000 } },
+    { "t": 2017.45, "values": { "k-computer": 10510000000000000, "sequoia": 17170000000000002, "titan": 17590000000000000, "tianhe-2": 33860000000000000, "taihulight": 93010000000000000 } },
+    { "t": 2018.45, "values": { "k-computer": 10510000000000000, "sequoia": 17170000000000002, "titan": 17590000000000000, "tianhe-2": 61440000000000000, "taihulight": 93010000000000000, "summit": 122300000000000000, "sierra": 71599999999999990 } },
+    { "t": 2019.45, "values": { "k-computer": 10510000000000000, "sequoia": 17170000000000002, "titan": 17590000000000000, "tianhe-2": 61440000000000000, "taihulight": 93010000000000000, "summit": 148600000000000000, "sierra": 94640000000000000 } },
+    { "t": 2020.45, "values": { "tianhe-2": 61440000000000000, "taihulight": 93010000000000000, "summit": 148600000000000000, "sierra": 94640000000000000, "fugaku": 415500000000000000 } },
+    { "t": 2021.45, "values": { "tianhe-2": 61440000000000000, "taihulight": 93010000000000000, "summit": 148600000000000000, "sierra": 94640000000000000, "fugaku": 442000000000000000 } },
+    { "t": 2022.45, "values": { "tianhe-2": 61440000000000000, "taihulight": 93010000000000000, "summit": 148600000000000000, "sierra": 94640000000000000, "fugaku": 442000000000000000, "frontier": 1102000000000000000, "lumi": 151900000000000000 } },
+    { "t": 2023.45, "values": { "tianhe-2": 61440000000000000, "taihulight": 93010000000000000, "summit": 148600000000000000, "sierra": 94640000000000000, "fugaku": 442000000000000000, "frontier": 1194000000000000000, "lumi": 309100000000000000 } },
+    { "t": 2024.45, "values": { "tianhe-2": 61440000000000000, "taihulight": 93010000000000000, "summit": 148600000000000000, "sierra": 94640000000000000, "fugaku": 442000000000000000, "frontier": 1206000000000000000, "lumi": 379700000000000000, "aurora": 1012000000000000000 } },
+    { "t": 2025.45, "values": { "tianhe-2": 61440000000000000, "taihulight": 93010000000000000, "sierra": 94640000000000000, "fugaku": 442000000000000000, "frontier": 1353000000000000000, "lumi": 379700000000000000, "aurora": 1012000000000000000, "el-capitan": 1742000000000000000, "jupiter": 793400000000000000 } },
+    { "t": 2026.45, "values": { "tianhe-2": 61440000000000000, "taihulight": 93010000000000000, "sierra": 94640000000000000, "fugaku": 442000000000000000, "frontier": 1353000000000000000, "lumi": 379700000000000000, "aurora": 1012000000000000000, "el-capitan": 1742000000000000000, "jupiter": 793400000000000000 } }
+  ],
+  "milestones": [
+    {
+      "t": 1993.45,
+      "title": "The TOP500 era begins",
+      "text": "The first TOP500 list crowns Los Alamos' Thinking Machines CM-5 at 59.7 gigaflops."
+    },
+    {
+      "t": 1997.45,
+      "title": "First teraflop: ASCI Red",
+      "text": "Sandia's Intel-built ASCI Red breaks the trillion-operations barrier, kicking off a decade of US dominance."
+    },
+    {
+      "t": 2002.45,
+      "title": "Earth Simulator shock",
+      "text": "Japan's Earth Simulator debuts at 35.9 TFLOPS, nearly 5x the previous champion — dubbed 'Computenik' in Washington."
+    },
+    {
+      "t": 2008.45,
+      "title": "First petaflop: Roadrunner",
+      "text": "Los Alamos' hybrid Cell-processor Roadrunner crosses the petaflop line, a thousandfold gain in 11 years."
+    },
+    {
+      "t": 2011.45,
+      "title": "K computer takes the crown",
+      "text": "Riken's K computer returns Japan to #1 at 8.2 PFLOPS, more than the next five systems combined."
+    },
+    {
+      "t": 2016.45,
+      "title": "Sunway TaihuLight",
+      "text": "China's 93 PFLOPS TaihuLight tops the list using entirely home-grown processors."
+    },
+    {
+      "t": 2022.45,
+      "title": "First exaflop: Frontier",
+      "text": "Oak Ridge's Frontier breaks the exascale barrier at 1.1 EFLOPS — a quintillion calculations per second."
+    },
+    {
+      "t": 2025.45,
+      "title": "El Capitan: 1.74 EFLOPS",
+      "text": "Lawrence Livermore's El Capitan takes #1, giving the US the top three exascale machines."
+    }
+  ]
+}

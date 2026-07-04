@@ -1,0 +1,119 @@
+{
+  "name": "Overtake",
+  "tagline": "Rankings over time",
+  "description": "Watch six decades of rankings reorder themselves — market caps, medal counts, megacities and more, animated as bar chart races.",
+  "url": "https://beautifuldata.netlify.app",
+  "author": "Kelvin Kay",
+  "authorUrl": "https://www.kelvinkay.com",
+  "categories": [
+    {
+      "id": "tech",
+      "label": "Technology & Business",
+      "short": "Tech & Business",
+      "accent": "#4C8DFF",
+      "accentSoft": "rgba(76,141,255,0.14)",
+      "motif": "chip",
+      "blurb": "Market caps, market share and the platform wars — the fastest-moving leaderboards on the site."
+    },
+    {
+      "id": "sports",
+      "label": "Sports",
+      "short": "Sports",
+      "accent": "#FFB020",
+      "accentSoft": "rgba(255,176,32,0.14)",
+      "motif": "stopwatch",
+      "blurb": "Careers and dynasties measured in weeks, points, golds and titles — some races run for a century."
+    },
+    {
+      "id": "culture",
+      "label": "Entertainment & Culture",
+      "short": "Entertainment",
+      "accent": "#F45CA4",
+      "accentSoft": "rgba(244,92,164,0.14)",
+      "motif": "marquee",
+      "blurb": "Box office, album sales and subscriber counts — fame, charted frame by frame."
+    },
+    {
+      "id": "science",
+      "label": "Science & Infrastructure",
+      "short": "Science",
+      "accent": "#23C8A8",
+      "accentSoft": "rgba(35,200,168,0.14)",
+      "motif": "blueprint",
+      "blurb": "Height records, FLOPS, laureates and megacities — the slow, massive races civilisation runs against itself."
+    },
+    {
+      "id": "economy",
+      "label": "Money & Markets",
+      "short": "Money",
+      "accent": "#5FCE7B",
+      "accentSoft": "rgba(95,206,123,0.14)",
+      "motif": "coin",
+      "blurb": "Economies, fortunes and war chests — who has the most, and who's catching up fastest."
+    },
+    {
+      "id": "world",
+      "label": "World & Nations",
+      "short": "World",
+      "accent": "#38BDF8",
+      "accentSoft": "rgba(56,189,248,0.14)",
+      "motif": "globe",
+      "blurb": "Populations, emissions and arsenals — the century-scale races that redraw the map."
+    },
+    {
+      "id": "play",
+      "label": "Games & Play",
+      "short": "Games",
+      "accent": "#FF7A45",
+      "accentSoft": "rgba(255,122,69,0.14)",
+      "motif": "controller",
+      "blurb": "Consoles, franchises and prize pools — the leaderboards of how the world plays."
+    },
+    {
+      "id": "wildcard",
+      "label": "Wildcard",
+      "short": "Wildcard",
+      "accent": "#8B5CF6",
+      "accentSoft": "rgba(139,92,246,0.14)",
+      "motif": "spark",
+      "blurb": "Personal picks that don't fit a lane — starting with a companion race to One Infinite Fruit."
+    }
+  ],
+  "races": [
+    { "id": "market-cap", "category": "tech" },
+    { "id": "smartphone-os", "category": "tech" },
+    { "id": "social-media", "category": "tech" },
+    { "id": "search-engines", "category": "tech" },
+    { "id": "ev-sales", "category": "tech" },
+    { "id": "atp-weeks", "category": "sports" },
+    { "id": "olympic-golds", "category": "sports" },
+    { "id": "nba-scoring", "category": "sports" },
+    { "id": "f1-constructors", "category": "sports" },
+    { "id": "grand-slams", "category": "sports" },
+    { "id": "film-franchises", "category": "culture" },
+    { "id": "music-artists", "category": "culture" },
+    { "id": "streaming-music", "category": "culture" },
+    { "id": "highest-paid-actors", "category": "culture" },
+    { "id": "youtube-channels", "category": "culture" },
+    { "id": "tallest-buildings", "category": "science" },
+    { "id": "supercomputers", "category": "science" },
+    { "id": "nobel-by-country", "category": "science" },
+    { "id": "life-expectancy", "category": "science" },
+    { "id": "cities", "category": "science" },
+    { "id": "gdp-nations", "category": "economy" },
+    { "id": "billionaires", "category": "economy" },
+    { "id": "military-spending", "category": "economy" },
+    { "id": "brand-value", "category": "economy" },
+    { "id": "population-nations", "category": "world" },
+    { "id": "co2-emissions", "category": "world" },
+    { "id": "nuclear-warheads", "category": "world" },
+    { "id": "internet-users", "category": "world" },
+    { "id": "game-consoles", "category": "play" },
+    { "id": "game-franchises", "category": "play" },
+    { "id": "esports-prizes", "category": "play" },
+    { "id": "top-websites", "category": "play" },
+    { "id": "apple-products", "category": "wildcard" },
+    { "id": "programming-languages", "category": "wildcard" },
+    { "id": "crypto", "category": "wildcard" }
+  ]
+}

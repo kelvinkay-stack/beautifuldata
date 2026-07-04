@@ -1,0 +1,72 @@
+{
+  "id": "military-spending",
+  "title": "Military Spending by Country",
+  "shortTitle": "Defense Budgets",
+  "category": "economy",
+  "unit": {
+    "label": "Annual military spending",
+    "format": "si",
+    "prefix": "$",
+    "suffix": "",
+    "decimals": 1,
+    "multiplier": 1000000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Six decades of the world's defense budgets, from the Cold War arms race to today. The United States outspends everyone throughout, surging after 9/11, while the Soviet Union's massive military collapses with the USSR in 1991 and China rises to a clear #2. Russia's spending spikes sharply after its 2022 invasion of Ukraine.",
+  "source": {
+    "name": "SIPRI",
+    "url": "https://www.sipri.org/databases/milex",
+    "note": "Current-USD estimates; Soviet and Chinese figures are approximate."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "china", "label": "China", "color": "#F43F5E" },
+    { "id": "russia", "label": "Russia", "color": "#FF5C4D" },
+    { "id": "ussr", "label": "Soviet Union", "color": "#B45309" },
+    { "id": "france", "label": "France", "color": "#6E7BFF" },
+    { "id": "uk", "label": "United Kingdom", "color": "#2FB4FF" },
+    { "id": "germany", "label": "Germany", "color": "#FFD84D" },
+    { "id": "japan", "label": "Japan", "color": "#E879F9" },
+    { "id": "india", "label": "India", "color": "#FF8C42" },
+    { "id": "saudi", "label": "Saudi Arabia", "color": "#34D399" },
+    { "id": "skorea", "label": "South Korea", "color": "#23C8A8" },
+    { "id": "italy", "label": "Italy", "color": "#A3E635" }
+  ],
+  "keyframes": [
+    { "t": 1960, "values": { "usa": 45, "ussr": 30, "uk": 5.2, "france": 3.9, "germany": 3.2, "china": 5, "italy": 1.6, "japan": 0.5, "india": 0.7 } },
+    { "t": 1965, "values": { "usa": 51, "ussr": 42, "uk": 6, "france": 5.1, "germany": 5, "china": 8, "italy": 2, "japan": 0.8, "india": 1.7, "saudi": 0.3 } },
+    { "t": 1970, "values": { "usa": 78, "ussr": 72, "china": 12, "germany": 6.1, "uk": 5.8, "france": 5.5, "italy": 2.4, "japan": 1.3, "india": 1.4, "saudi": 0.4 } },
+    { "t": 1975, "values": { "usa": 90, "ussr": 110, "china": 16, "germany": 13.3, "france": 11.2, "uk": 10.6, "italy": 4.4, "japan": 4.6, "saudi": 6.8, "india": 2.9 } },
+    { "t": 1980, "values": { "ussr": 180, "usa": 143, "china": 20, "germany": 24, "france": 24, "uk": 24.5, "saudi": 20.7, "japan": 9.4, "italy": 8.8, "india": 4.5 } },
+    { "t": 1985, "values": { "ussr": 277, "usa": 258, "china": 22, "germany": 27, "france": 21, "uk": 24.4, "saudi": 22.6, "japan": 13, "italy": 12, "india": 7.4 } },
+    { "t": 1988, "values": { "ussr": 300, "usa": 293, "china": 20, "france": 32, "germany": 34, "uk": 34, "saudi": 16, "japan": 28, "italy": 20, "india": 9.4 } },
+    { "t": 1990, "values": { "usa": 306, "ussr": 250, "france": 42, "germany": 42, "uk": 42, "japan": 45, "saudi": 23, "italy": 24, "china": 21, "india": 10.5 } },
+    { "t": 1991, "values": { "usa": 280, "ussr": 200, "japan": 47, "germany": 40, "france": 44, "uk": 43, "saudi": 30, "italy": 24, "china": 23, "india": 8.6 } },
+    { "t": 1992, "values": { "usa": 305, "russia": 90, "japan": 50, "france": 47, "germany": 44, "uk": 44, "saudi": 34, "italy": 25, "china": 25, "skorea": 12, "india": 8.4 } },
+    { "t": 1995, "values": { "usa": 278, "russia": 55, "japan": 55, "france": 48, "uk": 42, "germany": 41, "saudi": 17, "italy": 27, "china": 30, "skorea": 15, "india": 9.2 } },
+    { "t": 2000, "values": { "usa": 320, "japan": 60, "russia": 32, "uk": 47, "france": 47, "germany": 45, "china": 41, "saudi": 25, "italy": 39, "skorea": 17, "india": 16 } },
+    { "t": 2003, "values": { "usa": 456, "japan": 55, "uk": 53, "france": 51, "china": 58, "germany": 42, "russia": 42, "saudi": 24, "italy": 40, "skorea": 17, "india": 20 } },
+    { "t": 2005, "values": { "usa": 533, "uk": 60, "china": 71, "france": 53, "japan": 55, "germany": 42, "russia": 47, "saudi": 30, "italy": 42, "india": 26, "skorea": 22 } },
+    { "t": 2008, "values": { "usa": 656, "china": 107, "uk": 65, "france": 66, "russia": 62, "germany": 47, "japan": 54, "saudi": 41, "india": 33, "italy": 45, "skorea": 26 } },
+    { "t": 2010, "values": { "usa": 720, "china": 138, "uk": 60, "france": 62, "russia": 65, "japan": 55, "saudi": 45, "germany": 47, "india": 46, "italy": 39, "skorea": 28 } },
+    { "t": 2012, "values": { "usa": 682, "china": 172, "russia": 82, "uk": 60, "france": 59, "japan": 60, "saudi": 56, "india": 47, "germany": 46, "italy": 34, "skorea": 32 } },
+    { "t": 2014, "values": { "usa": 610, "china": 200, "russia": 84, "saudi": 81, "france": 53, "uk": 59, "india": 50, "germany": 47, "japan": 46, "skorea": 34, "italy": 24 } },
+    { "t": 2016, "values": { "usa": 611, "china": 215, "russia": 69, "saudi": 64, "india": 56, "france": 57, "uk": 48, "japan": 46, "germany": 41, "skorea": 37, "italy": 28 } },
+    { "t": 2018, "values": { "usa": 649, "china": 250, "saudi": 68, "india": 66, "france": 63, "russia": 61, "uk": 50, "germany": 49, "japan": 47, "skorea": 43, "italy": 28 } },
+    { "t": 2020, "values": { "usa": 778, "china": 258, "india": 72, "russia": 62, "uk": 59, "saudi": 58, "germany": 53, "france": 53, "japan": 49, "skorea": 46, "italy": 29 } },
+    { "t": 2022, "values": { "usa": 877, "china": 292, "russia": 86, "india": 81, "saudi": 75, "uk": 68, "germany": 56, "france": 54, "japan": 46, "skorea": 46, "italy": 33 } },
+    { "t": 2023, "values": { "usa": 916, "china": 296, "russia": 109, "india": 84, "saudi": 76, "uk": 75, "germany": 67, "france": 61, "japan": 50, "skorea": 48, "italy": 36 } },
+    { "t": 2024, "values": { "usa": 968, "china": 314, "russia": 149, "germany": 89, "india": 86, "uk": 82, "saudi": 80, "france": 64, "japan": 55, "skorea": 48, "italy": 38 } }
+  ],
+  "milestones": [
+    { "t": 1985, "title": "Cold War arms race peaks", "text": "Soviet military spending rivals or exceeds the US as both superpowers pour resources into the arms race." },
+    { "t": 1991, "title": "The Soviet military collapses", "text": "With the dissolution of the USSR, its enormous defense budget vanishes and Russia inherits a fraction of it." },
+    { "t": 2003, "title": "US surges after 9/11", "text": "US spending balloons past $450B as the wars in Afghanistan and Iraq drive a post-9/11 defense buildup." },
+    { "t": 2008, "title": "China overtakes Russia", "text": "China's fast-growing defense budget passes Russia's, establishing it as the clear #2 military spender." },
+    { "t": 2024, "title": "Russia's wartime spike", "text": "Russia's defense spending surges toward $150B as its full-scale war in Ukraine enters its third year." }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "apple-products",
+  "title": "Apple Revenue by Product Line",
+  "shortTitle": "Apple Products",
+  "category": "wildcard",
+  "unit": { "label": "Net sales per fiscal year", "format": "si", "prefix": "$", "suffix": "", "decimals": 0, "multiplier": 1000000000 },
+  "scale": "linear",
+  "topN": 6,
+  "timeLabel": "year",
+  "blurb": "Every product line Apple has bet the company on, racing by annual revenue since 2000. Watch the iPod build an empire, hand it to the iPhone in a single fiscal year, and then watch Services quietly become the second-biggest business Apple has ever built. A companion race to One Infinite Fruit, the Apple device archive.",
+  "source": {
+    "name": "Apple Inc. annual reports (Form 10-K)",
+    "url": "https://investor.apple.com/sec-filings/",
+    "note": "Fiscal years ending September. Segment definitions shifted over time: early 'iPod' includes music-related revenue; 'Services' broke out of iTunes/software lines in 2013; Wearables reported separately from 2015."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "mac", "label": "Mac", "color": "#D4D4D8" },
+    { "id": "ipod", "label": "iPod", "color": "#67E8F9" },
+    { "id": "iphone", "label": "iPhone", "color": "#4C8DFF" },
+    { "id": "ipad", "label": "iPad", "color": "#B388FF" },
+    { "id": "services", "label": "Services", "color": "#34D399" },
+    { "id": "wearables", "label": "Wearables & Accessories", "color": "#FFB020" }
+  ],
+  "keyframes": [
+    { "t": 2000, "values": { "mac": 6.9, "services": 1.1 } },
+    { "t": 2001, "values": { "mac": 4.4, "services": 1.0, "ipod": 0 } },
+    { "t": 2002, "values": { "mac": 4.4, "services": 1.1, "ipod": 0.14 } },
+    { "t": 2003, "values": { "mac": 4.5, "services": 1.2, "ipod": 0.35 } },
+    { "t": 2004, "values": { "mac": 4.9, "services": 1.6, "ipod": 1.3 } },
+    { "t": 2005, "values": { "mac": 6.3, "services": 2.3, "ipod": 4.5 } },
+    { "t": 2006, "values": { "mac": 7.4, "services": 3.1, "ipod": 7.7 } },
+    { "t": 2007, "values": { "mac": 10.3, "services": 3.6, "ipod": 8.3, "iphone": 0.6 } },
+    { "t": 2008, "values": { "mac": 14.3, "services": 4.5, "ipod": 9.2, "iphone": 6.7 } },
+    { "t": 2009, "values": { "mac": 13.8, "services": 5.0, "ipod": 8.1, "iphone": 13.0 } },
+    { "t": 2010, "values": { "mac": 17.5, "services": 5.9, "ipod": 8.3, "iphone": 25.2, "ipad": 5.0 } },
+    { "t": 2011, "values": { "mac": 21.8, "services": 6.9, "ipod": 7.5, "iphone": 45.9, "ipad": 19.2 } },
+    { "t": 2012, "values": { "mac": 23.2, "services": 8.5, "ipod": 5.6, "iphone": 78.7, "ipad": 30.9 } },
+    { "t": 2013, "values": { "mac": 21.5, "services": 16.1, "ipod": 4.4, "iphone": 91.3, "ipad": 32.0 } },
+    { "t": 2014, "values": { "mac": 24.1, "services": 18.1, "ipod": 2.3, "iphone": 102.0, "ipad": 30.3 } },
+    { "t": 2015, "values": { "mac": 25.5, "services": 19.9, "ipod": 1.0, "iphone": 155.0, "ipad": 23.2, "wearables": 10.0 } },
+    { "t": 2016, "values": { "mac": 22.8, "services": 24.3, "iphone": 136.7, "ipad": 20.6, "wearables": 11.1 } },
+    { "t": 2017, "values": { "mac": 25.9, "services": 32.7, "iphone": 139.3, "ipad": 19.2, "wearables": 12.8 } },
+    { "t": 2018, "values": { "mac": 25.5, "services": 39.7, "iphone": 164.9, "ipad": 18.4, "wearables": 17.4 } },
+    { "t": 2019, "values": { "mac": 25.7, "services": 46.3, "iphone": 142.4, "ipad": 21.3, "wearables": 24.5 } },
+    { "t": 2020, "values": { "mac": 28.6, "services": 53.8, "iphone": 137.8, "ipad": 23.7, "wearables": 30.6 } },
+    { "t": 2021, "values": { "mac": 35.2, "services": 68.4, "iphone": 191.9, "ipad": 31.9, "wearables": 38.4 } },
+    { "t": 2022, "values": { "mac": 40.2, "services": 78.1, "iphone": 205.5, "ipad": 29.3, "wearables": 41.2 } },
+    { "t": 2023, "values": { "mac": 29.4, "services": 85.2, "iphone": 200.6, "ipad": 28.3, "wearables": 39.8 } },
+    { "t": 2024, "values": { "mac": 30.0, "services": 96.2, "iphone": 201.2, "ipad": 26.7, "wearables": 37.0 } },
+    { "t": 2025, "values": { "mac": 31.0, "services": 104.0, "iphone": 205.0, "ipad": 28.0, "wearables": 36.5 } }
+  ],
+  "milestones": [
+    { "t": 2001.8, "title": "iPod launches", "text": "A thousand songs in your pocket. The $399 music player starts as a Mac accessory and becomes the company's identity for a decade." },
+    { "t": 2006.0, "title": "iPod out-earns the Mac", "text": "The accessory overtakes the computer: iPod revenue passes the entire Mac line 22 years after the Macintosh shipped." },
+    { "t": 2007.5, "title": "iPhone launches", "text": "Steve Jobs introduces a widescreen iPod, a phone, and an internet communicator — one device that will dwarf every other line." },
+    { "t": 2009.0, "title": "iPhone passes iPod", "text": "Two years in, the iPhone out-earns the product it grew out of. The iPod never leads again and is discontinued in 2022." },
+    { "t": 2012.0, "title": "iPad's fastest-ever ramp", "text": "Two years after launch the iPad books $30.9B — briefly Apple's clear #2 and faster out of the gate than the iPhone itself." },
+    { "t": 2017.0, "title": "Services takes second place", "text": "The App Store, iCloud and Music quietly out-earn every hardware line except the iPhone — a subscription empire built on the install base." },
+    { "t": 2021.0, "title": "The $191B iPhone year", "text": "The 5G-era iPhone 12 cycle produces more revenue in one year than Apple's entire company made in its first 30 combined." }
+  ]
+}

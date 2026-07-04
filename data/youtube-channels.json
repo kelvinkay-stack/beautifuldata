@@ -1,0 +1,476 @@
+{
+  "id": "youtube-channels",
+  "title": "Most-Subscribed YouTube Channels",
+  "shortTitle": "YouTube Subs",
+  "category": "culture",
+  "unit": {
+    "label": "Subscribers",
+    "format": "si",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 1,
+    "multiplier": 1000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "YouTube’s subscriber race starts with individuals and ends with media companies, music labels and kid-video empires. The site’s most famous overtake, T-Series passing PewDiePie, is the moment YouTube stops feeling like one culture.",
+  "source": {
+    "name": "YouTube public subscriber counts and Social Blade archives",
+    "url": "https://socialblade.com/youtube/top/50/mostsubscribed",
+    "note": "Year-end subscriber counts are reconstructed from public milestones and archive snapshots."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "smosh",
+      "label": "Smosh",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "nigahiga",
+      "label": "nigahiga",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "raywilliam",
+      "label": "Ray William Johnson",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "pewdiepie",
+      "label": "PewDiePie",
+      "color": "#34D399"
+    },
+    {
+      "id": "tseries",
+      "label": "T-Series",
+      "color": "#DC2626"
+    },
+    {
+      "id": "cocomelon",
+      "label": "Cocomelon",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "setindia",
+      "label": "SET India",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "mrbeast",
+      "label": "MrBeast",
+      "color": "#FFB020"
+    },
+    {
+      "id": "kidsdiana",
+      "label": "Kids Diana Show",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "like-nastya",
+      "label": "Like Nastya",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "vladniki",
+      "label": "Vlad and Niki",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "zee",
+      "label": "Zee Music Company",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "wwe",
+      "label": "WWE",
+      "color": "#E879F9"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 2006,
+      "values": {
+        "smosh": 0.1,
+        "nigahiga": 0,
+        "raywilliam": 0,
+        "pewdiepie": 0,
+        "tseries": 0,
+        "cocomelon": 0,
+        "setindia": 0,
+        "mrbeast": 0,
+        "kidsdiana": 0,
+        "like-nastya": 0,
+        "vladniki": 0,
+        "zee": 0,
+        "wwe": 0
+      }
+    },
+    {
+      "t": 2007,
+      "values": {
+        "smosh": 0.3,
+        "nigahiga": 0.2,
+        "raywilliam": 0,
+        "pewdiepie": 0,
+        "tseries": 0,
+        "cocomelon": 0,
+        "setindia": 0,
+        "mrbeast": 0,
+        "kidsdiana": 0,
+        "like-nastya": 0,
+        "vladniki": 0,
+        "zee": 0,
+        "wwe": 0
+      }
+    },
+    {
+      "t": 2008,
+      "values": {
+        "smosh": 0.6,
+        "nigahiga": 0.5,
+        "raywilliam": 0.4,
+        "pewdiepie": 0,
+        "tseries": 0,
+        "cocomelon": 0,
+        "setindia": 0,
+        "mrbeast": 0,
+        "kidsdiana": 0,
+        "like-nastya": 0,
+        "vladniki": 0,
+        "zee": 0,
+        "wwe": 0
+      }
+    },
+    {
+      "t": 2009,
+      "values": {
+        "smosh": 1.5,
+        "nigahiga": 1.7,
+        "raywilliam": 1.2,
+        "pewdiepie": 0.2,
+        "tseries": 0,
+        "cocomelon": 0,
+        "setindia": 0,
+        "mrbeast": 0,
+        "kidsdiana": 0,
+        "like-nastya": 0,
+        "vladniki": 0,
+        "zee": 0,
+        "wwe": 0
+      }
+    },
+    {
+      "t": 2010,
+      "values": {
+        "smosh": 2.5,
+        "nigahiga": 3.1,
+        "raywilliam": 3.5,
+        "pewdiepie": 0.7,
+        "tseries": 0.5,
+        "cocomelon": 0.1,
+        "setindia": 0.4,
+        "mrbeast": 0,
+        "kidsdiana": 0,
+        "like-nastya": 0,
+        "vladniki": 0,
+        "zee": 0,
+        "wwe": 0.2
+      }
+    },
+    {
+      "t": 2011,
+      "values": {
+        "smosh": 4.1,
+        "nigahiga": 4.5,
+        "raywilliam": 5.5,
+        "pewdiepie": 3,
+        "tseries": 1.5,
+        "cocomelon": 0.5,
+        "setindia": 1,
+        "mrbeast": 0.01,
+        "kidsdiana": 0,
+        "like-nastya": 0,
+        "vladniki": 0,
+        "zee": 0,
+        "wwe": 1
+      }
+    },
+    {
+      "t": 2012,
+      "values": {
+        "smosh": 7,
+        "nigahiga": 6.8,
+        "raywilliam": 8,
+        "pewdiepie": 7,
+        "tseries": 3,
+        "cocomelon": 1,
+        "setindia": 3,
+        "mrbeast": 0.05,
+        "kidsdiana": 0,
+        "like-nastya": 0,
+        "vladniki": 0,
+        "zee": 0.5,
+        "wwe": 2
+      }
+    },
+    {
+      "t": 2013,
+      "values": {
+        "smosh": 12,
+        "nigahiga": 10,
+        "raywilliam": 10.5,
+        "pewdiepie": 19,
+        "tseries": 7,
+        "cocomelon": 3,
+        "setindia": 6,
+        "mrbeast": 0.2,
+        "kidsdiana": 0.5,
+        "like-nastya": 0,
+        "vladniki": 0,
+        "zee": 2,
+        "wwe": 4
+      }
+    },
+    {
+      "t": 2014,
+      "values": {
+        "smosh": 18,
+        "nigahiga": 13,
+        "raywilliam": 11,
+        "pewdiepie": 33,
+        "tseries": 12,
+        "cocomelon": 6,
+        "setindia": 10,
+        "mrbeast": 0.7,
+        "kidsdiana": 2,
+        "like-nastya": 1,
+        "vladniki": 0,
+        "zee": 4,
+        "wwe": 8
+      }
+    },
+    {
+      "t": 2015,
+      "values": {
+        "smosh": 21,
+        "nigahiga": 16,
+        "raywilliam": 11,
+        "pewdiepie": 40,
+        "tseries": 20,
+        "cocomelon": 12,
+        "setindia": 18,
+        "mrbeast": 1.3,
+        "kidsdiana": 5,
+        "like-nastya": 3,
+        "vladniki": 1,
+        "zee": 8,
+        "wwe": 14
+      }
+    },
+    {
+      "t": 2016,
+      "values": {
+        "smosh": 22,
+        "nigahiga": 18,
+        "raywilliam": 10.5,
+        "pewdiepie": 50,
+        "tseries": 30,
+        "cocomelon": 25,
+        "setindia": 30,
+        "mrbeast": 3.5,
+        "kidsdiana": 12,
+        "like-nastya": 8,
+        "vladniki": 5,
+        "zee": 15,
+        "wwe": 20
+      }
+    },
+    {
+      "t": 2017,
+      "values": {
+        "smosh": 23,
+        "nigahiga": 20,
+        "raywilliam": 10.5,
+        "pewdiepie": 60,
+        "tseries": 55,
+        "cocomelon": 40,
+        "setindia": 45,
+        "mrbeast": 7,
+        "kidsdiana": 25,
+        "like-nastya": 18,
+        "vladniki": 15,
+        "zee": 25,
+        "wwe": 28
+      }
+    },
+    {
+      "t": 2018,
+      "values": {
+        "smosh": 23,
+        "nigahiga": 21,
+        "raywilliam": 10.5,
+        "pewdiepie": 79,
+        "tseries": 78,
+        "cocomelon": 66,
+        "setindia": 60,
+        "mrbeast": 12,
+        "kidsdiana": 40,
+        "like-nastya": 33,
+        "vladniki": 25,
+        "zee": 35,
+        "wwe": 40
+      }
+    },
+    {
+      "t": 2019,
+      "values": {
+        "smosh": 25,
+        "nigahiga": 21,
+        "raywilliam": 10.5,
+        "pewdiepie": 102,
+        "tseries": 123,
+        "cocomelon": 95,
+        "setindia": 75,
+        "mrbeast": 24,
+        "kidsdiana": 55,
+        "like-nastya": 55,
+        "vladniki": 45,
+        "zee": 50,
+        "wwe": 55
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "smosh": 25,
+        "nigahiga": 21,
+        "raywilliam": 10.5,
+        "pewdiepie": 108,
+        "tseries": 158,
+        "cocomelon": 120,
+        "setindia": 90,
+        "mrbeast": 47,
+        "kidsdiana": 72,
+        "like-nastya": 69,
+        "vladniki": 58,
+        "zee": 70,
+        "wwe": 70
+      }
+    },
+    {
+      "t": 2021,
+      "values": {
+        "smosh": 25,
+        "nigahiga": 21,
+        "raywilliam": 10.5,
+        "pewdiepie": 110,
+        "tseries": 202,
+        "cocomelon": 138,
+        "setindia": 125,
+        "mrbeast": 88,
+        "kidsdiana": 85,
+        "like-nastya": 82,
+        "vladniki": 74,
+        "zee": 85,
+        "wwe": 83
+      }
+    },
+    {
+      "t": 2022,
+      "values": {
+        "smosh": 25,
+        "nigahiga": 21,
+        "raywilliam": 10.5,
+        "pewdiepie": 111,
+        "tseries": 234,
+        "cocomelon": 154,
+        "setindia": 150,
+        "mrbeast": 125,
+        "kidsdiana": 102,
+        "like-nastya": 100,
+        "vladniki": 90,
+        "zee": 93,
+        "wwe": 92
+      }
+    },
+    {
+      "t": 2023,
+      "values": {
+        "smosh": 26,
+        "nigahiga": 21,
+        "raywilliam": 10.5,
+        "pewdiepie": 111,
+        "tseries": 257,
+        "cocomelon": 168,
+        "setindia": 165,
+        "mrbeast": 210,
+        "kidsdiana": 113,
+        "like-nastya": 108,
+        "vladniki": 102,
+        "zee": 100,
+        "wwe": 100
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "smosh": 26,
+        "nigahiga": 22,
+        "raywilliam": 10.5,
+        "pewdiepie": 111,
+        "tseries": 279,
+        "cocomelon": 180,
+        "setindia": 176,
+        "mrbeast": 330,
+        "kidsdiana": 123,
+        "like-nastya": 116,
+        "vladniki": 112,
+        "zee": 110,
+        "wwe": 107
+      }
+    },
+    {
+      "t": 2025,
+      "values": {
+        "smosh": 27,
+        "nigahiga": 22,
+        "raywilliam": 10.5,
+        "pewdiepie": 111,
+        "tseries": 300,
+        "cocomelon": 192,
+        "setindia": 188,
+        "mrbeast": 410,
+        "kidsdiana": 132,
+        "like-nastya": 124,
+        "vladniki": 122,
+        "zee": 120,
+        "wwe": 112
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 2013.7,
+      "title": "PewDiePie takes #1",
+      "text": "A single gaming creator becomes YouTube’s largest channel, defining the platform’s creator era."
+    },
+    {
+      "t": 2019.25,
+      "title": "T-Series passes PewDiePie",
+      "text": "The Indian music label wins the subscriber war and marks YouTube’s shift toward global media scale."
+    },
+    {
+      "t": 2021.8,
+      "title": "Kids channels dominate",
+      "text": "Cocomelon and nursery-rhyme channels turn repeat viewing into leaderboard power."
+    },
+    {
+      "t": 2024.4,
+      "title": "MrBeast storms past 250M",
+      "text": "MrBeast becomes the first individual creator to challenge corporate channels at the top."
+    }
+  ]
+}

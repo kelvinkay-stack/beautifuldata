@@ -1,0 +1,450 @@
+{
+  "id": "f1-constructors",
+  "title": "F1 Constructors by Points",
+  "shortTitle": "F1 Constructors",
+  "category": "sports",
+  "unit": {
+    "label": "Cumulative constructors points",
+    "format": "plain",
+    "prefix": "",
+    "suffix": " pts",
+    "decimals": 0
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Formula 1’s constructors table is a dynasty machine: Ferrari’s long accumulation, McLaren and Williams’ eras, Red Bull’s aero dominance and Mercedes’ hybrid blitz. Rule changes make points inflation real, but the overtakes still map the sport’s power centers.",
+  "source": {
+    "name": "Formula1.com constructor standings and StatsF1",
+    "url": "https://www.formula1.com/en/results.html",
+    "note": "Cumulative constructor championship points, simplified across scoring-system changes. Modern totals dominate because F1 awards far more points today."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "ferrari",
+      "label": "Ferrari",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "mclaren",
+      "label": "McLaren",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "williams",
+      "label": "Williams",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "lotus",
+      "label": "Lotus",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "brabham",
+      "label": "Brabham",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "renault",
+      "label": "Renault / Alpine",
+      "color": "#FDE68A"
+    },
+    {
+      "id": "redbull",
+      "label": "Red Bull",
+      "color": "#6E7BFF"
+    },
+    {
+      "id": "mercedes",
+      "label": "Mercedes",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "benetton",
+      "label": "Benetton",
+      "color": "#34D399"
+    },
+    {
+      "id": "tyrrell",
+      "label": "Tyrrell",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "forceindia",
+      "label": "Force India / Aston Martin",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "brawn",
+      "label": "Brawn GP",
+      "color": "#D4D4D8"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 1958,
+      "values": {
+        "ferrari": 40,
+        "mclaren": 0,
+        "williams": 0,
+        "lotus": 0,
+        "brabham": 0,
+        "renault": 0,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 0,
+        "tyrrell": 0,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1962,
+      "values": {
+        "ferrari": 140,
+        "mclaren": 0,
+        "williams": 0,
+        "lotus": 80,
+        "brabham": 30,
+        "renault": 0,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 0,
+        "tyrrell": 0,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1966,
+      "values": {
+        "ferrari": 220,
+        "mclaren": 40,
+        "williams": 0,
+        "lotus": 180,
+        "brabham": 120,
+        "renault": 0,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 0,
+        "tyrrell": 20,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1970,
+      "values": {
+        "ferrari": 320,
+        "mclaren": 150,
+        "williams": 0,
+        "lotus": 340,
+        "brabham": 240,
+        "renault": 0,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 0,
+        "tyrrell": 120,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1974,
+      "values": {
+        "ferrari": 500,
+        "mclaren": 300,
+        "williams": 25,
+        "lotus": 530,
+        "brabham": 330,
+        "renault": 0,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 0,
+        "tyrrell": 320,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1978,
+      "values": {
+        "ferrari": 760,
+        "mclaren": 530,
+        "williams": 250,
+        "lotus": 760,
+        "brabham": 430,
+        "renault": 120,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 0,
+        "tyrrell": 430,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1982,
+      "values": {
+        "ferrari": 950,
+        "mclaren": 790,
+        "williams": 550,
+        "lotus": 980,
+        "brabham": 610,
+        "renault": 280,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 0,
+        "tyrrell": 500,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1986,
+      "values": {
+        "ferrari": 1150,
+        "mclaren": 1150,
+        "williams": 900,
+        "lotus": 1120,
+        "brabham": 720,
+        "renault": 420,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 150,
+        "tyrrell": 540,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1990,
+      "values": {
+        "ferrari": 1400,
+        "mclaren": 1550,
+        "williams": 1350,
+        "lotus": 1180,
+        "brabham": 780,
+        "renault": 520,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 500,
+        "tyrrell": 580,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1994,
+      "values": {
+        "ferrari": 1700,
+        "mclaren": 1900,
+        "williams": 1850,
+        "lotus": 1200,
+        "brabham": 780,
+        "renault": 650,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 950,
+        "tyrrell": 600,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 1998,
+      "values": {
+        "ferrari": 2100,
+        "mclaren": 2400,
+        "williams": 2600,
+        "lotus": 1200,
+        "brabham": 780,
+        "renault": 900,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 1200,
+        "tyrrell": 610,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 2002,
+      "values": {
+        "ferrari": 2700,
+        "mclaren": 3000,
+        "williams": 3000,
+        "lotus": 1200,
+        "brabham": 780,
+        "renault": 1150,
+        "redbull": 0,
+        "mercedes": 0,
+        "benetton": 1350,
+        "tyrrell": 610,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 2006,
+      "values": {
+        "ferrari": 3300,
+        "mclaren": 3500,
+        "williams": 3300,
+        "lotus": 1200,
+        "brabham": 780,
+        "renault": 1550,
+        "redbull": 250,
+        "mercedes": 60,
+        "benetton": 1350,
+        "tyrrell": 610,
+        "forceindia": 0,
+        "brawn": 0
+      }
+    },
+    {
+      "t": 2010,
+      "values": {
+        "ferrari": 3900,
+        "mclaren": 4300,
+        "williams": 3550,
+        "lotus": 1220,
+        "brabham": 780,
+        "renault": 2050,
+        "redbull": 1600,
+        "mercedes": 500,
+        "benetton": 1350,
+        "tyrrell": 610,
+        "forceindia": 250,
+        "brawn": 172
+      }
+    },
+    {
+      "t": 2014,
+      "values": {
+        "ferrari": 5100,
+        "mclaren": 4900,
+        "williams": 3900,
+        "lotus": 1500,
+        "brabham": 780,
+        "renault": 2300,
+        "redbull": 3500,
+        "mercedes": 2000,
+        "benetton": 1350,
+        "tyrrell": 610,
+        "forceindia": 800,
+        "brawn": 172
+      }
+    },
+    {
+      "t": 2018,
+      "values": {
+        "ferrari": 6100,
+        "mclaren": 5350,
+        "williams": 4100,
+        "lotus": 1700,
+        "brabham": 780,
+        "renault": 2500,
+        "redbull": 4200,
+        "mercedes": 4700,
+        "benetton": 1350,
+        "tyrrell": 610,
+        "forceindia": 1400,
+        "brawn": 172
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "ferrari": 6950,
+        "mclaren": 5750,
+        "williams": 4300,
+        "lotus": 1720,
+        "brabham": 780,
+        "renault": 2650,
+        "redbull": 4900,
+        "mercedes": 6200,
+        "benetton": 1350,
+        "tyrrell": 610,
+        "forceindia": 1900,
+        "brawn": 172
+      }
+    },
+    {
+      "t": 2022,
+      "values": {
+        "ferrari": 7650,
+        "mclaren": 6300,
+        "williams": 4400,
+        "lotus": 1720,
+        "brabham": 780,
+        "renault": 2850,
+        "redbull": 6200,
+        "mercedes": 7500,
+        "benetton": 1350,
+        "tyrrell": 610,
+        "forceindia": 2500,
+        "brawn": 172
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "ferrari": 8500,
+        "mclaren": 7100,
+        "williams": 4550,
+        "lotus": 1720,
+        "brabham": 780,
+        "renault": 3150,
+        "redbull": 7950,
+        "mercedes": 8700,
+        "benetton": 1350,
+        "tyrrell": 610,
+        "forceindia": 3150,
+        "brawn": 172
+      }
+    },
+    {
+      "t": 2025,
+      "values": {
+        "ferrari": 8950,
+        "mclaren": 7600,
+        "williams": 4650,
+        "lotus": 1720,
+        "brabham": 780,
+        "renault": 3350,
+        "redbull": 8600,
+        "mercedes": 9350,
+        "benetton": 1350,
+        "tyrrell": 610,
+        "forceindia": 3500,
+        "brawn": 172
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 1981,
+      "title": "Williams becomes a force",
+      "text": "Williams turns from upstart into a constructors champion, building the base for its 1990s lead."
+    },
+    {
+      "t": 2000,
+      "title": "Ferrari-Schumacher era",
+      "text": "Ferrari begins the title streak that makes its cumulative lead look almost unreachable."
+    },
+    {
+      "t": 2010,
+      "title": "Red Bull’s first title",
+      "text": "Red Bull wins its first constructors championship and starts a four-year Vettel-era run."
+    },
+    {
+      "t": 2014,
+      "title": "Mercedes hybrid launch",
+      "text": "The turbo-hybrid regulations produce the most dominant constructors run of the modern era."
+    }
+  ]
+}

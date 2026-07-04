@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best-Selling Music Artists (1960–2026) — Overtake</title>
+  <meta name="description" content="Cumulative claimed record sales since 1960, from the crooner era through Beatlemania, Thriller and the CD boom. Animated bar chart race, 1960–2026.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/music-artists/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Best-Selling Music Artists (1960–2026) — Overtake">
+  <meta property="og:description" content="Cumulative claimed record sales since 1960, from the crooner era through Beatlemania, Thriller and the CD boom. Animated bar chart race, 1960–2026.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/music-artists/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/music-artists.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best-Selling Music Artists (1960–2026) — Overtake">
+  <meta name="twitter:description" content="Cumulative claimed record sales since 1960, from the crooner era through Beatlemania, Thriller and the CD boom. Animated bar chart race, 1960–2026.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/music-artists.png">
+  <link rel="stylesheet" href="/css/site.css?v=5fed46935c">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=5fed46935c","/js/engine/renderer.js":"/js/engine/renderer.js?v=5fed46935c","/js/engine/format.js":"/js/engine/format.js?v=5fed46935c","/js/engine/controller.js":"/js/engine/controller.js?v=5fed46935c","/js/engine/controls.js":"/js/engine/controls.js?v=5fed46935c","/js/engine/preview.js":"/js/engine/preview.js?v=5fed46935c"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Best-Selling Music Artists","description":"Cumulative claimed record sales since 1960, from the crooner era through Beatlemania, Thriller and the CD boom. The Beatles built an early lead they never surrendered — the real race is for every rung below them as formats and generations turn over.","url":"https://beautifuldata.netlify.app/races/music-artists/","temporalCoverage":"1960/2026","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://en.wikipedia.org/wiki/List_of_best-selling_music_artists"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture" aria-current="true">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="culture" data-race-id="music-artists">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#culture">Entertainment &amp; Culture</a><span aria-hidden="true">/</span><span>1960–2026</span></p>
+    <h1>Best-Selling Music Artists</h1>
+    <p class="blurb">Cumulative claimed record sales since 1960, from the crooner era through Beatlemania, Thriller and the CD boom. The Beatles built an early lead they never surrendered — the real race is for every rung below them as formats and generations turn over.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Best-Selling Music Artists"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1960" aria-valuemax="2026">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <button class="speed-btn" id="btn-speed" type="button" aria-label="Playback speed">1×</button>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://en.wikipedia.org/wiki/List_of_best-selling_music_artists" rel="noopener">Public claimed-sales totals (labels, press, RIAA/BPI certifications)</a></span>
+    <span>Uses claimed lifetime totals, which run far above certified figures; yearly trajectories are reconstructed estimates.</span>
+    <span class="quality-flag">illustrative data</span>
+    <span>Updated 2026-07-03</span>
+  </p>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1964.1">
+        <span class="m-year num">1964</span>
+        <span class="m-title">Beatlemania goes global</span>
+      </button></li>
+      <li><button type="button" data-t="1969.5">
+        <span class="m-year num">1969</span>
+        <span class="m-title">Beatles pass Bing Crosby</span>
+      </button></li>
+      <li><button type="button" data-t="1977.7">
+        <span class="m-year num">1977</span>
+        <span class="m-title">Elvis dies, sales surge</span>
+      </button></li>
+      <li><button type="button" data-t="1983.5">
+        <span class="m-year num">1983</span>
+        <span class="m-title">Thriller mania</span>
+      </button></li>
+      <li><button type="button" data-t="1997.9">
+        <span class="m-year num">1997</span>
+        <span class="m-title">CD-era divas peak</span>
+      </button></li>
+      <li><button type="button" data-t="2015.5">
+        <span class="m-year num">2015</span>
+        <span class="m-title">Streaming changes the game</span>
+      </button></li>
+  </ul>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/film-franchises/"><span class="dir">← Previous race</span>Film Franchises</a>
+    <a href="/races/streaming-music/" style="text-align:right"><span class="dir">Next race →</span>Streamers</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Overtake — 35 races across 8 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=5fed46935c"></script>
+</body>
+</html>

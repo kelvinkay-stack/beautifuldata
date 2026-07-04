@@ -1,0 +1,61 @@
+{
+  "id": "crypto",
+  "title": "Cryptocurrencies by Market Cap",
+  "shortTitle": "Crypto",
+  "category": "wildcard",
+  "unit": { "label": "Market capitalization", "format": "si", "prefix": "$", "suffix": "", "decimals": 0, "multiplier": 1000000000 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "yearMonth",
+  "blurb": "The wildest leaderboard on the site: crypto market caps from Bitcoin's lonely early years through the ICO mania of 2017 and the 2021 mega-bull run. Bitcoin's dominance is repeatedly challenged by Ethereum and a rotating cast of alt-coins and stablecoins that surge and vanish. A snapshot race — fortunes here are made and unmade in months.",
+  "source": {
+    "name": "CoinMarketCap",
+    "url": "https://coinmarketcap.com/",
+    "note": "Market cap in $ billions at approximate period snapshots. Crypto is extremely volatile; values represent point-in-time estimates, not peaks."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    { "id": "btc", "label": "Bitcoin", "color": "#FF8C42" },
+    { "id": "eth", "label": "Ethereum", "color": "#B388FF" },
+    { "id": "xrp", "label": "XRP", "color": "#94A3B8" },
+    { "id": "ltc", "label": "Litecoin", "color": "#D4D4D8" },
+    { "id": "usdt", "label": "Tether", "color": "#34D399" },
+    { "id": "bch", "label": "Bitcoin Cash", "color": "#A3E635" },
+    { "id": "bnb", "label": "BNB", "color": "#FFD84D" },
+    { "id": "ada", "label": "Cardano", "color": "#2FB4FF" },
+    { "id": "sol", "label": "Solana", "color": "#67E8F9" },
+    { "id": "doge", "label": "Dogecoin", "color": "#E2B93B" },
+    { "id": "usdc", "label": "USD Coin", "color": "#4C8DFF" },
+    { "id": "eos", "label": "EOS", "color": "#5C6577" },
+    { "id": "dot", "label": "Polkadot", "color": "#F43F5E" },
+    { "id": "trx", "label": "TRON", "color": "#FF5C4D" }
+  ],
+  "keyframes": [
+    { "t": 2013.5, "values": { "btc": 1.2, "ltc": 0.06, "xrp": 0.02 } },
+    { "t": 2014.0, "values": { "btc": 10, "ltc": 0.6, "xrp": 0.2 } },
+    { "t": 2015.0, "values": { "btc": 4.5, "xrp": 0.25, "ltc": 0.15 } },
+    { "t": 2016.0, "values": { "btc": 6.5, "eth": 0.7, "xrp": 0.24, "ltc": 0.17 } },
+    { "t": 2017.0, "values": { "btc": 16, "eth": 0.7, "xrp": 0.24, "ltc": 0.2 } },
+    { "t": 2017.5, "values": { "btc": 45, "eth": 28, "xrp": 7, "ltc": 2.5, "bch": 8, "eos": 1 } },
+    { "t": 2018.0, "values": { "btc": 230, "eth": 130, "xrp": 75, "bch": 42, "eos": 8, "ltc": 13, "ada": 18, "trx": 5 } },
+    { "t": 2018.7, "values": { "btc": 110, "eth": 22, "xrp": 18, "bch": 8, "usdt": 2.8, "eos": 5, "ltc": 3, "ada": 2 } },
+    { "t": 2019.5, "values": { "btc": 190, "eth": 30, "xrp": 18, "usdt": 4, "bch": 6, "ltc": 6, "eos": 5, "bnb": 4 } },
+    { "t": 2020.5, "values": { "btc": 170, "eth": 26, "xrp": 8, "usdt": 10, "bch": 4, "bnb": 3, "ltc": 3, "ada": 4 } },
+    { "t": 2021.0, "values": { "btc": 540, "eth": 140, "usdt": 21, "xrp": 10, "ada": 12, "bnb": 6, "doge": 5, "ltc": 9 } },
+    { "t": 2021.4, "values": { "btc": 680, "eth": 320, "bnb": 90, "usdt": 62, "ada": 70, "xrp": 65, "doge": 55, "sol": 12, "usdc": 25, "dot": 25 } },
+    { "t": 2021.9, "values": { "btc": 900, "eth": 500, "bnb": 95, "usdt": 78, "sol": 65, "usdc": 42, "ada": 45, "xrp": 40, "doge": 25, "dot": 28 } },
+    { "t": 2022.5, "values": { "btc": 380, "eth": 200, "usdt": 66, "usdc": 55, "bnb": 38, "xrp": 18, "ada": 16, "sol": 12, "doge": 9 } },
+    { "t": 2023.0, "values": { "btc": 320, "eth": 145, "usdt": 66, "usdc": 44, "bnb": 40, "xrp": 20, "ada": 9, "doge": 10, "sol": 4 } },
+    { "t": 2024.0, "values": { "btc": 830, "eth": 280, "usdt": 95, "bnb": 45, "sol": 45, "xrp": 32, "usdc": 25, "doge": 12, "ada": 20 } },
+    { "t": 2025.0, "values": { "btc": 1900, "eth": 400, "usdt": 140, "xrp": 130, "bnb": 95, "sol": 90, "usdc": 60, "doge": 50, "ada": 35 } },
+    { "t": 2025.5, "values": { "btc": 2100, "eth": 440, "usdt": 155, "xrp": 150, "bnb": 100, "sol": 95, "usdc": 65, "doge": 45, "ada": 32 } }
+  ],
+  "milestones": [
+    { "t": 2013.9, "title": "Bitcoin's first mania", "text": "Bitcoin breaks $1,000 for the first time, and for years it is the only crypto most people can name." },
+    { "t": 2017.9, "title": "The ICO bubble", "text": "Ethereum's token boom mints hundreds of alt-coins overnight; XRP and Bitcoin Cash briefly reach tens of billions." },
+    { "t": 2021.4, "title": "The 2021 mega-rally", "text": "A pandemic liquidity wave lifts the whole market: Ethereum, BNB, Solana and even the joke coin Dogecoin surge into the top ten." },
+    { "t": 2022.5, "title": "The great unwind", "text": "Terra's collapse and the FTX failure erase over a trillion dollars; stablecoins Tether and USDC climb the ranks as havens." },
+    { "t": 2025.0, "title": "Bitcoin past a trillion", "text": "A post-ETF rally pushes Bitcoin's market cap into the trillions, extending a dominance no rival has come close to breaking." }
+  ]
+}

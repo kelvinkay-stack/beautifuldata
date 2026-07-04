@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuclear Warhead Stockpiles (1945–2023) — Overtake</title>
+  <meta name="description" content="From a single American bomb in 1945, the Cold War arms race spiralled to a global peak of over 64,000 warheads in 1986. Animated bar chart race, 1945–2023.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/nuclear-warheads/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Nuclear Warhead Stockpiles (1945–2023) — Overtake">
+  <meta property="og:description" content="From a single American bomb in 1945, the Cold War arms race spiralled to a global peak of over 64,000 warheads in 1986. Animated bar chart race, 1945–2023.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/nuclear-warheads/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/nuclear-warheads.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nuclear Warhead Stockpiles (1945–2023) — Overtake">
+  <meta name="twitter:description" content="From a single American bomb in 1945, the Cold War arms race spiralled to a global peak of over 64,000 warheads in 1986. Animated bar chart race, 1945–2023.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/nuclear-warheads.png">
+  <link rel="stylesheet" href="/css/site.css?v=5fed46935c">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=5fed46935c","/js/engine/renderer.js":"/js/engine/renderer.js?v=5fed46935c","/js/engine/format.js":"/js/engine/format.js?v=5fed46935c","/js/engine/controller.js":"/js/engine/controller.js?v=5fed46935c","/js/engine/controls.js":"/js/engine/controls.js?v=5fed46935c","/js/engine/preview.js":"/js/engine/preview.js?v=5fed46935c"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Nuclear Warhead Stockpiles","description":"From a single American bomb in 1945, the Cold War arms race spiralled to a global peak of over 64,000 warheads in 1986. The Soviet Union overtook the US around 1978 and built the largest arsenal ever assembled, before both superpowers drew down after the Cold War — even as China begins a rapid 2020s expansion.","url":"https://beautifuldata.netlify.app/races/nuclear-warheads/","temporalCoverage":"1945/2023","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://ourworldindata.org/nuclear-weapons"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world" aria-current="true">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="world" data-race-id="nuclear-warheads">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#world">World &amp; Nations</a><span aria-hidden="true">/</span><span>1945–2023</span></p>
+    <h1>Nuclear Warhead Stockpiles</h1>
+    <p class="blurb">From a single American bomb in 1945, the Cold War arms race spiralled to a global peak of over 64,000 warheads in 1986. The Soviet Union overtook the US around 1978 and built the largest arsenal ever assembled, before both superpowers drew down after the Cold War — even as China begins a rapid 2020s expansion.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Nuclear Warhead Stockpiles"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1945" aria-valuemax="2023">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <button class="speed-btn" id="btn-speed" type="button" aria-label="Playback speed">1×</button>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://ourworldindata.org/nuclear-weapons" rel="noopener">Federation of American Scientists / Our World in Data</a></span>
+    <span>Estimated total warhead inventories; figures for Israel and North Korea are approximate.</span>
+    <span>Updated 2026-07-03</span>
+  </p>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1960">
+        <span class="m-year num">1960</span>
+        <span class="m-title">US buildup peaks</span>
+      </button></li>
+      <li><button type="button" data-t="1978">
+        <span class="m-year num">1978</span>
+        <span class="m-title">USSR overtakes the US</span>
+      </button></li>
+      <li><button type="button" data-t="1986">
+        <span class="m-year num">1986</span>
+        <span class="m-title">Peak Cold War arsenals</span>
+      </button></li>
+      <li><button type="button" data-t="1991">
+        <span class="m-year num">1991</span>
+        <span class="m-title">Post-Cold-War drawdown</span>
+      </button></li>
+      <li><button type="button" data-t="2023">
+        <span class="m-year num">2023</span>
+        <span class="m-title">China's rapid expansion</span>
+      </button></li>
+  </ul>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/co2-emissions/"><span class="dir">← Previous race</span>CO2 Emissions</a>
+    <a href="/races/internet-users/" style="text-align:right"><span class="dir">Next race →</span>Internet Users</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Overtake — 35 races across 8 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=5fed46935c"></script>
+</body>
+</html>

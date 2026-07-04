@@ -1,0 +1,526 @@
+{
+  "id": "highest-paid-actors",
+  "title": "Highest-Paid Actors",
+  "shortTitle": "Actor Paydays",
+  "category": "culture",
+  "unit": {
+    "label": "Annual earnings",
+    "format": "si",
+    "prefix": "$",
+    "suffix": "",
+    "decimals": 1,
+    "multiplier": 1000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Hollywood’s annual earnings leaderboard tracks more than movie stardom: backend deals, streaming buyouts, franchise leverage and celebrity businesses all show up. The chart is messy by nature, which is exactly why the jumps are fun.",
+  "source": {
+    "name": "Forbes annual highest-paid actors lists",
+    "url": "https://www.forbes.com/celebrities/",
+    "note": "Annual pre-tax earnings reported by Forbes. Missing years and list methodology changes are interpolated for animation continuity."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-03",
+  "entities": [
+    {
+      "id": "cruise",
+      "label": "Tom Cruise",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "smith",
+      "label": "Will Smith",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "hanks",
+      "label": "Tom Hanks",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "carrey",
+      "label": "Jim Carrey",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "murphy",
+      "label": "Eddie Murphy",
+      "color": "#34D399"
+    },
+    {
+      "id": "sandler",
+      "label": "Adam Sandler",
+      "color": "#A3E635"
+    },
+    {
+      "id": "downey",
+      "label": "Robert Downey Jr.",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "jackie",
+      "label": "Jackie Chan",
+      "color": "#FFB020"
+    },
+    {
+      "id": "rock",
+      "label": "Dwayne Johnson",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "wahlberg",
+      "label": "Mark Wahlberg",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "clooney",
+      "label": "George Clooney",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "diesel",
+      "label": "Vin Diesel",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "reynolds",
+      "label": "Ryan Reynolds",
+      "color": "#E879F9"
+    },
+    {
+      "id": "pitt",
+      "label": "Brad Pitt",
+      "color": "#B388FF"
+    },
+    {
+      "id": "depp",
+      "label": "Johnny Depp",
+      "color": "#8B5CF6"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 1995,
+      "values": {
+        "cruise": 25,
+        "smith": 15,
+        "hanks": 22,
+        "carrey": 20,
+        "murphy": 16,
+        "sandler": 5,
+        "downey": 0,
+        "jackie": 10,
+        "rock": 0,
+        "wahlberg": 0,
+        "clooney": 0,
+        "diesel": 0,
+        "reynolds": 0,
+        "pitt": 12,
+        "depp": 5
+      }
+    },
+    {
+      "t": 1997,
+      "values": {
+        "cruise": 45,
+        "smith": 25,
+        "hanks": 40,
+        "carrey": 20,
+        "murphy": 18,
+        "sandler": 12,
+        "downey": 0,
+        "jackie": 15,
+        "rock": 0,
+        "wahlberg": 0,
+        "clooney": 5,
+        "diesel": 0,
+        "reynolds": 0,
+        "pitt": 20,
+        "depp": 10
+      }
+    },
+    {
+      "t": 1999,
+      "values": {
+        "cruise": 75,
+        "smith": 35,
+        "hanks": 71,
+        "carrey": 30,
+        "murphy": 20,
+        "sandler": 20,
+        "downey": 0,
+        "jackie": 20,
+        "rock": 0,
+        "wahlberg": 5,
+        "clooney": 12,
+        "diesel": 5,
+        "reynolds": 0,
+        "pitt": 25,
+        "depp": 12
+      }
+    },
+    {
+      "t": 2001,
+      "values": {
+        "cruise": 70,
+        "smith": 45,
+        "hanks": 35,
+        "carrey": 35,
+        "murphy": 22,
+        "sandler": 25,
+        "downey": 0,
+        "jackie": 25,
+        "rock": 0,
+        "wahlberg": 10,
+        "clooney": 18,
+        "diesel": 15,
+        "reynolds": 0,
+        "pitt": 28,
+        "depp": 20
+      }
+    },
+    {
+      "t": 2003,
+      "values": {
+        "cruise": 45,
+        "smith": 35,
+        "hanks": 34,
+        "carrey": 25,
+        "murphy": 20,
+        "sandler": 31,
+        "downey": 2,
+        "jackie": 30,
+        "rock": 5,
+        "wahlberg": 12,
+        "clooney": 20,
+        "diesel": 20,
+        "reynolds": 0,
+        "pitt": 30,
+        "depp": 25
+      }
+    },
+    {
+      "t": 2005,
+      "values": {
+        "cruise": 67,
+        "smith": 31,
+        "hanks": 25,
+        "carrey": 20,
+        "murphy": 18,
+        "sandler": 29,
+        "downey": 5,
+        "jackie": 30,
+        "rock": 8,
+        "wahlberg": 15,
+        "clooney": 20,
+        "diesel": 18,
+        "reynolds": 2,
+        "pitt": 25,
+        "depp": 30
+      }
+    },
+    {
+      "t": 2007,
+      "values": {
+        "cruise": 31,
+        "smith": 36,
+        "hanks": 74,
+        "carrey": 16,
+        "murphy": 15,
+        "sandler": 30,
+        "downey": 5,
+        "jackie": 25,
+        "rock": 15,
+        "wahlberg": 20,
+        "clooney": 25,
+        "diesel": 15,
+        "reynolds": 5,
+        "pitt": 35,
+        "depp": 72
+      }
+    },
+    {
+      "t": 2009,
+      "values": {
+        "cruise": 30,
+        "smith": 45,
+        "hanks": 35,
+        "carrey": 15,
+        "murphy": 14,
+        "sandler": 55,
+        "downey": 10,
+        "jackie": 20,
+        "rock": 25,
+        "wahlberg": 25,
+        "clooney": 27,
+        "diesel": 20,
+        "reynolds": 10,
+        "pitt": 28,
+        "depp": 50
+      }
+    },
+    {
+      "t": 2011,
+      "values": {
+        "cruise": 22,
+        "smith": 36,
+        "hanks": 35,
+        "carrey": 12,
+        "murphy": 12,
+        "sandler": 40,
+        "downey": 31,
+        "jackie": 50,
+        "rock": 36,
+        "wahlberg": 28,
+        "clooney": 30,
+        "diesel": 35,
+        "reynolds": 12,
+        "pitt": 25,
+        "depp": 50
+      }
+    },
+    {
+      "t": 2013,
+      "values": {
+        "cruise": 35,
+        "smith": 33,
+        "hanks": 31,
+        "carrey": 10,
+        "murphy": 10,
+        "sandler": 37,
+        "downey": 75,
+        "jackie": 50,
+        "rock": 46,
+        "wahlberg": 32,
+        "clooney": 35,
+        "diesel": 45,
+        "reynolds": 15,
+        "pitt": 35,
+        "depp": 75
+      }
+    },
+    {
+      "t": 2015,
+      "values": {
+        "cruise": 40,
+        "smith": 26,
+        "hanks": 31,
+        "carrey": 8,
+        "murphy": 8,
+        "sandler": 41,
+        "downey": 80,
+        "jackie": 50,
+        "rock": 31,
+        "wahlberg": 32,
+        "clooney": 45,
+        "diesel": 47,
+        "reynolds": 20,
+        "pitt": 16,
+        "depp": 30
+      }
+    },
+    {
+      "t": 2016,
+      "values": {
+        "cruise": 53,
+        "smith": 20,
+        "hanks": 28,
+        "carrey": 8,
+        "murphy": 8,
+        "sandler": 30,
+        "downey": 33,
+        "jackie": 61,
+        "rock": 64.5,
+        "wahlberg": 68,
+        "clooney": 30,
+        "diesel": 35,
+        "reynolds": 20,
+        "pitt": 31.5,
+        "depp": 48
+      }
+    },
+    {
+      "t": 2017,
+      "values": {
+        "cruise": 43,
+        "smith": 42,
+        "hanks": 30,
+        "carrey": 7,
+        "murphy": 7,
+        "sandler": 50.5,
+        "downey": 48,
+        "jackie": 49,
+        "rock": 65,
+        "wahlberg": 68,
+        "clooney": 30,
+        "diesel": 54.5,
+        "reynolds": 21.5,
+        "pitt": 31.5,
+        "depp": 48
+      }
+    },
+    {
+      "t": 2018,
+      "values": {
+        "cruise": 22,
+        "smith": 35,
+        "hanks": 20,
+        "carrey": 7,
+        "murphy": 7,
+        "sandler": 39.5,
+        "downey": 81,
+        "jackie": 45.5,
+        "rock": 124,
+        "wahlberg": 58,
+        "clooney": 239,
+        "diesel": 54,
+        "reynolds": 27,
+        "pitt": 25,
+        "depp": 20
+      }
+    },
+    {
+      "t": 2019,
+      "values": {
+        "cruise": 43,
+        "smith": 35,
+        "hanks": 20,
+        "carrey": 7,
+        "murphy": 70,
+        "sandler": 57,
+        "downey": 66,
+        "jackie": 58,
+        "rock": 89.4,
+        "wahlberg": 30,
+        "clooney": 15,
+        "diesel": 54,
+        "reynolds": 71.5,
+        "pitt": 20,
+        "depp": 20
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "cruise": 60,
+        "smith": 44.5,
+        "hanks": 15,
+        "carrey": 5,
+        "murphy": 20,
+        "sandler": 41,
+        "downey": 66,
+        "jackie": 40,
+        "rock": 87.5,
+        "wahlberg": 58,
+        "clooney": 15,
+        "diesel": 54,
+        "reynolds": 71.5,
+        "pitt": 20,
+        "depp": 10
+      }
+    },
+    {
+      "t": 2021,
+      "values": {
+        "cruise": 13,
+        "smith": 40,
+        "hanks": 15,
+        "carrey": 5,
+        "murphy": 15,
+        "sandler": 44,
+        "downey": 33,
+        "jackie": 30,
+        "rock": 42,
+        "wahlberg": 30,
+        "clooney": 15,
+        "diesel": 20,
+        "reynolds": 30,
+        "pitt": 30,
+        "depp": 5
+      }
+    },
+    {
+      "t": 2022,
+      "values": {
+        "cruise": 100,
+        "smith": 35,
+        "hanks": 14,
+        "carrey": 5,
+        "murphy": 15,
+        "sandler": 41,
+        "downey": 20,
+        "jackie": 25,
+        "rock": 50,
+        "wahlberg": 35,
+        "clooney": 20,
+        "diesel": 20,
+        "reynolds": 71.5,
+        "pitt": 100,
+        "depp": 5
+      }
+    },
+    {
+      "t": 2023,
+      "values": {
+        "cruise": 45,
+        "smith": 35,
+        "hanks": 25,
+        "carrey": 5,
+        "murphy": 15,
+        "sandler": 73,
+        "downey": 20,
+        "jackie": 25,
+        "rock": 50,
+        "wahlberg": 30,
+        "clooney": 20,
+        "diesel": 20,
+        "reynolds": 25,
+        "pitt": 30,
+        "depp": 5
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "cruise": 60,
+        "smith": 40,
+        "hanks": 25,
+        "carrey": 5,
+        "murphy": 15,
+        "sandler": 73,
+        "downey": 20,
+        "jackie": 25,
+        "rock": 88,
+        "wahlberg": 30,
+        "clooney": 20,
+        "diesel": 20,
+        "reynolds": 85,
+        "pitt": 30,
+        "depp": 5
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 2007,
+      "title": "Backend deals still rule",
+      "text": "Stars with gross participation can outrun the box office itself when a franchise hits."
+    },
+    {
+      "t": 2018,
+      "title": "Clooney’s tequila year",
+      "text": "George Clooney’s Casamigos sale shows how celebrity businesses can swamp acting income."
+    },
+    {
+      "t": 2020,
+      "title": "Streaming buyouts arrive",
+      "text": "Netflix and other streamers replace backend upside with enormous upfront checks."
+    },
+    {
+      "t": 2024,
+      "title": "Creator-star hybrids",
+      "text": "Reynolds and Johnson show the new model: acting, producing, brands and platforms at once."
+    }
+  ]
+}
