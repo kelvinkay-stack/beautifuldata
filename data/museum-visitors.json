@@ -1,0 +1,52 @@
+{
+  "id": "museum-visitors",
+  "title": "Most-Visited Museums",
+  "shortTitle": "Museum Visitors",
+  "category": "culture",
+  "unit": { "label": "Annual visitors", "format": "plain", "prefix": "", "suffix": "M", "decimals": 1 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Museum attendance is a tourism race with a dramatic pandemic crater. The Louvre usually owns the top line, but Chinese museums, the Vatican, the British Museum and New York's Met keep reshuffling as travel flows recover.",
+  "source": {
+    "name": "TEA/AECOM Global Attractions Attendance Reports",
+    "url": "https://www.teaconnect.org/tea-global-experience-indextm",
+    "note": "Annual visitor counts in millions, reconstructed from TEA/AECOM reports and museum disclosures; 2025 values are early public estimates where available."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "louvre", "label": "Louvre", "color": "#4C8DFF" },
+    { "id": "china", "label": "National Museum of China", "color": "#FF5C4D" },
+    { "id": "vatican", "label": "Vatican Museums", "color": "#FFD84D" },
+    { "id": "british", "label": "British Museum", "color": "#B388FF" },
+    { "id": "met", "label": "Metropolitan Museum of Art", "color": "#FFB020" },
+    { "id": "tate", "label": "Tate Modern", "color": "#F43F5E" },
+    { "id": "national-gallery", "label": "National Gallery London", "color": "#2FB4FF" },
+    { "id": "natural-history", "label": "Natural History Museum", "color": "#23C8A8" },
+    { "id": "amnh", "label": "American Museum of Natural History", "color": "#67E8F9" },
+    { "id": "palace", "label": "Palace Museum", "color": "#FF8C42" },
+    { "id": "hermitage", "label": "State Hermitage", "color": "#C4B5A0" },
+    { "id": "orsay", "label": "Musee d'Orsay", "color": "#A3E635" }
+  ],
+  "keyframes": [
+    { "t": 2007, "values": { "louvre": 8.3, "china": 0, "vatican": 4.3, "british": 5.4, "met": 4.5, "tate": 5.2, "national-gallery": 4.2, "natural-history": 3.6, "amnh": 4.0, "palace": 8.0, "hermitage": 2.4, "orsay": 3.2 } },
+    { "t": 2010, "values": { "louvre": 8.5, "china": 7.4, "vatican": 5.0, "british": 5.8, "met": 5.2, "tate": 5.1, "national-gallery": 4.9, "natural-history": 4.1, "amnh": 4.7, "palace": 12.3, "hermitage": 2.8, "orsay": 3.0 } },
+    { "t": 2013, "values": { "louvre": 9.3, "china": 7.5, "vatican": 5.5, "british": 6.7, "met": 6.2, "tate": 4.9, "national-gallery": 6.0, "natural-history": 5.3, "amnh": 5.0, "palace": 14.6, "hermitage": 3.1, "orsay": 3.5 } },
+    { "t": 2016, "values": { "louvre": 7.4, "china": 7.6, "vatican": 6.1, "british": 6.4, "met": 6.7, "tate": 5.8, "national-gallery": 6.3, "natural-history": 4.6, "amnh": 5.0, "palace": 16.0, "hermitage": 4.1, "orsay": 3.0 } },
+    { "t": 2018, "values": { "louvre": 10.2, "china": 8.6, "vatican": 6.8, "british": 5.8, "met": 7.4, "tate": 5.9, "national-gallery": 5.7, "natural-history": 5.2, "amnh": 5.0, "palace": 17.5, "hermitage": 4.2, "orsay": 3.2 } },
+    { "t": 2019, "values": { "louvre": 9.6, "china": 7.4, "vatican": 6.9, "british": 6.2, "met": 6.8, "tate": 6.1, "national-gallery": 6.0, "natural-history": 5.4, "amnh": 5.0, "palace": 19.3, "hermitage": 4.9, "orsay": 3.7 } },
+    { "t": 2020, "values": { "louvre": 2.7, "china": 1.6, "vatican": 1.3, "british": 1.3, "met": 1.1, "tate": 1.4, "national-gallery": 1.2, "natural-history": 1.3, "amnh": 0.6, "palace": 3.1, "hermitage": 1.0, "orsay": 0.9 } },
+    { "t": 2021, "values": { "louvre": 2.8, "china": 2.4, "vatican": 1.6, "british": 1.3, "met": 2.0, "tate": 1.2, "national-gallery": 1.2, "natural-history": 1.6, "amnh": 1.2, "palace": 5.0, "hermitage": 1.6, "orsay": 1.4 } },
+    { "t": 2022, "values": { "louvre": 7.7, "china": 1.6, "vatican": 5.1, "british": 4.1, "met": 3.2, "tate": 3.9, "national-gallery": 3.1, "natural-history": 4.7, "amnh": 3.0, "palace": 6.0, "hermitage": 2.8, "orsay": 3.2 } },
+    { "t": 2023, "values": { "louvre": 8.9, "china": 6.8, "vatican": 6.8, "british": 5.8, "met": 5.4, "tate": 4.7, "national-gallery": 3.1, "natural-history": 5.7, "amnh": 4.0, "palace": 6.8, "hermitage": 3.3, "orsay": 3.9 } },
+    { "t": 2024, "values": { "louvre": 8.7, "china": 7.0, "vatican": 6.8, "british": 6.5, "met": 5.5, "tate": 4.6, "national-gallery": 4.7, "natural-history": 5.6, "amnh": 4.7, "palace": 6.5, "hermitage": 3.5, "orsay": 3.8 } },
+    { "t": 2025, "values": { "louvre": 9.0, "china": 7.0, "vatican": 6.9, "british": 6.6, "met": 5.6, "tate": 4.8, "national-gallery": 4.8, "natural-history": 5.7, "amnh": 5.0, "palace": 6.7, "hermitage": 3.6, "orsay": 3.9 } }
+  ],
+  "milestones": [
+    { "t": 2010, "title": "China joins the top tier", "text": "The National Museum of China reopens at a scale large enough to challenge the European leaders." },
+    { "t": 2018, "title": "Louvre's blockbuster year", "text": "Tourism and major exhibitions push the Louvre above ten million visitors." },
+    { "t": 2020, "title": "Attendance collapses", "text": "COVID closures and travel bans crater museum attendance worldwide." },
+    { "t": 2023, "title": "Recovery reshuffles the board", "text": "Travel returns unevenly, lifting Paris, Rome, Beijing, London and New York at different speeds." }
+  ]
+}

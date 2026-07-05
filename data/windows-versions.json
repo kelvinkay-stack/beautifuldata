@@ -1,0 +1,54 @@
+{
+  "id": "windows-versions",
+  "title": "Windows Version Market Share",
+  "shortTitle": "Windows Versions",
+  "category": "tech",
+  "unit": { "label": "Share of Windows desktop usage", "format": "percent", "prefix": "", "suffix": "%", "decimals": 1 },
+  "scale": "linear",
+  "topN": 8,
+  "timeLabel": "year",
+  "blurb": "The Windows upgrade cycle is a race where the incumbent usually refuses to leave. XP lingers, Windows 7 becomes the beloved default, Windows 10 absorbs almost everything, and Windows 11 finally surges as Windows 10 support ends.",
+  "source": {
+    "name": "StatCounter Global Stats and Microsoft lifecycle dates",
+    "url": "https://gs.statcounter.com/windows-version-market-share/desktop/worldwide",
+    "note": "Annualized global desktop Windows-version shares reconstructed from StatCounter monthly series; values are approximate."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "xp", "label": "Windows XP", "color": "#4C8DFF" },
+    { "id": "vista", "label": "Windows Vista", "color": "#B388FF" },
+    { "id": "win7", "label": "Windows 7", "color": "#23C8A8" },
+    { "id": "win8", "label": "Windows 8", "color": "#67E8F9" },
+    { "id": "win81", "label": "Windows 8.1", "color": "#2FB4FF" },
+    { "id": "win10", "label": "Windows 10", "color": "#FFB020" },
+    { "id": "win11", "label": "Windows 11", "color": "#FF5C4D" },
+    { "id": "other", "label": "Other Windows", "color": "#94A3B8" }
+  ],
+  "keyframes": [
+    { "t": 2009, "values": { "xp": 69, "vista": 25, "win7": 1, "win8": 0, "win81": 0, "win10": 0, "win11": 0, "other": 5 } },
+    { "t": 2010, "values": { "xp": 55, "vista": 18, "win7": 23, "win8": 0, "win81": 0, "win10": 0, "win11": 0, "other": 4 } },
+    { "t": 2011, "values": { "xp": 42, "vista": 12, "win7": 42, "win8": 0, "win81": 0, "win10": 0, "win11": 0, "other": 4 } },
+    { "t": 2012, "values": { "xp": 33, "vista": 8, "win7": 55, "win8": 1, "win81": 0, "win10": 0, "win11": 0, "other": 3 } },
+    { "t": 2013, "values": { "xp": 24, "vista": 5, "win7": 58, "win8": 8, "win81": 2, "win10": 0, "win11": 0, "other": 3 } },
+    { "t": 2014, "values": { "xp": 18, "vista": 3, "win7": 56, "win8": 7, "win81": 13, "win10": 0, "win11": 0, "other": 3 } },
+    { "t": 2015, "values": { "xp": 12, "vista": 2, "win7": 54, "win8": 4, "win81": 15, "win10": 10, "win11": 0, "other": 3 } },
+    { "t": 2016, "values": { "xp": 8, "vista": 1, "win7": 48, "win8": 2, "win81": 10, "win10": 29, "win11": 0, "other": 2 } },
+    { "t": 2017, "values": { "xp": 5, "vista": 1, "win7": 42, "win8": 1.5, "win81": 7, "win10": 42, "win11": 0, "other": 1.5 } },
+    { "t": 2018, "values": { "xp": 3, "vista": 0.5, "win7": 35, "win8": 1, "win81": 5, "win10": 54, "win11": 0, "other": 1.5 } },
+    { "t": 2019, "values": { "xp": 2, "vista": 0.3, "win7": 28, "win8": 0.8, "win81": 4, "win10": 64, "win11": 0, "other": 0.9 } },
+    { "t": 2020, "values": { "xp": 1.2, "vista": 0.2, "win7": 18, "win8": 0.6, "win81": 3, "win10": 76, "win11": 0, "other": 1 } },
+    { "t": 2021, "values": { "xp": 0.8, "vista": 0.1, "win7": 12, "win8": 0.4, "win81": 2.5, "win10": 83, "win11": 1, "other": 0.2 } },
+    { "t": 2022, "values": { "xp": 0.5, "vista": 0.1, "win7": 8, "win8": 0.3, "win81": 2, "win10": 72, "win11": 17, "other": 0.1 } },
+    { "t": 2023, "values": { "xp": 0.3, "vista": 0, "win7": 4, "win8": 0.2, "win81": 1.2, "win10": 68, "win11": 26, "other": 0.3 } },
+    { "t": 2024, "values": { "xp": 0.2, "vista": 0, "win7": 3, "win8": 0.1, "win81": 0.7, "win10": 62, "win11": 34, "other": 0 } },
+    { "t": 2025, "values": { "xp": 0.1, "vista": 0, "win7": 2, "win8": 0.1, "win81": 0.4, "win10": 48, "win11": 49, "other": 0.4 } },
+    { "t": 2026, "values": { "xp": 0.1, "vista": 0, "win7": 1.2, "win8": 0.1, "win81": 0.2, "win10": 26, "win11": 72, "other": 0.4 } }
+  ],
+  "milestones": [
+    { "t": 2011, "title": "Windows 7 passes XP", "text": "Windows 7 becomes the default PC experience after Vista's weak adoption." },
+    { "t": 2015.6, "title": "Windows 10 launches", "text": "Microsoft pushes a free upgrade strategy and changes the slope of the chart." },
+    { "t": 2021.8, "title": "Windows 11 appears", "text": "Windows 11 starts slowly because of hardware requirements and cautious upgrades." },
+    { "t": 2025.8, "title": "Windows 10 sunset", "text": "The support deadline finally pushes Windows 11 past Windows 10." }
+  ]
+}

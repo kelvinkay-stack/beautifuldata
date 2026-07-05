@@ -1,0 +1,60 @@
+{
+  "id": "f1-driver-wins",
+  "title": "Formula 1 Driver Wins",
+  "shortTitle": "F1 Driver Wins",
+  "category": "sports",
+  "unit": { "label": "Cumulative Grand Prix wins", "format": "plain", "prefix": "", "suffix": " wins", "decimals": 0 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "F1's win record moves in eras: Fangio, Clark, Stewart, Prost, Schumacher, Hamilton, then Verstappen. Because race calendars grew dramatically, the modern bars accelerate in a way the early champions never had the chance to match.",
+  "source": {
+    "name": "Formula 1 official statistics and StatsF1",
+    "url": "https://www.formula1.com/en/results.html",
+    "note": "Season-end cumulative win totals for selected drivers; recent values are frozen at the 2024 season for stability."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "fangio", "label": "Juan Manuel Fangio", "color": "#C4B5A0" },
+    { "id": "clark", "label": "Jim Clark", "color": "#34D399" },
+    { "id": "stewart", "label": "Jackie Stewart", "color": "#4C8DFF" },
+    { "id": "lauda", "label": "Niki Lauda", "color": "#FF5C4D" },
+    { "id": "prost", "label": "Alain Prost", "color": "#2FB4FF" },
+    { "id": "senna", "label": "Ayrton Senna", "color": "#FFD84D" },
+    { "id": "schumacher", "label": "Michael Schumacher", "color": "#F43F5E" },
+    { "id": "vettel", "label": "Sebastian Vettel", "color": "#B388FF" },
+    { "id": "hamilton", "label": "Lewis Hamilton", "color": "#67E8F9" },
+    { "id": "verstappen", "label": "Max Verstappen", "color": "#FF8C42" },
+    { "id": "alonso", "label": "Fernando Alonso", "color": "#23C8A8" },
+    { "id": "mansell", "label": "Nigel Mansell", "color": "#A3E635" }
+  ],
+  "keyframes": [
+    { "t": 1950, "values": { "fangio": 0, "clark": 0, "stewart": 0, "lauda": 0, "prost": 0, "senna": 0, "schumacher": 0, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 0 } },
+    { "t": 1955, "values": { "fangio": 18, "clark": 0, "stewart": 0, "lauda": 0, "prost": 0, "senna": 0, "schumacher": 0, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 0 } },
+    { "t": 1960, "values": { "fangio": 24, "clark": 0, "stewart": 0, "lauda": 0, "prost": 0, "senna": 0, "schumacher": 0, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 0 } },
+    { "t": 1965, "values": { "fangio": 24, "clark": 19, "stewart": 0, "lauda": 0, "prost": 0, "senna": 0, "schumacher": 0, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 0 } },
+    { "t": 1970, "values": { "fangio": 24, "clark": 25, "stewart": 6, "lauda": 0, "prost": 0, "senna": 0, "schumacher": 0, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 0 } },
+    { "t": 1975, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 6, "prost": 0, "senna": 0, "schumacher": 0, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 0 } },
+    { "t": 1980, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 17, "prost": 0, "senna": 0, "schumacher": 0, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 0 } },
+    { "t": 1985, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 21, "senna": 2, "schumacher": 0, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 2 } },
+    { "t": 1990, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 44, "senna": 26, "schumacher": 0, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 15 } },
+    { "t": 1995, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 19, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 31 } },
+    { "t": 2000, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 44, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 0, "mansell": 31 } },
+    { "t": 2005, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 84, "vettel": 0, "hamilton": 0, "verstappen": 0, "alonso": 8, "mansell": 31 } },
+    { "t": 2010, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 91, "vettel": 10, "hamilton": 14, "verstappen": 0, "alonso": 26, "mansell": 31 } },
+    { "t": 2015, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 91, "vettel": 42, "hamilton": 43, "verstappen": 0, "alonso": 32, "mansell": 31 } },
+    { "t": 2020, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 91, "vettel": 53, "hamilton": 95, "verstappen": 10, "alonso": 32, "mansell": 31 } },
+    { "t": 2021, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 91, "vettel": 53, "hamilton": 103, "verstappen": 20, "alonso": 32, "mansell": 31 } },
+    { "t": 2022, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 91, "vettel": 53, "hamilton": 103, "verstappen": 35, "alonso": 32, "mansell": 31 } },
+    { "t": 2023, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 91, "vettel": 53, "hamilton": 103, "verstappen": 54, "alonso": 32, "mansell": 31 } },
+    { "t": 2024, "values": { "fangio": 24, "clark": 25, "stewart": 27, "lauda": 25, "prost": 51, "senna": 41, "schumacher": 91, "vettel": 53, "hamilton": 105, "verstappen": 63, "alonso": 32, "mansell": 31 } }
+  ],
+  "milestones": [
+    { "t": 1973, "title": "Stewart passes Fangio", "text": "Jackie Stewart raises the wins record just before retiring as a three-time champion." },
+    { "t": 1987, "title": "Prost takes the record", "text": "Alain Prost's consistency moves him past Stewart on the all-time wins board." },
+    { "t": 2001, "title": "Schumacher passes Prost", "text": "Ferrari's dominant run turns Schumacher into the new benchmark." },
+    { "t": 2020, "title": "Hamilton passes Schumacher", "text": "Lewis Hamilton breaks the 91-win record and pushes it into triple digits." },
+    { "t": 2023, "title": "Verstappen's 19-win year", "text": "Max Verstappen's record season launches him into the historical top three." }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "wind-capacity",
+  "title": "Wind Power Capacity by Country",
+  "shortTitle": "Wind Capacity",
+  "category": "science",
+  "unit": { "label": "Installed wind capacity", "format": "plain", "prefix": "", "suffix": " GW", "decimals": 1 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The wind buildout starts as a European and American story, then China turns the whole chart vertical. Unlike solar, wind's early leaders held meaningful scale for longer, making the handoff from Germany and Spain to China feel like an industrial relay.",
+  "source": {
+    "name": "IRENA via Our World in Data",
+    "url": "https://ourworldindata.org/grapher/cumulative-installed-wind-energy-capacity-gigawatts",
+    "note": "Total onshore and offshore installed wind capacity in gigawatts, 2000-2024."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "china", "label": "China", "color": "#FF5C4D" },
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "germany", "label": "Germany", "color": "#FDE68A" },
+    { "id": "india", "label": "India", "color": "#FFB020" },
+    { "id": "spain", "label": "Spain", "color": "#F43F5E" },
+    { "id": "uk", "label": "United Kingdom", "color": "#B388FF" },
+    { "id": "brazil", "label": "Brazil", "color": "#34D399" },
+    { "id": "france", "label": "France", "color": "#2FB4FF" },
+    { "id": "canada", "label": "Canada", "color": "#67E8F9" },
+    { "id": "sweden", "label": "Sweden", "color": "#FFD84D" },
+    { "id": "italy", "label": "Italy", "color": "#A3E635" },
+    { "id": "turkey", "label": "Turkey", "color": "#FF8C42" }
+  ],
+  "keyframes": [
+    { "t": 2000, "values": { "china": 0.341, "usa": 2.377, "germany": 6.095, "india": 0.941, "spain": 2.206, "uk": 0.435, "brazil": 0.019, "france": 0.038, "canada": 0.092, "sweden": 0.209, "italy": 0.363, "turkey": 0.019 } },
+    { "t": 2002, "values": { "china": 0.449, "usa": 4.417, "germany": 12.001, "india": 1.606, "spain": 4.891, "uk": 0.535, "brazil": 0.02, "france": 0.138, "canada": 0.161, "sweden": 0.357, "italy": 0.78, "turkey": 0.019 } },
+    { "t": 2004, "values": { "china": 0.763, "usa": 6.456, "germany": 16.419, "india": 3.813, "spain": 8.317, "uk": 0.933, "brazil": 0.025, "france": 0.358, "canada": 0.444, "sweden": 0.475, "italy": 1.127, "turkey": 0.019 } },
+    { "t": 2006, "values": { "china": 2.07, "usa": 11.329, "germany": 20.474, "india": 6.315, "spain": 11.722, "uk": 1.955, "brazil": 0.233, "france": 1.412, "canada": 1.423, "sweden": 0.585, "italy": 1.902, "turkey": 0.059 } },
+    { "t": 2008, "values": { "china": 8.388, "usa": 24.651, "germany": 22.794, "india": 10.243, "spain": 16.555, "uk": 3.446, "brazil": 0.339, "france": 3.403, "canada": 2.336, "sweden": 1.089, "italy": 3.525, "turkey": 0.364 } },
+    { "t": 2010, "values": { "china": 29.633, "usa": 39.135, "germany": 26.903, "india": 13.184, "spain": 20.693, "uk": 5.421, "brazil": 0.931, "france": 5.912, "canada": 3.967, "sweden": 2.017, "italy": 5.794, "turkey": 1.32 } },
+    { "t": 2012, "values": { "china": 61.597, "usa": 59.075, "germany": 30.979, "india": 17.3, "spain": 22.789, "uk": 9.03, "brazil": 1.901, "france": 7.607, "canada": 6.201, "sweden": 3.606, "italy": 8.102, "turkey": 2.261 } },
+    { "t": 2014, "values": { "china": 96.819, "usa": 64.232, "germany": 38.614, "india": 22.465, "spain": 22.925, "uk": 13.074, "brazil": 5.03, "france": 9.201, "canada": 9.694, "sweden": 5.088, "italy": 8.683, "turkey": 3.63 } },
+    { "t": 2016, "values": { "china": 148.517, "usa": 81.286, "germany": 49.435, "india": 28.7, "spain": 22.99, "uk": 16.126, "brazil": 10.322, "france": 11.567, "canada": 11.973, "sweden": 6.435, "italy": 9.384, "turkey": 5.751 } },
+    { "t": 2018, "values": { "china": 184.665, "usa": 94.517, "germany": 58.721, "india": 35.288, "spain": 23.405, "uk": 21.606, "brazil": 14.514, "france": 14.9, "canada": 12.816, "sweden": 7.3, "italy": 10.23, "turkey": 7.005 } },
+    { "t": 2020, "values": { "china": 281.993, "usa": 118.478, "germany": 62.201, "india": 38.559, "spain": 26.819, "uk": 24.458, "brazil": 17.217, "france": 17.535, "canada": 13.532, "sweden": 9.976, "italy": 10.871, "turkey": 8.832 } },
+    { "t": 2022, "values": { "china": 365.964, "usa": 141.501, "germany": 66.202, "india": 41.93, "spain": 30.114, "uk": 28.761, "brazil": 24.196, "france": 20.835, "canada": 15.237, "sweden": 14.279, "italy": 11.821, "turkey": 11.396 } },
+    { "t": 2024, "values": { "china": 521.266, "usa": 152.653, "germany": 72.823, "india": 48.163, "spain": 31.811, "uk": 32.146, "brazil": 32.959, "france": 24.592, "canada": 17.524, "sweden": 17.239, "italy": 12.992, "turkey": 12.973 } }
+  ],
+  "milestones": [
+    { "t": 2002, "title": "Germany opens the gap", "text": "Germany's early wind buildout makes it the first clear leader of the modern wind era." },
+    { "t": 2008, "title": "The US surge arrives", "text": "A wave of American wind farms briefly turns the race into a US-Germany duel." },
+    { "t": 2012, "title": "China takes No. 1", "text": "China passes the United States and begins the longest climb on the board." },
+    { "t": 2020, "title": "China's record build year", "text": "A massive installation wave makes China's lead look almost unreachable." }
+  ]
+}

@@ -43,6 +43,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://beautifuldata.netlify.app/races/windows-versions/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/cloud-providers/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://beautifuldata.netlify.app/races/atp-weeks/</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>yearly</changefreq>
@@ -62,6 +74,24 @@
   </url>
   <url>
     <loc>https://beautifuldata.netlify.app/races/nba-scoring/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/f1-driver-wins/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/mlb-home-runs/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/world-cup-goals/</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -109,6 +139,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://beautifuldata.netlify.app/races/manga-sales/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/museum-visitors/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://beautifuldata.netlify.app/races/tallest-buildings/</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>yearly</changefreq>
@@ -140,6 +182,18 @@
   </url>
   <url>
     <loc>https://beautifuldata.netlify.app/races/busiest-airports/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/wind-capacity/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/nuclear-generation/</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
@@ -218,6 +272,12 @@
   </url>
   <url>
     <loc>https://beautifuldata.netlify.app/races/gold-reserves/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beautifuldata.netlify.app/races/oil-production/</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>

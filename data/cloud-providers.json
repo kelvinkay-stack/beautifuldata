@@ -1,0 +1,53 @@
+{
+  "id": "cloud-providers",
+  "title": "Cloud Infrastructure Share",
+  "shortTitle": "Cloud Providers",
+  "category": "tech",
+  "unit": { "label": "Global cloud infrastructure share", "format": "percent", "prefix": "", "suffix": "%", "decimals": 1 },
+  "scale": "linear",
+  "topN": 8,
+  "timeLabel": "year",
+  "blurb": "The cloud race begins as an AWS land grab, then Microsoft turns Azure into the only true challenger. Google keeps climbing, Alibaba rises with China, and the old enterprise names fight to stay visible as the big three absorb most of the growth.",
+  "source": {
+    "name": "Synergy Research Group market-share releases",
+    "url": "https://www.srgresearch.com/articles/cloud-market-share-trends-big-three-together-hold-63-while-oracle-and-the-neoclouds-inch-higher",
+    "note": "Provider shares are annualized and reconstructed from public Synergy/industry snapshots; use as an illustrative trend race."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "aws", "label": "Amazon AWS", "color": "#FFB020" },
+    { "id": "azure", "label": "Microsoft Azure", "color": "#4C8DFF" },
+    { "id": "google", "label": "Google Cloud", "color": "#34D399" },
+    { "id": "alibaba", "label": "Alibaba Cloud", "color": "#FF5C4D" },
+    { "id": "ibm", "label": "IBM Cloud", "color": "#67E8F9" },
+    { "id": "oracle", "label": "Oracle Cloud", "color": "#F43F5E" },
+    { "id": "salesforce", "label": "Salesforce", "color": "#2FB4FF" },
+    { "id": "tencent", "label": "Tencent Cloud", "color": "#23C8A8" },
+    { "id": "others", "label": "Others", "color": "#94A3B8" }
+  ],
+  "keyframes": [
+    { "t": 2010, "values": { "aws": 18, "azure": 1, "google": 1, "alibaba": 0, "ibm": 8, "oracle": 1, "salesforce": 6, "tencent": 0, "others": 65 } },
+    { "t": 2011, "values": { "aws": 22, "azure": 2, "google": 1, "alibaba": 0.2, "ibm": 7, "oracle": 1.2, "salesforce": 6, "tencent": 0, "others": 60.6 } },
+    { "t": 2012, "values": { "aws": 27, "azure": 3, "google": 2, "alibaba": 0.5, "ibm": 6.5, "oracle": 1.5, "salesforce": 5.5, "tencent": 0.1, "others": 53.9 } },
+    { "t": 2013, "values": { "aws": 31, "azure": 5, "google": 3, "alibaba": 1, "ibm": 6, "oracle": 2, "salesforce": 5, "tencent": 0.2, "others": 46.8 } },
+    { "t": 2014, "values": { "aws": 32, "azure": 7, "google": 4, "alibaba": 1.5, "ibm": 5.5, "oracle": 2, "salesforce": 4.5, "tencent": 0.4, "others": 42.6 } },
+    { "t": 2015, "values": { "aws": 33, "azure": 9, "google": 5, "alibaba": 2, "ibm": 5, "oracle": 2, "salesforce": 4, "tencent": 0.7, "others": 39.3 } },
+    { "t": 2016, "values": { "aws": 34, "azure": 11, "google": 6, "alibaba": 3, "ibm": 4.5, "oracle": 2, "salesforce": 3.5, "tencent": 1, "others": 35 } },
+    { "t": 2017, "values": { "aws": 33, "azure": 13, "google": 7, "alibaba": 4, "ibm": 4, "oracle": 2, "salesforce": 3, "tencent": 1.5, "others": 32.5 } },
+    { "t": 2018, "values": { "aws": 33, "azure": 15, "google": 8, "alibaba": 5, "ibm": 3.5, "oracle": 2, "salesforce": 3, "tencent": 2, "others": 28.5 } },
+    { "t": 2019, "values": { "aws": 32, "azure": 17, "google": 8.5, "alibaba": 5.5, "ibm": 3, "oracle": 2, "salesforce": 2.5, "tencent": 2, "others": 27.5 } },
+    { "t": 2020, "values": { "aws": 32, "azure": 19, "google": 9, "alibaba": 6, "ibm": 3, "oracle": 2, "salesforce": 2, "tencent": 2, "others": 25 } },
+    { "t": 2021, "values": { "aws": 33, "azure": 21, "google": 10, "alibaba": 6, "ibm": 3, "oracle": 2, "salesforce": 2, "tencent": 2, "others": 21 } },
+    { "t": 2022, "values": { "aws": 32, "azure": 22, "google": 11, "alibaba": 5, "ibm": 3, "oracle": 2.5, "salesforce": 2, "tencent": 2, "others": 20.5 } },
+    { "t": 2023, "values": { "aws": 31, "azure": 24, "google": 11, "alibaba": 4, "ibm": 3, "oracle": 3, "salesforce": 2, "tencent": 2, "others": 20 } },
+    { "t": 2024, "values": { "aws": 30, "azure": 25, "google": 12, "alibaba": 4, "ibm": 3, "oracle": 3, "salesforce": 2, "tencent": 2, "others": 19 } },
+    { "t": 2025, "values": { "aws": 29, "azure": 24, "google": 13, "alibaba": 4, "ibm": 3, "oracle": 4, "salesforce": 2, "tencent": 2, "others": 19 } }
+  ],
+  "milestones": [
+    { "t": 2013, "title": "AWS defines the market", "text": "Amazon turns infrastructure as a service into a category others have to chase." },
+    { "t": 2018, "title": "Azure becomes No. 2", "text": "Microsoft's enterprise base turns Azure into the one cloud rival AWS cannot ignore." },
+    { "t": 2021, "title": "Big three tighten grip", "text": "Amazon, Microsoft and Google pass 60% combined share as cloud spending accelerates." },
+    { "t": 2025, "title": "Oracle inches up", "text": "Oracle and newer AI cloud demand add motion below the big three." }
+  ]
+}

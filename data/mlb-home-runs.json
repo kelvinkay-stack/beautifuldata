@@ -1,0 +1,57 @@
+{
+  "id": "mlb-home-runs",
+  "title": "MLB Career Home Run Leaders",
+  "shortTitle": "MLB Home Runs",
+  "category": "sports",
+  "unit": { "label": "Career home runs", "format": "plain", "prefix": "", "suffix": " HR", "decimals": 0 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Baseball's home run record is a century-long argument about eras. Babe Ruth turns the category into a spectacle, Hank Aaron grinds past him, Barry Bonds detonates the modern record, and the late-career chasers settle into a dense pack below 700.",
+  "source": {
+    "name": "Baseball-Reference career home run leaders",
+    "url": "https://www.baseball-reference.com/leaders/HR_career.shtml",
+    "note": "Season-end cumulative home run totals for selected leaders, reconstructed from career logs."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "ruth", "label": "Babe Ruth", "color": "#4C8DFF" },
+    { "id": "aaron", "label": "Hank Aaron", "color": "#FFB020" },
+    { "id": "bonds", "label": "Barry Bonds", "color": "#8B5CF6" },
+    { "id": "pujols", "label": "Albert Pujols", "color": "#F43F5E" },
+    { "id": "arod", "label": "Alex Rodriguez", "color": "#2FB4FF" },
+    { "id": "mays", "label": "Willie Mays", "color": "#FF8C42" },
+    { "id": "griffey", "label": "Ken Griffey Jr.", "color": "#23C8A8" },
+    { "id": "sosa", "label": "Sammy Sosa", "color": "#FF5C4D" },
+    { "id": "robinson", "label": "Frank Robinson", "color": "#C4B5A0" },
+    { "id": "mcgwire", "label": "Mark McGwire", "color": "#FDE68A" },
+    { "id": "killebrew", "label": "Harmon Killebrew", "color": "#FFD84D" },
+    { "id": "judge", "label": "Aaron Judge", "color": "#67E8F9" }
+  ],
+  "keyframes": [
+    { "t": 1919, "values": { "ruth": 49, "aaron": 0, "bonds": 0, "pujols": 0, "arod": 0, "mays": 0, "griffey": 0, "sosa": 0, "robinson": 0, "mcgwire": 0, "killebrew": 0, "judge": 0 } },
+    { "t": 1921, "values": { "ruth": 162, "aaron": 0, "bonds": 0, "pujols": 0, "arod": 0, "mays": 0, "griffey": 0, "sosa": 0, "robinson": 0, "mcgwire": 0, "killebrew": 0, "judge": 0 } },
+    { "t": 1927, "values": { "ruth": 416, "aaron": 0, "bonds": 0, "pujols": 0, "arod": 0, "mays": 0, "griffey": 0, "sosa": 0, "robinson": 0, "mcgwire": 0, "killebrew": 0, "judge": 0 } },
+    { "t": 1935, "values": { "ruth": 714, "aaron": 0, "bonds": 0, "pujols": 0, "arod": 0, "mays": 0, "griffey": 0, "sosa": 0, "robinson": 0, "mcgwire": 0, "killebrew": 0, "judge": 0 } },
+    { "t": 1955, "values": { "ruth": 714, "aaron": 40, "bonds": 0, "pujols": 0, "arod": 0, "mays": 105, "griffey": 0, "sosa": 0, "robinson": 38, "mcgwire": 0, "killebrew": 4, "judge": 0 } },
+    { "t": 1965, "values": { "ruth": 714, "aaron": 398, "bonds": 0, "pujols": 0, "arod": 0, "mays": 505, "griffey": 0, "sosa": 0, "robinson": 262, "mcgwire": 0, "killebrew": 355, "judge": 0 } },
+    { "t": 1974, "values": { "ruth": 714, "aaron": 733, "bonds": 0, "pujols": 0, "arod": 0, "mays": 660, "griffey": 0, "sosa": 0, "robinson": 586, "mcgwire": 0, "killebrew": 559, "judge": 0 } },
+    { "t": 1976, "values": { "ruth": 714, "aaron": 755, "bonds": 0, "pujols": 0, "arod": 0, "mays": 660, "griffey": 0, "sosa": 0, "robinson": 586, "mcgwire": 0, "killebrew": 573, "judge": 0 } },
+    { "t": 1990, "values": { "ruth": 714, "aaron": 755, "bonds": 117, "pujols": 0, "arod": 0, "mays": 660, "griffey": 0, "sosa": 0, "robinson": 586, "mcgwire": 167, "killebrew": 573, "judge": 0 } },
+    { "t": 1998, "values": { "ruth": 714, "aaron": 755, "bonds": 411, "pujols": 0, "arod": 148, "mays": 660, "griffey": 350, "sosa": 273, "robinson": 586, "mcgwire": 457, "killebrew": 573, "judge": 0 } },
+    { "t": 2001, "values": { "ruth": 714, "aaron": 755, "bonds": 567, "pujols": 37, "arod": 241, "mays": 660, "griffey": 460, "sosa": 449, "robinson": 586, "mcgwire": 583, "killebrew": 573, "judge": 0 } },
+    { "t": 2007, "values": { "ruth": 714, "aaron": 755, "bonds": 762, "pujols": 282, "arod": 518, "mays": 660, "griffey": 593, "sosa": 609, "robinson": 586, "mcgwire": 583, "killebrew": 573, "judge": 0 } },
+    { "t": 2010, "values": { "ruth": 714, "aaron": 755, "bonds": 762, "pujols": 408, "arod": 613, "mays": 660, "griffey": 630, "sosa": 609, "robinson": 586, "mcgwire": 583, "killebrew": 573, "judge": 0 } },
+    { "t": 2016, "values": { "ruth": 714, "aaron": 755, "bonds": 762, "pujols": 591, "arod": 696, "mays": 660, "griffey": 630, "sosa": 609, "robinson": 586, "mcgwire": 583, "killebrew": 573, "judge": 4 } },
+    { "t": 2022, "values": { "ruth": 714, "aaron": 755, "bonds": 762, "pujols": 703, "arod": 696, "mays": 660, "griffey": 630, "sosa": 609, "robinson": 586, "mcgwire": 583, "killebrew": 573, "judge": 220 } },
+    { "t": 2024, "values": { "ruth": 714, "aaron": 755, "bonds": 762, "pujols": 703, "arod": 696, "mays": 660, "griffey": 630, "sosa": 609, "robinson": 586, "mcgwire": 583, "killebrew": 573, "judge": 315 } }
+  ],
+  "milestones": [
+    { "t": 1921, "title": "Ruth changes the sport", "text": "Babe Ruth turns home runs from a curiosity into baseball's defining spectacle." },
+    { "t": 1974.3, "title": "Aaron passes Ruth", "text": "Hank Aaron hits No. 715 in Atlanta and breaks the most famous record in American sports." },
+    { "t": 1998, "title": "McGwire and Sosa chase history", "text": "The single-season home run chase pulls both sluggers up the all-time board." },
+    { "t": 2007.6, "title": "Bonds reaches 762", "text": "Barry Bonds passes Aaron and sets the current career home run record." },
+    { "t": 2022, "title": "Pujols joins the 700 club", "text": "Albert Pujols becomes only the fourth player to reach 700 career home runs." }
+  ]
+}

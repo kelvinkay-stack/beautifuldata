@@ -1,0 +1,55 @@
+{
+  "id": "nuclear-generation",
+  "title": "Nuclear Power Generation",
+  "shortTitle": "Nuclear Power",
+  "category": "science",
+  "unit": { "label": "Annual nuclear electricity", "format": "plain", "prefix": "", "suffix": " TWh", "decimals": 0 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Nuclear electricity is a race where the leaders do not all move in the same direction. The United States stays huge, France rises and stumbles, Japan disappears after Fukushima, Germany exits, and China climbs from a rounding error to the world's third nuclear producer.",
+  "source": {
+    "name": "Ember via Our World in Data",
+    "url": "https://ourworldindata.org/grapher/nuclear-energy-generation",
+    "note": "Annual nuclear electricity generation in terawatt-hours."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "france", "label": "France", "color": "#2FB4FF" },
+    { "id": "china", "label": "China", "color": "#FF5C4D" },
+    { "id": "russia", "label": "Russia", "color": "#F43F5E" },
+    { "id": "korea", "label": "South Korea", "color": "#B388FF" },
+    { "id": "canada", "label": "Canada", "color": "#67E8F9" },
+    { "id": "ukraine", "label": "Ukraine", "color": "#FFD84D" },
+    { "id": "japan", "label": "Japan", "color": "#FF6FA5" },
+    { "id": "germany", "label": "Germany", "color": "#FDE68A" },
+    { "id": "india", "label": "India", "color": "#FFB020" },
+    { "id": "uk", "label": "United Kingdom", "color": "#A3E635" },
+    { "id": "sweden", "label": "Sweden", "color": "#23C8A8" }
+  ],
+  "keyframes": [
+    { "t": 2000, "values": { "usa": 753.89, "france": 415.16, "china": 16.74, "russia": 130.71, "korea": 108.96, "canada": 72.29, "ukraine": 77.34, "japan": 319.12, "germany": 169.61, "india": 15.77, "uk": 85.06, "sweden": 57.32 } },
+    { "t": 2002, "values": { "usa": 780.06, "france": 436.76, "china": 25.13, "russia": 141.63, "korea": 119.1, "canada": 75, "ukraine": 77.99, "japan": 314.26, "germany": 164.84, "india": 19.35, "uk": 87.85, "sweden": 68.11 } },
+    { "t": 2004, "values": { "usa": 788.53, "france": 448.24, "china": 50.47, "russia": 144.71, "korea": 130.71, "canada": 89.76, "ukraine": 87.02, "japan": 285.87, "germany": 167.07, "india": 21.26, "uk": 80, "sweden": 77.49 } },
+    { "t": 2006, "values": { "usa": 787.22, "france": 450.19, "china": 54.84, "russia": 156.44, "korea": 148.75, "canada": 97.28, "ukraine": 90.22, "japan": 304.29, "germany": 167.27, "india": 17.63, "uk": 75.45, "sweden": 66.98 } },
+    { "t": 2008, "values": { "usa": 806.21, "france": 439.45, "china": 68.39, "russia": 163.08, "korea": 150.96, "canada": 95.35, "ukraine": 89.84, "japan": 251.74, "germany": 148.49, "india": 15.23, "uk": 52.49, "sweden": 63.89 } },
+    { "t": 2010, "values": { "usa": 806.97, "france": 428.52, "china": 74.74, "russia": 170.41, "korea": 148.6, "canada": 90.03, "ukraine": 89.15, "japan": 292.36, "germany": 140.56, "india": 23.08, "uk": 62.14, "sweden": 57.83 } },
+    { "t": 2012, "values": { "usa": 769.33, "france": 425.41, "china": 98.32, "russia": 177.53, "korea": 150.33, "canada": 94.2, "ukraine": 90.14, "japan": 17.99, "germany": 99.46, "india": 33.14, "uk": 70.41, "sweden": 64.04 } },
+    { "t": 2014, "values": { "usa": 797.17, "france": 436.48, "china": 133.22, "russia": 180.76, "korea": 156.41, "canada": 106.54, "ukraine": 88.39, "japan": 0, "germany": 97.13, "india": 34.69, "uk": 63.75, "sweden": 64.88 } },
+    { "t": 2016, "values": { "usa": 805.69, "france": 403.2, "china": 213.18, "russia": 196.61, "korea": 161.99, "canada": 100.72, "ukraine": 80.95, "japan": 17.68, "germany": 84.63, "india": 37.9, "uk": 71.73, "sweden": 63.1 } },
+    { "t": 2018, "values": { "usa": 807.08, "france": 412.94, "china": 295, "russia": 204.58, "korea": 133.51, "canada": 100.03, "ukraine": 84.4, "japan": 49.11, "germany": 76, "india": 39.05, "uk": 65.06, "sweden": 68.55 } },
+    { "t": 2020, "values": { "usa": 789.88, "france": 353.83, "china": 366.2, "russia": 215.91, "korea": 160.18, "canada": 97.51, "ukraine": 76.2, "japan": 43, "germany": 64.38, "india": 44.61, "uk": 50.24, "sweden": 49.2 } },
+    { "t": 2022, "values": { "usa": 771.54, "france": 294.73, "china": 417.78, "russia": 223.7, "korea": 176.05, "canada": 86.63, "ukraine": 62.18, "japan": 51.77, "germany": 34.71, "india": 46.19, "uk": 47.4, "sweden": 51.94 } },
+    { "t": 2023, "values": { "usa": 774.87, "france": 338.2, "china": 434.72, "russia": 217.38, "korea": 180.49, "canada": 88.43, "ukraine": 0, "japan": 77.46, "germany": 7.22, "india": 48.2, "uk": 40.6, "sweden": 48.47 } },
+    { "t": 2024, "values": { "usa": 781.86, "france": 380.45, "china": 450.85, "russia": 215.71, "korea": 188.75, "canada": 85.47, "ukraine": 0, "japan": 84.91, "germany": 0, "india": 54.7, "uk": 40.59, "sweden": 50.67 } },
+    { "t": 2025, "values": { "usa": 784.78, "france": 392.07, "china": 487.61, "russia": 218.65, "korea": 184.67, "canada": 85.32, "ukraine": 0, "japan": 94.09, "germany": 0, "india": 53.83, "uk": 36.38, "sweden": 47.1 } }
+  ],
+  "milestones": [
+    { "t": 2011.2, "title": "Fukushima shock", "text": "Japan's nuclear generation collapses after Fukushima and takes years to partially return." },
+    { "t": 2016, "title": "China enters the top pack", "text": "China's reactor buildout pushes it past Germany and Canada." },
+    { "t": 2020, "title": "China passes France", "text": "China overtakes France during a period of French outages and Chinese expansion." },
+    { "t": 2024, "title": "Germany exits", "text": "Germany's phase-out removes a former top nuclear generator from the board." }
+  ]
+}

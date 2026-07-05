@@ -1,0 +1,60 @@
+{
+  "id": "world-cup-goals",
+  "title": "World Cup Career Goals",
+  "shortTitle": "World Cup Goals",
+  "category": "sports",
+  "unit": { "label": "Men's World Cup goals", "format": "plain", "prefix": "", "suffix": " goals", "decimals": 0 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "World Cup scoring is sparse, brutal and generational: players get only a few tournaments to build a total. Fontaine's six-game explosion, Gerd Muller's efficiency, Ronaldo's comeback, Klose's longevity, and the Messi-Mbappe era all fit on one tiny scoreboard.",
+  "source": {
+    "name": "FIFA World Cup all-time scorer records",
+    "url": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/fifa-world-cup-all-time-leading-scorers",
+    "note": "Cumulative men's FIFA World Cup goals through the 2022 tournament; 2026 in-progress totals are intentionally excluded."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "stabile", "label": "Guillermo Stabile", "color": "#C4B5A0" },
+    { "id": "kocsis", "label": "Sandor Kocsis", "color": "#FFD84D" },
+    { "id": "fontaine", "label": "Just Fontaine", "color": "#2FB4FF" },
+    { "id": "pele", "label": "Pele", "color": "#34D399" },
+    { "id": "muller", "label": "Gerd Muller", "color": "#FDE68A" },
+    { "id": "lineker", "label": "Gary Lineker", "color": "#4C8DFF" },
+    { "id": "klinsmann", "label": "Jurgen Klinsmann", "color": "#B388FF" },
+    { "id": "ronaldo", "label": "Ronaldo", "color": "#FFB020" },
+    { "id": "klose", "label": "Miroslav Klose", "color": "#F43F5E" },
+    { "id": "messi", "label": "Lionel Messi", "color": "#67E8F9" },
+    { "id": "mbappe", "label": "Kylian Mbappe", "color": "#FF5C4D" },
+    { "id": "cristiano", "label": "Cristiano Ronaldo", "color": "#FF8C42" }
+  ],
+  "keyframes": [
+    { "t": 1930, "values": { "stabile": 8, "kocsis": 0, "fontaine": 0, "pele": 0, "muller": 0, "lineker": 0, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1934, "values": { "stabile": 8, "kocsis": 0, "fontaine": 0, "pele": 0, "muller": 0, "lineker": 0, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1950, "values": { "stabile": 8, "kocsis": 0, "fontaine": 0, "pele": 0, "muller": 0, "lineker": 0, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1954, "values": { "stabile": 8, "kocsis": 11, "fontaine": 0, "pele": 0, "muller": 0, "lineker": 0, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1958, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 6, "muller": 0, "lineker": 0, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1962, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 7, "muller": 0, "lineker": 0, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1966, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 7, "muller": 0, "lineker": 0, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1970, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 10, "lineker": 0, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1974, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 0, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1986, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 6, "klinsmann": 0, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1990, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 10, "klinsmann": 3, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1994, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 10, "klinsmann": 8, "ronaldo": 0, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 1998, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 10, "klinsmann": 11, "ronaldo": 4, "klose": 0, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 2002, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 10, "klinsmann": 11, "ronaldo": 12, "klose": 5, "messi": 0, "mbappe": 0, "cristiano": 0 } },
+    { "t": 2006, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 10, "klinsmann": 11, "ronaldo": 15, "klose": 10, "messi": 1, "mbappe": 0, "cristiano": 1 } },
+    { "t": 2010, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 10, "klinsmann": 11, "ronaldo": 15, "klose": 14, "messi": 1, "mbappe": 0, "cristiano": 2 } },
+    { "t": 2014, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 10, "klinsmann": 11, "ronaldo": 15, "klose": 16, "messi": 5, "mbappe": 0, "cristiano": 3 } },
+    { "t": 2018, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 10, "klinsmann": 11, "ronaldo": 15, "klose": 16, "messi": 6, "mbappe": 4, "cristiano": 7 } },
+    { "t": 2022, "values": { "stabile": 8, "kocsis": 11, "fontaine": 13, "pele": 12, "muller": 14, "lineker": 10, "klinsmann": 11, "ronaldo": 15, "klose": 16, "messi": 13, "mbappe": 12, "cristiano": 8 } }
+  ],
+  "milestones": [
+    { "t": 1958, "title": "Fontaine's untouchable sprint", "text": "Just Fontaine scores 13 goals in one tournament, still the single-World-Cup record." },
+    { "t": 1974, "title": "Muller takes the record", "text": "Gerd Muller reaches 14 goals and becomes the World Cup's scoring benchmark." },
+    { "t": 2006, "title": "Ronaldo passes Muller", "text": "Ronaldo's 15th World Cup goal completes a comeback arc from 1998 to 2006." },
+    { "t": 2014, "title": "Klose reaches 16", "text": "Miroslav Klose scores against Brazil and moves alone at the top." },
+    { "t": 2022, "title": "Messi and Mbappe close", "text": "The Qatar final pulls both Messi and Mbappe into range of the record." }
+  ]
+}

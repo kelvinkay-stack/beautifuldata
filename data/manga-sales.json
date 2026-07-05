@@ -1,0 +1,53 @@
+{
+  "id": "manga-sales",
+  "title": "Best-Selling Manga Series",
+  "shortTitle": "Manga Sales",
+  "category": "culture",
+  "unit": { "label": "Copies in circulation", "format": "plain", "prefix": "", "suffix": "M", "decimals": 0 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Manga sales make a wonderfully strange leaderboard: decades-long serials, finished classics, and one explosive Demon Slayer spike all share the same chart. One Piece eventually turns the race into a one-series summit, but the old giants never fully vanish.",
+  "source": {
+    "name": "Publisher circulation announcements and industry summaries",
+    "url": "https://bookriot.com/bestselling-manga/",
+    "note": "Cumulative copies in circulation are reconstructed from public milestone announcements; older yearly paths are illustrative."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "one-piece", "label": "One Piece", "color": "#4C8DFF" },
+    { "id": "golgo", "label": "Golgo 13", "color": "#C4B5A0" },
+    { "id": "dragon-ball", "label": "Dragon Ball", "color": "#FFB020" },
+    { "id": "conan", "label": "Detective Conan", "color": "#2FB4FF" },
+    { "id": "naruto", "label": "Naruto", "color": "#FF8C42" },
+    { "id": "doraemon", "label": "Doraemon", "color": "#67E8F9" },
+    { "id": "slam-dunk", "label": "Slam Dunk", "color": "#F43F5E" },
+    { "id": "demon-slayer", "label": "Demon Slayer", "color": "#23C8A8" },
+    { "id": "kochikame", "label": "KochiKame", "color": "#FFD84D" },
+    { "id": "jjk", "label": "Jujutsu Kaisen", "color": "#8B5CF6" },
+    { "id": "attack", "label": "Attack on Titan", "color": "#94A3B8" },
+    { "id": "bleach", "label": "Bleach", "color": "#D4D4D8" }
+  ],
+  "keyframes": [
+    { "t": 1984, "values": { "one-piece": 0, "golgo": 70, "dragon-ball": 0, "conan": 0, "naruto": 0, "doraemon": 85, "slam-dunk": 0, "demon-slayer": 0, "kochikame": 60, "jjk": 0, "attack": 0, "bleach": 0 } },
+    { "t": 1990, "values": { "one-piece": 0, "golgo": 100, "dragon-ball": 80, "conan": 0, "naruto": 0, "doraemon": 100, "slam-dunk": 0, "demon-slayer": 0, "kochikame": 90, "jjk": 0, "attack": 0, "bleach": 0 } },
+    { "t": 1995, "values": { "one-piece": 0, "golgo": 130, "dragon-ball": 200, "conan": 10, "naruto": 0, "doraemon": 120, "slam-dunk": 90, "demon-slayer": 0, "kochikame": 110, "jjk": 0, "attack": 0, "bleach": 0 } },
+    { "t": 2000, "values": { "one-piece": 40, "golgo": 150, "dragon-ball": 220, "conan": 70, "naruto": 20, "doraemon": 135, "slam-dunk": 105, "demon-slayer": 0, "kochikame": 130, "jjk": 0, "attack": 0, "bleach": 0 } },
+    { "t": 2005, "values": { "one-piece": 100, "golgo": 180, "dragon-ball": 230, "conan": 120, "naruto": 75, "doraemon": 145, "slam-dunk": 110, "demon-slayer": 0, "kochikame": 145, "jjk": 0, "attack": 0, "bleach": 35 } },
+    { "t": 2010, "values": { "one-piece": 200, "golgo": 200, "dragon-ball": 240, "conan": 150, "naruto": 130, "doraemon": 150, "slam-dunk": 115, "demon-slayer": 0, "kochikame": 155, "jjk": 0, "attack": 15, "bleach": 70 } },
+    { "t": 2014, "values": { "one-piece": 320, "golgo": 220, "dragon-ball": 250, "conan": 170, "naruto": 200, "doraemon": 150, "slam-dunk": 120, "demon-slayer": 0, "kochikame": 157, "jjk": 0, "attack": 45, "bleach": 82 } },
+    { "t": 2016, "values": { "one-piece": 380, "golgo": 230, "dragon-ball": 250, "conan": 200, "naruto": 220, "doraemon": 150, "slam-dunk": 120, "demon-slayer": 1, "kochikame": 157, "jjk": 0, "attack": 60, "bleach": 90 } },
+    { "t": 2019, "values": { "one-piece": 460, "golgo": 250, "dragon-ball": 260, "conan": 230, "naruto": 235, "doraemon": 170, "slam-dunk": 120, "demon-slayer": 25, "kochikame": 157, "jjk": 5, "attack": 100, "bleach": 120 } },
+    { "t": 2020, "values": { "one-piece": 470, "golgo": 270, "dragon-ball": 260, "conan": 240, "naruto": 250, "doraemon": 170, "slam-dunk": 120, "demon-slayer": 120, "kochikame": 157, "jjk": 15, "attack": 100, "bleach": 120 } },
+    { "t": 2021, "values": { "one-piece": 490, "golgo": 300, "dragon-ball": 260, "conan": 250, "naruto": 250, "doraemon": 170, "slam-dunk": 120, "demon-slayer": 150, "kochikame": 157, "jjk": 50, "attack": 110, "bleach": 120 } },
+    { "t": 2023, "values": { "one-piece": 516, "golgo": 300, "dragon-ball": 260, "conan": 270, "naruto": 250, "doraemon": 170, "slam-dunk": 170, "demon-slayer": 150, "kochikame": 157, "jjk": 80, "attack": 120, "bleach": 130 } },
+    { "t": 2025, "values": { "one-piece": 520, "golgo": 300, "dragon-ball": 260, "conan": 270, "naruto": 250, "doraemon": 170, "slam-dunk": 170, "demon-slayer": 150, "kochikame": 157, "jjk": 100, "attack": 120, "bleach": 130 } }
+  ],
+  "milestones": [
+    { "t": 1995, "title": "Dragon Ball becomes the giant", "text": "Toriyama's finished classic becomes the benchmark for modern manga circulation." },
+    { "t": 2010, "title": "One Piece reaches the summit", "text": "One Piece catches the old guard and starts building a lead no series has matched." },
+    { "t": 2020, "title": "Demon Slayer explodes", "text": "The anime and film boom turns Demon Slayer into the fastest spike on the board." },
+    { "t": 2021, "title": "Golgo's long tail", "text": "Golgo 13's decades of serialization keep it near the top despite a quieter profile." }
+  ]
+}

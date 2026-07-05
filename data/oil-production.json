@@ -1,0 +1,55 @@
+{
+  "id": "oil-production",
+  "title": "Oil Production by Country",
+  "shortTitle": "Oil Production",
+  "category": "economy",
+  "unit": { "label": "Annual oil production", "format": "plain", "prefix": "", "suffix": " TWh", "decimals": 0 },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The oil board is a half-century of booms, embargoes, collapses and shale. Saudi Arabia and Russia dominate long stretches, but the United States returns to No. 1 after 2010 as shale rewrites the energy map.",
+  "source": {
+    "name": "Energy Institute via Our World in Data",
+    "url": "https://ourworldindata.org/grapher/oil-production-by-country",
+    "note": "Oil production measured as terawatt-hours of energy equivalent. Includes crude oil, shale oil, oil sands, condensates and NGLs."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "saudi", "label": "Saudi Arabia", "color": "#34D399" },
+    { "id": "russia", "label": "Russia", "color": "#F43F5E" },
+    { "id": "canada", "label": "Canada", "color": "#67E8F9" },
+    { "id": "china", "label": "China", "color": "#FF5C4D" },
+    { "id": "iraq", "label": "Iraq", "color": "#FFB020" },
+    { "id": "iran", "label": "Iran", "color": "#B388FF" },
+    { "id": "uae", "label": "United Arab Emirates", "color": "#FFD84D" },
+    { "id": "brazil", "label": "Brazil", "color": "#23C8A8" },
+    { "id": "kuwait", "label": "Kuwait", "color": "#C4B5A0" },
+    { "id": "norway", "label": "Norway", "color": "#2FB4FF" },
+    { "id": "venezuela", "label": "Venezuela", "color": "#FF8C42" }
+  ],
+  "keyframes": [
+    { "t": 1965, "values": { "usa": 4974, "saudi": 1291, "russia": 0, "canada": 510, "china": 132, "iraq": 752, "iran": 1113, "uae": 159, "brazil": 59, "kuwait": 1384, "norway": 0, "venezuela": 2141 } },
+    { "t": 1970, "values": { "usa": 6204, "saudi": 2235, "russia": 0, "canada": 815, "china": 356, "iraq": 887, "iran": 2240, "uae": 439, "brazil": 102, "kuwait": 1765, "norway": 0, "venezuela": 2294 } },
+    { "t": 1975, "values": { "usa": 5463, "saudi": 4179, "russia": 0, "canada": 949, "china": 896, "iraq": 1299, "iran": 3134, "uae": 937, "brazil": 108, "kuwait": 1237, "norway": 107, "venezuela": 1478 } },
+    { "t": 1980, "values": { "usa": 5585, "saudi": 5929, "russia": 0, "canada": 968, "china": 1232, "iraq": 1524, "iran": 862, "uae": 975, "brazil": 115, "kuwait": 1010, "norway": 291, "venezuela": 1365 } },
+    { "t": 1985, "values": { "usa": 5800, "saudi": 2001, "russia": 6307, "canada": 997, "china": 1453, "iraq": 812, "iran": 1283, "uae": 651, "brazil": 343, "kuwait": 645, "norway": 456, "venezuela": 1064 } },
+    { "t": 1990, "values": { "usa": 4845, "saudi": 3985, "russia": 6000, "canada": 1079, "china": 1609, "iraq": 1225, "iran": 1893, "uae": 1083, "brazil": 397, "kuwait": 544, "norway": 955, "venezuela": 1370 } },
+    { "t": 1995, "values": { "usa": 4461, "saudi": 5016, "russia": 3614, "canada": 1301, "china": 1733, "iraq": 303, "iran": 2157, "uae": 1331, "brazil": 436, "kuwait": 1220, "norway": 1610, "venezuela": 1806 } },
+    { "t": 2000, "values": { "usa": 4042, "saudi": 5100, "russia": 3799, "canada": 1455, "china": 1891, "iraq": 1498, "iran": 2229, "uae": 1413, "brazil": 780, "kuwait": 1278, "norway": 1814, "venezuela": 1864 } },
+    { "t": 2005, "values": { "usa": 3594, "saudi": 6008, "russia": 5522, "canada": 1659, "china": 2109, "iraq": 1046, "iran": 2418, "uae": 1588, "brazil": 1035, "kuwait": 1517, "norway": 1622, "venezuela": 1970 } },
+    { "t": 2010, "values": { "usa": 3874, "saudi": 5388, "russia": 5958, "canada": 1868, "china": 2361, "iraq": 1405, "iran": 2466, "uae": 1561, "brazil": 1298, "kuwait": 1435, "norway": 1158, "venezuela": 1696 } },
+    { "t": 2015, "values": { "usa": 6590, "saudi": 6606, "russia": 6333, "canada": 2513, "china": 2495, "iraq": 2275, "iran": 2096, "uae": 2036, "brazil": 1537, "kuwait": 1724, "norway": 1023, "venezuela": 1717 } },
+    { "t": 2020, "values": { "usa": 8299, "saudi": 6043, "russia": 6098, "canada": 2930, "china": 2265, "iraq": 2350, "iran": 1714, "uae": 1941, "brazil": 1853, "kuwait": 1526, "norway": 1077, "venezuela": 401 } },
+    { "t": 2022, "values": { "usa": 8910, "saudi": 6666, "russia": 6379, "canada": 3186, "china": 2381, "iraq": 2574, "iran": 2074, "uae": 2157, "brazil": 1898, "kuwait": 1692, "norway": 1038, "venezuela": 432 } },
+    { "t": 2023, "values": { "usa": 9648, "saudi": 6151, "russia": 6299, "canada": 3230, "china": 2431, "iraq": 2478, "iran": 2456, "uae": 2096, "brazil": 2135, "kuwait": 1622, "norway": 1103, "venezuela": 503 } },
+    { "t": 2024, "values": { "usa": 9977, "saudi": 5933, "russia": 6122, "canada": 3372, "china": 2476, "iraq": 2508, "iran": 2727, "uae": 2090, "brazil": 2118, "kuwait": 1521, "norway": 999, "venezuela": 576 } }
+  ],
+  "milestones": [
+    { "t": 1970, "title": "US production peak", "text": "The United States hits its old conventional-oil high before decades of decline." },
+    { "t": 1980, "title": "Saudi Arabia surges", "text": "Saudi output towers over the board during the oil-shock era." },
+    { "t": 2015, "title": "Shale flips the board", "text": "US shale growth pushes America back into the global top tier." },
+    { "t": 2023, "title": "US lead widens", "text": "American production opens a large gap over Saudi Arabia and Russia." }
+  ]
+}
