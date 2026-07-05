@@ -1,0 +1,72 @@
+{
+  "id": "wikipedia-languages",
+  "title": "Largest Wikipedia Editions",
+  "shortTitle": "Wikipedia Langs",
+  "category": "wildcard",
+  "unit": {
+    "label": "Articles",
+    "format": "plain",
+    "prefix": "",
+    "suffix": "M",
+    "decimals": 2
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Wikipedia's language race looks simple until the bots arrive. English grows like the web's default encyclopedia, then Cebuano, Swedish, Waray and Vietnamese reveal a stranger story: article counts can measure automation as much as human editing.",
+  "source": {
+    "name": "Wikimedia Statistics and Wikipedia language edition records",
+    "url": "https://stats.wikimedia.org/",
+    "note": "Article counts in millions, reconstructed from Wikimedia snapshots and public language-edition histories; bot-created article waves are intentionally included."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "en", "label": "English", "color": "#4C8DFF" },
+    { "id": "ceb", "label": "Cebuano", "color": "#FFB020" },
+    { "id": "de", "label": "German", "color": "#FDE68A" },
+    { "id": "fr", "label": "French", "color": "#2FB4FF" },
+    { "id": "sv", "label": "Swedish", "color": "#67E8F9" },
+    { "id": "nl", "label": "Dutch", "color": "#FF8C42" },
+    { "id": "ru", "label": "Russian", "color": "#F43F5E" },
+    { "id": "es", "label": "Spanish", "color": "#FF5C4D" },
+    { "id": "it", "label": "Italian", "color": "#34D399" },
+    { "id": "pl", "label": "Polish", "color": "#B388FF" },
+    { "id": "vi", "label": "Vietnamese", "color": "#A3E635" },
+    { "id": "war", "label": "Waray", "color": "#C4B5A0" }
+  ],
+  "keyframes": [
+    { "t": 2001, "values": { "en": 0.02, "de": 0.005, "fr": 0.004, "es": 0.003, "it": 0.003, "nl": 0.002, "sv": 0.002, "pl": 0.001, "ru": 0.001, "vi": 0, "ceb": 0, "war": 0 } },
+    { "t": 2002, "values": { "en": 0.1, "de": 0.03, "fr": 0.02, "es": 0.012, "it": 0.012, "nl": 0.01, "sv": 0.01, "pl": 0.008, "ru": 0.004, "vi": 0.001, "ceb": 0, "war": 0 } },
+    { "t": 2003, "values": { "en": 0.19, "de": 0.08, "fr": 0.05, "es": 0.03, "it": 0.03, "nl": 0.025, "sv": 0.025, "pl": 0.02, "ru": 0.012, "vi": 0.003, "ceb": 0, "war": 0 } },
+    { "t": 2004, "values": { "en": 0.45, "de": 0.18, "fr": 0.11, "es": 0.07, "it": 0.07, "nl": 0.06, "sv": 0.055, "pl": 0.045, "ru": 0.03, "vi": 0.005, "ceb": 0, "war": 0 } },
+    { "t": 2005, "values": { "en": 0.85, "de": 0.32, "fr": 0.2, "es": 0.12, "it": 0.13, "nl": 0.1, "sv": 0.09, "pl": 0.08, "ru": 0.06, "vi": 0.01, "ceb": 0.001, "war": 0.001 } },
+    { "t": 2006, "values": { "en": 1.5, "de": 0.5, "fr": 0.4, "es": 0.25, "it": 0.25, "nl": 0.2, "sv": 0.18, "pl": 0.22, "ru": 0.12, "vi": 0.03, "ceb": 0.0014, "war": 0.01 } },
+    { "t": 2007, "values": { "en": 2, "de": 0.75, "fr": 0.6, "es": 0.35, "it": 0.4, "nl": 0.35, "sv": 0.25, "pl": 0.45, "ru": 0.22, "vi": 0.06, "ceb": 0.012, "war": 0.04 } },
+    { "t": 2008, "values": { "en": 2.5, "de": 0.9, "fr": 0.75, "es": 0.5, "it": 0.55, "nl": 0.5, "sv": 0.3, "pl": 0.6, "ru": 0.35, "vi": 0.1, "ceb": 0.018, "war": 0.08 } },
+    { "t": 2009, "values": { "en": 3, "de": 1.05, "fr": 0.85, "es": 0.55, "it": 0.65, "nl": 0.6, "sv": 0.35, "pl": 0.7, "ru": 0.5, "vi": 0.2, "ceb": 0.024, "war": 0.12 } },
+    { "t": 2010, "values": { "en": 3.5, "de": 1.15, "fr": 1, "es": 0.7, "it": 0.75, "nl": 0.75, "sv": 0.4, "pl": 0.75, "ru": 0.65, "vi": 0.45, "ceb": 0.027, "war": 0.18 } },
+    { "t": 2011, "values": { "en": 3.8, "de": 1.3, "fr": 1.15, "es": 0.85, "it": 0.85, "nl": 0.85, "sv": 0.45, "pl": 0.82, "ru": 0.8, "vi": 0.65, "ceb": 0.029, "war": 0.25 } },
+    { "t": 2012, "values": { "en": 4.1, "de": 1.45, "fr": 1.25, "es": 0.95, "it": 1, "nl": 1.2, "sv": 0.5, "pl": 0.9, "ru": 0.95, "vi": 1.05, "ceb": 0.03, "war": 0.45 } },
+    { "t": 2013, "values": { "en": 4.4, "de": 1.6, "fr": 1.4, "es": 1.05, "it": 1.1, "nl": 1.7, "sv": 1.5, "pl": 1, "ru": 1.1, "vi": 1.2, "ceb": 0.27, "war": 0.75 } },
+    { "t": 2014, "values": { "en": 4.65, "de": 1.75, "fr": 1.55, "es": 1.15, "it": 1.2, "nl": 1.8, "sv": 1.75, "pl": 1.05, "ru": 1.2, "vi": 1.25, "ceb": 1.0, "war": 1.05 } },
+    { "t": 2015, "values": { "en": 4.95, "de": 1.85, "fr": 1.7, "es": 1.25, "it": 1.3, "nl": 1.9, "sv": 2.1, "pl": 1.1, "ru": 1.3, "vi": 1.3, "ceb": 1.4, "war": 1.25 } },
+    { "t": 2016, "values": { "en": 5.2, "de": 1.95, "fr": 1.85, "es": 1.3, "it": 1.35, "nl": 1.95, "sv": 3.0, "pl": 1.15, "ru": 1.35, "vi": 1.35, "ceb": 2.5, "war": 1.26 } },
+    { "t": 2017, "values": { "en": 5.45, "de": 2.1, "fr": 1.95, "es": 1.4, "it": 1.45, "nl": 2.0, "sv": 3.78, "pl": 1.2, "ru": 1.45, "vi": 1.17, "ceb": 4.5, "war": 1.27 } },
+    { "t": 2018, "values": { "en": 5.75, "de": 2.25, "fr": 2.05, "es": 1.5, "it": 1.55, "nl": 2.05, "sv": 3.78, "pl": 1.25, "ru": 1.55, "vi": 1.2, "ceb": 5.4, "war": 1.27 } },
+    { "t": 2019, "values": { "en": 5.95, "de": 2.35, "fr": 2.15, "es": 1.55, "it": 1.6, "nl": 2.05, "sv": 3.76, "pl": 1.35, "ru": 1.6, "vi": 1.25, "ceb": 5.38, "war": 1.27 } },
+    { "t": 2020, "values": { "en": 6.15, "de": 2.45, "fr": 2.25, "es": 1.65, "it": 1.65, "nl": 2.07, "sv": 3.58, "pl": 1.4, "ru": 1.7, "vi": 1.25, "ceb": 5.43, "war": 1.27 } },
+    { "t": 2021, "values": { "en": 6.35, "de": 2.55, "fr": 2.35, "es": 1.7, "it": 1.7, "nl": 2.1, "sv": 3.3, "pl": 1.45, "ru": 1.75, "vi": 1.26, "ceb": 5.9, "war": 1.27 } },
+    { "t": 2022, "values": { "en": 6.55, "de": 2.65, "fr": 2.45, "es": 1.75, "it": 1.75, "nl": 2.1, "sv": 2.6, "pl": 1.5, "ru": 1.85, "vi": 1.27, "ceb": 6.1, "war": 1.27 } },
+    { "t": 2023, "values": { "en": 6.7, "de": 2.8, "fr": 2.55, "es": 1.85, "it": 1.8, "nl": 2.15, "sv": 2.56, "pl": 1.55, "ru": 1.9, "vi": 1.28, "ceb": 6.11, "war": 1.27 } },
+    { "t": 2024, "values": { "en": 6.9, "de": 2.92, "fr": 2.6, "es": 1.9, "it": 1.85, "nl": 2.15, "sv": 2.57, "pl": 1.6, "ru": 1.95, "vi": 1.29, "ceb": 6.11, "war": 1.27 } },
+    { "t": 2025, "values": { "en": 7.1, "de": 3.02, "fr": 2.68, "es": 1.95, "it": 1.9, "nl": 2.16, "sv": 2.58, "pl": 1.63, "ru": 1.98, "vi": 1.29, "ceb": 6.115, "war": 1.27 } },
+    { "t": 2026, "values": { "en": 7.2, "de": 3.13, "fr": 2.73, "es": 2.0, "it": 1.95, "nl": 2.17, "sv": 2.59, "pl": 1.65, "ru": 2.02, "vi": 1.3, "ceb": 6.115, "war": 1.27 } }
+  ],
+  "milestones": [
+    { "t": 2006, "title": "English reaches a million", "text": "English Wikipedia becomes the first edition to cross one million articles." },
+    { "t": 2013, "title": "Bot editions surge", "text": "Automated article creation pushes Dutch, Swedish, Waray, Vietnamese and Cebuano up the board." },
+    { "t": 2017, "title": "Cebuano jumps to second", "text": "Lsjbot-created articles make Cebuano one of Wikipedia's largest editions by article count." },
+    { "t": 2022, "title": "Swedish cleanup reshapes rank", "text": "Mass deletions and quality work reduce Swedish article counts after the bot boom." }
+  ]
+}

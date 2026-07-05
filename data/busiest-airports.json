@@ -1,0 +1,66 @@
+{
+  "id": "busiest-airports",
+  "title": "World's Busiest Airports",
+  "shortTitle": "Busiest Airports",
+  "category": "science",
+  "unit": {
+    "label": "Annual passengers",
+    "format": "plain",
+    "prefix": "",
+    "suffix": "M",
+    "decimals": 1
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Airport traffic is a live map of economic gravity: Atlanta's domestic fortress, Beijing's pre-pandemic surge, Dubai's transfer-machine rise, and Istanbul's brand-new mega-hub all show up in the same race. The COVID shock makes the board collapse for one year, then reshuffle as travel returns.",
+  "source": {
+    "name": "Airports Council International annual rankings",
+    "url": "https://aci.aero/resources/data-center/",
+    "note": "Top-airport annual passenger totals in millions, reconstructed from ACI rankings and airport annual reports; use as an illustrative race rather than audited airport accounts."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "atl", "label": "Atlanta ATL", "color": "#4C8DFF" },
+    { "id": "ord", "label": "Chicago ORD", "color": "#67E8F9" },
+    { "id": "lhr", "label": "London Heathrow LHR", "color": "#B388FF" },
+    { "id": "lax", "label": "Los Angeles LAX", "color": "#FFB020" },
+    { "id": "dfw", "label": "Dallas/Fort Worth DFW", "color": "#23C8A8" },
+    { "id": "pek", "label": "Beijing Capital PEK", "color": "#FF5C4D" },
+    { "id": "dxb", "label": "Dubai DXB", "color": "#FFD84D" },
+    { "id": "hnd", "label": "Tokyo Haneda HND", "color": "#FF6FA5" },
+    { "id": "can", "label": "Guangzhou CAN", "color": "#F43F5E" },
+    { "id": "den", "label": "Denver DEN", "color": "#A3E635" },
+    { "id": "ist", "label": "Istanbul IST", "color": "#FF8C42" },
+    { "id": "pvg", "label": "Shanghai Pudong PVG", "color": "#2FB4FF" },
+    { "id": "del", "label": "Delhi DEL", "color": "#34D399" }
+  ],
+  "keyframes": [
+    { "t": 1998, "values": { "atl": 73.5, "ord": 72.1, "lhr": 60.7, "lax": 61.2, "dfw": 60.4, "pek": 17, "dxb": 10, "hnd": 53, "can": 8, "den": 35, "ist": 12, "pvg": 0, "del": 8 } },
+    { "t": 2000, "values": { "atl": 80.2, "ord": 72.1, "lhr": 64.6, "lax": 67.3, "dfw": 60.7, "pek": 21.7, "dxb": 12.3, "hnd": 56.4, "can": 12.6, "den": 38.8, "ist": 14.4, "pvg": 6, "del": 10 } },
+    { "t": 2002, "values": { "atl": 76.9, "ord": 66.6, "lhr": 63.3, "lax": 56.2, "dfw": 52.8, "pek": 27.2, "dxb": 16, "hnd": 60.7, "can": 16, "den": 35.7, "ist": 15.6, "pvg": 12, "del": 11.5 } },
+    { "t": 2004, "values": { "atl": 83.6, "ord": 75.5, "lhr": 67.1, "lax": 60.7, "dfw": 59.4, "pek": 34.9, "dxb": 21.7, "hnd": 62.3, "can": 20.3, "den": 42.3, "ist": 19.5, "pvg": 21, "del": 13.5 } },
+    { "t": 2006, "values": { "atl": 84.8, "ord": 76.3, "lhr": 67.5, "lax": 61, "dfw": 60.2, "pek": 48.5, "dxb": 28.8, "hnd": 65.8, "can": 26.2, "den": 47.3, "ist": 23.1, "pvg": 26.8, "del": 20.4 } },
+    { "t": 2008, "values": { "atl": 90, "ord": 69.4, "lhr": 67.1, "lax": 59.8, "dfw": 57.1, "pek": 55.9, "dxb": 37.4, "hnd": 66.8, "can": 33.4, "den": 51.2, "ist": 28.5, "pvg": 28.2, "del": 23.9 } },
+    { "t": 2010, "values": { "atl": 89.3, "ord": 66.8, "lhr": 65.9, "lax": 59.1, "dfw": 56.9, "pek": 73.9, "dxb": 47.2, "hnd": 64.2, "can": 40.9, "den": 52.2, "ist": 32.1, "pvg": 40.6, "del": 29.9 } },
+    { "t": 2012, "values": { "atl": 95.5, "ord": 66.6, "lhr": 70, "lax": 63.7, "dfw": 58.6, "pek": 81.9, "dxb": 57.7, "hnd": 66.8, "can": 48.3, "den": 53.2, "ist": 45.1, "pvg": 44.9, "del": 34.2 } },
+    { "t": 2014, "values": { "atl": 96.2, "ord": 70.1, "lhr": 73.4, "lax": 70.7, "dfw": 63.5, "pek": 86.1, "dxb": 70.5, "hnd": 72.8, "can": 54.8, "den": 53.5, "ist": 56.9, "pvg": 51.7, "del": 39.8 } },
+    { "t": 2016, "values": { "atl": 104.2, "ord": 78.3, "lhr": 75.7, "lax": 80.9, "dfw": 65.7, "pek": 94.4, "dxb": 83.7, "hnd": 79.7, "can": 59.7, "den": 58.3, "ist": 60.1, "pvg": 66, "del": 55.6 } },
+    { "t": 2018, "values": { "atl": 107.4, "ord": 83.2, "lhr": 80.1, "lax": 87.5, "dfw": 69.1, "pek": 101, "dxb": 89.1, "hnd": 87.1, "can": 69.8, "den": 64.5, "ist": 68.2, "pvg": 74, "del": 69.9 } },
+    { "t": 2019, "values": { "atl": 110.5, "ord": 84.6, "lhr": 80.9, "lax": 88.1, "dfw": 75.1, "pek": 100, "dxb": 86.4, "hnd": 87.1, "can": 73.4, "den": 69, "ist": 52.6, "pvg": 76.2, "del": 68.5 } },
+    { "t": 2020, "values": { "atl": 42.9, "ord": 30.9, "lhr": 22.1, "lax": 28.8, "dfw": 39.4, "pek": 34.5, "dxb": 25.9, "hnd": 30.6, "can": 43.8, "den": 33.7, "ist": 23.4, "pvg": 30.5, "del": 28.5 } },
+    { "t": 2021, "values": { "atl": 75.7, "ord": 54, "lhr": 19.4, "lax": 48, "dfw": 62.5, "pek": 32.6, "dxb": 29.1, "hnd": 26, "can": 40.3, "den": 58.8, "ist": 37.2, "pvg": 32.2, "del": 37.1 } },
+    { "t": 2022, "values": { "atl": 93.7, "ord": 68.3, "lhr": 61.6, "lax": 65.9, "dfw": 73.4, "pek": 12.7, "dxb": 66.1, "hnd": 50.7, "can": 26.1, "den": 69.3, "ist": 64.3, "pvg": 14.2, "del": 59.5 } },
+    { "t": 2023, "values": { "atl": 104.7, "ord": 73.9, "lhr": 79.2, "lax": 75.1, "dfw": 81.8, "pek": 52.9, "dxb": 87, "hnd": 78.7, "can": 63.2, "den": 77.8, "ist": 76, "pvg": 54.5, "del": 72.2 } },
+    { "t": 2024, "values": { "atl": 108.1, "ord": 80, "lhr": 83.9, "lax": 76.6, "dfw": 87.8, "pek": 67.7, "dxb": 92.3, "hnd": 85.9, "can": 76.4, "den": 82.4, "ist": 80.1, "pvg": 76.8, "del": 77.8 } },
+    { "t": 2025, "values": { "atl": 106, "ord": 81, "lhr": 84, "lax": 77, "dfw": 86, "pek": 71, "dxb": 94, "hnd": 88, "can": 79, "den": 80, "ist": 82, "pvg": 77, "del": 80 } }
+  ],
+  "milestones": [
+    { "t": 1998, "title": "Atlanta starts its streak", "text": "ATL becomes the default No. 1 as US domestic hub traffic overwhelms international gateways." },
+    { "t": 2010, "title": "Beijing enters the top tier", "text": "China's aviation boom pushes Beijing Capital into the same range as Atlanta." },
+    { "t": 2016, "title": "Dubai becomes a mega-hub", "text": "DXB rides Emirates' transfer network into the global top three." },
+    { "t": 2020, "title": "COVID scrambles everything", "text": "Travel restrictions collapse international hubs and Guangzhou briefly takes the crown." },
+    { "t": 2024, "title": "The board recovers", "text": "Atlanta leads again, while Dubai, DFW, Istanbul, Delhi and Chinese hubs crowd the chase pack." }
+  ]
+}

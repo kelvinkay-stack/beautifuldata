@@ -94,7 +94,9 @@
     { "id": "social-media", "category": "tech" },
     { "id": "search-engines", "category": "tech" },
     { "id": "ev-sales", "category": "tech" },
+    { "id": "solar-capacity", "category": "tech" },
     { "id": "atp-weeks", "category": "sports" },
+    { "id": "wta-weeks", "category": "sports" },
     { "id": "olympic-golds", "category": "sports" },
     { "id": "nba-scoring", "category": "sports" },
     { "id": "f1-constructors", "category": "sports" },
@@ -109,6 +111,7 @@
     { "id": "nobel-by-country", "category": "science" },
     { "id": "life-expectancy", "category": "science" },
     { "id": "cities", "category": "science" },
+    { "id": "busiest-airports", "category": "science" },
     { "id": "gdp-nations", "category": "economy" },
     { "id": "billionaires", "category": "economy" },
     { "id": "military-spending", "category": "economy" },
@@ -129,6 +132,7 @@
     { "id": "world-population-region", "category": "history" },
     { "id": "apple-products", "category": "wildcard" },
     { "id": "programming-languages", "category": "wildcard" },
+    { "id": "wikipedia-languages", "category": "wildcard" },
     { "id": "crypto", "category": "wildcard" }
   ]
 }

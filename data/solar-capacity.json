@@ -1,0 +1,71 @@
+{
+  "id": "solar-capacity",
+  "title": "Solar Power Capacity by Country",
+  "shortTitle": "Solar Capacity",
+  "category": "tech",
+  "unit": {
+    "label": "Installed solar capacity",
+    "format": "plain",
+    "prefix": "",
+    "suffix": " GW",
+    "decimals": 1
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The solar race begins as a German and Japanese policy experiment, then turns into one of the fastest industrial scale-ups ever measured. China does not just pass the field; by the mid-2020s it installs more capacity than the rest of the top board combined.",
+  "source": {
+    "name": "IRENA via Our World in Data",
+    "url": "https://ourworldindata.org/grapher/installed-solar-pv-capacity",
+    "note": "Total on-grid and off-grid installed solar power capacity, in gigawatts. OWID data last updated July 2025 for 2000-2024."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-05",
+  "entities": [
+    { "id": "china", "label": "China", "color": "#FF5C4D" },
+    { "id": "usa", "label": "United States", "color": "#4C8DFF" },
+    { "id": "japan", "label": "Japan", "color": "#FF6FA5" },
+    { "id": "germany", "label": "Germany", "color": "#FDE68A" },
+    { "id": "india", "label": "India", "color": "#FFB020" },
+    { "id": "italy", "label": "Italy", "color": "#34D399" },
+    { "id": "australia", "label": "Australia", "color": "#A3E635" },
+    { "id": "spain", "label": "Spain", "color": "#F43F5E" },
+    { "id": "brazil", "label": "Brazil", "color": "#23C8A8" },
+    { "id": "south-korea", "label": "South Korea", "color": "#B388FF" },
+    { "id": "netherlands", "label": "Netherlands", "color": "#FF8C42" },
+    { "id": "france", "label": "France", "color": "#2FB4FF" }
+  ],
+  "keyframes": [
+    { "t": 2000, "values": { "china": 0.033515, "usa": 0.595, "japan": 0.33, "germany": 0.114, "india": 0, "italy": 0.019, "australia": 0.025, "spain": 0.019294, "brazil": 0.001561, "south-korea": 0.004, "netherlands": 0.013, "france": 0.007 } },
+    { "t": 2001, "values": { "china": 0.03802, "usa": 0.459, "japan": 0.453, "germany": 0.195, "india": 0.005535, "italy": 0.02, "australia": 0.029, "spain": 0.023143, "brazil": 0.001596, "south-korea": 0.005, "netherlands": 0.021, "france": 0.007 } },
+    { "t": 2002, "values": { "china": 0.05653, "usa": 0.457, "japan": 0.637, "germany": 0.26, "india": 0.006705, "italy": 0.022, "australia": 0.034, "spain": 0.027971, "brazil": 0.001596, "south-korea": 0.005, "netherlands": 0.026, "france": 0.008 } },
+    { "t": 2003, "values": { "china": 0.0666, "usa": 0.681, "japan": 0.86, "germany": 0.435, "india": 0.007885, "italy": 0.026, "australia": 0.0394, "spain": 0.034375, "brazil": 0.002276, "south-korea": 0.006, "netherlands": 0.046, "france": 0.009 } },
+    { "t": 2004, "values": { "china": 0.0766, "usa": 0.751, "japan": 1.132, "germany": 1.105, "india": 0.00781, "italy": 0.031, "australia": 0.0464, "spain": 0.046823, "brazil": 0.002278, "south-korea": 0.009, "netherlands": 0.05, "france": 0.011 } },
+    { "t": 2005, "values": { "china": 0.1412, "usa": 0.881, "japan": 1.422, "germany": 2.056, "india": 0.013439, "italy": 0.034, "australia": 0.0524, "spain": 0.06696, "brazil": 0.002278, "south-korea": 0.014, "netherlands": 0.051, "france": 0.013 } },
+    { "t": 2006, "values": { "china": 0.1602, "usa": 1.099, "japan": 1.708, "germany": 2.899, "india": 0.011475, "italy": 0.045, "australia": 0.0614, "spain": 0.158755, "brazil": 0.002278, "south-korea": 0.036, "netherlands": 0.053, "france": 0.015 } },
+    { "t": 2007, "values": { "china": 0.199, "usa": 1.439, "japan": 1.919, "germany": 4.17, "india": 0.028831, "italy": 0.11, "australia": 0.073, "spain": 0.523921, "brazil": 0.002278, "south-korea": 0.081, "netherlands": 0.054, "france": 0.026 } },
+    { "t": 2008, "values": { "china": 0.253, "usa": 1.618, "japan": 2.144, "germany": 6.12, "india": 0.031454, "italy": 0.483, "australia": 0.085, "spain": 3.467249, "brazil": 0.002299, "south-korea": 0.357, "netherlands": 0.059, "france": 0.08 } },
+    { "t": 2009, "values": { "china": 0.4148, "usa": 2.086, "japan": 2.627, "germany": 10.566, "india": 0.043094, "italy": 1.264, "australia": 0.332, "spain": 3.730121, "brazil": 0.002523, "south-korea": 0.524, "netherlands": 0.069, "france": 0.277 } },
+    { "t": 2010, "values": { "china": 1.0218, "usa": 3.382, "japan": 3.618, "germany": 18.006, "india": 0.068832, "italy": 3.59672, "australia": 1.091, "spain": 4.634062, "brazil": 0.002574, "south-korea": 0.651, "netherlands": 0.09, "france": 1.044 } },
+    { "t": 2011, "values": { "china": 3.1078, "usa": 5.644, "japan": 4.914, "germany": 25.832, "india": 0.569285, "italy": 13.041719, "australia": 1.421, "spain": 5.460054, "brazil": 0.008123, "south-korea": 0.735, "netherlands": 0.149, "france": 2.988577 } },
+    { "t": 2012, "values": { "china": 6.7188, "usa": 8.613, "japan": 6.632, "germany": 33.77, "india": 0.985571, "italy": 16.65872, "australia": 2.511, "spain": 6.598698, "brazil": 0.009189, "south-korea": 1.0392, "netherlands": 0.287126, "france": 4.300757 } },
+    { "t": 2013, "values": { "china": 17.7588, "usa": 13.045, "japan": 13.599, "germany": 36.283, "india": 1.60282, "italy": 18.031721, "australia": 3.312, "spain": 7.024773, "brazil": 0.015578, "south-korea": 1.5592, "netherlands": 0.650013, "france": 5.160283 } },
+    { "t": 2014, "values": { "china": 28.3988, "usa": 17.651, "japan": 23.339, "germany": 37.398, "india": 3.776015, "italy": 18.440722, "australia": 4.137, "spain": 7.03153, "brazil": 0.024019, "south-korea": 2.4382, "netherlands": 1.007497, "france": 5.861405 } },
+    { "t": 2015, "values": { "china": 43.5488, "usa": 23.442, "japan": 34.15, "germany": 38.601, "india": 5.69699, "italy": 18.74172, "australia": 5.036, "spain": 7.040753, "brazil": 0.049046, "south-korea": 3.4672, "netherlands": 1.526259, "france": 6.819539 } },
+    { "t": 2016, "values": { "china": 77.818794, "usa": 34.716, "japan": 42.04, "germany": 39.908, "india": 9.982136, "italy": 19.11572, "australia": 5.881, "spain": 7.043993, "brazil": 0.135812, "south-korea": 4.3382, "netherlands": 2.135021, "france": 7.319077 } },
+    { "t": 2017, "values": { "china": 130.83229, "usa": 43.114655, "japan": 49.49963, "germany": 41.404, "india": 18.256845, "italy": 19.50401, "australia": 7.241227, "spain": 7.053262, "brazil": 1.212934, "south-korea": 5.633673, "netherlands": 2.910892, "france": 8.100411 } },
+    { "t": 2018, "values": { "china": 175.26186, "usa": 51.57013, "japan": 56.16163, "germany": 44.035, "india": 27.484722, "italy": 19.916315, "australia": 11.127774, "spain": 7.100576, "brazil": 2.467658, "south-korea": 7.701443, "netherlands": 4.608, "france": 9.03164 } },
+    { "t": 2019, "values": { "china": 204.9708, "usa": 60.826504, "japan": 63.192, "germany": 47.487, "india": 35.250195, "italy": 20.624992, "australia": 15.452684, "spain": 11.146393, "brazil": 4.708735, "south-korea": 10.847367, "netherlands": 7.227595, "france": 10.013181 } },
+    { "t": 2020, "values": { "china": 253.8638, "usa": 75.79348, "japan": 71.868, "germany": 51.785, "india": 39.705456, "italy": 21.358759, "australia": 19.772625, "spain": 12.474767, "brazil": 8.485171, "south-korea": 14.755592, "netherlands": 11.110023, "france": 11.133256 } },
+    { "t": 2021, "values": { "china": 306.9728, "usa": 94.78566, "japan": 78.413, "germany": 57.463, "india": 49.978718, "italy": 22.285975, "australia": 24.39662, "spain": 16.056005, "brazil": 14.513669, "south-korea": 17.905115, "netherlands": 14.82288, "france": 13.446042 } },
+    { "t": 2022, "values": { "china": 393.0318, "usa": 112.84192, "japan": 83.057, "germany": 61.188, "india": 63.47851, "italy": 24.559969, "australia": 28.88709, "spain": 26.238125, "brazil": 25.398739, "south-korea": 20.525099, "netherlands": 17.356464, "france": 14.721789 } },
+    { "t": 2023, "values": { "china": 609.92084, "usa": 139.92659, "japan": 87.068, "germany": 74.882, "india": 73.051605, "italy": 29.356117, "australia": 30.67494, "spain": 31.920416, "brazil": 37.943108, "south-korea": 23.528217, "netherlands": 21.274637, "france": 17.399137 } },
+    { "t": 2024, "values": { "china": 887.0998, "usa": 177.5943, "japan": 89.60133, "germany": 89.943, "india": 97.57632, "italy": 36.013115, "australia": 35.86494, "spain": 38.587414, "brazil": 53.115776, "south-korea": 26.680254, "netherlands": 24.048437, "france": 21.528088 } }
+  ],
+  "milestones": [
+    { "t": 2005, "title": "Germany takes the lead", "text": "Feed-in tariffs turn Germany into the early global solar laboratory." },
+    { "t": 2011, "title": "Italy's one-year surge", "text": "Italy adds a huge wave of solar capacity during Europe's subsidy boom." },
+    { "t": 2015, "title": "China passes Germany", "text": "Chinese deployment overtakes the old European leader and keeps accelerating." },
+    { "t": 2023, "title": "A vertical line for China", "text": "China adds more solar in one year than most countries had installed in total." }
+  ]
+}
