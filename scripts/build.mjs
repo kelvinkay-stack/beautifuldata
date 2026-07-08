@@ -162,6 +162,12 @@ const header = (activeCat) => `
 
 const footer = () => `
 <footer class="site-footer">
+  <div class="foot-cats" aria-label="Browse categories">
+    ${site.categories.map((c) => {
+      const n = races.filter((r) => r.category === c.id).length;
+      return `<a href="/#${c.id}" style="--c:${c.accent}">${esc(c.short)} · ${n}</a>`;
+    }).join('\n    ')}
+  </div>
   <div class="inner">
     <span>Overtake — ${races.length} races across ${site.categories.length} categories. Data sources are cited on every race page.</span>
     <span class="byline"><a href="${site.authorUrl}" rel="author">Kelvin Kay</a></span>
@@ -262,8 +268,17 @@ ${header()}
       <span><b>${site.categories.length}</b> categories</span>
       <span><b>${yearOf(t0, 'yearEra')}–${yearOf(t1, 'yearEra')}</b> covered</span>
     </div>
+    <div class="hero-bars" aria-hidden="true"><span></span><span></span><span></span></div>
   </section>
+  <div class="hub-search">
+    <label class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 5 5" stroke-linecap="round"/></svg>
+      <input type="search" id="race-search" placeholder="Search ${races.length} races — try “nba”, “empires”, “chrome”…" autocomplete="off" aria-label="Search races">
+    </label>
+    <span class="search-count num" id="search-count" aria-live="polite"></span>
+  </div>
 ${zones}
+  <p class="search-empty" id="search-empty">No races match that search — try a shorter word, or browse the categories above.</p>
 </main>
 ${footer()}
 <script type="application/json" id="preview-data">${JSON.stringify(previews)}</script>
@@ -282,6 +297,12 @@ function buildRacePage(r, i) {
   const next = races[(i + 1) % races.length];
   const prevDs = datasets.get(prev.id);
   const nextDs = datasets.get(next.id);
+  // same-category neighbours, wrapping so every page cross-links its lane
+  const catPeers = races.filter((x) => x.category === r.category && x.id !== r.id);
+  const selfIdx = catPeers.length ? races.filter((x) => x.category === r.category).findIndex((x) => x.id === r.id) : 0;
+  const related = catPeers.length
+    ? Array.from({ length: Math.min(4, catPeers.length) }, (_, k) => catPeers[(selfIdx + k) % catPeers.length])
+    : [];
   const kf = ds.keyframes;
   const t0 = kf[0].t, t1 = kf[kf.length - 1].t;
 
@@ -354,6 +375,14 @@ ${header(cat.id)}
   ${milestoneItems ? `<h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
   <ul class="milestone-list" id="milestone-list">${milestoneItems}
   </ul>` : ''}
+
+  ${related.length ? `<h2 class="related-head">More ${esc(cat.short)} races</h2>
+  <div class="related-grid">
+    ${related.map((rel) => {
+      const rds = datasets.get(rel.id);
+      return `<a href="/races/${rel.id}/"><span class="r-title">${esc(rds.title)}</span><span class="r-span num">${spanOf(rds)} · ${rds.entities.length} contenders</span></a>`;
+    }).join('\n    ')}
+  </div>` : ''}
 
   <nav class="race-pager" aria-label="More races">
     <a href="/races/${prev.id}/"><span class="dir">← Previous race</span>${esc(prevDs.shortTitle)}</a>

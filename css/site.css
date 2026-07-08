@@ -58,6 +58,10 @@
 [data-cat="sports"]   { --accent: #ffb020; --accent-soft: rgba(255,176,32,.14); }
 [data-cat="culture"]  { --accent: #f45ca4; --accent-soft: rgba(244,92,164,.14); }
 [data-cat="science"]  { --accent: #23c8a8; --accent-soft: rgba(35,200,168,.14); }
+[data-cat="economy"]  { --accent: #5fce7b; --accent-soft: rgba(95,206,123,.14); }
+[data-cat="world"]    { --accent: #38bdf8; --accent-soft: rgba(56,189,248,.14); }
+[data-cat="play"]     { --accent: #ff7a45; --accent-soft: rgba(255,122,69,.14); }
+[data-cat="history"]  { --accent: #c77b4a; --accent-soft: rgba(199,123,74,.15); }
 [data-cat="wildcard"] { --accent: #8b5cf6; --accent-soft: rgba(139,92,246,.14); }
 
 * { box-sizing: border-box; }
@@ -154,6 +158,21 @@ button { font: inherit; color: inherit; }
   display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-5);
   justify-content: space-between; align-items: baseline;
 }
+.site-footer .foot-cats {
+  max-width: var(--maxw); margin: 0 auto var(--sp-4);
+  display: flex; flex-wrap: wrap; gap: var(--sp-2);
+}
+.site-footer .foot-cats a {
+  text-decoration: none; color: var(--text-dim);
+  font-size: var(--fs-12); letter-spacing: 0.04em;
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 3px 12px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.site-footer .foot-cats a:hover {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--c, #4c8dff) 55%, var(--line));
+}
 .site-footer a { color: var(--text-dim); text-decoration: none; }
 .site-footer a:hover { color: var(--text); }
 .site-footer .byline a {
@@ -197,6 +216,72 @@ button { font: inherit; color: inherit; }
   display: block; color: var(--text);
   font-family: var(--font-num); font-size: var(--fs-22); font-weight: 600;
 }
+
+/* decorative mini-race in the hero: three bars endlessly swapping ranks */
+.hub-hero { position: relative; }
+.hero-bars {
+  position: absolute; right: var(--sp-4); top: var(--sp-8);
+  width: min(300px, 26vw);
+  display: none; flex-direction: column; gap: 10px;
+  pointer-events: none; opacity: 0.9;
+}
+@media (min-width: 960px) { .hero-bars { display: flex; } }
+.hero-bars span {
+  height: 22px; border-radius: 5px;
+  background: var(--c, #4c8dff);
+  animation: hero-run 7s var(--ease-out) infinite;
+}
+.hero-bars span:nth-child(1) { --c: #4c8dff; --w0: 92%; --w1: 58%; }
+.hero-bars span:nth-child(2) { --c: #ffb020; --w0: 64%; --w1: 96%; animation-delay: 0.12s; }
+.hero-bars span:nth-child(3) { --c: #f45ca4; --w0: 38%; --w1: 74%; animation-delay: 0.24s; }
+@keyframes hero-run {
+  0%, 8%   { width: var(--w0); }
+  46%, 62% { width: var(--w1); }
+  92%, 100% { width: var(--w0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-bars span { animation: none; width: var(--w1); }
+}
+
+/* hub search */
+.hub-search {
+  max-width: var(--maxw);
+  margin: 0 auto var(--sp-5);
+  padding: 0 var(--sp-4);
+  display: flex; align-items: center; gap: var(--sp-3); flex-wrap: wrap;
+}
+.hub-search .search-box {
+  position: relative; flex: 1; min-width: 220px; max-width: 380px;
+}
+.hub-search .search-box svg {
+  position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+  width: 15px; height: 15px; color: var(--text-faint); pointer-events: none;
+}
+.hub-search input {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  font: inherit; font-size: var(--fs-14);
+  padding: 9px 16px 9px 36px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.hub-search input::placeholder { color: var(--text-faint); }
+.hub-search input:focus {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.hub-search .search-count {
+  color: var(--text-faint); font-size: var(--fs-12);
+  font-family: var(--font-num); letter-spacing: 0.05em;
+}
+.search-empty {
+  max-width: var(--maxw); margin: 0 auto; padding: var(--sp-6) var(--sp-4);
+  color: var(--text-dim); display: none;
+}
+body.searching .search-empty.show { display: block; }
 
 /* category zones */
 .zone {
@@ -245,11 +330,19 @@ button { font: inherit; color: inherit; }
   text-decoration: none;
   transition: transform 0.35s var(--ease-out), border-color 0.35s, box-shadow 0.35s;
 }
+.race-card::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent 70%);
+  opacity: 0; transition: opacity 0.35s;
+  z-index: 2;
+}
 .race-card:hover {
   transform: translateY(-3px);
   border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
   box-shadow: var(--shadow);
 }
+.race-card:hover::before { opacity: 1; }
 .race-card:focus-visible {
   outline: 2px solid var(--accent); outline-offset: 2px;
 }
@@ -490,6 +583,38 @@ button { font: inherit; color: inherit; }
   font-family: var(--font-num); color: var(--accent); font-size: var(--fs-12);
 }
 .milestone-list .m-title { font-size: var(--fs-13); font-weight: 600; }
+
+/* related races (same category) */
+.related-head {
+  font-size: var(--fs-14); color: var(--text-faint);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin: var(--sp-7) 0 var(--sp-3);
+}
+.related-grid {
+  display: grid; gap: var(--sp-3);
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+.related-grid a {
+  display: block; text-decoration: none;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-left: 3px solid color-mix(in srgb, var(--accent) 60%, var(--line));
+  border-radius: var(--radius-sm);
+  padding: var(--sp-3) var(--sp-3);
+  transition: border-color 0.2s, transform 0.2s var(--ease-out);
+}
+.related-grid a:hover {
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--line));
+  transform: translateY(-2px);
+}
+.related-grid .r-title {
+  display: block; font-weight: 650; font-size: var(--fs-14);
+  color: var(--text); letter-spacing: -0.01em;
+}
+.related-grid .r-span {
+  font-family: var(--font-num); font-size: var(--fs-12);
+  color: var(--text-faint);
+}
 
 .race-pager {
   display: flex; justify-content: space-between; gap: var(--sp-3);

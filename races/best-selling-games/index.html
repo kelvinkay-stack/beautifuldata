@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best-Selling Video Games (1984–2025) — Overtake</title>
+  <meta name="description" content="Lifetime copies sold for individual games, from the NES cartridge era to modern live-service giants. Animated bar chart race, 1984–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/best-selling-games/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Best-Selling Video Games (1984–2025) — Overtake">
+  <meta property="og:description" content="Lifetime copies sold for individual games, from the NES cartridge era to modern live-service giants. Animated bar chart race, 1984–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/best-selling-games/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/best-selling-games.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best-Selling Video Games (1984–2025) — Overtake">
+  <meta name="twitter:description" content="Lifetime copies sold for individual games, from the NES cartridge era to modern live-service giants. Animated bar chart race, 1984–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/best-selling-games.png">
+  <link rel="stylesheet" href="/css/site.css?v=cb939ed31d">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=cb939ed31d","/js/engine/renderer.js":"/js/engine/renderer.js?v=cb939ed31d","/js/engine/format.js":"/js/engine/format.js?v=cb939ed31d","/js/engine/controller.js":"/js/engine/controller.js?v=cb939ed31d","/js/engine/controls.js":"/js/engine/controls.js?v=cb939ed31d","/js/engine/preview.js":"/js/engine/preview.js?v=cb939ed31d"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Best-Selling Video Games","description":"Lifetime copies sold for individual games, from the NES cartridge era to modern live-service giants. Tetris rides the Game Boy and then the smartphone to a lead nothing touches, while Wii Sports plateaus at 82.9M the moment the bundling stops — and Minecraft and GTA V just keep climbing.","url":"https://beautifuldata.netlify.app/races/best-selling-games/","temporalCoverage":"1984/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://en.wikipedia.org/wiki/List_of_best-selling_video_games"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play" aria-current="true">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="play" data-race-id="best-selling-games">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#play">Games &amp; Play</a><span aria-hidden="true">/</span><span>1984–2025</span></p>
+    <h1>Best-Selling Video Games</h1>
+    <p class="blurb">Lifetime copies sold for individual games, from the NES cartridge era to modern live-service giants. Tetris rides the Game Boy and then the smartphone to a lead nothing touches, while Wii Sports plateaus at 82.9M the moment the bundling stops — and Minecraft and GTA V just keep climbing.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Best-Selling Video Games"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1984" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games" rel="noopener">Wikipedia — List of best-selling video games</a></span>
+    <span>Publisher-announced milestones interpolated between announcements. Tetris counts all versions including EA-era paid mobile downloads, so its curve mixes counting methods.</span>
+    <span class="quality-flag">illustrative data</span>
+    <span>Updated 2026-07-07</span>
+  </p>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1989.5">
+        <span class="m-year num">1989</span>
+        <span class="m-title">Tetris ships with every Game Boy</span>
+      </button></li>
+      <li><button type="button" data-t="2006.9">
+        <span class="m-year num">2006</span>
+        <span class="m-title">Wii Sports in every Wii box</span>
+      </button></li>
+      <li><button type="button" data-t="2013.7">
+        <span class="m-year num">2013</span>
+        <span class="m-title">GTA V: $1B in three days</span>
+      </button></li>
+      <li><button type="button" data-t="2016.4">
+        <span class="m-year num">2016</span>
+        <span class="m-title">Minecraft passes Wii Sports</span>
+      </button></li>
+      <li><button type="button" data-t="2018.8">
+        <span class="m-year num">2018</span>
+        <span class="m-title">GTA V passes 100 million</span>
+      </button></li>
+      <li><button type="button" data-t="2023.8">
+        <span class="m-year num">2023</span>
+        <span class="m-title">Minecraft hits 300 million</span>
+      </button></li>
+  </ul>
+
+  <h2 class="related-head">More Games races</h2>
+  <div class="related-grid">
+    <a href="/races/game-consoles/"><span class="r-title">Best-Selling Game Consoles</span><span class="r-span num">1980–2025 · 16 contenders</span></a>
+    <a href="/races/game-franchises/"><span class="r-title">Best-Selling Video Game Franchises</span><span class="r-span num">1985–2025 · 15 contenders</span></a>
+    <a href="/races/esports-prizes/"><span class="r-title">Esports Prize Money by Game</span><span class="r-span num">2010–2025 · 13 contenders</span></a>
+    <a href="/races/top-websites/"><span class="r-title">Most-Visited Websites</span><span class="r-span num">1998–2025 · 17 contenders</span></a>
+  </div>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/top-websites/"><span class="dir">← Previous race</span>Top Websites</a>
+    <a href="/races/gold-reserves/" style="text-align:right"><span class="dir">Next race →</span>Gold Reserves</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-cats" aria-label="Browse categories">
+    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 10</a>
+    <a href="/#sports" style="--c:#FFB020">Sports · 10</a>
+    <a href="/#culture" style="--c:#F45CA4">Entertainment · 8</a>
+    <a href="/#science" style="--c:#23C8A8">Science · 9</a>
+    <a href="/#economy" style="--c:#5FCE7B">Money · 6</a>
+    <a href="/#world" style="--c:#38BDF8">World · 6</a>
+    <a href="/#play" style="--c:#FF7A45">Games · 5</a>
+    <a href="/#history" style="--c:#C77B4A">History · 5</a>
+    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 5</a>
+  </div>
+  <div class="inner">
+    <span>Overtake — 64 races across 9 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=cb939ed31d"></script>
+</body>
+</html>

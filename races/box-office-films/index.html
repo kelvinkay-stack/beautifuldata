@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Highest-Grossing Films of All Time (1939–2025) — Overtake</title>
+  <meta name="description" content="Eighty-six years of the all-time box office crown, from Gone with the Wind's quarter-century reign to Avatar's 2021 comeback past Avengers: Endgame. Animated bar chart race, 1939–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/box-office-films/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Highest-Grossing Films of All Time (1939–2025) — Overtake">
+  <meta property="og:description" content="Eighty-six years of the all-time box office crown, from Gone with the Wind's quarter-century reign to Avatar's 2021 comeback past Avengers: Endgame. Animated bar chart race, 1939–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/box-office-films/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/box-office-films.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Highest-Grossing Films of All Time (1939–2025) — Overtake">
+  <meta name="twitter:description" content="Eighty-six years of the all-time box office crown, from Gone with the Wind's quarter-century reign to Avatar's 2021 comeback past Avengers: Endgame. Animated bar chart race, 1939–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/box-office-films.png">
+  <link rel="stylesheet" href="/css/site.css?v=cb939ed31d">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=cb939ed31d","/js/engine/renderer.js":"/js/engine/renderer.js?v=cb939ed31d","/js/engine/format.js":"/js/engine/format.js?v=cb939ed31d","/js/engine/controller.js":"/js/engine/controller.js?v=cb939ed31d","/js/engine/controls.js":"/js/engine/controls.js?v=cb939ed31d","/js/engine/preview.js":"/js/engine/preview.js?v=cb939ed31d"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Highest-Grossing Films of All Time","description":"Eighty-six years of the all-time box office crown, from Gone with the Wind's quarter-century reign to Avatar's 2021 comeback past Avengers: Endgame. The top spot has changed hands only about ten times — usually to a film that rewrote what a hit could be, from Jaws' first summer blockbuster to Ne Zha 2's China-powered $2.2 billion.","url":"https://beautifuldata.netlify.app/races/box-office-films/","temporalCoverage":"1939/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.boxofficemojo.com/chart/top_lifetime_gross/"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture" aria-current="true">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="culture" data-race-id="box-office-films">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#culture">Entertainment &amp; Culture</a><span aria-hidden="true">/</span><span>1939–2025</span></p>
+    <h1>Highest-Grossing Films of All Time</h1>
+    <p class="blurb">Eighty-six years of the all-time box office crown, from Gone with the Wind's quarter-century reign to Avatar's 2021 comeback past Avengers: Endgame. The top spot has changed hands only about ten times — usually to a film that rewrote what a hit could be, from Jaws' first summer blockbuster to Ne Zha 2's China-powered $2.2 billion.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Highest-Grossing Films of All Time"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1939" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://www.boxofficemojo.com/chart/top_lifetime_gross/" rel="noopener">Box Office Mojo</a></span>
+    <span>Nominal cumulative worldwide grosses, not adjusted for inflation; totals include re-release revenue. Pre-1980 figures are approximate.</span>
+    <span>Updated 2026-07-07</span>
+  </p>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1966.5">
+        <span class="m-year num">1966</span>
+        <span class="m-title">Sound of Music takes No. 1</span>
+      </button></li>
+      <li><button type="button" data-t="1976.2">
+        <span class="m-year num">1976</span>
+        <span class="m-title">Jaws invents the blockbuster</span>
+      </button></li>
+      <li><button type="button" data-t="1983.1">
+        <span class="m-year num">1983</span>
+        <span class="m-title">E.T. phones past Star Wars</span>
+      </button></li>
+      <li><button type="button" data-t="1994">
+        <span class="m-year num">1994</span>
+        <span class="m-title">Jurassic Park takes the crown</span>
+      </button></li>
+      <li><button type="button" data-t="1998.25">
+        <span class="m-year num">1998</span>
+        <span class="m-title">Titanic breaks $1 billion</span>
+      </button></li>
+      <li><button type="button" data-t="2010.15">
+        <span class="m-year num">2010</span>
+        <span class="m-title">Avatar dethrones Titanic</span>
+      </button></li>
+      <li><button type="button" data-t="2019.6">
+        <span class="m-year num">2019</span>
+        <span class="m-title">Endgame edges past Avatar</span>
+      </button></li>
+      <li><button type="button" data-t="2021.2">
+        <span class="m-year num">2021</span>
+        <span class="m-title">Avatar strikes back</span>
+      </button></li>
+  </ul>
+
+  <h2 class="related-head">More Entertainment races</h2>
+  <div class="related-grid">
+    <a href="/races/film-franchises/"><span class="r-title">Highest-Grossing Film Franchises</span><span class="r-span num">1977–2026 · 19 contenders</span></a>
+    <a href="/races/music-artists/"><span class="r-title">Best-Selling Music Artists</span><span class="r-span num">1960–2026 · 22 contenders</span></a>
+    <a href="/races/streaming-music/"><span class="r-title">Music Streamers by Subscribers</span><span class="r-span num">2008–2025 · 11 contenders</span></a>
+    <a href="/races/highest-paid-actors/"><span class="r-title">Highest-Paid Actors</span><span class="r-span num">1995–2024 · 15 contenders</span></a>
+  </div>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/museum-visitors/"><span class="dir">← Previous race</span>Museum Visitors</a>
+    <a href="/races/tallest-buildings/" style="text-align:right"><span class="dir">Next race →</span>Tallest Buildings</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-cats" aria-label="Browse categories">
+    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 10</a>
+    <a href="/#sports" style="--c:#FFB020">Sports · 10</a>
+    <a href="/#culture" style="--c:#F45CA4">Entertainment · 8</a>
+    <a href="/#science" style="--c:#23C8A8">Science · 9</a>
+    <a href="/#economy" style="--c:#5FCE7B">Money · 6</a>
+    <a href="/#world" style="--c:#38BDF8">World · 6</a>
+    <a href="/#play" style="--c:#FF7A45">Games · 5</a>
+    <a href="/#history" style="--c:#C77B4A">History · 5</a>
+    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 5</a>
+  </div>
+  <div class="inner">
+    <span>Overtake — 64 races across 9 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=cb939ed31d"></script>
+</body>
+</html>

@@ -4,9 +4,9 @@ A destination site built around one interaction: watching rankings reorder
 themselves over time as animated bar chart races. Static, dependency-free at
 runtime, deployable to Netlify.
 
-**55 races across 9 categories** — Tech & Business, Sports, Entertainment &
+**64 races across 9 categories** — Tech & Business, Sports, Entertainment &
 Culture, Science & Infrastructure, Money & Markets, World & Nations, Games &
-Play, and Wildcard.
+Play, History & Antiquity, and Wildcard.
 
 ## How it works
 

@@ -1,0 +1,207 @@
+{
+  "id": "box-office-films",
+  "title": "Highest-Grossing Films of All Time",
+  "shortTitle": "Box Office",
+  "category": "culture",
+  "unit": {
+    "label": "Cumulative worldwide gross",
+    "format": "plain",
+    "prefix": "$",
+    "suffix": "M",
+    "decimals": 0
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Eighty-six years of the all-time box office crown, from Gone with the Wind's quarter-century reign to Avatar's 2021 comeback past Avengers: Endgame. The top spot has changed hands only about ten times — usually to a film that rewrote what a hit could be, from Jaws' first summer blockbuster to Ne Zha 2's China-powered $2.2 billion.",
+  "source": {
+    "name": "Box Office Mojo",
+    "url": "https://www.boxofficemojo.com/chart/top_lifetime_gross/",
+    "note": "Nominal cumulative worldwide grosses, not adjusted for inflation; totals include re-release revenue. Pre-1980 figures are approximate."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-07",
+  "entities": [
+    {
+      "id": "gwtw",
+      "label": "Gone with the Wind",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "som",
+      "label": "The Sound of Music",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "jaws",
+      "label": "Jaws",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "starwars",
+      "label": "Star Wars",
+      "color": "#E2B93B"
+    },
+    {
+      "id": "et",
+      "label": "E.T. the Extra-Terrestrial",
+      "color": "#B388FF"
+    },
+    {
+      "id": "jurassic",
+      "label": "Jurassic Park",
+      "color": "#34D399"
+    },
+    {
+      "id": "lionking",
+      "label": "The Lion King",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "titanic",
+      "label": "Titanic",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "rotk",
+      "label": "LOTR: The Return of the King",
+      "color": "#A3E635"
+    },
+    {
+      "id": "avatar",
+      "label": "Avatar",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "avengers",
+      "label": "The Avengers",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "tfa",
+      "label": "Star Wars: The Force Awakens",
+      "color": "#94A3B8"
+    },
+    {
+      "id": "endgame",
+      "label": "Avengers: Endgame",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "wow",
+      "label": "Avatar: The Way of Water",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "nezha2",
+      "label": "Ne Zha 2",
+      "color": "#FF6FA5"
+    }
+  ],
+  "keyframes": [
+    { "t": 1939.9, "values": { "gwtw": 0 } },
+    { "t": 1940.5, "values": { "gwtw": 45 } },
+    { "t": 1947.5, "values": { "gwtw": 76 } },
+    { "t": 1961.5, "values": { "gwtw": 105 } },
+    { "t": 1965.1, "values": { "gwtw": 112, "som": 0 } },
+    { "t": 1966.5, "values": { "gwtw": 118, "som": 125 } },
+    { "t": 1967.7, "values": { "gwtw": 128, "som": 150 } },
+    { "t": 1968.3, "values": { "gwtw": 172, "som": 158 } },
+    { "t": 1970, "values": { "gwtw": 186, "som": 165 } },
+    { "t": 1974.5, "values": { "gwtw": 210, "som": 178 } },
+    { "t": 1975.4, "values": { "gwtw": 210, "som": 178, "jaws": 0 } },
+    { "t": 1975.8, "values": { "gwtw": 212, "som": 179, "jaws": 195 } },
+    { "t": 1976.5, "values": { "gwtw": 216, "som": 182, "jaws": 410 } },
+    { "t": 1977.3, "values": { "gwtw": 216, "som": 182, "jaws": 435, "starwars": 0 } },
+    { "t": 1978.5, "values": { "gwtw": 216, "som": 182, "jaws": 460, "starwars": 480 } },
+    { "t": 1980, "values": { "gwtw": 216, "som": 182, "jaws": 465, "starwars": 520 } },
+    { "t": 1982.4, "values": { "gwtw": 216, "som": 182, "jaws": 468, "starwars": 528, "et": 0 } },
+    { "t": 1982.8, "values": { "gwtw": 216, "som": 182, "jaws": 468, "starwars": 528, "et": 359 } },
+    { "t": 1983.2, "values": { "gwtw": 216, "som": 182, "jaws": 469, "starwars": 530, "et": 620 } },
+    { "t": 1985.6, "values": { "gwtw": 216, "som": 182, "jaws": 470, "starwars": 530, "et": 705 } },
+    { "t": 1989.6, "values": { "gwtw": 386, "som": 195, "jaws": 471, "starwars": 530, "et": 706 } },
+    { "t": 1993.4, "values": { "gwtw": 386, "som": 195, "jaws": 471, "starwars": 530, "et": 707, "jurassic": 0 } },
+    { "t": 1993.8, "values": { "gwtw": 386, "som": 195, "jaws": 471, "starwars": 530, "et": 707, "jurassic": 560 } },
+    { "t": 1994.1, "values": { "gwtw": 386, "som": 195, "jaws": 472, "starwars": 530, "et": 708, "jurassic": 880, "lionking": 0 } },
+    { "t": 1994.9, "values": { "gwtw": 386, "som": 195, "jaws": 472, "starwars": 530, "et": 708, "jurassic": 900, "lionking": 455 } },
+    { "t": 1995.5, "values": { "gwtw": 386, "som": 195, "jaws": 472, "starwars": 530, "et": 709, "jurassic": 912, "lionking": 740 } },
+    { "t": 1997.2, "values": { "gwtw": 388, "som": 196, "jaws": 472, "starwars": 775, "et": 710, "jurassic": 913, "lionking": 766 } },
+    { "t": 1997.95, "values": { "gwtw": 388, "som": 196, "jaws": 472, "starwars": 775, "et": 710, "jurassic": 913, "lionking": 766, "titanic": 0 } },
+    { "t": 1998.1, "values": { "gwtw": 388, "som": 196, "jaws": 472, "starwars": 775, "et": 710, "jurassic": 913, "lionking": 766, "titanic": 587 } },
+    { "t": 1998.25, "values": { "gwtw": 388, "som": 196, "jaws": 472, "starwars": 775, "et": 710, "jurassic": 913, "lionking": 766, "titanic": 1080 } },
+    { "t": 1998.6, "values": { "gwtw": 400, "som": 286, "jaws": 472, "starwars": 775, "et": 710, "jurassic": 913, "lionking": 766, "titanic": 1590 } },
+    { "t": 1999.2, "values": { "gwtw": 400, "som": 286, "jaws": 472, "starwars": 775, "et": 710, "jurassic": 913, "lionking": 766, "titanic": 1835 } },
+    { "t": 2002.5, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 766, "titanic": 1843 } },
+    { "t": 2003.9, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 766, "titanic": 1843, "rotk": 0 } },
+    { "t": 2004.2, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 766, "titanic": 1843, "rotk": 1050 } },
+    { "t": 2004.6, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 766, "titanic": 1843, "rotk": 1119 } },
+    { "t": 2009.9, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 766, "titanic": 1843, "rotk": 1119, "avatar": 0 } },
+    { "t": 2010.05, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 766, "titanic": 1843, "rotk": 1119, "avatar": 1420 } },
+    { "t": 2010.15, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 766, "titanic": 1843, "rotk": 1119, "avatar": 1880 } },
+    { "t": 2010.4, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 766, "titanic": 1843, "rotk": 1119, "avatar": 2630 } },
+    { "t": 2010.8, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 766, "titanic": 1843, "rotk": 1119, "avatar": 2749 } },
+    { "t": 2011.8, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 958, "titanic": 1843, "rotk": 1119, "avatar": 2749 } },
+    { "t": 2012.3, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 958, "titanic": 2130, "rotk": 1119, "avatar": 2749, "avengers": 0 } },
+    { "t": 2012.9, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 913, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2749, "avengers": 1519 } },
+    { "t": 2013.4, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 1029, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2749, "avengers": 1519 } },
+    { "t": 2015.9, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 1029, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2749, "avengers": 1519, "tfa": 0 } },
+    { "t": 2016.05, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 1029, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2749, "avengers": 1519, "tfa": 1740 } },
+    { "t": 2016.6, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 1029, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2749, "avengers": 1519, "tfa": 2068 } },
+    { "t": 2019.3, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 1029, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2749, "avengers": 1519, "tfa": 2068, "endgame": 0 } },
+    { "t": 2019.45, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 1029, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2749, "avengers": 1519, "tfa": 2068, "endgame": 2500 } },
+    { "t": 2019.6, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 1029, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2749, "avengers": 1519, "tfa": 2068, "endgame": 2790 } },
+    { "t": 2019.8, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 1029, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2749, "avengers": 1519, "tfa": 2068, "endgame": 2799 } },
+    { "t": 2021.2, "values": { "gwtw": 402, "som": 286, "jaws": 472, "starwars": 775, "et": 793, "jurassic": 1029, "lionking": 968, "titanic": 2186, "rotk": 1119, "avatar": 2847, "avengers": 1519, "tfa": 2068, "endgame": 2799 } },
+    { "t": 2022.8, "values": { "gwtw": 402, "som": 286, "jaws": 476, "starwars": 775, "et": 793, "jurassic": 1058, "lionking": 968, "titanic": 2186, "rotk": 1140, "avatar": 2911, "avengers": 1519, "tfa": 2068, "endgame": 2799 } },
+    { "t": 2022.95, "values": { "gwtw": 402, "som": 286, "jaws": 476, "starwars": 775, "et": 793, "jurassic": 1058, "lionking": 968, "titanic": 2186, "rotk": 1140, "avatar": 2911, "avengers": 1519, "tfa": 2068, "endgame": 2799, "wow": 0 } },
+    { "t": 2023.1, "values": { "gwtw": 402, "som": 286, "jaws": 476, "starwars": 775, "et": 793, "jurassic": 1058, "lionking": 968, "titanic": 2186, "rotk": 1140, "avatar": 2911, "avengers": 1519, "tfa": 2068, "endgame": 2799, "wow": 1708 } },
+    { "t": 2023.3, "values": { "gwtw": 402, "som": 286, "jaws": 476, "starwars": 775, "et": 793, "jurassic": 1058, "lionking": 968, "titanic": 2257, "rotk": 1140, "avatar": 2911, "avengers": 1519, "tfa": 2068, "endgame": 2799, "wow": 2243 } },
+    { "t": 2023.6, "values": { "gwtw": 402, "som": 286, "jaws": 476, "starwars": 775, "et": 793, "jurassic": 1058, "lionking": 968, "titanic": 2257, "rotk": 1140, "avatar": 2911, "avengers": 1519, "tfa": 2068, "endgame": 2799, "wow": 2320 } },
+    { "t": 2025.05, "values": { "gwtw": 402, "som": 286, "jaws": 476, "starwars": 775, "et": 793, "jurassic": 1058, "lionking": 968, "titanic": 2257, "rotk": 1140, "avatar": 2911, "avengers": 1519, "tfa": 2068, "endgame": 2799, "wow": 2320, "nezha2": 0 } },
+    { "t": 2025.2, "values": { "gwtw": 402, "som": 286, "jaws": 476, "starwars": 775, "et": 793, "jurassic": 1058, "lionking": 968, "titanic": 2257, "rotk": 1140, "avatar": 2911, "avengers": 1519, "tfa": 2068, "endgame": 2799, "wow": 2320, "nezha2": 1660 } },
+    { "t": 2025.35, "values": { "gwtw": 402, "som": 286, "jaws": 476, "starwars": 775, "et": 793, "jurassic": 1058, "lionking": 968, "titanic": 2257, "rotk": 1140, "avatar": 2911, "avengers": 1519, "tfa": 2068, "endgame": 2799, "wow": 2320, "nezha2": 2050 } },
+    { "t": 2025.5, "values": { "gwtw": 402, "som": 286, "jaws": 476, "starwars": 775, "et": 793, "jurassic": 1058, "lionking": 968, "titanic": 2257, "rotk": 1140, "avatar": 2923, "avengers": 1519, "tfa": 2068, "endgame": 2799, "wow": 2320, "nezha2": 2217 } }
+  ],
+  "milestones": [
+    {
+      "t": 1966.5,
+      "title": "Sound of Music takes No. 1",
+      "text": "Julie Andrews' musical ends Gone with the Wind's 26-year reign — until GWTW's 1967 70mm re-release wins the crown right back."
+    },
+    {
+      "t": 1976.2,
+      "title": "Jaws invents the blockbuster",
+      "text": "Spielberg's shark devours Gone with the Wind's decades-old record and creates the summer event movie."
+    },
+    {
+      "t": 1983.1,
+      "title": "E.T. phones past Star Wars",
+      "text": "Spielberg beats his friend Lucas: E.T. overtakes Star Wars to become the highest-grossing film ever."
+    },
+    {
+      "t": 1994,
+      "title": "Jurassic Park takes the crown",
+      "text": "Dinosaurs stomp past E.T. — Spielberg replaces himself at No. 1 for the second time."
+    },
+    {
+      "t": 1998.25,
+      "title": "Titanic breaks $1 billion",
+      "text": "The first film ever to gross $1B worldwide, on the way to an unthinkable $1.84B initial run."
+    },
+    {
+      "t": 2010.15,
+      "title": "Avatar dethrones Titanic",
+      "text": "James Cameron beats James Cameron: Avatar passes Titanic after just seven weeks, headed for $2.7B."
+    },
+    {
+      "t": 2019.6,
+      "title": "Endgame edges past Avatar",
+      "text": "After a record $1.2B opening weekend, Avengers: Endgame overtakes Avatar by a whisker — $2.798B to $2.790B."
+    },
+    {
+      "t": 2021.2,
+      "title": "Avatar strikes back",
+      "text": "A China re-release nudges Avatar past Endgame to reclaim No. 1, a crown it still holds at $2.92B."
+    }
+  ]
+}
