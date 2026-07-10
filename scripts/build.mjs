@@ -13,6 +13,7 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { formatValue } from '../js/engine/format.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const site = JSON.parse(readFileSync(join(root, 'site.config.json'), 'utf8'));
@@ -64,6 +65,64 @@ const races = site.races.filter((r) => {
   return true;
 });
 const catById = new Map(site.categories.map((c) => [c.id, c]));
+
+/* ---------------- derived race stats ----------------
+ * Everything here is computed from keyframes at build time: who led when,
+ * how often the lead flipped, and the final top-5 board. Values are stored
+ * in a convenient magnitude; unit.multiplier restores real units before
+ * SI formatting (same convention as the engine's model.js). */
+
+function statsFor(ds) {
+  const mult = (ds.unit && ds.unit.multiplier) || 1;
+  const entById = new Map(ds.entities.map((e) => [e.id, e]));
+  const kf = ds.keyframes;
+
+  let leader = null;
+  let leadChanges = 0;
+  const reigns = [];
+  for (const k of kf) {
+    let top = null, topV = -Infinity;
+    for (const [id, v] of Object.entries(k.values)) {
+      if (v > topV) { topV = v; top = id; }
+    }
+    if (top !== null && top !== leader) {
+      if (leader !== null) {
+        leadChanges++;
+        reigns[reigns.length - 1].to = k.t;
+      }
+      reigns.push({ id: top, from: k.t, to: kf[kf.length - 1].t });
+      leader = top;
+    }
+  }
+
+  let longest = null;
+  for (const r of reigns) {
+    const len = r.to - r.from;
+    if (!longest || len > longest.len) longest = { id: r.id, len };
+  }
+
+  const finals = kf[kf.length - 1].values;
+  const fmt = (v) => formatValue(v * mult, ds.unit);
+  const standings = Object.entries(finals)
+    .map(([id, v]) => ({ e: entById.get(id), v }))
+    .filter((s) => s.e && s.v > 0)
+    .sort((a, b) => b.v - a.v)
+    .slice(0, 5)
+    .map((s) => ({ label: s.e.label, color: s.e.color, value: fmt(s.v) }));
+
+  const win = entById.get(leader) || {};
+  return {
+    leadChanges,
+    longestReign: longest
+      ? { label: (entById.get(longest.id) || {}).label || '', years: Math.max(1, Math.round(longest.len)) }
+      : null,
+    finalLeader: { label: win.label || '', color: win.color || '#888', value: fmt(finals[leader] || 0) },
+    spanYears: Math.round(kf[kf.length - 1].t - kf[0].t),
+    standings,
+  };
+}
+
+const statsById = new Map(races.map((r) => [r.id, statsFor(datasets.get(r.id))]));
 
 /* ---------------- helpers ---------------- */
 
@@ -199,6 +258,25 @@ const meta = ({ title, description, path, ogImage }) => `
 
 /* ---------------- hub ---------------- */
 
+function raceCard(r, { blurb = false } = {}) {
+  const ds = datasets.get(r.id);
+  const st = statsById.get(r.id);
+  const cat = catById.get(r.category);
+  return `
+    <a class="race-card" href="/races/${r.id}/" style="--accent:${cat.accent};--accent-soft:${cat.accentSoft}">
+      <div class="card-preview"><canvas data-race="${r.id}" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>${esc(ds.title)}</h3>
+        <p class="card-meta"><span>${spanOf(ds)}</span><span>·</span><span>${ds.entities.length} contenders</span><span>·</span><span>${st.leadChanges} lead change${st.leadChanges === 1 ? '' : 's'}</span>${
+          ds.dataQuality === 'illustrative'
+            ? '<span class="quality illustrative">illustrative</span>' : ''
+        }</p>${blurb ? `
+        <p class="card-blurb">${esc(ds.blurb.split('. ')[0])}.</p>` : ''}
+        <p class="card-leader num"><span class="dot" style="background:${st.finalLeader.color}" aria-hidden="true"></span><span class="cl-name">${esc(st.finalLeader.label)}</span><span class="cl-val">${esc(st.finalLeader.value)}</span></p>
+      </div>
+    </a>`;
+}
+
 function buildHub() {
   const previews = {};
   for (const r of races) previews[r.id] = previewFor(datasets.get(r.id));
@@ -209,6 +287,45 @@ function buildHub() {
     return kf[kf.length - 1].t;
   }));
 
+  const featuredRaces = (site.featured || [])
+    .map((id) => races.find((r) => r.id === id))
+    .filter(Boolean);
+  const featured = featuredRaces.length ? `
+<section class="zone zone-featured" id="featured" aria-labelledby="zh-featured">
+  <div class="zone-head">
+    <span class="zone-icon" aria-hidden="true">${ICONS.marquee}</span>
+    <h2 id="zh-featured">Start here</h2>
+    <p class="zone-blurb">Four races that show what the site does — a platform war, an empire, a feud and a subscriber land-grab.</p>
+  </div>
+  <div class="card-grid">${featuredRaces.map((r) => raceCard(r, { blurb: true })).join('')}
+  </div>
+</section>` : '';
+
+  /* record board: superlatives computed across every race */
+  const withStats = races.map((r) => ({ r, ds: datasets.get(r.id), st: statsById.get(r.id) }));
+  const recordCol = (title, rows) => `
+    <div class="record-col">
+      <h3>${title}</h3>
+      <ol>${rows.map(({ r, ds, text }) => `
+        <li><a href="/races/${r.id}/"><span class="rc-title">${esc(ds.shortTitle)}</span><span class="rc-val num">${esc(text)}</span></a></li>`).join('')}
+      </ol>
+    </div>`;
+  const wildest = [...withStats].sort((a, b) => b.st.leadChanges - a.st.leadChanges).slice(0, 5)
+    .map(({ r, ds, st }) => ({ r, ds, text: `${st.leadChanges} lead changes` }));
+  const longest = [...withStats].sort((a, b) => b.st.spanYears - a.st.spanYears).slice(0, 5)
+    .map(({ r, ds, st }) => ({ r, ds, text: `${st.spanYears.toLocaleString('en-US')} years` }));
+  const dynasties = [...withStats].filter((x) => x.st.longestReign)
+    .sort((a, b) => b.st.longestReign.years - a.st.longestReign.years).slice(0, 5)
+    .map(({ r, ds, st }) => ({ r, ds, text: `${st.longestReign.label} · ${st.longestReign.years.toLocaleString('en-US')} yrs` }));
+  const records = `
+<section class="records-band" aria-label="Site records">
+  <div class="records-inner">
+    ${recordCol('Wildest races', wildest)}
+    ${recordCol('Longest races', longest)}
+    ${recordCol('Great dynasties', dynasties)}
+  </div>
+</section>`;
+
   const zones = site.categories.map((cat) => {
     const catRaces = races.filter((r) => r.category === cat.id);
     if (!catRaces.length) return '';
@@ -217,23 +334,10 @@ function buildHub() {
   <div class="zone-head">
     <span class="zone-icon" aria-hidden="true">${ICONS[cat.motif] || ''}</span>
     <h2 id="zh-${cat.id}">${esc(cat.label)}</h2>
+    <span class="zone-count num">${catRaces.length}</span>
     <p class="zone-blurb">${esc(cat.blurb)}</p>
   </div>
-  <div class="card-grid">
-    ${catRaces.map((r) => {
-      const ds = datasets.get(r.id);
-      return `
-    <a class="race-card" href="/races/${r.id}/">
-      <div class="card-preview"><canvas data-race="${r.id}" aria-hidden="true"></canvas></div>
-      <div class="card-body">
-        <h3>${esc(ds.title)}</h3>
-        <p class="card-meta"><span>${spanOf(ds)}</span><span>·</span><span>${ds.entities.length} contenders</span>${
-          ds.dataQuality === 'illustrative'
-            ? '<span class="quality illustrative">illustrative</span>' : ''
-        }</p>
-      </div>
-    </a>`;
-    }).join('')}
+  <div class="card-grid">${catRaces.map((r) => raceCard(r)).join('')}
   </div>
 </section>`;
   }).join('\n');
@@ -277,6 +381,8 @@ ${header()}
     </label>
     <span class="search-count num" id="search-count" aria-live="polite"></span>
   </div>
+${featured}
+${records}
 ${zones}
   <p class="search-empty" id="search-empty">No races match that search — try a shorter word, or browse the categories above.</p>
 </main>
@@ -292,6 +398,7 @@ ${footer()}
 
 function buildRacePage(r, i) {
   const ds = datasets.get(r.id);
+  const st = statsById.get(r.id);
   const cat = catById.get(r.category);
   const prev = races[(i - 1 + races.length) % races.length];
   const next = races[(i + 1) % races.length];
@@ -371,6 +478,24 @@ ${header(cat.id)}
         ? '\n    <span class="quality-flag">illustrative data</span>' : ''}
     <span>Updated ${esc(ds.lastUpdated)}</span>
   </p>
+
+  <div class="race-extras">
+    <section class="facts" aria-label="Race in numbers">
+      <h2>The race in numbers</h2>
+      <div class="fact-grid">
+        <div class="fact"><b class="num">${st.leadChanges}</b><span>lead change${st.leadChanges === 1 ? '' : 's'}</span></div>
+        <div class="fact"><b class="num">${st.spanYears.toLocaleString('en-US')}</b><span>years covered</span></div>
+        <div class="fact"><b class="num">${ds.entities.length}</b><span>contenders</span></div>${st.longestReign ? `
+        <div class="fact fact-wide"><b>${esc(st.longestReign.label)}</b><span>longest reign — ${st.longestReign.years.toLocaleString('en-US')} yr${st.longestReign.years === 1 ? '' : 's'} at #1${st.leadChanges === 0 ? ', wire to wire' : ''}</span></div>` : ''}
+      </div>
+    </section>
+    <section class="standings" aria-label="Final standings">
+      <h2>Final standings · ${yearOf(t1, ds.timeLabel)}</h2>
+      <ol>${st.standings.map((s, k) => `
+        <li><span class="s-rank num">${k + 1}</span><span class="s-dot" style="background:${s.color}" aria-hidden="true"></span><span class="s-label">${esc(s.label)}</span><span class="s-val num">${esc(s.value)}</span></li>`).join('')}
+      </ol>
+    </section>
+  </div>
 
   ${milestoneItems ? `<h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
   <ul class="milestone-list" id="milestone-list">${milestoneItems}

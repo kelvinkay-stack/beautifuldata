@@ -1,0 +1,164 @@
+{
+  "id": "bridges",
+  "title": "Longest Suspension Bridge Spans",
+  "shortTitle": "Longest Bridges",
+  "category": "science",
+  "unit": {
+    "label": "Main span",
+    "format": "plain",
+    "prefix": "",
+    "suffix": " m",
+    "decimals": 0
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "The main spans of the world's longest suspension bridges, from Brooklyn's pioneering steel-wire crossing to the two-kilometre giants of today. America owned this board for nearly a century — the George Washington doubled the record in one leap — before the crown moved to Japan's Akashi Kaikyō and finally to Turkey's Çanakkale 1915, the first span past 2,000 m.",
+  "source": {
+    "name": "Structurae / published span records",
+    "url": "https://structurae.net",
+    "note": "Figures are main-span lengths between tower centres, not total bridge length."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-07-09",
+  "entities": [
+    {
+      "id": "brooklyn",
+      "label": "Brooklyn Bridge",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "williamsburg",
+      "label": "Williamsburg Bridge",
+      "color": "#94A3B8"
+    },
+    {
+      "id": "bear-mountain",
+      "label": "Bear Mountain Bridge",
+      "color": "#86EFAC"
+    },
+    {
+      "id": "benjamin-franklin",
+      "label": "Benjamin Franklin Bridge",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "ambassador",
+      "label": "Ambassador Bridge",
+      "color": "#FDE68A"
+    },
+    {
+      "id": "george-washington",
+      "label": "George Washington Bridge",
+      "color": "#6E7BFF"
+    },
+    {
+      "id": "golden-gate",
+      "label": "Golden Gate Bridge",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "mackinac",
+      "label": "Mackinac Bridge",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "verrazzano",
+      "label": "Verrazzano-Narrows Bridge",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "humber",
+      "label": "Humber Bridge",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "akashi-kaikyo",
+      "label": "Akashi Kaikyō Bridge",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "great-belt",
+      "label": "Great Belt East Bridge",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "xihoumen",
+      "label": "Xihoumen Bridge",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "yangsigang",
+      "label": "Yangsigang Bridge",
+      "color": "#FFB020"
+    },
+    {
+      "id": "canakkale",
+      "label": "Çanakkale 1915 Bridge",
+      "color": "#FF5C4D"
+    }
+  ],
+  "keyframes": [
+    { "t": 1883.4, "values": { "brooklyn": 486 } },
+    { "t": 1902.9, "values": { "brooklyn": 486, "williamsburg": 0 } },
+    { "t": 1903.9, "values": { "brooklyn": 486, "williamsburg": 488 } },
+    { "t": 1923.9, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 0 } },
+    { "t": 1924.9, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497 } },
+    { "t": 1925.5, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 0 } },
+    { "t": 1926.5, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533 } },
+    { "t": 1928.8, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 0 } },
+    { "t": 1929.8, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564 } },
+    { "t": 1930.8, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 0 } },
+    { "t": 1931.8, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067 } },
+    { "t": 1936.4, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 0 } },
+    { "t": 1937.4, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280 } },
+    { "t": 1956.8, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 0 } },
+    { "t": 1957.8, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158 } },
+    { "t": 1963.9, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 0 } },
+    { "t": 1964.9, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298 } },
+    { "t": 1980.5, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 0 } },
+    { "t": 1981.5, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410 } },
+    { "t": 1997.3, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 0 } },
+    { "t": 1998.3, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 1991, "great-belt": 0 } },
+    { "t": 1998.5, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 1991, "great-belt": 1624 } },
+    { "t": 2008.9, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 1991, "great-belt": 1624, "xihoumen": 0 } },
+    { "t": 2009.9, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 1991, "great-belt": 1624, "xihoumen": 1650 } },
+    { "t": 2018.8, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 1991, "great-belt": 1624, "xihoumen": 1650, "yangsigang": 0 } },
+    { "t": 2019.8, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 1991, "great-belt": 1624, "xihoumen": 1650, "yangsigang": 1700 } },
+    { "t": 2021.2, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 1991, "great-belt": 1624, "xihoumen": 1650, "yangsigang": 1700, "canakkale": 0 } },
+    { "t": 2022.2, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 1991, "great-belt": 1624, "xihoumen": 1650, "yangsigang": 1700, "canakkale": 2023 } },
+    { "t": 2025, "values": { "brooklyn": 486, "williamsburg": 488, "bear-mountain": 497, "benjamin-franklin": 533, "ambassador": 564, "george-washington": 1067, "golden-gate": 1280, "mackinac": 1158, "verrazzano": 1298, "humber": 1410, "akashi-kaikyo": 1991, "great-belt": 1624, "xihoumen": 1650, "yangsigang": 1700, "canakkale": 2023 } }
+  ],
+  "milestones": [
+    {
+      "t": 1883.4,
+      "title": "Brooklyn Bridge opens",
+      "text": "Roebling's 486 m span across the East River is the world's first steel-wire suspension bridge — and by far its longest."
+    },
+    {
+      "t": 1931.8,
+      "title": "George Washington doubles the record",
+      "text": "At 1,067 m, the George Washington Bridge nearly doubles the Ambassador's 564 m — the biggest single leap in span history."
+    },
+    {
+      "t": 1937.4,
+      "title": "Golden Gate Bridge",
+      "text": "The 1,280 m span in international orange begins a 27-year reign as the world's longest — and its most photographed."
+    },
+    {
+      "t": 1964.9,
+      "title": "Verrazzano-Narrows",
+      "text": "New York reclaims the record at 1,298 m — the last time an American bridge will hold the title."
+    },
+    {
+      "t": 1998.3,
+      "title": "Akashi Kaikyō: 1,991 m",
+      "text": "Japan's Pearl Bridge shatters the record by over 500 m. The 1995 Kobe earthquake shifted its towers, stretching the span by a metre."
+    },
+    {
+      "t": 2022.2,
+      "title": "Çanakkale takes it to Europe",
+      "text": "Turkey's Çanakkale 1915 Bridge spans the Dardanelles at 2,023 m — the first past two kilometres, ending Akashi's 24-year reign."
+    }
+  ]
+}

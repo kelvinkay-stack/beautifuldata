@@ -1,0 +1,66 @@
+{
+  "id": "languages",
+  "title": "Most Spoken Languages",
+  "shortTitle": "Languages",
+  "category": "history",
+  "unit": {
+    "label": "Total speakers",
+    "format": "si",
+    "prefix": "",
+    "suffix": "",
+    "decimals": 2,
+    "multiplier": 1000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Total speakers — native plus second-language — of the world's biggest tongues since 1900. Mandarin owns the century by sheer native numbers, but English rides empire, aviation, science and finally the internet to snatch the crown. Watch Hindi-Urdu and Spanish surge with population booms while French gets a second life in Africa.",
+  "source": {
+    "name": "Ethnologue & historical estimates",
+    "url": "https://www.ethnologue.com/insights/most-spoken-language/",
+    "note": "Illustrative: historical speaker counts are scholarly reconstructions, and language boundaries (Hindi-Urdu, Arabic varieties, Malay-Indonesian) are lumped for continuity."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-09",
+  "entities": [
+    { "id": "mandarin", "label": "Mandarin Chinese", "color": "#FF5C4D" },
+    { "id": "english", "label": "English", "color": "#4C8DFF" },
+    { "id": "hindi-urdu", "label": "Hindi-Urdu", "color": "#FF8C42" },
+    { "id": "spanish", "label": "Spanish", "color": "#FFD84D" },
+    { "id": "arabic", "label": "Arabic", "color": "#34D399" },
+    { "id": "bengali", "label": "Bengali", "color": "#23C8A8" },
+    { "id": "portuguese", "label": "Portuguese", "color": "#A3E635" },
+    { "id": "russian", "label": "Russian", "color": "#E879F9" },
+    { "id": "french", "label": "French", "color": "#2FB4FF" },
+    { "id": "japanese", "label": "Japanese", "color": "#FF6FA5" },
+    { "id": "german", "label": "German", "color": "#94A3B8" },
+    { "id": "indonesian", "label": "Indonesian / Malay", "color": "#B388FF" }
+  ],
+  "keyframes": [
+    { "t": 1900, "values": { "mandarin": 320, "english": 200, "hindi-urdu": 120, "spanish": 65, "arabic": 45, "bengali": 45, "portuguese": 25, "russian": 100, "french": 80, "japanese": 45, "german": 90, "indonesian": 15 } },
+    { "t": 1910, "values": { "mandarin": 340, "english": 220, "hindi-urdu": 130, "spanish": 72, "arabic": 50, "bengali": 50, "portuguese": 28, "russian": 115, "french": 85, "japanese": 50, "german": 95, "indonesian": 18 } },
+    { "t": 1920, "values": { "mandarin": 360, "english": 240, "hindi-urdu": 140, "spanish": 80, "arabic": 55, "bengali": 55, "portuguese": 32, "russian": 125, "french": 88, "japanese": 56, "german": 95, "indonesian": 22 } },
+    { "t": 1930, "values": { "mandarin": 385, "english": 265, "hindi-urdu": 155, "spanish": 92, "arabic": 62, "bengali": 62, "portuguese": 38, "russian": 145, "french": 92, "japanese": 64, "german": 98, "indonesian": 28 } },
+    { "t": 1940, "values": { "mandarin": 410, "english": 290, "hindi-urdu": 175, "spanish": 105, "arabic": 70, "bengali": 70, "portuguese": 44, "russian": 165, "french": 95, "japanese": 72, "german": 100, "indonesian": 35 } },
+    { "t": 1950, "values": { "mandarin": 445, "english": 320, "hindi-urdu": 200, "spanish": 125, "arabic": 82, "bengali": 80, "portuguese": 52, "russian": 190, "french": 100, "japanese": 82, "german": 98, "indonesian": 45 } },
+    { "t": 1960, "values": { "mandarin": 510, "english": 370, "hindi-urdu": 240, "spanish": 155, "arabic": 100, "bengali": 95, "portuguese": 65, "russian": 220, "french": 110, "japanese": 93, "german": 100, "indonesian": 60 } },
+    { "t": 1970, "values": { "mandarin": 600, "english": 430, "hindi-urdu": 290, "spanish": 195, "arabic": 125, "bengali": 115, "portuguese": 82, "russian": 250, "french": 125, "japanese": 103, "german": 102, "indonesian": 85 } },
+    { "t": 1980, "values": { "mandarin": 720, "english": 510, "hindi-urdu": 355, "spanish": 245, "arabic": 160, "bengali": 140, "portuguese": 105, "russian": 275, "french": 145, "japanese": 115, "german": 104, "indonesian": 115 } },
+    { "t": 1990, "values": { "mandarin": 830, "english": 610, "hindi-urdu": 430, "spanish": 300, "arabic": 200, "bengali": 165, "portuguese": 130, "russian": 290, "french": 165, "japanese": 122, "german": 106, "indonesian": 145 } },
+    { "t": 1995, "values": { "mandarin": 880, "english": 680, "hindi-urdu": 475, "spanish": 330, "arabic": 225, "bengali": 180, "portuguese": 145, "russian": 285, "french": 178, "japanese": 124, "german": 108, "indonesian": 160 } },
+    { "t": 2000, "values": { "mandarin": 920, "english": 760, "hindi-urdu": 520, "spanish": 365, "arabic": 250, "bengali": 195, "portuguese": 160, "russian": 280, "french": 190, "japanese": 126, "german": 110, "indonesian": 180 } },
+    { "t": 2005, "values": { "mandarin": 960, "english": 850, "hindi-urdu": 580, "spanish": 405, "arabic": 280, "bengali": 210, "portuguese": 175, "russian": 275, "french": 205, "japanese": 127, "german": 115, "indonesian": 200 } },
+    { "t": 2010, "values": { "mandarin": 1000, "english": 960, "hindi-urdu": 650, "spanish": 450, "arabic": 310, "bengali": 225, "portuguese": 195, "russian": 268, "french": 225, "japanese": 128, "german": 120, "indonesian": 220 } },
+    { "t": 2015, "values": { "mandarin": 1050, "english": 1130, "hindi-urdu": 730, "spanish": 500, "arabic": 350, "bengali": 240, "portuguese": 215, "russian": 262, "french": 255, "japanese": 128, "german": 128, "indonesian": 240 } },
+    { "t": 2020, "values": { "mandarin": 1090, "english": 1330, "hindi-urdu": 820, "spanish": 550, "arabic": 390, "bengali": 260, "portuguese": 240, "russian": 258, "french": 290, "japanese": 126, "german": 132, "indonesian": 265 } },
+    { "t": 2025, "values": { "mandarin": 1120, "english": 1500, "hindi-urdu": 900, "spanish": 600, "arabic": 420, "bengali": 280, "portuguese": 260, "russian": 255, "french": 320, "japanese": 125, "german": 135, "indonesian": 290 } }
+  ],
+  "milestones": [
+    { "t": 1922, "title": "English rides the radio age", "text": "The BBC and American broadcasting begin beaming English into homes worldwide, seeding a century of second-language learners." },
+    { "t": 1950, "title": "Russian spreads with the USSR", "text": "Compulsory Russian across the Soviet bloc pushes it past 190M speakers — a peak that will stall after 1991." },
+    { "t": 1951, "title": "English rules the skies", "text": "ICAO makes English the language of international aviation; post-1945 science and diplomacy follow, cementing lingua franca status." },
+    { "t": 1991, "title": "Soviet collapse stalls Russian", "text": "With the USSR gone, ex-republics drop compulsory Russian. The language plateaus and slowly slips down the board." },
+    { "t": 2013, "title": "English passes Mandarin", "text": "Counting second-language speakers, the internet era finally lifts English past Mandarin — the century's defining overtake." },
+    { "t": 2020, "title": "Francophone Africa booms", "text": "Population growth in Africa, home to most of the world's French speakers, powers French toward 300M and climbing." }
+  ]
+}

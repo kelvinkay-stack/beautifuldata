@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Longest Suspension Bridge Spans (1883–2025) — Overtake</title>
+  <meta name="description" content="The main spans of the world's longest suspension bridges, from Brooklyn's pioneering steel-wire crossing to the two-kilometre giants of today. Animated bar chart race, 1883–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/bridges/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Longest Suspension Bridge Spans (1883–2025) — Overtake">
+  <meta property="og:description" content="The main spans of the world's longest suspension bridges, from Brooklyn's pioneering steel-wire crossing to the two-kilometre giants of today. Animated bar chart race, 1883–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/bridges/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/bridges.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Longest Suspension Bridge Spans (1883–2025) — Overtake">
+  <meta name="twitter:description" content="The main spans of the world's longest suspension bridges, from Brooklyn's pioneering steel-wire crossing to the two-kilometre giants of today. Animated bar chart race, 1883–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/bridges.png">
+  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Longest Suspension Bridge Spans","description":"The main spans of the world's longest suspension bridges, from Brooklyn's pioneering steel-wire crossing to the two-kilometre giants of today. America owned this board for nearly a century — the George Washington doubled the record in one leap — before the crown moved to Japan's Akashi Kaikyō and finally to Turkey's Çanakkale 1915, the first span past 2,000 m.","url":"https://beautifuldata.netlify.app/races/bridges/","temporalCoverage":"1883/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://structurae.net"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science" aria-current="true">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="science" data-race-id="bridges">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span>1883–2025</span></p>
+    <h1>Longest Suspension Bridge Spans</h1>
+    <p class="blurb">The main spans of the world's longest suspension bridges, from Brooklyn's pioneering steel-wire crossing to the two-kilometre giants of today. America owned this board for nearly a century — the George Washington doubled the record in one leap — before the crown moved to Japan's Akashi Kaikyō and finally to Turkey's Çanakkale 1915, the first span past 2,000 m.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Longest Suspension Bridge Spans"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1883" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://structurae.net" rel="noopener">Structurae / published span records</a></span>
+    <span>Figures are main-span lengths between tower centres, not total bridge length.</span>
+    <span>Updated 2026-07-09</span>
+  </p>
+
+  <div class="race-extras">
+    <section class="facts" aria-label="Race in numbers">
+      <h2>The race in numbers</h2>
+      <div class="fact-grid">
+        <div class="fact"><b class="num">10</b><span>lead changes</span></div>
+        <div class="fact"><b class="num">142</b><span>years covered</span></div>
+        <div class="fact"><b class="num">15</b><span>contenders</span></div>
+        <div class="fact fact-wide"><b>Golden Gate Bridge</b><span>longest reign — 28 yrs at #1</span></div>
+      </div>
+    </section>
+    <section class="standings" aria-label="Final standings">
+      <h2>Final standings · 2025</h2>
+      <ol>
+        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Çanakkale 1915 Bridge</span><span class="s-val num">2,023 m</span></li>
+        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Akashi Kaikyō Bridge</span><span class="s-val num">1,991 m</span></li>
+        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Yangsigang Bridge</span><span class="s-val num">1,700 m</span></li>
+        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF6FA5" aria-hidden="true"></span><span class="s-label">Xihoumen Bridge</span><span class="s-val num">1,650 m</span></li>
+        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Great Belt East Bridge</span><span class="s-val num">1,624 m</span></li>
+      </ol>
+    </section>
+  </div>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1883.4">
+        <span class="m-year num">1883</span>
+        <span class="m-title">Brooklyn Bridge opens</span>
+      </button></li>
+      <li><button type="button" data-t="1931.8">
+        <span class="m-year num">1931</span>
+        <span class="m-title">George Washington doubles the record</span>
+      </button></li>
+      <li><button type="button" data-t="1937.4">
+        <span class="m-year num">1937</span>
+        <span class="m-title">Golden Gate Bridge</span>
+      </button></li>
+      <li><button type="button" data-t="1964.9">
+        <span class="m-year num">1964</span>
+        <span class="m-title">Verrazzano-Narrows</span>
+      </button></li>
+      <li><button type="button" data-t="1998.3">
+        <span class="m-year num">1998</span>
+        <span class="m-title">Akashi Kaikyō: 1,991 m</span>
+      </button></li>
+      <li><button type="button" data-t="2022.2">
+        <span class="m-year num">2022</span>
+        <span class="m-title">Çanakkale takes it to Europe</span>
+      </button></li>
+  </ul>
+
+  <h2 class="related-head">More Science races</h2>
+  <div class="related-grid">
+    <a href="/races/tallest-buildings/"><span class="r-title">World's Tallest Buildings</span><span class="r-span num">1899–2026 · 29 contenders</span></a>
+    <a href="/races/supercomputers/"><span class="r-title">Fastest Supercomputers</span><span class="r-span num">1993–2026 · 27 contenders</span></a>
+    <a href="/races/nobel-by-country/"><span class="r-title">Nobel Prizes by Country</span><span class="r-span num">1901–2025 · 12 contenders</span></a>
+    <a href="/races/life-expectancy/"><span class="r-title">Global Life Expectancy Leaders</span><span class="r-span num">1900–2023 · 13 contenders</span></a>
+  </div>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/streaming-services/"><span class="dir">← Previous race</span>Streaming Wars</a>
+    <a href="/races/stock-exchanges/" style="text-align:right"><span class="dir">Next race →</span>Stock Exchanges</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-cats" aria-label="Browse categories">
+    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
+    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
+    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
+    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
+    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
+    <a href="/#world" style="--c:#38BDF8">World · 7</a>
+    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
+    <a href="/#history" style="--c:#C77B4A">History · 6</a>
+    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  </div>
+  <div class="inner">
+    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+</body>
+</html>

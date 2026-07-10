@@ -28,7 +28,9 @@ if (dataEl) {
 
 const input = document.getElementById('race-search');
 if (input) {
-  const cards = [...document.querySelectorAll('.race-card')].map((el) => {
+  // featured cards are duplicates of category cards; the featured band is
+  // hidden entirely while searching (CSS), so index only the category grids
+  const cards = [...document.querySelectorAll('.zone:not(.zone-featured) .race-card')].map((el) => {
     const id = el.querySelector('canvas[data-race]')?.dataset.race || '';
     const zone = el.closest('.zone');
     const hay = [
@@ -39,7 +41,7 @@ if (input) {
     ].join(' ').toLowerCase();
     return { el, zone, hay };
   });
-  const zones = [...document.querySelectorAll('.zone')];
+  const zones = [...document.querySelectorAll('.zone:not(.zone-featured)')];
   const count = document.getElementById('search-count');
   const empty = document.getElementById('search-empty');
   const total = cards.length;

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Largest Stock Exchanges (1980–2025) — Overtake</title>
+  <meta name="description" content="Forty-five years of the world's stock markets, ranked by the total value of every company listed on each exchange. Animated bar chart race, 1980–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/stock-exchanges/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Largest Stock Exchanges (1980–2025) — Overtake">
+  <meta property="og:description" content="Forty-five years of the world's stock markets, ranked by the total value of every company listed on each exchange. Animated bar chart race, 1980–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/stock-exchanges/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/stock-exchanges.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Largest Stock Exchanges (1980–2025) — Overtake">
+  <meta name="twitter:description" content="Forty-five years of the world's stock markets, ranked by the total value of every company listed on each exchange. Animated bar chart race, 1980–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/stock-exchanges.png">
+  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Largest Stock Exchanges","description":"Forty-five years of the world's stock markets, ranked by the total value of every company listed on each exchange. Tokyo's bubble briefly dethrones the NYSE in 1989, Nasdaq inflates and deflates with the dot-coms, and China's exchanges erupt from nothing — twice — before India crashes the top table.","url":"https://beautifuldata.netlify.app/races/stock-exchanges/","temporalCoverage":"1980/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.world-exchanges.org"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy" aria-current="true">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="economy" data-race-id="stock-exchanges">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#economy">Money &amp; Markets</a><span aria-hidden="true">/</span><span>1980–2025</span></p>
+    <h1>Largest Stock Exchanges</h1>
+    <p class="blurb">Forty-five years of the world's stock markets, ranked by the total value of every company listed on each exchange. Tokyo's bubble briefly dethrones the NYSE in 1989, Nasdaq inflates and deflates with the dot-coms, and China's exchanges erupt from nothing — twice — before India crashes the top table.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Largest Stock Exchanges"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1980" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://www.world-exchanges.org" rel="noopener">World Federation of Exchanges &amp; historical estimates</a></span>
+    <span>Pre-2000 figures are reconstructed estimates stitched from multiple historical sources.</span>
+    <span class="quality-flag">illustrative data</span>
+    <span>Updated 2026-07-09</span>
+  </p>
+
+  <div class="race-extras">
+    <section class="facts" aria-label="Race in numbers">
+      <h2>The race in numbers</h2>
+      <div class="fact-grid">
+        <div class="fact"><b class="num">2</b><span>lead changes</span></div>
+        <div class="fact"><b class="num">46</b><span>years covered</span></div>
+        <div class="fact"><b class="num">12</b><span>contenders</span></div>
+        <div class="fact fact-wide"><b>NYSE</b><span>longest reign — 34 yrs at #1</span></div>
+      </div>
+    </section>
+    <section class="standings" aria-label="Final standings">
+      <h2>Final standings · 2025</h2>
+      <ol>
+        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">NYSE</span><span class="s-val num">$31.3T</span></li>
+        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Nasdaq</span><span class="s-val num">$30.6T</span></li>
+        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Shanghai</span><span class="s-val num">$7.40T</span></li>
+        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#6E7BFF" aria-hidden="true"></span><span class="s-label">Euronext</span><span class="s-val num">$7.20T</span></li>
+        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Tokyo (JPX)</span><span class="s-val num">$6.90T</span></li>
+      </ol>
+    </section>
+  </div>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1988.9">
+        <span class="m-year num">1988</span>
+        <span class="m-title">Tokyo overtakes NYSE</span>
+      </button></li>
+      <li><button type="button" data-t="1990.2">
+        <span class="m-year num">1990</span>
+        <span class="m-title">The bubble bursts</span>
+      </button></li>
+      <li><button type="button" data-t="2000.2">
+        <span class="m-year num">2000</span>
+        <span class="m-title">Nasdaq's dot-com peak</span>
+      </button></li>
+      <li><button type="button" data-t="2007.6">
+        <span class="m-year num">2007</span>
+        <span class="m-title">China's exchanges surge</span>
+      </button></li>
+      <li><button type="button" data-t="2008.7">
+        <span class="m-year num">2008</span>
+        <span class="m-title">The global financial crisis</span>
+      </button></li>
+      <li><button type="button" data-t="2015.45">
+        <span class="m-year num">2015</span>
+        <span class="m-title">China's margin bubble pops</span>
+      </button></li>
+      <li><button type="button" data-t="2024.1">
+        <span class="m-year num">2024</span>
+        <span class="m-title">India enters the top four</span>
+      </button></li>
+  </ul>
+
+  <h2 class="related-head">More Money races</h2>
+  <div class="related-grid">
+    <a href="/races/gdp-nations/"><span class="r-title">Largest Economies by GDP</span><span class="r-span num">1960–2024 · 15 contenders</span></a>
+    <a href="/races/billionaires/"><span class="r-title">The World's Richest Person</span><span class="r-span num">1987–2025 · 15 contenders</span></a>
+    <a href="/races/military-spending/"><span class="r-title">Military Spending by Country</span><span class="r-span num">1960–2024 · 12 contenders</span></a>
+    <a href="/races/brand-value/"><span class="r-title">Most Valuable Brands</span><span class="r-span num">2000–2024 · 15 contenders</span></a>
+  </div>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/bridges/"><span class="dir">← Previous race</span>Longest Bridges</a>
+    <a href="/races/armed-forces/" style="text-align:right"><span class="dir">Next race →</span>Standing Armies</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-cats" aria-label="Browse categories">
+    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
+    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
+    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
+    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
+    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
+    <a href="/#world" style="--c:#38BDF8">World · 7</a>
+    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
+    <a href="/#history" style="--c:#C77B4A">History · 6</a>
+    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  </div>
+  <div class="inner">
+    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+</body>
+</html>

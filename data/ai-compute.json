@@ -1,0 +1,97 @@
+{
+  "id": "ai-compute",
+  "title": "Largest AI Training Runs",
+  "shortTitle": "AI Compute",
+  "category": "tech",
+  "unit": {
+    "label": "Largest training run to date",
+    "format": "si",
+    "prefix": "",
+    "suffix": "FLOPs",
+    "decimals": 1
+  },
+  "scale": "log",
+  "topN": 10,
+  "timeLabel": "yearMonth",
+  "blurb": "The biggest training run (in total floating-point operations) each AI lab has ever published or been credibly estimated to have completed. From AlexNet's two-GPU experiment in 2012 to the 100,000-GPU clusters of 2025, the record climbs eight orders of magnitude — a doubling of frontier compute roughly every six months.",
+  "source": {
+    "name": "Epoch AI notable models (estimates)",
+    "url": "https://epoch.ai/data/notable-ai-models",
+    "note": "Illustrative order-of-magnitude estimates in the style of Epoch AI's notable-models database; labs rarely disclose exact figures."
+  },
+  "dataQuality": "illustrative",
+  "lastUpdated": "2026-07-09",
+  "entities": [
+    { "id": "academia", "label": "Academia", "color": "#94A3B8" },
+    { "id": "google", "label": "Google DeepMind", "color": "#4285F4" },
+    { "id": "openai", "label": "OpenAI", "color": "#10A37F" },
+    { "id": "meta", "label": "Meta AI", "color": "#67E8F9" },
+    { "id": "microsoft", "label": "Microsoft", "color": "#FFB900" },
+    { "id": "anthropic", "label": "Anthropic", "color": "#D97757" },
+    { "id": "xai", "label": "xAI", "color": "#D4D4D8" },
+    { "id": "nvidia", "label": "NVIDIA", "color": "#76B900" },
+    { "id": "baidu", "label": "Baidu", "color": "#6E7BFF" },
+    { "id": "alibaba", "label": "Alibaba", "color": "#FF6A00" },
+    { "id": "mistral", "label": "Mistral AI", "color": "#F43F5E" },
+    { "id": "deepseek", "label": "DeepSeek", "color": "#E879F9" }
+  ],
+  "keyframes": [
+    { "t": 2012.0, "values": { "academia": 1.2e17, "google": 1e17 } },
+    { "t": 2012.5, "values": { "academia": 5e17, "google": 2e17 } },
+    { "t": 2013.5, "values": { "academia": 5e17, "google": 1.1e18 } },
+    { "t": 2014.5, "values": { "academia": 5e17, "google": 7.3e18, "microsoft": 2e17, "baidu": 4e17 } },
+    { "t": 2015.5, "values": { "academia": 8.5e18, "google": 9.4e18, "microsoft": 1.2e19, "baidu": 4e18, "meta": 3e17 } },
+    { "t": 2016.2, "values": { "academia": 8.5e18, "google": 1.9e21, "microsoft": 1.2e19, "baidu": 2.6e19, "meta": 2e18 } },
+    { "t": 2016.9, "values": { "academia": 8.5e18, "google": 6.9e21, "microsoft": 1.2e19, "baidu": 2.6e19, "meta": 4e18 } },
+    { "t": 2017.5, "values": { "academia": 8.5e18, "google": 6.9e21, "microsoft": 1.2e19, "baidu": 2.6e19, "meta": 6e18, "openai": 2e18 } },
+    { "t": 2017.8, "values": { "academia": 8.5e18, "google": 3.4e23, "microsoft": 1.2e19, "baidu": 2.6e19, "meta": 6e18, "openai": 2e18 } },
+    { "t": 2018.4, "values": { "academia": 8.5e18, "google": 3.4e23, "microsoft": 1.2e19, "baidu": 2.6e19, "meta": 1.5e19, "openai": 1.8e19 } },
+    { "t": 2019.1, "values": { "academia": 8.5e18, "google": 3.4e23, "microsoft": 1.2e19, "baidu": 2.6e19, "meta": 1.5e19, "openai": 1.5e21, "nvidia": 4e20 } },
+    { "t": 2019.7, "values": { "academia": 8.5e18, "google": 3.4e23, "microsoft": 1.2e19, "baidu": 2.6e19, "meta": 4.4e21, "openai": 6.7e22, "nvidia": 9.1e21 } },
+    { "t": 2020.4, "values": { "academia": 8.5e18, "google": 3.4e23, "microsoft": 1.6e22, "baidu": 2.6e19, "meta": 4.4e21, "openai": 3.1e23, "nvidia": 9.1e21 } },
+    { "t": 2021.0, "values": { "academia": 8.5e18, "google": 3.4e23, "microsoft": 1.6e22, "baidu": 2.6e19, "meta": 4.4e21, "openai": 3.1e23, "nvidia": 9.1e21, "alibaba": 5e20 } },
+    { "t": 2021.8, "values": { "academia": 8.5e18, "google": 3.4e23, "microsoft": 4.7e23, "baidu": 2.6e19, "meta": 4.4e21, "openai": 3.1e23, "nvidia": 9.1e21, "alibaba": 5e21 } },
+    { "t": 2022.3, "values": { "academia": 8.5e18, "google": 2.5e24, "microsoft": 4.7e23, "baidu": 2.6e23, "meta": 4.3e23, "openai": 3.1e23, "nvidia": 9.1e21, "alibaba": 5e21, "anthropic": 1e22 } },
+    { "t": 2022.9, "values": { "academia": 8.5e18, "google": 2.5e24, "microsoft": 4.7e23, "baidu": 2.6e23, "meta": 4.3e23, "openai": 3.1e23, "nvidia": 9.1e21, "alibaba": 5e21, "anthropic": 1.2e23 } },
+    { "t": 2023.2, "values": { "academia": 8.5e18, "google": 2.5e24, "microsoft": 4.7e23, "baidu": 2.6e23, "meta": 6.3e23, "openai": 2.1e25, "nvidia": 9.1e21, "alibaba": 5e21, "anthropic": 2.6e23 } },
+    { "t": 2023.6, "values": { "academia": 8.5e18, "google": 7.4e24, "microsoft": 4.7e23, "baidu": 2.6e23, "meta": 8.5e23, "openai": 2.1e25, "nvidia": 9.1e21, "alibaba": 3e23, "anthropic": 8e23, "xai": 3e22, "mistral": 5e22, "deepseek": 2e22 } },
+    { "t": 2023.95, "values": { "academia": 8.5e18, "google": 5e25, "microsoft": 4.7e23, "baidu": 2e24, "meta": 8.5e23, "openai": 2.1e25, "nvidia": 9.1e21, "alibaba": 6e23, "anthropic": 8e23, "xai": 2.9e24, "mistral": 1e23, "deepseek": 2.4e23 } },
+    { "t": 2024.3, "values": { "academia": 8.5e18, "google": 5e25, "microsoft": 4.7e23, "baidu": 2e24, "meta": 7.9e24, "openai": 2.1e25, "nvidia": 9.1e21, "alibaba": 6e23, "anthropic": 1.6e25, "xai": 2.9e24, "mistral": 1.5e24, "deepseek": 2.4e23 } },
+    { "t": 2024.6, "values": { "academia": 8.5e18, "google": 5e25, "microsoft": 4.7e23, "baidu": 2e24, "meta": 3.8e25, "openai": 2.1e25, "nvidia": 1.8e24, "alibaba": 3.6e24, "anthropic": 1.6e25, "xai": 1.5e25, "mistral": 3e24, "deepseek": 1.4e24 } },
+    { "t": 2025.1, "values": { "academia": 8.5e18, "google": 5e25, "microsoft": 4.7e23, "baidu": 2e24, "meta": 3.8e25, "openai": 6.4e25, "nvidia": 1.8e24, "alibaba": 3.6e24, "anthropic": 3.5e25, "xai": 9e25, "mistral": 3e24, "deepseek": 3.4e24 } },
+    { "t": 2025.3, "values": { "academia": 8.5e18, "google": 6.5e25, "microsoft": 1.5e25, "baidu": 3e24, "meta": 4.5e25, "openai": 6.4e25, "nvidia": 1.8e24, "alibaba": 8e24, "anthropic": 3.5e25, "xai": 9e25, "mistral": 3e24, "deepseek": 4e24 } },
+    { "t": 2025.5, "values": { "academia": 8.5e18, "google": 8e25, "microsoft": 1.5e25, "baidu": 3e24, "meta": 5e25, "openai": 6.4e25, "nvidia": 1.8e24, "alibaba": 8e24, "anthropic": 6.5e25, "xai": 9e25, "mistral": 3e24, "deepseek": 4e24 } }
+  ],
+  "milestones": [
+    {
+      "t": 2012.5,
+      "title": "AlexNet ignites deep learning",
+      "text": "Two consumer GPUs and roughly 5×10¹⁷ FLOP win ImageNet by a landslide — a University of Toronto side project starts the compute race."
+    },
+    {
+      "t": 2017.8,
+      "title": "AlphaGo Zero raises the bar",
+      "text": "DeepMind's self-play run (~3×10²³ FLOP) dwarfs everything before it — for years the biggest training run on record."
+    },
+    {
+      "t": 2020.4,
+      "title": "GPT-3: scaling laws pay off",
+      "text": "OpenAI trains 175B parameters on ~3.1×10²³ FLOP. Bigger stops being a hunch and becomes a strategy."
+    },
+    {
+      "t": 2023.2,
+      "title": "GPT-4 lands",
+      "text": "At an estimated 2×10²⁵ FLOP — nearly 70× GPT-3 — GPT-4 makes frontier training a billion-dollar undertaking."
+    },
+    {
+      "t": 2023.95,
+      "title": "Gemini Ultra overtakes GPT-4",
+      "text": "Google's ~5×10²⁵ FLOP run retakes the compute crown, kicking off the multi-datacenter era of frontier training."
+    },
+    {
+      "t": 2025.1,
+      "title": "The 100,000-GPU era",
+      "text": "xAI's Grok 3, trained on the Colossus cluster, pushes records toward 10²⁶ FLOP — a 100-million-fold climb since AlexNet."
+    }
+  ]
+}

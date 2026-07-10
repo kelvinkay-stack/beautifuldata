@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chess: The Rating Race (1971–2025) — Overtake</title>
+  <meta name="description" content="FIDE has published Elo ratings since 1971, when Bobby Fischer towered over the field at 2785. Animated bar chart race, 1971–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/chess-elo/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Chess: The Rating Race (1971–2025) — Overtake">
+  <meta property="og:description" content="FIDE has published Elo ratings since 1971, when Bobby Fischer towered over the field at 2785. Animated bar chart race, 1971–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/chess-elo/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/chess-elo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chess: The Rating Race (1971–2025) — Overtake">
+  <meta name="twitter:description" content="FIDE has published Elo ratings since 1971, when Bobby Fischer towered over the field at 2785. Animated bar chart race, 1971–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/chess-elo.png">
+  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Chess: The Rating Race","description":"FIDE has published Elo ratings since 1971, when Bobby Fischer towered over the field at 2785. The bars sit close together because at the summit of chess, 30 Elo points is a chasm — the gap between contender and champion. Watch Kasparov's two-decade reign give way to Carlsen's untouchable 2882.","url":"https://beautifuldata.netlify.app/races/chess-elo/","temporalCoverage":"1971/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://ratings.fide.com"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports" aria-current="true">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="sports" data-race-id="chess-elo">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#sports">Sports</a><span aria-hidden="true">/</span><span>1971–2025</span></p>
+    <h1>Chess: The Rating Race</h1>
+    <p class="blurb">FIDE has published Elo ratings since 1971, when Bobby Fischer towered over the field at 2785. The bars sit close together because at the summit of chess, 30 Elo points is a chasm — the gap between contender and champion. Watch Kasparov's two-decade reign give way to Carlsen's untouchable 2882.</p>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Chess: The Rating Race"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1971" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://ratings.fide.com" rel="noopener">FIDE rating lists</a></span>
+    <span>Values taken from each year's January list; pre-2000 FIDE lists were published only once or twice a year.</span>
+    <span>Updated 2026-07-09</span>
+  </p>
+
+  <div class="race-extras">
+    <section class="facts" aria-label="Race in numbers">
+      <h2>The race in numbers</h2>
+      <div class="fact-grid">
+        <div class="fact"><b class="num">10</b><span>lead changes</span></div>
+        <div class="fact"><b class="num">54</b><span>years covered</span></div>
+        <div class="fact"><b class="num">16</b><span>contenders</span></div>
+        <div class="fact fact-wide"><b>Magnus Carlsen</b><span>longest reign — 15 yrs at #1</span></div>
+      </div>
+    </section>
+    <section class="standings" aria-label="Final standings">
+      <h2>Final standings · 2025</h2>
+      <ol>
+        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Magnus Carlsen</span><span class="s-val num">2,833</span></li>
+        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Fabiano Caruana</span><span class="s-val num">2,803</span></li>
+        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Hikaru Nakamura</span><span class="s-val num">2,802</span></li>
+        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF6FA5" aria-hidden="true"></span><span class="s-label">Gukesh Dommaraju</span><span class="s-val num">2,777</span></li>
+        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#D4D4D8" aria-hidden="true"></span><span class="s-label">Ian Nepomniachtchi</span><span class="s-val num">2,754</span></li>
+      </ol>
+    </section>
+  </div>
+
+  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
+  <ul class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1972.5">
+        <span class="m-year num">1972</span>
+        <span class="m-title">Fischer's 2785</span>
+      </button></li>
+      <li><button type="button" data-t="1985.85">
+        <span class="m-year num">1985</span>
+        <span class="m-title">Kasparov, youngest champion</span>
+      </button></li>
+      <li><button type="button" data-t="1990.05">
+        <span class="m-year num">1990</span>
+        <span class="m-title">Kasparov breaks Fischer's record</span>
+      </button></li>
+      <li><button type="button" data-t="1999.5">
+        <span class="m-year num">1999</span>
+        <span class="m-title">Kasparov peaks at 2851</span>
+      </button></li>
+      <li><button type="button" data-t="2013.05">
+        <span class="m-year num">2013</span>
+        <span class="m-title">Carlsen tops Kasparov's mark</span>
+      </button></li>
+      <li><button type="button" data-t="2014.4">
+        <span class="m-year num">2014</span>
+        <span class="m-title">Carlsen's all-time record: 2882</span>
+      </button></li>
+      <li><button type="button" data-t="2024.92">
+        <span class="m-year num">2024</span>
+        <span class="m-title">Gukesh, youngest world champion</span>
+      </button></li>
+  </ul>
+
+  <h2 class="related-head">More Sports races</h2>
+  <div class="related-grid">
+    <a href="/races/atp-weeks/"><span class="r-title">Weeks at ATP World No. 1</span><span class="r-span num">1973–2026 · 20 contenders</span></a>
+    <a href="/races/wta-weeks/"><span class="r-title">Weeks at WTA World No. 1</span><span class="r-span num">1975–2026 · 17 contenders</span></a>
+    <a href="/races/olympic-golds/"><span class="r-title">Olympic Gold Medals by Country</span><span class="r-span num">1896–2024 · 13 contenders</span></a>
+    <a href="/races/nba-scoring/"><span class="r-title">NBA Career Scoring Leaders</span><span class="r-span num">1950–2026 · 15 contenders</span></a>
+  </div>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/ai-compute/"><span class="dir">← Previous race</span>AI Compute</a>
+    <a href="/races/streaming-services/" style="text-align:right"><span class="dir">Next race →</span>Streaming Wars</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-cats" aria-label="Browse categories">
+    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
+    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
+    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
+    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
+    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
+    <a href="/#world" style="--c:#38BDF8">World · 7</a>
+    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
+    <a href="/#history" style="--c:#C77B4A">History · 6</a>
+    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  </div>
+  <div class="inner">
+    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
+    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+</body>
+</html>

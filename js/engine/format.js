@@ -5,6 +5,7 @@ const SI_MONEY = [
 ];
 // scientific prefixes, used when the unit suffix is a physical one (FLOPS)
 const SI_METRIC = [
+  [1e24, 'Y'], [1e21, 'Z'],
   [1e18, 'E'], [1e15, 'P'], [1e12, 'T'], [1e9, 'G'], [1e6, 'M'], [1e3, 'K'],
 ];
 

@@ -4,9 +4,12 @@ A destination site built around one interaction: watching rankings reorder
 themselves over time as animated bar chart races. Static, dependency-free at
 runtime, deployable to Netlify.
 
-**64 races across 9 categories** — Tech & Business, Sports, Entertainment &
+**73 races across 9 categories** — Tech & Business, Sports, Entertainment &
 Culture, Science & Infrastructure, Money & Markets, World & Nations, Games &
-Play, History & Antiquity, and Wildcard.
+Play, History & Antiquity, and Wildcard. The hub opens with a featured band
+and a records board (wildest races, longest races, great dynasties), all
+computed from the data at build time; every race page carries auto-computed
+"race in numbers" facts and final standings.
 
 ## How it works
 

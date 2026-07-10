@@ -88,8 +88,18 @@
       "blurb": "Personal picks that don't fit a lane — starting with a companion race to One Infinite Fruit."
     }
   ],
+  "featured": ["market-cap", "empires", "youtube-channels", "streaming-services"],
   "races": [
     { "id": "market-cap", "category": "tech" },
+    { "id": "ai-compute", "category": "tech" },
+    { "id": "chess-elo", "category": "sports" },
+    { "id": "streaming-services", "category": "culture" },
+    { "id": "bridges", "category": "science" },
+    { "id": "stock-exchanges", "category": "economy" },
+    { "id": "armed-forces", "category": "world" },
+    { "id": "most-played-games", "category": "play" },
+    { "id": "languages", "category": "history" },
+    { "id": "dog-breeds", "category": "wildcard" },
     { "id": "smartphone-os", "category": "tech" },
     { "id": "social-media", "category": "tech" },
     { "id": "search-engines", "category": "tech" },
