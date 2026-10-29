@@ -28,6 +28,10 @@ async function boot() {
     stepNote: document.getElementById('step-note'),
   }, ds);
 
+  const toStage = () => document.querySelector('.stage').scrollIntoView({
+    behavior: controller.reduced ? 'auto' : 'smooth', block: 'center',
+  });
+
   // milestone index below the stage (markup is static for SEO; bind here)
   for (const btn of document.querySelectorAll('#milestone-list button[data-t]')) {
     const t = parseFloat(btn.dataset.t);
@@ -37,9 +41,38 @@ async function boot() {
       controller.pause();
       controller.seek(controller.model.timeToProgress(m.t));
       ui.showCallout(m);
-      document.querySelector('.stage').scrollIntoView({
-        behavior: controller.reduced ? 'auto' : 'smooth', block: 'center',
-      });
+      toStage();
+    });
+  }
+
+  // "who held #1" strip: each reign jumps to the moment it began, then plays
+  for (const btn of document.querySelectorAll('.reign[data-t]')) {
+    btn.addEventListener('click', () => {
+      controller.pause();
+      controller.seekTime(parseFloat(btn.dataset.t));
+      toStage();
+      if (!controller.reduced) controller.play();
+    });
+  }
+
+  // share: the link carries the current year (#t=1998) so it opens there
+  const share = document.getElementById('btn-share');
+  if (share) {
+    const label = share.querySelector('span');
+    share.addEventListener('click', async () => {
+      const year = Math.floor(controller.model.progressToTime(controller.progress));
+      const url = `${location.origin}${location.pathname}#t=${year}`;
+      try {
+        if (navigator.share && matchMedia('(pointer: coarse)').matches) {
+          await navigator.share({ title: document.title, url });
+          return;
+        }
+        await navigator.clipboard.writeText(url);
+        label.textContent = 'Link copied';
+      } catch {
+        label.textContent = 'Copy failed';
+      }
+      setTimeout(() => (label.textContent = 'Share this moment'), 2200);
     });
   }
 
@@ -63,13 +96,37 @@ async function boot() {
   });
   ro.observe(canvas.parentElement);
 
+  // deep link (#t=1998): open at that year
+  const hashT = parseFloat((location.hash.match(/^#t=(-?[\d.]+)$/) || [])[1]);
+  const { tMin, tMax } = controller.model;
+  const startAt = hashT >= tMin && hashT <= tMax ? hashT : null;
+
   if (controller.reduced) {
-    // no unrequested motion: land on the final standings, let the
-    // visitor step through with ← / → or the transport
-    controller.seek(1);
+    // no unrequested motion: land on the final standings (or the linked
+    // year), let the visitor step through with ← / → or the transport
+    if (startAt != null) controller.seekTime(startAt);
+    else controller.seek(1);
   } else {
+    if (startAt != null) controller.seekTime(startAt);
     controller.play();
   }
+}
+
+// related-race cards carry the same looping previews as the hub
+const previewEl = document.getElementById('preview-data');
+if (previewEl) {
+  const previews = JSON.parse(previewEl.textContent);
+  const canvases = [...document.querySelectorAll('.card-preview canvas[data-race]')];
+  const io = new IntersectionObserver(async (entries) => {
+    if (!entries.some((e) => e.isIntersecting)) return;
+    io.disconnect();
+    const { mountPreview } = await import('/js/engine/preview.js');
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    for (const c of canvases) {
+      if (previews[c.dataset.race]) mountPreview(c, previews[c.dataset.race], reduced);
+    }
+  }, { rootMargin: '200px' });
+  if (canvases.length) io.observe(canvases[0]);
 }
 
 boot().catch((err) => {

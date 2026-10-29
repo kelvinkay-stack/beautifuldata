@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Longest Suspension Bridge Spans (1883–2025) — Overtake">
   <meta name="twitter:description" content="The main spans of the world's longest suspension bridges, from Brooklyn's pioneering steel-wire crossing to the two-kilometre giants of today. Animated bar chart race, 1883–2025.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/bridges.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Longest Suspension Bridge Spans","description":"The main spans of the world's longest suspension bridges, from Brooklyn's pioneering steel-wire crossing to the two-kilometre giants of today. America owned this board for nearly a century — the George Washington doubled the record in one leap — before the crown moved to Japan's Akashi Kaikyō and finally to Turkey's Çanakkale 1915, the first span past 2,000 m.","url":"https://beautifuldata.netlify.app/races/bridges/","temporalCoverage":"1883/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://structurae.net"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="science" data-race-id="bridges">
   <div class="race-head">
-    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span>1883–2025</span></p>
+    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span class="num">1883–2025</span></p>
     <h1>Longest Suspension Bridge Spans</h1>
     <p class="blurb">The main spans of the world's longest suspension bridges, from Brooklyn's pioneering steel-wire crossing to the two-kilometre giants of today. America owned this board for nearly a century — the George Washington doubled the record in one leap — before the crown moved to Japan's Akashi Kaikyō and finally to Turkey's Çanakkale 1915, the first span past 2,000 m.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>15 contenders</span><span>10 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -78,89 +85,157 @@
     <span>Source: <a href="https://structurae.net" rel="noopener">Structurae / published span records</a></span>
     <span>Figures are main-span lengths between tower centres, not total bridge length.</span>
     <span>Updated 2026-07-09</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">10</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">142</b><span>years covered</span></div>
-        <div class="fact"><b class="num">15</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Golden Gate Bridge</b><span>longest reign — 28 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2025</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>11 different leaders in 142 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1883.4" style="left:0.000%;width:14.477%;--c:#C4B5A0;--ink:rgba(11,14,20,0.88)" title="Brooklyn Bridge · 1883–1903" aria-label="Brooklyn Bridge led 1883–1903. Jump there."><span>Brooklyn Bridge</span></button><button type="button" class="reign" data-t="1903.9" style="left:14.477%;width:14.831%;--c:#94A3B8;--ink:rgba(11,14,20,0.88)" title="Williamsburg Bridge · 1903–1924" aria-label="Williamsburg Bridge led 1903–1924. Jump there."><span>Williamsburg Bridge</span></button><button type="button" class="reign" data-t="1924.9" style="left:29.308%;width:1.130%;--c:#86EFAC;--ink:rgba(11,14,20,0.88)" title="Bear Mountain Bridge · 1924–1926" aria-label="Bear Mountain Bridge led 1924–1926. Jump there."></button><button type="button" class="reign" data-t="1926.5" style="left:30.438%;width:2.331%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="Benjamin Franklin Bridge · 1926–1929" aria-label="Benjamin Franklin Bridge led 1926–1929. Jump there."></button><button type="button" class="reign" data-t="1929.8" style="left:32.768%;width:1.412%;--c:#FDE68A;--ink:rgba(11,14,20,0.88)" title="Ambassador Bridge · 1929–1931" aria-label="Ambassador Bridge led 1929–1931. Jump there."></button><button type="button" class="reign" data-t="1931.8" style="left:34.181%;width:3.955%;--c:#6E7BFF;--ink:rgba(255,255,255,0.95)" title="George Washington Bridge · 1931–1937" aria-label="George Washington Bridge led 1931–1937. Jump there."></button><button type="button" class="reign" data-t="1937.4" style="left:38.136%;width:19.421%;--c:#FF8C42;--ink:rgba(11,14,20,0.88)" title="Golden Gate Bridge · 1937–1964" aria-label="Golden Gate Bridge led 1937–1964. Jump there."><span>Golden Gate Bridge</span></button><button type="button" class="reign" data-t="1964.9" style="left:57.556%;width:11.723%;--c:#2FB4FF;--ink:rgba(255,255,255,0.95)" title="Verrazzano-Narrows Bridge · 1964–1981" aria-label="Verrazzano-Narrows Bridge led 1964–1981. Jump there."><span>Verrazzano-Narrows Bridge</span></button><button type="button" class="reign" data-t="1981.5" style="left:69.280%;width:11.864%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="Humber Bridge · 1981–1998" aria-label="Humber Bridge led 1981–1998. Jump there."><span>Humber Bridge</span></button><button type="button" class="reign" data-t="1998.3" style="left:81.144%;width:16.879%;--c:#8B5CF6;--ink:rgba(255,255,255,0.95)" title="Akashi Kaikyō Bridge · 1998–2022" aria-label="Akashi Kaikyō Bridge led 1998–2022. Jump there."><span>Akashi Kaikyō Bridge</span></button><button type="button" class="reign" data-t="2022.2" style="left:98.023%;width:1.977%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="Çanakkale 1915 Bridge · 2022–2025" aria-label="Çanakkale 1915 Bridge led 2022–2025. Jump there."></button></div>
+    <div class="reign-axis num"><span>1883</span><span>2025</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Çanakkale 1915 Bridge</span><span class="s-val num">2,023 m</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Akashi Kaikyō Bridge</span><span class="s-val num">1,991 m</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Yangsigang Bridge</span><span class="s-val num">1,700 m</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF6FA5" aria-hidden="true"></span><span class="s-label">Xihoumen Bridge</span><span class="s-val num">1,650 m</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Great Belt East Bridge</span><span class="s-val num">1,624 m</span></li>
+        <li><span class="h-label">Golden Gate Bridge</span><span class="h-bar"><i style="width:100.0%;background:#FF8C42"></i></span><span class="h-val num">28 yrs</span></li>
+        <li><span class="h-label">Akashi Kaikyō Bridge</span><span class="h-bar"><i style="width:86.9%;background:#8B5CF6"></i></span><span class="h-val num">24 yrs</span></li>
+        <li><span class="h-label">Williamsburg Bridge</span><span class="h-bar"><i style="width:76.4%;background:#94A3B8"></i></span><span class="h-val num">21 yrs</span></li>
+        <li><span class="h-label">Brooklyn Bridge</span><span class="h-bar"><i style="width:74.5%;background:#C4B5A0"></i></span><span class="h-val num">21 yrs</span></li>
+        <li><span class="h-label">Humber Bridge</span><span class="h-bar"><i style="width:61.1%;background:#FFD84D"></i></span><span class="h-val num">17 yrs</span></li>
+        <li><span class="h-label">Verrazzano-Narrows Bridge</span><span class="h-bar"><i style="width:60.4%;background:#2FB4FF"></i></span><span class="h-val num">17 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1883.4">
         <span class="m-year num">1883</span>
-        <span class="m-title">Brooklyn Bridge opens</span>
+        <span class="m-body"><span class="m-title">Brooklyn Bridge opens</span><span class="m-text">Roebling's 486 m span across the East River is the world's first steel-wire suspension bridge — and by far its longest.</span></span>
       </button></li>
       <li><button type="button" data-t="1931.8">
         <span class="m-year num">1931</span>
-        <span class="m-title">George Washington doubles the record</span>
+        <span class="m-body"><span class="m-title">George Washington doubles the record</span><span class="m-text">At 1,067 m, the George Washington Bridge nearly doubles the Ambassador's 564 m — the biggest single leap in span history.</span></span>
       </button></li>
       <li><button type="button" data-t="1937.4">
         <span class="m-year num">1937</span>
-        <span class="m-title">Golden Gate Bridge</span>
+        <span class="m-body"><span class="m-title">Golden Gate Bridge</span><span class="m-text">The 1,280 m span in international orange begins a 27-year reign as the world's longest — and its most photographed.</span></span>
       </button></li>
       <li><button type="button" data-t="1964.9">
         <span class="m-year num">1964</span>
-        <span class="m-title">Verrazzano-Narrows</span>
+        <span class="m-body"><span class="m-title">Verrazzano-Narrows</span><span class="m-text">New York reclaims the record at 1,298 m — the last time an American bridge will hold the title.</span></span>
       </button></li>
       <li><button type="button" data-t="1998.3">
         <span class="m-year num">1998</span>
-        <span class="m-title">Akashi Kaikyō: 1,991 m</span>
+        <span class="m-body"><span class="m-title">Akashi Kaikyō: 1,991 m</span><span class="m-text">Japan's Pearl Bridge shatters the record by over 500 m. The 1995 Kobe earthquake shifted its towers, stretching the span by a metre.</span></span>
       </button></li>
       <li><button type="button" data-t="2022.2">
         <span class="m-year num">2022</span>
-        <span class="m-title">Çanakkale takes it to Europe</span>
+        <span class="m-body"><span class="m-title">Çanakkale takes it to Europe</span><span class="m-text">Turkey's Çanakkale 1915 Bridge spans the Dardanelles at 2,023 m — the first past two kilometres, ending Akashi's 24-year reign.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Science races</h2>
-  <div class="related-grid">
-    <a href="/races/tallest-buildings/"><span class="r-title">World's Tallest Buildings</span><span class="r-span num">1899–2026 · 29 contenders</span></a>
-    <a href="/races/supercomputers/"><span class="r-title">Fastest Supercomputers</span><span class="r-span num">1993–2026 · 27 contenders</span></a>
-    <a href="/races/nobel-by-country/"><span class="r-title">Nobel Prizes by Country</span><span class="r-span num">1901–2025 · 12 contenders</span></a>
-    <a href="/races/life-expectancy/"><span class="r-title">Global Life Expectancy Leaders</span><span class="r-span num">1900–2023 · 13 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">10</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">11</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">142</b><span>years covered</span></div>
+          <div class="fact"><b class="num">15</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Golden Gate Bridge</b><span>longest unbroken reign — 28 yrs at #1</span></div>
+          
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2025</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Çanakkale 1915 Bridge</span><span class="s-val num">2,023 m</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Akashi Kaikyō Bridge</span><span class="s-val num">1,991 m</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Yangsigang Bridge</span><span class="s-val num">1,700 m</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF6FA5" aria-hidden="true"></span><span class="s-label">Xihoumen Bridge</span><span class="s-val num">1,650 m</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Great Belt East Bridge</span><span class="s-val num">1,624 m</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Science races</h2><a href="/#science">See all 10 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/tallest-buildings/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="tallest-buildings" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Tallest Buildings</h3>
+        <p class="card-meta"><span>1899–2026</span><span>·</span><span>29 contenders</span><span>·</span><span>12 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">Burj Khalifa</span><span class="cl-val">828 m</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/supercomputers/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="supercomputers" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Fastest Supercomputers</h3>
+        <p class="card-meta"><span>1993–2026</span><span>·</span><span>27 contenders</span><span>·</span><span>19 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#EAB308" aria-hidden="true"></span><span class="cl-name">El Capitan</span><span class="cl-val">1.74 EFLOPS</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/nobel-by-country/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="nobel-by-country" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Nobel Prizes by Country</h3>
+        <p class="card-meta"><span>1901–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>1 lead change</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">430</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/life-expectancy/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="life-expectancy" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Global Life Expectancy Leaders</h3>
+        <p class="card-meta"><span>1900–2023</span><span>·</span><span>13 contenders</span><span>·</span><span>4 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#A3E635" aria-hidden="true"></span><span class="cl-name">Hong Kong</span><span class="cl-val">85.3 yrs</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/streaming-services/"><span class="dir">← Previous race</span>Streaming Wars</a>
-    <a href="/races/stock-exchanges/" style="text-align:right"><span class="dir">Next race →</span>Stock Exchanges</a>
+    <a href="/races/streaming-services/"><span class="dir">← Previous race</span>The Streaming Wars</a>
+    <a href="/races/stock-exchanges/" class="pg-next"><span class="dir">Next race →</span>Largest Stock Exchanges</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"tallest-buildings":{"entities":[{"label":"Burj Khalifa","color":"#FF5C4D"},{"label":"Taipei 101","color":"#FFB020"},{"label":"Petronas Towers","color":"#A3E635"},{"label":"Willis Tower (Sears)","color":"#23C8A8"},{"label":"Empire State Building","color":"#4C8DFF"},{"label":"40 Wall Street","color":"#D4D4D8"},{"label":"Woolworth Building","color":"#86EFAC"},{"label":"Met Life Tower","color":"#FDE68A"},{"label":"Philadelphia City Hall","color":"#C4B5A0"},{"label":"Park Row Building","color":"#94A3B8"},{"label":"Singer Building","color":"#FCA5A5"},{"label":"Merdeka 118","color":"#DC2626"},{"label":"Shanghai Tower","color":"#B388FF"},{"label":"Abraj Al-Bait Clock Tower","color":"#FF6FA5"}],"frames":[[0,0,0,0,0,0,0,0,0,119,0,0,0,0],[0,0,0,0,0,0,0,0,167,119,64.022,0,0,0],[0,0,0,0,0,0,0,0,167,119,181.473,0,0,0],[0,0,0,0,0,0,192.177,213,167,119,187,0,0,0],[0,0,0,0,0,58.665,241,213,167,119,187,0,0,0],[0,0,0,0,0,130.585,241,213,167,119,187,0,0,0],[0,0,0,0,0,202.505,241,213,167,119,187,0,0,0],[0,0,0,0,0,274.426,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,168.73,0,0,0],[0,0,0,0,381,283,241,213,167,119,123.055,0,0,0],[0,0,0,0,381,283,241,213,167,119,77.379,0,0,0],[0,0,0,0,381,283,241,213,167,119,31.704,0,0,0],[0,0,0,0,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,75.009,442,381,283,241,213,167,119,0,0,0,0],[0,0,323.414,442,381,283,241,213,167,119,0,0,0,0],[0,0,452,442,381,283,241,213,167,119,0,0,0,0],[0,508,452,442,381,283,241,213,167,119,0,0,0,0],[378.31,508,452,442,381,283,241,213,167,119,0,0,0,0],[828,508,452,442,381,283,241,213,167,119,0,0,0,601],[828,508,452,442,381,283,241,213,167,119,0,0,632,601],[828,508,452,442,381,283,241,213,167,119,0,526.81,632,601],[828,508,452,442,381,283,241,213,167,119,0,679,632,601]],"t0":1899,"t1":2026.5,"era":0},"supercomputers":{"entities":[{"label":"El Capitan","color":"#EAB308"},{"label":"Frontier","color":"#FF9E2C"},{"label":"Fugaku","color":"#DC2626"},{"label":"Sunway TaihuLight","color":"#A3E635"},{"label":"Tianhe-2A","color":"#FFD84D"},{"label":"TMC CM-5 (LANL)","color":"#94A3B8"},{"label":"Numerical Wind Tunnel","color":"#FF6FA5"},{"label":"Intel Paragon XP/S","color":"#C4B5A0"},{"label":"ASCI Red","color":"#FF5C4D"},{"label":"ASCI White","color":"#E2B93B"},{"label":"Earth Simulator","color":"#2FB4FF"},{"label":"Blue Gene/L","color":"#4C8DFF"},{"label":"Roadrunner","color":"#FFB020"},{"label":"Jaguar","color":"#FF8C42"}],"frames":[[0,0,0,0,0,10.776,0,0,0,0,0,0,0,0],[0,0,0,0,0,10.776,11.116,11.157,0,0,0,0,0,0],[0,0,0,0,0,10.776,11.23,11.157,0,0,0,0,0,0],[0,0,0,0,0,10.544,11.23,11.157,11.645,0,0,0,0,0],[0,0,0,0,0,0,11.23,11.157,12.085,0,0,0,0,0],[0,0,0,0,0,0,11.23,11.157,12.274,0,0,0,0,0],[0,0,0,0,0,0,10.467,10.393,12.368,0,0,0,0,0],[0,0,0,0,0,0,0,0,12.376,12.844,0,0,0,0],[0,0,0,0,0,0,0,0,12.376,12.859,13.555,0,0,0],[0,0,0,0,0,0,0,0,12.376,12.859,13.555,0,0,0],[0,0,0,0,0,0,0,0,12.376,12.859,13.555,13.715,0,0],[0,0,0,0,0,0,0,0,12.06,12.859,13.555,14.325,0,0],[0,0,0,0,0,0,0,0,0,12.396,13.555,14.448,0,0],[0,0,0,0,0,0,0,0,0,0,13.555,14.641,14.91,0],[0,0,0,0,0,0,0,0,0,0,12.393,14.68,15.041,14.994],[0,0,0,0,0,0,0,0,0,0,0,14.68,15.043,15.245],[0,0,0,0,0,0,0,0,0,0,0,14.579,15.043,15.245],[0,0,0,0,16.067,0,0,0,0,0,0,0,14.86,15.062],[0,0,0,0,16.53,0,0,0,0,0,0,0,0,0],[0,0,0,0,16.53,0,0,0,0,0,0,0,0,0],[0,0,0,16.849,16.53,0,0,0,0,0,0,0,0,0],[0,0,0,16.969,16.53,0,0,0,0,0,0,0,0,0],[0,0,0,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,0,16.855,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,0,17.627,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,17.694,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,18.063,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,18.08,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0],[18.177,18.125,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0],[18.241,18.131,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0]],"t0":1993.45,"t1":2026.45,"era":0},"nobel-by-country":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"Germany","color":"#FDE68A"},{"label":"United Kingdom","color":"#FF5C4D"},{"label":"France","color":"#2FB4FF"},{"label":"Sweden","color":"#FFD84D"},{"label":"Russia / USSR","color":"#C4B5A0"},{"label":"Netherlands","color":"#FFB020"}],"frames":[[0,4,1,3,1,1,1],[1.425,8.751,4.326,6.326,2.9,1.95,2.425],[2.851,13.502,7.651,9.651,4.801,2.9,3.851],[4.914,18.21,11.062,12.679,6.148,3.766,5.148],[7.052,22.914,14.483,15.672,7.431,4.621,6.431],[10.855,28.807,18.617,18.903,9.19,5.476,7.714],[15.986,35.648,23.321,22.324,11.328,6.331,8.997],[21.397,42.024,28.024,25.559,13.372,7.279,10.279],[27.81,46.728,32.728,28.124,15.083,8.562,11.562],[34.224,51.431,37.431,30.69,16.793,9.845,12.845],[42.517,55.759,43.262,34.007,18.503,11.128,13.752],[51.069,60.034,49.248,37.428,20.214,12.41,14.607],[64.241,64.541,56.159,40.848,21.693,14.617,15.462],[81.345,69.245,63.855,44.269,22.976,17.61,16.317],[99.741,73.776,71.207,47.431,24.259,20.517,17.172],[123.259,77.624,77.193,49.569,25.541,23.083,18.028],[146.776,81.472,83.179,51.707,26.824,25.648,18.883],[170.293,84.952,88.059,53.845,27.738,27.476,19.369],[193.81,88.372,92.762,55.983,28.593,29.186,19.797],[217.328,91.793,97.241,58.345,29.448,31.121,20.224],[240.845,95.214,101.517,60.91,30.303,33.259,20.652],[264.759,98.476,105.872,63.397,31.079,35.317,21.079],[290.414,101.041,110.576,65.534,31.507,37.028,21.507],[316.069,103.607,115.279,67.672,31.934,38.738,21.934],[338.103,105.448,119.621,69.448,32.362,40.086,22.724],[359.483,107.159,123.897,71.159,32.79,41.369,23.579],[378.69,109.303,128.607,73.303,33.434,42.869,24.434],[395.793,111.869,133.738,75.869,34,44.579,25.29],[412.897,114.579,139.014,78.434,34.145,46.29,26.145],[430,118,145,81,35,48,27]],"t0":1901,"t1":2025,"era":0},"life-expectancy":{"entities":[{"label":"Hong Kong","color":"#A3E635"},{"label":"Japan","color":"#34D399"},{"label":"Iceland","color":"#67E8F9"},{"label":"Norway","color":"#4C8DFF"},{"label":"Sweden","color":"#2FB4FF"},{"label":"Singapore","color":"#FF5C4D"},{"label":"Switzerland","color":"#23C8A8"},{"label":"Australia","color":"#FF8C42"},{"label":"Italy","color":"#FFB020"},{"label":"Canada","color":"#FF6FA5"},{"label":"Spain","color":"#FFD84D"}],"frames":[[39,44,48,52,55,34,49,51,43,50,35],[40.272,44,50.121,54.121,56.272,36.121,51.121,52.697,44.697,51.272,37.969],[41.545,44,52.241,56.241,57.545,38.241,53.241,54.393,46.393,52.545,40.938],[42.817,43.728,54.09,57.545,58.545,40.09,55.09,56.09,47.545,53.817,41.728],[44.09,43.303,55.786,58.393,59.393,41.786,56.786,57.786,48.393,55.09,41.303],[45.603,43.362,57.483,59.603,60.362,43.724,58.483,59.483,49.603,56.483,42.086],[47.724,44.634,59.179,61.724,61.634,46.269,60.179,61.179,51.724,58.179,45.903],[49.845,45.907,60.876,63.845,62.907,48.814,61.876,62.876,53.845,59.876,49.721],[51.966,47.572,62.572,64.786,64.179,50.572,63.179,63.786,54.786,61.179,50.786],[54.086,49.269,64.269,65.634,65.452,52.269,64.452,64.634,55.634,62.452,51.634],[56.448,52.414,66.69,67.448,67.207,54.69,65.966,65.966,58.414,64.207,54.414],[58.993,56.655,69.659,69.993,69.328,57.659,67.662,67.662,62.655,66.328,58.655],[61.538,60.717,72.179,72.134,71.188,60.448,69.224,69.17,66.314,68.269,62.628],[64.083,64.11,73.028,72.771,72.079,62.569,70.284,69.976,67.798,69.541,65.597],[66.628,67.503,73.876,73.407,72.97,64.69,71.345,70.782,69.283,70.814,68.566],[68.991,69.448,74.543,73.753,73.679,66.086,72.333,70.864,70.405,71.652,70.086],[71.324,71.145,75.179,74.05,74.358,67.359,73.308,70.821,71.466,72.415,71.359],[73.404,72.841,75.816,74.537,74.931,68.841,74.305,71.599,72.736,73.284,72.715],[75.228,74.538,76.452,75.215,75.398,70.538,75.323,73.211,74.221,74.259,74.157],[76.9,76.164,77.07,75.876,75.9,72.176,76.276,74.741,75.588,75.235,75.494],[77.621,77.352,77.579,76.428,76.621,73.448,76.828,75.759,76.224,76.21,76.172],[78.342,78.539,78.088,76.979,77.342,74.721,77.379,76.777,76.86,77.186,76.851],[79.328,79.561,78.895,77.63,78.195,75.993,78.228,77.728,77.927,77.996,77.761],[80.388,80.537,79.786,78.308,79.086,77.266,79.161,78.661,79.114,78.759,78.737],[81.359,81.441,80.587,79.112,79.941,78.717,80.148,79.648,80.194,79.559,79.784],[82.207,82.247,81.266,80.088,80.747,80.414,81.209,80.709,81.128,80.407,80.929],[83.072,83.044,81.955,81.061,81.539,82.088,82.255,81.739,82.083,81.244,82.055],[84.174,83.723,82.803,81.994,82.132,83.446,83.103,82.332,83.355,81.923,82.903],[85.146,84.364,83.182,82.946,83.046,84.54,83.952,83.058,83.594,82.564,83.752],[85.3,84.6,83.8,83.5,83.2,84.1,84.3,83.7,83.5,83,83.8]],"t0":1900,"t1":2023,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

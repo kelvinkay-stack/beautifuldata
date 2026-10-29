@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Windows Version Market Share (2009–2026) — Overtake">
   <meta name="twitter:description" content="The Windows upgrade cycle is a race where the incumbent usually refuses to leave. Animated bar chart race, 2009–2026.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/windows-versions.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Windows Version Market Share","description":"The Windows upgrade cycle is a race where the incumbent usually refuses to leave. XP lingers, Windows 7 becomes the beloved default, Windows 10 absorbs almost everything, and Windows 11 finally surges as Windows 10 support ends.","url":"https://beautifuldata.netlify.app/races/windows-versions/","temporalCoverage":"2009/2026","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://gs.statcounter.com/windows-version-market-share/desktop/worldwide"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="tech" data-race-id="windows-versions">
   <div class="race-head">
-    <p class="crumbs"><a href="/#tech">Technology &amp; Business</a><span aria-hidden="true">/</span><span>2009–2026</span></p>
+    <p class="crumbs"><a href="/#tech">Technology &amp; Business</a><span aria-hidden="true">/</span><span class="num">2009–2026</span></p>
     <h1>Windows Version Market Share</h1>
     <p class="blurb">The Windows upgrade cycle is a race where the incumbent usually refuses to leave. XP lingers, Windows 7 becomes the beloved default, Windows 10 absorbs almost everything, and Windows 11 finally surges as Windows 10 support ends.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>8 contenders</span><span>3 lead changes</span><span class="quality-flag">illustrative data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -77,83 +84,148 @@
   <p class="context-strip">
     <span>Source: <a href="https://gs.statcounter.com/windows-version-market-share/desktop/worldwide" rel="noopener">StatCounter Global Stats and Microsoft lifecycle dates</a></span>
     <span>Annualized global desktop Windows-version shares reconstructed from StatCounter monthly series; values are approximate.</span>
-    <span class="quality-flag">illustrative data</span>
     <span>Updated 2026-07-05</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">3</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">17</b><span>years covered</span></div>
-        <div class="fact"><b class="num">8</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Windows 10</b><span>longest reign — 7 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2026</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>4 different leaders in 17 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="2009" style="left:0.000%;width:17.647%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="Windows XP · 2009–2012" aria-label="Windows XP led 2009–2012. Jump there."><span>Windows XP</span></button><button type="button" class="reign" data-t="2012" style="left:17.647%;width:35.294%;--c:#23C8A8;--ink:rgba(255,255,255,0.95)" title="Windows 7 · 2012–2018" aria-label="Windows 7 led 2012–2018. Jump there."><span>Windows 7</span></button><button type="button" class="reign" data-t="2018" style="left:52.941%;width:41.176%;--c:#FFB020;--ink:rgba(11,14,20,0.88)" title="Windows 10 · 2018–2025" aria-label="Windows 10 led 2018–2025. Jump there."><span>Windows 10</span></button><button type="button" class="reign" data-t="2025" style="left:94.118%;width:5.882%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="Windows 11 · 2025–2026" aria-label="Windows 11 led 2025–2026. Jump there."></button></div>
+    <div class="reign-axis num"><span>2009</span><span>2026</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Windows 11</span><span class="s-val num">72.0%</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Windows 10</span><span class="s-val num">26.0%</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#23C8A8" aria-hidden="true"></span><span class="s-label">Windows 7</span><span class="s-val num">1.2%</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#94A3B8" aria-hidden="true"></span><span class="s-label">Other Windows</span><span class="s-val num">0.4%</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="s-label">Windows 8.1</span><span class="s-val num">0.2%</span></li>
+        <li><span class="h-label">Windows 10</span><span class="h-bar"><i style="width:100.0%;background:#FFB020"></i></span><span class="h-val num">7 yrs</span></li>
+        <li><span class="h-label">Windows 7</span><span class="h-bar"><i style="width:85.7%;background:#23C8A8"></i></span><span class="h-val num">6 yrs</span></li>
+        <li><span class="h-label">Windows XP</span><span class="h-bar"><i style="width:42.9%;background:#4C8DFF"></i></span><span class="h-val num">3 yrs</span></li>
+        <li><span class="h-label">Windows 11</span><span class="h-bar"><i style="width:14.3%;background:#FF5C4D"></i></span><span class="h-val num">1 yr</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="2011">
         <span class="m-year num">2011</span>
-        <span class="m-title">Windows 7 passes XP</span>
+        <span class="m-body"><span class="m-title">Windows 7 passes XP</span><span class="m-text">Windows 7 becomes the default PC experience after Vista's weak adoption.</span></span>
       </button></li>
       <li><button type="button" data-t="2015.6">
         <span class="m-year num">2015</span>
-        <span class="m-title">Windows 10 launches</span>
+        <span class="m-body"><span class="m-title">Windows 10 launches</span><span class="m-text">Microsoft pushes a free upgrade strategy and changes the slope of the chart.</span></span>
       </button></li>
       <li><button type="button" data-t="2021.8">
         <span class="m-year num">2021</span>
-        <span class="m-title">Windows 11 appears</span>
+        <span class="m-body"><span class="m-title">Windows 11 appears</span><span class="m-text">Windows 11 starts slowly because of hardware requirements and cautious upgrades.</span></span>
       </button></li>
       <li><button type="button" data-t="2025.8">
         <span class="m-year num">2025</span>
-        <span class="m-title">Windows 10 sunset</span>
+        <span class="m-body"><span class="m-title">Windows 10 sunset</span><span class="m-text">The support deadline finally pushes Windows 11 past Windows 10.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Tech &amp; Business races</h2>
-  <div class="related-grid">
-    <a href="/races/cloud-providers/"><span class="r-title">Cloud Infrastructure Share</span><span class="r-span num">2010–2025 · 9 contenders</span></a>
-    <a href="/races/browser-wars/"><span class="r-title">The Browser Wars</span><span class="r-span num">1995–2025 · 8 contenders</span></a>
-    <a href="/races/semiconductors/"><span class="r-title">Chipmakers by Revenue</span><span class="r-span num">1990–2024 · 16 contenders</span></a>
-    <a href="/races/market-cap/"><span class="r-title">Most Valuable Public Companies</span><span class="r-span num">1980–2025 · 21 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">3</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">4</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">17</b><span>years covered</span></div>
+          <div class="fact"><b class="num">8</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Windows 10</b><span>longest unbroken reign — 7 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#4 → #1</b><span>Windows 11 ranked #4 when it first appeared in 2021 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2026</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Windows 11</span><span class="s-val num">72.0%</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Windows 10</span><span class="s-val num">26.0%</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#23C8A8" aria-hidden="true"></span><span class="s-label">Windows 7</span><span class="s-val num">1.2%</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#94A3B8" aria-hidden="true"></span><span class="s-label">Other Windows</span><span class="s-val num">0.4%</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="s-label">Windows 8.1</span><span class="s-val num">0.2%</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Tech &amp; Business races</h2><a href="/#tech">See all 11 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/cloud-providers/" style="--accent:#4C8DFF;--accent-soft:rgba(76,141,255,0.14)">
+      <div class="card-preview"><canvas data-race="cloud-providers" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Cloud Infrastructure Share</h3>
+        <p class="card-meta"><span>2010–2025</span><span>·</span><span>9 contenders</span><span>·</span><span>1 lead change</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFB020" aria-hidden="true"></span><span class="cl-name">Amazon AWS</span><span class="cl-val">29.0%</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/browser-wars/" style="--accent:#4C8DFF;--accent-soft:rgba(76,141,255,0.14)">
+      <div class="card-preview"><canvas data-race="browser-wars" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>The Browser Wars</h3>
+        <p class="card-meta"><span>1995–2025</span><span>·</span><span>8 contenders</span><span>·</span><span>2 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFD84D" aria-hidden="true"></span><span class="cl-name">Chrome</span><span class="cl-val">66.0%</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/semiconductors/" style="--accent:#4C8DFF;--accent-soft:rgba(76,141,255,0.14)">
+      <div class="card-preview"><canvas data-race="semiconductors" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Chipmakers by Revenue</h3>
+        <p class="card-meta"><span>1990–2024</span><span>·</span><span>16 contenders</span><span>·</span><span>6 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#A3E635" aria-hidden="true"></span><span class="cl-name">NVIDIA</span><span class="cl-val">$115.0B</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/market-cap/" style="--accent:#4C8DFF;--accent-soft:rgba(76,141,255,0.14)">
+      <div class="card-preview"><canvas data-race="market-cap" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Most Valuable Public Companies</h3>
+        <p class="card-meta"><span>1980–2025</span><span>·</span><span>21 contenders</span><span>·</span><span>17 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#A3E635" aria-hidden="true"></span><span class="cl-name">Nvidia</span><span class="cl-val">$3.90T</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/solar-capacity/"><span class="dir">← Previous race</span>Solar Capacity</a>
-    <a href="/races/cloud-providers/" style="text-align:right"><span class="dir">Next race →</span>Cloud Providers</a>
+    <a href="/races/solar-capacity/"><span class="dir">← Previous race</span>Solar Power Capacity by Country</a>
+    <a href="/races/cloud-providers/" class="pg-next"><span class="dir">Next race →</span>Cloud Infrastructure Share</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"cloud-providers":{"entities":[{"label":"Amazon AWS","color":"#FFB020"},{"label":"Others","color":"#94A3B8"},{"label":"Microsoft Azure","color":"#4C8DFF"},{"label":"IBM Cloud","color":"#67E8F9"},{"label":"Google Cloud","color":"#34D399"},{"label":"Salesforce","color":"#2FB4FF"},{"label":"Alibaba Cloud","color":"#FF5C4D"}],"frames":[[18,65,1,8,1,6,0],[20.069,62.724,1.517,7.483,1,6,0.103],[22.172,60.369,2.034,6.983,1.034,5.983,0.21],[24.759,56.903,2.552,6.724,1.552,5.724,0.366],[27.276,53.41,3.138,6.466,2.069,5.466,0.534],[29.345,49.738,4.172,6.207,2.586,5.207,0.793],[31.103,46.366,5.207,5.948,3.103,4.948,1.052],[31.621,44.193,6.241,5.69,3.621,4.69,1.31],[32.138,42.145,7.276,5.431,4.138,4.431,1.569],[32.655,40.438,8.31,5.172,4.655,4.172,1.828],[33.172,38.559,9.345,4.914,5.172,3.914,2.172],[33.69,36.334,10.379,4.655,5.69,3.655,2.69],[33.793,34.483,11.414,4.397,6.207,3.397,3.207],[33.276,33.19,12.448,4.138,6.724,3.138,3.724],[33,31.534,13.483,3.879,7.241,3,4.241],[33,29.466,14.517,3.621,7.759,3,4.759],[32.724,28.224,15.552,3.362,8.138,2.862,5.138],[32.207,27.707,16.586,3.103,8.397,2.603,5.397],[32,26.724,17.621,3,8.655,2.345,5.655],[32,25.431,18.655,3,8.914,2.086,5.914],[32.345,23.621,19.69,3,9.345,2,6],[32.862,21.552,20.724,3,9.862,2,6],[32.621,20.81,21.379,3,10.379,2,5.621],[32.103,20.552,21.897,3,10.897,2,5.103],[31.586,20.293,22.828,3,11,2,4.586],[31.069,20.034,23.862,3,11,2,4.069],[30.552,19.552,24.448,3,11.448,2,4],[30.034,19.034,24.966,3,11.966,2,4],[29.517,19,24.517,3,12.483,2,4],[29,19,24,3,13,2,4]],"t0":2010,"t1":2025,"era":0},"browser-wars":{"entities":[{"label":"Chrome","color":"#FFD84D"},{"label":"Netscape Navigator","color":"#34D399"},{"label":"Internet Explorer","color":"#6E7BFF"},{"label":"Safari","color":"#2FB4FF"},{"label":"Firefox","color":"#FF8C42"},{"label":"Mosaic","color":"#C4B5A0"},{"label":"Edge","color":"#23C8A8"},{"label":"Opera","color":"#F43F5E"}],"frames":[[0,78,2.5,0,0,12,0,0],[0,79.517,9.655,0,0,4.879,0,0.207],[0,65.034,29.103,0,0,1.424,0,0.414],[0,50.034,45.966,0,0,0.359,0,0.621],[0,31.207,64.793,0,0,0,0,0.828],[0,18.448,77.724,0,0,0,0,1.017],[0,9.862,87.345,0,0,0,0,1.121],[0,4.897,92.983,0.121,0,0,0,1.2],[0,2.669,93.672,0.748,0.966,0,0,1.172],[0,1.552,89.793,1.586,5.052,0,0,1.1],[0,0.862,84.621,2.414,9.707,0,0,1.134],[0,0.524,80.103,3.693,13.328,0,0,1.276],[0,0.317,74.724,5.038,17.155,0,0,1.524],[1.748,0.11,66.39,4.814,24.431,0,0,1.834],[7.038,0,55.9,3.938,30.886,0,0,2],[16.452,0,46.538,4.972,28.817,0,0,1.948],[28.114,0,35.49,6.372,24.403,0,0,1.79],[37.69,0,27.386,7.879,20.648,0,0,1.524],[44.228,0,21.924,9.493,17.71,0,0,1.4],[49.672,0,16.328,10.821,14.245,0,0,1.662],[53.569,0,9.672,12.441,9.797,0,1.103,2.007],[55.948,0,5.4,13.941,6.952,0,1.817,2.462],[58.852,0,3.538,14.679,5.717,0,2.052,2.828],[62.217,0,2.566,15.831,4.786,0,2.417,2.503],[63.893,0,1.655,17.507,4.103,0,2.831,2.234],[64.359,0,0.897,18.49,3.655,0,3.676,2.286],[64.579,0,0.441,18.959,3.241,0,4.159,2.39],[63.669,0,0.028,19.466,3.014,0,4.945,2.772],[65.145,0,0,18.631,2.807,0,5.193,2.607],[66,0,0,17.9,2.6,0,5.3,2.3]],"t0":1995,"t1":2025,"era":0},"semiconductors":{"entities":[{"label":"NVIDIA","color":"#A3E635"},{"label":"TSMC","color":"#FF5C4D"},{"label":"Samsung","color":"#2FB4FF"},{"label":"Intel","color":"#4C8DFF"},{"label":"NEC","color":"#8B5CF6"},{"label":"Toshiba / Kioxia","color":"#34D399"},{"label":"SK Hynix","color":"#FF6FA5"},{"label":"Texas Instruments","color":"#FFD84D"},{"label":"Motorola","color":"#23C8A8"},{"label":"Hitachi","color":"#94A3B8"},{"label":"Qualcomm","color":"#6E7BFF"},{"label":"Micron","color":"#B388FF"}],"frames":[[0,0.1,1.5,3.1,4.9,4.8,0.4,2.4,3,3.9,0,0.3],[0,0.217,1.986,4.19,4.817,4.717,0.534,2.586,3.369,3.9,0,0.417],[0,0.334,2.641,5.962,5.245,5.041,0.803,3.345,4.045,4.21,0,0.603],[0,0.503,4.083,8.79,6.469,6.069,1.362,4.776,5.579,5.369,0,1.214],[0,0.807,7.345,12.452,10.034,9.083,2.597,7.155,7.848,8.314,0.138,2.497],[0,1.159,6.59,17.221,10.107,8.734,2.397,7.21,8.069,7.848,0.372,2.469],[0.103,1.403,5.859,21.155,8.641,7.448,2.403,7.376,8.059,6.241,0.71,3.483],[0.241,1.666,5.197,23.548,7.29,6.331,2.976,6.886,7.003,4.766,1.083,3.166],[0.514,3.438,8.428,28.09,9.197,8.852,4.914,8.207,7.59,6.159,1.628,4.748],[1.031,4.417,8.559,26.503,8.128,8.638,3.776,7.49,6.245,5.634,1.945,4.976],[1.734,4.424,8.928,23.5,5.693,6.583,2.845,6.607,4.828,3.983,2.262,2.886],[1.81,5.776,10.417,26.638,6.307,7.307,3.438,7.338,4.89,0.403,2.938,3.038],[2.028,7.641,16.031,31.024,6.831,9.007,5.693,9.341,0,0,3.955,4.428],[2.569,8.562,18.259,34.483,5.852,9.317,6.034,10.383,0,0,4.893,4.897],[3.514,9.741,19.783,32.593,5.7,10.745,8.103,11.859,0,0,5.541,5.407],[3.69,10.269,18.141,34.293,5.407,10.979,7.4,11.39,0,0,6.128,5.817],[3.324,9.386,17.355,32.907,4.745,9.793,6.048,9.962,0,0,6.424,5.066],[3.486,13.003,27.369,39.848,0.317,12.766,10.097,12.766,0,0,7.145,8.245],[4.031,14.769,28.797,47.321,0,12.483,9.279,12.817,0,0,10.241,8.538],[4.245,17.928,30.528,47.334,0,10.683,10.066,11.962,0,0,14.303,9.076],[4.369,22.341,32.707,48.917,0,9.824,13.99,11.869,0,0,18.141,13.917],[4.886,26.031,36.914,51.586,0,8.686,16.445,11.952,0,0,17.252,14.972],[6.507,28.821,39.645,53.603,0,9.593,15.155,11.879,0,0,15.524,13.148],[9.603,32.007,60.472,57.576,0,12.697,25.9,13.831,0,0,16.076,22.555],[11.59,34.255,72.631,66.162,0,10.559,34.31,14.607,0,0,16.014,29.152],[12.7,37.983,53.907,69.352,0,8.669,23.834,13.462,0,0,14.841,20.69],[21.624,50.955,65.183,72.945,0,11.71,31.821,15.386,0,0,22.186,25.186],[26.966,69.314,68.221,63.469,0,11.131,34.776,18.283,0,0,32.079,27.945],[55.055,70.438,44.331,50.372,0,8.379,25.39,16.897,0,0,29.983,18.166],[115,88.1,66.5,49.8,0,11.5,42.8,14.7,0,0,32.4,27.6]],"t0":1990,"t1":2024,"era":0},"market-cap":{"entities":[{"label":"Nvidia","color":"#A3E635"},{"label":"Microsoft","color":"#23C8A8"},{"label":"Apple","color":"#D4D4D8"},{"label":"Saudi Aramco","color":"#86EFAC"},{"label":"IBM","color":"#4C8DFF"},{"label":"AT&T","color":"#2FB4FF"},{"label":"Exxon / ExxonMobil","color":"#F43F5E"},{"label":"General Electric","color":"#94A3B8"},{"label":"NTT","color":"#67E8F9"},{"label":"Alphabet (Google)","color":"#FFB020"},{"label":"Industrial Bank of Japan","color":"#C4B5A0"},{"label":"PetroChina","color":"#B45309"},{"label":"Walmart","color":"#FFD84D"},{"label":"Intel","color":"#8B5CF6"}],"frames":[[0,0,0,0,39,48,35,13,0,0,0,0,0,0],[0,0,0,0,46.69,48.103,28.241,17.862,0,0,0,0,0,0],[0,0,0,0,75,56.655,32.621,26.897,0,0,0,0,0,0],[0,0,0,0,88.103,20.31,39.966,30.586,0,0,0,0,0,0],[0,1.207,0,0,81.897,25.414,48.621,39.034,59.483,0,28.276,0,0,0],[0,4.276,0,0,70.759,28.517,55.552,42.241,255.517,0,82.759,0,0,0],[0,8.552,0,0,61.931,32.621,63.31,50.69,149.724,0,92.207,0,0,0],[0,20.621,0,0,52.793,38.31,74.345,63.793,97.31,0,55.655,0,57.759,8.621],[0,25.828,0,0,30.241,59.276,77.241,79.621,74.103,0,46.345,0,66.966,17.793],[0,35.69,0,0,42.621,76.793,76.103,87.069,72.897,0,40.138,0,49.276,26.966],[0,75.793,0,0,63.448,83.379,110.379,142.241,67.586,0,16.897,0,51.517,83.862],[0,169.034,0,0,103.897,65.862,156.276,246.483,85.345,0,0,0,96.207,120.655],[0,492.724,0,0,184.897,159.276,263.966,441.379,127.241,0,0,0,258.828,245.414],[0,252.897,0,0,159.172,85.69,296.138,461.724,113.103,0,0,0,240.276,203.379],[0,298.621,0,0,152.241,17.931,244.103,285.034,65.517,0,0,0,232.103,133.241],[0,293.897,7.172,0,158.172,0,286.724,331.69,44.897,14.345,0,0,227.345,190.897],[0,274.448,54.966,0,133.655,0,341.241,372.759,0,110.759,0,0,199.828,149.31],[0,307.172,110.69,0,90,0,466.31,379.966,0,169.448,0,398.759,194.517,0],[0,183.034,82.759,0,105.207,0,413.241,175.759,0,105.207,0,292,218.414,0],[0,254.034,241.655,0,175.862,0,342.793,182.069,0,193.621,0,328.862,199.207,0],[0,218.207,380.276,0,216.897,0,400.793,190.069,0,209.793,0,239.655,204.862,0],[0,275,500,0,204.034,0,420.793,255.172,0,315.828,0,212.414,243.655,0],[0,390.414,635.276,0,0,0,379.172,257.586,0,383.172,0,241.379,265.828,0],[40,470.586,608.379,0,0,0,358.483,279.31,0,535.586,0,0,207.724,0],[108.552,688.966,833.966,1.207,0,0,339.069,0,0,727.793,0,0,287.69,0],[131.172,1113.103,1178.069,1492.069,0,0,59.793,0,0,880.241,0,0,323.345,0],[465.069,1969.655,2477.414,1900,0,0,0,0,0,1438.448,0,0,412.862,0],[397.897,1865.517,2155.862,1900,0,0,0,0,0,1225.172,0,0,385.276,0],[2143.448,2942.414,3348.621,1993.103,0,0,0,0,0,2032.414,0,0,559.483,0],[3900,3700,3200,1600,0,0,0,0,0,2400,0,0,770,0]],"t0":1980,"t1":2025,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

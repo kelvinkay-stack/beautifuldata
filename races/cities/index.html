@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="World’s Most Populous Cities (600–2025) — Overtake">
   <meta name="twitter:description" content="The largest-city race is the story of world urbanization moving east, west, then east again. Animated bar chart race, 600–2025.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/cities.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"World’s Most Populous Cities","description":"The largest-city race is the story of world urbanization moving east, west, then east again. Ancient capitals yield to imperial London and New York, before Tokyo, Shanghai, Delhi and Lagos reveal the scale of the modern megacity.","url":"https://beautifuldata.netlify.app/races/cities/","temporalCoverage":"600/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://population.un.org/wup/"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="science" data-race-id="cities">
   <div class="race-head">
-    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span>600–2025</span></p>
+    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span class="num">600–2025</span></p>
     <h1>World’s Most Populous Cities</h1>
     <p class="blurb">The largest-city race is the story of world urbanization moving east, west, then east again. Ancient capitals yield to imperial London and New York, before Tokyo, Shanghai, Delhi and Lagos reveal the scale of the modern megacity.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>16 contenders</span><span>6 lead changes</span><span class="quality-flag">illustrative data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -77,83 +84,150 @@
   <p class="context-strip">
     <span>Source: <a href="https://population.un.org/wup/" rel="noopener">Chandler, UN World Urbanization Prospects and citypopulation.de</a></span>
     <span>Urban agglomeration estimates at broad historical intervals; pre-1900 values are especially approximate.</span>
-    <span class="quality-flag">illustrative data</span>
     <span>Updated 2026-07-03</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">6</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">1,425</b><span>years covered</span></div>
-        <div class="fact"><b class="num">16</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Beijing</b><span>longest reign — 450 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2025</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>7 different leaders in 1,425 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="600" style="left:0.000%;width:28.070%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="Chang'an / Xi'an · 600–1000" aria-label="Chang'an / Xi'an led 600–1000. Jump there."><span>Chang'an / Xi'an</span></button><button type="button" class="reign" data-t="1000" style="left:28.070%;width:14.035%;--c:#2FB4FF;--ink:rgba(255,255,255,0.95)" title="Baghdad · 1000–1200" aria-label="Baghdad led 1000–1200. Jump there."><span>Baghdad</span></button><button type="button" class="reign" data-t="1200" style="left:42.105%;width:14.035%;--c:#67E8F9;--ink:rgba(11,14,20,0.88)" title="Kaifeng · 1200–1400" aria-label="Kaifeng led 1200–1400. Jump there."><span>Kaifeng</span></button><button type="button" class="reign" data-t="1400" style="left:56.140%;width:31.579%;--c:#34D399;--ink:rgba(11,14,20,0.88)" title="Beijing · 1400–1850" aria-label="Beijing led 1400–1850. Jump there."><span>Beijing</span></button><button type="button" class="reign" data-t="1850" style="left:87.719%;width:7.018%;--c:#A3E635;--ink:rgba(11,14,20,0.88)" title="London · 1850–1950" aria-label="London led 1850–1950. Jump there."></button><button type="button" class="reign" data-t="1950" style="left:94.737%;width:1.404%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="New York · 1950–1970" aria-label="New York led 1950–1970. Jump there."></button><button type="button" class="reign" data-t="1970" style="left:96.140%;width:3.860%;--c:#FFB020;--ink:rgba(11,14,20,0.88)" title="Tokyo · 1970–2025" aria-label="Tokyo led 1970–2025. Jump there."></button></div>
+    <div class="reign-axis num"><span>600</span><span>2025</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Tokyo</span><span class="s-val num">37.1M</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Jakarta</span><span class="s-val num">35.4M</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FF6FA5" aria-hidden="true"></span><span class="s-label">Delhi</span><span class="s-val num">34.7M</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">Shanghai</span><span class="s-val num">29.9M</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Sao Paulo</span><span class="s-val num">22.8M</span></li>
+        <li><span class="h-label">Beijing</span><span class="h-bar"><i style="width:100.0%;background:#34D399"></i></span><span class="h-val num">450 yrs</span></li>
+        <li><span class="h-label">Chang'an / Xi'an</span><span class="h-bar"><i style="width:88.9%;background:#4C8DFF"></i></span><span class="h-val num">400 yrs</span></li>
+        <li><span class="h-label">Baghdad</span><span class="h-bar"><i style="width:44.4%;background:#2FB4FF"></i></span><span class="h-val num">200 yrs</span></li>
+        <li><span class="h-label">Kaifeng</span><span class="h-bar"><i style="width:44.4%;background:#67E8F9"></i></span><span class="h-val num">200 yrs</span></li>
+        <li><span class="h-label">London</span><span class="h-bar"><i style="width:22.2%;background:#A3E635"></i></span><span class="h-val num">100 yrs</span></li>
+        <li><span class="h-label">Tokyo</span><span class="h-bar"><i style="width:12.2%;background:#FFB020"></i></span><span class="h-val num">55 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="800">
         <span class="m-year num">800</span>
-        <span class="m-title">Chang'an reaches a million</span>
+        <span class="m-body"><span class="m-title">Chang'an reaches a million</span><span class="m-text">Tang-era Chang’an becomes one of history’s first truly million-person capitals.</span></span>
       </button></li>
       <li><button type="button" data-t="1850">
         <span class="m-year num">1850</span>
-        <span class="m-title">London industrializes</span>
+        <span class="m-body"><span class="m-title">London industrializes</span><span class="m-text">Industrial Britain turns London into the first modern megacity.</span></span>
       </button></li>
       <li><button type="button" data-t="1950">
         <span class="m-year num">1950</span>
-        <span class="m-title">Tokyo surges after war</span>
+        <span class="m-body"><span class="m-title">Tokyo surges after war</span><span class="m-text">Postwar Japan begins the growth wave that will make Tokyo the largest urban area on Earth.</span></span>
       </button></li>
       <li><button type="button" data-t="2020">
         <span class="m-year num">2020</span>
-        <span class="m-title">Delhi closes on Tokyo</span>
+        <span class="m-body"><span class="m-title">Delhi closes on Tokyo</span><span class="m-text">India’s capital region becomes the leading challenger to Tokyo’s long megacity reign.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Science races</h2>
-  <div class="related-grid">
-    <a href="/races/busiest-airports/"><span class="r-title">World's Busiest Airports</span><span class="r-span num">1998–2025 · 13 contenders</span></a>
-    <a href="/races/wind-capacity/"><span class="r-title">Wind Power Capacity by Country</span><span class="r-span num">2000–2024 · 12 contenders</span></a>
-    <a href="/races/nuclear-generation/"><span class="r-title">Nuclear Power Generation</span><span class="r-span num">2000–2025 · 12 contenders</span></a>
-    <a href="/races/airlines/"><span class="r-title">World's Largest Airlines</span><span class="r-span num">1970–2024 · 16 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">6</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">7</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">1,425</b><span>years covered</span></div>
+          <div class="fact"><b class="num">16</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Beijing</b><span>longest unbroken reign — 450 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#9 → #1</b><span>Tokyo ranked #9 when it first appeared in 1200 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2025</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Tokyo</span><span class="s-val num">37.1M</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Jakarta</span><span class="s-val num">35.4M</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FF6FA5" aria-hidden="true"></span><span class="s-label">Delhi</span><span class="s-val num">34.7M</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">Shanghai</span><span class="s-val num">29.9M</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Sao Paulo</span><span class="s-val num">22.8M</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Science races</h2><a href="/#science">See all 10 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/busiest-airports/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="busiest-airports" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Busiest Airports</h3>
+        <p class="card-meta"><span>1998–2025</span><span>·</span><span>13 contenders</span><span>·</span><span>2 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">Atlanta ATL</span><span class="cl-val">106.0M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/wind-capacity/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="wind-capacity" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Wind Power Capacity by Country</h3>
+        <p class="card-meta"><span>2000–2024</span><span>·</span><span>12 contenders</span><span>·</span><span>2 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">China</span><span class="cl-val">521.3 GW</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/nuclear-generation/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="nuclear-generation" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Nuclear Power Generation</h3>
+        <p class="card-meta"><span>2000–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">785 TWh</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/airlines/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="airlines" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Largest Airlines</h3>
+        <p class="card-meta"><span>1970–2024</span><span>·</span><span>16 contenders</span><span>·</span><span>5 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#94A3B8" aria-hidden="true"></span><span class="cl-name">American</span><span class="cl-val">226M pax</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/life-expectancy/"><span class="dir">← Previous race</span>Life Expectancy</a>
-    <a href="/races/busiest-airports/" style="text-align:right"><span class="dir">Next race →</span>Busiest Airports</a>
+    <a href="/races/life-expectancy/"><span class="dir">← Previous race</span>Global Life Expectancy Leaders</a>
+    <a href="/races/busiest-airports/" class="pg-next"><span class="dir">Next race →</span>World's Busiest Airports</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"busiest-airports":{"entities":[{"label":"Atlanta ATL","color":"#4C8DFF"},{"label":"Dubai DXB","color":"#FFD84D"},{"label":"Dallas/Fort Worth DFW","color":"#23C8A8"},{"label":"Chicago ORD","color":"#67E8F9"},{"label":"Beijing Capital PEK","color":"#FF5C4D"},{"label":"Tokyo Haneda HND","color":"#FF6FA5"},{"label":"London Heathrow LHR","color":"#B388FF"},{"label":"Denver DEN","color":"#A3E635"},{"label":"Guangzhou CAN","color":"#F43F5E"},{"label":"Los Angeles LAX","color":"#FFB020"}],"frames":[[73.5,10,60.4,72.1,17,53,60.7,35,8,61.2],[76.619,11.071,60.54,72.1,19.188,54.583,62.516,36.769,10.141,64.04],[79.738,12.141,60.679,72.1,21.376,56.166,64.331,38.538,12.283,66.879],[78.891,13.767,57.567,69.919,23.881,58.105,64.084,37.571,13.948,62.898],[77.355,15.49,53.89,67.359,26.441,60.107,63.479,36.128,15.531,57.731],[79.095,17.867,54.962,69.516,29.722,61.224,64.545,37.862,17.409,57.674],[82.214,20.521,58.034,73.659,33.307,61.969,66.314,40.934,19.41,59.769],[83.91,23.536,59.607,75.707,38.417,63.205,67.203,43.593,21.826,60.778],[84.469,26.841,59.979,76.079,44.748,64.834,67.39,45.921,24.572,60.917],[85.786,30.431,59.612,74.991,49.903,65.99,67.424,48.04,27.566,60.772],[88.207,34.434,58.169,71.779,53.348,66.455,67.238,49.855,30.917,60.214],[89.916,38.583,57.076,69.086,58.072,66.486,66.955,51.321,34.305,59.716],[89.59,43.145,56.983,67.876,66.452,65.276,66.397,51.786,37.797,59.39],[89.621,47.743,56.988,66.79,74.314,64.334,66.112,52.252,41.283,59.338],[92.507,52.631,57.779,66.697,78.038,65.545,68.021,52.717,44.728,61.479],[95.393,57.519,58.571,66.603,81.762,66.755,69.929,53.183,48.172,63.621],[95.814,63.438,60.797,68.169,83.783,69.49,71.524,53.334,51.214,66.838],[96.14,69.397,63.078,69.798,85.738,72.283,73.107,53.474,54.24,70.097],[99.234,75.507,64.334,73.21,89.248,75.417,74.272,55.321,56.659,74.569],[102.959,81.652,65.359,77.028,93.112,78.629,75.343,57.555,58.94,79.317],[105.193,85.376,66.755,79.821,96.448,81.997,77.066,60.224,62.834,82.948],[106.683,87.89,68.338,82.102,99.521,85.441,79.114,63.11,67.536,86.021],[108.897,87.797,71.997,83.876,100.517,87.1,80.486,66.672,71.538,87.79],[82.528,61.366,60.328,62.379,72.897,63.721,56.569,54.393,61.152,63.562],[54.21,27.003,47.366,38.866,33.845,29.014,21.169,42.355,42.593,35.421],[80.666,39.307,65.507,57.945,27.11,32.814,31.041,61.697,36.383,52.938],[95.976,70.424,75.138,69.459,21.017,56.493,65.241,71.059,33.776,67.803],[105.169,87.731,82.628,74.741,54.941,79.693,79.848,78.434,65.021,75.307],[107.955,92.417,87.676,80.069,67.928,86.045,83.907,82.234,76.579,76.628],[106,94,86,81,71,88,84,80,79,77]],"t0":1998,"t1":2025,"era":0},"wind-capacity":{"entities":[{"label":"China","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"Germany","color":"#FDE68A"},{"label":"Spain","color":"#F43F5E"},{"label":"India","color":"#FFB020"},{"label":"Brazil","color":"#34D399"},{"label":"United Kingdom","color":"#B388FF"},{"label":"Italy","color":"#A3E635"}],"frames":[[0.341,2.377,6.095,2.206,0.941,0.019,0.435,0.363],[0.386,3.221,8.539,3.317,1.216,0.019,0.476,0.536],[0.43,4.065,10.983,4.428,1.491,0.02,0.518,0.708],[0.525,4.909,13.067,5.718,2.139,0.021,0.631,0.864],[0.655,5.753,14.896,7.136,3.052,0.023,0.796,1.007],[0.853,6.792,16.699,8.552,3.986,0.039,1.003,1.18],[1.394,8.808,18.377,9.961,5.021,0.125,1.426,1.501],[1.935,10.825,20.055,11.37,6.056,0.211,1.849,1.822],[4.031,15.463,21.194,13.222,7.534,0.266,2.418,2.406],[6.645,20.976,22.154,15.222,9.159,0.31,3.035,3.077],[11.318,26.649,23.361,17.126,10.649,0.421,3.718,3.838],[20.109,32.642,25.061,18.838,11.866,0.666,4.536,4.777],[28.9,38.636,26.761,20.55,13.083,0.911,5.353,5.716],[41.757,46.698,28.449,21.488,14.745,1.299,6.79,6.669],[54.984,54.949,30.136,22.355,16.448,1.7,8.283,7.624],[68.884,60.142,32.559,22.817,18.369,2.548,9.867,8.222],[83.459,62.276,35.718,22.873,20.506,3.843,11.54,8.463],[98.602,64.82,38.987,22.927,22.68,5.212,13.179,8.707],[119.994,71.877,43.465,22.954,25.26,7.402,14.442,8.997],[141.386,78.934,47.942,22.981,27.84,9.592,15.705,9.287],[158.489,84.936,51.997,23.104,30.517,11.478,17.638,9.617],[173.447,90.411,55.839,23.276,33.243,13.213,19.905,9.967],[194.733,96.996,59.081,23.758,35.626,14.794,21.901,10.296],[235.007,106.911,60.521,25.171,36.98,15.912,23.081,10.562],[275.281,116.826,61.961,26.584,38.333,17.031,24.261,10.827],[310.949,126.417,63.581,27.955,39.721,19.624,25.942,11.199],[345.695,135.944,65.236,29.319,41.116,22.511,27.722,11.592],[392.74,143.424,67.344,30.407,43.005,25.707,29.345,12.023],[457.003,148.038,70.083,31.109,45.584,29.333,30.745,12.507],[521.266,152.653,72.823,31.811,48.163,32.959,32.146,12.992]],"t0":2000,"t1":2024,"era":0},"nuclear-generation":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"China","color":"#FF5C4D"},{"label":"France","color":"#2FB4FF"},{"label":"Russia","color":"#F43F5E"},{"label":"Japan","color":"#FF6FA5"},{"label":"South Korea","color":"#B388FF"},{"label":"Germany","color":"#FDE68A"}],"frames":[[753.89,16.74,415.16,130.71,319.12,108.96,169.61],[765.17,20.356,424.47,135.417,317.025,113.331,167.554],[776.45,23.973,433.781,140.124,314.93,117.701,165.498],[782.543,32.557,440.125,142.533,305.939,122.503,165.494],[786.193,43.48,445.073,143.86,293.702,127.507,166.455],[788.327,51.148,448.543,146.53,288.728,133.509,167.101],[787.762,53.032,449.383,151.586,296.668,141.285,167.187],[787.547,55.074,450.005,156.554,303.384,148.788,166.946],[795.733,60.914,445.376,159.417,280.733,149.741,158.851],[803.918,66.755,440.746,162.279,258.082,150.693,150.757],[806.446,70.361,436.058,165.355,264.346,150.228,146.029],[806.773,73.098,431.347,168.514,281.855,149.21,142.611],[800.48,78.806,427.984,171.638,245.055,148.898,133.474],[784.256,88.969,426.643,174.707,126.792,149.644,115.758],[770.29,99.523,425.792,177.641,17.37,150.54,99.38],[782.29,114.567,430.563,179.034,9.615,153.16,98.375],[794.29,129.61,435.335,180.426,1.861,155.781,97.371],[799.961,159.414,425.578,185.952,5.792,158.238,93.035],[803.633,193.879,411.233,192.784,13.412,160.643,87.647],[805.954,228.698,405.047,198.122,23.641,156.589,82.993],[806.553,263.965,409.246,201.557,37.188,144.313,79.273],[806.19,298.683,409.883,205.166,48.794,134.889,75.399],[798.777,329.372,384.404,210.05,46.16,146.385,70.39],[791.363,360.062,358.926,214.933,43.527,157.881,65.382],[783.556,383.986,333.451,218.596,46.024,165.652,54.149],[775.651,406.219,307.977,221.954,49.804,172.493,41.36],[772.918,424.79,312.718,221.085,62.4,177.887,23.335],[776.798,439.17,349.855,216.919,79.515,182.769,5.228],[782.263,455.92,382.053,216.116,86.176,188.187,0],[784.78,487.61,392.07,218.65,94.09,184.67,0]],"t0":2000,"t1":2025,"era":0},"airlines":{"entities":[{"label":"American","color":"#94A3B8"},{"label":"Delta","color":"#FF5C4D"},{"label":"Aeroflot","color":"#E2B93B"},{"label":"United","color":"#2FB4FF"},{"label":"Southwest","color":"#6E7BFF"},{"label":"China Southern","color":"#23C8A8"},{"label":"Eastern","color":"#67E8F9"},{"label":"Ryanair","color":"#FFB020"},{"label":"Air France-KLM","color":"#86EFAC"},{"label":"Lufthansa","color":"#FFD84D"}],"frames":[[21,22,71,27,0,0,24,0,7,8],[21.621,25.724,79.069,28.862,0.621,0,25.862,0,8.241,9.241],[22,28.724,86.897,30,1,0,27.362,0,9.362,10.362],[22.586,30.586,93.759,30.586,1.586,0,28.586,0,10,11.586],[24.448,33.897,98.379,32.931,3.448,0,31.897,0,10.483,12.483],[26.414,36.897,102.414,34.793,5.31,0,35.103,0,11.103,13.103],[28.897,36.276,104.897,33.552,7.172,0,35.724,0,11.724,13.724],[33.621,37.034,108.069,35.586,9.034,0,38.069,0,12.517,14.517],[40.586,38.897,111.793,39.793,11.793,0,41.793,0,13,15.897],[54.483,50.138,119.621,48.793,14.931,0,39.655,0,13.586,18.345],[67.103,60.483,128.724,55,18.241,0,28.069,0,14.621,21.241],[74.448,66.931,127.828,59.931,20.966,0,9.31,0,15.483,25.448],[84.966,79.759,44.655,68.034,31.103,2.759,0,0,16,29.69],[80.897,88.034,14.586,74.828,43.724,10.414,0,2.103,16.103,33.517],[80.069,97.276,10.966,82.172,50.103,14.034,0,3.069,17.552,38.103],[81.931,104.724,10.034,86.828,52.897,14.966,0,4.931,32.448,40.897],[85.586,105.897,5.517,84.31,61.966,15.897,0,6.793,40.172,46.379],[92.621,104.345,5,71.586,63,20.138,0,13.621,42.655,44.517],[91.724,108.552,5.759,70.517,69.069,26.31,0,24.103,58.931,49.31],[96.517,107.241,6.69,69.621,79.276,42.483,0,35.966,70.207,52.379],[95.276,105.379,8.241,60.931,86.724,54.586,0,46.828,73.621,55.483],[89.138,137,10.103,54.897,88.448,67.931,0,62.586,72.345,58.103],[86,163.966,14.379,72.828,98.138,80.828,0,75.379,74.379,61.897],[110.828,167.483,20.069,92.172,117.276,92.207,0,82.31,81.724,65.414],[164.276,175.483,25.069,108.931,136.586,105.828,0,97.345,89.069,64.621],[200.379,186.207,30.931,147.138,154.31,121.897,0,123.069,95.207,64.207],[208.552,196.966,36.414,159.655,163,144.966,0,143.138,102.241,70.414],[114.31,91.966,15.931,70.69,83.172,97.276,0,48.207,37.034,15.483],[200.655,168.448,21.552,146.897,159.793,73.034,0,163.034,84.517,48.793],[226,200,28,174,174,165,0,197,98,65]],"t0":1970,"t1":2024,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

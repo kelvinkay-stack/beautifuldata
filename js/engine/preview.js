@@ -97,11 +97,25 @@ class MiniRace {
     }
 
     ctx.clearRect(0, 0, w, h);
+
+    // year watermark, bottom-right — the clock that makes it a race
+    if (pv.t1 != null) {
+      const t = pv.t0 + (pv.t1 - pv.t0) * (fi / (F.length - 1));
+      ctx.font = `800 ${Math.round(h * 0.2)}px "Bricolage Grotesque", -apple-system, sans-serif`;
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'alphabetic';
+      ctx.fillStyle = 'rgba(255,255,255,0.09)';
+      ctx.fillText(yearLabel(t, pv.era), w - 10, h - 9);
+    }
+
     const shown = Math.min(5, pv.entities.length);
     const rowH = h / (shown + 0.6);
-    const barH = rowH * 0.58;
+    const barH = rowH * 0.62;
     const padX = 10;
     const plotW = w - padX * 2;
+    const fontPx = Math.max(9, Math.min(12, barH * 0.62));
+    ctx.font = `600 ${fontPx}px -apple-system, "Segoe UI", Roboto, sans-serif`;
+    ctx.textBaseline = 'middle';
 
     for (let e = 0; e < pv.entities.length; e++) {
       const rf = this.rankF[e];
@@ -109,14 +123,40 @@ class MiniRace {
       const v = vals[e];
       if (v <= 0) continue;
       const y = rowH * 0.45 + rf * rowH;
-      const bw = Math.max(2, (v / max) * plotW * 0.94);
+      const bw = Math.max(2, (v / max) * plotW * 0.78);
       ctx.globalAlpha = Math.min(1, shown - rf);
       ctx.fillStyle = pv.entities[e].color;
-      rr(ctx, padX, y, bw, barH, 2.5);
+      rr(ctx, padX, y, bw, barH, 3);
       ctx.fill();
+
+      // name inside the bar when it fits, otherwise just past its nose
+      const label = pv.entities[e].label;
+      const tw = ctx.measureText(label).width;
+      const cy = y + barH / 2 + 0.5;
+      if (bw > tw + 14) {
+        ctx.textAlign = 'right';
+        ctx.fillStyle = ink(pv.entities[e].color);
+        ctx.fillText(label, padX + bw - 6, cy);
+      } else {
+        ctx.textAlign = 'left';
+        ctx.fillStyle = 'rgba(242,244,248,0.82)';
+        ctx.fillText(label, padX + bw + 6, cy);
+      }
     }
     ctx.globalAlpha = 1;
   }
+}
+
+function yearLabel(t, era) {
+  const y = Math.floor(t);
+  if (era) return y < 0 ? `${-y} BCE` : y < 1000 ? `${y} CE` : String(y);
+  return String(y);
+}
+
+function ink(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  const lum = 0.299 * ((n >> 16) & 255) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255);
+  return lum > 150 ? 'rgba(11,14,20,0.88)' : 'rgba(255,255,255,0.95)';
 }
 
 function rr(ctx, x, y, w, h, r) {

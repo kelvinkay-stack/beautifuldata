@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="America's Top Baby Girl Names (1900–2024) — Overtake">
   <meta name="twitter:description" content="How many newborn American girls got each name, year by year, from Social Security card records. Animated bar chart race, 1900–2024.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/baby-names.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"America's Top Baby Girl Names","description":"How many newborn American girls got each name, year by year, from Social Security card records. Mary rules for six decades until a 1947 pop song makes Linda the biggest one-name explosion ever measured — and after that no queen is safe: Lisa, Jennifer, Jessica, Ashley, Emily, Emma and Olivia each seize No. 1 and then crash, as top names claim an ever-smaller share of a diversifying country.","url":"https://beautifuldata.netlify.app/races/baby-names/","temporalCoverage":"1900/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.ssa.gov/oact/babynames/"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="wildcard" data-race-id="baby-names">
   <div class="race-head">
-    <p class="crumbs"><a href="/#wildcard">Wildcard</a><span aria-hidden="true">/</span><span>1900–2024</span></p>
+    <p class="crumbs"><a href="/#wildcard">Wildcard</a><span aria-hidden="true">/</span><span class="num">1900–2024</span></p>
     <h1>America's Top Baby Girl Names</h1>
     <p class="blurb">How many newborn American girls got each name, year by year, from Social Security card records. Mary rules for six decades until a 1947 pop song makes Linda the biggest one-name explosion ever measured — and after that no queen is safe: Lisa, Jennifer, Jessica, Ashley, Emily, Emma and Olivia each seize No. 1 and then crash, as top names claim an ever-smaller share of a diversifying country.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>19 contenders</span><span>13 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -78,97 +85,165 @@
     <span>Source: <a href="https://www.ssa.gov/oact/babynames/" rel="noopener">Social Security Administration</a></span>
     <span>Counts before ~1937 understate true births, since Social Security registration was not yet universal.</span>
     <span>Updated 2026-07-07</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">13</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">124</b><span>years covered</span></div>
-        <div class="fact"><b class="num">19</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Mary</b><span>longest reign — 47 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2024</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>11 different leaders in 124 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1900" style="left:0.000%;width:37.903%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="Mary · 1900–1947" aria-label="Mary led 1900–1947. Jump there."><span>Mary</span></button><button type="button" class="reign" data-t="1947" style="left:37.903%;width:4.839%;--c:#34D399;--ink:rgba(11,14,20,0.88)" title="Linda · 1947–1953" aria-label="Linda led 1947–1953. Jump there."></button><button type="button" class="reign" data-t="1953" style="left:42.742%;width:7.258%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="Mary · 1953–1962" aria-label="Mary led 1953–1962. Jump there."></button><button type="button" class="reign" data-t="1962" style="left:50.000%;width:6.452%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="Lisa · 1962–1970" aria-label="Lisa led 1962–1970. Jump there."></button><button type="button" class="reign" data-t="1970" style="left:56.452%;width:12.097%;--c:#E879F9;--ink:rgba(11,14,20,0.88)" title="Jennifer · 1970–1985" aria-label="Jennifer led 1970–1985. Jump there."><span>Jennifer</span></button><button type="button" class="reign" data-t="1985" style="left:68.548%;width:4.839%;--c:#2FB4FF;--ink:rgba(255,255,255,0.95)" title="Jessica · 1985–1991" aria-label="Jessica led 1985–1991. Jump there."></button><button type="button" class="reign" data-t="1991" style="left:73.387%;width:1.613%;--c:#F43F5E;--ink:rgba(255,255,255,0.95)" title="Ashley · 1991–1993" aria-label="Ashley led 1991–1993. Jump there."></button><button type="button" class="reign" data-t="1993" style="left:75.000%;width:2.419%;--c:#2FB4FF;--ink:rgba(255,255,255,0.95)" title="Jessica · 1993–1996" aria-label="Jessica led 1993–1996. Jump there."></button><button type="button" class="reign" data-t="1996" style="left:77.419%;width:9.677%;--c:#86EFAC;--ink:rgba(11,14,20,0.88)" title="Emily · 1996–2008" aria-label="Emily led 1996–2008. Jump there."></button><button type="button" class="reign" data-t="2008" style="left:87.097%;width:0.806%;--c:#6E7BFF;--ink:rgba(255,255,255,0.95)" title="Emma · 2008–2009" aria-label="Emma led 2008–2009. Jump there."></button><button type="button" class="reign" data-t="2009" style="left:87.903%;width:1.613%;--c:#FDE68A;--ink:rgba(11,14,20,0.88)" title="Isabella · 2009–2011" aria-label="Isabella led 2009–2011. Jump there."></button><button type="button" class="reign" data-t="2011" style="left:89.516%;width:2.419%;--c:#FCA5A5;--ink:rgba(11,14,20,0.88)" title="Sophia · 2011–2014" aria-label="Sophia led 2011–2014. Jump there."></button><button type="button" class="reign" data-t="2014" style="left:91.935%;width:4.032%;--c:#6E7BFF;--ink:rgba(255,255,255,0.95)" title="Emma · 2014–2019" aria-label="Emma led 2014–2019. Jump there."></button><button type="button" class="reign" data-t="2019" style="left:95.968%;width:4.032%;--c:#8B5CF6;--ink:rgba(255,255,255,0.95)" title="Olivia · 2019–2024" aria-label="Olivia led 2019–2024. Jump there."></button></div>
+    <div class="reign-axis num"><span>1900</span><span>2024</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Olivia</span><span class="s-val num">15,020</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#6E7BFF" aria-hidden="true"></span><span class="s-label">Emma</span><span class="s-val num">13,600</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FCA5A5" aria-hidden="true"></span><span class="s-label">Sophia</span><span class="s-val num">11,340</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FDE68A" aria-hidden="true"></span><span class="s-label">Isabella</span><span class="s-val num">9,280</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#86EFAC" aria-hidden="true"></span><span class="s-label">Emily</span><span class="s-val num">5,710</span></li>
+        <li><span class="h-label">Mary</span><span class="h-bar"><i style="width:100.0%;background:#4C8DFF"></i></span><span class="h-val num">56 yrs</span></li>
+        <li><span class="h-label">Jennifer</span><span class="h-bar"><i style="width:26.8%;background:#E879F9"></i></span><span class="h-val num">15 yrs</span></li>
+        <li><span class="h-label">Emily</span><span class="h-bar"><i style="width:21.4%;background:#86EFAC"></i></span><span class="h-val num">12 yrs</span></li>
+        <li><span class="h-label">Jessica</span><span class="h-bar"><i style="width:16.1%;background:#2FB4FF"></i></span><span class="h-val num">9 yrs</span></li>
+        <li><span class="h-label">Lisa</span><span class="h-bar"><i style="width:14.3%;background:#FF5C4D"></i></span><span class="h-val num">8 yrs</span></li>
+        <li><span class="h-label">Linda</span><span class="h-bar"><i style="width:10.7%;background:#34D399"></i></span><span class="h-val num">6 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1921">
         <span class="m-year num">1921</span>
-        <span class="m-title">Peak Mary</span>
+        <span class="m-body"><span class="m-title">Peak Mary</span><span class="m-text">73,983 girls are named Mary in 1921 — a single-year record no name will top until Linda's brief explosion a generation later.</span></span>
       </button></li>
       <li><button type="button" data-t="1947">
         <span class="m-year num">1947</span>
-        <span class="m-title">The Linda earthquake</span>
+        <span class="m-body"><span class="m-title">The Linda earthquake</span><span class="m-text">Jack Lawrence's hit song 'Linda' powers 99,693 Lindas — the biggest one-name spike ever recorded — ending Mary's 47-year reign.</span></span>
       </button></li>
       <li><button type="button" data-t="1953">
         <span class="m-year num">1953</span>
-        <span class="m-title">Mary retakes the crown</span>
+        <span class="m-body"><span class="m-title">Mary retakes the crown</span><span class="m-text">The Linda wave recedes as fast as it rose. Mary reclaims No. 1 and holds it through 1961 — her final years on top.</span></span>
       </button></li>
       <li><button type="button" data-t="1962">
         <span class="m-year num">1962</span>
-        <span class="m-title">Lisa ends the old order</span>
+        <span class="m-body"><span class="m-title">Lisa ends the old order</span><span class="m-text">Lisa dethrones Mary for good. No name from the 1900s establishment will ever hold No. 1 again.</span></span>
       </button></li>
       <li><button type="button" data-t="1970">
         <span class="m-year num">1970</span>
-        <span class="m-title">The Jennifer era begins</span>
+        <span class="m-body"><span class="m-title">The Jennifer era begins</span><span class="m-text">Jennifer opens a 15-year reign at No. 1, peaking near 63,000 in 1974 — then crashes to under 1,000 a year by the 2020s.</span></span>
       </button></li>
       <li><button type="button" data-t="1991">
         <span class="m-year num">1991</span>
-        <span class="m-title">Ashley snatches the crown</span>
+        <span class="m-body"><span class="m-title">Ashley snatches the crown</span><span class="m-text">After trailing Jessica for six years, Ashley takes No. 1 in 1991-92 — then Jessica grabs it right back. The great 90s duel.</span></span>
       </button></li>
       <li><button type="button" data-t="1996">
         <span class="m-year num">1996</span>
-        <span class="m-title">Emily's quiet dozen years</span>
+        <span class="m-body"><span class="m-title">Emily's quiet dozen years</span><span class="m-text">Emily begins 12 straight years at No. 1 — but with barely 26,000 births at her peak, as American naming grows ever more diverse.</span></span>
       </button></li>
       <li><button type="button" data-t="2019">
         <span class="m-year num">2019</span>
-        <span class="m-title">Olivia takes over</span>
+        <span class="m-body"><span class="m-title">Olivia takes over</span><span class="m-text">Olivia passes Emma and holds No. 1 through 2024 — with about 15,000 babies a year, a fraction of what Linda once drew.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Wildcard races</h2>
-  <div class="related-grid">
-    <a href="/races/dog-breeds/"><span class="r-title">America's Favorite Dog Breeds</span><span class="r-span num">1935–2024 · 15 contenders</span></a>
-    <a href="/races/apple-products/"><span class="r-title">Apple Revenue by Product Line</span><span class="r-span num">2000–2025 · 6 contenders</span></a>
-    <a href="/races/programming-languages/"><span class="r-title">Programming Language Popularity</span><span class="r-span num">1996–2025 · 17 contenders</span></a>
-    <a href="/races/wikipedia-languages/"><span class="r-title">Largest Wikipedia Editions</span><span class="r-span num">2001–2026 · 12 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">13</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">11</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">124</b><span>years covered</span></div>
+          <div class="fact"><b class="num">19</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Mary</b><span>longest unbroken reign — 47 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#13 → #1</b><span>Olivia ranked #13 when it first appeared in 1986 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2024</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Olivia</span><span class="s-val num">15,020</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#6E7BFF" aria-hidden="true"></span><span class="s-label">Emma</span><span class="s-val num">13,600</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FCA5A5" aria-hidden="true"></span><span class="s-label">Sophia</span><span class="s-val num">11,340</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FDE68A" aria-hidden="true"></span><span class="s-label">Isabella</span><span class="s-val num">9,280</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#86EFAC" aria-hidden="true"></span><span class="s-label">Emily</span><span class="s-val num">5,710</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Wildcard races</h2><a href="/#wildcard">See all 6 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/dog-breeds/" style="--accent:#8B5CF6;--accent-soft:rgba(139,92,246,0.14)">
+      <div class="card-preview"><canvas data-race="dog-breeds" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>America's Favorite Dog Breeds</h3>
+        <p class="card-meta"><span>1935–2024</span><span>·</span><span>15 contenders</span><span>·</span><span>6 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">French Bulldog</span><span class="cl-val">105k</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/apple-products/" style="--accent:#8B5CF6;--accent-soft:rgba(139,92,246,0.14)">
+      <div class="card-preview"><canvas data-race="apple-products" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Apple Revenue by Product Line</h3>
+        <p class="card-meta"><span>2000–2025</span><span>·</span><span>6 contenders</span><span>·</span><span>3 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">iPhone</span><span class="cl-val">$205B</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/programming-languages/" style="--accent:#8B5CF6;--accent-soft:rgba(139,92,246,0.14)">
+      <div class="card-preview"><canvas data-race="programming-languages" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Programming Language Popularity</h3>
+        <p class="card-meta"><span>1996–2025</span><span>·</span><span>17 contenders</span><span>·</span><span>4 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">Python</span><span class="cl-val">25.0%</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/wikipedia-languages/" style="--accent:#8B5CF6;--accent-soft:rgba(139,92,246,0.14)">
+      <div class="card-preview"><canvas data-race="wikipedia-languages" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Wikipedia Editions</h3>
+        <p class="card-meta"><span>2001–2026</span><span>·</span><span>12 contenders</span><span>·</span><span>0 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">English</span><span class="cl-val">7.20M</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/crypto/"><span class="dir">← Previous race</span>Crypto</a>
-    <a href="/races/market-cap/" style="text-align:right"><span class="dir">Next race →</span>Market Caps</a>
+    <a href="/races/crypto/"><span class="dir">← Previous race</span>Cryptocurrencies by Market Cap</a>
+    <a href="/races/market-cap/" class="pg-next"><span class="dir">Next race →</span>Most Valuable Public Companies</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"dog-breeds":{"entities":[{"label":"French Bulldog","color":"#4C8DFF"},{"label":"Labrador Retriever","color":"#FFD84D"},{"label":"Poodle","color":"#FF6FA5"},{"label":"Beagle","color":"#34D399"},{"label":"Boston Terrier","color":"#D4D4D8"},{"label":"Cocker Spaniel","color":"#FFB020"},{"label":"German Shepherd","color":"#B388FF"},{"label":"Golden Retriever","color":"#FF8C42"},{"label":"Rottweiler","color":"#F43F5E"},{"label":"Doberman Pinscher","color":"#6E7BFF"},{"label":"Chihuahua","color":"#A3E635"},{"label":"Bulldog","color":"#94A3B8"},{"label":"Dachshund","color":"#B45309"},{"label":"Yorkshire Terrier","color":"#67E8F9"}],"frames":[[0,0,0,6000,18000,14000,8000,0,0,1500,0,2000,4200,0],[0,0,0,9682.759,16465.517,26275.862,10148.276,0,0,2113.793,1227.586,2122.759,6225.517,0],[0,0,0,13820.69,14817.241,38096.552,12296.552,0,0,2841.379,2682.759,2245.517,7613.793,0],[0,0,0,18731.034,12975.862,49144.828,14444.828,0,0,3762.069,4524.138,2368.276,7920.69,0],[0,0,1278.161,24735.632,11362.069,76798.851,17183.908,0,0,4545.977,7913.793,2518.391,10005.747,0],[0,0,7310.345,33034.483,9875.862,57793.103,19172.414,0,0,5068.966,12896.552,2720.69,15482.759,0],[0,0,18972.414,42241.379,8771.034,38151.724,20706.897,0,0,5682.759,20875.862,2904.828,19779.31,0],[0,444.828,35379.31,49668.966,7844.138,26220.69,24020.69,0,0,6296.552,27075.862,3088.966,23779.31,889.655],[0,1365.517,56862.069,55193.103,7107.586,22537.931,29237.931,0,0,6910.345,31372.414,3273.103,27462.069,2731.034],[0,2548.276,86206.897,57310.345,6580.69,21737.931,43103.448,1310.345,0,8572.414,35144.828,3457.241,30096.552,4572.414],[0,4396.552,116206.897,58017.241,6172.414,21568.966,60517.241,3258.621,0,11379.31,36896.552,3655.172,32413.793,6620.69],[0,8386.207,143827.586,55868.966,6049.655,21875.862,85068.966,6634.483,0,17517.241,31986.207,3900.69,34255.172,9382.759],[0,12924.138,142206.897,51344.828,5707.586,23096.552,84034.483,11655.172,0,32793.103,26344.828,4073.103,33903.448,11231.034],[0,17834.483,120724.138,45206.897,5216.552,24937.931,65620.69,17793.103,0,54275.862,20206.897,4195.862,32062.069,12458.621],[0,26303.448,102206.897,37289.655,4844.138,36862.069,53731.034,26303.448,2372.414,69827.586,15551.724,4377.931,29627.586,13982.759],[0,38206.897,85862.069,33241.379,4579.31,55551.724,46827.586,36137.931,7310.345,74827.586,12086.207,4603.448,28413.793,16034.483],[0,56620.69,73586.207,36924.138,4517.931,86855.172,49282.759,48413.793,17131.034,59482.759,10858.621,4910.345,29641.379,19103.448],[0,76337.931,63482.759,39737.931,4717.241,96868.966,53475.862,56344.828,41724.138,43268.966,11151.724,5217.241,30868.966,22172.414],[0,97655.172,54275.862,42724.138,5024.138,96551.724,58482.759,62482.759,72896.552,27034.483,12362.069,5524.138,32241.379,25241.379],[0,122586.207,44689.655,55103.448,5320.69,71896.552,62620.69,68206.897,96896.552,17379.31,19448.276,5841.379,35517.241,30206.897],[0,146264.368,41747.126,55241.379,5563.218,43609.195,66356.322,69367.816,66206.897,11747.126,32758.621,6364.368,40252.874,32379.31],[0,155747.126,39252.874,49103.448,6074.713,32356.322,53804.598,64252.874,37310.345,9850.575,36804.598,8620.69,41402.299,35448.276],[120.69,160862.069,34482.759,43655.172,6586.207,21793.103,46655.172,59137.931,20793.103,9172.414,28965.517,15862.069,37655.172,39206.897],[1149.425,162459.77,31609.195,41609.195,7097.701,15218.391,44804.598,54022.989,14804.598,10195.402,23218.391,20781.609,35218.391,44413.793],[3655.172,144793.103,29344.828,38362.069,7663.793,11344.828,45310.345,49344.828,14000,11163.793,18362.069,25310.345,30689.655,39706.897],[8448.276,117068.966,27137.931,32413.793,8431.034,9137.931,54034.483,47137.931,14862.069,11931.034,13275.862,31448.276,25413.793,30689.655],[18965.517,102224.138,28793.103,29206.897,9079.31,8381.034,60793.103,48793.103,16396.552,12698.276,11801.724,36189.655,23801.724,23810.345],[43620.69,92413.793,33724.138,26137.931,9013.793,8013.793,60137.931,51862.069,17931.034,13000,11034.483,36137.931,23034.483,20137.931],[83034.483,87672.414,39862.069,22603.448,8813.793,7660.345,56603.448,52534.483,19465.517,13500,10660.345,33068.966,24232.759,17301.724],[105000,80000,44000,19500,8200,7200,52000,51000,20500,13000,10200,30000,25000,15500]],"t0":1935,"t1":2024,"era":0},"apple-products":{"entities":[{"label":"iPhone","color":"#4C8DFF"},{"label":"Mac","color":"#D4D4D8"},{"label":"iPod","color":"#67E8F9"},{"label":"Services","color":"#34D399"},{"label":"iPad","color":"#B388FF"},{"label":"Wearables & Accessories","color":"#FFB020"}],"frames":[[0,6.9,0,1.1,0,0],[0,4.745,0,1.014,0,0],[0,4.4,0.101,1.072,0,0],[0,4.459,0.263,1.159,0,0],[0,4.679,0.776,1.379,0,0],[0,5.334,2.293,1.817,0,0],[0,6.49,5.052,2.438,0,0],[0.021,7.5,7.721,3.117,0,0],[0.538,10,8.238,3.548,0,0],[5.228,13.334,8.983,4.283,0,0],[10.61,13.99,8.517,4.81,0,0],[18.89,15.586,8.197,5.434,2.414,0],[32.338,18.983,8.024,6.245,9.897,0],[52.686,22.09,7.107,7.231,21.621,0],[79.569,23.083,5.517,9.024,30.976,0],[90.431,21.617,4.483,15.576,31.924,0],[99.786,23.562,2.734,17.686,30.652,0],[136.724,25.017,1.448,19.279,25.648,6.552],[145.534,24.103,0.483,22.176,21.855,10.569],[137.686,23.976,0,27.486,20.069,11.745],[145.479,25.803,0,34.39,19.007,13.91],[162.572,25.521,0,40.383,18.7,18.134],[143.176,25.693,0,46.072,21.2,24.255],[138.593,28.1,0,52.507,23.286,29.548],[175.11,33.152,0,63.869,29.355,35.979],[199.403,37.959,0,73.752,30.466,39.945],[203.472,35.731,0,81.038,28.886,40.621],[200.766,29.566,0,88.234,27.859,39.028],[201.724,30.138,0,97.276,26.879,36.931],[205,31,0,104,28,36.5]],"t0":2000,"t1":2025,"era":0},"programming-languages":{"entities":[{"label":"Python","color":"#4C8DFF"},{"label":"C","color":"#94A3B8"},{"label":"Java","color":"#FF8C42"},{"label":"C++","color":"#6E7BFF"},{"label":"Visual Basic","color":"#67E8F9"},{"label":"JavaScript","color":"#FFD84D"},{"label":"C#","color":"#8B5CF6"},{"label":"PHP","color":"#B388FF"},{"label":"Perl","color":"#E879F9"},{"label":"Objective-C","color":"#A3E635"},{"label":"Delphi / Pascal","color":"#86EFAC"}],"frames":[[0,22,4,18,12,0,0,0,8,0,7],[0,21,8,17.5,12,0,0,1,9,0,7],[0,20,12,17,12,0,0,2,10,0,7],[0,18.5,15,16.5,11.5,0,0,3.5,10,0,6.5],[0,17,18,16,11,0,0,5,10,0,6],[1,16.5,20,15.5,10,0,1.5,6.5,9.5,0,3],[2,16,22,15,9,0,3,8,9,0,0],[2.5,16,21,14.5,8.5,0,4.5,9.5,8.5,0,0],[3,16,20,14,8,0,6,11,8,0,0],[3.5,16,20,13,8,1.5,7,10.5,7,0,0],[4,16,20,12,8,3,8,10,6,0,0],[4.5,16,19.5,11.5,7.5,3.5,8.5,9.5,5.5,1,0],[5,16,19,11,7,4,9,9,5,2,0],[5.5,16.5,18.5,10.5,6.5,4.5,9.5,8.5,4.5,3,0],[6,17,18,10,6,5,10,8,4,4,0],[6.5,17,17.5,10,5.5,5.5,9.5,7.5,3.5,6,0],[7,17,17,10,5,6,9,7,3,8,0],[8,16.5,16.5,9.5,4.5,6.5,8.5,6.5,1.5,7.5,0],[9,16,16,9,4,7,8,6,0,7,0],[10.5,14.5,16.5,8.5,4,7.5,8,6,0,5,0],[12,13,17,8,4,8,8,6,0,3,0],[13.5,12.5,16,8,2,8.5,7.5,5.5,0,1.5,0],[15,12,15,8,0,9,7,5,0,0,0],[16.5,12,14,8,0,9,7,4.5,0,0,0],[18,12,13,8,0,9,7,4,0,0,0],[19,12,12,8.5,0,9,6.5,3.5,0,0,0],[20,12,11,9,0,9,6,3,0,0,0],[21.5,10.5,10,9.5,0,8.5,6,2.5,0,0,0],[23,9,9,10,0,8,6,2,0,0,0],[25,9,8,10,0,8,6,2,0,0,0]],"t0":1996,"t1":2025,"era":0},"wikipedia-languages":{"entities":[{"label":"English","color":"#4C8DFF"},{"label":"Cebuano","color":"#FFB020"},{"label":"German","color":"#FDE68A"},{"label":"Swedish","color":"#67E8F9"},{"label":"Dutch","color":"#FF8C42"},{"label":"French","color":"#2FB4FF"},{"label":"Spanish","color":"#FF5C4D"},{"label":"Italian","color":"#34D399"},{"label":"Polish","color":"#B388FF"},{"label":"Vietnamese","color":"#A3E635"}],"frames":[[0.02,0,0.005,0.002,0.002,0.004,0.003,0.003,0.001,0],[0.089,0,0.027,0.009,0.009,0.018,0.011,0.011,0.007,0.001],[0.165,0,0.066,0.021,0.021,0.042,0.025,0.025,0.017,0.002],[0.342,0,0.139,0.043,0.046,0.085,0.053,0.053,0.035,0.004],[0.629,0,0.243,0.071,0.078,0.15,0.092,0.097,0.061,0.007],[1.052,0.001,0.376,0.118,0.131,0.262,0.16,0.167,0.123,0.016],[1.586,0.003,0.543,0.192,0.226,0.434,0.267,0.276,0.26,0.035],[2.017,0.012,0.755,0.252,0.355,0.605,0.355,0.405,0.455,0.061],[2.448,0.017,0.884,0.295,0.484,0.734,0.484,0.534,0.584,0.096],[2.879,0.023,1.014,0.338,0.576,0.826,0.538,0.626,0.676,0.176],[3.31,0.026,1.112,0.381,0.693,0.943,0.643,0.712,0.731,0.355],[3.645,0.028,1.222,0.424,0.798,1.072,0.772,0.798,0.784,0.547],[3.903,0.029,1.352,0.467,0.971,1.184,0.884,0.902,0.848,0.788],[4.162,0.08,1.481,0.707,1.303,1.281,0.971,1.021,0.921,1.081],[4.417,0.32,1.61,1.517,1.707,1.41,1.057,1.107,1.003,1.203],[4.633,0.95,1.74,1.733,1.793,1.54,1.143,1.193,1.047,1.247],[4.888,1.317,1.829,2.028,1.879,1.669,1.229,1.279,1.09,1.29],[5.114,2.121,1.916,2.69,1.933,1.798,1.283,1.333,1.133,1.333],[5.329,3.534,2.028,3.403,1.976,1.902,1.352,1.402,1.176,1.257],[5.564,4.841,2.157,3.78,2.019,1.988,1.438,1.488,1.219,1.181],[5.798,5.395,2.274,3.775,2.05,2.074,1.512,1.562,1.274,1.212],[5.971,5.385,2.36,3.741,2.052,2.16,1.56,1.605,1.355,1.25],[6.143,5.428,2.447,3.586,2.069,2.247,1.647,1.648,1.398,1.25],[6.316,5.819,2.533,3.348,2.095,2.333,1.691,1.691,1.441,1.258],[6.488,6.038,2.619,2.817,2.1,2.419,1.734,1.734,1.484,1.267],[6.633,6.106,2.733,2.578,2.128,2.505,1.805,1.778,1.528,1.276],[6.783,6.11,2.85,2.564,2.15,2.571,1.871,1.821,1.571,1.284],[6.955,6.111,2.948,2.573,2.153,2.622,1.914,1.864,1.608,1.29],[7.114,6.115,3.035,2.581,2.161,2.687,1.957,1.907,1.633,1.291],[7.2,6.115,3.13,2.59,2.17,2.73,2,1.95,1.65,1.3]],"t0":2001,"t1":2026,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

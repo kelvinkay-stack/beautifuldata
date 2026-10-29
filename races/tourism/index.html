@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Most-Visited Countries (1980–2024) — Overtake">
   <meta name="twitter:description" content="International tourist arrivals since 1980: France grabs No. Animated bar chart race, 1980–2024.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/tourism.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Most-Visited Countries","description":"International tourist arrivals since 1980: France grabs No. 1 around 1990 and never lets go, while the rest of the board churns — Hungary and Canada fade from 1980s glory, China and Turkey storm up in the 2000s, and Japan's late boom sets a record in 2024. In between, COVID-19 vaporizes roughly 70% of all travel in a single year.","url":"https://beautifuldata.netlify.app/races/tourism/","temporalCoverage":"1980/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.unwto.org/tourism-data/global-and-regional-tourism-performance"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="world" data-race-id="tourism">
   <div class="race-head">
-    <p class="crumbs"><a href="/#world">World &amp; Nations</a><span aria-hidden="true">/</span><span>1980–2024</span></p>
+    <p class="crumbs"><a href="/#world">World &amp; Nations</a><span aria-hidden="true">/</span><span class="num">1980–2024</span></p>
     <h1>Most-Visited Countries</h1>
     <p class="blurb">International tourist arrivals since 1980: France grabs No. 1 around 1990 and never lets go, while the rest of the board churns — Hungary and Canada fade from 1980s glory, China and Turkey storm up in the 2000s, and Japan's late boom sets a record in 2024. In between, COVID-19 vaporizes roughly 70% of all travel in a single year.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>15 contenders</span><span>0 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -78,93 +85,151 @@
     <span>Source: <a href="https://www.unwto.org/tourism-data/global-and-regional-tourism-performance" rel="noopener">UN World Tourism Organization (UN Tourism)</a></span>
     <span>Overnight tourist arrivals. Some 2020–2024 figures (notably France and China) are official estimates; Hungary's 1980s–90s counts reflect older methodology.</span>
     <span>Updated 2026-07-07</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">0</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">44</b><span>years covered</span></div>
-        <div class="fact"><b class="num">15</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>France</b><span>longest reign — 44 yrs at #1, wire to wire</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2024</h2>
-      <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">France</span><span class="s-val num">102.0M</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FFD84D" aria-hidden="true"></span><span class="s-label">Spain</span><span class="s-val num">93.8M</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">72.4M</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">Turkey</span><span class="s-val num">60.7M</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Italy</span><span class="s-val num">60.0M</span></li>
-      </ol>
-    </section>
-  </div>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>One leader, start to finish. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1980" style="left:0.000%;width:100.000%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="France · 1980–2024" aria-label="France led 1980–2024. Jump there."><span>France</span></button></div>
+    <div class="reign-axis num"><span>1980</span><span>2024</span></div>
+    
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1984">
         <span class="m-year num">1984</span>
-        <span class="m-title">Package-holiday powerhouses</span>
+        <span class="m-body"><span class="m-title">Package-holiday powerhouses</span><span class="m-text">Charter flights to the costas keep Spain locked into the top three, decades after the 1960s beach boom began.</span></span>
       </button></li>
       <li><button type="button" data-t="1990">
         <span class="m-year num">1990</span>
-        <span class="m-title">France takes permanent No. 1</span>
+        <span class="m-body"><span class="m-title">France takes permanent No. 1</span><span class="m-text">France jumps past 50M arrivals and opens a lead it never surrenders — 35 straight years at the top.</span></span>
       </button></li>
       <li><button type="button" data-t="1990.5">
         <span class="m-year num">1990</span>
-        <span class="m-title">Hungary's moment</span>
+        <span class="m-body"><span class="m-title">Hungary's moment</span><span class="m-text">After the Iron Curtain opens, Hungary logs 20M+ arrivals and briefly outdraws Italy — before methodology and fashion move on.</span></span>
       </button></li>
       <li><button type="button" data-t="2004">
         <span class="m-year num">2004</span>
-        <span class="m-title">China cracks the top five</span>
+        <span class="m-body"><span class="m-title">China cracks the top five</span><span class="m-text">Two decades after opening up, China passes 40M arrivals and elbows into the world's top five destinations.</span></span>
       </button></li>
       <li><button type="button" data-t="2020">
         <span class="m-year num">2020</span>
-        <span class="m-title">COVID wipes out tourism</span>
+        <span class="m-body"><span class="m-title">COVID wipes out tourism</span><span class="m-text">Border closures erase about 70% of world travel in one year; France falls from 91M to 42M, Thailand and Japan nearly to zero.</span></span>
       </button></li>
       <li><button type="button" data-t="2022">
         <span class="m-year num">2022</span>
-        <span class="m-title">Turkey climbs to No. 4</span>
+        <span class="m-body"><span class="m-title">Turkey climbs to No. 4</span><span class="m-text">A fast reopening and a weak lira vault Turkey past Italy and the recovering USA into fourth place.</span></span>
       </button></li>
       <li><button type="button" data-t="2024">
         <span class="m-year num">2024</span>
-        <span class="m-title">Full recovery — Japan's record</span>
+        <span class="m-body"><span class="m-title">Full recovery — Japan's record</span><span class="m-text">Global arrivals regain 2019 levels: France tops 100M, Spain hits 94M, and Japan smashes its record with 36.9M visitors.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More World races</h2>
-  <div class="related-grid">
-    <a href="/races/armed-forces/"><span class="r-title">Largest Standing Armies</span><span class="r-span num">1950–2025 · 14 contenders</span></a>
-    <a href="/races/population-nations/"><span class="r-title">Most Populous Countries</span><span class="r-span num">1950–2025 · 14 contenders</span></a>
-    <a href="/races/co2-emissions/"><span class="r-title">Annual CO₂ Emissions by Country</span><span class="r-span num">1900–2023 · 12 contenders</span></a>
-    <a href="/races/nuclear-warheads/"><span class="r-title">Nuclear Warhead Stockpiles</span><span class="r-span num">1945–2023 · 9 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">0</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">1</b><span>different leader</span></div>
+          <div class="fact"><b class="num">44</b><span>years covered</span></div>
+          <div class="fact"><b class="num">15</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>France</b><span>longest unbroken reign — 44 yrs at #1, wire to wire</span></div>
+          
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2024</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">France</span><span class="s-val num">102.0M</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FFD84D" aria-hidden="true"></span><span class="s-label">Spain</span><span class="s-val num">93.8M</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">72.4M</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">Turkey</span><span class="s-val num">60.7M</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Italy</span><span class="s-val num">60.0M</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More World races</h2><a href="/#world">See all 7 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/armed-forces/" style="--accent:#38BDF8;--accent-soft:rgba(56,189,248,0.14)">
+      <div class="card-preview"><canvas data-race="armed-forces" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Standing Armies</h3>
+        <p class="card-meta"><span>1950–2025</span><span>·</span><span>14 contenders</span><span>·</span><span>4 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">China</span><span class="cl-val">2.00M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/population-nations/" style="--accent:#38BDF8;--accent-soft:rgba(56,189,248,0.14)">
+      <div class="card-preview"><canvas data-race="population-nations" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Most Populous Countries</h3>
+        <p class="card-meta"><span>1950–2025</span><span>·</span><span>14 contenders</span><span>·</span><span>1 lead change</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF8C42" aria-hidden="true"></span><span class="cl-name">India</span><span class="cl-val">1.45B</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/co2-emissions/" style="--accent:#38BDF8;--accent-soft:rgba(56,189,248,0.14)">
+      <div class="card-preview"><canvas data-race="co2-emissions" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Annual CO₂ Emissions by Country</h3>
+        <p class="card-meta"><span>1900–2023</span><span>·</span><span>12 contenders</span><span>·</span><span>1 lead change</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">China</span><span class="cl-val">11.9Bt</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/nuclear-warheads/" style="--accent:#38BDF8;--accent-soft:rgba(56,189,248,0.14)">
+      <div class="card-preview"><canvas data-race="nuclear-warheads" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Nuclear Warhead Stockpiles</h3>
+        <p class="card-meta"><span>1945–2023</span><span>·</span><span>9 contenders</span><span>·</span><span>1 lead change</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">Russia / USSR</span><span class="cl-val">5,890</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/space-launches/"><span class="dir">← Previous race</span>Space Launches</a>
-    <a href="/races/empires/" style="text-align:right"><span class="dir">Next race →</span>Empires</a>
+    <a href="/races/space-launches/"><span class="dir">← Previous race</span>Objects Launched Into Space by Country</a>
+    <a href="/races/empires/" class="pg-next"><span class="dir">Next race →</span>Largest Empires by Land Area</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"armed-forces":{"entities":[{"label":"China","color":"#FF5C4D"},{"label":"USSR / Russia","color":"#B45309"},{"label":"India","color":"#FF8C42"},{"label":"United States","color":"#4C8DFF"},{"label":"North Korea","color":"#E879F9"},{"label":"France","color":"#8B5CF6"},{"label":"South Korea","color":"#2FB4FF"},{"label":"Vietnam","color":"#FFD84D"}],"frames":[[5000,4300,350,1460,260,590,100,120],[5258.621,5162.069,350,3266.034,260,633.103,522.414,163.103],[3854.483,5686.207,403.448,2919.172,282.069,702.759,677.241,202.069],[3396.724,4579.31,455.172,2681.759,313.103,744.138,635.862,233.103],[3041.379,3597.931,525.517,2488.345,340.69,761.379,601.379,269.655],[3351.724,3432.414,716.897,2580.931,345.862,621.724,611.724,342.069],[3668.966,3317.241,888.966,2808.966,353.448,509.138,620,412.069],[4015.517,3395.086,980,3523.069,371.552,505.052,621.293,470.517],[4382.759,3342.241,990.345,2936.897,409.655,505.586,642.241,496.552],[4693.103,3481.897,1029.138,2452.759,445.862,504.034,631.897,558.621],[4874.138,3589.655,1063.448,2116.207,509.655,501.621,620.69,668.966],[4796.552,3633.621,1088.793,2074.828,628.621,497.483,607.759,875.862],[4636.207,3709.655,1136.276,2070.897,728.966,488.586,600,1033.103],[4351.724,3833.793,1216.966,2123.138,801.379,472.552,600,1115.862],[3811.782,4101.149,1301.034,2145.77,920.46,461.184,620.115,1200.23],[3153.707,4237.414,1323.534,2100.724,1067.759,458.586,650,1176.724],[3030,3140.172,1265,1932.707,1130,445.034,646.776,862.069],[2999.425,1785.402,1226.379,1630.011,1105.862,406.816,641.69,658.161],[2851.322,1221.264,1150.517,1456.184,1059.598,383.103,662.207,554.184],[2470.345,1004.31,1180.655,1387.287,1080,314.379,672.644,484],[2289.31,991.379,1286.69,1411.425,1080,265.241,684.713,484],[2258.448,1020.805,1318.793,1394.747,1099.253,256.149,687.54,461.667],[2210.747,1030,1297.184,1397.218,1105,242.356,687.368,455],[2234.425,1015.172,1302.747,1413.368,1147.011,232.529,671.184,468.345],[2302.103,944.77,1332.483,1416.092,1190,224.655,646.092,482],[2300.241,857.011,1356.701,1388.644,1209.655,213.471,628.908,482],[2171.092,900,1399.023,1351.218,1280,207.759,622.989,482],[2043.506,900,1442.126,1385.701,1280,205.172,601.437,482],[2035,951.724,1451.034,1340.138,1263.448,205,543.621,470],[2000,1320,1460,1300,1200,200,500,470]],"t0":1950,"t1":2025,"era":0},"population-nations":{"entities":[{"label":"India","color":"#FF8C42"},{"label":"China","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"Indonesia","color":"#23C8A8"},{"label":"Russia","color":"#94A3B8"},{"label":"Pakistan","color":"#34D399"},{"label":"Brazil","color":"#FFD84D"},{"label":"Japan","color":"#F43F5E"}],"frames":[[357,544,159,70,103,37,54,84],[374.069,573.483,165.724,74.138,107.138,39.069,58.138,86.586],[391.897,602.828,172.517,78.345,111.31,41.138,62.345,89.138],[420.345,630.241,180.276,83.517,115.966,43.207,67.517,91.207],[448.931,658.207,187.828,88.897,120.552,45.414,72.828,93.414],[478.414,689.759,194.034,95.621,124.69,48.517,79.034,96.517],[507.483,726.069,200.034,102.448,128.207,51.828,85.241,99.621],[534.897,781.414,205.207,109.69,129.241,55.966,91.448,102.724],[563.414,834.966,209.966,117.069,130.552,59.966,97.655,105.966],[594.966,883.586,213.586,124.828,132.621,63.586,103.862,109.586],[629.793,927.379,217.897,133.103,134.862,68.069,110.414,112.862],[671.172,961.517,223.586,142.414,137.448,74.276,117.655,115.448],[714.207,996.276,229.276,151.517,139.828,80.897,124.897,117.828],[759.724,1031.966,234.966,160.31,141.897,88.138,132.138,119.897],[805.483,1075.621,240.897,169.103,144.207,95.862,139.379,121.724],[851.517,1128.379,247.103,177.897,146.793,104.138,146.621,123.276],[898.103,1173.138,254.414,186.69,148,112.414,153.586,124.276],[945.172,1210.897,262.69,195.483,148,120.69,160.31,124.793],[993.483,1245.862,270.966,203.655,147.69,129.586,166.724,125.31],[1042.621,1278.966,279.241,211.414,147.172,138.897,172.931,125.828],[1089.345,1303.793,286.483,219.172,145.966,149.586,178.793,126.69],[1134.862,1324.483,293.207,226.931,144.414,160.966,184.483,127.724],[1180,1344.414,300.31,234.69,143.621,171.586,189.793,128],[1225,1364.069,307.552,242.448,143.103,181.931,194.966,128],[1265.448,1378.345,313.552,250.207,143.414,194.759,199.724,127.586],[1304.759,1391.276,319.241,257.966,143.931,208.207,204.379,127.069],[1348.552,1401.069,324.931,264.379,144.448,221.207,208.586,126.103],[1393.034,1410.379,330.621,270.586,144.966,234.138,212.724,125.069],[1421.747,1410.195,334.218,276.632,144.195,244.655,215.414,123.391],[1446,1408,337,284,144,255,213,123]],"t0":1950,"t1":2025,"era":0},"co2-emissions":{"entities":[{"label":"China","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"Russia / USSR","color":"#94A3B8"},{"label":"Germany","color":"#C4B5A0"},{"label":"United Kingdom","color":"#2FB4FF"},{"label":"India","color":"#FF8C42"},{"label":"Japan","color":"#F43F5E"}],"frames":[[0,663,90,280,420,24,22],[0,839.866,106.966,322.414,453.931,27.817,27.09],[0,1016.731,123.931,364.828,487.862,31.634,32.179],[0,1208.034,119.103,374.552,491.828,34.907,39.721],[0,1407.379,102.138,366.069,479.103,37.876,48.628],[0,1553.621,103.276,367.241,466.379,41.207,59.224],[0,1566.345,149.931,392.69,453.655,45.448,74.069],[0,1579.069,196.586,418.138,440.931,49.69,88.914],[0,1705.793,278.621,467.172,455.724,53.931,105.724],[0,1841.517,363.448,518.069,472.69,58.172,122.69],[0,2044.828,453.103,530.345,494.483,65.31,125.172],[0,2299.31,546.414,513.379,519.931,74.641,116.69],[0,2543.034,657.655,525.103,543.586,87.021,117.172],[0,2744.138,842.69,642.483,560.828,110.552,152.207],[0,2871.379,1232.897,718.828,586.276,127.517,220.069],[0,3252.069,1521.724,766.207,611.724,158.966,338.621],[0,3905.172,1833.241,802.897,631.448,192.897,608.966],[0,4365.724,2172.483,815.793,623.172,231.034,830.483],[0,4553.379,2512.207,820.759,597.31,278.828,910.759],[218.069,4753.034,2826.345,846.483,586.483,345.241,941.172],[1795.862,4557.931,3089.31,821.034,561.034,455.517,949.655],[2315.724,5013.862,2636.138,982.759,584.414,573.931,1055.793],[3015.862,5298.759,1954,940.552,563.517,732.414,1139.586],[3437.379,5634.966,1619.172,879.586,550,886.759,1205.724],[4421.448,5909.448,1594.345,842.069,550,1045.31,1243.586],[6569.138,5908.19,1650.172,809.828,549.569,1263.448,1249.31],[8836.207,5677.379,1669.448,789.448,494.483,1693.655,1172.759],[9854.138,5329.586,1660.966,780.966,409.655,2211.103,1215.172],[10655.948,5261.81,1678.793,704.828,353.017,2598.879,1126.034],[11900,4910,1830,610,300,3060,990]],"t0":1900,"t1":2023,"era":0},"nuclear-warheads":{"entities":[{"label":"Russia / USSR","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"China","color":"#FFD84D"},{"label":"France","color":"#8B5CF6"},{"label":"United Kingdom","color":"#2FB4FF"}],"frames":[[0,2,0,0,0],[0,98.828,0,0,0],[13.534,404.31,0,0,0],[103.448,1304.31,0,0,2.672],[369.828,3370.69,0,0,18.19],[870.69,8668.966,0,0,68.966],[2567.241,22525.862,0,0,162.586],[5036.207,29155.172,0,9.138,301.379],[8172.414,31180.172,15.345,34.069,352.586],[10859.77,27389.253,61.782,36,369.713],[14350,26948.276,127.155,68.241,398.707],[18513.793,28255.172,175.862,147.586,400],[23879.31,25360.345,209.138,218.707,400],[30018.966,24108.621,239.655,249.741,400],[35046.552,23196.552,261.638,283.19,323.534],[39215.517,23398.276,268.362,336.983,300],[39063.793,22972.414,280.172,401.724,300],[35298.276,18612.069,311.724,514.483,300],[29048.276,11791.379,371.207,511.724,264.655],[23922.414,10994.828,400,450,297.931],[22103.448,10781.034,403.966,457.931,267.931],[18905.172,10525.862,417.414,462.586,257.759],[15827.586,8539.655,420.862,350,200],[13353.448,6822.414,430,328.448,193.534],[11336.207,5089.655,282.586,300,216.034],[8379.31,4975.862,251.207,300,223.793],[7406.897,4706.897,264.655,300,215],[6935.345,3951.724,278.103,300,215],[6309.483,3784.483,333.966,290,199.655],[5890,3700,500,290,225]],"t0":1945,"t1":2023,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

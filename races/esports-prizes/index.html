@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Esports Prize Money by Game (2010–2025) — Overtake">
   <meta name="twitter:description" content="Competitive gaming's money race, tracking total prize winnings paid out per title since the modern esports era began. Animated bar chart race, 2010–2025.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/esports-prizes.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Esports Prize Money by Game","description":"Competitive gaming's money race, tracking total prize winnings paid out per title since the modern esports era began. Dota 2's crowdfunded International tournaments detonate the all-time totals, while Counter-Strike, League of Legends and Fortnite build empires of their own. Bars are cumulative, so each season's tournaments stack onto a game's running total.","url":"https://beautifuldata.netlify.app/races/esports-prizes/","temporalCoverage":"2010/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.esportsearnings.com/"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="play" data-race-id="esports-prizes">
   <div class="race-head">
-    <p class="crumbs"><a href="/#play">Games &amp; Play</a><span aria-hidden="true">/</span><span>2010–2025</span></p>
+    <p class="crumbs"><a href="/#play">Games &amp; Play</a><span aria-hidden="true">/</span><span class="num">2010–2025</span></p>
     <h1>Esports Prize Money by Game</h1>
     <p class="blurb">Competitive gaming's money race, tracking total prize winnings paid out per title since the modern esports era began. Dota 2's crowdfunded International tournaments detonate the all-time totals, while Counter-Strike, League of Legends and Fortnite build empires of their own. Bars are cumulative, so each season's tournaments stack onto a game's running total.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>13 contenders</span><span>2 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -78,81 +85,146 @@
     <span>Source: <a href="https://www.esportsearnings.com/" rel="noopener">Esports Earnings</a></span>
     <span>Values in $ millions, cumulative tracked tournament prize pools per game. 2010 onward; earlier arcade/LAN eras excluded.</span>
     <span>Updated 2026-07-03</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">2</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">15</b><span>years covered</span></div>
-        <div class="fact"><b class="num">13</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Dota 2</b><span>longest reign — 11 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2025</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>3 different leaders in 15 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="2010" style="left:0.000%;width:6.667%;--c:#FFB020;--ink:rgba(11,14,20,0.88)" title="Counter-Strike · 2010–2011" aria-label="Counter-Strike led 2010–2011. Jump there."></button><button type="button" class="reign" data-t="2011" style="left:6.667%;width:20.000%;--c:#67E8F9;--ink:rgba(11,14,20,0.88)" title="StarCraft II · 2011–2014" aria-label="StarCraft II led 2011–2014. Jump there."><span>StarCraft II</span></button><button type="button" class="reign" data-t="2014" style="left:26.667%;width:73.333%;--c:#F43F5E;--ink:rgba(255,255,255,0.95)" title="Dota 2 · 2014–2025" aria-label="Dota 2 led 2014–2025. Jump there."><span>Dota 2</span></button></div>
+    <div class="reign-axis num"><span>2010</span><span>2025</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Dota 2</span><span class="s-val num">$350M</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Counter-Strike</span><span class="s-val num">$190M</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">Fortnite</span><span class="s-val num">$182M</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">League of Legends</span><span class="s-val num">$120M</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Arena of Valor / MLBB</span><span class="s-val num">$120M</span></li>
+        <li><span class="h-label">Dota 2</span><span class="h-bar"><i style="width:100.0%;background:#F43F5E"></i></span><span class="h-val num">11 yrs</span></li>
+        <li><span class="h-label">StarCraft II</span><span class="h-bar"><i style="width:27.3%;background:#67E8F9"></i></span><span class="h-val num">3 yrs</span></li>
+        <li><span class="h-label">Counter-Strike</span><span class="h-bar"><i style="width:9.1%;background:#FFB020"></i></span><span class="h-val num">1 yr</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="2013.5">
         <span class="m-year num">2013</span>
-        <span class="m-title">The International changes everything</span>
+        <span class="m-body"><span class="m-title">The International changes everything</span><span class="m-text">Dota 2 lets fans crowdfund its prize pool, and The International explodes past every other game's winnings almost overnight.</span></span>
       </button></li>
       <li><button type="button" data-t="2018.5">
         <span class="m-year num">2018</span>
-        <span class="m-title">Fortnite's $30M World Cup</span>
+        <span class="m-body"><span class="m-title">Fortnite's $30M World Cup</span><span class="m-text">Epic Games pours prize money into Fortnite, and a 16-year-old wins $3M at the 2019 World Cup solo final.</span></span>
       </button></li>
       <li><button type="button" data-t="2019">
         <span class="m-year num">2019</span>
-        <span class="m-title">Dota 2 crosses $200M</span>
+        <span class="m-body"><span class="m-title">Dota 2 crosses $200M</span><span class="m-text">A single International hands out over $34M, pushing Dota 2's all-time total past every rival by a wide margin.</span></span>
       </button></li>
       <li><button type="button" data-t="2023.5">
         <span class="m-year num">2023</span>
-        <span class="m-title">Valorant's rapid climb</span>
+        <span class="m-body"><span class="m-title">Valorant's rapid climb</span><span class="m-text">Riot's tactical shooter scales its prize circuit fast, overtaking older titles within a few seasons of launch.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Games races</h2>
-  <div class="related-grid">
-    <a href="/races/top-websites/"><span class="r-title">Most-Visited Websites</span><span class="r-span num">1998–2025 · 17 contenders</span></a>
-    <a href="/races/best-selling-games/"><span class="r-title">Best-Selling Video Games</span><span class="r-span num">1984–2025 · 15 contenders</span></a>
-    <a href="/races/most-played-games/"><span class="r-title">Most-Played Games</span><span class="r-span num">2012–2025 · 15 contenders</span></a>
-    <a href="/races/game-consoles/"><span class="r-title">Best-Selling Game Consoles</span><span class="r-span num">1980–2025 · 16 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">2</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">3</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">15</b><span>years covered</span></div>
+          <div class="fact"><b class="num">13</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Dota 2</b><span>longest unbroken reign — 11 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#5 → #1</b><span>Dota 2 ranked #5 when it first appeared in 2011 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2025</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Dota 2</span><span class="s-val num">$350M</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Counter-Strike</span><span class="s-val num">$190M</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">Fortnite</span><span class="s-val num">$182M</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">League of Legends</span><span class="s-val num">$120M</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Arena of Valor / MLBB</span><span class="s-val num">$120M</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Games races</h2><a href="/#play">See all 6 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/top-websites/" style="--accent:#FF7A45;--accent-soft:rgba(255,122,69,0.14)">
+      <div class="card-preview"><canvas data-race="top-websites" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Most-Visited Websites</h3>
+        <p class="card-meta"><span>1998–2025</span><span>·</span><span>17 contenders</span><span>·</span><span>1 lead change</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFD84D" aria-hidden="true"></span><span class="cl-name">Google</span><span class="cl-val">6.40B</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/best-selling-games/" style="--accent:#FF7A45;--accent-soft:rgba(255,122,69,0.14)">
+      <div class="card-preview"><canvas data-race="best-selling-games" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Best-Selling Video Games</h3>
+        <p class="card-meta"><span>1984–2025</span><span>·</span><span>15 contenders</span><span>·</span><span>2 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFD84D" aria-hidden="true"></span><span class="cl-name">Tetris (all versions)</span><span class="cl-val">520.0M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/most-played-games/" style="--accent:#FF7A45;--accent-soft:rgba(255,122,69,0.14)">
+      <div class="card-preview"><canvas data-race="most-played-games" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Most-Played Games</h3>
+        <p class="card-meta"><span>2012–2025</span><span>·</span><span>15 contenders</span><span>·</span><span>4 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">Roblox</span><span class="cl-val">380M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/game-consoles/" style="--accent:#FF7A45;--accent-soft:rgba(255,122,69,0.14)">
+      <div class="card-preview"><canvas data-race="game-consoles" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Best-Selling Game Consoles</h3>
+        <p class="card-meta"><span>1980–2025</span><span>·</span><span>16 contenders</span><span>·</span><span>4 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">PlayStation 2</span><span class="cl-val">158M</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/game-franchises/"><span class="dir">← Previous race</span>Game Franchises</a>
-    <a href="/races/top-websites/" style="text-align:right"><span class="dir">Next race →</span>Top Websites</a>
+    <a href="/races/game-franchises/"><span class="dir">← Previous race</span>Best-Selling Video Game Franchises</a>
+    <a href="/races/top-websites/" class="pg-next"><span class="dir">Next race →</span>Most-Visited Websites</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"top-websites":{"entities":[{"label":"Google","color":"#FFD84D"},{"label":"Yahoo","color":"#B388FF"},{"label":"YouTube","color":"#F43F5E"},{"label":"AOL","color":"#67E8F9"},{"label":"MSN","color":"#4C8DFF"},{"label":"ChatGPT","color":"#23C8A8"},{"label":"Amazon","color":"#FF8C42"},{"label":"Facebook","color":"#2563EB"},{"label":"Instagram","color":"#E879F9"},{"label":"Adult (aggregate)","color":"#5C6577"},{"label":"MySpace","color":"#94A3B8"},{"label":"Baidu","color":"#34D399"},{"label":"eBay","color":"#A3E635"},{"label":"TikTok","color":"#2FB4FF"}],"frames":[[0,40,0,35,20,0,0,0,0,0,0,0,0,0],[9.31,77.241,0,62.931,52.586,0,0,0,0,0,0,0,13.966,0],[18.621,114.483,0,90.862,85.172,0,0,0,0,0,0,0,27.931,0],[71.552,163.621,0,128.707,137.586,0,0,0,0,0,0,0,53.793,0],[132.069,214.828,0,168.276,193.448,0,0,0,0,0,0,0,81.724,0],[205.69,259.483,0,186.552,232.931,0,0,0,0,0,13.103,0,106.379,0],[284.828,301.379,0,195.862,265.517,0,0,0,0,0,31.724,0,129.655,0],[371.724,361.379,51.724,202.586,308.448,0,0,0,0,0,96.897,0,155.517,0],[464.828,435.862,144.828,207.241,359.655,0,0,0,0,0,199.31,0,183.448,0],[569.31,495.172,256.897,170.172,395.69,0,0,47.414,0,0,271.379,37.931,207.586,0],[690.345,532.414,396.552,72.414,409.655,0,0,163.793,0,0,299.31,131.034,226.207,0],[818.621,564.828,536.207,0,417.586,0,33.793,304.31,0,0,295.862,218.103,211.034,0],[967.586,583.448,675.862,0,408.276,0,164.138,513.793,0,0,202.759,287.931,99.31,0],[1125.862,601.034,820.69,0,395.862,0,286.207,720.69,0,0,113.793,360.345,0,0],[1358.621,610.345,1006.897,0,358.621,0,342.069,906.897,0,0,57.931,453.448,0,0],[1591.379,619.655,1193.103,0,321.379,0,397.931,1093.103,0,0,2.069,546.552,0,0],[1824.138,593.103,1424.138,0,176.552,0,467.241,1279.31,89.655,0,0,617.241,0,0],[2056.897,565.172,1656.897,0,27.586,0,537.069,1465.517,182.759,0,0,687.069,0,0],[2365.517,529.655,1965.517,0,0,0,625.862,1689.655,313.793,341.379,0,756.897,0,0],[2691.379,492.414,2291.379,0,0,0,718.966,1922.414,453.448,760.345,0,826.724,0,0],[2986.207,455.172,2586.207,0,0,0,827.586,2093.103,624.138,962.069,0,881.034,0,62.069],[3265.517,417.931,2865.517,0,0,0,943.966,2232.759,810.345,1055.172,0,927.586,0,155.172],[3593.103,303.448,3193.103,0,0,0,1144.828,2251.724,1020.69,1148.276,0,962.069,0,368.966],[3965.517,117.241,3565.517,0,0,0,1424.138,2158.621,1253.448,1241.379,0,985.345,0,694.828],[4424.138,0,3937.931,0,0,8.621,1686.207,2065.517,1503.448,1317.241,0,991.379,0,1020.69],[5029.31,0,4310.345,0,0,31.897,1918.966,1972.414,1782.759,1363.793,0,968.103,0,1346.552],[5572.414,0,4662.069,0,0,210.345,2131.034,1889.655,2041.379,1400,0,944.828,0,1651.724],[5898.276,0,4941.379,0,0,931.897,2270.69,1843.103,2227.586,1400,0,921.552,0,1884.483],[6213.793,0,5213.793,0,0,1668.966,2406.897,1796.552,2406.897,1400,0,837.931,0,2113.793],[6400,0,5400,0,0,2600,2500,1750,2500,1400,0,0,0,2300]],"t0":1998,"t1":2025,"era":0},"best-selling-games":{"entities":[{"label":"Tetris (all versions)","color":"#FFD84D"},{"label":"Super Mario Bros.","color":"#FF5C4D"},{"label":"Minecraft","color":"#34D399"},{"label":"Wii Sports","color":"#67E8F9"},{"label":"Grand Theft Auto V","color":"#23C8A8"},{"label":"Pokémon Red/Blue/Green","color":"#2FB4FF"},{"label":"PUBG: Battlegrounds","color":"#FFB020"},{"label":"Wii Fit","color":"#86EFAC"}],"frames":[[0,0,0,0,0,0,0,0],[0.707,5.897,0,0,0,0,0,0],[1.828,16.621,0,0,0,0,0,0],[5.931,26.207,0,0,0,0,0,0],[18.552,32.621,0,0,0,0,0,0],[30.345,36.103,0,0,0,0,0,0],[36.931,37.983,0,0,0,0,0,0],[42.586,39.845,0,0,0,0,0,0],[46.931,40.655,0,0,0,1.241,0,0],[51.172,41.362,0,0,0,8.345,0,0],[55.414,42.069,0,0,0,19.103,0,0],[59.655,42.776,0,0,0,28.207,0,0],[62.931,43.483,0,0,0,30.966,0,0],[65.759,44.19,0,0,0,31.238,0,0],[68.586,45.293,0,0,0,31.379,0,0],[72.621,46.603,0,0.621,0,31.4,0,0],[84.31,47.31,0,11.69,0,31.4,0,0.621],[121.379,48.017,0,34.586,0,31.4,0,8.276],[177.931,49.172,0.672,57.276,0,31.4,0,17.793],[243.103,50.431,3.655,71.897,0,31.4,0,21.724],[332.069,51.138,19.966,78.828,8.966,31.4,0,22.455],[452.069,51.845,51.621,82.034,41.121,31.4,0,22.669],[495.517,52.552,73.724,82.9,61.034,31.4,0,22.7],[502.586,53.259,125.655,82.9,77.759,31.4,15.517,22.7],[509.655,53.966,153.31,82.9,98.966,31.4,48.621,22.7],[516.724,54.672,184.276,82.9,123.621,31.4,63.448,22.7],[520,55.379,228.828,82.9,155.172,31.4,73.793,22.7],[520,56.086,275.172,82.9,177.586,31.4,75,22.7],[520,56.793,305.862,82.9,195.862,31.4,75,22.7],[520,58,320,82.9,210,31.4,75,22.7]],"t0":1984,"t1":2025,"era":0},"most-played-games":{"entities":[{"label":"Roblox","color":"#FF5C4D"},{"label":"Candy Crush Saga","color":"#E879F9"},{"label":"League of Legends","color":"#2FB4FF"},{"label":"Among Us","color":"#67E8F9"},{"label":"PUBG (incl. Mobile)","color":"#FFB020"},{"label":"Fortnite","color":"#B388FF"},{"label":"World of Warcraft","color":"#94A3B8"},{"label":"Minecraft","color":"#34D399"},{"label":"GTA Online","color":"#23C8A8"},{"label":"Dota 2","color":"#F43F5E"}],"frames":[[6,0,32,0,0,0,10,8,0,1.5],[6.931,69.828,40.379,0,0,0,9.534,9.862,0,3.595],[7.862,139.655,48.759,0,0,0,9.069,11.724,0,5.69],[8.793,187.672,56.741,0,0,0,9.397,14.379,3.966,7.19],[9.724,231.897,64.655,0,0,0,9.862,17.172,8.621,8.586],[11.638,248.276,72.897,0,0,0,9.017,20.293,10.655,9.655],[13.966,252.931,81.276,0,0,0,7.621,23.552,11.586,10.586],[18.879,251.121,88.879,0,0,0,7.259,28.879,12.517,11.517],[25.862,244.138,95.862,0,0,0,7.724,35.862,13.448,12.448],[34.741,241.897,97.155,0,0,0,7.81,42.845,14.19,12.81],[46.379,246.552,90.172,0,0,0,7.345,49.828,14.655,12.345],[57.534,249.397,83.793,0,4.828,5.431,7.121,57.293,15.121,11.879],[67.31,247.069,79.138,0,23.448,26.379,7.586,66.138,15.586,11.414],[76.931,244.483,75.31,0.031,48.276,48.621,8.052,75.138,16.103,10.948],[85.345,240,78.069,0.303,121.379,82.069,8.448,85.345,17.034,10.483],[94.655,240,79.931,0.397,158.621,137.931,7.052,94.655,17.966,10.017],[103.966,235.517,84.483,0.49,177.931,193.793,8.793,110.241,19.793,10],[117.414,255.69,101.552,0.748,213.103,241.379,9,118.621,26.621,10.828],[142.759,267.586,108.793,6.262,227.586,242.414,9.759,124.552,31.034,11],[161.744,266.43,109.047,305.172,213.692,242.819,9.456,128.262,30.913,10.456],[192.414,246.897,126.207,81.724,193.793,195.172,7.759,133.483,27.517,9.69],[205.517,242.241,132.759,27.862,184.483,163.448,6.448,136.655,24.897,9.224],[214.828,237.586,132.586,15.103,175.172,140.345,6.483,138.966,23.034,9],[232.414,236.241,129.172,10.345,167.931,121.724,7,140.414,22,8.793],[260.345,236.966,126.966,7.31,163.276,106.552,7.172,141.69,21.31,8.5],[288.276,233.621,126.931,5.724,160,108.276,7.776,144.931,20,8.362],[318.276,228.966,131.172,4.897,158.966,125.862,8.397,152.069,19.793,8],[352.759,224.31,128.276,4.431,155,108.621,7.931,160.69,18.862,8],[370.69,219.655,129.862,4,154.655,99.655,7.466,165.345,18,8],[380,215,128,4,150,95,7,170,18,8]],"t0":2012,"t1":2025.5,"era":0},"game-consoles":{"entities":[{"label":"PlayStation 2","color":"#4C8DFF"},{"label":"Atari 2600","color":"#C4B5A0"},{"label":"NES","color":"#F43F5E"},{"label":"SNES","color":"#B388FF"},{"label":"PlayStation","color":"#94A3B8"},{"label":"Nintendo Switch","color":"#FF5C4D"},{"label":"PlayStation 4","color":"#2563EB"},{"label":"Nintendo 64","color":"#34D399"},{"label":"Xbox","color":"#A3E635"},{"label":"Wii","color":"#67E8F9"},{"label":"Sega Genesis","color":"#6E7BFF"},{"label":"GameCube","color":"#8B5CF6"},{"label":"Xbox 360","color":"#86EFAC"},{"label":"PlayStation 3","color":"#2FB4FF"}],"frames":[[0,3,0,0,0,0,0,0,0,0,0,0,0,0],[0,8.431,0,0,0,0,0,0,0,0,0,0,0,0],[0,15.149,0.736,0,0,0,0,0,0,0,0,0,0,0],[0,22.391,1.77,0,0,0,0,0,0,0,0,0,0,0],[0,25.609,9.241,0,0,0,0,0,0,0,0,0,0,0],[0,27.678,18.552,0,0,0,0,0,0,0,0,0,0,0],[0,29.31,36.379,0.655,0,0,0,0,0,0,2.621,0,0,0],[0,17.069,50.603,5.741,0,0,0,0,0,0,7.879,0,0,0],[0,0,58.621,15.31,0.207,0,0,0,0,0,15.276,0,0,0],[0,0,60.948,27.724,0.983,0,0,0,0,0,23.81,0,0,0],[0,0,61.759,37.103,9.345,0,0,2.276,0,0,27.793,0,0,0],[0,0,28.862,43.741,29.638,0,0,9.414,0,0,29.534,0,0,0],[0.621,0,0,47.621,55.241,0,0,19.655,0,0,20.69,0,0,0],[4.241,0,0,40.552,80.414,0,0,30.517,0.172,0,0,0.172,0,0],[29.483,0,0,0,97.793,0,0,33,4.621,0,0,5.345,0,0],[60.517,0,0,0,101.276,0,0,11.948,13.655,0,0,12.741,0,0],[87.828,0,0,0,59.793,0,0,0,20.483,1.241,0,18.069,2.483,0.828],[110.552,0,0,0,0,0,0,0,24,10.966,0,21.19,10.172,5.603],[129.172,0,0,0,0,0,0,0,24,43.552,0,21.966,27.241,20.345],[143.345,0,0,0,0,0,0,0,6.207,67.983,0,5.69,40.603,36.569],[151.621,0,0,0,0,0,0,0,0,86.862,0,0,56.379,53.897],[155.586,0,0,0,0,0,5.276,0,0,98.172,0,0,71.397,69.983],[157,0,0,0,0,0,20.552,0,0,101,0,0,82.207,82.345],[157,0,0,0,0,0,49.259,0,0,101,0,0,84.534,86.224],[158,0,0,0,0,18.138,76.983,0,0,101,0,0,0,76.5],[158,0,0,0,0,38.31,102.586,0,0,101,0,0,0,9],[158,0,0,0,0,75.414,114.517,0,0,0,0,0,0,0],[158,0,0,0,0,108.776,116.845,0,0,0,0,0,0,0],[158,0,0,0,0,136.345,117,0,0,0,0,0,0,0],[158,0,0,0,0,152,117,0,0,0,0,0,0,0]],"t0":1980,"t1":2025,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

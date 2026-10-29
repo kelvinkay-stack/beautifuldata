@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Largest Cities in History (3000 BCE–1900) — Overtake">
   <meta name="twitter:description" content="Five thousand years of the world's biggest city, in thousands of people. Animated bar chart race, 3000 BCE–1900.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/ancient-cities.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Largest Cities in History","description":"Five thousand years of the world's biggest city, in thousands of people. The crown passes from Uruk's mudbrick walls to Babylon (first past 200k), to Rome's million under Trajan, to Baghdad, to Song China's river metropolises — until industrial London blows the doors off at 6.5 million. Watch Rome crash to a ghost town of 30k in the dark ages along the way.","url":"https://beautifuldata.netlify.app/races/ancient-cities/","temporalCoverage":"-3000/1900","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://en.wikipedia.org/wiki/List_of_largest_cities_throughout_history"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="history" data-race-id="ancient-cities">
   <div class="race-head">
-    <p class="crumbs"><a href="/#history">History &amp; Antiquity</a><span aria-hidden="true">/</span><span>3000 BCE–1900</span></p>
+    <p class="crumbs"><a href="/#history">History &amp; Antiquity</a><span aria-hidden="true">/</span><span class="num">3000 BCE–1900</span></p>
     <h1>Largest Cities in History</h1>
     <p class="blurb">Five thousand years of the world's biggest city, in thousands of people. The crown passes from Uruk's mudbrick walls to Babylon (first past 200k), to Rome's million under Trajan, to Baghdad, to Song China's river metropolises — until industrial London blows the doors off at 6.5 million. Watch Rome crash to a ghost town of 30k in the dark ages along the way.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>20 contenders</span><span>19 lead changes</span><span class="quality-flag">illustrative data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -77,95 +84,162 @@
   <p class="context-strip">
     <span>Source: <a href="https://en.wikipedia.org/wiki/List_of_largest_cities_throughout_history" rel="noopener">Tertius Chandler, &quot;Four Thousand Years of Urban Growth&quot;</a></span>
     <span>Pre-modern city populations are scholarly estimates with wide error bars; figures follow Chandler/Modelski-style reconstructions and are illustrative.</span>
-    <span class="quality-flag">illustrative data</span>
     <span>Updated 2026-07-07</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">19</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">4,900</b><span>years covered</span></div>
-        <div class="fact"><b class="num">20</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Ur</b><span>longest reign — 750 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 1900</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>16 different leaders in 4,900 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="-3000" style="left:0.000%;width:10.204%;--c:#C4B5A0;--ink:rgba(11,14,20,0.88)" title="Uruk · 3000 BCE–2500 BCE" aria-label="Uruk led 3000 BCE–2500 BCE. Jump there."></button><button type="button" class="reign" data-t="-2500" style="left:10.204%;width:15.306%;--c:#E2B93B;--ink:rgba(11,14,20,0.88)" title="Ur · 2500 BCE–1750 BCE" aria-label="Ur led 2500 BCE–1750 BCE. Jump there."><span>Ur</span></button><button type="button" class="reign" data-t="-1750" style="left:25.510%;width:5.102%;--c:#B45309;--ink:rgba(255,255,255,0.95)" title="Babylon · 1750 BCE–1500 BCE" aria-label="Babylon led 1750 BCE–1500 BCE. Jump there."></button><button type="button" class="reign" data-t="-1500" style="left:30.612%;width:14.286%;--c:#FDE68A;--ink:rgba(11,14,20,0.88)" title="Thebes · 1500 BCE–800 BCE" aria-label="Thebes led 1500 BCE–800 BCE. Jump there."><span>Thebes</span></button><button type="button" class="reign" data-t="-800" style="left:44.898%;width:3.061%;--c:#B45309;--ink:rgba(255,255,255,0.95)" title="Babylon · 800 BCE–650 BCE" aria-label="Babylon led 800 BCE–650 BCE. Jump there."></button><button type="button" class="reign" data-t="-650" style="left:47.959%;width:1.020%;--c:#94A3B8;--ink:rgba(11,14,20,0.88)" title="Nineveh · 650 BCE–600 BCE" aria-label="Nineveh led 650 BCE–600 BCE. Jump there."></button><button type="button" class="reign" data-t="-600" style="left:48.980%;width:7.143%;--c:#B45309;--ink:rgba(255,255,255,0.95)" title="Babylon · 600 BCE–250 BCE" aria-label="Babylon led 600 BCE–250 BCE. Jump there."></button><button type="button" class="reign" data-t="-250" style="left:56.122%;width:3.061%;--c:#67E8F9;--ink:rgba(11,14,20,0.88)" title="Alexandria · 250 BCE–100 BCE" aria-label="Alexandria led 250 BCE–100 BCE. Jump there."></button><button type="button" class="reign" data-t="-100" style="left:59.184%;width:11.224%;--c:#8B5CF6;--ink:rgba(255,255,255,0.95)" title="Rome · 100 BCE–450 CE" aria-label="Rome led 100 BCE–450 CE. Jump there."><span>Rome</span></button><button type="button" class="reign" data-t="450" style="left:70.408%;width:4.082%;--c:#B388FF;--ink:rgba(11,14,20,0.88)" title="Constantinople · 450 CE–650 CE" aria-label="Constantinople led 450 CE–650 CE. Jump there."></button><button type="button" class="reign" data-t="650" style="left:74.490%;width:5.102%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="Chang'an · 650 CE–900 CE" aria-label="Chang'an led 650 CE–900 CE. Jump there."></button><button type="button" class="reign" data-t="900" style="left:79.592%;width:4.082%;--c:#34D399;--ink:rgba(11,14,20,0.88)" title="Baghdad · 900 CE–1100" aria-label="Baghdad led 900 CE–1100. Jump there."></button><button type="button" class="reign" data-t="1100" style="left:83.673%;width:3.571%;--c:#FFB020;--ink:rgba(11,14,20,0.88)" title="Kaifeng · 1100–1275" aria-label="Kaifeng led 1100–1275. Jump there."></button><button type="button" class="reign" data-t="1275" style="left:87.245%;width:2.551%;--c:#23C8A8;--ink:rgba(255,255,255,0.95)" title="Hangzhou · 1275–1400" aria-label="Hangzhou led 1275–1400. Jump there."></button><button type="button" class="reign" data-t="1400" style="left:89.796%;width:1.020%;--c:#A3E635;--ink:rgba(11,14,20,0.88)" title="Nanjing · 1400–1450" aria-label="Nanjing led 1400–1450. Jump there."></button><button type="button" class="reign" data-t="1450" style="left:90.816%;width:5.102%;--c:#FF8C42;--ink:rgba(11,14,20,0.88)" title="Beijing · 1450–1700" aria-label="Beijing led 1450–1700. Jump there."></button><button type="button" class="reign" data-t="1700" style="left:95.918%;width:1.020%;--c:#B388FF;--ink:rgba(11,14,20,0.88)" title="Constantinople · 1700–1750" aria-label="Constantinople led 1700–1750. Jump there."></button><button type="button" class="reign" data-t="1750" style="left:96.939%;width:1.020%;--c:#F43F5E;--ink:rgba(255,255,255,0.95)" title="Edo (Tokyo) · 1750–1800" aria-label="Edo (Tokyo) led 1750–1800. Jump there."></button><button type="button" class="reign" data-t="1800" style="left:97.959%;width:0.510%;--c:#FF8C42;--ink:rgba(11,14,20,0.88)" title="Beijing · 1800–1825" aria-label="Beijing led 1800–1825. Jump there."></button><button type="button" class="reign" data-t="1825" style="left:98.469%;width:1.531%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="London · 1825–1900" aria-label="London led 1825–1900. Jump there."></button></div>
+    <div class="reign-axis num"><span>3000 BCE</span><span>1900</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">London</span><span class="s-val num">6,500k</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#6E7BFF" aria-hidden="true"></span><span class="s-label">Paris</span><span class="s-val num">3,330k</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Edo (Tokyo)</span><span class="s-val num">1,500k</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">Beijing</span><span class="s-val num">1,100k</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">Constantinople</span><span class="s-val num">950k</span></li>
+        <li><span class="h-label">Ur</span><span class="h-bar"><i style="width:100.0%;background:#E2B93B"></i></span><span class="h-val num">750 yrs</span></li>
+        <li><span class="h-label">Babylon</span><span class="h-bar"><i style="width:100.0%;background:#B45309"></i></span><span class="h-val num">750 yrs</span></li>
+        <li><span class="h-label">Thebes</span><span class="h-bar"><i style="width:93.3%;background:#FDE68A"></i></span><span class="h-val num">700 yrs</span></li>
+        <li><span class="h-label">Rome</span><span class="h-bar"><i style="width:73.3%;background:#8B5CF6"></i></span><span class="h-val num">550 yrs</span></li>
+        <li><span class="h-label">Uruk</span><span class="h-bar"><i style="width:66.7%;background:#C4B5A0"></i></span><span class="h-val num">500 yrs</span></li>
+        <li><span class="h-label">Beijing</span><span class="h-bar"><i style="width:36.7%;background:#FF8C42"></i></span><span class="h-val num">275 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="-600">
         <span class="m-year num">600 BCE</span>
-        <span class="m-title">Babylon, first to 200,000</span>
+        <span class="m-body"><span class="m-title">Babylon, first to 200,000</span><span class="m-text">Nebuchadnezzar II rebuilds Babylon with its ziggurat and hanging gardens — the first city believed to reach roughly 200,000 people.</span></span>
       </button></li>
       <li><button type="button" data-t="100">
         <span class="m-year num">100 CE</span>
-        <span class="m-title">Rome hits one million</span>
+        <span class="m-body"><span class="m-title">Rome hits one million</span><span class="m-text">Fed by grain fleets and eleven aqueducts, imperial Rome reaches about a million people — a size no city matches again for 1,700 years.</span></span>
       </button></li>
       <li><button type="button" data-t="550">
         <span class="m-year num">550 CE</span>
-        <span class="m-title">The fall of Rome</span>
+        <span class="m-body"><span class="m-title">The fall of Rome</span><span class="m-text">Sacks, plague and cut aqueducts empty the old capital. Rome dwindles toward 30,000 — a ghost town camped in ruins built for a million.</span></span>
       </button></li>
       <li><button type="button" data-t="900">
         <span class="m-year num">900 CE</span>
-        <span class="m-title">Baghdad's golden age</span>
+        <span class="m-body"><span class="m-title">Baghdad's golden age</span><span class="m-text">The Abbasid round city, home of the House of Wisdom, peaks near 900,000 — the largest city on Earth at the height of the Islamic Golden Age.</span></span>
       </button></li>
       <li><button type="button" data-t="1275">
         <span class="m-year num">1275</span>
-        <span class="m-title">Song China's urban explosion</span>
+        <span class="m-body"><span class="m-title">Song China's urban explosion</span><span class="m-text">Hangzhou — Marco Polo's 'Quinsai' — nears a million as Song China's commercial revolution builds the biggest cities of the medieval world.</span></span>
       </button></li>
       <li><button type="button" data-t="1825">
         <span class="m-year num">1825</span>
-        <span class="m-title">London passes Beijing</span>
+        <span class="m-body"><span class="m-title">London passes Beijing</span><span class="m-text">Around 1825 industrial London overtakes Beijing as the world's largest city — the first time the top spot leaves Asia in a millennium.</span></span>
       </button></li>
       <li><button type="button" data-t="1900">
         <span class="m-year num">1900</span>
-        <span class="m-title">The industrial megacity</span>
+        <span class="m-body"><span class="m-title">The industrial megacity</span><span class="m-text">Steam, rail and empire swell London to 6.5 million by 1900 — triple anything history had seen and the dawn of the modern megacity.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More History races</h2>
-  <div class="related-grid">
-    <a href="/races/languages/"><span class="r-title">Most Spoken Languages</span><span class="r-span num">1900–2025 · 12 contenders</span></a>
-    <a href="/races/empires/"><span class="r-title">Largest Empires by Land Area</span><span class="r-span num">2300 BCE–2000 · 27 contenders</span></a>
-    <a href="/races/world-gdp-share/"><span class="r-title">Share of World GDP</span><span class="r-span num">1 CE–2025 · 10 contenders</span></a>
-    <a href="/races/religions/"><span class="r-title">Major Religions by Followers</span><span class="r-span num">1 CE–2025 · 10 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">19</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">16</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">4,900</b><span>years covered</span></div>
+          <div class="fact"><b class="num">20</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Ur</b><span>longest unbroken reign — 750 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#7 → #1</b><span>London ranked #7 when it first appeared in 1450 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">1900</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">London</span><span class="s-val num">6,500k</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#6E7BFF" aria-hidden="true"></span><span class="s-label">Paris</span><span class="s-val num">3,330k</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Edo (Tokyo)</span><span class="s-val num">1,500k</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">Beijing</span><span class="s-val num">1,100k</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">Constantinople</span><span class="s-val num">950k</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More History races</h2><a href="/#history">See all 6 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/languages/" style="--accent:#C77B4A;--accent-soft:rgba(199,123,74,0.15)">
+      <div class="card-preview"><canvas data-race="languages" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Most Spoken Languages</h3>
+        <p class="card-meta"><span>1900–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>1 lead change</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">English</span><span class="cl-val">1.50B</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/empires/" style="--accent:#C77B4A;--accent-soft:rgba(199,123,74,0.15)">
+      <div class="card-preview"><canvas data-race="empires" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Empires by Land Area</h3>
+        <p class="card-meta"><span>2300 BCE–2000</span><span>·</span><span>27 contenders</span><span>·</span><span>18 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#D4D4D8" aria-hidden="true"></span><span class="cl-name">Russian Empire</span><span class="cl-val">17.1M km²</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/world-gdp-share/" style="--accent:#C77B4A;--accent-soft:rgba(199,123,74,0.15)">
+      <div class="card-preview"><canvas data-race="world-gdp-share" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Share of World GDP</h3>
+        <p class="card-meta"><span>1 CE–2025</span><span>·</span><span>10 contenders</span><span>·</span><span>8 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">China</span><span class="cl-val">19.0%</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/religions/" style="--accent:#C77B4A;--accent-soft:rgba(199,123,74,0.15)">
+      <div class="card-preview"><canvas data-race="religions" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Major Religions by Followers</h3>
+        <p class="card-meta"><span>1 CE–2025</span><span>·</span><span>10 contenders</span><span>·</span><span>2 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">Christianity</span><span class="cl-val">2.40B</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/world-population-region/"><span class="dir">← Previous race</span>Pop by Region</a>
-    <a href="/races/apple-products/" style="text-align:right"><span class="dir">Next race →</span>Apple Products</a>
+    <a href="/races/world-population-region/"><span class="dir">← Previous race</span>World Population by Region</a>
+    <a href="/races/apple-products/" class="pg-next"><span class="dir">Next race →</span>Apple Revenue by Product Line</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"languages":{"entities":[{"label":"English","color":"#4C8DFF"},{"label":"Mandarin Chinese","color":"#FF5C4D"},{"label":"Hindi-Urdu","color":"#FF8C42"},{"label":"Spanish","color":"#FFD84D"},{"label":"Russian","color":"#E879F9"},{"label":"Arabic","color":"#34D399"},{"label":"German","color":"#94A3B8"}],"frames":[[200,320,120,65,100,45,90],[208.621,328.621,124.31,68.017,106.466,47.155,92.155],[217.241,337.241,128.621,71.034,112.931,49.31,94.31],[225.862,345.862,132.931,74.345,117.931,51.466,95],[234.483,354.483,137.241,77.793,122.241,53.621,95],[243.879,363.879,142.328,81.862,128.103,56.086,95.466],[254.655,374.655,148.793,87.034,136.724,59.103,96.759],[265.431,385.431,155.345,92.224,145.345,62.138,98.034],[276.207,396.207,163.966,97.828,153.966,65.586,98.897],[286.983,406.983,172.586,103.431,162.586,69.034,99.759],[299.31,420.862,182.759,111.207,172.759,73.724,99.379],[312.241,435.948,193.534,119.828,183.534,78.897,98.517],[328.621,456.207,206.897,130.172,195.172,85.103,98.345],[350.172,484.224,224.138,143.103,208.103,92.862,99.207],[372.069,513.103,241.724,156.379,221.034,100.862,100.069],[397.931,551.897,263.276,173.621,233.966,111.638,100.931],[423.793,590.69,284.828,190.862,246.897,122.414,101.793],[456.207,639.31,311.293,211.379,258.19,136.466,102.655],[490.69,691.034,339.31,232.931,268.966,151.552,103.517],[528.966,740.862,369.224,255.431,277.845,167.586,104.379],[572.069,788.276,401.552,279.138,284.31,184.828,105.241],[617.241,835.172,434.655,303.103,289.483,202.586,106.207],[677.586,878.276,473.448,328.966,285.172,224.138,107.931],[746.207,913.103,512.241,358.966,280.862,245.69,109.655],[822.069,947.586,561.379,392.586,276.552,270.69,113.448],[910.69,982.069,618.621,429.828,271.138,296.552,117.759],[1030.345,1020.69,683.103,470.69,265.517,326.552,123.31],[1185.172,1061.034,754.828,513.793,260.897,361.034,129.103],[1353.448,1094.138,831.034,556.897,257.586,394.138,132.414],[1500,1120,900,600,255,420,135]],"t0":1900,"t1":2025,"era":0},"empires":{"entities":[{"label":"Russian Empire","color":"#D4D4D8"},{"label":"British Empire","color":"#F43F5E"},{"label":"Akkadian Empire","color":"#C4B5A0"},{"label":"Ancient Egypt","color":"#E2B93B"},{"label":"Neo-Assyrian Empire","color":"#B45309"},{"label":"Achaemenid Persia","color":"#FFD84D"},{"label":"Macedonian Empire","color":"#67E8F9"},{"label":"Maurya Empire","color":"#FF8C42"},{"label":"Xiongnu","color":"#94A3B8"},{"label":"Han Dynasty","color":"#EF4444"},{"label":"Roman Empire","color":"#8B5CF6"},{"label":"Rashidun Caliphate","color":"#34D399"},{"label":"Umayyad Caliphate","color":"#23C8A8"},{"label":"Abbasid Caliphate","color":"#86EFAC"}],"frames":[[0,0,0.8,0.3,0,0,0,0,0,0,0,0,0,0],[0,0,0.715,0.399,0,0,0,0,0,0,0,0,0,0],[0,0,0.631,0.498,0,0,0,0,0,0,0,0,0,0],[0,0,0.546,0.597,0,0,0,0,0,0,0,0,0,0],[0,0,0.461,0.695,0,0,0,0,0,0,0,0,0,0],[0,0,0.376,0.794,0,0,0,0,0,0,0,0,0,0],[0,0,0.292,0.893,0,0,0,0,0,0,0,0,0,0],[0,0,0.207,0.992,0,0,0,0,0,0,0,0,0,0],[0,0,0.158,0.874,0.293,0,0,0,0,0,0,0,0,0],[0,0,0.112,0.737,0.613,0,0,0,0,0,0,0,0,0],[0,0,0.067,0.601,0.932,0,0,0,0,0,0,0,0,0],[0,0,0.021,0.464,1.251,0,0,0,0,0,0,0,0,0],[0,0,0,0.083,0.369,4.362,0,0,0,0,0,0,0,0],[0,0,0,0,0.028,1.68,3.748,0.36,0,0,0,0,0,0],[0,0,0,0,0,0,0.331,4.172,2.379,1.121,0.328,0,0,0],[0,0,0,0,0,0,0,0.178,8.444,6.5,2.245,0,0,0],[0,0,0,0,0,0,0,0.041,5.027,6.5,4.363,0,0,0],[0,0,0,0,0,0,0,0,2.534,4.302,4.78,0,0,0],[0,0,0,0,0,0,0,0,0.439,1.158,4.466,0,0,0],[0,0,0,0,0,0,0,0,0,0.266,2.337,3.001,0,0],[0,0,0,0,0,0,0,0,0,0,0,5.407,1.722,0.078],[0,0,0,0,0,0,0,0,0,0,0,0,6.379,5.008],[0,0,0,0,0,0,0,0,0,0,0,0,0,9.083],[0,0,0,0,0,0,0,0,0,0,0,0,0,4.331],[0,0,0,0,0,0,0,0,0,0,0,0,0,0.516],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[7.483,2.672,0,0,0,0,0,0,0,0,0,0,0,0],[19.333,27.055,0,0,0,0,0,0,0,0,0,0,0,0],[17.1,1.7,0,0,0,0,0,0,0,0,0,0,0,0]],"t0":-2300,"t1":2000,"era":1},"world-gdp-share":{"entities":[{"label":"China","color":"#F43F5E"},{"label":"Western Europe","color":"#4C8DFF"},{"label":"India","color":"#FF8C42"},{"label":"United States","color":"#67E8F9"},{"label":"Middle East","color":"#FFD84D"},{"label":"E. Europe & Russia/USSR","color":"#D4D4D8"},{"label":"Latin America","color":"#34D399"},{"label":"Southeast Asia","color":"#B388FF"},{"label":"Africa","color":"#A3E635"}],"frames":[[26,10.8,32,0,8,5,2.4,4,6],[25.769,10.681,31.721,0,8.14,5.07,2.498,4.07,6.035],[25.539,10.562,31.441,0,8.279,5.14,2.596,4.14,6.07],[25.308,10.444,31.162,0,8.419,5.21,2.693,4.21,6.105],[25.078,10.325,30.882,0,8.559,5.279,2.791,4.279,6.14],[24.847,10.206,30.603,0,8.699,5.349,2.889,4.349,6.175],[24.617,10.087,30.323,0,8.838,5.419,2.987,4.419,6.21],[24.386,9.969,30.044,0,8.978,5.489,3.085,4.489,6.245],[24.156,9.85,29.764,0,9.118,5.559,3.182,4.559,6.279],[23.925,9.731,29.485,0,9.258,5.629,3.28,4.629,6.314],[23.695,9.612,29.205,0,9.397,5.699,3.378,4.699,6.349],[23.464,9.494,28.926,0,9.537,5.768,3.476,4.768,6.384],[23.233,9.375,28.647,0,9.677,5.838,3.574,4.838,6.419],[23.003,9.256,28.367,0,9.816,5.908,3.672,4.908,6.454],[22.772,9.137,28.088,0,9.956,5.978,3.769,4.978,6.489],[22.92,9.933,27.665,0,9.713,6.048,3.714,4.904,6.443],[23.241,11.148,27.176,0,9.294,6.118,3.588,4.765,6.359],[23.562,12.362,26.688,0,8.875,6.187,3.463,4.625,6.275],[23.883,13.577,26.199,0,8.456,6.257,3.337,4.485,6.191],[24.205,14.791,25.711,0,8.038,6.327,3.211,4.346,6.108],[24.526,16.005,25.222,0,7.619,6.397,3.086,4.206,6.024],[24.847,17.22,24.733,0,7.2,6.467,2.96,4.067,5.94],[26.458,18.529,23.735,0,6.636,6.609,2.645,3.927,5.681],[28.582,19.931,22.525,0,5.969,6.844,2.169,3.788,5.275],[23.906,21.397,23.921,0,5.62,7.332,1.82,3.648,4.996],[26.386,22.32,21.192,0.687,4.698,8.073,1.815,3.562,4.747],[32.61,22.96,16.307,1.734,3.477,8.945,1.989,3.504,4.515],[13.966,33,10.302,12.445,1.994,12.419,3.014,3.349,3.292],[4.523,26.164,3.951,26.1,2.817,13.258,8.081,3.958,3.732],[19,13,8,15,5,4.6,6.8,7.5,4.5]],"t0":1,"t1":2025,"era":1},"religions":{"entities":[{"label":"Christianity","color":"#4C8DFF"},{"label":"Hinduism","color":"#FF8C42"},{"label":"Folk / Indigenous","color":"#A3E635"},{"label":"Islam","color":"#34D399"},{"label":"Chinese Traditional","color":"#F43F5E"},{"label":"Nonreligious","color":"#94A3B8"},{"label":"Buddhism","color":"#FFD84D"},{"label":"Taoism","color":"#E879F9"},{"label":"Judaism","color":"#67E8F9"}],"frames":[[0,45,60,0,40,0,22,5,5],[0.705,48.525,60,0,41.41,0,24.82,5.705,5],[2.015,51.015,59.594,0,42.406,0,26.812,6.203,5],[3.759,52.759,58.896,0,43.104,0,28.208,6.552,5],[5.504,54.504,58.198,0,43.802,0,29.603,6.901,5],[9.997,55.749,57.251,0,44.25,0,30.999,7.25,4.75],[15.581,56.796,56.204,0,44.599,0,32.395,7.599,4.401],[21.164,57.843,55.157,0,44.948,0,33.791,7.948,4.052],[23.798,58.899,54.55,0.45,45.45,0,35.349,8.45,4],[25.913,59.957,54.022,0.978,45.978,0,36.935,8.978,4],[27.134,61.134,52.866,12.911,46.567,0,38.702,9.567,4],[28.3,62.225,51.85,23.198,47.225,0,40.3,10.075,3.925],[29.416,63.062,51.292,27.665,48.062,0,41.416,10.354,3.646],[30.533,63.9,50.734,32.132,48.9,0,42.533,10.633,3.367],[31.65,64.737,50.175,36.599,49.737,0,43.65,10.912,3.088],[33.916,66.197,49.521,42.071,51.197,0,44.479,11.239,3],[36.708,67.942,48.823,48.004,52.942,0,45.177,11.588,3],[39.499,69.687,48.125,53.936,54.687,0,45.875,11.937,3],[46.873,72.864,48.382,59.391,57.864,0,47.146,12.382,2.809],[55.248,76.353,48.847,64.742,61.353,0,48.541,12.847,2.576],[63.623,79.843,49.312,70.093,64.843,0,49.937,13.312,2.344],[71.999,83.333,49.778,75.444,68.333,0,51.333,13.778,2.111],[85.841,87.734,50.911,82.009,74.556,0,53.822,14.364,2],[104.685,92.968,52.656,89.687,83.28,0,57.312,15.062,2],[123.529,98.203,54.401,97.364,92.004,0,60.802,15.76,2],[166.662,116.04,57.291,113.748,106.457,0,74.832,17.833,2.458],[264.672,149.84,67.81,140.934,132.497,0.469,96.248,21.562,4.406],[508.948,216.143,102.707,189.79,188.331,2.562,124.166,28.541,10.687],[963.724,356.448,153.905,407.276,207.81,285.914,209.112,30,12],[2400,1200,430,2000,400,1250,520,30,15]],"t0":1,"t1":2025,"era":1}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

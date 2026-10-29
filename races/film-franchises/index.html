@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Highest-Grossing Film Franchises (1977–2026) — Overtake">
   <meta name="twitter:description" content="Every ticket sold, stacked up franchise by franchise since 1977. Animated bar chart race, 1977–2026.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/film-franchises.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Highest-Grossing Film Franchises","description":"Every ticket sold, stacked up franchise by franchise since 1977. James Bond's fifteen-year head start kept 007 on top for three decades, until Harry Potter and then the Marvel machine rewrote what a film series could earn.","url":"https://beautifuldata.netlify.app/races/film-franchises/","temporalCoverage":"1977/2026","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.boxofficemojo.com/franchise/"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="culture" data-race-id="film-franchises">
   <div class="race-head">
-    <p class="crumbs"><a href="/#culture">Entertainment &amp; Culture</a><span aria-hidden="true">/</span><span>1977–2026</span></p>
+    <p class="crumbs"><a href="/#culture">Entertainment &amp; Culture</a><span aria-hidden="true">/</span><span class="num">1977–2026</span></p>
     <h1>Highest-Grossing Film Franchises</h1>
     <p class="blurb">Every ticket sold, stacked up franchise by franchise since 1977. James Bond's fifteen-year head start kept 007 on top for three decades, until Harry Potter and then the Marvel machine rewrote what a film series could earn.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>19 contenders</span><span>6 lead changes</span><span class="quality-flag">illustrative data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -77,91 +84,156 @@
   <p class="context-strip">
     <span>Source: <a href="https://www.boxofficemojo.com/franchise/" rel="noopener">Public box-office reporting (Box Office Mojo, The Numbers)</a></span>
     <span>Unadjusted grosses reconstructed from public box-office reporting; MCU Spider-Man films also appear in the Spider-Man total.</span>
-    <span class="quality-flag">illustrative data</span>
     <span>Updated 2026-07-03</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">6</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">49</b><span>years covered</span></div>
-        <div class="fact"><b class="num">19</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>James Bond</b><span>longest reign — 28 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2026</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>4 different leaders in 49 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1977" style="left:0.000%;width:57.143%;--c:#94A3B8;--ink:rgba(11,14,20,0.88)" title="James Bond · 1977–2005" aria-label="James Bond led 1977–2005. Jump there."><span>James Bond</span></button><button type="button" class="reign" data-t="2005" style="left:57.143%;width:2.041%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="Star Wars · 2005–2006" aria-label="Star Wars led 2005–2006. Jump there."></button><button type="button" class="reign" data-t="2006" style="left:59.184%;width:2.041%;--c:#94A3B8;--ink:rgba(11,14,20,0.88)" title="James Bond · 2006–2007" aria-label="James Bond led 2006–2007. Jump there."></button><button type="button" class="reign" data-t="2007" style="left:61.224%;width:2.041%;--c:#B388FF;--ink:rgba(11,14,20,0.88)" title="Wizarding World · 2007–2008" aria-label="Wizarding World led 2007–2008. Jump there."></button><button type="button" class="reign" data-t="2008" style="left:63.265%;width:2.041%;--c:#94A3B8;--ink:rgba(11,14,20,0.88)" title="James Bond · 2008–2009" aria-label="James Bond led 2008–2009. Jump there."></button><button type="button" class="reign" data-t="2009" style="left:65.306%;width:12.245%;--c:#B388FF;--ink:rgba(11,14,20,0.88)" title="Wizarding World · 2009–2015" aria-label="Wizarding World led 2009–2015. Jump there."><span>Wizarding World</span></button><button type="button" class="reign" data-t="2015" style="left:77.551%;width:22.449%;--c:#F43F5E;--ink:rgba(255,255,255,0.95)" title="Marvel Cinematic Universe · 2015–2026" aria-label="Marvel Cinematic Universe led 2015–2026. Jump there."><span>Marvel Cinematic Universe</span></button></div>
+    <div class="reign-axis num"><span>1977</span><span>2026</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Marvel Cinematic Universe</span><span class="s-val num">$31.9B</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Spider-Man</span><span class="s-val num">$10.9B</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FFD84D" aria-hidden="true"></span><span class="s-label">Star Wars</span><span class="s-val num">$10.3B</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">Wizarding World</span><span class="s-val num">$9.58B</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#94A3B8" aria-hidden="true"></span><span class="s-label">James Bond</span><span class="s-val num">$7.72B</span></li>
+        <li><span class="h-label">James Bond</span><span class="h-bar"><i style="width:100.0%;background:#94A3B8"></i></span><span class="h-val num">30 yrs</span></li>
+        <li><span class="h-label">Marvel Cinematic Universe</span><span class="h-bar"><i style="width:36.7%;background:#F43F5E"></i></span><span class="h-val num">11 yrs</span></li>
+        <li><span class="h-label">Wizarding World</span><span class="h-bar"><i style="width:23.3%;background:#B388FF"></i></span><span class="h-val num">7 yrs</span></li>
+        <li><span class="h-label">Star Wars</span><span class="h-bar"><i style="width:3.3%;background:#FFD84D"></i></span><span class="h-val num">1 yr</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1977.4">
         <span class="m-year num">1977</span>
-        <span class="m-title">Star Wars opens</span>
+        <span class="m-body"><span class="m-title">Star Wars opens</span><span class="m-text">A New Hope becomes a phenomenon — but Bond's fifteen-year head start keeps 007 on top of the cumulative board.</span></span>
       </button></li>
       <li><button type="button" data-t="1999.4">
         <span class="m-year num">1999</span>
-        <span class="m-title">The Phantom Menace</span>
+        <span class="m-body"><span class="m-title">The Phantom Menace</span><span class="m-text">The prequels nearly double Star Wars' total, yet Bond's slow-and-steady catalogue still leads after 37 years.</span></span>
       </button></li>
       <li><button type="button" data-t="2009.5">
         <span class="m-year num">2009</span>
-        <span class="m-title">Potter ends Bond's reign</span>
+        <span class="m-body"><span class="m-title">Potter ends Bond's reign</span><span class="m-text">Half-Blood Prince lifts the Wizarding World past James Bond — the first new No. 1 in the race's history.</span></span>
       </button></li>
       <li><button type="button" data-t="2013.4">
         <span class="m-year num">2013</span>
-        <span class="m-title">MCU passes Star Wars</span>
+        <span class="m-body"><span class="m-title">MCU passes Star Wars</span><span class="m-text">Just five years after Iron Man, Marvel's shared universe overtakes the saga that invented the modern blockbuster.</span></span>
       </button></li>
       <li><button type="button" data-t="2015.5">
         <span class="m-year num">2015</span>
-        <span class="m-title">Marvel takes the lead</span>
+        <span class="m-body"><span class="m-title">Marvel takes the lead</span><span class="m-text">Age of Ultron pushes the MCU past Harry Potter to No. 1 — a lead it never gives back.</span></span>
       </button></li>
       <li><button type="button" data-t="2019.3">
         <span class="m-year num">2019</span>
-        <span class="m-title">Avengers: Endgame</span>
+        <span class="m-body"><span class="m-title">Avengers: Endgame</span><span class="m-text">A $2.8B send-off vaults the MCU past $22B — more than double any other franchise in history.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Entertainment races</h2>
-  <div class="related-grid">
-    <a href="/races/music-artists/"><span class="r-title">Best-Selling Music Artists</span><span class="r-span num">1960–2026 · 22 contenders</span></a>
-    <a href="/races/streaming-music/"><span class="r-title">Music Streamers by Subscribers</span><span class="r-span num">2008–2025 · 11 contenders</span></a>
-    <a href="/races/highest-paid-actors/"><span class="r-title">Highest-Paid Actors</span><span class="r-span num">1995–2024 · 15 contenders</span></a>
-    <a href="/races/youtube-channels/"><span class="r-title">Most-Subscribed YouTube Channels</span><span class="r-span num">2006–2025 · 13 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">6</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">4</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">49</b><span>years covered</span></div>
+          <div class="fact"><b class="num">19</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>James Bond</b><span>longest unbroken reign — 28 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#15 → #1</b><span>Marvel Cinematic Universe ranked #15 when it first appeared in 2008 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2026</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Marvel Cinematic Universe</span><span class="s-val num">$31.9B</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Spider-Man</span><span class="s-val num">$10.9B</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FFD84D" aria-hidden="true"></span><span class="s-label">Star Wars</span><span class="s-val num">$10.3B</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">Wizarding World</span><span class="s-val num">$9.58B</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#94A3B8" aria-hidden="true"></span><span class="s-label">James Bond</span><span class="s-val num">$7.72B</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Entertainment races</h2><a href="/#culture">See all 9 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/music-artists/" style="--accent:#F45CA4;--accent-soft:rgba(244,92,164,0.14)">
+      <div class="card-preview"><canvas data-race="music-artists" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Best-Selling Music Artists</h3>
+        <p class="card-meta"><span>1960–2026</span><span>·</span><span>22 contenders</span><span>·</span><span>1 lead change</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">The Beatles</span><span class="cl-val">804M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/streaming-music/" style="--accent:#F45CA4;--accent-soft:rgba(244,92,164,0.14)">
+      <div class="card-preview"><canvas data-race="streaming-music" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Music Streamers by Subscribers</h3>
+        <p class="card-meta"><span>2008–2025</span><span>·</span><span>11 contenders</span><span>·</span><span>1 lead change</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#34D399" aria-hidden="true"></span><span class="cl-name">Spotify</span><span class="cl-val">290M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/highest-paid-actors/" style="--accent:#F45CA4;--accent-soft:rgba(244,92,164,0.14)">
+      <div class="card-preview"><canvas data-race="highest-paid-actors" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Highest-Paid Actors</h3>
+        <p class="card-meta"><span>1995–2024</span><span>·</span><span>15 contenders</span><span>·</span><span>11 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#C4B5A0" aria-hidden="true"></span><span class="cl-name">Dwayne Johnson</span><span class="cl-val">$88.0M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/youtube-channels/" style="--accent:#F45CA4;--accent-soft:rgba(244,92,164,0.14)">
+      <div class="card-preview"><canvas data-race="youtube-channels" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Most-Subscribed YouTube Channels</h3>
+        <p class="card-meta"><span>2006–2025</span><span>·</span><span>13 contenders</span><span>·</span><span>5 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFB020" aria-hidden="true"></span><span class="cl-name">MrBeast</span><span class="cl-val">410M</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/champions-league/"><span class="dir">← Previous race</span>UCL Titles</a>
-    <a href="/races/music-artists/" style="text-align:right"><span class="dir">Next race →</span>Music Artists</a>
+    <a href="/races/champions-league/"><span class="dir">← Previous race</span>European Cup / Champions League Titles</a>
+    <a href="/races/music-artists/" class="pg-next"><span class="dir">Next race →</span>Best-Selling Music Artists</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"music-artists":{"entities":[{"label":"The Beatles","color":"#4C8DFF"},{"label":"Bing Crosby","color":"#86EFAC"},{"label":"Michael Jackson","color":"#F43F5E"},{"label":"Elvis Presley","color":"#FFD84D"},{"label":"Frank Sinatra","color":"#6E7BFF"},{"label":"Queen","color":"#E2B93B"},{"label":"Madonna","color":"#FF6FA5"},{"label":"Elton John","color":"#B388FF"},{"label":"Led Zeppelin","color":"#FF8C42"},{"label":"Rolling Stones","color":"#FF5C4D"},{"label":"ABBA","color":"#67E8F9"}],"frames":[[0,200,0,40,40,0,0,0,0,0,0],[2.207,211.103,0,58.207,49.103,0,0,0,0,0,0],[59.31,220.207,0,76.414,59.759,0,0,0,0,6.31,0],[129.828,229.31,0,91.966,72.966,0,0,0,0,22.621,0],[203.621,238.414,0,108.931,84.414,0,0,1.207,7.034,41.931,0],[261.448,246.138,0,129.414,93.138,0,0,11.034,34.552,62.414,0],[298.517,252.966,0,149.241,99.966,2.966,0,37.172,62.207,82.241,7.241],[327.172,259.793,0,167.448,106.793,21.31,0,71.034,89.172,99.517,38.759],[353.069,265.414,7.069,202.069,113.621,46.276,0,95.862,114.069,115.448,86.345],[375.345,269.966,28.379,223.862,120.448,70.828,0,114.379,135.862,131.379,129.724],[395.828,274.517,79.138,242.069,127.276,92.828,3.276,130.31,152.31,146.552,159.586],[416.31,279.069,140.414,260.241,134.103,115.379,34.621,146.241,168.241,160.207,173.172],[436.793,283.621,192.759,276.172,140.931,138.793,74.655,162.172,184.172,173.862,183.241],[456.69,288.172,232.621,292.103,147.759,158.69,112.552,178.103,200.103,188.517,192.345],[474.897,292.724,272.241,308.034,154.586,182.345,149.655,194.034,216.034,202.172,202.31],[493.793,297.276,307.759,323.966,161.414,204.241,179.655,211.103,231.966,216.966,213.69],[524.966,301.828,346.207,339.897,168.241,224.724,206.966,235.931,247.897,232.897,226.483],[552.276,306.379,376.276,355.828,175.069,245.207,234.276,268.897,263.828,248.828,240.138],[587.448,310.931,403.586,373.724,181.897,265.69,261.586,288.724,279.759,263.793,253.793],[613.655,315.483,426.414,396.414,188.724,286.172,285.414,304.69,293.448,277.448,267.448],[636.655,320.034,448.138,419.172,195.552,306.655,308.172,320.621,307.103,291.103,281.103],[656.345,324.586,466.345,441.138,202.379,327.138,329.931,336.552,320.759,304.759,294.759],[678.552,329.138,520.828,460.552,209.207,347.621,352.621,352.483,334.414,318.414,308.414],[696.759,333.69,548.138,478.759,216.034,368.103,373.103,368.414,348.069,332.069,322.069],[714.966,338.241,575.448,496.966,222.862,388.586,392.966,384.345,361.724,345.724,335.724],[733.172,342.793,598.966,515.172,229.69,409.069,411.172,400.276,375.379,359.379,349.379],[751.379,347.345,621.724,533.379,236.517,437.724,429.379,421.379,389.034,373.034,363.034],[769.586,351.897,644.483,552.483,243.345,460.483,447.586,439.586,402.69,386.69,379.586],[787.793,356.448,667.241,571.793,250.172,483.241,465.793,457.793,416.345,402.069,397.793],[804,360,688,588,256,504,482,474,428,415,414]],"t0":1960,"t1":2026,"era":0},"streaming-music":{"entities":[{"label":"Spotify","color":"#34D399"},{"label":"Napster/Rhapsody","color":"#C4B5A0"},{"label":"YouTube Music","color":"#FF5C4D"},{"label":"Tencent Music","color":"#FFD84D"},{"label":"Amazon Music","color":"#FF8C42"},{"label":"Apple Music","color":"#D4D4D8"},{"label":"Deezer","color":"#B388FF"},{"label":"Pandora","color":"#4C8DFF"},{"label":"NetEase Cloud Music","color":"#F43F5E"}],"frames":[[0.1,0.7,0,0,0,0,0.2,0.1,0],[0.334,0.759,0,0,0,0,0.317,0.159,0],[0.586,0.817,0,0,0.086,0,0.469,0.252,0],[0.879,0.876,0,0,0.379,0,0.703,0.428,0],[1.517,0.934,0,0,0.672,0,1.041,0.672,0],[2.397,0.993,0,0,0.966,0,1.452,0.966,0],[3.793,1.052,0,1.552,1.517,0,2.276,1.517,0],[5.31,1.121,0,3.31,2.207,0,3.207,2.134,0],[7.069,1.238,0,5.069,3.379,0,4.379,2.897,0],[9.931,1.355,0,7.103,4.828,0,5.276,3.355,0.276],[14.034,1.472,0,9.448,6.586,0,5.862,3.472,0.862],[20.828,2.172,0.897,12.241,8.345,2.914,6.134,3.679,1.897],[28.69,3.017,2.103,15.172,10.207,6.966,6.321,3.914,3.103],[40.414,3.31,3.862,18.103,13.724,14.879,6.672,4.148,4.862],[52.759,3.603,5.621,21.655,17.241,22.069,6.921,4.548,6.828],[66.241,3.897,7.379,26.345,20.759,27.931,6.979,5.252,9.172],[80.483,4.19,10.655,30.655,25.793,35.69,7,5.766,11.897],[95.138,4.483,14.759,34.759,31.655,44.483,7,6.176,14.828],[111.448,4.776,17.759,37.759,44.69,53.276,7,6.255,17.759],[128.276,5,21.379,41.655,56.793,61.655,7,6.3,21.379],[146.448,5,27.241,48.69,64.414,68.69,7,6.3,27.241],[162.759,5,36.207,56.345,72.345,73.862,7.807,6.3,31.552],[177.414,5,47.931,64.552,80.552,77.379,9.331,6.3,34.483],[192.069,4.903,64.483,76.621,86.828,82.828,9.503,6.203,37.414],[207.138,4.779,81.379,89.241,92.552,88.345,9.476,6.093,40.276],[225.31,4.603,93.103,99.793,97.241,91.276,10.121,6.034,42.621],[242.517,4.428,103.621,108.655,101.931,93.966,10.79,5.952,44.966],[258.345,4.252,112.414,115.103,106.621,96.31,11.493,5.834,47.31],[274.172,4.117,121.207,122.379,111.31,100.31,12.031,5.676,49.655],[290,4,130,130,116,105,12.5,5.5,52]],"t0":2008,"t1":2025,"era":0},"highest-paid-actors":{"entities":[{"label":"Dwayne Johnson","color":"#C4B5A0"},{"label":"Adam Sandler","color":"#A3E635"},{"label":"Tom Cruise","color":"#4C8DFF"},{"label":"Mark Wahlberg","color":"#FF5C4D"},{"label":"Tom Hanks","color":"#67E8F9"},{"label":"Jackie Chan","color":"#FFB020"},{"label":"Robert Downey Jr.","color":"#FFD84D"},{"label":"George Clooney","color":"#F43F5E"},{"label":"Johnny Depp","color":"#8B5CF6"},{"label":"Ryan Reynolds","color":"#E879F9"},{"label":"Will Smith","color":"#2FB4FF"},{"label":"Brad Pitt","color":"#B388FF"},{"label":"Vin Diesel","color":"#FF6FA5"},{"label":"Eddie Murphy","color":"#34D399"}],"frames":[[0,5,25,0,22,10,0,0,5,0,15,12,0,16],[0,8.5,35,0,31,12.5,0,2.5,7.5,0,20,16,0,17],[0,12,45,0,40,15,0,5,10,0,25,20,0,18],[0,16,60,2.5,55.5,17.5,0,8.5,11,0,30,22.5,2.5,19],[0,20,75,5,71,20,0,12,12,0,35,25,5,20],[0,22.5,72.5,7.5,53,22.5,0,15,16,0,40,26.5,10,21],[0,25,70,10,35,25,0,18,20,0,45,28,15,22],[2.5,28,57.5,11,34.5,27.5,1,19,22.5,0,40,29,17.5,21],[5,31,45,12,34,30,2,20,25,0,35,30,20,20],[6.5,30,56,13.5,29.5,30,3.5,20,27.5,1,33,27.5,19,19],[8,29,67,15,25,30,5,20,30,2,31,25,18,18],[11.5,29.5,49,17.5,49.5,27.5,5,22.5,51,3.5,33.5,30,16.5,16.5],[15,30,31,20,74,25,5,25,72,5,36,35,15,15],[20,42.5,30.5,22.5,54.5,22.5,7.5,26,61,7.5,40.5,31.5,17.5,14.5],[25,55,30,25,35,20,10,27,50,10,45,28,20,14],[30.5,47.5,26,26.5,35,35,20.5,28.5,50,11,40.5,26.5,27.5,13],[36,40,22,28,35,50,31,30,50,12,36,25,35,12],[41,38.5,28.5,30,33,50,53,32.5,62.5,13.5,34.5,30,40,11],[46,37,35,32,31,50,75,35,75,15,33,35,45,10],[38.5,39,37.5,32,31,50,77.5,40,52.5,17.5,29.5,25.5,46,9],[31,41,40,32,31,50,80,45,30,20,26,16,47,8],[64.5,30,53,68,28,61,33,30,48,20,20,31.5,35,8],[65,50.5,43,68,30,49,48,30,48,21.5,42,31.5,54.5,7],[124,39.5,22,58,20,45.5,81,239,20,27,35,25,54,7],[89.4,57,43,30,20,58,66,15,20,71.5,35,20,54,70],[87.5,41,60,58,15,40,66,15,10,71.5,44.5,20,54,20],[42,44,13,30,15,30,33,15,5,30,40,30,20,15],[50,41,100,35,14,25,20,20,5,71.5,35,100,20,15],[50,73,45,30,25,25,20,20,5,25,35,30,20,15],[88,73,60,30,25,25,20,20,5,85,40,30,20,15]],"t0":1995,"t1":2024,"era":0},"youtube-channels":{"entities":[{"label":"MrBeast","color":"#FFB020"},{"label":"T-Series","color":"#DC2626"},{"label":"PewDiePie","color":"#34D399"},{"label":"Smosh","color":"#4C8DFF"},{"label":"nigahiga","color":"#2FB4FF"},{"label":"Ray William Johnson","color":"#67E8F9"},{"label":"Cocomelon","color":"#FFD84D"},{"label":"SET India","color":"#8B5CF6"},{"label":"Kids Diana Show","color":"#FF8C42"},{"label":"WWE","color":"#E879F9"}],"frames":[[0,0,0,0.1,0,0,0,0,0,0],[0,0,0,0.231,0.131,0,0,0,0,0],[0,0,0,0.393,0.293,0.124,0,0,0,0],[0,0,0,0.59,0.49,0.386,0,0,0,0],[0,0,0.124,1.159,1.245,0.897,0,0,0,0],[0,0.138,0.338,1.776,2.086,1.834,0.028,0.11,0,0.055],[0,0.466,0.666,2.431,3.003,3.341,0.093,0.372,0,0.186],[0.006,1.086,2.048,3.438,3.921,4.672,0.334,0.752,0,0.669],[0.02,1.862,3.966,4.8,5.055,6.103,0.621,1.483,0,1.241],[0.046,2.845,6.586,6.7,6.562,7.741,0.948,2.793,0,1.897],[0.133,5.207,13.621,9.759,8.566,9.379,2.103,4.655,0.276,3.103],[0.303,8.034,21.897,13.241,10.621,10.603,3.621,6.828,0.81,4.828],[0.631,11.31,31.069,17.172,12.586,10.931,5.586,9.448,1.793,7.448],[1.01,16.138,36.621,19.552,14.552,11,9.103,14.138,3.552,11.103],[1.679,21.724,41.724,21.172,16.345,10.914,14.241,20.069,6.207,15.034],[3.121,28.276,48.276,21.828,17.655,10.586,22.759,27.931,10.793,18.966],[5.19,42.069,54.828,22.483,18.966,10.5,32.241,37.241,18.276,23.862],[7.69,58.172,62.621,23,20.138,10.5,43.586,47.069,27.069,29.655],[10.966,73.241,75.069,23,20.793,10.5,60.621,56.897,36.897,37.517],[17.379,98.172,89.31,23.897,21,10.5,79,66.724,46.724,46.724],[26.379,126.621,102.621,25,21,10.5,97.586,76.552,56.759,56.552],[41.448,149.552,106.552,25,21,10.5,113.966,86.379,67.897,66.379],[63.966,176.207,108.828,25,21,10.5,127.448,104.483,77.379,75.379],[90.552,204.207,110.069,25,21,10.5,139.103,126.724,86.172,83.621],[114.793,225.172,110.724,25,21,10.5,149.586,143.103,97.31,89.517],[157.241,242.724,111,25.379,21,10.5,159.31,155.69,106.172,95.034],[214.138,257.759,111,26,21.034,10.5,168.414,165.379,113.345,100.241],[292.759,272.172,111,26,21.69,10.5,176.276,172.586,119.897,104.828],[357.586,286.241,111,26.345,22,10.5,184.138,180.138,126.103,108.724],[410,300,111,27,22,10.5,192,188,132,112]],"t0":2006,"t1":2025,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>
