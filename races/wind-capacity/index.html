@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Wind Power Capacity by Country (2000–2024) — Overtake">
   <meta name="twitter:description" content="The wind buildout starts as a European and American story, then China turns the whole chart vertical. Animated bar chart race, 2000–2024.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/wind-capacity.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Wind Power Capacity by Country","description":"The wind buildout starts as a European and American story, then China turns the whole chart vertical. Unlike solar, wind's early leaders held meaningful scale for longer, making the handoff from Germany and Spain to China feel like an industrial relay.","url":"https://beautifuldata.netlify.app/races/wind-capacity/","temporalCoverage":"2000/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://ourworldindata.org/grapher/cumulative-installed-wind-energy-capacity-gigawatts"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="science" data-race-id="wind-capacity">
   <div class="race-head">
-    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span>2000–2024</span></p>
+    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span class="num">2000–2024</span></p>
     <h1>Wind Power Capacity by Country</h1>
     <p class="blurb">The wind buildout starts as a European and American story, then China turns the whole chart vertical. Unlike solar, wind's early leaders held meaningful scale for longer, making the handoff from Germany and Spain to China feel like an industrial relay.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>12 contenders</span><span>2 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -78,81 +85,146 @@
     <span>Source: <a href="https://ourworldindata.org/grapher/cumulative-installed-wind-energy-capacity-gigawatts" rel="noopener">IRENA via Our World in Data</a></span>
     <span>Total onshore and offshore installed wind capacity in gigawatts, 2000-2024.</span>
     <span>Updated 2026-07-05</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">2</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">24</b><span>years covered</span></div>
-        <div class="fact"><b class="num">12</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>China</b><span>longest reign — 12 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2024</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>3 different leaders in 24 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="2000" style="left:0.000%;width:33.333%;--c:#FDE68A;--ink:rgba(11,14,20,0.88)" title="Germany · 2000–2008" aria-label="Germany led 2000–2008. Jump there."><span>Germany</span></button><button type="button" class="reign" data-t="2008" style="left:33.333%;width:16.667%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="United States · 2008–2012" aria-label="United States led 2008–2012. Jump there."><span>United States</span></button><button type="button" class="reign" data-t="2012" style="left:50.000%;width:50.000%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="China · 2012–2024" aria-label="China led 2012–2024. Jump there."><span>China</span></button></div>
+    <div class="reign-axis num"><span>2000</span><span>2024</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">China</span><span class="s-val num">521.3 GW</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">152.7 GW</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FDE68A" aria-hidden="true"></span><span class="s-label">Germany</span><span class="s-val num">72.8 GW</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">India</span><span class="s-val num">48.2 GW</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Brazil</span><span class="s-val num">33.0 GW</span></li>
+        <li><span class="h-label">China</span><span class="h-bar"><i style="width:100.0%;background:#FF5C4D"></i></span><span class="h-val num">12 yrs</span></li>
+        <li><span class="h-label">Germany</span><span class="h-bar"><i style="width:66.7%;background:#FDE68A"></i></span><span class="h-val num">8 yrs</span></li>
+        <li><span class="h-label">United States</span><span class="h-bar"><i style="width:33.3%;background:#4C8DFF"></i></span><span class="h-val num">4 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="2002">
         <span class="m-year num">2002</span>
-        <span class="m-title">Germany opens the gap</span>
+        <span class="m-body"><span class="m-title">Germany opens the gap</span><span class="m-text">Germany's early wind buildout makes it the first clear leader of the modern wind era.</span></span>
       </button></li>
       <li><button type="button" data-t="2008">
         <span class="m-year num">2008</span>
-        <span class="m-title">The US surge arrives</span>
+        <span class="m-body"><span class="m-title">The US surge arrives</span><span class="m-text">A wave of American wind farms briefly turns the race into a US-Germany duel.</span></span>
       </button></li>
       <li><button type="button" data-t="2012">
         <span class="m-year num">2012</span>
-        <span class="m-title">China takes No. 1</span>
+        <span class="m-body"><span class="m-title">China takes No. 1</span><span class="m-text">China passes the United States and begins the longest climb on the board.</span></span>
       </button></li>
       <li><button type="button" data-t="2020">
         <span class="m-year num">2020</span>
-        <span class="m-title">China's record build year</span>
+        <span class="m-body"><span class="m-title">China's record build year</span><span class="m-text">A massive installation wave makes China's lead look almost unreachable.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Science races</h2>
-  <div class="related-grid">
-    <a href="/races/nuclear-generation/"><span class="r-title">Nuclear Power Generation</span><span class="r-span num">2000–2025 · 12 contenders</span></a>
-    <a href="/races/airlines/"><span class="r-title">World's Largest Airlines</span><span class="r-span num">1970–2024 · 16 contenders</span></a>
-    <a href="/races/bridges/"><span class="r-title">Longest Suspension Bridge Spans</span><span class="r-span num">1883–2025 · 15 contenders</span></a>
-    <a href="/races/tallest-buildings/"><span class="r-title">World's Tallest Buildings</span><span class="r-span num">1899–2026 · 29 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">2</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">3</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">24</b><span>years covered</span></div>
+          <div class="fact"><b class="num">12</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>China</b><span>longest unbroken reign — 12 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#7 → #1</b><span>China ranked #7 when it first appeared in 2000 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2024</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">China</span><span class="s-val num">521.3 GW</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">152.7 GW</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FDE68A" aria-hidden="true"></span><span class="s-label">Germany</span><span class="s-val num">72.8 GW</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">India</span><span class="s-val num">48.2 GW</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Brazil</span><span class="s-val num">33.0 GW</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Science races</h2><a href="/#science">See all 10 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/nuclear-generation/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="nuclear-generation" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Nuclear Power Generation</h3>
+        <p class="card-meta"><span>2000–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">785 TWh</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/airlines/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="airlines" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Largest Airlines</h3>
+        <p class="card-meta"><span>1970–2024</span><span>·</span><span>16 contenders</span><span>·</span><span>5 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#94A3B8" aria-hidden="true"></span><span class="cl-name">American</span><span class="cl-val">226M pax</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/bridges/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="bridges" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Longest Suspension Bridge Spans</h3>
+        <p class="card-meta"><span>1883–2025</span><span>·</span><span>15 contenders</span><span>·</span><span>10 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">Çanakkale 1915 Bridge</span><span class="cl-val">2,023 m</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/tallest-buildings/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="tallest-buildings" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Tallest Buildings</h3>
+        <p class="card-meta"><span>1899–2026</span><span>·</span><span>29 contenders</span><span>·</span><span>12 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">Burj Khalifa</span><span class="cl-val">828 m</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/busiest-airports/"><span class="dir">← Previous race</span>Busiest Airports</a>
-    <a href="/races/nuclear-generation/" style="text-align:right"><span class="dir">Next race →</span>Nuclear Power</a>
+    <a href="/races/busiest-airports/"><span class="dir">← Previous race</span>World's Busiest Airports</a>
+    <a href="/races/nuclear-generation/" class="pg-next"><span class="dir">Next race →</span>Nuclear Power Generation</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"nuclear-generation":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"China","color":"#FF5C4D"},{"label":"France","color":"#2FB4FF"},{"label":"Russia","color":"#F43F5E"},{"label":"Japan","color":"#FF6FA5"},{"label":"South Korea","color":"#B388FF"},{"label":"Germany","color":"#FDE68A"}],"frames":[[753.89,16.74,415.16,130.71,319.12,108.96,169.61],[765.17,20.356,424.47,135.417,317.025,113.331,167.554],[776.45,23.973,433.781,140.124,314.93,117.701,165.498],[782.543,32.557,440.125,142.533,305.939,122.503,165.494],[786.193,43.48,445.073,143.86,293.702,127.507,166.455],[788.327,51.148,448.543,146.53,288.728,133.509,167.101],[787.762,53.032,449.383,151.586,296.668,141.285,167.187],[787.547,55.074,450.005,156.554,303.384,148.788,166.946],[795.733,60.914,445.376,159.417,280.733,149.741,158.851],[803.918,66.755,440.746,162.279,258.082,150.693,150.757],[806.446,70.361,436.058,165.355,264.346,150.228,146.029],[806.773,73.098,431.347,168.514,281.855,149.21,142.611],[800.48,78.806,427.984,171.638,245.055,148.898,133.474],[784.256,88.969,426.643,174.707,126.792,149.644,115.758],[770.29,99.523,425.792,177.641,17.37,150.54,99.38],[782.29,114.567,430.563,179.034,9.615,153.16,98.375],[794.29,129.61,435.335,180.426,1.861,155.781,97.371],[799.961,159.414,425.578,185.952,5.792,158.238,93.035],[803.633,193.879,411.233,192.784,13.412,160.643,87.647],[805.954,228.698,405.047,198.122,23.641,156.589,82.993],[806.553,263.965,409.246,201.557,37.188,144.313,79.273],[806.19,298.683,409.883,205.166,48.794,134.889,75.399],[798.777,329.372,384.404,210.05,46.16,146.385,70.39],[791.363,360.062,358.926,214.933,43.527,157.881,65.382],[783.556,383.986,333.451,218.596,46.024,165.652,54.149],[775.651,406.219,307.977,221.954,49.804,172.493,41.36],[772.918,424.79,312.718,221.085,62.4,177.887,23.335],[776.798,439.17,349.855,216.919,79.515,182.769,5.228],[782.263,455.92,382.053,216.116,86.176,188.187,0],[784.78,487.61,392.07,218.65,94.09,184.67,0]],"t0":2000,"t1":2025,"era":0},"airlines":{"entities":[{"label":"American","color":"#94A3B8"},{"label":"Delta","color":"#FF5C4D"},{"label":"Aeroflot","color":"#E2B93B"},{"label":"United","color":"#2FB4FF"},{"label":"Southwest","color":"#6E7BFF"},{"label":"China Southern","color":"#23C8A8"},{"label":"Eastern","color":"#67E8F9"},{"label":"Ryanair","color":"#FFB020"},{"label":"Air France-KLM","color":"#86EFAC"},{"label":"Lufthansa","color":"#FFD84D"}],"frames":[[21,22,71,27,0,0,24,0,7,8],[21.621,25.724,79.069,28.862,0.621,0,25.862,0,8.241,9.241],[22,28.724,86.897,30,1,0,27.362,0,9.362,10.362],[22.586,30.586,93.759,30.586,1.586,0,28.586,0,10,11.586],[24.448,33.897,98.379,32.931,3.448,0,31.897,0,10.483,12.483],[26.414,36.897,102.414,34.793,5.31,0,35.103,0,11.103,13.103],[28.897,36.276,104.897,33.552,7.172,0,35.724,0,11.724,13.724],[33.621,37.034,108.069,35.586,9.034,0,38.069,0,12.517,14.517],[40.586,38.897,111.793,39.793,11.793,0,41.793,0,13,15.897],[54.483,50.138,119.621,48.793,14.931,0,39.655,0,13.586,18.345],[67.103,60.483,128.724,55,18.241,0,28.069,0,14.621,21.241],[74.448,66.931,127.828,59.931,20.966,0,9.31,0,15.483,25.448],[84.966,79.759,44.655,68.034,31.103,2.759,0,0,16,29.69],[80.897,88.034,14.586,74.828,43.724,10.414,0,2.103,16.103,33.517],[80.069,97.276,10.966,82.172,50.103,14.034,0,3.069,17.552,38.103],[81.931,104.724,10.034,86.828,52.897,14.966,0,4.931,32.448,40.897],[85.586,105.897,5.517,84.31,61.966,15.897,0,6.793,40.172,46.379],[92.621,104.345,5,71.586,63,20.138,0,13.621,42.655,44.517],[91.724,108.552,5.759,70.517,69.069,26.31,0,24.103,58.931,49.31],[96.517,107.241,6.69,69.621,79.276,42.483,0,35.966,70.207,52.379],[95.276,105.379,8.241,60.931,86.724,54.586,0,46.828,73.621,55.483],[89.138,137,10.103,54.897,88.448,67.931,0,62.586,72.345,58.103],[86,163.966,14.379,72.828,98.138,80.828,0,75.379,74.379,61.897],[110.828,167.483,20.069,92.172,117.276,92.207,0,82.31,81.724,65.414],[164.276,175.483,25.069,108.931,136.586,105.828,0,97.345,89.069,64.621],[200.379,186.207,30.931,147.138,154.31,121.897,0,123.069,95.207,64.207],[208.552,196.966,36.414,159.655,163,144.966,0,143.138,102.241,70.414],[114.31,91.966,15.931,70.69,83.172,97.276,0,48.207,37.034,15.483],[200.655,168.448,21.552,146.897,159.793,73.034,0,163.034,84.517,48.793],[226,200,28,174,174,165,0,197,98,65]],"t0":1970,"t1":2024,"era":0},"bridges":{"entities":[{"label":"Çanakkale 1915 Bridge","color":"#FF5C4D"},{"label":"Akashi Kaikyō Bridge","color":"#8B5CF6"},{"label":"Humber Bridge","color":"#FFD84D"},{"label":"Verrazzano-Narrows Bridge","color":"#2FB4FF"},{"label":"Golden Gate Bridge","color":"#FF8C42"},{"label":"George Washington Bridge","color":"#6E7BFF"},{"label":"Benjamin Franklin Bridge","color":"#4C8DFF"},{"label":"Williamsburg Bridge","color":"#94A3B8"},{"label":"Brooklyn Bridge","color":"#C4B5A0"},{"label":"Yangsigang Bridge","color":"#FFB020"},{"label":"Xihoumen Bridge","color":"#FF6FA5"},{"label":"Great Belt East Bridge","color":"#F43F5E"},{"label":"Mackinac Bridge","color":"#23C8A8"},{"label":"Ambassador Bridge","color":"#FDE68A"}],"frames":[[0,0,0,0,0,0,0,0,486,0,0,0,0,0],[0,0,0,0,0,0,0,0,486,0,0,0,0,0],[0,0,0,0,0,0,0,0,486,0,0,0,0,0],[0,0,0,0,0,0,0,0,486,0,0,0,0,0],[0,0,0,0,0,0,0,15.145,486,0,0,0,0,0],[0,0,0,0,0,0,0,488,486,0,0,0,0,0],[0,0,0,0,0,0,0,488,486,0,0,0,0,0],[0,0,0,0,0,0,0,488,486,0,0,0,0,0],[0,0,0,0,0,0,0,488,486,0,0,0,0,0],[0,0,0,0,0,0,533,488,486,0,0,0,0,0],[0,0,0,0,0,1067,533,488,486,0,0,0,0,564],[0,0,0,0,909.241,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,1158,564],[0,0,0,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,0,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,0,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,782.793,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,1410,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,1410,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,1410,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,0,0,1624,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,0,0,1624,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,0,1650,1624,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,0,1650,1624,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,1700,1650,1624,1158,564],[2023,1991,1410,1298,1280,1067,533,488,486,1700,1650,1624,1158,564]],"t0":1883.4,"t1":2025,"era":0},"tallest-buildings":{"entities":[{"label":"Burj Khalifa","color":"#FF5C4D"},{"label":"Taipei 101","color":"#FFB020"},{"label":"Petronas Towers","color":"#A3E635"},{"label":"Willis Tower (Sears)","color":"#23C8A8"},{"label":"Empire State Building","color":"#4C8DFF"},{"label":"40 Wall Street","color":"#D4D4D8"},{"label":"Woolworth Building","color":"#86EFAC"},{"label":"Met Life Tower","color":"#FDE68A"},{"label":"Philadelphia City Hall","color":"#C4B5A0"},{"label":"Park Row Building","color":"#94A3B8"},{"label":"Singer Building","color":"#FCA5A5"},{"label":"Merdeka 118","color":"#DC2626"},{"label":"Shanghai Tower","color":"#B388FF"},{"label":"Abraj Al-Bait Clock Tower","color":"#FF6FA5"}],"frames":[[0,0,0,0,0,0,0,0,0,119,0,0,0,0],[0,0,0,0,0,0,0,0,167,119,64.022,0,0,0],[0,0,0,0,0,0,0,0,167,119,181.473,0,0,0],[0,0,0,0,0,0,192.177,213,167,119,187,0,0,0],[0,0,0,0,0,58.665,241,213,167,119,187,0,0,0],[0,0,0,0,0,130.585,241,213,167,119,187,0,0,0],[0,0,0,0,0,202.505,241,213,167,119,187,0,0,0],[0,0,0,0,0,274.426,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,168.73,0,0,0],[0,0,0,0,381,283,241,213,167,119,123.055,0,0,0],[0,0,0,0,381,283,241,213,167,119,77.379,0,0,0],[0,0,0,0,381,283,241,213,167,119,31.704,0,0,0],[0,0,0,0,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,75.009,442,381,283,241,213,167,119,0,0,0,0],[0,0,323.414,442,381,283,241,213,167,119,0,0,0,0],[0,0,452,442,381,283,241,213,167,119,0,0,0,0],[0,508,452,442,381,283,241,213,167,119,0,0,0,0],[378.31,508,452,442,381,283,241,213,167,119,0,0,0,0],[828,508,452,442,381,283,241,213,167,119,0,0,0,601],[828,508,452,442,381,283,241,213,167,119,0,0,632,601],[828,508,452,442,381,283,241,213,167,119,0,526.81,632,601],[828,508,452,442,381,283,241,213,167,119,0,679,632,601]],"t0":1899,"t1":2026.5,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

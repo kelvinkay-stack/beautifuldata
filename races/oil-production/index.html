@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Oil Production by Country (1965–2024) — Overtake">
   <meta name="twitter:description" content="The oil board is a half-century of booms, embargoes, collapses and shale. Animated bar chart race, 1965–2024.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/oil-production.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Oil Production by Country","description":"The oil board is a half-century of booms, embargoes, collapses and shale. Saudi Arabia and Russia dominate long stretches, but the United States returns to No. 1 after 2010 as shale rewrites the energy map.","url":"https://beautifuldata.netlify.app/races/oil-production/","temporalCoverage":"1965/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://ourworldindata.org/grapher/oil-production-by-country"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="economy" data-race-id="oil-production">
   <div class="race-head">
-    <p class="crumbs"><a href="/#economy">Money &amp; Markets</a><span aria-hidden="true">/</span><span>1965–2024</span></p>
+    <p class="crumbs"><a href="/#economy">Money &amp; Markets</a><span aria-hidden="true">/</span><span class="num">1965–2024</span></p>
     <h1>Oil Production by Country</h1>
     <p class="blurb">The oil board is a half-century of booms, embargoes, collapses and shale. Saudi Arabia and Russia dominate long stretches, but the United States returns to No. 1 after 2010 as shale rewrites the energy map.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>12 contenders</span><span>6 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -78,81 +85,146 @@
     <span>Source: <a href="https://ourworldindata.org/grapher/oil-production-by-country" rel="noopener">Energy Institute via Our World in Data</a></span>
     <span>Oil production measured as terawatt-hours of energy equivalent. Includes crude oil, shale oil, oil sands, condensates and NGLs.</span>
     <span>Updated 2026-07-05</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">6</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">59</b><span>years covered</span></div>
-        <div class="fact"><b class="num">12</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>United States</b><span>longest reign — 15 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2024</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>3 different leaders in 59 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1965" style="left:0.000%;width:25.424%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="United States · 1965–1980" aria-label="United States led 1965–1980. Jump there."><span>United States</span></button><button type="button" class="reign" data-t="1980" style="left:25.424%;width:8.475%;--c:#34D399;--ink:rgba(11,14,20,0.88)" title="Saudi Arabia · 1980–1985" aria-label="Saudi Arabia led 1980–1985. Jump there."></button><button type="button" class="reign" data-t="1985" style="left:33.898%;width:16.949%;--c:#F43F5E;--ink:rgba(255,255,255,0.95)" title="Russia · 1985–1995" aria-label="Russia led 1985–1995. Jump there."><span>Russia</span></button><button type="button" class="reign" data-t="1995" style="left:50.847%;width:25.424%;--c:#34D399;--ink:rgba(11,14,20,0.88)" title="Saudi Arabia · 1995–2010" aria-label="Saudi Arabia led 1995–2010. Jump there."><span>Saudi Arabia</span></button><button type="button" class="reign" data-t="2010" style="left:76.271%;width:8.475%;--c:#F43F5E;--ink:rgba(255,255,255,0.95)" title="Russia · 2010–2015" aria-label="Russia led 2010–2015. Jump there."></button><button type="button" class="reign" data-t="2015" style="left:84.746%;width:8.475%;--c:#34D399;--ink:rgba(11,14,20,0.88)" title="Saudi Arabia · 2015–2020" aria-label="Saudi Arabia led 2015–2020. Jump there."></button><button type="button" class="reign" data-t="2020" style="left:93.220%;width:6.780%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="United States · 2020–2024" aria-label="United States led 2020–2024. Jump there."></button></div>
+    <div class="reign-axis num"><span>1965</span><span>2024</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">9,977 TWh</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Russia</span><span class="s-val num">6,122 TWh</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Saudi Arabia</span><span class="s-val num">5,933 TWh</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#67E8F9" aria-hidden="true"></span><span class="s-label">Canada</span><span class="s-val num">3,372 TWh</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">Iran</span><span class="s-val num">2,727 TWh</span></li>
+        <li><span class="h-label">Saudi Arabia</span><span class="h-bar"><i style="width:100.0%;background:#34D399"></i></span><span class="h-val num">25 yrs</span></li>
+        <li><span class="h-label">United States</span><span class="h-bar"><i style="width:76.0%;background:#4C8DFF"></i></span><span class="h-val num">19 yrs</span></li>
+        <li><span class="h-label">Russia</span><span class="h-bar"><i style="width:60.0%;background:#F43F5E"></i></span><span class="h-val num">15 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1970">
         <span class="m-year num">1970</span>
-        <span class="m-title">US production peak</span>
+        <span class="m-body"><span class="m-title">US production peak</span><span class="m-text">The United States hits its old conventional-oil high before decades of decline.</span></span>
       </button></li>
       <li><button type="button" data-t="1980">
         <span class="m-year num">1980</span>
-        <span class="m-title">Saudi Arabia surges</span>
+        <span class="m-body"><span class="m-title">Saudi Arabia surges</span><span class="m-text">Saudi output towers over the board during the oil-shock era.</span></span>
       </button></li>
       <li><button type="button" data-t="2015">
         <span class="m-year num">2015</span>
-        <span class="m-title">Shale flips the board</span>
+        <span class="m-body"><span class="m-title">Shale flips the board</span><span class="m-text">US shale growth pushes America back into the global top tier.</span></span>
       </button></li>
       <li><button type="button" data-t="2023">
         <span class="m-year num">2023</span>
-        <span class="m-title">US lead widens</span>
+        <span class="m-body"><span class="m-title">US lead widens</span><span class="m-text">American production opens a large gap over Saudi Arabia and Russia.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Money races</h2>
-  <div class="related-grid">
-    <a href="/races/stock-exchanges/"><span class="r-title">Largest Stock Exchanges</span><span class="r-span num">1980–2025 · 12 contenders</span></a>
-    <a href="/races/gdp-nations/"><span class="r-title">Largest Economies by GDP</span><span class="r-span num">1960–2024 · 15 contenders</span></a>
-    <a href="/races/billionaires/"><span class="r-title">The World's Richest Person</span><span class="r-span num">1987–2025 · 15 contenders</span></a>
-    <a href="/races/military-spending/"><span class="r-title">Military Spending by Country</span><span class="r-span num">1960–2024 · 12 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">6</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">3</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">59</b><span>years covered</span></div>
+          <div class="fact"><b class="num">12</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>United States</b><span>longest unbroken reign — 15 yrs at #1</span></div>
+          
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2024</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">9,977 TWh</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Russia</span><span class="s-val num">6,122 TWh</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Saudi Arabia</span><span class="s-val num">5,933 TWh</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#67E8F9" aria-hidden="true"></span><span class="s-label">Canada</span><span class="s-val num">3,372 TWh</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">Iran</span><span class="s-val num">2,727 TWh</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Money races</h2><a href="/#economy">See all 7 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/stock-exchanges/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="stock-exchanges" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Stock Exchanges</h3>
+        <p class="card-meta"><span>1980–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>2 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">NYSE</span><span class="cl-val">$31.3T</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/gdp-nations/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="gdp-nations" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Economies by GDP</h3>
+        <p class="card-meta"><span>1960–2024</span><span>·</span><span>15 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">$27.4T</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/billionaires/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="billionaires" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>The World's Richest Person</h3>
+        <p class="card-meta"><span>1987–2025</span><span>·</span><span>15 contenders</span><span>·</span><span>10 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Elon Musk</span><span class="cl-val">$342B</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/military-spending/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="military-spending" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Military Spending by Country</h3>
+        <p class="card-meta"><span>1960–2024</span><span>·</span><span>12 contenders</span><span>·</span><span>2 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">$968B</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/gold-reserves/"><span class="dir">← Previous race</span>Gold Reserves</a>
-    <a href="/races/space-launches/" style="text-align:right"><span class="dir">Next race →</span>Space Launches</a>
+    <a href="/races/gold-reserves/"><span class="dir">← Previous race</span>Central Bank Gold Reserves</a>
+    <a href="/races/space-launches/" class="pg-next"><span class="dir">Next race →</span>Objects Launched Into Space by Country</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"stock-exchanges":{"entities":[{"label":"NYSE","color":"#4C8DFF"},{"label":"Tokyo (JPX)","color":"#FF5C4D"},{"label":"Nasdaq","color":"#8B5CF6"},{"label":"Shanghai","color":"#F43F5E"},{"label":"Euronext","color":"#6E7BFF"},{"label":"London (LSE)","color":"#2FB4FF"},{"label":"Frankfurt (DB)","color":"#FFD84D"},{"label":"Hong Kong","color":"#E879F9"},{"label":"Toronto (TSX)","color":"#94A3B8"}],"frames":[[1.24,0.37,0.12,0,0.05,0.21,0.07,0.04,0.11],[1.295,0.409,0.128,0,0.05,0.218,0.07,0.032,0.102],[1.469,0.534,0.153,0,0.056,0.254,0.076,0.041,0.123],[1.806,1.019,0.219,0,0.092,0.337,0.14,0.061,0.151],[2.289,1.896,0.328,0,0.158,0.479,0.248,0.088,0.178],[2.388,2.324,0.333,0,0.171,0.579,0.211,0.094,0.191],[2.798,3.579,0.418,0,0.268,0.771,0.332,0.091,0.239],[2.774,2.875,0.333,0.002,0.313,0.856,0.359,0.087,0.231],[3.979,2.706,0.667,0.026,0.378,0.991,0.383,0.198,0.262],[4.594,3.682,0.833,0.044,0.458,1.18,0.482,0.281,0.33],[6.469,3.188,1.398,0.091,0.568,1.564,0.639,0.422,0.464],[9.005,2.681,2.152,0.169,0.842,2.099,0.934,0.381,0.521],[10.785,3.32,3.693,0.245,1.212,2.614,1.238,0.458,0.649],[11.652,3.98,5.758,0.364,1.788,2.819,1.435,0.634,0.863],[10.022,2.467,2.608,0.395,1.804,2.167,0.918,0.526,0.607],[10.529,2.691,2.523,0.366,1.916,2.238,0.961,0.634,0.793],[13.528,4.574,3.628,0.355,2.813,3.136,1.263,1.118,1.503],[15.506,4.505,3.922,1.955,3.901,3.812,1.812,2.061,1.883],[13.717,3.854,3.529,2.813,3.511,3.31,1.759,2.243,1.849],[11.374,3.34,3.119,2.471,2.595,2.668,1.329,2.08,1.571],[13.558,3.794,4.055,2.679,2.906,3.56,1.444,2.739,2.144],[14.217,3.697,4.638,2.583,2.842,3.41,1.496,2.84,2.061],[18.343,4.246,6.521,3.666,3.226,3.723,1.692,3.153,2.084],[18.189,5.014,7.537,4.6,3.411,3.934,1.77,3.289,1.663],[21.555,6.057,9.702,5.024,4.258,4.389,2.194,4.207,2.275],[21.48,5.552,10.639,4.273,4.007,3.817,1.846,4.137,2.016],[25.874,6.66,18.378,6.77,5.037,3.851,2.26,5.992,2.589],[25.43,6.004,20.716,7.489,6.743,2.981,2.371,4.769,3.02],[25.724,6.169,25.124,6.506,6.619,3.106,2.306,4.312,3.006],[31.3,6.9,30.6,7.4,7.2,3.7,2.8,5.9,3.5]],"t0":1980,"t1":2025.5,"era":0},"gdp-nations":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"China","color":"#F43F5E"},{"label":"Germany","color":"#FFD84D"},{"label":"Japan","color":"#FF5C4D"},{"label":"United Kingdom","color":"#2FB4FF"},{"label":"France","color":"#6E7BFF"},{"label":"India","color":"#FF8C42"},{"label":"Italy","color":"#34D399"}],"frames":[[543,60,92,44,73,62,37,40],[631.717,64.414,104.359,64.745,85.359,79.655,47.152,51.917],[720.434,68.828,116.717,85.49,97.717,97.31,57.303,63.834],[850.641,77.131,151.117,130.545,110.724,117.234,60.648,81.91],[995.855,86.841,193.49,184.393,123.966,137.979,61.531,102.214],[1199.621,106.69,269.793,276.724,153.759,192.862,69.448,136.379],[1469.745,138.028,384.552,412.669,202.31,286.434,85.338,186.255],[1790.076,165.51,509.89,575.421,269.959,391.572,105.89,248.503],[2307.372,177.869,676.731,843.338,412.524,542.083,144.731,359.29],[2824.669,190.228,843.572,1111.255,555.09,692.593,183.572,470.076],[3470.241,240.241,800.621,1240.138,551.586,648.621,207.517,466.655],[4124.366,292.766,743.683,1359.752,538.345,591.683,230.469,455.621],[4820.6,325.124,1035.49,1913.221,699.772,781.179,262.614,667],[5537.4,347.634,1497.614,2678.572,946.503,1091.028,299.248,987],[6263.703,428.062,1918.317,3565.497,1136.931,1335.248,329.069,1175.745],[7003.897,593.138,2278.483,4630.103,1245.069,1483.552,348.931,1172.655],[7802.062,764.545,2548.276,5509.186,1358.297,1595.545,372.331,1168.572],[8954.503,974.641,2265.793,5254.51,1502.628,1485.641,417.352,1158.421],[10106.945,1184.738,1983.31,4999.834,1646.959,1375.738,462.372,1148.269],[11326.972,1626.172,2294.814,4915.09,2004.09,1684.097,603.945,1419.662],[12556.655,2100.655,2691.172,4854.621,2391.621,2052.207,759.31,1731.276],[13788.31,3320.621,3252.138,4954.276,2716.034,2526.828,989.897,2099.103],[14805.69,5005.862,3661.241,5286.138,2808.172,2854.828,1330.586,2328.621],[15506.069,7014.414,3468.897,5953.586,2572.931,2660.655,1733.655,2117.414],[16907.655,9470.483,3711.034,5608.207,2879.828,2765.069,1929.862,2117.897],[18274.517,10919.759,3642.034,4959.138,2844.586,2629.655,2189.069,1990.379],[20063.621,13068.862,3817.345,5029.207,2814.517,2691.31,2576.379,2025.276],[21185.207,14523.931,3906.793,5040.207,2738.552,2676.586,2675.241,1937.345],[25286.655,17624.207,4062.034,4337.103,3049.172,2768.034,3339.517,2034.172],[27361,17795,4526,4110,3340,3031,3937,2255]],"t0":1960,"t1":2024,"era":0},"billionaires":{"entities":[{"label":"Elon Musk","color":"#F43F5E"},{"label":"Jeff Bezos","color":"#FF8C42"},{"label":"Bernard Arnault","color":"#C4B5A0"},{"label":"Bill Gates","color":"#4C8DFF"},{"label":"Warren Buffett","color":"#FFD84D"},{"label":"Carlos Slim","color":"#34D399"},{"label":"Yoshiaki Tsutsumi","color":"#B388FF"},{"label":"Sam Walton","color":"#FFB020"},{"label":"Mark Zuckerberg","color":"#6E7BFF"},{"label":"Larry Ellison","color":"#2FB4FF"},{"label":"Amancio Ortega","color":"#E879F9"},{"label":"Steve Ballmer","color":"#A3E635"},{"label":"Mukesh Ambani","color":"#FF6FA5"}],"frames":[[0,0,0,1.3,2.1,0,20,8.5,0,0,0,0,0],[0,0,0,1.824,2.624,0.874,18.253,8.718,0,0,0,0,0],[0,0,0,2.348,3.148,1.747,16.506,8.937,0,0,0,0,0],[0,0,0,3.648,4.852,2.528,13.828,13.655,0,0,0,0,0],[0,0,0,5.264,7.036,3.27,10.77,20.207,0,0,0,0,0],[0,0,0,8.048,8.962,4.5,6.517,19.862,0,1.655,0,0,0],[0,0,0,12.438,10.534,6.4,0.621,10.034,0,5.586,0,0,0],[0,0,0,26.676,18.028,6.6,0,13.69,0,7.876,0,0,0],[0,0,0,49.338,26.29,6.938,0,17.724,0,10.117,0,5.552,0],[0,0,0,84.455,34.676,7.855,0,19.69,0,12.607,0,20.621,0],[0,0,0,59.628,28.362,8.181,0,0,0,45.784,0.362,27.586,0],[0,0,0,54.91,32.948,10.474,0,0,0,30.388,4.948,22.345,0],[0,0,0,50.555,37.86,15.953,0,0,0,21.762,7.362,17.103,0],[0,0,0,46.659,42.884,23.907,0,0,0,18.653,8.117,12.028,0],[0,0,0,48.886,42.295,27.969,0,0,0,16.884,12.572,13.076,0],[0,0,0,53.931,48.552,42.448,0,0,0,19.603,20.828,4.69,13.169],[0,0,0,57.931,61.655,59.621,0,0,0,24.879,20.331,0,42.21],[0,0,0,43.586,39.759,40.103,0,0,0,24.017,20.148,4,22.121],[0,0,24.034,54.759,48.759,65.517,0,0,0,34.741,28.517,6,27.828],[0,0,41,60.483,44.621,69.517,0,0,0,36.362,36.828,0,22.786],[3.641,26.607,30.034,68.862,54.472,72.793,0,0,5.897,44.034,58.448,4.138,17.052],[10.262,33.448,35.655,77.655,65.7,74.638,0,0,31.034,51.259,64.259,20.776,0],[2.069,43.407,34.552,75.724,62.852,54.672,0,0,42.669,45.445,66.569,23.155,0],[14.728,78.207,45.707,86.552,76.759,56.238,0,0,58.069,53.069,71.121,0,0],[20.976,120.517,73.793,92.914,83.328,37.021,0,0,67.1,60.293,66.728,18.469,0],[24.045,117.345,76,97.638,71.121,0,0,0,56.534,59.845,56.934,49.924,0],[155.69,176.586,150.552,124.345,97.517,0,0,0,94.952,93.897,0,70.266,0],[204.207,149.379,178.103,119.517,113.448,0,0,0,66.2,106.379,0,87.341,0],[190.345,169.172,201.345,120.552,124.621,0,0,0,142.055,130.448,0,108.493,0],[342,215,178,168,154,0,0,0,216,192,0,118,0]],"t0":1987,"t1":2025,"era":0},"military-spending":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"Soviet Union","color":"#B45309"},{"label":"China","color":"#F43F5E"},{"label":"Russia","color":"#FF5C4D"},{"label":"Japan","color":"#E879F9"},{"label":"Germany","color":"#FFD84D"},{"label":"India","color":"#FF8C42"},{"label":"United Kingdom","color":"#2FB4FF"},{"label":"Saudi Arabia","color":"#34D399"},{"label":"France","color":"#6E7BFF"}],"frames":[[45,30,5,0,0.5,3.2,0.7,5.2,0,3.9],[47.648,35.297,6.324,0,0.632,3.994,1.141,5.553,0.132,4.43],[50.297,40.593,7.648,0,0.765,4.789,1.583,5.906,0.265,4.959],[59.752,51.724,9.297,0,0.962,5.357,1.603,5.935,0.332,5.23],[71.669,64.966,11.062,0,1.183,5.842,1.47,5.847,0.377,5.406],[80.483,79.862,12.828,0,1.983,7.59,1.71,6.793,1.724,6.679],[85.779,96.634,14.593,0,3.439,10.768,2.372,8.912,4.549,9.195],[94.752,116.276,16.359,0,5.03,14.259,3.043,11.846,8.046,12.348],[118.145,147.172,18.124,0,7.149,18.982,3.75,17.981,14.181,17.997],[141.538,178.069,19.89,0,9.268,23.705,4.456,24.117,20.317,23.647],[190.586,220.138,20.828,0,10.89,25.241,5.7,24.459,21.486,22.759],[241.345,262.952,21.71,0,12.479,26.566,6.98,24.414,22.325,21.434],[275.299,288.368,21.011,0,20.414,30.46,8.389,29.145,19.338,26.437],[297.483,282.759,20.345,0,33.862,36.759,9.779,36.759,18.414,35.448],[282.69,205.172,22.793,0,46.793,40.207,8.797,42.897,29.276,43.793],[295.069,0,26.839,77.126,51.839,42.897,8.694,43.264,27.747,47.368],[280.607,0,30.683,53.572,55.31,41.248,9.622,42.31,17.497,47.938],[299.145,0,35.538,43.421,57.517,43.014,12.623,44.517,21.028,47.497],[317.683,0,40.393,33.269,59.724,44.779,15.625,46.724,24.559,47.055],[407.54,0,51.943,38.437,56.782,43.069,18.575,50.862,24.356,49.575],[499.81,0,65.397,44.845,55,42,23.414,56.983,27.414,52.138],[588.138,0,87.138,53.724,54.552,44.241,29.138,62.241,34.931,58.828],[673.655,0,115.552,62.828,54.276,47,36.586,63.621,42.103,64.897],[705.586,0,150.897,71.448,56.897,46.621,46.379,60,49.172,60.862],[647.241,0,185.517,82.966,53.241,46.483,48.448,59.517,68.069,56.103],[610.586,0,208.793,75.207,46,43.483,53.517,52.552,71.034,55.345],[637.207,0,239.138,63.483,46.69,46.517,62.897,49.379,66.759,61.138],[751.31,0,256.345,61.793,48.586,52.172,70.759,57.138,60.069,55.069],[866.759,0,288.483,83.517,46.31,55.69,80.069,67.069,73.241,53.897],[968,0,314,149,55,89,86,82,80,64]],"t0":1960,"t1":2024,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

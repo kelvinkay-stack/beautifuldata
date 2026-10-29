@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="MLB Career Home Run Leaders (1919–2024) — Overtake">
   <meta name="twitter:description" content="Baseball's home run record is a century-long argument about eras. Animated bar chart race, 1919–2024.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/mlb-home-runs.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"MLB Career Home Run Leaders","description":"Baseball's home run record is a century-long argument about eras. Babe Ruth turns the category into a spectacle, Hank Aaron grinds past him, Barry Bonds detonates the modern record, and the late-career chasers settle into a dense pack below 700.","url":"https://beautifuldata.netlify.app/races/mlb-home-runs/","temporalCoverage":"1919/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.baseball-reference.com/leaders/HR_career.shtml"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="sports" data-race-id="mlb-home-runs">
   <div class="race-head">
-    <p class="crumbs"><a href="/#sports">Sports</a><span aria-hidden="true">/</span><span>1919–2024</span></p>
+    <p class="crumbs"><a href="/#sports">Sports</a><span aria-hidden="true">/</span><span class="num">1919–2024</span></p>
     <h1>MLB Career Home Run Leaders</h1>
     <p class="blurb">Baseball's home run record is a century-long argument about eras. Babe Ruth turns the category into a spectacle, Hank Aaron grinds past him, Barry Bonds detonates the modern record, and the late-career chasers settle into a dense pack below 700.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>12 contenders</span><span>2 lead changes</span><span class="quality-flag">illustrative data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -77,87 +84,151 @@
   <p class="context-strip">
     <span>Source: <a href="https://www.baseball-reference.com/leaders/HR_career.shtml" rel="noopener">Baseball-Reference career home run leaders</a></span>
     <span>Season-end cumulative home run totals for selected leaders, reconstructed from career logs.</span>
-    <span class="quality-flag">illustrative data</span>
     <span>Updated 2026-07-05</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">2</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">105</b><span>years covered</span></div>
-        <div class="fact"><b class="num">12</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Babe Ruth</b><span>longest reign — 55 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2024</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>3 different leaders in 105 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1919" style="left:0.000%;width:52.381%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="Babe Ruth · 1919–1974" aria-label="Babe Ruth led 1919–1974. Jump there."><span>Babe Ruth</span></button><button type="button" class="reign" data-t="1974" style="left:52.381%;width:31.429%;--c:#FFB020;--ink:rgba(11,14,20,0.88)" title="Hank Aaron · 1974–2007" aria-label="Hank Aaron led 1974–2007. Jump there."><span>Hank Aaron</span></button><button type="button" class="reign" data-t="2007" style="left:83.810%;width:16.190%;--c:#8B5CF6;--ink:rgba(255,255,255,0.95)" title="Barry Bonds · 2007–2024" aria-label="Barry Bonds led 2007–2024. Jump there."><span>Barry Bonds</span></button></div>
+    <div class="reign-axis num"><span>1919</span><span>2024</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Barry Bonds</span><span class="s-val num">762 HR</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Hank Aaron</span><span class="s-val num">755 HR</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">Babe Ruth</span><span class="s-val num">714 HR</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Albert Pujols</span><span class="s-val num">703 HR</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="s-label">Alex Rodriguez</span><span class="s-val num">696 HR</span></li>
+        <li><span class="h-label">Babe Ruth</span><span class="h-bar"><i style="width:100.0%;background:#4C8DFF"></i></span><span class="h-val num">55 yrs</span></li>
+        <li><span class="h-label">Hank Aaron</span><span class="h-bar"><i style="width:60.0%;background:#FFB020"></i></span><span class="h-val num">33 yrs</span></li>
+        <li><span class="h-label">Barry Bonds</span><span class="h-bar"><i style="width:30.9%;background:#8B5CF6"></i></span><span class="h-val num">17 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1921">
         <span class="m-year num">1921</span>
-        <span class="m-title">Ruth changes the sport</span>
+        <span class="m-body"><span class="m-title">Ruth changes the sport</span><span class="m-text">Babe Ruth turns home runs from a curiosity into baseball's defining spectacle.</span></span>
       </button></li>
       <li><button type="button" data-t="1974.3">
         <span class="m-year num">1974</span>
-        <span class="m-title">Aaron passes Ruth</span>
+        <span class="m-body"><span class="m-title">Aaron passes Ruth</span><span class="m-text">Hank Aaron hits No. 715 in Atlanta and breaks the most famous record in American sports.</span></span>
       </button></li>
       <li><button type="button" data-t="1998">
         <span class="m-year num">1998</span>
-        <span class="m-title">McGwire and Sosa chase history</span>
+        <span class="m-body"><span class="m-title">McGwire and Sosa chase history</span><span class="m-text">The single-season home run chase pulls both sluggers up the all-time board.</span></span>
       </button></li>
       <li><button type="button" data-t="2007.6">
         <span class="m-year num">2007</span>
-        <span class="m-title">Bonds reaches 762</span>
+        <span class="m-body"><span class="m-title">Bonds reaches 762</span><span class="m-text">Barry Bonds passes Aaron and sets the current career home run record.</span></span>
       </button></li>
       <li><button type="button" data-t="2022">
         <span class="m-year num">2022</span>
-        <span class="m-title">Pujols joins the 700 club</span>
+        <span class="m-body"><span class="m-title">Pujols joins the 700 club</span><span class="m-text">Albert Pujols becomes only the fourth player to reach 700 career home runs.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Sports races</h2>
-  <div class="related-grid">
-    <a href="/races/world-cup-goals/"><span class="r-title">World Cup Career Goals</span><span class="r-span num">1930–2022 · 12 contenders</span></a>
-    <a href="/races/f1-constructors/"><span class="r-title">F1 Constructors by Points</span><span class="r-span num">1958–2025 · 12 contenders</span></a>
-    <a href="/races/grand-slams/"><span class="r-title">Grand Slam Singles Titles</span><span class="r-span num">1920–2026 · 16 contenders</span></a>
-    <a href="/races/champions-league/"><span class="r-title">European Cup / Champions League Titles</span><span class="r-span num">1955–2025 · 19 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">2</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">3</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">105</b><span>years covered</span></div>
+          <div class="fact"><b class="num">12</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Babe Ruth</b><span>longest unbroken reign — 55 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#7 → #1</b><span>Barry Bonds ranked #7 when it first appeared in 1990 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2024</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Barry Bonds</span><span class="s-val num">762 HR</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Hank Aaron</span><span class="s-val num">755 HR</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">Babe Ruth</span><span class="s-val num">714 HR</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Albert Pujols</span><span class="s-val num">703 HR</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="s-label">Alex Rodriguez</span><span class="s-val num">696 HR</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Sports races</h2><a href="/#sports">See all 11 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/world-cup-goals/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="world-cup-goals" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World Cup Career Goals</h3>
+        <p class="card-meta"><span>1930–2022</span><span>·</span><span>12 contenders</span><span>·</span><span>5 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Miroslav Klose</span><span class="cl-val">16 goals</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/f1-constructors/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="f1-constructors" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>F1 Constructors by Points</h3>
+        <p class="card-meta"><span>1958–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>9 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#67E8F9" aria-hidden="true"></span><span class="cl-name">Mercedes</span><span class="cl-val">9,350 pts</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/grand-slams/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="grand-slams" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Grand Slam Singles Titles</h3>
+        <p class="card-meta"><span>1920–2026</span><span>·</span><span>16 contenders</span><span>·</span><span>5 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#86EFAC" aria-hidden="true"></span><span class="cl-name">Novak Djokovic</span><span class="cl-val">24</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/champions-league/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="champions-league" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>European Cup / Champions League Titles</h3>
+        <p class="card-meta"><span>1955–2025</span><span>·</span><span>19 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F2F4F8" aria-hidden="true"></span><span class="cl-name">Real Madrid</span><span class="cl-val">15</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/f1-driver-wins/"><span class="dir">← Previous race</span>F1 Driver Wins</a>
-    <a href="/races/world-cup-goals/" style="text-align:right"><span class="dir">Next race →</span>World Cup Goals</a>
+    <a href="/races/f1-driver-wins/"><span class="dir">← Previous race</span>Formula 1 Driver Wins</a>
+    <a href="/races/world-cup-goals/" class="pg-next"><span class="dir">Next race →</span>World Cup Career Goals</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"world-cup-goals":{"entities":[{"label":"Miroslav Klose","color":"#F43F5E"},{"label":"Ronaldo","color":"#FFB020"},{"label":"Gerd Muller","color":"#FDE68A"},{"label":"Just Fontaine","color":"#2FB4FF"},{"label":"Sandor Kocsis","color":"#FFD84D"},{"label":"Guillermo Stabile","color":"#C4B5A0"},{"label":"Pele","color":"#34D399"},{"label":"Lionel Messi","color":"#67E8F9"},{"label":"Jurgen Klinsmann","color":"#B388FF"},{"label":"Gary Lineker","color":"#4C8DFF"}],"frames":[[0,0,0,0,0,8,0,0,0,0],[0,0,0,0,0,8,0,0,0,0],[0,0,0,0,0,8,0,0,0,0],[0,0,0,0,0,8,0,0,0,0],[0,0,0,0,0,8,0,0,0,0],[0,0,0,0,0,8,0,0,0,0],[0,0,0,0,0,8,0,0,0,0],[0,0,0,0,6.069,8,0,0,0,0],[0,0,0,4.483,11,8,2.069,0,0,0],[0,0,0,13,11,8,6.138,0,0,0],[0,0,0,13,11,8,6.931,0,0,0],[0,0,0,13,11,8,7,0,0,0],[0,0,5.172,13,11,8,9.586,0,0,0],[0,0,11.241,13,11,8,12,0,0,0],[0,0,14,13,11,8,12,0,0,0.207],[0,0,14,13,11,8,12,0,0,1.793],[0,0,14,13,11,8,12,0,0,3.379],[0,0,14,13,11,8,12,0,0,4.966],[0,0,14,13,11,8,12,0,0.828,7.103],[0,0,14,13,11,8,12,0,3.345,10],[0,0,14,13,11,8,12,0,7.31,10],[0,2.621,14,13,11,8,12,0,9.966,10],[2.241,7.586,14,13,11,8,12,0,11,10],[6.207,12.724,14,13,11,8,12,0.241,11,10],[10.138,15,14,13,11,8,12,1,11,10],[13.31,15,14,13,11,8,12,1,11,10],[15.241,15,14,13,11,8,12,3.483,11,10],[16,15,14,13,11,8,12,5.414,11,10],[16,15,14,13,11,8,12,7.448,11,10],[16,15,14,13,11,8,12,13,11,10]],"t0":1930,"t1":2022,"era":0},"f1-constructors":{"entities":[{"label":"Mercedes","color":"#67E8F9"},{"label":"Ferrari","color":"#FF5C4D"},{"label":"McLaren","color":"#FF8C42"},{"label":"Williams","color":"#4C8DFF"},{"label":"Lotus","color":"#FFD84D"},{"label":"Red Bull","color":"#6E7BFF"},{"label":"Brabham","color":"#2FB4FF"},{"label":"Renault / Alpine","color":"#FDE68A"},{"label":"Benetton","color":"#34D399"},{"label":"Tyrrell","color":"#C4B5A0"}],"frames":[[0,40,0,0,0,0,0,0,0,0],[0,97.759,0,0,46.207,0,17.328,0,0,0],[0,152.414,6.207,0,95.517,0,43.966,0,0,3.103],[0,198.621,29.31,0,153.276,0,95.948,0,0,14.655],[0,251.034,74.138,0,229.655,0,157.241,0,0,51.034],[0,308.793,137.672,0,322.069,0,226.552,0,0,108.793],[0,403.793,219.828,11.638,428.448,0,281.897,0,0,213.103],[0,511.207,309.914,34.698,539.914,0,334.31,5.172,0,324.741],[0,661.379,442.759,164.655,672.759,0,392.069,74.483,0,388.276],[0,797.672,581.552,309.483,803.621,0,465.69,151.724,0,443.879],[0,907.414,731.724,482.759,930.69,0,569.655,244.138,0,484.31],[0,1020.69,917.241,673.707,1029.483,0,648.879,329.483,53.017,514.138],[0,1136.207,1125.172,875.862,1110.345,0,712.414,410.345,139.655,537.241],[0,1277.155,1353.448,1128.879,1150.517,0,750.517,470.862,328.017,560.345],[0,1425.862,1580.172,1393.103,1181.724,0,780,531.207,538.793,581.724],[0,1599.138,1782.328,1681.897,1193.276,0,780,606.293,798.707,593.276],[0,1796.552,2020.69,2031.034,1200,0,780,710.345,1010.345,602.414],[0,2027.586,2309.483,2464.224,1200,0,780,854.741,1154.741,608.19],[0,2337.931,2637.931,2758.621,1200,0,780,999.138,1259.483,610],[0,2684.483,2984.483,2989.655,1200,0,780,1143.534,1346.121,610],[33.103,3031.034,3275.862,3165.517,1200,137.931,780,1370.69,1350,610],[116.897,3377.586,3603.448,3332.328,1202.586,424.569,780,1614.655,1350,610],[371.034,3724.138,4065.517,3476.724,1214.138,1204.31,780,1903.448,1350,610],[926.724,4241.379,4470.69,3649.569,1299.655,2140.517,780,2121.121,1350,610],[1793.103,4934.483,4817.241,3851.724,1461.379,3237.931,780,2265.517,1350,610],[3187.069,5539.655,5097.845,3987.931,1587.931,3807.759,780,2387.931,1350,610],[4751.724,6129.31,5363.793,4106.897,1700.69,4224.138,780,2505.172,1350,610],[6446.552,7082.759,5854.31,4318.966,1720,5146.552,780,2687.931,1350,610],[7913.793,7943.103,6575.862,4451.724,1720,6803.448,780,2953.448,1350,610],[9350,8950,7600,4650,1720,8600,780,3350,1350,610]],"t0":1958,"t1":2025,"era":0},"grand-slams":{"entities":[{"label":"Novak Djokovic","color":"#86EFAC"},{"label":"Roger Federer","color":"#D4D4D8"},{"label":"Pete Sampras","color":"#F43F5E"},{"label":"Rod Laver","color":"#34D399"},{"label":"Bill Tilden","color":"#4C8DFF"},{"label":"Rafael Nadal","color":"#B45309"},{"label":"Bjorn Borg","color":"#FFD84D"},{"label":"Fred Perry","color":"#67E8F9"},{"label":"Rene Lacoste","color":"#2FB4FF"},{"label":"Ken Rosewall","color":"#A3E635"},{"label":"Don Budge","color":"#23C8A8"}],"frames":[[0,0,0,0,2,0,0,0,0,0,0],[0,0,0,0,6.386,0,0,0,2.193,0,0],[0,0,0,0,8.924,0,0,0,4.848,0,0],[0,0,0,0,10,0,0,1.159,7,0,0],[0,0,0,0,10,0,0,5.545,7,0,0],[0,0,0,0,10,0,0,7.31,7,0,3.931],[0,0,0,0,10,0,0,8,7,0,6],[0,0,0,0,10,0,0,8,7,0,6],[0,0,0,0,10,0,0,8,7,0,6],[0,0,0,1.159,10,0,0,8,7,1.448,6],[0,0,0,2.621,10,0,0,8,7,3.276,6],[0,0,0,4.083,10,0,0,8,7,5.124,6],[0,0,0,5.545,10,0,0,8,7,7.317,6],[0,0,0,8.517,10,0,0,8,7,8,6],[0,0,0,11,10,0,1.407,8,7,8,6],[0,0,0,11,10,0,5.793,8,7,8,6],[0,0,0,11,10,0,9.483,8,7,8,6],[0,0,0,11,10,0,11,8,7,8,6],[0,0,0.317,11,10,0,11,8,7,8,6],[0,0,1.779,11,10,0,11,8,7,8,6],[0,0,5.103,11,10,0,11,8,7,8,6],[0,0,9.11,11,10,0,11,8,7,8,6],[0,0.138,13.138,11,10,0,11,8,7,8,6],[0,3.672,14,11,10,0.534,11,8,7,8,6],[3.724,13.086,14,11,10,4.086,11,8,7,8,6],[10.379,16.19,14,11,10,10.569,11,8,7,8,6],[12,17.034,14,11,10,14.034,11,8,7,8,6],[15.379,19.845,14,11,10,18.534,11,8,7,8,6],[22.034,20,14,11,10,22,11,8,7,8,6],[24,20,14,11,10,22,11,8,7,8,6]],"t0":1920,"t1":2026,"era":0},"champions-league":{"entities":[{"label":"Real Madrid","color":"#F2F4F8"},{"label":"AC Milan","color":"#FF5C4D"},{"label":"Bayern Munich","color":"#F43F5E"},{"label":"Liverpool","color":"#FCA5A5"},{"label":"Ajax","color":"#FF8C42"},{"label":"Inter Milan","color":"#4C8DFF"},{"label":"Benfica","color":"#FF6FA5"},{"label":"Barcelona","color":"#B388FF"},{"label":"Manchester United","color":"#E2B93B"},{"label":"Celtic","color":"#34D399"}],"frames":[[0,0,0,0,0,0,0,0,0,0],[2.414,0,0,0,0,0,0,0,0,0],[4.828,0,0,0,0,0,0,0,0,0],[5,0.241,0,0,0,0,2,0,0,0],[5,1,0,0,0,1.655,2,0,0,0],[6,1,0,0,0,2,2,0,0.069,1],[6,2,0,0,0,2,2,0,1,1],[6,2,0,0,1.897,2,2,0,1,1],[6,2,1.31,0,3,2,2,0,1,1],[6,2,3,0.724,3,2,2,0,1,1],[6,2,3,2,3,2,2,0,1,1],[6,2,3,3,3,2,2,0,1,1],[6,2,3,3.966,3,2,2,0,1,1],[6,2,3,4,3,2,2,0,1,1],[6,2.793,3,4,3,2,2,0,1,1],[6,4,3,4,3,2,2,0.207,1,1],[6,4.621,3,4,3,2,2,1,1,1],[6,5,3,4,4,2,2,1,1,1],[7,5,3,4,4,2,2,1,1.448,1],[8,5,3.862,4,4,2,2,1,2,1],[9,6,4,4,4,2,2,1,2,1],[9,6,4,5,4,2,2,1.69,2,1],[9,7,4,5,4,2,2,2.103,3,1],[9,7,4,5,4,3,2,3.517,3,1],[9,7,4.931,5,4,3,2,4,3,1],[10.345,7,5,5,4,3,2,5,3,1],[12.759,7,5,5,4,3,2,5,3,1],[13,7,6,6,4,3,2,5,3,1],[14,7,6,6,4,3,2,5,3,1],[15,7,6,6,4,3,2,5,3,1]],"t0":1955,"t1":2025,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

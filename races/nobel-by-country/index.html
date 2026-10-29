@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Nobel Prizes by Country (1901–2025) — Overtake">
   <meta name="twitter:description" content="The Nobel map is a slow-motion story of research infrastructure, migration and language. Animated bar chart race, 1901–2025.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/nobel-by-country.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Nobel Prizes by Country","description":"The Nobel map is a slow-motion story of research infrastructure, migration and language. Germany and France own the early board, then the United States turns universities and laboratories into a prize engine.","url":"https://beautifuldata.netlify.app/races/nobel-by-country/","temporalCoverage":"1901/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.nobelprize.org/prizes/facts/nobel-prize-facts/"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="science" data-race-id="nobel-by-country">
   <div class="race-head">
-    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span>1901–2025</span></p>
+    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span class="num">1901–2025</span></p>
     <h1>Nobel Prizes by Country</h1>
     <p class="blurb">The Nobel map is a slow-motion story of research infrastructure, migration and language. Germany and France own the early board, then the United States turns universities and laboratories into a prize engine.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>12 contenders</span><span>1 lead change</span><span class="quality-flag">illustrative data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -77,83 +84,146 @@
   <p class="context-strip">
     <span>Source: <a href="https://www.nobelprize.org/prizes/facts/nobel-prize-facts/" rel="noopener">Nobel Prize laureate facts and country affiliations</a></span>
     <span>Cumulative country attribution simplified by commonly cited birth/citizenship associations; multi-country laureates are not fractionally split.</span>
-    <span class="quality-flag">illustrative data</span>
     <span>Updated 2026-07-03</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">1</b><span>lead change</span></div>
-        <div class="fact"><b class="num">124</b><span>years covered</span></div>
-        <div class="fact"><b class="num">12</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>United States</b><span>longest reign — 65 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2025</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>2 different leaders in 124 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1901" style="left:0.000%;width:47.581%;--c:#FDE68A;--ink:rgba(11,14,20,0.88)" title="Germany · 1901–1960" aria-label="Germany led 1901–1960. Jump there."><span>Germany</span></button><button type="button" class="reign" data-t="1960" style="left:47.581%;width:52.419%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="United States · 1960–2025" aria-label="United States led 1960–2025. Jump there."><span>United States</span></button></div>
+    <div class="reign-axis num"><span>1901</span><span>2025</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">430</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">United Kingdom</span><span class="s-val num">145</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FDE68A" aria-hidden="true"></span><span class="s-label">Germany</span><span class="s-val num">118</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="s-label">France</span><span class="s-val num">81</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#C4B5A0" aria-hidden="true"></span><span class="s-label">Russia / USSR</span><span class="s-val num">48</span></li>
+        <li><span class="h-label">United States</span><span class="h-bar"><i style="width:100.0%;background:#4C8DFF"></i></span><span class="h-val num">65 yrs</span></li>
+        <li><span class="h-label">Germany</span><span class="h-bar"><i style="width:90.8%;background:#FDE68A"></i></span><span class="h-val num">59 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1933">
         <span class="m-year num">1933</span>
-        <span class="m-title">Brain drain begins</span>
+        <span class="m-body"><span class="m-title">Brain drain begins</span><span class="m-text">European upheaval sends scientists and writers abroad, reshaping future prize geography.</span></span>
       </button></li>
       <li><button type="button" data-t="1960">
         <span class="m-year num">1960</span>
-        <span class="m-title">US lead becomes structural</span>
+        <span class="m-body"><span class="m-title">US lead becomes structural</span><span class="m-text">Postwar funding, universities and immigration make the United States the dominant Nobel country.</span></span>
       </button></li>
       <li><button type="button" data-t="2008">
         <span class="m-year num">2008</span>
-        <span class="m-title">Japan accelerates</span>
+        <span class="m-body"><span class="m-title">Japan accelerates</span><span class="m-text">A run of physics and chemistry prizes pushes Japan into the modern top group.</span></span>
       </button></li>
       <li><button type="button" data-t="2020">
         <span class="m-year num">2020</span>
-        <span class="m-title">Global science broadens</span>
+        <span class="m-body"><span class="m-title">Global science broadens</span><span class="m-text">The top remains concentrated, but laureates increasingly work across borders and institutions.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Science races</h2>
-  <div class="related-grid">
-    <a href="/races/life-expectancy/"><span class="r-title">Global Life Expectancy Leaders</span><span class="r-span num">1900–2023 · 13 contenders</span></a>
-    <a href="/races/cities/"><span class="r-title">World’s Most Populous Cities</span><span class="r-span num">600–2025 · 16 contenders</span></a>
-    <a href="/races/busiest-airports/"><span class="r-title">World's Busiest Airports</span><span class="r-span num">1998–2025 · 13 contenders</span></a>
-    <a href="/races/wind-capacity/"><span class="r-title">Wind Power Capacity by Country</span><span class="r-span num">2000–2024 · 12 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">1</b><span>lead change</span></div>
+          <div class="fact"><b class="num">2</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">124</b><span>years covered</span></div>
+          <div class="fact"><b class="num">12</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>United States</b><span>longest unbroken reign — 65 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#7 → #1</b><span>United States ranked #7 when it first appeared in 1910 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2025</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">430</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">United Kingdom</span><span class="s-val num">145</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FDE68A" aria-hidden="true"></span><span class="s-label">Germany</span><span class="s-val num">118</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="s-label">France</span><span class="s-val num">81</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#C4B5A0" aria-hidden="true"></span><span class="s-label">Russia / USSR</span><span class="s-val num">48</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Science races</h2><a href="/#science">See all 10 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/life-expectancy/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="life-expectancy" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Global Life Expectancy Leaders</h3>
+        <p class="card-meta"><span>1900–2023</span><span>·</span><span>13 contenders</span><span>·</span><span>4 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#A3E635" aria-hidden="true"></span><span class="cl-name">Hong Kong</span><span class="cl-val">85.3 yrs</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/cities/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="cities" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World’s Most Populous Cities</h3>
+        <p class="card-meta"><span>600–2025</span><span>·</span><span>16 contenders</span><span>·</span><span>6 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFB020" aria-hidden="true"></span><span class="cl-name">Tokyo</span><span class="cl-val">37.1M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/busiest-airports/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="busiest-airports" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Busiest Airports</h3>
+        <p class="card-meta"><span>1998–2025</span><span>·</span><span>13 contenders</span><span>·</span><span>2 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">Atlanta ATL</span><span class="cl-val">106.0M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/wind-capacity/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="wind-capacity" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Wind Power Capacity by Country</h3>
+        <p class="card-meta"><span>2000–2024</span><span>·</span><span>12 contenders</span><span>·</span><span>2 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">China</span><span class="cl-val">521.3 GW</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/supercomputers/"><span class="dir">← Previous race</span>Supercomputers</a>
-    <a href="/races/life-expectancy/" style="text-align:right"><span class="dir">Next race →</span>Life Expectancy</a>
+    <a href="/races/supercomputers/"><span class="dir">← Previous race</span>Fastest Supercomputers</a>
+    <a href="/races/life-expectancy/" class="pg-next"><span class="dir">Next race →</span>Global Life Expectancy Leaders</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"life-expectancy":{"entities":[{"label":"Hong Kong","color":"#A3E635"},{"label":"Japan","color":"#34D399"},{"label":"Iceland","color":"#67E8F9"},{"label":"Norway","color":"#4C8DFF"},{"label":"Sweden","color":"#2FB4FF"},{"label":"Singapore","color":"#FF5C4D"},{"label":"Switzerland","color":"#23C8A8"},{"label":"Australia","color":"#FF8C42"},{"label":"Italy","color":"#FFB020"},{"label":"Canada","color":"#FF6FA5"},{"label":"Spain","color":"#FFD84D"}],"frames":[[39,44,48,52,55,34,49,51,43,50,35],[40.272,44,50.121,54.121,56.272,36.121,51.121,52.697,44.697,51.272,37.969],[41.545,44,52.241,56.241,57.545,38.241,53.241,54.393,46.393,52.545,40.938],[42.817,43.728,54.09,57.545,58.545,40.09,55.09,56.09,47.545,53.817,41.728],[44.09,43.303,55.786,58.393,59.393,41.786,56.786,57.786,48.393,55.09,41.303],[45.603,43.362,57.483,59.603,60.362,43.724,58.483,59.483,49.603,56.483,42.086],[47.724,44.634,59.179,61.724,61.634,46.269,60.179,61.179,51.724,58.179,45.903],[49.845,45.907,60.876,63.845,62.907,48.814,61.876,62.876,53.845,59.876,49.721],[51.966,47.572,62.572,64.786,64.179,50.572,63.179,63.786,54.786,61.179,50.786],[54.086,49.269,64.269,65.634,65.452,52.269,64.452,64.634,55.634,62.452,51.634],[56.448,52.414,66.69,67.448,67.207,54.69,65.966,65.966,58.414,64.207,54.414],[58.993,56.655,69.659,69.993,69.328,57.659,67.662,67.662,62.655,66.328,58.655],[61.538,60.717,72.179,72.134,71.188,60.448,69.224,69.17,66.314,68.269,62.628],[64.083,64.11,73.028,72.771,72.079,62.569,70.284,69.976,67.798,69.541,65.597],[66.628,67.503,73.876,73.407,72.97,64.69,71.345,70.782,69.283,70.814,68.566],[68.991,69.448,74.543,73.753,73.679,66.086,72.333,70.864,70.405,71.652,70.086],[71.324,71.145,75.179,74.05,74.358,67.359,73.308,70.821,71.466,72.415,71.359],[73.404,72.841,75.816,74.537,74.931,68.841,74.305,71.599,72.736,73.284,72.715],[75.228,74.538,76.452,75.215,75.398,70.538,75.323,73.211,74.221,74.259,74.157],[76.9,76.164,77.07,75.876,75.9,72.176,76.276,74.741,75.588,75.235,75.494],[77.621,77.352,77.579,76.428,76.621,73.448,76.828,75.759,76.224,76.21,76.172],[78.342,78.539,78.088,76.979,77.342,74.721,77.379,76.777,76.86,77.186,76.851],[79.328,79.561,78.895,77.63,78.195,75.993,78.228,77.728,77.927,77.996,77.761],[80.388,80.537,79.786,78.308,79.086,77.266,79.161,78.661,79.114,78.759,78.737],[81.359,81.441,80.587,79.112,79.941,78.717,80.148,79.648,80.194,79.559,79.784],[82.207,82.247,81.266,80.088,80.747,80.414,81.209,80.709,81.128,80.407,80.929],[83.072,83.044,81.955,81.061,81.539,82.088,82.255,81.739,82.083,81.244,82.055],[84.174,83.723,82.803,81.994,82.132,83.446,83.103,82.332,83.355,81.923,82.903],[85.146,84.364,83.182,82.946,83.046,84.54,83.952,83.058,83.594,82.564,83.752],[85.3,84.6,83.8,83.5,83.2,84.1,84.3,83.7,83.5,83,83.8]],"t0":1900,"t1":2023,"era":0},"cities":{"entities":[{"label":"Tokyo","color":"#FFB020"},{"label":"Beijing","color":"#34D399"},{"label":"New York","color":"#FFD84D"},{"label":"Chang'an / Xi'an","color":"#4C8DFF"},{"label":"Baghdad","color":"#2FB4FF"},{"label":"London","color":"#A3E635"},{"label":"Kaifeng","color":"#67E8F9"},{"label":"Jakarta","color":"#8B5CF6"},{"label":"Delhi","color":"#FF6FA5"},{"label":"Cairo","color":"#6E7BFF"},{"label":"Constantinople","color":"#23C8A8"},{"label":"Shanghai","color":"#FF8C42"},{"label":"Mexico City","color":"#FF5C4D"},{"label":"Sao Paulo","color":"#F43F5E"}],"frames":[[0,0.1,0,0.6,0,0.02,0.1,0,0.1,0.2,0.5,0,0,0],[0,0.125,0,0.698,0.172,0.022,0.125,0,0.112,0.225,0.475,0,0,0],[0,0.149,0,0.797,0.344,0.025,0.149,0,0.125,0.249,0.451,0,0,0],[0,0.174,0,0.895,0.516,0.027,0.174,0,0.137,0.274,0.426,0,0,0],[0,0.198,0,0.993,0.688,0.03,0.198,0,0.149,0.298,0.402,0,0,0],[0,0.269,0,0.863,0.769,0.032,0.337,0,0.161,0.323,0.411,0,0,0],[0,0.342,0,0.716,0.842,0.035,0.484,0,0.174,0.347,0.424,0,0,0],[0,0.416,0,0.568,0.916,0.037,0.632,0,0.186,0.372,0.436,0,0,0],[0,0.49,0,0.421,0.99,0.04,0.779,0,0.198,0.397,0.448,0,0,0],[0.021,0.563,0,0.379,0.852,0.048,0.842,0,0.211,0.411,0.439,0,0.032,0],[0.046,0.637,0,0.354,0.68,0.058,0.891,0,0.223,0.423,0.427,0,0.069,0],[0.07,0.711,0,0.33,0.508,0.068,0.941,0,0.235,0.435,0.415,0,0.105,0],[0.095,0.784,0,0.305,0.336,0.078,0.99,0,0.247,0.447,0.403,0,0.142,0],[0.119,0.839,0,0.281,0.271,0.084,0.864,0.006,0.279,0.44,0.371,0.019,0.16,0],[0.144,0.888,0,0.256,0.234,0.089,0.692,0.013,0.316,0.428,0.334,0.044,0.172,0],[0.169,0.937,0,0.231,0.197,0.094,0.52,0.021,0.353,0.416,0.297,0.069,0.184,0],[0.193,0.986,0,0.207,0.16,0.099,0.348,0.028,0.39,0.403,0.26,0.093,0.197,0],[0.253,0.982,0.002,0.218,0.141,0.118,0.282,0.039,0.418,0.391,0.33,0.118,0.209,0.004],[0.327,0.958,0.004,0.242,0.129,0.142,0.258,0.051,0.442,0.379,0.44,0.142,0.221,0.008],[0.4,0.933,0.007,0.267,0.117,0.167,0.233,0.063,0.467,0.367,0.551,0.167,0.233,0.013],[0.474,0.909,0.009,0.291,0.104,0.191,0.209,0.076,0.491,0.354,0.661,0.191,0.246,0.018],[0.58,0.932,0.018,0.316,0.108,0.344,0.208,0.091,0.5,0.334,0.684,0.232,0.232,0.022],[0.703,0.981,0.03,0.341,0.12,0.565,0.22,0.108,0.5,0.309,0.659,0.281,0.205,0.024],[0.825,1.03,0.043,0.365,0.133,0.786,0.233,0.126,0.5,0.285,0.635,0.33,0.178,0.027],[0.948,1.079,0.055,0.39,0.145,1.007,0.245,0.143,0.5,0.26,0.61,0.379,0.151,0.029],[1.171,1.214,0.424,0.428,0.167,1.783,0.278,0.235,0.557,0.335,0.714,0.628,0.174,0.047],[1.41,1.466,2.19,0.422,0.191,4.617,0.41,0.466,0.71,0.51,0.966,0.91,0.366,0.159],[6.738,2.99,8.157,0.614,0.414,7.516,0.607,1.081,1.121,1.562,1.047,3.298,2.05,1.341],[25.997,8.609,16.171,1.793,2.386,7.353,1.117,5.584,5.317,6.86,3.348,11.674,10.793,10.152],[37.1,21.5,20.2,9.5,9.5,9.1,5.5,35.4,34.7,22.6,16,29.9,22.5,22.8]],"t0":600,"t1":2025,"era":0},"busiest-airports":{"entities":[{"label":"Atlanta ATL","color":"#4C8DFF"},{"label":"Dubai DXB","color":"#FFD84D"},{"label":"Dallas/Fort Worth DFW","color":"#23C8A8"},{"label":"Chicago ORD","color":"#67E8F9"},{"label":"Beijing Capital PEK","color":"#FF5C4D"},{"label":"Tokyo Haneda HND","color":"#FF6FA5"},{"label":"London Heathrow LHR","color":"#B388FF"},{"label":"Denver DEN","color":"#A3E635"},{"label":"Guangzhou CAN","color":"#F43F5E"},{"label":"Los Angeles LAX","color":"#FFB020"}],"frames":[[73.5,10,60.4,72.1,17,53,60.7,35,8,61.2],[76.619,11.071,60.54,72.1,19.188,54.583,62.516,36.769,10.141,64.04],[79.738,12.141,60.679,72.1,21.376,56.166,64.331,38.538,12.283,66.879],[78.891,13.767,57.567,69.919,23.881,58.105,64.084,37.571,13.948,62.898],[77.355,15.49,53.89,67.359,26.441,60.107,63.479,36.128,15.531,57.731],[79.095,17.867,54.962,69.516,29.722,61.224,64.545,37.862,17.409,57.674],[82.214,20.521,58.034,73.659,33.307,61.969,66.314,40.934,19.41,59.769],[83.91,23.536,59.607,75.707,38.417,63.205,67.203,43.593,21.826,60.778],[84.469,26.841,59.979,76.079,44.748,64.834,67.39,45.921,24.572,60.917],[85.786,30.431,59.612,74.991,49.903,65.99,67.424,48.04,27.566,60.772],[88.207,34.434,58.169,71.779,53.348,66.455,67.238,49.855,30.917,60.214],[89.916,38.583,57.076,69.086,58.072,66.486,66.955,51.321,34.305,59.716],[89.59,43.145,56.983,67.876,66.452,65.276,66.397,51.786,37.797,59.39],[89.621,47.743,56.988,66.79,74.314,64.334,66.112,52.252,41.283,59.338],[92.507,52.631,57.779,66.697,78.038,65.545,68.021,52.717,44.728,61.479],[95.393,57.519,58.571,66.603,81.762,66.755,69.929,53.183,48.172,63.621],[95.814,63.438,60.797,68.169,83.783,69.49,71.524,53.334,51.214,66.838],[96.14,69.397,63.078,69.798,85.738,72.283,73.107,53.474,54.24,70.097],[99.234,75.507,64.334,73.21,89.248,75.417,74.272,55.321,56.659,74.569],[102.959,81.652,65.359,77.028,93.112,78.629,75.343,57.555,58.94,79.317],[105.193,85.376,66.755,79.821,96.448,81.997,77.066,60.224,62.834,82.948],[106.683,87.89,68.338,82.102,99.521,85.441,79.114,63.11,67.536,86.021],[108.897,87.797,71.997,83.876,100.517,87.1,80.486,66.672,71.538,87.79],[82.528,61.366,60.328,62.379,72.897,63.721,56.569,54.393,61.152,63.562],[54.21,27.003,47.366,38.866,33.845,29.014,21.169,42.355,42.593,35.421],[80.666,39.307,65.507,57.945,27.11,32.814,31.041,61.697,36.383,52.938],[95.976,70.424,75.138,69.459,21.017,56.493,65.241,71.059,33.776,67.803],[105.169,87.731,82.628,74.741,54.941,79.693,79.848,78.434,65.021,75.307],[107.955,92.417,87.676,80.069,67.928,86.045,83.907,82.234,76.579,76.628],[106,94,86,81,71,88,84,80,79,77]],"t0":1998,"t1":2025,"era":0},"wind-capacity":{"entities":[{"label":"China","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"Germany","color":"#FDE68A"},{"label":"Spain","color":"#F43F5E"},{"label":"India","color":"#FFB020"},{"label":"Brazil","color":"#34D399"},{"label":"United Kingdom","color":"#B388FF"},{"label":"Italy","color":"#A3E635"}],"frames":[[0.341,2.377,6.095,2.206,0.941,0.019,0.435,0.363],[0.386,3.221,8.539,3.317,1.216,0.019,0.476,0.536],[0.43,4.065,10.983,4.428,1.491,0.02,0.518,0.708],[0.525,4.909,13.067,5.718,2.139,0.021,0.631,0.864],[0.655,5.753,14.896,7.136,3.052,0.023,0.796,1.007],[0.853,6.792,16.699,8.552,3.986,0.039,1.003,1.18],[1.394,8.808,18.377,9.961,5.021,0.125,1.426,1.501],[1.935,10.825,20.055,11.37,6.056,0.211,1.849,1.822],[4.031,15.463,21.194,13.222,7.534,0.266,2.418,2.406],[6.645,20.976,22.154,15.222,9.159,0.31,3.035,3.077],[11.318,26.649,23.361,17.126,10.649,0.421,3.718,3.838],[20.109,32.642,25.061,18.838,11.866,0.666,4.536,4.777],[28.9,38.636,26.761,20.55,13.083,0.911,5.353,5.716],[41.757,46.698,28.449,21.488,14.745,1.299,6.79,6.669],[54.984,54.949,30.136,22.355,16.448,1.7,8.283,7.624],[68.884,60.142,32.559,22.817,18.369,2.548,9.867,8.222],[83.459,62.276,35.718,22.873,20.506,3.843,11.54,8.463],[98.602,64.82,38.987,22.927,22.68,5.212,13.179,8.707],[119.994,71.877,43.465,22.954,25.26,7.402,14.442,8.997],[141.386,78.934,47.942,22.981,27.84,9.592,15.705,9.287],[158.489,84.936,51.997,23.104,30.517,11.478,17.638,9.617],[173.447,90.411,55.839,23.276,33.243,13.213,19.905,9.967],[194.733,96.996,59.081,23.758,35.626,14.794,21.901,10.296],[235.007,106.911,60.521,25.171,36.98,15.912,23.081,10.562],[275.281,116.826,61.961,26.584,38.333,17.031,24.261,10.827],[310.949,126.417,63.581,27.955,39.721,19.624,25.942,11.199],[345.695,135.944,65.236,29.319,41.116,22.511,27.722,11.592],[392.74,143.424,67.344,30.407,43.005,25.707,29.345,12.023],[457.003,148.038,70.083,31.109,45.584,29.333,30.745,12.507],[521.266,152.653,72.823,31.811,48.163,32.959,32.146,12.992]],"t0":2000,"t1":2024,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

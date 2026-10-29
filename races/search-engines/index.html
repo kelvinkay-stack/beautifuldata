@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Search Engine Market Share (1996–2025) — Overtake">
   <meta name="twitter:description" content="The web search race starts as a portal war and ends as one of the most durable monopolies on the internet. Animated bar chart race, 1996–2025.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/search-engines.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Search Engine Market Share","description":"The web search race starts as a portal war and ends as one of the most durable monopolies on the internet. Google does not just win the board; it turns the rest of the field into a fight for the scraps.","url":"https://beautifuldata.netlify.app/races/search-engines/","temporalCoverage":"1996/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://gs.statcounter.com/search-engine-market-share"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="tech" data-race-id="search-engines">
   <div class="race-head">
-    <p class="crumbs"><a href="/#tech">Technology &amp; Business</a><span aria-hidden="true">/</span><span>1996–2025</span></p>
+    <p class="crumbs"><a href="/#tech">Technology &amp; Business</a><span aria-hidden="true">/</span><span class="num">1996–2025</span></p>
     <h1>Search Engine Market Share</h1>
     <p class="blurb">The web search race starts as a portal war and ends as one of the most durable monopolies on the internet. Google does not just win the board; it turns the rest of the field into a fight for the scraps.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>11 contenders</span><span>1 lead change</span><span class="quality-flag">illustrative data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -77,83 +84,146 @@
   <p class="context-strip">
     <span>Source: <a href="https://gs.statcounter.com/search-engine-market-share" rel="noopener">StatCounter Global Stats and industry archives</a></span>
     <span>Annual global shares, with pre-2009 values reconstructed from historic industry estimates. Treat early portal-era values as approximate.</span>
-    <span class="quality-flag">illustrative data</span>
     <span>Updated 2026-07-03</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">1</b><span>lead change</span></div>
-        <div class="fact"><b class="num">29</b><span>years covered</span></div>
-        <div class="fact"><b class="num">11</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Google</b><span>longest reign — 23 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2025</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>2 different leaders in 29 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1996" style="left:0.000%;width:20.690%;--c:#8B5CF6;--ink:rgba(255,255,255,0.95)" title="Yahoo · 1996–2002" aria-label="Yahoo led 1996–2002. Jump there."><span>Yahoo</span></button><button type="button" class="reign" data-t="2002" style="left:20.690%;width:79.310%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="Google · 2002–2025" aria-label="Google led 2002–2025. Jump there."><span>Google</span></button></div>
+    <div class="reign-axis num"><span>1996</span><span>2025</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">Google</span><span class="s-val num">90.8%</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#23C8A8" aria-hidden="true"></span><span class="s-label">MSN / Bing</span><span class="s-val num">4.1%</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Yahoo</span><span class="s-val num">1.1%</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Baidu</span><span class="s-val num">0.7%</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">DuckDuckGo</span><span class="s-val num">0.7%</span></li>
+        <li><span class="h-label">Google</span><span class="h-bar"><i style="width:100.0%;background:#4C8DFF"></i></span><span class="h-val num">23 yrs</span></li>
+        <li><span class="h-label">Yahoo</span><span class="h-bar"><i style="width:26.1%;background:#8B5CF6"></i></span><span class="h-val num">6 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1998.75">
         <span class="m-year num">1998</span>
-        <span class="m-title">Google arrives</span>
+        <span class="m-body"><span class="m-title">Google arrives</span><span class="m-text">A tiny Stanford-born search engine launches into a field dominated by portals and directories.</span></span>
       </button></li>
       <li><button type="button" data-t="2001.2">
         <span class="m-year num">2001</span>
-        <span class="m-title">Google passes Yahoo</span>
+        <span class="m-body"><span class="m-title">Google passes Yahoo</span><span class="m-text">Google becomes the default mental model for search, overtaking the portal era in usage and mindshare.</span></span>
       </button></li>
       <li><button type="button" data-t="2009.5">
         <span class="m-year num">2009</span>
-        <span class="m-title">Bing replaces MSN</span>
+        <span class="m-body"><span class="m-title">Bing replaces MSN</span><span class="m-text">Microsoft relaunches search as Bing, beginning a long second-place fight rather than a true Google challenge.</span></span>
       </button></li>
       <li><button type="button" data-t="2023.2">
         <span class="m-year num">2023</span>
-        <span class="m-title">AI search pressure</span>
+        <span class="m-body"><span class="m-title">AI search pressure</span><span class="m-text">Chat-style search renews attention on the category, but the market-share board barely moves.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Tech &amp; Business races</h2>
-  <div class="related-grid">
-    <a href="/races/ev-sales/"><span class="r-title">EV Makers by Annual Sales</span><span class="r-span num">2010–2025 · 12 contenders</span></a>
-    <a href="/races/solar-capacity/"><span class="r-title">Solar Power Capacity by Country</span><span class="r-span num">2000–2024 · 12 contenders</span></a>
-    <a href="/races/windows-versions/"><span class="r-title">Windows Version Market Share</span><span class="r-span num">2009–2026 · 8 contenders</span></a>
-    <a href="/races/cloud-providers/"><span class="r-title">Cloud Infrastructure Share</span><span class="r-span num">2010–2025 · 9 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">1</b><span>lead change</span></div>
+          <div class="fact"><b class="num">2</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">29</b><span>years covered</span></div>
+          <div class="fact"><b class="num">11</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Google</b><span>longest unbroken reign — 23 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#7 → #1</b><span>Google ranked #7 when it first appeared in 1997 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2025</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">Google</span><span class="s-val num">90.8%</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#23C8A8" aria-hidden="true"></span><span class="s-label">MSN / Bing</span><span class="s-val num">4.1%</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#8B5CF6" aria-hidden="true"></span><span class="s-label">Yahoo</span><span class="s-val num">1.1%</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Baidu</span><span class="s-val num">0.7%</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">DuckDuckGo</span><span class="s-val num">0.7%</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Tech &amp; Business races</h2><a href="/#tech">See all 11 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/ev-sales/" style="--accent:#4C8DFF;--accent-soft:rgba(76,141,255,0.14)">
+      <div class="card-preview"><canvas data-race="ev-sales" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>EV Makers by Annual Sales</h3>
+        <p class="card-meta"><span>2010–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>3 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="cl-name">BYD</span><span class="cl-val">2.05k</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/solar-capacity/" style="--accent:#4C8DFF;--accent-soft:rgba(76,141,255,0.14)">
+      <div class="card-preview"><canvas data-race="solar-capacity" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Solar Power Capacity by Country</h3>
+        <p class="card-meta"><span>2000–2024</span><span>·</span><span>12 contenders</span><span>·</span><span>3 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">China</span><span class="cl-val">887.1 GW</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/windows-versions/" style="--accent:#4C8DFF;--accent-soft:rgba(76,141,255,0.14)">
+      <div class="card-preview"><canvas data-race="windows-versions" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Windows Version Market Share</h3>
+        <p class="card-meta"><span>2009–2026</span><span>·</span><span>8 contenders</span><span>·</span><span>3 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">Windows 11</span><span class="cl-val">72.0%</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/cloud-providers/" style="--accent:#4C8DFF;--accent-soft:rgba(76,141,255,0.14)">
+      <div class="card-preview"><canvas data-race="cloud-providers" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Cloud Infrastructure Share</h3>
+        <p class="card-meta"><span>2010–2025</span><span>·</span><span>9 contenders</span><span>·</span><span>1 lead change</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFB020" aria-hidden="true"></span><span class="cl-name">Amazon AWS</span><span class="cl-val">29.0%</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/social-media/"><span class="dir">← Previous race</span>Social MAUs</a>
-    <a href="/races/ev-sales/" style="text-align:right"><span class="dir">Next race →</span>EV Sales</a>
+    <a href="/races/social-media/"><span class="dir">← Previous race</span>Social Platforms by Monthly Users</a>
+    <a href="/races/ev-sales/" class="pg-next"><span class="dir">Next race →</span>EV Makers by Annual Sales</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"ev-sales":{"entities":[{"label":"BYD","color":"#2FB4FF"},{"label":"Tesla","color":"#FF5C4D"},{"label":"Renault-Nissan","color":"#F43F5E"},{"label":"Volkswagen Group","color":"#4C8DFF"},{"label":"Geely / Zeekr","color":"#A3E635"},{"label":"SAIC-GM-Wuling","color":"#FFB020"},{"label":"GAC Aion","color":"#FFD84D"},{"label":"BMW Group","color":"#67E8F9"}],"frames":[[0,1.5,0,0,0,0,0,0],[0.517,2.017,0.517,0,0,0,0,0],[1.034,2.507,1.31,0.017,0,0,0,0],[1.552,2.61,5.966,0.276,0,0,0,0],[2.276,4.031,10.552,0.672,0,0,0,0.069],[4.345,14.014,14.69,1.966,0,0,0,0.586],[7.241,23.034,18.724,3.724,0.207,0.103,0,1.414],[13.448,28.207,22.345,7.345,1.241,0.621,0,3.483],[21.034,34.483,27.759,11.103,2.414,1.552,0.138,5.966],[32.414,43.793,38.103,15.241,3.966,3.621,0.655,9.586],[43.448,54.483,47.931,19.207,6.207,6.207,1.517,14.069],[53.793,67.931,56.724,22.828,9.828,9.828,3.069,20.276],[67.241,81.172,64.069,29.138,14.69,14.69,4.828,25.655],[85.345,94.103,69.241,39.483,21.414,21.414,6.897,29.793],[96.931,135.759,76.828,52.241,27.414,27.414,10.897,36.345],[101.069,210.241,87.172,67.759,32.586,32.586,17.103,45.655],[114.586,278.655,99.724,92.931,37.759,41.897,26.069,56.621],[136.31,341.759,114.207,126.552,42.931,54.828,37.448,69.034],[140.655,408.276,118.448,167.931,52.138,94.138,47.586,83],[133.414,477.069,115.862,214.483,64.034,151.034,56.897,98],[196.517,650.345,132.241,306.552,82.483,268.621,80.69,141.966],[294.793,875.862,158.103,421.379,104.207,416.552,111.724,200.414],[544.793,1079.379,171.828,497.517,163.483,481.793,177.276,240.276],[849.966,1274.897,181.138,559.586,236.414,516.966,255.379,273.379],[1185.345,1519.241,198.31,653.931,348.655,572,357.483,319.724],[1528.276,1775.793,217.448,756.345,470.724,632,465.586,369.379],[1657.379,1801.034,237.931,758.793,618.345,675.862,466.552,398.862],[1753.586,1790.69,258.621,745.862,769.897,717.241,451.034,425.241],[1900,1818.966,279.31,781.207,876.552,739.31,483.793,452.586],[2050,1850,300,820,980,760,520,480]],"t0":2010,"t1":2025,"era":0},"solar-capacity":{"entities":[{"label":"China","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"Germany","color":"#FDE68A"},{"label":"Japan","color":"#FF6FA5"},{"label":"Spain","color":"#F43F5E"},{"label":"Italy","color":"#34D399"},{"label":"India","color":"#FFB020"},{"label":"Australia","color":"#A3E635"},{"label":"Netherlands","color":"#FF8C42"}],"frames":[[0.034,0.595,0.114,0.33,0.019,0.019,0,0.025,0.013],[0.037,0.482,0.181,0.432,0.022,0.02,0.005,0.028,0.02],[0.05,0.458,0.238,0.574,0.026,0.021,0.006,0.032,0.024],[0.061,0.565,0.344,0.745,0.031,0.024,0.007,0.037,0.036],[0.07,0.703,0.643,0.944,0.038,0.028,0.008,0.042,0.047],[0.086,0.769,1.236,1.172,0.05,0.031,0.009,0.047,0.05],[0.139,0.877,2.023,1.412,0.066,0.034,0.013,0.052,0.051],[0.156,1.054,2.725,1.649,0.14,0.043,0.012,0.06,0.053],[0.184,1.31,3.688,1.839,0.385,0.085,0.022,0.069,0.054],[0.223,1.519,5.044,2.02,1.843,0.277,0.03,0.078,0.056],[0.298,1.747,7.346,2.277,3.54,0.698,0.035,0.153,0.062],[0.478,2.22,11.336,2.73,3.824,1.505,0.046,0.411,0.071],[0.98,3.293,17.493,3.55,4.572,3.436,0.067,1.039,0.089],[2.604,5.098,23.943,4.601,5.261,10.762,0.448,1.341,0.135],[5.225,7.384,30.485,5.921,6.128,15.162,0.813,2.06,0.23],[11.287,10.447,34.81,9.515,6.775,17.227,1.241,2.842,0.437],[20.327,14.157,36.552,15.95,7.026,18.13,2.127,3.511,0.736],[29.444,18.05,37.481,24.085,7.032,18.461,3.908,4.199,1.043],[41.982,22.843,38.477,33.032,7.04,18.711,5.498,4.943,1.473],[68.365,31.606,39.547,39.863,7.043,19.013,8.8,5.648,1.967],[107.068,39.35,40.733,46.156,7.049,19.33,14.547,6.631,2.563],[147.685,46.322,42.402,52.027,7.071,19.66,21.757,8.715,3.555],[181.409,53.485,44.749,57.616,7.938,20.063,29.091,12.023,5.15],[206.657,61.343,47.635,63.491,11.192,20.65,35.404,15.602,7.361],[247.12,73.729,51.192,70.671,12.292,21.258,39.091,19.177,10.575],[290.491,88.892,55.701,76.382,14.945,21.998,46.79,22.962,13.671],[351.486,104.125,59.39,80.815,21.323,23.462,56.961,26.719,16.133],[467.821,122.181,65.91,84.44,28.198,26.214,66.78,29.504,18.708],[657.71,146.421,77.479,87.505,33.07,30.504,77.28,31.57,21.753],[887.1,177.594,89.943,89.601,38.587,36.013,97.576,35.865,24.048]],"t0":2000,"t1":2024,"era":0},"windows-versions":{"entities":[{"label":"Windows 11","color":"#FF5C4D"},{"label":"Windows 10","color":"#FFB020"},{"label":"Windows 7","color":"#23C8A8"},{"label":"Windows XP","color":"#4C8DFF"},{"label":"Windows 8.1","color":"#2FB4FF"},{"label":"Windows Vista","color":"#B388FF"},{"label":"Other Windows","color":"#94A3B8"},{"label":"Windows 8","color":"#67E8F9"}],"frames":[[0,0,1,69,0,25,5,0],[0,0,13.897,60.793,0,20.897,4.414,0],[0,0,26.276,52.759,0,16.966,4,0],[0,0,37.414,45.138,0,13.448,4,0],[0,0,46.483,38.897,0,10.621,3.655,0.345],[0,0,54.103,33.621,0,8.276,3.069,0.931],[0,0,56.552,28.345,1.034,6.448,3,4.621],[0,0,57.793,23.379,3.138,4.793,3,7.897],[0,0,56.621,19.862,9.586,3.621,3,7.31],[0,2.759,55.448,16.345,13.552,2.724,3,6.172],[0,8.621,54.276,12.828,14.724,2.138,3,4.414],[0,18.517,51.31,10.207,12.759,1.552,2.552,3.103],[0,29.448,47.793,7.897,9.897,1,1.983,1.983],[0,37.069,44.276,6.138,8.138,1,1.69,1.69],[0,44.483,40.552,4.586,6.586,0.897,1.5,1.397],[0,51.517,36.448,3.414,5.414,0.603,1.5,1.103],[0,57.793,32.345,2.621,4.621,0.424,1.272,0.924],[0,63.655,28.241,2.034,4.034,0.307,0.921,0.807],[0,70.621,22.483,1.559,3.448,0.245,0.955,0.69],[0.138,76.966,17.172,1.145,2.931,0.186,0.89,0.572],[0.724,81.069,13.655,0.91,2.638,0.128,0.421,0.455],[5.966,79.586,10.759,0.707,2.345,0.1,0.169,0.369],[15.345,73.138,8.414,0.531,2.052,0.1,0.11,0.31],[21.345,70.069,6.069,0.403,1.614,0.052,0.197,0.252],[26.552,67.586,3.931,0.293,1.166,0,0.279,0.193],[31.241,64.069,3.345,0.234,0.872,0,0.103,0.134],[37.621,58.621,2.759,0.176,0.628,0,0.097,0.1],[46.414,50.414,2.172,0.117,0.452,0,0.331,0.1],[58.517,38.897,1.669,0.1,0.317,0,0.4,0.1],[72,26,1.2,0.1,0.2,0,0.4,0.1]],"t0":2009,"t1":2026,"era":0},"cloud-providers":{"entities":[{"label":"Amazon AWS","color":"#FFB020"},{"label":"Others","color":"#94A3B8"},{"label":"Microsoft Azure","color":"#4C8DFF"},{"label":"IBM Cloud","color":"#67E8F9"},{"label":"Google Cloud","color":"#34D399"},{"label":"Salesforce","color":"#2FB4FF"},{"label":"Alibaba Cloud","color":"#FF5C4D"}],"frames":[[18,65,1,8,1,6,0],[20.069,62.724,1.517,7.483,1,6,0.103],[22.172,60.369,2.034,6.983,1.034,5.983,0.21],[24.759,56.903,2.552,6.724,1.552,5.724,0.366],[27.276,53.41,3.138,6.466,2.069,5.466,0.534],[29.345,49.738,4.172,6.207,2.586,5.207,0.793],[31.103,46.366,5.207,5.948,3.103,4.948,1.052],[31.621,44.193,6.241,5.69,3.621,4.69,1.31],[32.138,42.145,7.276,5.431,4.138,4.431,1.569],[32.655,40.438,8.31,5.172,4.655,4.172,1.828],[33.172,38.559,9.345,4.914,5.172,3.914,2.172],[33.69,36.334,10.379,4.655,5.69,3.655,2.69],[33.793,34.483,11.414,4.397,6.207,3.397,3.207],[33.276,33.19,12.448,4.138,6.724,3.138,3.724],[33,31.534,13.483,3.879,7.241,3,4.241],[33,29.466,14.517,3.621,7.759,3,4.759],[32.724,28.224,15.552,3.362,8.138,2.862,5.138],[32.207,27.707,16.586,3.103,8.397,2.603,5.397],[32,26.724,17.621,3,8.655,2.345,5.655],[32,25.431,18.655,3,8.914,2.086,5.914],[32.345,23.621,19.69,3,9.345,2,6],[32.862,21.552,20.724,3,9.862,2,6],[32.621,20.81,21.379,3,10.379,2,5.621],[32.103,20.552,21.897,3,10.897,2,5.103],[31.586,20.293,22.828,3,11,2,4.586],[31.069,20.034,23.862,3,11,2,4.069],[30.552,19.552,24.448,3,11.448,2,4],[30.034,19.034,24.966,3,11.966,2,4],[29.517,19,24.517,3,12.483,2,4],[29,19,24,3,13,2,4]],"t0":2010,"t1":2025,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

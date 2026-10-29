@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="World's Largest Airlines (1970–2024) — Overtake">
   <meta name="twitter:description" content="Annual passengers carried by the world's biggest airlines since 1970. Animated bar chart race, 1970–2024.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/airlines.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"World's Largest Airlines","description":"Annual passengers carried by the world's biggest airlines since 1970. Soviet Aeroflot towers over everyone at ~130M a year until the USSR shatters it overnight, Pan Am, Eastern and TWA vanish, and the low-cost upstarts Southwest, Ryanair and IndiGo climb from nothing to the top of the board — with a cliff-edge COVID crater along the way.","url":"https://beautifuldata.netlify.app/races/airlines/","temporalCoverage":"1970/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.iata.org/en/publications/store/world-air-transport-statistics/"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="science" data-race-id="airlines">
   <div class="race-head">
-    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span>1970–2024</span></p>
+    <p class="crumbs"><a href="/#science">Science &amp; Infrastructure</a><span aria-hidden="true">/</span><span class="num">1970–2024</span></p>
     <h1>World's Largest Airlines</h1>
     <p class="blurb">Annual passengers carried by the world's biggest airlines since 1970. Soviet Aeroflot towers over everyone at ~130M a year until the USSR shatters it overnight, Pan Am, Eastern and TWA vanish, and the low-cost upstarts Southwest, Ryanair and IndiGo climb from nothing to the top of the board — with a cliff-edge COVID crater along the way.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>16 contenders</span><span>5 lead changes</span><span class="quality-flag">illustrative data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -77,99 +84,164 @@
   <p class="context-strip">
     <span>Source: <a href="https://www.iata.org/en/publications/store/world-air-transport-statistics/" rel="noopener">IATA World Air Transport Statistics</a></span>
     <span>Figures reconstructed from IATA World Air Transport Statistics and airline annual reports; interpolated between reporting years and rounded to the nearest million.</span>
-    <span class="quality-flag">illustrative data</span>
     <span>Updated 2026-07-07</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">5</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">54</b><span>years covered</span></div>
-        <div class="fact"><b class="num">16</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Delta</b><span>longest reign — 23 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2024</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>4 different leaders in 54 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1970" style="left:0.000%;width:40.741%;--c:#E2B93B;--ink:rgba(11,14,20,0.88)" title="Aeroflot · 1970–1992" aria-label="Aeroflot led 1970–1992. Jump there."><span>Aeroflot</span></button><button type="button" class="reign" data-t="1992" style="left:40.741%;width:1.852%;--c:#94A3B8;--ink:rgba(11,14,20,0.88)" title="American · 1992–1993" aria-label="American led 1992–1993. Jump there."></button><button type="button" class="reign" data-t="1993" style="left:42.593%;width:42.593%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="Delta · 1993–2016" aria-label="Delta led 1993–2016. Jump there."><span>Delta</span></button><button type="button" class="reign" data-t="2016" style="left:85.185%;width:7.407%;--c:#94A3B8;--ink:rgba(11,14,20,0.88)" title="American · 2016–2020" aria-label="American led 2016–2020. Jump there."></button><button type="button" class="reign" data-t="2020" style="left:92.593%;width:1.852%;--c:#23C8A8;--ink:rgba(255,255,255,0.95)" title="China Southern · 2020–2021" aria-label="China Southern led 2020–2021. Jump there."></button><button type="button" class="reign" data-t="2021" style="left:94.444%;width:5.556%;--c:#94A3B8;--ink:rgba(11,14,20,0.88)" title="American · 2021–2024" aria-label="American led 2021–2024. Jump there."></button></div>
+    <div class="reign-axis num"><span>1970</span><span>2024</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#94A3B8" aria-hidden="true"></span><span class="s-label">American</span><span class="s-val num">226M pax</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Delta</span><span class="s-val num">200M pax</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Ryanair</span><span class="s-val num">197M pax</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="s-label">United</span><span class="s-val num">174M pax</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#6E7BFF" aria-hidden="true"></span><span class="s-label">Southwest</span><span class="s-val num">174M pax</span></li>
+        <li><span class="h-label">Delta</span><span class="h-bar"><i style="width:100.0%;background:#FF5C4D"></i></span><span class="h-val num">23 yrs</span></li>
+        <li><span class="h-label">Aeroflot</span><span class="h-bar"><i style="width:95.7%;background:#E2B93B"></i></span><span class="h-val num">22 yrs</span></li>
+        <li><span class="h-label">American</span><span class="h-bar"><i style="width:34.8%;background:#94A3B8"></i></span><span class="h-val num">8 yrs</span></li>
+        <li><span class="h-label">China Southern</span><span class="h-bar"><i style="width:4.3%;background:#23C8A8"></i></span><span class="h-val num">1 yr</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1978.8">
         <span class="m-year num">1978</span>
-        <span class="m-title">US airlines deregulated</span>
+        <span class="m-body"><span class="m-title">US airlines deregulated</span><span class="m-text">The Airline Deregulation Act throws open American skies — fares fall, upstarts like Southwest begin their long climb.</span></span>
       </button></li>
       <li><button type="button" data-t="1991.1">
         <span class="m-year num">1991</span>
-        <span class="m-title">Eastern shuts down</span>
+        <span class="m-body"><span class="m-title">Eastern shuts down</span><span class="m-text">Bled by strikes and debt, Eastern Air Lines stops flying in January 1991 after 64 years.</span></span>
       </button></li>
       <li><button type="button" data-t="1991.9">
         <span class="m-year num">1991</span>
-        <span class="m-title">Pan Am's final flight</span>
+        <span class="m-body"><span class="m-title">Pan Am's final flight</span><span class="m-text">America's flag carrier collapses in December 1991, months after selling its Atlantic routes to Delta.</span></span>
       </button></li>
       <li><button type="button" data-t="1992.2">
         <span class="m-year num">1992</span>
-        <span class="m-title">Aeroflot shatters</span>
+        <span class="m-body"><span class="m-title">Aeroflot shatters</span><span class="m-text">The USSR's breakup splits the world's largest airline (~137M pax in 1990) into hundreds of regional 'babyflots'.</span></span>
       </button></li>
       <li><button type="button" data-t="1993.5">
         <span class="m-year num">1993</span>
-        <span class="m-title">Southwest tops US domestic</span>
+        <span class="m-body"><span class="m-title">Southwest tops US domestic</span><span class="m-text">The low-cost pioneer becomes America's biggest domestic airline by passengers boarded.</span></span>
       </button></li>
       <li><button type="button" data-t="2016.5">
         <span class="m-year num">2016</span>
-        <span class="m-title">Ryanair leads Europe</span>
+        <span class="m-body"><span class="m-title">Ryanair leads Europe</span><span class="m-text">The Irish low-cost carrier overtakes Lufthansa and every other European airline in passengers carried.</span></span>
       </button></li>
       <li><button type="button" data-t="2020.3">
         <span class="m-year num">2020</span>
-        <span class="m-title">COVID grounds the world</span>
+        <span class="m-body"><span class="m-title">COVID grounds the world</span><span class="m-text">Lockdowns erase roughly 60% of global air travel; every airline on the board craters at once.</span></span>
       </button></li>
       <li><button type="button" data-t="2023.7">
         <span class="m-year num">2023</span>
-        <span class="m-title">IndiGo hits 100M</span>
+        <span class="m-body"><span class="m-title">IndiGo hits 100M</span><span class="m-text">India's IndiGo carries 100M passengers in a year, riding the world's fastest-growing big aviation market.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Science races</h2>
-  <div class="related-grid">
-    <a href="/races/bridges/"><span class="r-title">Longest Suspension Bridge Spans</span><span class="r-span num">1883–2025 · 15 contenders</span></a>
-    <a href="/races/tallest-buildings/"><span class="r-title">World's Tallest Buildings</span><span class="r-span num">1899–2026 · 29 contenders</span></a>
-    <a href="/races/supercomputers/"><span class="r-title">Fastest Supercomputers</span><span class="r-span num">1993–2026 · 27 contenders</span></a>
-    <a href="/races/nobel-by-country/"><span class="r-title">Nobel Prizes by Country</span><span class="r-span num">1901–2025 · 12 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">5</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">4</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">54</b><span>years covered</span></div>
+          <div class="fact"><b class="num">16</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Delta</b><span>longest unbroken reign — 23 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#5 → #1</b><span>American ranked #5 when it first appeared in 1970 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2024</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#94A3B8" aria-hidden="true"></span><span class="s-label">American</span><span class="s-val num">226M pax</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Delta</span><span class="s-val num">200M pax</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Ryanair</span><span class="s-val num">197M pax</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="s-label">United</span><span class="s-val num">174M pax</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#6E7BFF" aria-hidden="true"></span><span class="s-label">Southwest</span><span class="s-val num">174M pax</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Science races</h2><a href="/#science">See all 10 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/bridges/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="bridges" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Longest Suspension Bridge Spans</h3>
+        <p class="card-meta"><span>1883–2025</span><span>·</span><span>15 contenders</span><span>·</span><span>10 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">Çanakkale 1915 Bridge</span><span class="cl-val">2,023 m</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/tallest-buildings/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="tallest-buildings" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Tallest Buildings</h3>
+        <p class="card-meta"><span>1899–2026</span><span>·</span><span>29 contenders</span><span>·</span><span>12 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">Burj Khalifa</span><span class="cl-val">828 m</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/supercomputers/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="supercomputers" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Fastest Supercomputers</h3>
+        <p class="card-meta"><span>1993–2026</span><span>·</span><span>27 contenders</span><span>·</span><span>19 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#EAB308" aria-hidden="true"></span><span class="cl-name">El Capitan</span><span class="cl-val">1.74 EFLOPS</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/nobel-by-country/" style="--accent:#23C8A8;--accent-soft:rgba(35,200,168,0.14)">
+      <div class="card-preview"><canvas data-race="nobel-by-country" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Nobel Prizes by Country</h3>
+        <p class="card-meta"><span>1901–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>1 lead change</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">430</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/nuclear-generation/"><span class="dir">← Previous race</span>Nuclear Power</a>
-    <a href="/races/gdp-nations/" style="text-align:right"><span class="dir">Next race →</span>GDP by Nation</a>
+    <a href="/races/nuclear-generation/"><span class="dir">← Previous race</span>Nuclear Power Generation</a>
+    <a href="/races/gdp-nations/" class="pg-next"><span class="dir">Next race →</span>Largest Economies by GDP</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"bridges":{"entities":[{"label":"Çanakkale 1915 Bridge","color":"#FF5C4D"},{"label":"Akashi Kaikyō Bridge","color":"#8B5CF6"},{"label":"Humber Bridge","color":"#FFD84D"},{"label":"Verrazzano-Narrows Bridge","color":"#2FB4FF"},{"label":"Golden Gate Bridge","color":"#FF8C42"},{"label":"George Washington Bridge","color":"#6E7BFF"},{"label":"Benjamin Franklin Bridge","color":"#4C8DFF"},{"label":"Williamsburg Bridge","color":"#94A3B8"},{"label":"Brooklyn Bridge","color":"#C4B5A0"},{"label":"Yangsigang Bridge","color":"#FFB020"},{"label":"Xihoumen Bridge","color":"#FF6FA5"},{"label":"Great Belt East Bridge","color":"#F43F5E"},{"label":"Mackinac Bridge","color":"#23C8A8"},{"label":"Ambassador Bridge","color":"#FDE68A"}],"frames":[[0,0,0,0,0,0,0,0,486,0,0,0,0,0],[0,0,0,0,0,0,0,0,486,0,0,0,0,0],[0,0,0,0,0,0,0,0,486,0,0,0,0,0],[0,0,0,0,0,0,0,0,486,0,0,0,0,0],[0,0,0,0,0,0,0,15.145,486,0,0,0,0,0],[0,0,0,0,0,0,0,488,486,0,0,0,0,0],[0,0,0,0,0,0,0,488,486,0,0,0,0,0],[0,0,0,0,0,0,0,488,486,0,0,0,0,0],[0,0,0,0,0,0,0,488,486,0,0,0,0,0],[0,0,0,0,0,0,533,488,486,0,0,0,0,0],[0,0,0,0,0,1067,533,488,486,0,0,0,0,564],[0,0,0,0,909.241,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,0,564],[0,0,0,0,1280,1067,533,488,486,0,0,0,1158,564],[0,0,0,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,0,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,0,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,782.793,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,1410,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,1410,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,0,1410,1298,1280,1067,533,488,486,0,0,0,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,0,0,1624,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,0,0,1624,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,0,1650,1624,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,0,1650,1624,1158,564],[0,1991,1410,1298,1280,1067,533,488,486,1700,1650,1624,1158,564],[2023,1991,1410,1298,1280,1067,533,488,486,1700,1650,1624,1158,564]],"t0":1883.4,"t1":2025,"era":0},"tallest-buildings":{"entities":[{"label":"Burj Khalifa","color":"#FF5C4D"},{"label":"Taipei 101","color":"#FFB020"},{"label":"Petronas Towers","color":"#A3E635"},{"label":"Willis Tower (Sears)","color":"#23C8A8"},{"label":"Empire State Building","color":"#4C8DFF"},{"label":"40 Wall Street","color":"#D4D4D8"},{"label":"Woolworth Building","color":"#86EFAC"},{"label":"Met Life Tower","color":"#FDE68A"},{"label":"Philadelphia City Hall","color":"#C4B5A0"},{"label":"Park Row Building","color":"#94A3B8"},{"label":"Singer Building","color":"#FCA5A5"},{"label":"Merdeka 118","color":"#DC2626"},{"label":"Shanghai Tower","color":"#B388FF"},{"label":"Abraj Al-Bait Clock Tower","color":"#FF6FA5"}],"frames":[[0,0,0,0,0,0,0,0,0,119,0,0,0,0],[0,0,0,0,0,0,0,0,167,119,64.022,0,0,0],[0,0,0,0,0,0,0,0,167,119,181.473,0,0,0],[0,0,0,0,0,0,192.177,213,167,119,187,0,0,0],[0,0,0,0,0,58.665,241,213,167,119,187,0,0,0],[0,0,0,0,0,130.585,241,213,167,119,187,0,0,0],[0,0,0,0,0,202.505,241,213,167,119,187,0,0,0],[0,0,0,0,0,274.426,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,187,0,0,0],[0,0,0,0,381,283,241,213,167,119,168.73,0,0,0],[0,0,0,0,381,283,241,213,167,119,123.055,0,0,0],[0,0,0,0,381,283,241,213,167,119,77.379,0,0,0],[0,0,0,0,381,283,241,213,167,119,31.704,0,0,0],[0,0,0,0,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,0,442,381,283,241,213,167,119,0,0,0,0],[0,0,75.009,442,381,283,241,213,167,119,0,0,0,0],[0,0,323.414,442,381,283,241,213,167,119,0,0,0,0],[0,0,452,442,381,283,241,213,167,119,0,0,0,0],[0,508,452,442,381,283,241,213,167,119,0,0,0,0],[378.31,508,452,442,381,283,241,213,167,119,0,0,0,0],[828,508,452,442,381,283,241,213,167,119,0,0,0,601],[828,508,452,442,381,283,241,213,167,119,0,0,632,601],[828,508,452,442,381,283,241,213,167,119,0,526.81,632,601],[828,508,452,442,381,283,241,213,167,119,0,679,632,601]],"t0":1899,"t1":2026.5,"era":0},"supercomputers":{"entities":[{"label":"El Capitan","color":"#EAB308"},{"label":"Frontier","color":"#FF9E2C"},{"label":"Fugaku","color":"#DC2626"},{"label":"Sunway TaihuLight","color":"#A3E635"},{"label":"Tianhe-2A","color":"#FFD84D"},{"label":"TMC CM-5 (LANL)","color":"#94A3B8"},{"label":"Numerical Wind Tunnel","color":"#FF6FA5"},{"label":"Intel Paragon XP/S","color":"#C4B5A0"},{"label":"ASCI Red","color":"#FF5C4D"},{"label":"ASCI White","color":"#E2B93B"},{"label":"Earth Simulator","color":"#2FB4FF"},{"label":"Blue Gene/L","color":"#4C8DFF"},{"label":"Roadrunner","color":"#FFB020"},{"label":"Jaguar","color":"#FF8C42"}],"frames":[[0,0,0,0,0,10.776,0,0,0,0,0,0,0,0],[0,0,0,0,0,10.776,11.116,11.157,0,0,0,0,0,0],[0,0,0,0,0,10.776,11.23,11.157,0,0,0,0,0,0],[0,0,0,0,0,10.544,11.23,11.157,11.645,0,0,0,0,0],[0,0,0,0,0,0,11.23,11.157,12.085,0,0,0,0,0],[0,0,0,0,0,0,11.23,11.157,12.274,0,0,0,0,0],[0,0,0,0,0,0,10.467,10.393,12.368,0,0,0,0,0],[0,0,0,0,0,0,0,0,12.376,12.844,0,0,0,0],[0,0,0,0,0,0,0,0,12.376,12.859,13.555,0,0,0],[0,0,0,0,0,0,0,0,12.376,12.859,13.555,0,0,0],[0,0,0,0,0,0,0,0,12.376,12.859,13.555,13.715,0,0],[0,0,0,0,0,0,0,0,12.06,12.859,13.555,14.325,0,0],[0,0,0,0,0,0,0,0,0,12.396,13.555,14.448,0,0],[0,0,0,0,0,0,0,0,0,0,13.555,14.641,14.91,0],[0,0,0,0,0,0,0,0,0,0,12.393,14.68,15.041,14.994],[0,0,0,0,0,0,0,0,0,0,0,14.68,15.043,15.245],[0,0,0,0,0,0,0,0,0,0,0,14.579,15.043,15.245],[0,0,0,0,16.067,0,0,0,0,0,0,0,14.86,15.062],[0,0,0,0,16.53,0,0,0,0,0,0,0,0,0],[0,0,0,0,16.53,0,0,0,0,0,0,0,0,0],[0,0,0,16.849,16.53,0,0,0,0,0,0,0,0,0],[0,0,0,16.969,16.53,0,0,0,0,0,0,0,0,0],[0,0,0,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,0,16.855,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,0,17.627,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,17.694,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,18.063,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0],[0,18.08,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0],[18.177,18.125,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0],[18.241,18.131,17.645,16.969,16.788,0,0,0,0,0,0,0,0,0]],"t0":1993.45,"t1":2026.45,"era":0},"nobel-by-country":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"Germany","color":"#FDE68A"},{"label":"United Kingdom","color":"#FF5C4D"},{"label":"France","color":"#2FB4FF"},{"label":"Sweden","color":"#FFD84D"},{"label":"Russia / USSR","color":"#C4B5A0"},{"label":"Netherlands","color":"#FFB020"}],"frames":[[0,4,1,3,1,1,1],[1.425,8.751,4.326,6.326,2.9,1.95,2.425],[2.851,13.502,7.651,9.651,4.801,2.9,3.851],[4.914,18.21,11.062,12.679,6.148,3.766,5.148],[7.052,22.914,14.483,15.672,7.431,4.621,6.431],[10.855,28.807,18.617,18.903,9.19,5.476,7.714],[15.986,35.648,23.321,22.324,11.328,6.331,8.997],[21.397,42.024,28.024,25.559,13.372,7.279,10.279],[27.81,46.728,32.728,28.124,15.083,8.562,11.562],[34.224,51.431,37.431,30.69,16.793,9.845,12.845],[42.517,55.759,43.262,34.007,18.503,11.128,13.752],[51.069,60.034,49.248,37.428,20.214,12.41,14.607],[64.241,64.541,56.159,40.848,21.693,14.617,15.462],[81.345,69.245,63.855,44.269,22.976,17.61,16.317],[99.741,73.776,71.207,47.431,24.259,20.517,17.172],[123.259,77.624,77.193,49.569,25.541,23.083,18.028],[146.776,81.472,83.179,51.707,26.824,25.648,18.883],[170.293,84.952,88.059,53.845,27.738,27.476,19.369],[193.81,88.372,92.762,55.983,28.593,29.186,19.797],[217.328,91.793,97.241,58.345,29.448,31.121,20.224],[240.845,95.214,101.517,60.91,30.303,33.259,20.652],[264.759,98.476,105.872,63.397,31.079,35.317,21.079],[290.414,101.041,110.576,65.534,31.507,37.028,21.507],[316.069,103.607,115.279,67.672,31.934,38.738,21.934],[338.103,105.448,119.621,69.448,32.362,40.086,22.724],[359.483,107.159,123.897,71.159,32.79,41.369,23.579],[378.69,109.303,128.607,73.303,33.434,42.869,24.434],[395.793,111.869,133.738,75.869,34,44.579,25.29],[412.897,114.579,139.014,78.434,34.145,46.29,26.145],[430,118,145,81,35,48,27]],"t0":1901,"t1":2025,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Most Valuable Brands (2000–2024) — Overtake">
   <meta name="twitter:description" content="A quarter-century of Interbrand's Best Global Brands ranking. Animated bar chart race, 2000–2024.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/brand-value.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Most Valuable Brands","description":"A quarter-century of Interbrand's Best Global Brands ranking. Coca-Cola held the #1 spot for over a decade before Apple seized it in 2013 and never let go, soaring past $500B. Watch Nokia rise into the top five in the mid-2000s and then collapse, while Google and Amazon climb into the elite.","url":"https://beautifuldata.netlify.app/races/brand-value/","temporalCoverage":"2000/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://interbrand.com/best-global-brands/"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="economy" data-race-id="brand-value">
   <div class="race-head">
-    <p class="crumbs"><a href="/#economy">Money &amp; Markets</a><span aria-hidden="true">/</span><span>2000–2024</span></p>
+    <p class="crumbs"><a href="/#economy">Money &amp; Markets</a><span aria-hidden="true">/</span><span class="num">2000–2024</span></p>
     <h1>Most Valuable Brands</h1>
     <p class="blurb">A quarter-century of Interbrand's Best Global Brands ranking. Coca-Cola held the #1 spot for over a decade before Apple seized it in 2013 and never let go, soaring past $500B. Watch Nokia rise into the top five in the mid-2000s and then collapse, while Google and Amazon climb into the elite.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>15 contenders</span><span>1 lead change</span><span class="quality-ok">sourced data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -78,85 +85,149 @@
     <span>Source: <a href="https://interbrand.com/best-global-brands/" rel="noopener">Interbrand</a></span>
     <span>Interbrand's annual brand-value estimates; methodology revised over time, so figures are not strictly comparable across all years.</span>
     <span>Updated 2026-07-03</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">1</b><span>lead change</span></div>
-        <div class="fact"><b class="num">24</b><span>years covered</span></div>
-        <div class="fact"><b class="num">15</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>Coca-Cola</b><span>longest reign — 13 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2024</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>2 different leaders in 24 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="2000" style="left:0.000%;width:54.167%;--c:#F43F5E;--ink:rgba(255,255,255,0.95)" title="Coca-Cola · 2000–2013" aria-label="Coca-Cola led 2000–2013. Jump there."><span>Coca-Cola</span></button><button type="button" class="reign" data-t="2013" style="left:54.167%;width:45.833%;--c:#D4D4D8;--ink:rgba(11,14,20,0.88)" title="Apple · 2013–2024" aria-label="Apple led 2013–2024. Jump there."><span>Apple</span></button></div>
+    <div class="reign-axis num"><span>2000</span><span>2024</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#D4D4D8" aria-hidden="true"></span><span class="s-label">Apple</span><span class="s-val num">$489B</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Microsoft</span><span class="s-val num">$353B</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">Amazon</span><span class="s-val num">$298B</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">Google</span><span class="s-val num">$291B</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#67E8F9" aria-hidden="true"></span><span class="s-label">Samsung</span><span class="s-val num">$101B</span></li>
+        <li><span class="h-label">Coca-Cola</span><span class="h-bar"><i style="width:100.0%;background:#F43F5E"></i></span><span class="h-val num">13 yrs</span></li>
+        <li><span class="h-label">Apple</span><span class="h-bar"><i style="width:84.6%;background:#D4D4D8"></i></span><span class="h-val num">11 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="2000">
         <span class="m-year num">2000</span>
-        <span class="m-title">Coca-Cola reigns supreme</span>
+        <span class="m-body"><span class="m-title">Coca-Cola reigns supreme</span><span class="m-text">Coca-Cola tops Interbrand's inaugural rankings as the world's most valuable brand, ahead of Microsoft and IBM.</span></span>
       </button></li>
       <li><button type="button" data-t="2008">
         <span class="m-year num">2008</span>
-        <span class="m-title">Nokia's peak before the fall</span>
+        <span class="m-body"><span class="m-title">Nokia's peak before the fall</span><span class="m-text">Nokia sits among the world's top five brands at the height of its mobile-phone dominance, just before the smartphone era erases its lead.</span></span>
       </button></li>
       <li><button type="button" data-t="2013">
         <span class="m-year num">2013</span>
-        <span class="m-title">Apple passes Coca-Cola</span>
+        <span class="m-body"><span class="m-title">Apple passes Coca-Cola</span><span class="m-text">Apple overtakes Coca-Cola as the world's most valuable brand, ending Coke's 13-year reign at #1.</span></span>
       </button></li>
       <li><button type="button" data-t="2018">
         <span class="m-year num">2018</span>
-        <span class="m-title">Amazon breaks $100B</span>
+        <span class="m-body"><span class="m-title">Amazon breaks $100B</span><span class="m-text">Amazon's brand value crosses $100B, vaulting it into the top three as e-commerce reshapes retail.</span></span>
       </button></li>
       <li><button type="button" data-t="2022">
         <span class="m-year num">2022</span>
-        <span class="m-title">Apple nears half a trillion</span>
+        <span class="m-body"><span class="m-title">Apple nears half a trillion</span><span class="m-text">Apple's brand value approaches $500B, roughly the size of the next two brands combined.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More Money races</h2>
-  <div class="related-grid">
-    <a href="/races/gold-reserves/"><span class="r-title">Central Bank Gold Reserves</span><span class="r-span num">1950–2025 · 12 contenders</span></a>
-    <a href="/races/oil-production/"><span class="r-title">Oil Production by Country</span><span class="r-span num">1965–2024 · 12 contenders</span></a>
-    <a href="/races/stock-exchanges/"><span class="r-title">Largest Stock Exchanges</span><span class="r-span num">1980–2025 · 12 contenders</span></a>
-    <a href="/races/gdp-nations/"><span class="r-title">Largest Economies by GDP</span><span class="r-span num">1960–2024 · 15 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">1</b><span>lead change</span></div>
+          <div class="fact"><b class="num">2</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">24</b><span>years covered</span></div>
+          <div class="fact"><b class="num">15</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Coca-Cola</b><span>longest unbroken reign — 13 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#11 → #1</b><span>Apple ranked #11 when it first appeared in 2000 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2024</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#D4D4D8" aria-hidden="true"></span><span class="s-label">Apple</span><span class="s-val num">$489B</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Microsoft</span><span class="s-val num">$353B</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">Amazon</span><span class="s-val num">$298B</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">Google</span><span class="s-val num">$291B</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#67E8F9" aria-hidden="true"></span><span class="s-label">Samsung</span><span class="s-val num">$101B</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Money races</h2><a href="/#economy">See all 7 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/gold-reserves/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="gold-reserves" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Central Bank Gold Reserves</h3>
+        <p class="card-meta"><span>1950–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">8,133 t</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/oil-production/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="oil-production" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Oil Production by Country</h3>
+        <p class="card-meta"><span>1965–2024</span><span>·</span><span>12 contenders</span><span>·</span><span>6 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">9,977 TWh</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/stock-exchanges/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="stock-exchanges" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Stock Exchanges</h3>
+        <p class="card-meta"><span>1980–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>2 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">NYSE</span><span class="cl-val">$31.3T</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/gdp-nations/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="gdp-nations" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Economies by GDP</h3>
+        <p class="card-meta"><span>1960–2024</span><span>·</span><span>15 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">$27.4T</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/military-spending/"><span class="dir">← Previous race</span>Defense Budgets</a>
-    <a href="/races/population-nations/" style="text-align:right"><span class="dir">Next race →</span>World Population</a>
+    <a href="/races/military-spending/"><span class="dir">← Previous race</span>Military Spending by Country</a>
+    <a href="/races/population-nations/" class="pg-next"><span class="dir">Next race →</span>Most Populous Countries</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"gold-reserves":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"Germany","color":"#FFD84D"},{"label":"IMF","color":"#94A3B8"},{"label":"United Kingdom","color":"#B388FF"},{"label":"France","color":"#67E8F9"},{"label":"Switzerland","color":"#FF8C42"},{"label":"Italy","color":"#34D399"},{"label":"Netherlands","color":"#2FB4FF"}],"frames":[[20279,0,0,2543,1500,1400,227,900],[19788.655,672.414,0,2262.138,1241.379,1606.897,264.759,1003.448],[19210,1346.207,0,2017.241,1022.069,1820.69,337.931,1112.069],[17395,2039.31,0,2275.862,1353.103,2131.034,906.897,1293.103],[15592.828,2721.379,0,2465.517,1743.448,2427.586,1448.276,1463.793],[13874.034,3331.724,0,2206.897,2519.31,2634.483,1810.345,1567.241],[12223.828,3790.724,0,1917.034,3139.897,2761.414,2148.103,1643.586],[10847.966,3644.345,0,1502.207,3139.379,2568.483,2388.621,1611.517],[9727.414,3497.207,221.862,1115.379,3098.103,2438.241,2531.138,1572.759],[9308.966,3347.983,1053.845,805.552,2944.741,2480.397,2404.155,1515.603],[8890.517,3198.759,1885.828,495.724,2791.379,2522.552,2277.172,1458.448],[8472.069,3049.534,2717.81,185.897,2638.017,2564.707,2150.19,1401.293],[8213.241,2960,3217,0,2546,2590,2074,1367],[8193.845,2960,3217,0,2546,2590,2074,1367],[8174.448,2960,3217,0,2546,2590,2074,1367],[8155.052,2960,3217,0,2546,2590,2074,1367],[8144.759,3030.207,3217,0,2612.069,2566.414,2126.138,1304.241],[8142.431,3161.845,3217,0,2735.948,2522.19,2223.897,1186.569],[8140.103,3293.483,3217,0,2859.828,2477.966,2321.655,1068.897],[8137.776,3425.121,3217,0,2983.707,2433.741,2419.414,951.224],[8136.31,3454.862,3217,0,2966.724,2029.69,2452,844.414],[8135.276,3433.655,3217,0,2879.31,1445.724,2452,743.034],[8134.052,3418.043,3116.483,0,2661.129,1171.466,2452,667.164],[8133,3404.586,2981.948,0,2443.793,1040,2452,539.017],[8133,3391.655,2858.457,0,2437.328,1040,2452,142.681],[8133,3382.034,2814,0,2435.552,1040,2452,0],[8133,3373.448,2814,0,2436,1040,2452,0],[8133,3363.69,2814,0,2436.276,1040,2452,0],[8133,3354.379,2814,0,2437,1040,2452,0],[8133,3350,2814,0,2437,1040,2452,0]],"t0":1950,"t1":2025,"era":0},"oil-production":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"Russia","color":"#F43F5E"},{"label":"Saudi Arabia","color":"#34D399"},{"label":"Venezuela","color":"#FF8C42"},{"label":"Iran","color":"#B388FF"},{"label":"Iraq","color":"#FFB020"},{"label":"Kuwait","color":"#C4B5A0"},{"label":"Canada","color":"#67E8F9"},{"label":"China","color":"#FF5C4D"}],"frames":[[4974,0,1291,2141,1113,752,1384,510,132],[5474.483,0,1675.11,2203.255,1571.572,806.931,1539.028,634.103,223.145],[5974.966,0,2059.221,2265.51,2030.145,861.862,1694.055,758.207,314.29],[6040.469,0,2664.021,2113.917,2437.297,977.924,1648.476,844.572,475.172],[5738.959,0,3455.028,1781.89,2801.062,1145.566,1433.634,899.097,694.897],[5467.207,0,4239.345,1474.103,3055.655,1306.759,1229.172,949.655,907.586],[5516.848,0,4951.414,1428.124,2131.186,1398.31,1136.807,957.386,1044.303],[5566.49,0,5663.483,1382.145,1206.717,1489.862,1044.441,965.117,1181.021],[5639.862,1609.372,4926.683,1288.193,969.428,1342.317,916.862,975.4,1288.393],[5727.345,4175.669,3328.393,1165.717,1140.731,1052.607,768.345,987.2,1378.317],[5734.138,6285.828,2137.828,1085.103,1325.069,840.483,638.034,1002.655,1463.759],[5345.552,6160.91,2945.11,1209.614,1573.276,1008.531,596.938,1036.021,1527.234],[4956.966,6035.993,3752.393,1334.124,1821.483,1176.579,555.841,1069.386,1590.71],[4733.772,5308.883,4283.634,1496.29,1969.469,957.938,739.807,1143.303,1644.917],[4577.524,4338.028,4703.145,1673.697,2076.89,582.779,1014.869,1233.634,1695.372],[4417.655,3633.138,5024.69,1812,2164.448,426.621,1226,1316.931,1749.345],[4247.166,3708.414,5058.869,1835.6,2193.745,912.862,1249.6,1379.593,1813.634],[4076.676,3783.69,5093.048,1859.2,2223.041,1399.103,1273.2,1442.255,1877.924],[3896.786,4357.49,5394.317,1898.359,2290.262,1351.49,1355.469,1521.124,1961.662],[3714.497,5058.572,5763.779,1941.49,2367.166,1167.572,1452.717,1604.131,2050.366],[3632.621,5582.138,5922.483,1932.207,2424.621,1095.517,1505.69,1687.828,2143.759],[3746.552,5759.545,5670.207,1820.717,2444.152,1241.593,1472.324,1772.869,2246.297],[3860.483,5936.952,5417.931,1709.228,2463.683,1387.669,1438.959,1857.91,2348.834],[4848.014,6092.483,5824.8,1703.531,2333.31,1717,1538.641,2099.31,2409.055],[5953.145,6245.069,6320.4,1712.076,2182.759,2071,1656.234,2361.759,2463.579],[6884.655,6292.483,6508.931,1490.103,2030.138,2287.931,1689.862,2584.897,2455.345],[7580.041,6196.862,6279.848,954.628,1874.703,2318.448,1609.297,2754.572,2361.759],[8275.428,6101.241,6050.766,419.152,1719.269,2348.966,1528.731,2924.248,2268.172],[8899.466,6374.155,6655.259,431.466,2067.793,2570.138,1689.138,3181.586,2379],[9977,6122,5933,576,2727,2508,1521,3372,2476]],"t0":1965,"t1":2024,"era":0},"stock-exchanges":{"entities":[{"label":"NYSE","color":"#4C8DFF"},{"label":"Tokyo (JPX)","color":"#FF5C4D"},{"label":"Nasdaq","color":"#8B5CF6"},{"label":"Shanghai","color":"#F43F5E"},{"label":"Euronext","color":"#6E7BFF"},{"label":"London (LSE)","color":"#2FB4FF"},{"label":"Frankfurt (DB)","color":"#FFD84D"},{"label":"Hong Kong","color":"#E879F9"},{"label":"Toronto (TSX)","color":"#94A3B8"}],"frames":[[1.24,0.37,0.12,0,0.05,0.21,0.07,0.04,0.11],[1.295,0.409,0.128,0,0.05,0.218,0.07,0.032,0.102],[1.469,0.534,0.153,0,0.056,0.254,0.076,0.041,0.123],[1.806,1.019,0.219,0,0.092,0.337,0.14,0.061,0.151],[2.289,1.896,0.328,0,0.158,0.479,0.248,0.088,0.178],[2.388,2.324,0.333,0,0.171,0.579,0.211,0.094,0.191],[2.798,3.579,0.418,0,0.268,0.771,0.332,0.091,0.239],[2.774,2.875,0.333,0.002,0.313,0.856,0.359,0.087,0.231],[3.979,2.706,0.667,0.026,0.378,0.991,0.383,0.198,0.262],[4.594,3.682,0.833,0.044,0.458,1.18,0.482,0.281,0.33],[6.469,3.188,1.398,0.091,0.568,1.564,0.639,0.422,0.464],[9.005,2.681,2.152,0.169,0.842,2.099,0.934,0.381,0.521],[10.785,3.32,3.693,0.245,1.212,2.614,1.238,0.458,0.649],[11.652,3.98,5.758,0.364,1.788,2.819,1.435,0.634,0.863],[10.022,2.467,2.608,0.395,1.804,2.167,0.918,0.526,0.607],[10.529,2.691,2.523,0.366,1.916,2.238,0.961,0.634,0.793],[13.528,4.574,3.628,0.355,2.813,3.136,1.263,1.118,1.503],[15.506,4.505,3.922,1.955,3.901,3.812,1.812,2.061,1.883],[13.717,3.854,3.529,2.813,3.511,3.31,1.759,2.243,1.849],[11.374,3.34,3.119,2.471,2.595,2.668,1.329,2.08,1.571],[13.558,3.794,4.055,2.679,2.906,3.56,1.444,2.739,2.144],[14.217,3.697,4.638,2.583,2.842,3.41,1.496,2.84,2.061],[18.343,4.246,6.521,3.666,3.226,3.723,1.692,3.153,2.084],[18.189,5.014,7.537,4.6,3.411,3.934,1.77,3.289,1.663],[21.555,6.057,9.702,5.024,4.258,4.389,2.194,4.207,2.275],[21.48,5.552,10.639,4.273,4.007,3.817,1.846,4.137,2.016],[25.874,6.66,18.378,6.77,5.037,3.851,2.26,5.992,2.589],[25.43,6.004,20.716,7.489,6.743,2.981,2.371,4.769,3.02],[25.724,6.169,25.124,6.506,6.619,3.106,2.306,4.312,3.006],[31.3,6.9,30.6,7.4,7.2,3.7,2.8,5.9,3.5]],"t0":1980,"t1":2025.5,"era":0},"gdp-nations":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"China","color":"#F43F5E"},{"label":"Germany","color":"#FFD84D"},{"label":"Japan","color":"#FF5C4D"},{"label":"United Kingdom","color":"#2FB4FF"},{"label":"France","color":"#6E7BFF"},{"label":"India","color":"#FF8C42"},{"label":"Italy","color":"#34D399"}],"frames":[[543,60,92,44,73,62,37,40],[631.717,64.414,104.359,64.745,85.359,79.655,47.152,51.917],[720.434,68.828,116.717,85.49,97.717,97.31,57.303,63.834],[850.641,77.131,151.117,130.545,110.724,117.234,60.648,81.91],[995.855,86.841,193.49,184.393,123.966,137.979,61.531,102.214],[1199.621,106.69,269.793,276.724,153.759,192.862,69.448,136.379],[1469.745,138.028,384.552,412.669,202.31,286.434,85.338,186.255],[1790.076,165.51,509.89,575.421,269.959,391.572,105.89,248.503],[2307.372,177.869,676.731,843.338,412.524,542.083,144.731,359.29],[2824.669,190.228,843.572,1111.255,555.09,692.593,183.572,470.076],[3470.241,240.241,800.621,1240.138,551.586,648.621,207.517,466.655],[4124.366,292.766,743.683,1359.752,538.345,591.683,230.469,455.621],[4820.6,325.124,1035.49,1913.221,699.772,781.179,262.614,667],[5537.4,347.634,1497.614,2678.572,946.503,1091.028,299.248,987],[6263.703,428.062,1918.317,3565.497,1136.931,1335.248,329.069,1175.745],[7003.897,593.138,2278.483,4630.103,1245.069,1483.552,348.931,1172.655],[7802.062,764.545,2548.276,5509.186,1358.297,1595.545,372.331,1168.572],[8954.503,974.641,2265.793,5254.51,1502.628,1485.641,417.352,1158.421],[10106.945,1184.738,1983.31,4999.834,1646.959,1375.738,462.372,1148.269],[11326.972,1626.172,2294.814,4915.09,2004.09,1684.097,603.945,1419.662],[12556.655,2100.655,2691.172,4854.621,2391.621,2052.207,759.31,1731.276],[13788.31,3320.621,3252.138,4954.276,2716.034,2526.828,989.897,2099.103],[14805.69,5005.862,3661.241,5286.138,2808.172,2854.828,1330.586,2328.621],[15506.069,7014.414,3468.897,5953.586,2572.931,2660.655,1733.655,2117.414],[16907.655,9470.483,3711.034,5608.207,2879.828,2765.069,1929.862,2117.897],[18274.517,10919.759,3642.034,4959.138,2844.586,2629.655,2189.069,1990.379],[20063.621,13068.862,3817.345,5029.207,2814.517,2691.31,2576.379,2025.276],[21185.207,14523.931,3906.793,5040.207,2738.552,2676.586,2675.241,1937.345],[25286.655,17624.207,4062.034,4337.103,3049.172,2768.034,3339.517,2034.172],[27361,17795,4526,4110,3340,3031,3937,2255]],"t0":1960,"t1":2024,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>

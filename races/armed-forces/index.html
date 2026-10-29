@@ -20,8 +20,11 @@
   <meta name="twitter:title" content="Largest Standing Armies (1950–2025) — Overtake">
   <meta name="twitter:description" content="Seventy-five years of the world's biggest active-duty militaries. Animated bar chart race, 1950–2025.">
   <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/armed-forces.png">
-  <link rel="stylesheet" href="/css/site.css?v=79c8d098aa">
-  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=79c8d098aa","/js/engine/renderer.js":"/js/engine/renderer.js?v=79c8d098aa","/js/engine/format.js":"/js/engine/format.js?v=79c8d098aa","/js/engine/controller.js":"/js/engine/controller.js?v=79c8d098aa","/js/engine/controls.js":"/js/engine/controls.js?v=79c8d098aa","/js/engine/preview.js":"/js/engine/preview.js?v=79c8d098aa"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=8081a86a19">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=8081a86a19","/js/engine/renderer.js":"/js/engine/renderer.js?v=8081a86a19","/js/engine/format.js":"/js/engine/format.js?v=8081a86a19","/js/engine/controller.js":"/js/engine/controller.js?v=8081a86a19","/js/engine/controls.js":"/js/engine/controls.js?v=8081a86a19","/js/engine/preview.js":"/js/engine/preview.js?v=8081a86a19"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Largest Standing Armies","description":"Seventy-five years of the world's biggest active-duty militaries. Mao's PLA holds nearly five million troops before Deng's sweeping demobilizations cut it toward two million, the Soviet colossus evaporates almost overnight in 1991, and India quietly climbs past the drawn-down United States. After 2022, Russia starts growing again for the first time in decades.","url":"https://beautifuldata.netlify.app/races/armed-forces/","temporalCoverage":"1950/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.iiss.org/publications/the-military-balance/"}</script>
 </head>
 <body>
@@ -49,9 +52,13 @@
 </header>
 <main class="race-main" data-cat="world" data-race-id="armed-forces">
   <div class="race-head">
-    <p class="crumbs"><a href="/#world">World &amp; Nations</a><span aria-hidden="true">/</span><span>1950–2025</span></p>
+    <p class="crumbs"><a href="/#world">World &amp; Nations</a><span aria-hidden="true">/</span><span class="num">1950–2025</span></p>
     <h1>Largest Standing Armies</h1>
     <p class="blurb">Seventy-five years of the world's biggest active-duty militaries. Mao's PLA holds nearly five million troops before Deng's sweeping demobilizations cut it toward two million, the Soviet colossus evaporates almost overnight in 1991, and India quietly climbs past the drawn-down United States. After 2022, Russia starts growing again for the first time in decades.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>14 contenders</span><span>4 lead changes</span><span class="quality-flag">illustrative data</span></span>
+    </div>
   </div>
 
   <figure class="stage" style="margin:0">
@@ -77,91 +84,154 @@
   <p class="context-strip">
     <span>Source: <a href="https://www.iiss.org/publications/the-military-balance/" rel="noopener">IISS Military Balance &amp; historical estimates</a></span>
     <span>Early-Cold-War figures are approximate and definitions of &quot;active&quot; personnel vary by country.</span>
-    <span class="quality-flag">illustrative data</span>
     <span>Updated 2026-07-09</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
   </p>
 
-  <div class="race-extras">
-    <section class="facts" aria-label="Race in numbers">
-      <h2>The race in numbers</h2>
-      <div class="fact-grid">
-        <div class="fact"><b class="num">4</b><span>lead changes</span></div>
-        <div class="fact"><b class="num">75</b><span>years covered</span></div>
-        <div class="fact"><b class="num">14</b><span>contenders</span></div>
-        <div class="fact fact-wide"><b>China</b><span>longest reign — 32 yrs at #1</span></div>
-      </div>
-    </section>
-    <section class="standings" aria-label="Final standings">
-      <h2>Final standings · 2025</h2>
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>2 different leaders in 75 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1950" style="left:0.000%;width:6.667%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="China · 1950–1955" aria-label="China led 1950–1955. Jump there."></button><button type="button" class="reign" data-t="1955" style="left:6.667%;width:13.333%;--c:#B45309;--ink:rgba(255,255,255,0.95)" title="USSR / Russia · 1955–1965" aria-label="USSR / Russia led 1955–1965. Jump there."><span>USSR / Russia</span></button><button type="button" class="reign" data-t="1965" style="left:20.000%;width:30.667%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="China · 1965–1988" aria-label="China led 1965–1988. Jump there."><span>China</span></button><button type="button" class="reign" data-t="1988" style="left:50.667%;width:6.667%;--c:#B45309;--ink:rgba(255,255,255,0.95)" title="USSR / Russia · 1988–1993" aria-label="USSR / Russia led 1988–1993. Jump there."></button><button type="button" class="reign" data-t="1993" style="left:57.333%;width:42.667%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="China · 1993–2025" aria-label="China led 1993–2025. Jump there."><span>China</span></button></div>
+    <div class="reign-axis num"><span>1950</span><span>2025</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
       <ol>
-        <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">China</span><span class="s-val num">2.00M</span></li>
-        <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">India</span><span class="s-val num">1.46M</span></li>
-        <li><span class="s-rank num">3</span><span class="s-dot" style="background:#B45309" aria-hidden="true"></span><span class="s-label">USSR / Russia</span><span class="s-val num">1.32M</span></li>
-        <li><span class="s-rank num">4</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">1.30M</span></li>
-        <li><span class="s-rank num">5</span><span class="s-dot" style="background:#E879F9" aria-hidden="true"></span><span class="s-label">North Korea</span><span class="s-val num">1.20M</span></li>
+        <li><span class="h-label">China</span><span class="h-bar"><i style="width:100.0%;background:#FF5C4D"></i></span><span class="h-val num">60 yrs</span></li>
+        <li><span class="h-label">USSR / Russia</span><span class="h-bar"><i style="width:25.0%;background:#B45309"></i></span><span class="h-val num">15 yrs</span></li>
       </ol>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <h2 style="font-size:var(--fs-14);color:var(--text-faint);letter-spacing:.08em;text-transform:uppercase;margin:var(--sp-6) 0 var(--sp-3)">Key moments</h2>
-  <ul class="milestone-list" id="milestone-list">
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
       <li><button type="button" data-t="1953">
         <span class="m-year num">1953</span>
-        <span class="m-title">Korean War mobilization</span>
+        <span class="m-body"><span class="m-title">Korean War mobilization</span><span class="m-text">The US triples its force past 3.5M while China and the USSR each field over 5M troops at the war's height.</span></span>
       </button></li>
       <li><button type="button" data-t="1975">
         <span class="m-year num">1975</span>
-        <span class="m-title">The PLA peaks under Mao</span>
+        <span class="m-body"><span class="m-title">The PLA peaks under Mao</span><span class="m-text">China's People's Liberation Army swells to roughly 4.9 million — by far the largest military on Earth.</span></span>
       </button></li>
       <li><button type="button" data-t="1985">
         <span class="m-year num">1985</span>
-        <span class="m-title">China's million-man demobilization</span>
+        <span class="m-body"><span class="m-title">China's million-man demobilization</span><span class="m-text">Deng Xiaoping orders a million troops cut, trading sheer mass for modernization — the PLA shrinks toward 3M.</span></span>
       </button></li>
       <li><button type="button" data-t="1991">
         <span class="m-year num">1991</span>
-        <span class="m-title">The USSR dissolves</span>
+        <span class="m-body"><span class="m-title">The USSR dissolves</span><span class="m-text">The Soviet military splinters among successor states; Russia inherits a force that shrinks by millions within a few years.</span></span>
       </button></li>
       <li><button type="button" data-t="2016">
         <span class="m-year num">2016</span>
-        <span class="m-title">India passes the United States</span>
+        <span class="m-body"><span class="m-title">India passes the United States</span><span class="m-text">As post-Iraq drawdowns shrink the US military, India's steadily growing force overtakes it to become the world's #2 army.</span></span>
       </button></li>
       <li><button type="button" data-t="2024">
         <span class="m-year num">2024</span>
-        <span class="m-title">Russia expands for war</span>
+        <span class="m-body"><span class="m-title">Russia expands for war</span><span class="m-text">After invading Ukraine in 2022, Russia pushes its authorized active force toward 1.5M — its first major expansion since the USSR.</span></span>
       </button></li>
-  </ul>
-
-  <h2 class="related-head">More World races</h2>
-  <div class="related-grid">
-    <a href="/races/population-nations/"><span class="r-title">Most Populous Countries</span><span class="r-span num">1950–2025 · 14 contenders</span></a>
-    <a href="/races/co2-emissions/"><span class="r-title">Annual CO₂ Emissions by Country</span><span class="r-span num">1900–2023 · 12 contenders</span></a>
-    <a href="/races/nuclear-warheads/"><span class="r-title">Nuclear Warhead Stockpiles</span><span class="r-span num">1945–2023 · 9 contenders</span></a>
-    <a href="/races/internet-users/"><span class="r-title">Internet Users by Country</span><span class="r-span num">1995–2024 · 12 contenders</span></a>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">4</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">2</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">75</b><span>years covered</span></div>
+          <div class="fact"><b class="num">14</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>China</b><span>longest unbroken reign — 32 yrs at #1</span></div>
+          
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2025</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">China</span><span class="s-val num">2.00M</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">India</span><span class="s-val num">1.46M</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#B45309" aria-hidden="true"></span><span class="s-label">USSR / Russia</span><span class="s-val num">1.32M</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">1.30M</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#E879F9" aria-hidden="true"></span><span class="s-label">North Korea</span><span class="s-val num">1.20M</span></li>
+        </ol>
+      </section>
+    </aside>
   </div>
 
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More World races</h2><a href="/#world">See all 7 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/population-nations/" style="--accent:#38BDF8;--accent-soft:rgba(56,189,248,0.14)">
+      <div class="card-preview"><canvas data-race="population-nations" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Most Populous Countries</h3>
+        <p class="card-meta"><span>1950–2025</span><span>·</span><span>14 contenders</span><span>·</span><span>1 lead change</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF8C42" aria-hidden="true"></span><span class="cl-name">India</span><span class="cl-val">1.45B</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/co2-emissions/" style="--accent:#38BDF8;--accent-soft:rgba(56,189,248,0.14)">
+      <div class="card-preview"><canvas data-race="co2-emissions" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Annual CO₂ Emissions by Country</h3>
+        <p class="card-meta"><span>1900–2023</span><span>·</span><span>12 contenders</span><span>·</span><span>1 lead change</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">China</span><span class="cl-val">11.9Bt</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/nuclear-warheads/" style="--accent:#38BDF8;--accent-soft:rgba(56,189,248,0.14)">
+      <div class="card-preview"><canvas data-race="nuclear-warheads" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Nuclear Warhead Stockpiles</h3>
+        <p class="card-meta"><span>1945–2023</span><span>·</span><span>9 contenders</span><span>·</span><span>1 lead change</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">Russia / USSR</span><span class="cl-val">5,890</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/internet-users/" style="--accent:#38BDF8;--accent-soft:rgba(56,189,248,0.14)">
+      <div class="card-preview"><canvas data-race="internet-users" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Internet Users by Country</h3>
+        <p class="card-meta"><span>1995–2024</span><span>·</span><span>12 contenders</span><span>·</span><span>1 lead change</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="cl-name">China</span><span class="cl-val">1.10B</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
   <nav class="race-pager" aria-label="More races">
-    <a href="/races/stock-exchanges/"><span class="dir">← Previous race</span>Stock Exchanges</a>
-    <a href="/races/most-played-games/" style="text-align:right"><span class="dir">Next race →</span>Most Played</a>
+    <a href="/races/stock-exchanges/"><span class="dir">← Previous race</span>Largest Stock Exchanges</a>
+    <a href="/races/most-played-games/" class="pg-next"><span class="dir">Next race →</span>Most-Played Games</a>
   </nav>
 </main>
 
 <footer class="site-footer">
-  <div class="foot-cats" aria-label="Browse categories">
-    <a href="/#tech" style="--c:#4C8DFF">Tech &amp; Business · 11</a>
-    <a href="/#sports" style="--c:#FFB020">Sports · 11</a>
-    <a href="/#culture" style="--c:#F45CA4">Entertainment · 9</a>
-    <a href="/#science" style="--c:#23C8A8">Science · 10</a>
-    <a href="/#economy" style="--c:#5FCE7B">Money · 7</a>
-    <a href="/#world" style="--c:#38BDF8">World · 7</a>
-    <a href="/#play" style="--c:#FF7A45">Games · 6</a>
-    <a href="/#history" style="--c:#C77B4A">History · 6</a>
-    <a href="/#wildcard" style="--c:#8B5CF6">Wildcard · 6</a>
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>73 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">11</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">11</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">9</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">10</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">7</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
   </div>
   <div class="inner">
-    <span>Overtake — 73 races across 9 categories. Data sources are cited on every race page.</span>
-    <span class="byline"><a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
   </div>
 </footer>
-<script type="module" src="/js/race-page.js?v=79c8d098aa"></script>
+<script type="application/json" id="preview-data">{"population-nations":{"entities":[{"label":"India","color":"#FF8C42"},{"label":"China","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"Indonesia","color":"#23C8A8"},{"label":"Russia","color":"#94A3B8"},{"label":"Pakistan","color":"#34D399"},{"label":"Brazil","color":"#FFD84D"},{"label":"Japan","color":"#F43F5E"}],"frames":[[357,544,159,70,103,37,54,84],[374.069,573.483,165.724,74.138,107.138,39.069,58.138,86.586],[391.897,602.828,172.517,78.345,111.31,41.138,62.345,89.138],[420.345,630.241,180.276,83.517,115.966,43.207,67.517,91.207],[448.931,658.207,187.828,88.897,120.552,45.414,72.828,93.414],[478.414,689.759,194.034,95.621,124.69,48.517,79.034,96.517],[507.483,726.069,200.034,102.448,128.207,51.828,85.241,99.621],[534.897,781.414,205.207,109.69,129.241,55.966,91.448,102.724],[563.414,834.966,209.966,117.069,130.552,59.966,97.655,105.966],[594.966,883.586,213.586,124.828,132.621,63.586,103.862,109.586],[629.793,927.379,217.897,133.103,134.862,68.069,110.414,112.862],[671.172,961.517,223.586,142.414,137.448,74.276,117.655,115.448],[714.207,996.276,229.276,151.517,139.828,80.897,124.897,117.828],[759.724,1031.966,234.966,160.31,141.897,88.138,132.138,119.897],[805.483,1075.621,240.897,169.103,144.207,95.862,139.379,121.724],[851.517,1128.379,247.103,177.897,146.793,104.138,146.621,123.276],[898.103,1173.138,254.414,186.69,148,112.414,153.586,124.276],[945.172,1210.897,262.69,195.483,148,120.69,160.31,124.793],[993.483,1245.862,270.966,203.655,147.69,129.586,166.724,125.31],[1042.621,1278.966,279.241,211.414,147.172,138.897,172.931,125.828],[1089.345,1303.793,286.483,219.172,145.966,149.586,178.793,126.69],[1134.862,1324.483,293.207,226.931,144.414,160.966,184.483,127.724],[1180,1344.414,300.31,234.69,143.621,171.586,189.793,128],[1225,1364.069,307.552,242.448,143.103,181.931,194.966,128],[1265.448,1378.345,313.552,250.207,143.414,194.759,199.724,127.586],[1304.759,1391.276,319.241,257.966,143.931,208.207,204.379,127.069],[1348.552,1401.069,324.931,264.379,144.448,221.207,208.586,126.103],[1393.034,1410.379,330.621,270.586,144.966,234.138,212.724,125.069],[1421.747,1410.195,334.218,276.632,144.195,244.655,215.414,123.391],[1446,1408,337,284,144,255,213,123]],"t0":1950,"t1":2025,"era":0},"co2-emissions":{"entities":[{"label":"China","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"Russia / USSR","color":"#94A3B8"},{"label":"Germany","color":"#C4B5A0"},{"label":"United Kingdom","color":"#2FB4FF"},{"label":"India","color":"#FF8C42"},{"label":"Japan","color":"#F43F5E"}],"frames":[[0,663,90,280,420,24,22],[0,839.866,106.966,322.414,453.931,27.817,27.09],[0,1016.731,123.931,364.828,487.862,31.634,32.179],[0,1208.034,119.103,374.552,491.828,34.907,39.721],[0,1407.379,102.138,366.069,479.103,37.876,48.628],[0,1553.621,103.276,367.241,466.379,41.207,59.224],[0,1566.345,149.931,392.69,453.655,45.448,74.069],[0,1579.069,196.586,418.138,440.931,49.69,88.914],[0,1705.793,278.621,467.172,455.724,53.931,105.724],[0,1841.517,363.448,518.069,472.69,58.172,122.69],[0,2044.828,453.103,530.345,494.483,65.31,125.172],[0,2299.31,546.414,513.379,519.931,74.641,116.69],[0,2543.034,657.655,525.103,543.586,87.021,117.172],[0,2744.138,842.69,642.483,560.828,110.552,152.207],[0,2871.379,1232.897,718.828,586.276,127.517,220.069],[0,3252.069,1521.724,766.207,611.724,158.966,338.621],[0,3905.172,1833.241,802.897,631.448,192.897,608.966],[0,4365.724,2172.483,815.793,623.172,231.034,830.483],[0,4553.379,2512.207,820.759,597.31,278.828,910.759],[218.069,4753.034,2826.345,846.483,586.483,345.241,941.172],[1795.862,4557.931,3089.31,821.034,561.034,455.517,949.655],[2315.724,5013.862,2636.138,982.759,584.414,573.931,1055.793],[3015.862,5298.759,1954,940.552,563.517,732.414,1139.586],[3437.379,5634.966,1619.172,879.586,550,886.759,1205.724],[4421.448,5909.448,1594.345,842.069,550,1045.31,1243.586],[6569.138,5908.19,1650.172,809.828,549.569,1263.448,1249.31],[8836.207,5677.379,1669.448,789.448,494.483,1693.655,1172.759],[9854.138,5329.586,1660.966,780.966,409.655,2211.103,1215.172],[10655.948,5261.81,1678.793,704.828,353.017,2598.879,1126.034],[11900,4910,1830,610,300,3060,990]],"t0":1900,"t1":2023,"era":0},"nuclear-warheads":{"entities":[{"label":"Russia / USSR","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"China","color":"#FFD84D"},{"label":"France","color":"#8B5CF6"},{"label":"United Kingdom","color":"#2FB4FF"}],"frames":[[0,2,0,0,0],[0,98.828,0,0,0],[13.534,404.31,0,0,0],[103.448,1304.31,0,0,2.672],[369.828,3370.69,0,0,18.19],[870.69,8668.966,0,0,68.966],[2567.241,22525.862,0,0,162.586],[5036.207,29155.172,0,9.138,301.379],[8172.414,31180.172,15.345,34.069,352.586],[10859.77,27389.253,61.782,36,369.713],[14350,26948.276,127.155,68.241,398.707],[18513.793,28255.172,175.862,147.586,400],[23879.31,25360.345,209.138,218.707,400],[30018.966,24108.621,239.655,249.741,400],[35046.552,23196.552,261.638,283.19,323.534],[39215.517,23398.276,268.362,336.983,300],[39063.793,22972.414,280.172,401.724,300],[35298.276,18612.069,311.724,514.483,300],[29048.276,11791.379,371.207,511.724,264.655],[23922.414,10994.828,400,450,297.931],[22103.448,10781.034,403.966,457.931,267.931],[18905.172,10525.862,417.414,462.586,257.759],[15827.586,8539.655,420.862,350,200],[13353.448,6822.414,430,328.448,193.534],[11336.207,5089.655,282.586,300,216.034],[8379.31,4975.862,251.207,300,223.793],[7406.897,4706.897,264.655,300,215],[6935.345,3951.724,278.103,300,215],[6309.483,3784.483,333.966,290,199.655],[5890,3700,500,290,225]],"t0":1945,"t1":2023,"era":0},"internet-users":{"entities":[{"label":"China","color":"#FF5C4D"},{"label":"United States","color":"#4C8DFF"},{"label":"India","color":"#FF8C42"},{"label":"Japan","color":"#F43F5E"},{"label":"Germany","color":"#C4B5A0"},{"label":"Indonesia","color":"#23C8A8"},{"label":"Brazil","color":"#FFD84D"},{"label":"United Kingdom","color":"#8B5CF6"},{"label":"Russia","color":"#94A3B8"}],"frames":[[0,25,0,2,2,0,0,2,0],[0,32,0,5,4,0,0,4,0],[0,45,0,9,6,0,1,6,0],[2,68,1,17,10,0,2,9,0],[9,95,3,27,15,0,4,13,0],[22,121,5,47,24,0,5,16,3],[33,143,7,57,31,0,8,20,5],[59,168,16,69,37,0,14,23,6],[79,184,19,74,44,0,18,28,12],[94,198,22,78,50,0,22,33,15],[111,210,27,82,55,0,26,40,22],[137,217,33,87,58,0,42,43,25],[210,223,44,89,61,0,53,46,32],[298,229,52,91,63,0,62,48,38],[384,235,61,94,65,0,70,50,43],[457,240,92,99,67,25,79,52,60],[513,245,116,101,69,30,88,53,70],[564,252,138,103,71,39,97,54,80],[618,260,172,105,72,47,106,55,90],[649,267,213,106,73,60,116,57,100],[688,274,259,107,74,72,125,0,106],[731,281,313,108,74,88,133,0,110],[772,287,391,109,0,108,141,0,113],[817,290,465,110,0,124,149,0,116],[853,293,560,110,0,143,156,0,118],[940,298,620,111,0,171,165,0,124],[1010,305,700,112,0,205,174,0,129],[1050,311,780,113,0,213,181,0,130],[1080,315,840,114,0,220,187,0,132],[1100,318,880,114,0,227,190,0,133]],"t0":1995,"t1":2024,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=8081a86a19"></script>
 </body>
 </html>
