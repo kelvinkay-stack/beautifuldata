@@ -61,6 +61,24 @@
       "blurb": "Populations, emissions and arsenals — the century-scale races that redraw the map."
     },
     {
+      "id": "trade",
+      "label": "Transport & Trade",
+      "short": "Trade",
+      "accent": "#E879F9",
+      "accentSoft": "rgba(232,121,249,0.14)",
+      "motif": "ship",
+      "blurb": "Ports, exporters, carmakers and airliners — the machinery that moves the world economy, and who runs it."
+    },
+    {
+      "id": "health",
+      "label": "Food & Health",
+      "short": "Food & Health",
+      "accent": "#BEF264",
+      "accentSoft": "rgba(190,242,100,0.13)",
+      "motif": "leaf",
+      "blurb": "What we drink, what we eat, what heals us and what kills us — the slow races that shape everyday life."
+    },
+    {
       "id": "play",
       "label": "Games & Play",
       "short": "Games",
@@ -162,6 +180,26 @@
     { "id": "programming-languages", "category": "wildcard" },
     { "id": "wikipedia-languages", "category": "wildcard" },
     { "id": "crypto", "category": "wildcard" },
-    { "id": "baby-names", "category": "wildcard" }
+    { "id": "baby-names", "category": "wildcard" },
+    { "id": "container-ports", "category": "trade" },
+    { "id": "exporters", "category": "trade" },
+    { "id": "car-makers", "category": "trade" },
+    { "id": "airliner-orders", "category": "trade" },
+    { "id": "best-selling-drugs", "category": "health" },
+    { "id": "causes-of-death", "category": "health" },
+    { "id": "wine-production", "category": "health" },
+    { "id": "coffee-production", "category": "health" },
+    { "id": "fast-food-chains", "category": "health" },
+    { "id": "scientific-papers", "category": "science" },
+    { "id": "patents", "category": "science" },
+    { "id": "satellites", "category": "science" },
+    { "id": "premier-league-titles", "category": "sports" },
+    { "id": "golf-majors", "category": "sports" },
+    { "id": "super-bowl-wins", "category": "sports" },
+    { "id": "test-cricket-runs", "category": "sports" },
+    { "id": "music-formats", "category": "culture" },
+    { "id": "largest-banks", "category": "economy" },
+    { "id": "reserve-currencies", "category": "economy" },
+    { "id": "smartphone-makers", "category": "tech" }
   ]
 }

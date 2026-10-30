@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Super Bowl Wins by Franchise (1966–2026) — Overtake</title>
+  <meta name="description" content="Every Super Bowl champion from Green Bay's win in January 1967 through Seattle's in Super Bowl LX. Animated bar chart race, 1966–2026.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/super-bowl-wins/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Super Bowl Wins by Franchise (1966–2026) — Overtake">
+  <meta property="og:description" content="Every Super Bowl champion from Green Bay's win in January 1967 through Seattle's in Super Bowl LX. Animated bar chart race, 1966–2026.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/super-bowl-wins/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/super-bowl-wins.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Super Bowl Wins by Franchise (1966–2026) — Overtake">
+  <meta name="twitter:description" content="Every Super Bowl champion from Green Bay's win in January 1967 through Seattle's in Super Bowl LX. Animated bar chart race, 1966–2026.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/super-bowl-wins.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=0dc17e2e0d">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=0dc17e2e0d","/js/engine/renderer.js":"/js/engine/renderer.js?v=0dc17e2e0d","/js/engine/format.js":"/js/engine/format.js?v=0dc17e2e0d","/js/engine/controller.js":"/js/engine/controller.js?v=0dc17e2e0d","/js/engine/controls.js":"/js/engine/controls.js?v=0dc17e2e0d","/js/engine/preview.js":"/js/engine/preview.js?v=0dc17e2e0d"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Super Bowl Wins by Franchise","description":"Every Super Bowl champion from Green Bay's win in January 1967 through Seattle's in Super Bowl LX. The Steelers own the 1970s and are first to four and six, the 49ers and Cowboys trade dynasties in the 1980s–90s, and the Brady-era Patriots surge from zero to a share of the record.","url":"https://beautifuldata.netlify.app/races/super-bowl-wins/","temporalCoverage":"1966/2026","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://operations.nfl.com/the-game/nfl-history/super-bowl-history/"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports" aria-current="true">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#trade">Trade</a>
+      <a href="/#health">Food &amp; Health</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="sports" data-race-id="super-bowl-wins">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#sports">Sports</a><span aria-hidden="true">/</span><span class="num">1966–2026</span></p>
+    <h1>Super Bowl Wins by Franchise</h1>
+    <p class="blurb">Every Super Bowl champion from Green Bay's win in January 1967 through Seattle's in Super Bowl LX. The Steelers own the 1970s and are first to four and six, the 49ers and Cowboys trade dynasties in the 1980s–90s, and the Brady-era Patriots surge from zero to a share of the record.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>20 contenders</span><span>3 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Super Bowl Wins by Franchise"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1966" aria-valuemax="2026">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://operations.nfl.com/the-game/nfl-history/super-bowl-history/" rel="noopener">NFL Record &amp; Fact Book</a></span>
+    <span>Keyed to the calendar year each game was played (Jan/Feb). Franchises shown under current names; Raiders, Colts and Rams wins include previous cities.</span>
+    <span>Updated 2026-10-29</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
+  </p>
+
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>3 different leaders in 60 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1966.5" style="left:0.000%;width:21.141%;--c:#3DBE6B;--ink:rgba(255,255,255,0.95)" title="Green Bay Packers · 1966–1979" aria-label="Green Bay Packers led 1966–1979. Jump there."><span>Green Bay Packers</span></button><button type="button" class="reign" data-t="1979.1" style="left:21.141%;width:26.846%;--c:#FFB612;--ink:rgba(11,14,20,0.88)" title="Pittsburgh Steelers · 1979–1995" aria-label="Pittsburgh Steelers led 1979–1995. Jump there."><span>Pittsburgh Steelers</span></button><button type="button" class="reign" data-t="1995.1" style="left:47.987%;width:23.490%;--c:#E31837;--ink:rgba(255,255,255,0.95)" title="San Francisco 49ers · 1995–2009" aria-label="San Francisco 49ers led 1995–2009. Jump there."><span>San Francisco 49ers</span></button><button type="button" class="reign" data-t="2009.1" style="left:71.477%;width:28.523%;--c:#FFB612;--ink:rgba(11,14,20,0.88)" title="Pittsburgh Steelers · 2009–2026" aria-label="Pittsburgh Steelers led 2009–2026. Jump there."><span>Pittsburgh Steelers</span></button></div>
+    <div class="reign-axis num"><span>1966</span><span>2026</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
+      <ol>
+        <li><span class="h-label">Pittsburgh Steelers</span><span class="h-bar"><i style="width:100.0%;background:#FFB612"></i></span><span class="h-val num">33 yrs</span></li>
+        <li><span class="h-label">San Francisco 49ers</span><span class="h-bar"><i style="width:42.4%;background:#E31837"></i></span><span class="h-val num">14 yrs</span></li>
+        <li><span class="h-label">Green Bay Packers</span><span class="h-bar"><i style="width:38.2%;background:#3DBE6B"></i></span><span class="h-val num">13 yrs</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1968.1">
+        <span class="m-year num">1968</span>
+        <span class="m-body"><span class="m-title">Lombardi's Packers go 2-for-2</span><span class="m-text">Green Bay win the first two Super Bowls over the AFL's Chiefs and Raiders; the trophy later takes Lombardi's name.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1980.1">
+        <span class="m-year num">1980</span>
+        <span class="m-body"><span class="m-title">Steelers first to four</span><span class="m-text">Pittsburgh beat the Rams in Super Bowl XIV for their fourth title in six seasons, the first franchise to reach four.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1995.1">
+        <span class="m-year num">1995</span>
+        <span class="m-body"><span class="m-title">49ers first to five</span><span class="m-text">Steve Young's six TD passes rout San Diego in Super Bowl XXIX, making San Francisco the first five-time champion.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2002.1">
+        <span class="m-year num">2002</span>
+        <span class="m-body"><span class="m-title">The Patriots' first ring</span><span class="m-text">Tom Brady's New England upset the Rams in Super Bowl XXXVI, the first of six titles in 18 seasons.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2009.1">
+        <span class="m-year num">2009</span>
+        <span class="m-body"><span class="m-title">Steelers first to six</span><span class="m-text">Santonio Holmes's late touchdown beats Arizona in Super Bowl XLIII, taking Pittsburgh clear of Dallas and SF on five.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2019.1">
+        <span class="m-year num">2019</span>
+        <span class="m-body"><span class="m-title">Patriots tie Steelers at six</span><span class="m-text">A 13-3 win over the Rams in Super Bowl LIII, the lowest-scoring Super Bowl, draws New England level with Pittsburgh.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2024.1">
+        <span class="m-year num">2024</span>
+        <span class="m-body"><span class="m-title">Chiefs go back-to-back</span><span class="m-text">Kansas City beat the 49ers in overtime in Super Bowl LVIII for a second straight title and their fourth overall.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2026.1">
+        <span class="m-year num">2026</span>
+        <span class="m-body"><span class="m-title">Seahawks keep the tie intact</span><span class="m-text">Seattle beat New England 29-13 in Super Bowl LX, denying the Patriots a record seventh title.</span></span>
+      </button></li>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">3</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">3</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">60</b><span>years covered</span></div>
+          <div class="fact"><b class="num">20</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Pittsburgh Steelers</b><span>longest unbroken reign — 17 yrs at #1</span></div>
+          
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2026</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FFB612" aria-hidden="true"></span><span class="s-label">Pittsburgh Steelers</span><span class="s-val num">6</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">New England Patriots</span><span class="s-val num">6</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#E31837" aria-hidden="true"></span><span class="s-label">San Francisco 49ers</span><span class="s-val num">5</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#B0B7BC" aria-hidden="true"></span><span class="s-label">Dallas Cowboys</span><span class="s-val num">5</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#3DBE6B" aria-hidden="true"></span><span class="s-label">Green Bay Packers</span><span class="s-val num">4</span></li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Sports races</h2><a href="/#sports">See all 15 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/test-cricket-runs/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="test-cricket-runs" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Most Career Test Runs</h3>
+        <p class="card-meta"><span>1877–2026</span><span>·</span><span>83 contenders</span><span>·</span><span>13 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="cl-name">Sachin Tendulkar</span><span class="cl-val">15,921</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/chess-elo/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="chess-elo" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Chess: The Rating Race</h3>
+        <p class="card-meta"><span>1971–2025</span><span>·</span><span>16 contenders</span><span>·</span><span>8 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Magnus Carlsen</span><span class="cl-val">2,833</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/atp-weeks/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="atp-weeks" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Weeks at ATP World No. 1</h3>
+        <p class="card-meta"><span>1973–2026</span><span>·</span><span>20 contenders</span><span>·</span><span>5 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">Novak Djokovic</span><span class="cl-val">428 wks</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/wta-weeks/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="wta-weeks" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Weeks at WTA World No. 1</h3>
+        <p class="card-meta"><span>1975–2026</span><span>·</span><span>17 contenders</span><span>·</span><span>2 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFD84D" aria-hidden="true"></span><span class="cl-name">Steffi Graf</span><span class="cl-val">377 wks</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/golf-majors/"><span class="dir">← Previous race</span>Men's Golf Major Championships</a>
+    <a href="/races/test-cricket-runs/" class="pg-next"><span class="dir">Next race →</span>Most Career Test Runs</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>93 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">12</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">15</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">10</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">13</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">9</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#trade" style="--c:#E879F9"><span class="fc-dot" aria-hidden="true"></span>Trade<span class="fc-n num">4</span></a>
+      <a href="/#health" style="--c:#BEF264"><span class="fc-dot" aria-hidden="true"></span>Food &amp; Health<span class="fc-n num">5</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
+  </div>
+  <div class="inner">
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="application/json" id="preview-data">{"test-cricket-runs":{"entities":[{"label":"Sachin Tendulkar","color":"#2FB4FF"},{"label":"Brian Lara","color":"#B45309"},{"label":"Allan Border","color":"#E2B93B"},{"label":"Sunil Gavaskar","color":"#67E8F9"},{"label":"Garry Sobers","color":"#F43F5E"},{"label":"Wally Hammond","color":"#B388FF"},{"label":"Jack Hobbs","color":"#23C8A8"},{"label":"Clem Hill","color":"#FDE68A"},{"label":"Arthur Shrewsbury","color":"#8B5CF6"},{"label":"PS McDonnell","color":"#78D7A8"},{"label":"Billy Murdoch","color":"#FACC15"},{"label":"Joe Root","color":"#F2F4F8"},{"label":"Ricky Ponting","color":"#FFD84D"},{"label":"Geoffrey Boycott","color":"#D4D4D8"}],"frames":[[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,103.24,281.146,372.647,0,0,0],[0,0,0,0,0,0,0,0,709.215,887.907,860,0,0,0],[0,0,0,0,0,0,0,0,989.247,955,901.996,0,0,0],[0,0,0,0,0,0,0,130.41,1277,955,908,0,0,0],[0,0,0,0,0,0,0,1416.218,1277,955,908,0,0,0],[0,0,0,0,0,0,226.448,2575.906,1277,955,908,0,0,0],[0,0,0,0,0,0,2040.369,3412,1277,955,908,0,0,0],[0,0,0,0,0,0,2548.276,3412,1277,955,908,0,0,0],[0,0,0,0,0,0,3203.548,3412,1277,955,908,0,0,0],[0,0,0,0,0,904.466,4658.969,3412,1277,955,908,0,0,0],[0,0,0,0,0,3350.48,5410,3412,1277,955,908,0,0,0],[0,0,0,0,0,6028.911,5410,3412,1277,955,908,0,0,0],[0,0,0,0,0,6883,5410,3412,1277,955,908,0,0,0],[0,0,0,0,0,7249,5410,3412,1277,955,908,0,0,0],[0,0,0,0,0,7249,5410,3412,1277,955,908,0,0,0],[0,0,0,0,2049.919,7249,5410,3412,1277,955,908,0,0,0],[0,0,0,0,4054.96,7249,5410,3412,1277,955,908,0,0,0],[0,0,0,0,6478.887,7249,5410,3412,1277,955,908,0,0,2509.437],[0,0,0,1347.932,7845.695,7249,5410,3412,1277,955,908,0,0,4138.935],[0,0,0,5391.498,8032,7249,5410,3412,1277,955,908,0,0,6690.876],[0,0,5100.104,8811.222,8032,7249,5410,3412,1277,955,908,0,0,8114],[0,0,8630.624,10122,8032,7249,5410,3412,1277,955,908,0,0,8114],[1290.061,1359.839,11174,10122,8032,7249,5410,3412,1277,955,908,0,0,8114],[6413.717,6068.072,11174,10122,8032,7249,5410,3412,1277,955,908,0,0,8114],[10366.733,11326.681,11174,10122,8032,7249,5410,3412,1277,955,908,0,8208.336,8114],[14302.597,11953,11174,10122,8032,7249,5410,3412,1277,955,908,0,12258.914,8114],[15886.286,11953,11174,10122,8032,7249,5410,3412,1277,955,908,4016.186,13378,8114],[15921,11953,11174,10122,8032,7249,5410,3412,1277,955,908,8677.024,13378,8114],[15921,11953,11174,10122,8032,7249,5410,3412,1277,955,908,14278,13378,8114]],"t0":1877,"t1":2026.83,"era":0},"chess-elo":{"entities":[{"label":"Magnus Carlsen","color":"#F43F5E"},{"label":"Viswanathan Anand","color":"#2FB4FF"},{"label":"Bobby Fischer","color":"#4C8DFF"},{"label":"Anatoly Karpov","color":"#FF5C4D"},{"label":"Garry Kasparov","color":"#FFD84D"},{"label":"Veselin Topalov","color":"#A3E635"},{"label":"Fabiano Caruana","color":"#34D399"},{"label":"Ding Liren","color":"#6E7BFF"},{"label":"Mikhail Tal","color":"#E879F9"},{"label":"Viktor Korchnoi","color":"#94A3B8"},{"label":"Vasyl Ivanchuk","color":"#23C8A8"},{"label":"Vladimir Kramnik","color":"#B388FF"},{"label":"Hikaru Nakamura","color":"#FFB020"},{"label":"Ian Nepomniachtchi","color":"#D4D4D8"}],"frames":[[0,0,2760,2540,0,0,0,0,2655,2670,0,0,0,0],[0,0,2780.69,2655.862,0,0,0,0,2657.931,2648.621,0,0,0,0],[0,0,2780,2703.621,0,0,0,0,2649.138,2660.862,0,0,0,0],[0,0,0,2692.069,0,0,0,0,2626.207,2653.276,0,0,0,0],[0,0,0,2716.034,2520.172,0,0,0,2620.517,2678.448,0,0,0,0],[0,0,0,2714.138,2604.31,0,0,0,2705,2695,0,0,0,0],[0,0,0,2718.276,2648.621,0,0,0,2626.724,2663.966,0,0,0,0],[0,0,0,2700.172,2710.172,0,0,0,2630,2634.828,0,0,0,0],[0,0,0,2718.448,2737.414,0,0,0,2612.069,2647.931,0,0,0,0],[0,2541.724,0,2711.379,2746.379,0,0,0,2607.586,2613.621,1938.276,0,0,0],[0,2610,0,2737.586,2790.517,0,0,0,0,0,2655.517,0,0,0],[0,2659.655,0,2725,2790.345,0,0,0,0,0,2727.759,2538.276,0,0],[0,2711.724,0,2730.172,2805,2571.207,0,0,0,0,2701.552,2693.621,0,0],[0,2717.069,0,2767.069,2798.793,2644.483,0,0,0,0,2707.241,2727.414,0,0],[0,2765.345,0,2758.276,2797.069,2726.034,0,0,0,0,2740,2743.448,0,0],[0,2780.241,0,2711.724,2812.897,2702.759,0,0,0,0,2715.793,2753.69,0,0],[0,2785.655,0,2691.862,2849.414,2714.69,0,0,0,0,2715.345,2769.103,0,0],[0,2752.414,0,2689.724,2843.897,2741.621,0,0,0,0,2705.207,2807.69,0,0],[2519.69,2776.345,0,2675.793,2817.034,2746.379,0,0,0,0,2707.724,2765.103,0,0],[2649.655,2787.069,0,0,0,2794.172,0,0,0,0,2736.966,2750.483,0,0],[2743.379,2797.069,0,0,0,2783.862,0,0,0,0,2757.759,2789.345,0,0],[2810.414,2792.069,0,0,0,2801.897,2657.897,0,0,0,2750.552,2787.586,2712.448,0],[2834.276,2799.379,0,0,0,2770.172,2735.069,0,0,0,2765.931,2800.414,2758.724,0],[2870.103,2772.828,0,0,0,2782.586,2781.828,2240.276,0,0,2742.276,2790.966,2785.552,0],[2849.586,2788.034,0,0,0,2786.207,2797.241,2755.448,0,0,842.586,2795.414,2783.586,1864.828],[2836.69,2775.517,0,0,0,1227.828,2818.172,2764.966,0,0,0,2796.862,2782.793,2750.103],[2850.31,2770.31,0,0,0,0,2825.517,2809.69,0,0,0,1627.897,2743.621,2767.552],[2862.828,2752.448,0,0,0,0,2814.448,2793.207,0,0,0,0,2736,2784.586],[2855,2753.586,0,0,0,0,2771.241,2806.724,0,0,0,0,2770.759,2789.69],[2833,2750,0,0,0,0,2803,2734,0,0,0,0,2802,2754]],"t0":1971,"t1":2025,"era":0},"atp-weeks":{"entities":[{"label":"Novak Djokovic","color":"#4C8DFF"},{"label":"Roger Federer","color":"#F43F5E"},{"label":"Pete Sampras","color":"#67E8F9"},{"label":"Ivan Lendl","color":"#B388FF"},{"label":"Jimmy Connors","color":"#34D399"},{"label":"Ilie Nastase","color":"#94A3B8"},{"label":"John McEnroe","color":"#2FB4FF"},{"label":"Bjorn Borg","color":"#FFD84D"},{"label":"Stefan Edberg","color":"#FFB020"}],"frames":[[0,0,0,0,0,1,0,0,0],[0,0,0,0,45.055,40,0,0,0],[0,0,0,0,139.662,40,0,0.248,0],[0,0,0,0,231.159,40,0,3.1,0],[0,0,0,0,246,40,8.966,70.345,0],[0,0,0,0,251.045,40,62.431,109,0],[0,0,0,31.09,268,40,116.241,109,0],[0,0,0,67.186,268,40,170,109,0],[0,0,0,159.145,268,40,170,109,0],[0,0,0,237.569,268,40,170,109,0.345],[0,0,0,270,268,40,170,109,53.655],[0,0,19.3,270,268,40,170,109,72],[0,0,91.772,270,268,40,170,109,72],[0,0,159.317,270,268,40,170,109,72],[0,0,244.586,270,268,40,170,109,72],[0,0,285.279,270,268,40,170,109,72],[0,0,286,270,268,40,170,109,72],[0,29.297,286,270,268,40,170,109,72],[0,122.593,286,270,268,40,170,109,72],[0,212.534,286,270,268,40,170,109,72],[0,264.903,286,270,268,40,170,109,72],[23.579,286,286,270,268,40,170,109,72],[90.241,303,286,270,268,40,170,109,72],[155.869,303,286,270,268,40,170,109,72],[223,303,286,270,268,40,170,109,72],[239.952,310,286,270,268,40,170,109,72],[303.434,310,286,270,268,40,170,109,72],[369.331,310,286,270,268,40,170,109,72],[428,310,286,270,268,40,170,109,72],[428,310,286,270,268,40,170,109,72]],"t0":1973.6,"t1":2026.5,"era":0},"wta-weeks":{"entities":[{"label":"Steffi Graf","color":"#FFD84D"},{"label":"Martina Navratilova","color":"#23C8A8"},{"label":"Chris Evert","color":"#4C8DFF"},{"label":"Evonne Goolagong","color":"#A3E635"},{"label":"Serena Williams","color":"#8B5CF6"},{"label":"Tracy Austin","color":"#FFB020"},{"label":"Martina Hingis","color":"#B388FF"},{"label":"Monica Seles","color":"#F43F5E"}],"frames":[[0,0,1,0,0,0,0,0],[0,0,91.124,2,0,0,0,0],[0,14.876,166.172,2,0,3.086,0,0],[0,52.645,206.328,2,0,22,0,0],[0,101.224,247.672,2,0,22,0,0],[0,188.821,260,2,0,22,0,0],[2.259,276.712,260,2,0,22,0,0],[59.669,331.014,260,2,0,22,0,0],[149.593,332,260,2,0,22,0,0],[196.207,332,260,2,0,22,0,49.517],[237.441,332,260,2,0,22,0,138.583],[327.366,332,260,2,0,22,0,178],[377,332,260,2,0,22,24.069,178],[377,332,260,2,0,22,109.214,178],[377,332,260,2,0,22,196.784,178],[377,332,260,2,15.793,22,209,178],[377,332,260,2,57,22,209,178],[377,332,260,2,57,22,209,178],[377,332,260,2,60.91,22,209,178],[377,332,260,2,79.138,22,209,178],[377,332,260,2,123,22,209,178],[377,332,260,2,127.469,22,209,178],[377,332,260,2,196.531,22,209,178],[377,332,260,2,286.455,22,209,178],[377,332,260,2,319,22,209,178],[377,332,260,2,319,22,209,178],[377,332,260,2,319,22,209,178],[377,332,260,2,319,22,209,178],[377,332,260,2,319,22,209,178],[377,332,260,2,319,22,209,178]],"t0":1975.85,"t1":2026,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=0dc17e2e0d"></script>
+</body>
+</html>

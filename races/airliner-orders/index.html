@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best-Selling Jetliners (1958–2026) — Overtake</title>
+  <meta name="description" content="Every Western-built jetliner family ranked by total aircraft delivered since the Boeing 707 opened the jet age. Animated bar chart race, 1958–2026.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/airliner-orders/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Best-Selling Jetliners (1958–2026) — Overtake">
+  <meta property="og:description" content="Every Western-built jetliner family ranked by total aircraft delivered since the Boeing 707 opened the jet age. Animated bar chart race, 1958–2026.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/airliner-orders/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/airliner-orders.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best-Selling Jetliners (1958–2026) — Overtake">
+  <meta name="twitter:description" content="Every Western-built jetliner family ranked by total aircraft delivered since the Boeing 707 opened the jet age. Animated bar chart race, 1958–2026.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/airliner-orders.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=0dc17e2e0d">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=0dc17e2e0d","/js/engine/renderer.js":"/js/engine/renderer.js?v=0dc17e2e0d","/js/engine/format.js":"/js/engine/format.js?v=0dc17e2e0d","/js/engine/controller.js":"/js/engine/controller.js?v=0dc17e2e0d","/js/engine/controls.js":"/js/engine/controls.js?v=0dc17e2e0d","/js/engine/preview.js":"/js/engine/preview.js?v=0dc17e2e0d"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Best-Selling Jetliners","description":"Every Western-built jetliner family ranked by total aircraft delivered since the Boeing 707 opened the jet age. The 727 rules the 1970s and 80s, the 737 takes the record in 1990 and holds it for 35 years, until Airbus's A320 family finally edges past in October 2025, with both families beyond 12,250 aircraft.","url":"https://beautifuldata.netlify.app/races/airliner-orders/","temporalCoverage":"1958/2026","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.boeing.com/commercial/#/orders-deliveries"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#trade" aria-current="true">Trade</a>
+      <a href="/#health">Food &amp; Health</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="trade" data-race-id="airliner-orders">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#trade">Transport &amp; Trade</a><span aria-hidden="true">/</span><span class="num">1958–2026</span></p>
+    <h1>Best-Selling Jetliners</h1>
+    <p class="blurb">Every Western-built jetliner family ranked by total aircraft delivered since the Boeing 707 opened the jet age. The 727 rules the 1970s and 80s, the 737 takes the record in 1990 and holds it for 35 years, until Airbus's A320 family finally edges past in October 2025, with both families beyond 12,250 aircraft.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>25 contenders</span><span>4 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Best-Selling Jetliners"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1958" aria-valuemax="2026">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://www.boeing.com/commercial/#/orders-deliveries" rel="noopener">Boeing and Airbus orders &amp; deliveries; Embraer, Bombardier and McDonnell Douglas records</a></span>
+    <span>Year-end cumulative deliveries; last frame is Sept 2026. Soviet types excluded. Comet, Caravelle, Trident, VC10, BAC 1-11, L-1011, CRJ, E-Jet and MD-90/717 yearly splits approximated; totals exact.</span>
+    <span>Updated 2026-10-29</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
+  </p>
+
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>5 different leaders in 69 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1958" style="left:0.000%;width:2.512%;--c:#C4B5A0;--ink:rgba(11,14,20,0.88)" title="de Havilland Comet · 1958–1959" aria-label="de Havilland Comet led 1958–1959. Jump there."></button><button type="button" class="reign" data-t="1959.7272727272727" style="left:2.512%;width:17.409%;--c:#D4D4D8;--ink:rgba(11,14,20,0.88)" title="Boeing 707 / 720 · 1959–1971" aria-label="Boeing 707 / 720 led 1959–1971. Jump there."><span>Boeing 707 / 720</span></button><button type="button" class="reign" data-t="1971.695652173913" style="left:19.921%;width:26.925%;--c:#67E8F9;--ink:rgba(11,14,20,0.88)" title="Boeing 727 · 1971–1990" aria-label="Boeing 727 led 1971–1990. Jump there."><span>Boeing 727</span></button><button type="button" class="reign" data-t="1990.2068965517242" style="left:46.846%;width:51.675%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="Boeing 737 · 1990–2025" aria-label="Boeing 737 led 1990–2025. Jump there."><span>Boeing 737</span></button><button type="button" class="reign" data-t="2025.7333333333333" style="left:98.521%;width:1.479%;--c:#FFB020;--ink:rgba(11,14,20,0.88)" title="Airbus A320 family · 2025–2026" aria-label="Airbus A320 family led 2025–2026. Jump there."></button></div>
+    <div class="reign-axis num"><span>1958</span><span>2026</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
+      <ol>
+        <li><span class="h-label">Boeing 737</span><span class="h-bar"><i style="width:100.0%;background:#4C8DFF"></i></span><span class="h-val num">36 yrs</span></li>
+        <li><span class="h-label">Boeing 727</span><span class="h-bar"><i style="width:52.1%;background:#67E8F9"></i></span><span class="h-val num">19 yrs</span></li>
+        <li><span class="h-label">Boeing 707 / 720</span><span class="h-bar"><i style="width:33.7%;background:#D4D4D8"></i></span><span class="h-val num">12 yrs</span></li>
+        <li><span class="h-label">de Havilland Comet</span><span class="h-bar"><i style="width:4.9%;background:#C4B5A0"></i></span><span class="h-val num">1.7 yrs</span></li>
+        <li><span class="h-label">Airbus A320 family</span><span class="h-bar"><i style="width:2.9%;background:#FFB020"></i></span><span class="h-val num">1 yr</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1958.85">
+        <span class="m-year num">1958</span>
+        <span class="m-body"><span class="m-title">The jet age begins</span><span class="m-text">Pan Am takes its first Boeing 707 in October 1958. Britain's Comet flew first, but the 707 and DC-8 make jet travel mainstream.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1971.7">
+        <span class="m-year num">1971</span>
+        <span class="m-body"><span class="m-title">727 passes the 707</span><span class="m-text">The three-engined 727 overtakes the 707 as the most-delivered jetliner. It ends production in 1984 at 1,831 aircraft.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1990.2">
+        <span class="m-year num">1990</span>
+        <span class="m-body"><span class="m-title">737 becomes the best-seller</span><span class="m-text">Revived by the CFM56-powered 737 Classic, the 737 passes the 727's 1,831 deliveries. It will hold the record for 35 years.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2005.5">
+        <span class="m-year num">2005</span>
+        <span class="m-body"><span class="m-title">A320 family moves into 2nd</span><span class="m-text">Airbus's fly-by-wire narrowbody overtakes the DC-9/MD-80 line, setting up a two-horse race with the 737.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2019.1">
+        <span class="m-year num">2019</span>
+        <span class="m-body"><span class="m-title">777 overtakes the 747</span><span class="m-text">The big twin passes the Queen of the Skies in total deliveries as airlines abandon four-engine jets. The last 747 is delivered in 2023.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2019.25">
+        <span class="m-year num">2019</span>
+        <span class="m-body"><span class="m-title">737 MAX grounded</span><span class="m-text">After two fatal crashes the MAX is grounded worldwide from March 2019 to late 2020. 737 deliveries fall from 580 in 2018 to 43 in 2020.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2025.77">
+        <span class="m-year num">2025</span>
+        <span class="m-body"><span class="m-title">A320 passes the 737</span><span class="m-text">On 6 October 2025 an A320neo for Flynas makes the A320 family the most-delivered jetliner ever, ending the 737's 35-year reign.</span></span>
+      </button></li>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">4</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">5</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">69</b><span>years covered</span></div>
+          <div class="fact"><b class="num">25</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Boeing 737</b><span>longest unbroken reign — 36 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#18 → #1</b><span>Airbus A320 family ranked #18 when it first appeared in 1989 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2026</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FFB020" aria-hidden="true"></span><span class="s-label">Airbus A320 family</span><span class="s-val num">12,900</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">Boeing 737</span><span class="s-val num">12,739</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#B388FF" aria-hidden="true"></span><span class="s-label">DC-9 / MD-80 / MD-90 / 717</span><span class="s-val num">2,439</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Embraer E-Jets</span><span class="s-val num">1,995</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">Bombardier CRJ</span><span class="s-val num">1,945</span></li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Trade races</h2><a href="/#trade">See all 4 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/container-ports/" style="--accent:#E879F9;--accent-soft:rgba(232,121,249,0.14)">
+      <div class="card-preview"><canvas data-race="container-ports" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Busiest Container Ports</h3>
+        <p class="card-meta"><span>1980–2024</span><span>·</span><span>23 contenders</span><span>·</span><span>8 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Shanghai</span><span class="cl-val">51.5M TEU</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/exporters/" style="--accent:#E879F9;--accent-soft:rgba(232,121,249,0.14)">
+      <div class="card-preview"><canvas data-race="exporters" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Largest Merchandise Exporters</h3>
+        <p class="card-meta"><span>1980–2024</span><span>·</span><span>18 contenders</span><span>·</span><span>6 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">China</span><span class="cl-val">$3.58T</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/car-makers/" style="--accent:#E879F9;--accent-soft:rgba(232,121,249,0.14)">
+      <div class="card-preview"><canvas data-race="car-makers" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Largest Automakers</h3>
+        <p class="card-meta"><span>1990–2024</span><span>·</span><span>16 contenders</span><span>·</span><span>5 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Toyota</span><span class="cl-val">10.82M</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/car-makers/"><span class="dir">← Previous race</span>World's Largest Automakers</a>
+    <a href="/races/best-selling-drugs/" class="pg-next"><span class="dir">Next race →</span>World's Best-Selling Drugs</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>93 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">12</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">15</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">10</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">13</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">9</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#trade" style="--c:#E879F9"><span class="fc-dot" aria-hidden="true"></span>Trade<span class="fc-n num">4</span></a>
+      <a href="/#health" style="--c:#BEF264"><span class="fc-dot" aria-hidden="true"></span>Food &amp; Health<span class="fc-n num">5</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
+  </div>
+  <div class="inner">
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="application/json" id="preview-data">{"container-ports":{"entities":[{"label":"Shanghai","color":"#F43F5E"},{"label":"Singapore","color":"#FF5C4D"},{"label":"Rotterdam","color":"#FF8C42"},{"label":"Hong Kong","color":"#E879F9"},{"label":"New York-New Jersey","color":"#6E7BFF"},{"label":"Ningbo-Zhoushan","color":"#FFB020"},{"label":"Shenzhen","color":"#2FB4FF"},{"label":"Busan","color":"#4C8DFF"},{"label":"Kaohsiung","color":"#23C8A8"},{"label":"Kobe","color":"#FF6FA5"},{"label":"Qingdao","color":"#34D399"},{"label":"Guangzhou","color":"#B388FF"}],"frames":[[0,0.92,1.9,1.46,1.95,0,0,0.63,0.98,1.46,0,0],[0.061,1.157,2.128,1.712,2.077,0,0,0.788,1.259,1.581,0,0],[0.121,1.393,2.355,1.964,2.205,0,0,0.946,1.538,1.703,0,0],[0.182,1.63,2.583,2.216,2.332,0,0,1.103,1.818,1.824,0,0],[0.226,2.23,2.784,2.818,2.146,0,0,1.438,2.408,1.707,0,0],[0.345,3.137,3.063,3.753,2.064,0,0,2.012,2.956,1.947,0,0],[0.433,4.449,3.607,4.526,1.987,0.002,0.003,2.18,3.391,2.331,0.014,0.008],[0.534,5.921,3.732,5.758,1.87,0.026,0.055,2.561,3.751,2.625,0.171,0.105],[0.759,7.766,4.126,8.14,1.97,0.054,0.137,2.794,4.054,2.622,0.281,0.251],[1.11,9.934,4.409,10.412,2.022,0.106,0.286,3.568,4.81,2.844,0.416,0.392],[1.606,12.038,4.816,12.707,2.27,0.167,0.333,4.54,5.052,1.601,0.636,0.527],[2.356,13.768,5.209,14.226,2.401,0.241,0.976,5.075,5.494,2.03,0.962,0.65],[3.306,15.274,6.078,14.917,2.551,0.402,2.163,6.051,6.419,1.962,1.278,0.918],[5.224,16.737,6.297,17.579,2.998,0.817,3.711,7.237,7.309,2.251,1.96,1.361],[6.888,15.867,6.201,18.146,3.424,1.367,5.691,8.403,7.769,2.017,2.826,1.839],[10.636,18.021,6.99,20.134,3.993,2.55,9.916,10.178,8.756,2.048,4.04,2.62],[15.531,21.843,8.559,22.104,4.566,4.341,14.332,11.543,9.644,1.579,5.463,3.688],[20.959,24.459,9.576,23.31,5.028,6.685,18,11.999,9.716,0,7.412,6.203],[26.718,28.548,10.787,23.995,5.288,9.933,21.196,13.32,10.08,0,9.727,9.759],[25.514,26.568,9.919,21.544,4.681,10.626,18.795,12.205,8.77,0,10.27,11.157],[29.977,28.951,11.402,23.823,5.362,13.674,22.531,14.857,9.136,0,12.358,13.188],[32.416,31.414,11.871,23.294,5.526,16.397,22.889,16.93,9.761,0,14.296,14.693],[34.246,32.858,11.935,22.358,5.584,18.147,23.477,17.967,10.187,0,15.937,15.632],[36.409,31.225,12.253,20.308,6.308,20.499,24.159,19.361,10.294,0,17.418,17.469],[38.413,32.046,12.939,20.207,6.44,22.822,24.489,20.115,10.381,0,18.113,19.485],[41.887,36.398,14.456,19.681,7.148,26.23,25.703,21.579,10.438,0,19.247,21.878],[43.39,36.931,14.604,19.127,7.524,28.063,26.12,21.811,10.067,0,21.454,23.218],[46.908,37.44,15.267,17.878,8.932,30.989,28.693,22.671,9.852,0,23.651,24.146],[48.198,38.12,13.948,15.55,8.679,34.291,29.963,22.543,9.171,0,27.167,25.126],[51.51,41.12,13.82,13.67,8.7,39.31,33.38,24.4,9.23,0,30.87,26.07]],"t0":1980,"t1":2024,"era":0},"exporters":{"entities":[{"label":"China","color":"#F43F5E"},{"label":"United States","color":"#4C8DFF"},{"label":"Germany","color":"#FFD84D"},{"label":"Japan","color":"#FF6FA5"},{"label":"Netherlands","color":"#FF8C42"},{"label":"France","color":"#67E8F9"},{"label":"United Kingdom","color":"#8B5CF6"}],"frames":[[18,226,193,130,74,116,110],[22,227.103,176,144.276,67.448,101.345,99.414],[22.138,206.621,169.103,147.793,65.034,95.103,92.069],[26.552,221.241,178.621,173.862,67.103,100.207,97.862],[31.552,228.862,246.517,212.379,80.897,126.586,108.655],[44.276,293.862,311,250.931,98.862,159.724,139.207],[53.931,367.103,349.276,275.448,110.483,182.931,155.414],[68.207,411.379,409.828,304.759,133.241,217,185],[85.966,450.345,423.103,343.034,140,234.069,188.759],[111,496.448,410.793,384.931,153.759,241,196.724],[149.345,591.897,523.345,437.483,204.034,301.862,241.621],[173.069,669.138,516.724,417.897,208.31,303.241,273.483],[186.276,684.897,544,394.207,215.034,322.034,273.586],[234.103,758.276,549.793,462.172,229.138,327.448,279.966],[280.483,720.31,582.621,406.379,234.138,325.172,276.448],[410.966,717.276,719.172,458.724,283.448,377.517,302.241],[639.621,838.724,926.828,574,370.517,455.034,361.862],[926.172,1000.138,1079.655,636.241,452,489.172,441.379],[1285.483,1191.138,1359.793,734.793,578,577.379,456.31],[1241.483,1095.828,1176.207,615.483,522.138,507.586,378.517],[1688.345,1348.69,1333.138,788.276,606.069,548.828,451.034],[2028.172,1537.31,1411.069,802.31,656.655,572.724,483.276],[2259.448,1595.552,1463.586,705.517,672,581,533.345],[2280.138,1515.207,1343.379,631.724,580.552,513.759,470.655],[2166.276,1490.31,1381.172,666.931,604.517,515.069,423.414],[2471.552,1655.862,1553.207,735.241,721.828,578.759,482.897],[2539.793,1545.276,1441.483,676.862,693.759,534.241,433.103],[3290.966,1742.655,1618.586,752.034,834.31,581.69,469.517],[3464.345,2042.31,1688.552,732.517,949.483,634.966,535.862],[3576,2062,1676,707,921,641,524]],"t0":1980,"t1":2024,"era":0},"car-makers":{"entities":[{"label":"Toyota","color":"#F43F5E"},{"label":"Volkswagen Group","color":"#67E8F9"},{"label":"General Motors","color":"#4C8DFF"},{"label":"Ford","color":"#B388FF"},{"label":"Hyundai-Kia","color":"#23C8A8"},{"label":"Stellantis","color":"#8B5CF6"},{"label":"Honda","color":"#FCA5A5"},{"label":"Nissan","color":"#D4D4D8"},{"label":"PSA (Peugeot-Citroën)","color":"#94A3B8"},{"label":"Chrysler","color":"#C4B5A0"}],"frames":[[4.9,3.06,7.45,5.8,1,0,1.9,3,2.2,1.6],[4.9,3.318,7.303,5.8,1.117,0,1.9,2.941,2.141,1.776],[4.866,3.436,7.355,5.938,1.269,0,1.9,2.848,2.083,2.038],[4.748,3.219,7.883,6.407,1.503,0,1.9,2.672,2.024,2.507],[4.838,3.423,8.134,6.634,1.738,0,1.969,2.634,1.986,2.769],[5.072,3.921,8.193,6.693,1.972,0,2.086,2.693,1.963,2.886],[5.152,4.378,7.838,6.752,1.638,0,2.203,2.648,2.12,3.055],[5.278,4.792,7.614,6.862,1.424,0,2.321,2.603,2.333,3.179],[5.717,5.033,8.259,7.214,2.128,0,2.438,2.621,2.691,3.062],[5.978,5.132,8.545,7.174,2.555,0,2.583,2.602,3.018,2.834],[6.217,5.016,8.572,6.976,2.672,0,2.795,2.718,3.231,2.772],[6.73,5.016,8.6,6.746,2.879,0,2.895,3.03,3.288,2.71],[7.551,5.091,9.012,6.801,3.228,0,3.25,3.402,3.39,2.783],[8.173,5.358,9.151,6.767,3.66,0,3.458,3.548,3.385,2.799],[9.04,5.92,9.205,6.579,3.896,0,3.778,3.563,3.395,2.692],[9.134,6.237,8.778,5.952,4.083,0,3.842,3.686,3.33,2.287],[8.09,6.3,7.692,4.991,4.527,0,3.484,3.432,3.207,1.487],[8.378,7.139,8.327,5.276,5.664,0,3.623,4.03,3.572,1.581],[8.136,8.374,9.057,5.697,6.645,0,3.194,4.698,3.49,0],[9.813,9.404,9.406,5.852,7.241,0,4.096,4.932,2.929,0],[10.092,9.914,9.804,6.326,7.757,0,4.338,5.089,2.874,0],[10.18,10.01,9.846,6.519,8.006,0,4.596,5.378,2.959,0],[10.17,10.231,9.959,6.648,7.907,0,4.946,5.531,3.113,0],[10.379,10.725,9.614,6.611,7.272,0,5.193,5.811,3.613,0],[10.611,10.849,8.289,5.899,7.371,0,5.256,5.585,3.825,0],[10.364,10.455,7.444,5.018,6.929,0,4.978,4.829,3.179,0],[9.997,9.102,6.569,4.069,6.504,2.964,4.323,4.06,1.298,0],[10.487,8.474,6.061,4.13,6.788,6.048,3.851,3.598,0,0],[11.101,9.071,6.147,4.379,7.222,6.141,3.953,3.367,0,0],[10.82,9.03,6,4.47,7.23,5.5,3.8,3.35,0,0]],"t0":1990,"t1":2024,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=0dc17e2e0d"></script>
+</body>
+</html>

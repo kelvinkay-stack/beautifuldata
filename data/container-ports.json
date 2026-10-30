@@ -1,0 +1,1148 @@
+{
+ "id": "container-ports",
+ "title": "World's Busiest Container Ports",
+ "shortTitle": "Container Ports",
+ "category": "trade",
+ "unit": {
+  "label": "Annual container throughput",
+  "format": "plain",
+  "prefix": "",
+  "suffix": "M TEU",
+  "decimals": 1
+ },
+ "scale": "linear",
+ "topN": 10,
+ "timeLabel": "year",
+ "blurb": "Annual throughput in twenty-foot equivalent units, from the box's Atlantic beginnings to the Chinese mega-ports of today. New York-New Jersey and Rotterdam lead in 1980, Hong Kong and Singapore duel for two decades, then Shanghai takes the crown in 2010 as Ningbo, Shenzhen, Qingdao and Guangzhou crowd the board.",
+ "source": {
+  "name": "Lloyd's List One Hundred Ports; World Shipping Council; port authorities",
+  "url": "https://www.lloydslist.com/one-hundred-container-ports-2025",
+  "note": "2004-2024 from Lloyd's List/WSC/AAPA rankings; 1980-2003 compiled from port-authority histories with some years approximated. LA and Long Beach shown separately."
+ },
+ "dataQuality": "illustrative",
+ "lastUpdated": "2026-10-29",
+ "entities": [
+  {
+   "id": "shanghai",
+   "label": "Shanghai",
+   "color": "#F43F5E"
+  },
+  {
+   "id": "singapore",
+   "label": "Singapore",
+   "color": "#FF5C4D"
+  },
+  {
+   "id": "hongkong",
+   "label": "Hong Kong",
+   "color": "#E879F9"
+  },
+  {
+   "id": "shenzhen",
+   "label": "Shenzhen",
+   "color": "#2FB4FF"
+  },
+  {
+   "id": "ningbo",
+   "label": "Ningbo-Zhoushan",
+   "color": "#FFB020"
+  },
+  {
+   "id": "qingdao",
+   "label": "Qingdao",
+   "color": "#34D399"
+  },
+  {
+   "id": "guangzhou",
+   "label": "Guangzhou",
+   "color": "#B388FF"
+  },
+  {
+   "id": "busan",
+   "label": "Busan",
+   "color": "#4C8DFF"
+  },
+  {
+   "id": "tianjin",
+   "label": "Tianjin",
+   "color": "#A3E635"
+  },
+  {
+   "id": "dubai",
+   "label": "Dubai (Jebel Ali)",
+   "color": "#E2B93B"
+  },
+  {
+   "id": "portklang",
+   "label": "Port Klang",
+   "color": "#86EFAC"
+  },
+  {
+   "id": "rotterdam",
+   "label": "Rotterdam",
+   "color": "#FF8C42"
+  },
+  {
+   "id": "kaohsiung",
+   "label": "Kaohsiung",
+   "color": "#23C8A8"
+  },
+  {
+   "id": "hamburg",
+   "label": "Hamburg",
+   "color": "#94A3B8"
+  },
+  {
+   "id": "antwerp",
+   "label": "Antwerp",
+   "color": "#FDE68A"
+  },
+  {
+   "id": "la",
+   "label": "Los Angeles",
+   "color": "#FFD84D"
+  },
+  {
+   "id": "longbeach",
+   "label": "Long Beach",
+   "color": "#67E8F9"
+  },
+  {
+   "id": "nynj",
+   "label": "New York-New Jersey",
+   "color": "#6E7BFF"
+  },
+  {
+   "id": "kobe",
+   "label": "Kobe",
+   "color": "#FF6FA5"
+  },
+  {
+   "id": "yokohama",
+   "label": "Yokohama",
+   "color": "#FCA5A5"
+  },
+  {
+   "id": "keelung",
+   "label": "Keelung",
+   "color": "#C4B5A0"
+  },
+  {
+   "id": "sanjuan",
+   "label": "San Juan",
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "oakland",
+   "label": "Oakland",
+   "color": "#B45309"
+  }
+ ],
+ "keyframes": [
+  {
+   "t": 1980,
+   "values": {
+    "nynj": 1.95,
+    "rotterdam": 1.9,
+    "hongkong": 1.46,
+    "kobe": 1.46,
+    "kaohsiung": 0.98,
+    "singapore": 0.92,
+    "sanjuan": 0.85,
+    "longbeach": 0.82,
+    "hamburg": 0.78,
+    "oakland": 0.78,
+    "antwerp": 0.72,
+    "yokohama": 0.72,
+    "busan": 0.63,
+    "la": 0.63,
+    "keelung": 0.63,
+    "shanghai": 0
+   }
+  },
+  {
+   "t": 1985,
+   "values": {
+    "rotterdam": 2.65,
+    "nynj": 2.37,
+    "hongkong": 2.29,
+    "kaohsiung": 1.9,
+    "kobe": 1.86,
+    "singapore": 1.7,
+    "yokohama": 1.33,
+    "antwerp": 1.24,
+    "longbeach": 1.17,
+    "hamburg": 1.16,
+    "keelung": 1.16,
+    "busan": 1.15,
+    "la": 1.1,
+    "sanjuan": 0.9,
+    "oakland": 0.86,
+    "shanghai": 0.2,
+    "dubai": 0
+   }
+  },
+  {
+   "t": 1986,
+   "values": {
+    "rotterdam": 2.78,
+    "hongkong": 2.77,
+    "kaohsiung": 2.38,
+    "singapore": 2.2,
+    "nynj": 2.15,
+    "kobe": 1.7,
+    "busan": 1.4,
+    "longbeach": 1.37,
+    "yokohama": 1.36,
+    "keelung": 1.36,
+    "la": 1.33,
+    "hamburg": 1.27,
+    "antwerp": 1.2,
+    "sanjuan": 0.92,
+    "oakland": 0.92,
+    "dubai": 0.45,
+    "shanghai": 0.22
+   }
+  },
+  {
+   "t": 1987,
+   "values": {
+    "hongkong": 3.46,
+    "rotterdam": 2.84,
+    "kaohsiung": 2.78,
+    "singapore": 2.63,
+    "nynj": 2.09,
+    "busan": 1.95,
+    "kobe": 1.8,
+    "keelung": 1.6,
+    "la": 1.58,
+    "yokohama": 1.48,
+    "longbeach": 1.45,
+    "hamburg": 1.42,
+    "antwerp": 1.36,
+    "oakland": 1.03,
+    "sanjuan": 0.93,
+    "dubai": 0.55,
+    "shanghai": 0.31
+   }
+  },
+  {
+   "t": 1989,
+   "values": {
+    "hongkong": 4.46,
+    "singapore": 4.36,
+    "rotterdam": 3.6,
+    "kaohsiung": 3.38,
+    "kobe": 2.3,
+    "busan": 2.16,
+    "la": 2.06,
+    "nynj": 2.0,
+    "keelung": 1.8,
+    "hamburg": 1.73,
+    "longbeach": 1.55,
+    "antwerp": 1.51,
+    "yokohama": 1.51,
+    "oakland": 1.09,
+    "dubai": 0.95,
+    "sanjuan": 0.95,
+    "shanghai": 0.43,
+    "shenzhen": 0,
+    "portklang": 0
+   }
+  },
+  {
+   "t": 1990,
+   "values": {
+    "singapore": 5.22,
+    "hongkong": 5.1,
+    "rotterdam": 3.67,
+    "kaohsiung": 3.49,
+    "kobe": 2.6,
+    "busan": 2.35,
+    "la": 2.12,
+    "hamburg": 1.97,
+    "nynj": 1.87,
+    "keelung": 1.83,
+    "yokohama": 1.65,
+    "longbeach": 1.6,
+    "antwerp": 1.55,
+    "oakland": 1.12,
+    "dubai": 1.1,
+    "sanjuan": 0.95,
+    "portklang": 0.5,
+    "shanghai": 0.46,
+    "tianjin": 0.29,
+    "qingdao": 0.14,
+    "guangzhou": 0.08,
+    "shenzhen": 0.03,
+    "ningbo": 0.02
+   }
+  },
+  {
+   "t": 1991,
+   "values": {
+    "singapore": 6.35,
+    "hongkong": 6.16,
+    "kaohsiung": 3.91,
+    "rotterdam": 3.77,
+    "busan": 2.69,
+    "kobe": 2.64,
+    "hamburg": 2.19,
+    "la": 2.04,
+    "keelung": 1.95,
+    "nynj": 1.87,
+    "yokohama": 1.82,
+    "longbeach": 1.77,
+    "antwerp": 1.76,
+    "dubai": 1.2,
+    "shanghai": 0.58,
+    "portklang": 0.55,
+    "tianjin": 0.33,
+    "qingdao": 0.19,
+    "guangzhou": 0.12,
+    "shenzhen": 0.07,
+    "ningbo": 0.03
+   }
+  },
+  {
+   "t": 1992,
+   "values": {
+    "hongkong": 7.97,
+    "singapore": 7.56,
+    "rotterdam": 4.12,
+    "kaohsiung": 3.96,
+    "busan": 2.75,
+    "kobe": 2.61,
+    "la": 2.29,
+    "hamburg": 2.27,
+    "nynj": 1.97,
+    "keelung": 1.94,
+    "yokohama": 1.89,
+    "antwerp": 1.84,
+    "longbeach": 1.83,
+    "dubai": 1.48,
+    "shanghai": 0.73,
+    "portklang": 0.63,
+    "tianjin": 0.4,
+    "qingdao": 0.27,
+    "guangzhou": 0.24,
+    "shenzhen": 0.12,
+    "ningbo": 0.05
+   }
+  },
+  {
+   "t": 1993,
+   "values": {
+    "hongkong": 9.2,
+    "singapore": 9.05,
+    "kaohsiung": 4.64,
+    "rotterdam": 4.16,
+    "busan": 3.07,
+    "kobe": 2.7,
+    "hamburg": 2.49,
+    "la": 2.32,
+    "longbeach": 2.11,
+    "yokohama": 1.98,
+    "nynj": 1.97,
+    "keelung": 1.89,
+    "antwerp": 1.88,
+    "dubai": 1.57,
+    "shanghai": 0.94,
+    "portklang": 0.75,
+    "tianjin": 0.49,
+    "qingdao": 0.35,
+    "guangzhou": 0.32,
+    "shenzhen": 0.24,
+    "ningbo": 0.08
+   }
+  },
+  {
+   "t": 1994,
+   "values": {
+    "hongkong": 11.05,
+    "singapore": 10.4,
+    "kaohsiung": 4.9,
+    "rotterdam": 4.54,
+    "busan": 3.83,
+    "kobe": 2.92,
+    "hamburg": 2.73,
+    "longbeach": 2.57,
+    "la": 2.52,
+    "yokohama": 2.32,
+    "antwerp": 2.21,
+    "nynj": 2.05,
+    "keelung": 2.03,
+    "dubai": 1.88,
+    "shanghai": 1.2,
+    "portklang": 0.93,
+    "tianjin": 0.63,
+    "qingdao": 0.45,
+    "guangzhou": 0.43,
+    "shenzhen": 0.31,
+    "ningbo": 0.12
+   }
+  },
+  {
+   "t": 1995,
+   "values": {
+    "hongkong": 12.55,
+    "singapore": 11.85,
+    "kaohsiung": 5.05,
+    "rotterdam": 4.79,
+    "busan": 4.5,
+    "hamburg": 2.89,
+    "longbeach": 2.84,
+    "yokohama": 2.76,
+    "la": 2.56,
+    "antwerp": 2.33,
+    "nynj": 2.27,
+    "keelung": 2.17,
+    "dubai": 2.07,
+    "shanghai": 1.53,
+    "kobe": 1.47,
+    "portklang": 1.13,
+    "tianjin": 0.7,
+    "qingdao": 0.6,
+    "guangzhou": 0.52,
+    "shenzhen": 0.28,
+    "ningbo": 0.16
+   }
+  },
+  {
+   "t": 1996,
+   "values": {
+    "hongkong": 13.46,
+    "singapore": 12.94,
+    "kaohsiung": 5.06,
+    "rotterdam": 4.94,
+    "busan": 4.73,
+    "longbeach": 3.07,
+    "hamburg": 3.05,
+    "la": 2.68,
+    "antwerp": 2.65,
+    "yokohama": 2.33,
+    "keelung": 2.32,
+    "nynj": 2.27,
+    "dubai": 2.25,
+    "kobe": 2.23,
+    "shanghai": 1.97,
+    "portklang": 1.41,
+    "tianjin": 0.82,
+    "qingdao": 0.81,
+    "shenzhen": 0.59,
+    "guangzhou": 0.56,
+    "ningbo": 0.2
+   }
+  },
+  {
+   "t": 1997,
+   "values": {
+    "hongkong": 14.57,
+    "singapore": 14.14,
+    "kaohsiung": 5.69,
+    "rotterdam": 5.33,
+    "busan": 5.23,
+    "longbeach": 3.5,
+    "hamburg": 3.34,
+    "antwerp": 2.97,
+    "la": 2.96,
+    "dubai": 2.6,
+    "shanghai": 2.53,
+    "nynj": 2.46,
+    "yokohama": 2.35,
+    "keelung": 2.23,
+    "kobe": 1.94,
+    "portklang": 1.68,
+    "shenzhen": 1.15,
+    "qingdao": 1.03,
+    "tianjin": 0.94,
+    "guangzhou": 0.69,
+    "ningbo": 0.26
+   }
+  },
+  {
+   "t": 1998,
+   "values": {
+    "singapore": 15.1,
+    "hongkong": 14.58,
+    "kaohsiung": 6.27,
+    "rotterdam": 6.01,
+    "busan": 5.95,
+    "longbeach": 4.1,
+    "hamburg": 3.55,
+    "la": 3.38,
+    "antwerp": 3.27,
+    "shanghai": 3.07,
+    "dubai": 2.8,
+    "nynj": 2.47,
+    "yokohama": 2.09,
+    "shenzhen": 1.95,
+    "kobe": 1.9,
+    "portklang": 1.82,
+    "keelung": 1.7,
+    "qingdao": 1.21,
+    "tianjin": 1.02,
+    "guangzhou": 0.85,
+    "ningbo": 0.35
+   }
+  },
+  {
+   "t": 1999,
+   "values": {
+    "hongkong": 16.21,
+    "singapore": 15.94,
+    "kaohsiung": 6.99,
+    "busan": 6.44,
+    "rotterdam": 6.34,
+    "longbeach": 4.41,
+    "shanghai": 4.21,
+    "la": 3.83,
+    "hamburg": 3.74,
+    "antwerp": 3.61,
+    "shenzhen": 2.98,
+    "nynj": 2.86,
+    "dubai": 2.84,
+    "portklang": 2.55,
+    "kobe": 2.2,
+    "yokohama": 2.17,
+    "keelung": 1.67,
+    "qingdao": 1.54,
+    "tianjin": 1.3,
+    "guangzhou": 1.18,
+    "ningbo": 0.6
+   }
+  },
+  {
+   "t": 2000,
+   "values": {
+    "hongkong": 18.1,
+    "singapore": 17.04,
+    "busan": 7.54,
+    "kaohsiung": 7.43,
+    "rotterdam": 6.28,
+    "shanghai": 5.61,
+    "la": 4.88,
+    "longbeach": 4.6,
+    "hamburg": 4.25,
+    "antwerp": 4.08,
+    "shenzhen": 3.99,
+    "portklang": 3.21,
+    "dubai": 3.06,
+    "nynj": 3.05,
+    "yokohama": 2.32,
+    "kobe": 2.27,
+    "qingdao": 2.12,
+    "keelung": 1.95,
+    "tianjin": 1.71,
+    "guangzhou": 1.43,
+    "ningbo": 0.9
+   }
+  },
+  {
+   "t": 2001,
+   "values": {
+    "hongkong": 17.83,
+    "singapore": 15.57,
+    "busan": 8.07,
+    "kaohsiung": 7.54,
+    "shanghai": 6.34,
+    "rotterdam": 6.1,
+    "la": 5.18,
+    "shenzhen": 5.08,
+    "hamburg": 4.69,
+    "longbeach": 4.46,
+    "antwerp": 4.22,
+    "portklang": 3.76,
+    "dubai": 3.5,
+    "nynj": 3.32,
+    "qingdao": 2.64,
+    "yokohama": 2.22,
+    "tianjin": 2.01,
+    "kobe": 2.01,
+    "keelung": 1.82,
+    "guangzhou": 1.73,
+    "ningbo": 1.21
+   }
+  },
+  {
+   "t": 2002,
+   "values": {
+    "hongkong": 19.14,
+    "singapore": 16.8,
+    "busan": 9.45,
+    "shanghai": 8.61,
+    "kaohsiung": 8.49,
+    "shenzhen": 7.61,
+    "rotterdam": 6.52,
+    "la": 6.11,
+    "hamburg": 5.37,
+    "antwerp": 4.78,
+    "portklang": 4.53,
+    "longbeach": 4.53,
+    "dubai": 4.19,
+    "nynj": 3.75,
+    "qingdao": 3.41,
+    "tianjin": 2.41,
+    "yokohama": 2.37,
+    "guangzhou": 2.18,
+    "kobe": 2.04,
+    "keelung": 1.92,
+    "ningbo": 1.86
+   }
+  },
+  {
+   "t": 2003,
+   "values": {
+    "hongkong": 20.45,
+    "singapore": 18.41,
+    "shanghai": 11.28,
+    "shenzhen": 10.65,
+    "busan": 10.41,
+    "kaohsiung": 8.84,
+    "la": 7.18,
+    "rotterdam": 7.14,
+    "hamburg": 6.14,
+    "antwerp": 5.45,
+    "dubai": 5.15,
+    "portklang": 4.84,
+    "longbeach": 4.66,
+    "qingdao": 4.24,
+    "nynj": 4.07,
+    "tianjin": 3.02,
+    "ningbo": 2.77,
+    "guangzhou": 2.76,
+    "yokohama": 2.5,
+    "kobe": 2.05,
+    "keelung": 2.0
+   }
+  },
+  {
+   "t": 2004,
+   "values": {
+    "hongkong": 21.98,
+    "singapore": 21.33,
+    "shanghai": 14.56,
+    "shenzhen": 13.62,
+    "busan": 11.43,
+    "kaohsiung": 9.71,
+    "rotterdam": 8.28,
+    "la": 7.32,
+    "hamburg": 7.0,
+    "dubai": 6.43,
+    "antwerp": 6.06,
+    "longbeach": 5.78,
+    "portklang": 5.24,
+    "qingdao": 5.14,
+    "nynj": 4.48,
+    "ningbo": 4.01,
+    "tianjin": 3.81,
+    "guangzhou": 3.31,
+    "yokohama": 2.72,
+    "kobe": 2.18,
+    "keelung": 2.07
+   }
+  },
+  {
+   "t": 2005,
+   "values": {
+    "singapore": 23.19,
+    "hongkong": 22.43,
+    "shanghai": 18.08,
+    "shenzhen": 16.2,
+    "busan": 11.84,
+    "kaohsiung": 9.47,
+    "rotterdam": 9.29,
+    "hamburg": 8.09,
+    "dubai": 7.62,
+    "la": 7.48,
+    "longbeach": 6.71,
+    "antwerp": 6.48,
+    "qingdao": 6.31,
+    "portklang": 5.54,
+    "ningbo": 5.21,
+    "tianjin": 4.8,
+    "nynj": 4.79,
+    "guangzhou": 4.68
+   }
+  },
+  {
+   "t": 2006,
+   "values": {
+    "singapore": 24.79,
+    "hongkong": 23.54,
+    "shanghai": 21.71,
+    "shenzhen": 18.47,
+    "busan": 12.04,
+    "kaohsiung": 9.78,
+    "rotterdam": 9.65,
+    "dubai": 8.92,
+    "hamburg": 8.86,
+    "la": 8.47,
+    "qingdao": 7.7,
+    "longbeach": 7.29,
+    "ningbo": 7.07,
+    "antwerp": 7.02,
+    "guangzhou": 6.6,
+    "portklang": 6.33,
+    "tianjin": 5.95,
+    "nynj": 5.09
+   }
+  },
+  {
+   "t": 2007,
+   "values": {
+    "singapore": 27.93,
+    "shanghai": 26.15,
+    "hongkong": 23.88,
+    "shenzhen": 21.1,
+    "busan": 13.27,
+    "rotterdam": 10.79,
+    "dubai": 10.65,
+    "kaohsiung": 10.26,
+    "hamburg": 9.89,
+    "qingdao": 9.46,
+    "ningbo": 9.35,
+    "guangzhou": 9.2,
+    "la": 8.36,
+    "antwerp": 8.18,
+    "longbeach": 7.31,
+    "portklang": 7.12,
+    "tianjin": 7.1,
+    "nynj": 5.3
+   }
+  },
+  {
+   "t": 2008,
+   "values": {
+    "singapore": 29.92,
+    "shanghai": 27.98,
+    "hongkong": 24.25,
+    "shenzhen": 21.41,
+    "busan": 13.43,
+    "dubai": 11.83,
+    "ningbo": 11.23,
+    "guangzhou": 11.0,
+    "rotterdam": 10.78,
+    "qingdao": 10.32,
+    "hamburg": 9.74,
+    "kaohsiung": 9.68,
+    "antwerp": 8.66,
+    "tianjin": 8.5,
+    "portklang": 7.97,
+    "la": 7.85,
+    "longbeach": 6.49,
+    "nynj": 5.26
+   }
+  },
+  {
+   "t": 2009,
+   "values": {
+    "singapore": 25.87,
+    "shanghai": 25.0,
+    "hongkong": 20.98,
+    "shenzhen": 18.25,
+    "busan": 11.95,
+    "guangzhou": 11.19,
+    "dubai": 11.12,
+    "ningbo": 10.5,
+    "qingdao": 10.26,
+    "rotterdam": 9.74,
+    "tianjin": 8.7,
+    "kaohsiung": 8.58,
+    "portklang": 7.31,
+    "antwerp": 7.31,
+    "hamburg": 7.01,
+    "la": 6.75,
+    "longbeach": 5.07,
+    "nynj": 4.56
+   }
+  },
+  {
+   "t": 2010,
+   "values": {
+    "shanghai": 29.07,
+    "singapore": 28.43,
+    "hongkong": 23.53,
+    "shenzhen": 22.51,
+    "busan": 14.16,
+    "ningbo": 13.14,
+    "guangzhou": 12.55,
+    "qingdao": 12.01,
+    "dubai": 11.6,
+    "rotterdam": 11.15,
+    "tianjin": 10.08,
+    "portklang": 8.87,
+    "kaohsiung": 8.87,
+    "antwerp": 8.47,
+    "hamburg": 7.9,
+    "la": 7.83,
+    "longbeach": 6.26,
+    "nynj": 5.29
+   }
+  },
+  {
+   "t": 2011,
+   "values": {
+    "shanghai": 31.7,
+    "singapore": 29.94,
+    "hongkong": 24.38,
+    "shenzhen": 22.57,
+    "busan": 16.18,
+    "ningbo": 14.69,
+    "guangzhou": 14.4,
+    "qingdao": 13.02,
+    "dubai": 13.0,
+    "rotterdam": 11.88,
+    "tianjin": 11.5,
+    "kaohsiung": 9.64,
+    "portklang": 9.6,
+    "hamburg": 9.02,
+    "antwerp": 8.66,
+    "la": 7.94,
+    "longbeach": 6.06,
+    "nynj": 5.5
+   }
+  },
+  {
+   "t": 2012,
+   "values": {
+    "shanghai": 32.53,
+    "singapore": 31.65,
+    "hongkong": 23.12,
+    "shenzhen": 22.94,
+    "busan": 17.05,
+    "ningbo": 16.67,
+    "guangzhou": 14.74,
+    "qingdao": 14.5,
+    "dubai": 13.27,
+    "tianjin": 12.3,
+    "rotterdam": 11.87,
+    "portklang": 10.0,
+    "kaohsiung": 9.78,
+    "hamburg": 8.86,
+    "antwerp": 8.63,
+    "la": 8.08,
+    "longbeach": 6.05,
+    "nynj": 5.53
+   }
+  },
+  {
+   "t": 2013,
+   "values": {
+    "shanghai": 33.62,
+    "singapore": 32.24,
+    "shenzhen": 23.28,
+    "hongkong": 22.35,
+    "busan": 17.69,
+    "ningbo": 17.35,
+    "qingdao": 15.52,
+    "guangzhou": 15.31,
+    "dubai": 13.64,
+    "tianjin": 13.01,
+    "rotterdam": 11.62,
+    "portklang": 10.35,
+    "kaohsiung": 9.94,
+    "hamburg": 9.3,
+    "antwerp": 8.58,
+    "la": 7.87,
+    "longbeach": 6.73,
+    "nynj": 5.47
+   }
+  },
+  {
+   "t": 2014,
+   "values": {
+    "shanghai": 35.27,
+    "singapore": 33.87,
+    "shenzhen": 23.8,
+    "hongkong": 22.37,
+    "ningbo": 19.45,
+    "busan": 18.42,
+    "qingdao": 16.62,
+    "guangzhou": 16.16,
+    "dubai": 14.75,
+    "tianjin": 14.05,
+    "rotterdam": 12.45,
+    "portklang": 10.74,
+    "kaohsiung": 10.59,
+    "hamburg": 9.73,
+    "antwerp": 9.14,
+    "la": 8.34,
+    "longbeach": 6.82,
+    "nynj": 5.77
+   }
+  },
+  {
+   "t": 2015,
+   "values": {
+    "shanghai": 36.54,
+    "singapore": 30.92,
+    "shenzhen": 24.2,
+    "ningbo": 20.62,
+    "hongkong": 20.07,
+    "busan": 19.47,
+    "guangzhou": 17.62,
+    "qingdao": 17.51,
+    "dubai": 15.59,
+    "tianjin": 14.09,
+    "rotterdam": 12.23,
+    "portklang": 11.89,
+    "kaohsiung": 10.26,
+    "antwerp": 9.65,
+    "hamburg": 8.82,
+    "la": 8.16,
+    "longbeach": 7.19,
+    "nynj": 6.37
+   }
+  },
+  {
+   "t": 2016,
+   "values": {
+    "shanghai": 37.13,
+    "singapore": 30.9,
+    "shenzhen": 23.98,
+    "ningbo": 21.56,
+    "busan": 19.85,
+    "hongkong": 19.81,
+    "guangzhou": 18.86,
+    "qingdao": 18.01,
+    "dubai": 14.77,
+    "tianjin": 14.49,
+    "portklang": 13.17,
+    "rotterdam": 12.38,
+    "kaohsiung": 10.46,
+    "antwerp": 10.04,
+    "hamburg": 8.91,
+    "la": 8.86,
+    "longbeach": 6.78,
+    "nynj": 6.25
+   }
+  },
+  {
+   "t": 2017,
+   "values": {
+    "shanghai": 40.23,
+    "singapore": 33.67,
+    "shenzhen": 25.21,
+    "ningbo": 24.61,
+    "hongkong": 20.77,
+    "busan": 20.49,
+    "guangzhou": 20.37,
+    "qingdao": 18.26,
+    "dubai": 15.37,
+    "tianjin": 15.04,
+    "rotterdam": 13.73,
+    "portklang": 11.98,
+    "antwerp": 10.45,
+    "kaohsiung": 10.27,
+    "la": 9.34,
+    "hamburg": 8.86,
+    "longbeach": 7.54,
+    "nynj": 6.71
+   }
+  },
+  {
+   "t": 2018,
+   "values": {
+    "shanghai": 42.01,
+    "singapore": 36.6,
+    "ningbo": 26.35,
+    "shenzhen": 25.74,
+    "guangzhou": 21.99,
+    "busan": 21.66,
+    "hongkong": 19.6,
+    "qingdao": 19.32,
+    "tianjin": 15.97,
+    "dubai": 14.95,
+    "rotterdam": 14.51,
+    "portklang": 12.32,
+    "antwerp": 11.1,
+    "kaohsiung": 10.45,
+    "la": 9.46,
+    "hamburg": 8.73,
+    "longbeach": 8.09,
+    "nynj": 7.18
+   }
+  },
+  {
+   "t": 2019,
+   "values": {
+    "shanghai": 43.3,
+    "singapore": 37.2,
+    "ningbo": 27.53,
+    "shenzhen": 25.77,
+    "guangzhou": 23.24,
+    "busan": 21.99,
+    "qingdao": 21.01,
+    "hongkong": 18.36,
+    "tianjin": 17.26,
+    "rotterdam": 14.81,
+    "dubai": 14.11,
+    "portklang": 13.58,
+    "antwerp": 11.86,
+    "kaohsiung": 10.43,
+    "la": 9.34,
+    "hamburg": 9.27,
+    "longbeach": 7.63,
+    "nynj": 7.47
+   }
+  },
+  {
+   "t": 2020,
+   "values": {
+    "shanghai": 43.5,
+    "singapore": 36.6,
+    "ningbo": 28.72,
+    "shenzhen": 26.55,
+    "guangzhou": 23.19,
+    "qingdao": 22.0,
+    "busan": 21.59,
+    "hongkong": 20.07,
+    "tianjin": 18.35,
+    "rotterdam": 14.35,
+    "dubai": 13.49,
+    "portklang": 13.24,
+    "antwerp": 12.03,
+    "kaohsiung": 9.62,
+    "la": 9.21,
+    "hamburg": 8.54,
+    "longbeach": 8.11,
+    "nynj": 7.59
+   }
+  },
+  {
+   "t": 2021,
+   "values": {
+    "shanghai": 47.03,
+    "singapore": 37.47,
+    "ningbo": 31.07,
+    "shenzhen": 28.77,
+    "guangzhou": 24.18,
+    "qingdao": 23.71,
+    "busan": 22.71,
+    "tianjin": 20.27,
+    "hongkong": 17.8,
+    "rotterdam": 15.3,
+    "dubai": 13.74,
+    "portklang": 13.72,
+    "antwerp": 12.02,
+    "la": 10.68,
+    "kaohsiung": 9.86,
+    "longbeach": 9.38,
+    "nynj": 8.98,
+    "hamburg": 8.71
+   }
+  },
+  {
+   "t": 2022,
+   "values": {
+    "shanghai": 47.3,
+    "singapore": 37.29,
+    "ningbo": 33.35,
+    "shenzhen": 30.04,
+    "qingdao": 25.67,
+    "guangzhou": 24.86,
+    "busan": 22.08,
+    "tianjin": 21.02,
+    "hongkong": 16.68,
+    "rotterdam": 14.46,
+    "dubai": 13.97,
+    "antwerp": 13.5,
+    "portklang": 13.22,
+    "la": 9.91,
+    "kaohsiung": 9.49,
+    "nynj": 9.49,
+    "longbeach": 9.13,
+    "hamburg": 8.26
+   }
+  },
+  {
+   "t": 2023,
+   "values": {
+    "shanghai": 49.16,
+    "singapore": 39.01,
+    "ningbo": 35.3,
+    "shenzhen": 29.88,
+    "qingdao": 28.77,
+    "guangzhou": 25.41,
+    "busan": 23.04,
+    "tianjin": 22.19,
+    "dubai": 14.47,
+    "hongkong": 14.34,
+    "portklang": 14.06,
+    "rotterdam": 13.4,
+    "antwerp": 12.53,
+    "kaohsiung": 8.83,
+    "la": 8.63,
+    "longbeach": 8.02,
+    "nynj": 7.81,
+    "hamburg": 7.7
+   }
+  },
+  {
+   "t": 2024,
+   "values": {
+    "shanghai": 51.51,
+    "singapore": 41.12,
+    "ningbo": 39.31,
+    "shenzhen": 33.38,
+    "qingdao": 30.87,
+    "guangzhou": 26.07,
+    "busan": 24.4,
+    "tianjin": 23.29,
+    "dubai": 15.54,
+    "portklang": 14.64,
+    "rotterdam": 13.82,
+    "hongkong": 13.67,
+    "antwerp": 13.53,
+    "la": 10.3,
+    "longbeach": 9.65,
+    "kaohsiung": 9.23,
+    "nynj": 8.7,
+    "hamburg": 7.8
+   }
+  }
+ ],
+ "milestones": [
+  {
+   "t": 1980,
+   "title": "The Atlantic era",
+   "text": "New York-New Jersey (1.95M TEU) and Rotterdam (1.90M) lead the container age, with Hong Kong and Kobe close behind."
+  },
+  {
+   "t": 1987,
+   "title": "Hong Kong takes the lead",
+   "text": "Feeding southern China's factories, Hong Kong overtakes Rotterdam to become the world's busiest container port."
+  },
+  {
+   "t": 1990,
+   "title": "Hong Kong vs Singapore",
+   "text": "Both pass 5M TEU. The two hubs trade the No. 1 spot for the next 20 years, with Singapore ahead in 1990-91 and 1998."
+  },
+  {
+   "t": 1995,
+   "title": "Kobe earthquake",
+   "text": "The January 1995 Great Hanshin earthquake halves Kobe's throughput. The port, 4th in the world in 1980, never regains its rank."
+  },
+  {
+   "t": 2005,
+   "title": "Singapore on top",
+   "text": "Singapore passes Hong Kong in 2005 and holds No. 1 through 2009, while Shanghai and Shenzhen close in fast."
+  },
+  {
+   "t": 2010,
+   "title": "Shanghai becomes No. 1",
+   "text": "Shanghai handles 29.1M TEU in 2010, edging Singapore's 28.4M. It has been the world's busiest container port ever since."
+  },
+  {
+   "t": 2018,
+   "title": "Ningbo-Zhoushan reaches No. 3",
+   "text": "Ningbo-Zhoushan passes Shenzhen for third place. Seven of the world's ten busiest container ports are now Chinese, Hong Kong included."
+  },
+  {
+   "t": 2024,
+   "title": "Hong Kong falls out of the top 10",
+   "text": "Once No. 1, Hong Kong slides to 13.7M TEU in 2024 as cargo shifts to Shenzhen and other mainland ports."
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World's Largest Merchandise Exporters (1980–2024) — Overtake</title>
+  <meta name="description" content="Annual goods exports by country in current dollars, from the oil-boom year of 1980 to China's $3.5 trillion juggernaut. Animated bar chart race, 1980–2024.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/exporters/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="World's Largest Merchandise Exporters (1980–2024) — Overtake">
+  <meta property="og:description" content="Annual goods exports by country in current dollars, from the oil-boom year of 1980 to China's $3.5 trillion juggernaut. Animated bar chart race, 1980–2024.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/exporters/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/exporters.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="World's Largest Merchandise Exporters (1980–2024) — Overtake">
+  <meta name="twitter:description" content="Annual goods exports by country in current dollars, from the oil-boom year of 1980 to China's $3.5 trillion juggernaut. Animated bar chart race, 1980–2024.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/exporters.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=0dc17e2e0d">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=0dc17e2e0d","/js/engine/renderer.js":"/js/engine/renderer.js?v=0dc17e2e0d","/js/engine/format.js":"/js/engine/format.js?v=0dc17e2e0d","/js/engine/controller.js":"/js/engine/controller.js?v=0dc17e2e0d","/js/engine/controls.js":"/js/engine/controls.js?v=0dc17e2e0d","/js/engine/preview.js":"/js/engine/preview.js?v=0dc17e2e0d"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"World's Largest Merchandise Exporters","description":"Annual goods exports by country in current dollars, from the oil-boom year of 1980 to China's $3.5 trillion juggernaut. West Germany and the United States trade the crown five times between 1986 and 2003, Japan surges through the 1980s, then China climbs from under 1% of world exports to #1 in 2009 and never looks back.","url":"https://beautifuldata.netlify.app/races/exporters/","temporalCoverage":"1980/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://stats.wto.org/"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#trade" aria-current="true">Trade</a>
+      <a href="/#health">Food &amp; Health</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="trade" data-race-id="exporters">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#trade">Transport &amp; Trade</a><span aria-hidden="true">/</span><span class="num">1980–2024</span></p>
+    <h1>World's Largest Merchandise Exporters</h1>
+    <p class="blurb">Annual goods exports by country in current dollars, from the oil-boom year of 1980 to China's $3.5 trillion juggernaut. West Germany and the United States trade the crown five times between 1986 and 2003, Japan surges through the 1980s, then China climbs from under 1% of world exports to #1 in 2009 and never looks back.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>18 contenders</span><span>6 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: World's Largest Merchandise Exporters"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1980" aria-valuemax="2024">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://stats.wto.org/" rel="noopener">WTO Stats via World Bank WDI (TX.VAL.MRCH.CD.WT); UN Comtrade</a></span>
+    <span>Calendar-year goods exports, current US$. Germany = West Germany before 1991; Belgium = Belgium-Luxembourg to 1998 (UN Comtrade). USSR 1980-90 approximated from Soviet ruble totals at the official rate.</span>
+    <span>Updated 2026-10-29</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
+  </p>
+
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>3 different leaders in 44 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1980" style="left:0.000%;width:12.923%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="United States · 1980–1985" aria-label="United States led 1980–1985. Jump there."><span>United States</span></button><button type="button" class="reign" data-t="1985.686274509804" style="left:12.923%;width:5.353%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="Germany · 1985–1988" aria-label="Germany led 1985–1988. Jump there."></button><button type="button" class="reign" data-t="1988.0416666666667" style="left:18.277%;width:3.223%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="United States · 1988–1989" aria-label="United States led 1988–1989. Jump there."></button><button type="button" class="reign" data-t="1989.46" style="left:21.500%;width:2.561%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="Germany · 1989–1990" aria-label="Germany led 1989–1990. Jump there."></button><button type="button" class="reign" data-t="1990.5869565217392" style="left:24.061%;width:27.621%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="United States · 1990–2002" aria-label="United States led 1990–2002. Jump there."><span>United States</span></button><button type="button" class="reign" data-t="2002.7403846153845" style="left:51.683%;width:12.305%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="Germany · 2002–2008" aria-label="Germany led 2002–2008. Jump there."><span>Germany</span></button><button type="button" class="reign" data-t="2008.1546391752577" style="left:63.988%;width:36.012%;--c:#F43F5E;--ink:rgba(255,255,255,0.95)" title="China · 2008–2024" aria-label="China led 2008–2024. Jump there."><span>China</span></button></div>
+    <div class="reign-axis num"><span>1980</span><span>2024</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
+      <ol>
+        <li><span class="h-label">United States</span><span class="h-bar"><i style="width:100.0%;background:#4C8DFF"></i></span><span class="h-val num">19 yrs</span></li>
+        <li><span class="h-label">China</span><span class="h-bar"><i style="width:82.3%;background:#F43F5E"></i></span><span class="h-val num">16 yrs</span></li>
+        <li><span class="h-label">Germany</span><span class="h-bar"><i style="width:46.2%;background:#FFD84D"></i></span><span class="h-val num">8.9 yrs</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1981">
+        <span class="m-year num">1981</span>
+        <span class="m-body"><span class="m-title">Oil money: Saudi Arabia hits #4</span><span class="m-text">Riding $35 crude, Saudi Arabia exports $120B of goods in 1981, beating France and the UK. By 1985 the oil glut cuts that by 75%.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1984">
+        <span class="m-year num">1984</span>
+        <span class="m-body"><span class="m-title">Japan draws level with Germany</span><span class="m-text">Japan's car and electronics boom lifts exports to $170B in 1984, within $2B of West Germany and closing on the United States.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1986">
+        <span class="m-year num">1986</span>
+        <span class="m-body"><span class="m-title">West Germany becomes No. 1</span><span class="m-text">After the Plaza Accord weakens the dollar, West Germany ($243B) passes the US ($227B) as the world's top merchandise exporter.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1991">
+        <span class="m-year num">1991</span>
+        <span class="m-body"><span class="m-title">US retakes the crown</span><span class="m-text">Reunification sucks German output into the east while US exports climb past $420B. America leads every year from 1991 to 2002.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2003">
+        <span class="m-year num">2003</span>
+        <span class="m-body"><span class="m-title">Germany's Exportweltmeister run</span><span class="m-text">A strong euro and booming machinery sales put Germany back on top in 2003 ($752B vs $725B), a title it holds for six straight years.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2007">
+        <span class="m-year num">2007</span>
+        <span class="m-body"><span class="m-title">China passes the United States</span><span class="m-text">China's exports reach $1.22 trillion in 2007, overtaking the US - just six years after joining the WTO in December 2001.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2009">
+        <span class="m-year num">2009</span>
+        <span class="m-body"><span class="m-title">China becomes world's top exporter</span><span class="m-text">As the financial crisis crushes trade, China ($1.20T) slips past Germany ($1.12T) for #1. It has led every year since.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2021">
+        <span class="m-year num">2021</span>
+        <span class="m-body"><span class="m-title">China tops $3 trillion</span><span class="m-text">Pandemic demand for electronics and medical goods lifts China's exports to $3.3T in 2021 - nearly double the second-placed United States.</span></span>
+      </button></li>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">6</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">3</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">44</b><span>years covered</span></div>
+          <div class="fact"><b class="num">18</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>China</b><span>longest unbroken reign — 16 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#15 → #1</b><span>China ranked #15 when it first appeared in 1980 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2024</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">China</span><span class="s-val num">$3.58T</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">United States</span><span class="s-val num">$2.06T</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#FFD84D" aria-hidden="true"></span><span class="s-label">Germany</span><span class="s-val num">$1.68T</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#FF8C42" aria-hidden="true"></span><span class="s-label">Netherlands</span><span class="s-val num">$921B</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#FF6FA5" aria-hidden="true"></span><span class="s-label">Japan</span><span class="s-val num">$707B</span></li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Trade races</h2><a href="/#trade">See all 4 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/car-makers/" style="--accent:#E879F9;--accent-soft:rgba(232,121,249,0.14)">
+      <div class="card-preview"><canvas data-race="car-makers" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Largest Automakers</h3>
+        <p class="card-meta"><span>1990–2024</span><span>·</span><span>16 contenders</span><span>·</span><span>5 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Toyota</span><span class="cl-val">10.82M</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/airliner-orders/" style="--accent:#E879F9;--accent-soft:rgba(232,121,249,0.14)">
+      <div class="card-preview"><canvas data-race="airliner-orders" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Best-Selling Jetliners</h3>
+        <p class="card-meta"><span>1958–2026</span><span>·</span><span>25 contenders</span><span>·</span><span>4 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFB020" aria-hidden="true"></span><span class="cl-name">Airbus A320 family</span><span class="cl-val">12,900</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/container-ports/" style="--accent:#E879F9;--accent-soft:rgba(232,121,249,0.14)">
+      <div class="card-preview"><canvas data-race="container-ports" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Busiest Container Ports</h3>
+        <p class="card-meta"><span>1980–2024</span><span>·</span><span>23 contenders</span><span>·</span><span>8 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Shanghai</span><span class="cl-val">51.5M TEU</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/container-ports/"><span class="dir">← Previous race</span>World's Busiest Container Ports</a>
+    <a href="/races/car-makers/" class="pg-next"><span class="dir">Next race →</span>World's Largest Automakers</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>93 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">12</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">15</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">10</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">13</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">9</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#trade" style="--c:#E879F9"><span class="fc-dot" aria-hidden="true"></span>Trade<span class="fc-n num">4</span></a>
+      <a href="/#health" style="--c:#BEF264"><span class="fc-dot" aria-hidden="true"></span>Food &amp; Health<span class="fc-n num">5</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
+  </div>
+  <div class="inner">
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="application/json" id="preview-data">{"car-makers":{"entities":[{"label":"Toyota","color":"#F43F5E"},{"label":"Volkswagen Group","color":"#67E8F9"},{"label":"General Motors","color":"#4C8DFF"},{"label":"Ford","color":"#B388FF"},{"label":"Hyundai-Kia","color":"#23C8A8"},{"label":"Stellantis","color":"#8B5CF6"},{"label":"Honda","color":"#FCA5A5"},{"label":"Nissan","color":"#D4D4D8"},{"label":"PSA (Peugeot-Citroën)","color":"#94A3B8"},{"label":"Chrysler","color":"#C4B5A0"}],"frames":[[4.9,3.06,7.45,5.8,1,0,1.9,3,2.2,1.6],[4.9,3.318,7.303,5.8,1.117,0,1.9,2.941,2.141,1.776],[4.866,3.436,7.355,5.938,1.269,0,1.9,2.848,2.083,2.038],[4.748,3.219,7.883,6.407,1.503,0,1.9,2.672,2.024,2.507],[4.838,3.423,8.134,6.634,1.738,0,1.969,2.634,1.986,2.769],[5.072,3.921,8.193,6.693,1.972,0,2.086,2.693,1.963,2.886],[5.152,4.378,7.838,6.752,1.638,0,2.203,2.648,2.12,3.055],[5.278,4.792,7.614,6.862,1.424,0,2.321,2.603,2.333,3.179],[5.717,5.033,8.259,7.214,2.128,0,2.438,2.621,2.691,3.062],[5.978,5.132,8.545,7.174,2.555,0,2.583,2.602,3.018,2.834],[6.217,5.016,8.572,6.976,2.672,0,2.795,2.718,3.231,2.772],[6.73,5.016,8.6,6.746,2.879,0,2.895,3.03,3.288,2.71],[7.551,5.091,9.012,6.801,3.228,0,3.25,3.402,3.39,2.783],[8.173,5.358,9.151,6.767,3.66,0,3.458,3.548,3.385,2.799],[9.04,5.92,9.205,6.579,3.896,0,3.778,3.563,3.395,2.692],[9.134,6.237,8.778,5.952,4.083,0,3.842,3.686,3.33,2.287],[8.09,6.3,7.692,4.991,4.527,0,3.484,3.432,3.207,1.487],[8.378,7.139,8.327,5.276,5.664,0,3.623,4.03,3.572,1.581],[8.136,8.374,9.057,5.697,6.645,0,3.194,4.698,3.49,0],[9.813,9.404,9.406,5.852,7.241,0,4.096,4.932,2.929,0],[10.092,9.914,9.804,6.326,7.757,0,4.338,5.089,2.874,0],[10.18,10.01,9.846,6.519,8.006,0,4.596,5.378,2.959,0],[10.17,10.231,9.959,6.648,7.907,0,4.946,5.531,3.113,0],[10.379,10.725,9.614,6.611,7.272,0,5.193,5.811,3.613,0],[10.611,10.849,8.289,5.899,7.371,0,5.256,5.585,3.825,0],[10.364,10.455,7.444,5.018,6.929,0,4.978,4.829,3.179,0],[9.997,9.102,6.569,4.069,6.504,2.964,4.323,4.06,1.298,0],[10.487,8.474,6.061,4.13,6.788,6.048,3.851,3.598,0,0],[11.101,9.071,6.147,4.379,7.222,6.141,3.953,3.367,0,0],[10.82,9.03,6,4.47,7.23,5.5,3.8,3.35,0,0]],"t0":1990,"t1":2024,"era":0},"airliner-orders":{"entities":[{"label":"Airbus A320 family","color":"#FFB020"},{"label":"Boeing 737","color":"#4C8DFF"},{"label":"Boeing 727","color":"#67E8F9"},{"label":"Boeing 707 / 720","color":"#D4D4D8"},{"label":"de Havilland Comet","color":"#C4B5A0"},{"label":"DC-9 / MD-80 / MD-90 / 717","color":"#B388FF"},{"label":"Douglas DC-8","color":"#FCA5A5"},{"label":"Sud Aviation Caravelle","color":"#E879F9"},{"label":"Embraer E-Jets","color":"#34D399"},{"label":"Bombardier CRJ","color":"#FF5C4D"},{"label":"Boeing 747","color":"#FFD84D"},{"label":"Convair 880 / 990","color":"#FDE68A"}],"frames":[[0,0,0,0,40,0,0,0,0,0,0,0],[0,0,0,118.733,75.56,0,54.733,34.828,0,0,0,11.121],[0,0,0,306.414,102.414,0,170.31,120.241,0,0,0,88.534],[0,0,113.44,402.836,114,0.56,218.474,175.802,0,0,0,102],[0,1.931,421.828,596.966,114,147.862,297.793,232.655,0,0,0,102],[0,206.293,759.293,819.353,114,533.121,493.543,266.534,0,0,3.414,102],[0,293.931,873.19,857.897,114,655.172,552.897,280.448,0,0,171.724,102],[0,366.716,1051.129,884.491,114,737.552,556,282,0,0,238.086,102],[0,479.586,1237.897,908.69,114,847.276,556,282,0,0,294.069,102],[0,571.888,1470.724,932.017,114,906.112,556,282,0,0,369.526,102],[0,791.345,1758.448,940.414,114,1009.431,556,282,0,0,524.466,102],[0,1005.198,1823.621,957.621,114,1130.414,556,282,0,0,589.241,102],[0,1245.207,1831,969.793,114,1280.103,556,282,0,0,643.69,102],[13.103,1619.129,1831,981,114,1519.276,556,282,0,0,705.655,102],[154.569,2009.776,1831,992.655,114,1823.552,556,282,0,0,837.138,102],[401.784,2487.172,1831,1009,114,2045.095,556,282,0,25.052,981.379,102],[549.138,2757.862,1831,1010,114,2115.862,556,282,0,112.379,1069.276,102],[802.69,3060.086,1831,1010,114,2207.164,556,282,0,235.121,1151.991,102],[1304.052,3766.621,1831,1010,114,2314.879,556,282,0,460.414,1252.81,102],[1886.043,4388.457,1831,1010,114,2396.517,556,282,0,819.466,1319.819,102],[2461.586,4843.724,1831,1010,114,2425.379,556,282,71.241,1141.414,1358.379,102],[3257.905,5528.879,1831,1010,114,2439,556,282,307.983,1333.362,1392.552,102],[4187.224,6320.345,1831,1010,114,2439,556,282,665.517,1475.759,1418,102],[5186.267,7228.233,1831,1010,114,2439,556,282,892.069,1575.353,1443.302,102],[6335.207,8299.828,1831,1010,114,2439,556,282,1100.69,1697.483,1499.034,102],[7570.121,9476.371,1831,1010,114,2439,556,282,1336.724,1790.422,1531.741,102],[9014.552,10525.017,1831,1010,114,2439,556,282,1559.776,1879.517,1552.466,102],[10180.448,10880.336,1831,1010,114,2439,556,282,1684.491,1945,1567.043,102],[11491.345,11760.517,1831,1010,114,2439,556,282,1832.69,1945,1573,102],[12900,12739,1831,1010,114,2439,556,282,1995,1945,1573,102]],"t0":1958,"t1":2026.75,"era":0},"container-ports":{"entities":[{"label":"Shanghai","color":"#F43F5E"},{"label":"Singapore","color":"#FF5C4D"},{"label":"Rotterdam","color":"#FF8C42"},{"label":"Hong Kong","color":"#E879F9"},{"label":"New York-New Jersey","color":"#6E7BFF"},{"label":"Ningbo-Zhoushan","color":"#FFB020"},{"label":"Shenzhen","color":"#2FB4FF"},{"label":"Busan","color":"#4C8DFF"},{"label":"Kaohsiung","color":"#23C8A8"},{"label":"Kobe","color":"#FF6FA5"},{"label":"Qingdao","color":"#34D399"},{"label":"Guangzhou","color":"#B388FF"}],"frames":[[0,0.92,1.9,1.46,1.95,0,0,0.63,0.98,1.46,0,0],[0.061,1.157,2.128,1.712,2.077,0,0,0.788,1.259,1.581,0,0],[0.121,1.393,2.355,1.964,2.205,0,0,0.946,1.538,1.703,0,0],[0.182,1.63,2.583,2.216,2.332,0,0,1.103,1.818,1.824,0,0],[0.226,2.23,2.784,2.818,2.146,0,0,1.438,2.408,1.707,0,0],[0.345,3.137,3.063,3.753,2.064,0,0,2.012,2.956,1.947,0,0],[0.433,4.449,3.607,4.526,1.987,0.002,0.003,2.18,3.391,2.331,0.014,0.008],[0.534,5.921,3.732,5.758,1.87,0.026,0.055,2.561,3.751,2.625,0.171,0.105],[0.759,7.766,4.126,8.14,1.97,0.054,0.137,2.794,4.054,2.622,0.281,0.251],[1.11,9.934,4.409,10.412,2.022,0.106,0.286,3.568,4.81,2.844,0.416,0.392],[1.606,12.038,4.816,12.707,2.27,0.167,0.333,4.54,5.052,1.601,0.636,0.527],[2.356,13.768,5.209,14.226,2.401,0.241,0.976,5.075,5.494,2.03,0.962,0.65],[3.306,15.274,6.078,14.917,2.551,0.402,2.163,6.051,6.419,1.962,1.278,0.918],[5.224,16.737,6.297,17.579,2.998,0.817,3.711,7.237,7.309,2.251,1.96,1.361],[6.888,15.867,6.201,18.146,3.424,1.367,5.691,8.403,7.769,2.017,2.826,1.839],[10.636,18.021,6.99,20.134,3.993,2.55,9.916,10.178,8.756,2.048,4.04,2.62],[15.531,21.843,8.559,22.104,4.566,4.341,14.332,11.543,9.644,1.579,5.463,3.688],[20.959,24.459,9.576,23.31,5.028,6.685,18,11.999,9.716,0,7.412,6.203],[26.718,28.548,10.787,23.995,5.288,9.933,21.196,13.32,10.08,0,9.727,9.759],[25.514,26.568,9.919,21.544,4.681,10.626,18.795,12.205,8.77,0,10.27,11.157],[29.977,28.951,11.402,23.823,5.362,13.674,22.531,14.857,9.136,0,12.358,13.188],[32.416,31.414,11.871,23.294,5.526,16.397,22.889,16.93,9.761,0,14.296,14.693],[34.246,32.858,11.935,22.358,5.584,18.147,23.477,17.967,10.187,0,15.937,15.632],[36.409,31.225,12.253,20.308,6.308,20.499,24.159,19.361,10.294,0,17.418,17.469],[38.413,32.046,12.939,20.207,6.44,22.822,24.489,20.115,10.381,0,18.113,19.485],[41.887,36.398,14.456,19.681,7.148,26.23,25.703,21.579,10.438,0,19.247,21.878],[43.39,36.931,14.604,19.127,7.524,28.063,26.12,21.811,10.067,0,21.454,23.218],[46.908,37.44,15.267,17.878,8.932,30.989,28.693,22.671,9.852,0,23.651,24.146],[48.198,38.12,13.948,15.55,8.679,34.291,29.963,22.543,9.171,0,27.167,25.126],[51.51,41.12,13.82,13.67,8.7,39.31,33.38,24.4,9.23,0,30.87,26.07]],"t0":1980,"t1":2024,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=0dc17e2e0d"></script>
+</body>
+</html>

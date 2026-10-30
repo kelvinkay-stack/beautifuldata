@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World's Largest Banks (2004–2025) — Overtake</title>
+  <meta name="description" content="Balance sheets of the world's biggest banks from 2004 to 2025, in US dollars. Animated bar chart race, 2004–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/largest-banks/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="World's Largest Banks (2004–2025) — Overtake">
+  <meta property="og:description" content="Balance sheets of the world's biggest banks from 2004 to 2025, in US dollars. Animated bar chart race, 2004–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/largest-banks/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/largest-banks.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="World's Largest Banks (2004–2025) — Overtake">
+  <meta name="twitter:description" content="Balance sheets of the world's biggest banks from 2004 to 2025, in US dollars. Animated bar chart race, 2004–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/largest-banks.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=0dc17e2e0d">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=0dc17e2e0d","/js/engine/renderer.js":"/js/engine/renderer.js?v=0dc17e2e0d","/js/engine/format.js":"/js/engine/format.js?v=0dc17e2e0d","/js/engine/controller.js":"/js/engine/controller.js?v=0dc17e2e0d","/js/engine/controls.js":"/js/engine/controls.js?v=0dc17e2e0d","/js/engine/preview.js":"/js/engine/preview.js?v=0dc17e2e0d"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"World's Largest Banks","description":"Balance sheets of the world's biggest banks from 2004 to 2025, in US dollars. European megabanks balloon into the financial crisis, and RBS, swollen by its ABN AMRO takeover, is briefly the largest bank on Earth. Then China's state-owned Big Four overtake everyone: ICBC has been #1 since 2012 and now holds more than $7.6 trillion.","url":"https://beautifuldata.netlify.app/races/largest-banks/","temporalCoverage":"2004/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://www.spglobal.com/market-intelligence/en/news-insights/research/the-worlds-largest-banks-by-assets"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy" aria-current="true">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#trade">Trade</a>
+      <a href="/#health">Food &amp; Health</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="economy" data-race-id="largest-banks">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#economy">Money &amp; Markets</a><span aria-hidden="true">/</span><span class="num">2004–2025</span></p>
+    <h1>World's Largest Banks</h1>
+    <p class="blurb">Balance sheets of the world's biggest banks from 2004 to 2025, in US dollars. European megabanks balloon into the financial crisis, and RBS, swollen by its ABN AMRO takeover, is briefly the largest bank on Earth. Then China's state-owned Big Four overtake everyone: ICBC has been #1 since 2012 and now holds more than $7.6 trillion.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>19 contenders</span><span>6 lead changes</span><span class="quality-flag">illustrative data</span></span>
+    </div>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: World's Largest Banks"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="2004" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://www.spglobal.com/market-intelligence/en/news-insights/research/the-worlds-largest-banks-by-assets" rel="noopener">Company annual reports via companiesmarketcap.com; cross-checked with S&amp;P Global Market Intelligence</a></span>
+    <span>Illustrative: a few Japan Post Bank years are estimated from yen totals. Reported assets at year-end FX; Japan = March FY. Mergers incl.: MUFG=MTFG to 2005, JPM+Bear/WaMu 2008, BofA+Merrill 2009, RBS+ABN AMRO 2007, UBS+CS 2023. CA = listed S.A.</span>
+    <span>Updated 2026-10-29</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
+  </p>
+
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>6 different leaders in 21 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="2004" style="left:0.000%;width:3.945%;--c:#2FB4FF;--ink:rgba(255,255,255,0.95)" title="Citigroup · 2004–2004" aria-label="Citigroup led 2004–2004. Jump there."></button><button type="button" class="reign" data-t="2004.828473413379" style="left:3.945%;width:4.399%;--c:#67E8F9;--ink:rgba(11,14,20,0.88)" title="Barclays · 2004–2005" aria-label="Barclays led 2004–2005. Jump there."></button><button type="button" class="reign" data-t="2005.7522441651706" style="left:8.344%;width:2.665%;--c:#B388FF;--ink:rgba(11,14,20,0.88)" title="Deutsche Bank · 2005–2006" aria-label="Deutsche Bank led 2005–2006. Jump there."></button><button type="button" class="reign" data-t="2006.3119415109668" style="left:11.009%;width:11.595%;--c:#FFB020;--ink:rgba(11,14,20,0.88)" title="RBS (NatWest Group) · 2006–2008" aria-label="RBS (NatWest Group) led 2006–2008. Jump there."><span>RBS (NatWest Group)</span></button><button type="button" class="reign" data-t="2008.7468827930174" style="left:22.604%;width:7.505%;--c:#23C8A8;--ink:rgba(255,255,255,0.95)" title="BNP Paribas · 2008–2010" aria-label="BNP Paribas led 2008–2010. Jump there."></button><button type="button" class="reign" data-t="2010.3228346456692" style="left:30.109%;width:6.634%;--c:#B388FF;--ink:rgba(11,14,20,0.88)" title="Deutsche Bank · 2010–2011" aria-label="Deutsche Bank led 2010–2011. Jump there."></button><button type="button" class="reign" data-t="2011.716049382716" style="left:36.743%;width:63.257%;--c:#FF5C4D;--ink:rgba(255,255,255,0.95)" title="ICBC · 2011–2025" aria-label="ICBC led 2011–2025. Jump there."><span>ICBC</span></button></div>
+    <div class="reign-axis num"><span>2004</span><span>2025</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
+      <ol>
+        <li><span class="h-label">ICBC</span><span class="h-bar"><i style="width:100.0%;background:#FF5C4D"></i></span><span class="h-val num">13 yrs</span></li>
+        <li><span class="h-label">RBS (NatWest Group)</span><span class="h-bar"><i style="width:18.3%;background:#FFB020"></i></span><span class="h-val num">2.4 yrs</span></li>
+        <li><span class="h-label">Deutsche Bank</span><span class="h-bar"><i style="width:14.7%;background:#B388FF"></i></span><span class="h-val num">2 yrs</span></li>
+        <li><span class="h-label">BNP Paribas</span><span class="h-bar"><i style="width:11.9%;background:#23C8A8"></i></span><span class="h-val num">1.6 yrs</span></li>
+        <li><span class="h-label">Barclays</span><span class="h-bar"><i style="width:7.0%;background:#67E8F9"></i></span><span class="h-val num">0.9 yrs</span></li>
+        <li><span class="h-label">Citigroup</span><span class="h-bar"><i style="width:6.2%;background:#2FB4FF"></i></span><span class="h-val num">0.8 yrs</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="2004">
+        <span class="m-year num">2004</span>
+        <span class="m-body"><span class="m-title">Citigroup on top</span><span class="m-text">Citi leads with $1.48T as the post-merger universal banks of Europe and Japan crowd the top ten.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2007">
+        <span class="m-year num">2007</span>
+        <span class="m-body"><span class="m-title">RBS: biggest bank on Earth</span><span class="m-text">Fred Goodwin's RBS swallows ABN AMRO and reports $3.7T in assets, more than the UK's entire GDP.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2008.8">
+        <span class="m-year num">2008</span>
+        <span class="m-body"><span class="m-title">Biggest bank, biggest bailout</span><span class="m-text">Still #1 at about $3.5T, RBS is rescued by the UK government, which ends up owning 84% of it.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2009">
+        <span class="m-year num">2009</span>
+        <span class="m-body"><span class="m-title">BNP Paribas takes over</span><span class="m-text">With Fortis's Belgian bank folded in, BNP Paribas leads the 2009 and 2010 rankings with up to $2.9T.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2011.6">
+        <span class="m-year num">2011</span>
+        <span class="m-body"><span class="m-title">ICBC becomes #1</span><span class="m-text">ICBC passes HSBC and Deutsche Bank in 2012 with $2.8T. It has led every year since.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2016.6">
+        <span class="m-year num">2016</span>
+        <span class="m-body"><span class="m-title">China's Big Four sweep</span><span class="m-text">Bank of China passes MUFG in 2017, so all four state-owned giants hold the top four spots together.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2022.6">
+        <span class="m-year num">2022</span>
+        <span class="m-body"><span class="m-title">Farmers’ bank to #2</span><span class="m-text">Agricultural Bank of China passes China Construction Bank for second place in 2023.</span></span>
+      </button></li>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">6</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">6</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">21</b><span>years covered</span></div>
+          <div class="fact"><b class="num">19</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>ICBC</b><span>longest unbroken reign — 13 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#14 → #1</b><span>ICBC ranked #14 when it first appeared in 2004 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2025</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FF5C4D" aria-hidden="true"></span><span class="s-label">ICBC</span><span class="s-val num">$7.64T</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Agricultural Bank of China</span><span class="s-val num">$6.97T</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">China Construction Bank</span><span class="s-val num">$6.52T</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#E879F9" aria-hidden="true"></span><span class="s-label">Bank of China</span><span class="s-val num">$5.48T</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#C4B5A0" aria-hidden="true"></span><span class="s-label">JPMorgan Chase</span><span class="s-val num">$4.42T</span></li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Money races</h2><a href="/#economy">See all 9 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/reserve-currencies/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="reserve-currencies" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Global Reserve Currencies</h3>
+        <p class="card-meta"><span>1995–2025</span><span>·</span><span>13 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#34D399" aria-hidden="true"></span><span class="cl-name">US dollar</span><span class="cl-val">56.8%</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/stock-exchanges/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="stock-exchanges" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Stock Exchanges</h3>
+        <p class="card-meta"><span>1980–2025</span><span>·</span><span>12 contenders</span><span>·</span><span>2 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">NYSE</span><span class="cl-val">$31.3T</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/gdp-nations/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="gdp-nations" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Economies by GDP</h3>
+        <p class="card-meta"><span>1960–2024</span><span>·</span><span>15 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">United States</span><span class="cl-val">$27.4T</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/billionaires/" style="--accent:#5FCE7B;--accent-soft:rgba(95,206,123,0.14)">
+      <div class="card-preview"><canvas data-race="billionaires" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>The World's Richest Person</h3>
+        <p class="card-meta"><span>1987–2025</span><span>·</span><span>15 contenders</span><span>·</span><span>10 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Elon Musk</span><span class="cl-val">$342B</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/music-formats/"><span class="dir">← Previous race</span>US Music Revenue by Format</a>
+    <a href="/races/reserve-currencies/" class="pg-next"><span class="dir">Next race →</span>Global Reserve Currencies</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>93 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">12</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">15</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">10</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">13</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">9</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#trade" style="--c:#E879F9"><span class="fc-dot" aria-hidden="true"></span>Trade<span class="fc-n num">4</span></a>
+      <a href="/#health" style="--c:#BEF264"><span class="fc-dot" aria-hidden="true"></span>Food &amp; Health<span class="fc-n num">5</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
+  </div>
+  <div class="inner">
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="application/json" id="preview-data">{"reserve-currencies":{"entities":[{"label":"US dollar","color":"#34D399"},{"label":"Euro","color":"#4C8DFF"},{"label":"Deutsche mark","color":"#FFD84D"},{"label":"Other currencies","color":"#94A3B8"},{"label":"Japanese yen","color":"#FF5C4D"},{"label":"British pound","color":"#E879F9"},{"label":"ECU (euro precursor)","color":"#67E8F9"}],"frames":[[59,0,15.8,4.9,6.8,2.1,8.5],[62.107,0,14.693,4.479,6.669,2.697,7.066],[65.39,0,14.452,3.941,5.828,2.607,5.769],[69.476,1.852,12.372,4.2,6.221,2.721,1.166],[70.821,17.845,0,1.724,6.428,2.969,0],[69.89,17.655,0,2.431,6.393,3.348,0],[69.579,19.331,0,2.183,5.441,3.224,0],[64.562,22.948,0,2.645,5.721,3.748,0],[63.445,23.1,0,3.1,5.99,4.093,0],[63.797,22.728,0,3.224,5.421,4.662,0],[64.486,22.141,0,3.569,4.697,4.972,0],[63.283,22.866,0,3.814,4.386,5.452,0],[62.724,23.341,0,4.124,4.241,5.369,0],[62.586,23.714,0,4.703,3.897,4.945,0],[62.055,23.521,0,5.586,3.738,4.903,0],[62.21,22.279,0,6.414,4.1,4.697,0],[62.114,21.534,0,5.034,4.21,4.655,0],[61.741,21.459,0,3.483,4.183,4.759,0],[62.321,20.879,0,3.586,4.1,4.738,0],[63.683,19.779,0,3.372,3.969,5.028,0],[64.545,19.055,0,2.786,3.969,4.855,0],[63.252,19.552,0,2.528,4.579,4.7,0],[62.245,19.952,0,2.576,5.028,4.548,0],[61.466,19.841,0,2.521,5.655,4.659,0],[59.81,20.462,0,2.5,5.966,4.783,0],[59.414,19.91,0,2.931,5.569,4.886,0],[59.041,19.71,0,3.269,5.41,4.99,0],[59,19.234,0,4.324,5.4,4.814,0],[58.517,18.91,0,5.172,5.593,4.607,0],[56.8,20.2,0,6.1,5.8,4.4,0]],"t0":1995,"t1":2025,"era":0},"stock-exchanges":{"entities":[{"label":"NYSE","color":"#4C8DFF"},{"label":"Tokyo (JPX)","color":"#FF5C4D"},{"label":"Nasdaq","color":"#8B5CF6"},{"label":"Shanghai","color":"#F43F5E"},{"label":"Euronext","color":"#6E7BFF"},{"label":"London (LSE)","color":"#2FB4FF"},{"label":"Frankfurt (DB)","color":"#FFD84D"},{"label":"Hong Kong","color":"#E879F9"},{"label":"Toronto (TSX)","color":"#94A3B8"}],"frames":[[1.24,0.37,0.12,0,0.05,0.21,0.07,0.04,0.11],[1.295,0.409,0.128,0,0.05,0.218,0.07,0.032,0.102],[1.469,0.534,0.153,0,0.056,0.254,0.076,0.041,0.123],[1.806,1.019,0.219,0,0.092,0.337,0.14,0.061,0.151],[2.289,1.896,0.328,0,0.158,0.479,0.248,0.088,0.178],[2.388,2.324,0.333,0,0.171,0.579,0.211,0.094,0.191],[2.798,3.579,0.418,0,0.268,0.771,0.332,0.091,0.239],[2.774,2.875,0.333,0.002,0.313,0.856,0.359,0.087,0.231],[3.979,2.706,0.667,0.026,0.378,0.991,0.383,0.198,0.262],[4.594,3.682,0.833,0.044,0.458,1.18,0.482,0.281,0.33],[6.469,3.188,1.398,0.091,0.568,1.564,0.639,0.422,0.464],[9.005,2.681,2.152,0.169,0.842,2.099,0.934,0.381,0.521],[10.785,3.32,3.693,0.245,1.212,2.614,1.238,0.458,0.649],[11.652,3.98,5.758,0.364,1.788,2.819,1.435,0.634,0.863],[10.022,2.467,2.608,0.395,1.804,2.167,0.918,0.526,0.607],[10.529,2.691,2.523,0.366,1.916,2.238,0.961,0.634,0.793],[13.528,4.574,3.628,0.355,2.813,3.136,1.263,1.118,1.503],[15.506,4.505,3.922,1.955,3.901,3.812,1.812,2.061,1.883],[13.717,3.854,3.529,2.813,3.511,3.31,1.759,2.243,1.849],[11.374,3.34,3.119,2.471,2.595,2.668,1.329,2.08,1.571],[13.558,3.794,4.055,2.679,2.906,3.56,1.444,2.739,2.144],[14.217,3.697,4.638,2.583,2.842,3.41,1.496,2.84,2.061],[18.343,4.246,6.521,3.666,3.226,3.723,1.692,3.153,2.084],[18.189,5.014,7.537,4.6,3.411,3.934,1.77,3.289,1.663],[21.555,6.057,9.702,5.024,4.258,4.389,2.194,4.207,2.275],[21.48,5.552,10.639,4.273,4.007,3.817,1.846,4.137,2.016],[25.874,6.66,18.378,6.77,5.037,3.851,2.26,5.992,2.589],[25.43,6.004,20.716,7.489,6.743,2.981,2.371,4.769,3.02],[25.724,6.169,25.124,6.506,6.619,3.106,2.306,4.312,3.006],[31.3,6.9,30.6,7.4,7.2,3.7,2.8,5.9,3.5]],"t0":1980,"t1":2025.5,"era":0},"gdp-nations":{"entities":[{"label":"United States","color":"#4C8DFF"},{"label":"China","color":"#F43F5E"},{"label":"Germany","color":"#FFD84D"},{"label":"Japan","color":"#FF5C4D"},{"label":"United Kingdom","color":"#2FB4FF"},{"label":"France","color":"#6E7BFF"},{"label":"India","color":"#FF8C42"},{"label":"Italy","color":"#34D399"}],"frames":[[543,60,92,44,73,62,37,40],[631.717,64.414,104.359,64.745,85.359,79.655,47.152,51.917],[720.434,68.828,116.717,85.49,97.717,97.31,57.303,63.834],[850.641,77.131,151.117,130.545,110.724,117.234,60.648,81.91],[995.855,86.841,193.49,184.393,123.966,137.979,61.531,102.214],[1199.621,106.69,269.793,276.724,153.759,192.862,69.448,136.379],[1469.745,138.028,384.552,412.669,202.31,286.434,85.338,186.255],[1790.076,165.51,509.89,575.421,269.959,391.572,105.89,248.503],[2307.372,177.869,676.731,843.338,412.524,542.083,144.731,359.29],[2824.669,190.228,843.572,1111.255,555.09,692.593,183.572,470.076],[3470.241,240.241,800.621,1240.138,551.586,648.621,207.517,466.655],[4124.366,292.766,743.683,1359.752,538.345,591.683,230.469,455.621],[4820.6,325.124,1035.49,1913.221,699.772,781.179,262.614,667],[5537.4,347.634,1497.614,2678.572,946.503,1091.028,299.248,987],[6263.703,428.062,1918.317,3565.497,1136.931,1335.248,329.069,1175.745],[7003.897,593.138,2278.483,4630.103,1245.069,1483.552,348.931,1172.655],[7802.062,764.545,2548.276,5509.186,1358.297,1595.545,372.331,1168.572],[8954.503,974.641,2265.793,5254.51,1502.628,1485.641,417.352,1158.421],[10106.945,1184.738,1983.31,4999.834,1646.959,1375.738,462.372,1148.269],[11326.972,1626.172,2294.814,4915.09,2004.09,1684.097,603.945,1419.662],[12556.655,2100.655,2691.172,4854.621,2391.621,2052.207,759.31,1731.276],[13788.31,3320.621,3252.138,4954.276,2716.034,2526.828,989.897,2099.103],[14805.69,5005.862,3661.241,5286.138,2808.172,2854.828,1330.586,2328.621],[15506.069,7014.414,3468.897,5953.586,2572.931,2660.655,1733.655,2117.414],[16907.655,9470.483,3711.034,5608.207,2879.828,2765.069,1929.862,2117.897],[18274.517,10919.759,3642.034,4959.138,2844.586,2629.655,2189.069,1990.379],[20063.621,13068.862,3817.345,5029.207,2814.517,2691.31,2576.379,2025.276],[21185.207,14523.931,3906.793,5040.207,2738.552,2676.586,2675.241,1937.345],[25286.655,17624.207,4062.034,4337.103,3049.172,2768.034,3339.517,2034.172],[27361,17795,4526,4110,3340,3031,3937,2255]],"t0":1960,"t1":2024,"era":0},"billionaires":{"entities":[{"label":"Elon Musk","color":"#F43F5E"},{"label":"Jeff Bezos","color":"#FF8C42"},{"label":"Bernard Arnault","color":"#C4B5A0"},{"label":"Bill Gates","color":"#4C8DFF"},{"label":"Warren Buffett","color":"#FFD84D"},{"label":"Carlos Slim","color":"#34D399"},{"label":"Yoshiaki Tsutsumi","color":"#B388FF"},{"label":"Sam Walton","color":"#FFB020"},{"label":"Mark Zuckerberg","color":"#6E7BFF"},{"label":"Larry Ellison","color":"#2FB4FF"},{"label":"Amancio Ortega","color":"#E879F9"},{"label":"Steve Ballmer","color":"#A3E635"},{"label":"Mukesh Ambani","color":"#FF6FA5"}],"frames":[[0,0,0,1.3,2.1,0,20,8.5,0,0,0,0,0],[0,0,0,1.824,2.624,0.874,18.253,8.718,0,0,0,0,0],[0,0,0,2.348,3.148,1.747,16.506,8.937,0,0,0,0,0],[0,0,0,3.648,4.852,2.528,13.828,13.655,0,0,0,0,0],[0,0,0,5.264,7.036,3.27,10.77,20.207,0,0,0,0,0],[0,0,0,8.048,8.962,4.5,6.517,19.862,0,1.655,0,0,0],[0,0,0,12.438,10.534,6.4,0.621,10.034,0,5.586,0,0,0],[0,0,0,26.676,18.028,6.6,0,13.69,0,7.876,0,0,0],[0,0,0,49.338,26.29,6.938,0,17.724,0,10.117,0,5.552,0],[0,0,0,84.455,34.676,7.855,0,19.69,0,12.607,0,20.621,0],[0,0,0,59.628,28.362,8.181,0,0,0,45.784,0.362,27.586,0],[0,0,0,54.91,32.948,10.474,0,0,0,30.388,4.948,22.345,0],[0,0,0,50.555,37.86,15.953,0,0,0,21.762,7.362,17.103,0],[0,0,0,46.659,42.884,23.907,0,0,0,18.653,8.117,12.028,0],[0,0,0,48.886,42.295,27.969,0,0,0,16.884,12.572,13.076,0],[0,0,0,53.931,48.552,42.448,0,0,0,19.603,20.828,4.69,13.169],[0,0,0,57.931,61.655,59.621,0,0,0,24.879,20.331,0,42.21],[0,0,0,43.586,39.759,40.103,0,0,0,24.017,20.148,4,22.121],[0,0,24.034,54.759,48.759,65.517,0,0,0,34.741,28.517,6,27.828],[0,0,41,60.483,44.621,69.517,0,0,0,36.362,36.828,0,22.786],[3.641,26.607,30.034,68.862,54.472,72.793,0,0,5.897,44.034,58.448,4.138,17.052],[10.262,33.448,35.655,77.655,65.7,74.638,0,0,31.034,51.259,64.259,20.776,0],[2.069,43.407,34.552,75.724,62.852,54.672,0,0,42.669,45.445,66.569,23.155,0],[14.728,78.207,45.707,86.552,76.759,56.238,0,0,58.069,53.069,71.121,0,0],[20.976,120.517,73.793,92.914,83.328,37.021,0,0,67.1,60.293,66.728,18.469,0],[24.045,117.345,76,97.638,71.121,0,0,0,56.534,59.845,56.934,49.924,0],[155.69,176.586,150.552,124.345,97.517,0,0,0,94.952,93.897,0,70.266,0],[204.207,149.379,178.103,119.517,113.448,0,0,0,66.2,106.379,0,87.341,0],[190.345,169.172,201.345,120.552,124.621,0,0,0,142.055,130.448,0,108.493,0],[342,215,178,168,154,0,0,0,216,192,0,118,0]],"t0":1987,"t1":2025,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=0dc17e2e0d"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Men's Golf Major Championships (1859–2026) — Overtake</title>
+  <meta name="description" content="Career men's major titles from the first Open Championship at Prestwick in 1860. Animated bar chart race, 1859–2026.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/golf-majors/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Men's Golf Major Championships (1859–2026) — Overtake">
+  <meta property="og:description" content="Career men's major titles from the first Open Championship at Prestwick in 1860. Animated bar chart race, 1859–2026.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/golf-majors/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/golf-majors.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Men's Golf Major Championships (1859–2026) — Overtake">
+  <meta name="twitter:description" content="Career men's major titles from the first Open Championship at Prestwick in 1860. Animated bar chart race, 1859–2026.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/golf-majors.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=0dc17e2e0d">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=0dc17e2e0d","/js/engine/renderer.js":"/js/engine/renderer.js?v=0dc17e2e0d","/js/engine/format.js":"/js/engine/format.js?v=0dc17e2e0d","/js/engine/controller.js":"/js/engine/controller.js?v=0dc17e2e0d","/js/engine/controls.js":"/js/engine/controls.js?v=0dc17e2e0d","/js/engine/preview.js":"/js/engine/preview.js?v=0dc17e2e0d"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Men's Golf Major Championships","description":"Career men's major titles from the first Open Championship at Prestwick in 1860. Vardon's six Claret Jugs stand for a decade until Walter Hagen passes him in 1926; Nicklaus then rewrites the record to 18, and Tiger Woods's charge stalls three short at 15.","url":"https://beautifuldata.netlify.app/races/golf-majors/","temporalCoverage":"1859/2026","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://en.wikipedia.org/wiki/List_of_men%27s_major_championships_winning_golfers"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports" aria-current="true">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#trade">Trade</a>
+      <a href="/#health">Food &amp; Health</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="sports" data-race-id="golf-majors">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#sports">Sports</a><span aria-hidden="true">/</span><span class="num">1859–2026</span></p>
+    <h1>Men's Golf Major Championships</h1>
+    <p class="blurb">Career men's major titles from the first Open Championship at Prestwick in 1860. Vardon's six Claret Jugs stand for a decade until Walter Hagen passes him in 1926; Nicklaus then rewrites the record to 18, and Tiger Woods's charge stalls three short at 15.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>32 contenders</span><span>4 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Men's Golf Major Championships"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1859" aria-valuemax="2026">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://en.wikipedia.org/wiki/List_of_men%27s_major_championships_winning_golfers" rel="noopener">Official records of the Masters, PGA of America, USGA and The R&amp;A</a></span>
+    <span>Modern four-major convention: Masters, U.S. Open, The Open and PGA Championship only, so Bobby Jones has 7. Amateur titles excluded.</span>
+    <span>Updated 2026-10-29</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
+  </p>
+
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>5 different leaders in 167 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1859" style="left:0.000%;width:1.796%;--c:#A8A29E;--ink:rgba(11,14,20,0.88)" title="Willie Park Sr. · 1859–1862" aria-label="Willie Park Sr. led 1859–1862. Jump there."></button><button type="button" class="reign" data-t="1862" style="left:1.796%;width:24.551%;--c:#F2F4F8;--ink:rgba(11,14,20,0.88)" title="Old Tom Morris · 1862–1903" aria-label="Old Tom Morris led 1862–1903. Jump there."><span>Old Tom Morris</span></button><button type="button" class="reign" data-t="1903" style="left:26.347%;width:13.772%;--c:#B388FF;--ink:rgba(11,14,20,0.88)" title="Harry Vardon · 1903–1926" aria-label="Harry Vardon led 1903–1926. Jump there."><span>Harry Vardon</span></button><button type="button" class="reign" data-t="1926" style="left:40.120%;width:28.144%;--c:#4C8DFF;--ink:rgba(255,255,255,0.95)" title="Walter Hagen · 1926–1973" aria-label="Walter Hagen led 1926–1973. Jump there."><span>Walter Hagen</span></button><button type="button" class="reign" data-t="1973" style="left:68.263%;width:31.737%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="Jack Nicklaus · 1973–2026" aria-label="Jack Nicklaus led 1973–2026. Jump there."><span>Jack Nicklaus</span></button></div>
+    <div class="reign-axis num"><span>1859</span><span>2026</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
+      <ol>
+        <li><span class="h-label">Jack Nicklaus</span><span class="h-bar"><i style="width:100.0%;background:#FFD84D"></i></span><span class="h-val num">53 yrs</span></li>
+        <li><span class="h-label">Walter Hagen</span><span class="h-bar"><i style="width:88.7%;background:#4C8DFF"></i></span><span class="h-val num">47 yrs</span></li>
+        <li><span class="h-label">Old Tom Morris</span><span class="h-bar"><i style="width:77.4%;background:#F2F4F8"></i></span><span class="h-val num">41 yrs</span></li>
+        <li><span class="h-label">Harry Vardon</span><span class="h-bar"><i style="width:43.4%;background:#B388FF"></i></span><span class="h-val num">23 yrs</span></li>
+        <li><span class="h-label">Willie Park Sr.</span><span class="h-bar"><i style="width:5.7%;background:#A8A29E"></i></span><span class="h-val num">3 yrs</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1872">
+        <span class="m-year num">1872</span>
+        <span class="m-body"><span class="m-title">Young Tom's four in a row</span><span class="m-text">Tom Morris Jr. wins his fourth straight Open (none was held in 1871), aged 21. He dies three years later at 24.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1914">
+        <span class="m-year num">1914</span>
+        <span class="m-body"><span class="m-title">Vardon's sixth Open</span><span class="m-text">Harry Vardon wins a record sixth Open Championship for his seventh major, the benchmark for the next decade.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1926">
+        <span class="m-year num">1926</span>
+        <span class="m-body"><span class="m-title">Hagen passes Vardon</span><span class="m-text">Walter Hagen's third straight PGA Championship gives him eight majors, taking the record from Harry Vardon.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1930">
+        <span class="m-year num">1930</span>
+        <span class="m-body"><span class="m-title">Jones's Grand Slam</span><span class="m-text">Bobby Jones wins the U.S. Open and Open plus both amateur titles, then retires at 28 with 7 pro-era majors.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1973">
+        <span class="m-year num">1973</span>
+        <span class="m-body"><span class="m-title">Nicklaus passes Hagen</span><span class="m-text">The 1973 PGA is Nicklaus's 12th major, passing Hagen's 11. Counting amateurs (14), it also beat Jones's 13.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1986">
+        <span class="m-year num">1986</span>
+        <span class="m-body"><span class="m-title">Nicklaus's 18th at 46</span><span class="m-text">Jack Nicklaus shoots 30 on the back nine to win the Masters at 46, his 18th and final major.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2008">
+        <span class="m-year num">2008</span>
+        <span class="m-body"><span class="m-title">Woods reaches 14</span><span class="m-text">Tiger Woods wins the U.S. Open on a broken leg for major No. 14, four short of Nicklaus at age 32.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2019">
+        <span class="m-year num">2019</span>
+        <span class="m-body"><span class="m-title">Tiger's 15th, then stalls</span><span class="m-text">An 11-year drought ends with the 2019 Masters, Woods's 15th major. It proves to be his last; Nicklaus's 18 stands.</span></span>
+      </button></li>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">4</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">5</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">167</b><span>years covered</span></div>
+          <div class="fact"><b class="num">32</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Jack Nicklaus</b><span>longest unbroken reign — 53 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#24 → #1</b><span>Jack Nicklaus ranked #24 when it first appeared in 1962 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2026</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FFD84D" aria-hidden="true"></span><span class="s-label">Jack Nicklaus</span><span class="s-val num">18</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Tiger Woods</span><span class="s-val num">15</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">Walter Hagen</span><span class="s-val num">11</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#D4D4D8" aria-hidden="true"></span><span class="s-label">Ben Hogan</span><span class="s-val num">9</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#94A3B8" aria-hidden="true"></span><span class="s-label">Gary Player</span><span class="s-val num">9</span></li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Sports races</h2><a href="/#sports">See all 15 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/super-bowl-wins/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="super-bowl-wins" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Super Bowl Wins by Franchise</h3>
+        <p class="card-meta"><span>1966–2026</span><span>·</span><span>20 contenders</span><span>·</span><span>3 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFB612" aria-hidden="true"></span><span class="cl-name">Pittsburgh Steelers &amp; New England Patriots</span><span class="cl-val">6</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/test-cricket-runs/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="test-cricket-runs" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Most Career Test Runs</h3>
+        <p class="card-meta"><span>1877–2026</span><span>·</span><span>83 contenders</span><span>·</span><span>13 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#2FB4FF" aria-hidden="true"></span><span class="cl-name">Sachin Tendulkar</span><span class="cl-val">15,921</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/chess-elo/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="chess-elo" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Chess: The Rating Race</h3>
+        <p class="card-meta"><span>1971–2025</span><span>·</span><span>16 contenders</span><span>·</span><span>8 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Magnus Carlsen</span><span class="cl-val">2,833</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/atp-weeks/" style="--accent:#FFB020;--accent-soft:rgba(255,176,32,0.14)">
+      <div class="card-preview"><canvas data-race="atp-weeks" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Weeks at ATP World No. 1</h3>
+        <p class="card-meta"><span>1973–2026</span><span>·</span><span>20 contenders</span><span>·</span><span>5 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">Novak Djokovic</span><span class="cl-val">428 wks</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/premier-league-titles/"><span class="dir">← Previous race</span>English League Titles</a>
+    <a href="/races/super-bowl-wins/" class="pg-next"><span class="dir">Next race →</span>Super Bowl Wins by Franchise</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>93 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">12</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">15</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">10</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">13</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">9</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#trade" style="--c:#E879F9"><span class="fc-dot" aria-hidden="true"></span>Trade<span class="fc-n num">4</span></a>
+      <a href="/#health" style="--c:#BEF264"><span class="fc-dot" aria-hidden="true"></span>Food &amp; Health<span class="fc-n num">5</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
+  </div>
+  <div class="inner">
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="application/json" id="preview-data">{"super-bowl-wins":{"entities":[{"label":"Pittsburgh Steelers","color":"#FFB612"},{"label":"San Francisco 49ers","color":"#E31837"},{"label":"Green Bay Packers","color":"#3DBE6B"},{"label":"New England Patriots","color":"#4C8DFF"},{"label":"Dallas Cowboys","color":"#B0B7BC"},{"label":"Kansas City Chiefs","color":"#FF6FA5"},{"label":"Las Vegas Raiders","color":"#D4D4D8"},{"label":"Miami Dolphins","color":"#67E8F9"},{"label":"New York Jets","color":"#86EFAC"},{"label":"Washington Commanders","color":"#B5487A"},{"label":"Indianapolis Colts","color":"#93C5FD"},{"label":"New York Giants","color":"#6E7BFF"}],"frames":[[0,0,0,0,0,0,0,0,0,0,0,0],[0,0,2,0,0,0,0,0,0.455,0,0,0],[0,0,2,0,0,1,0,0,1,0,0.51,0],[0,0,2,0,1,1,0,0.566,1,0,1,0],[0.621,0,2,0,1,1,0,2,1,0,1,0],[2,0,2,0,1,1,0.676,2,1,0,1,0],[2.731,0,2,0,2,1,1,2,1,0,1,0],[4,0,2,0,2,1,1.786,2,1,0,1,0],[4,1,2,0,2,1,2,2,1,0.841,1,0],[4,1.897,2,0,2,1,3,2,1,1,1,0],[4,2,2,0,2,1,3,2,1,1,1,0.952],[4,3.007,2,0,2,1,3,2,1,2,1,1],[4,4,2,0,2,1,3,2,1,2.062,1,2],[4,4,2,0,3.117,1,3,2,1,3,1,2],[4,5,2,0,4.172,1,3,2,1,3,1,2],[4,5,3,0,5,1,3,2,1,3,1,2],[4,5,3,0,5,1,3,2,1,3,1,2],[4,5,3,0.338,5,1,3,2,1,3,1,2],[4,5,3,1.393,5,1,3,2,1,3,1,2],[4.448,5,3,3,5,1,3,2,1,3,1,2],[5,5,3,3,5,1,3,2,1,3,2,2.503],[6,5,3,3,5,1,3,2,1,3,2,3],[6,5,4,3,5,1,3,2,1,3,2,3.614],[6,5,4,3,5,1,3,2,1,3,2,4],[6,5,4,4,5,1,3,2,1,3,2,4],[6,5,4,5,5,1,3,2,1,3,2,4],[6,5,4,6,5,1.834,3,2,1,3,2,4],[6,5,4,6,5,2,3,2,1,3,2,4],[6,5,4,6,5,3.945,3,2,1,3,2,4],[6,5,4,6,5,4,3,2,1,3,2,4]],"t0":1966.5,"t1":2026.1,"era":0},"test-cricket-runs":{"entities":[{"label":"Sachin Tendulkar","color":"#2FB4FF"},{"label":"Brian Lara","color":"#B45309"},{"label":"Allan Border","color":"#E2B93B"},{"label":"Sunil Gavaskar","color":"#67E8F9"},{"label":"Garry Sobers","color":"#F43F5E"},{"label":"Wally Hammond","color":"#B388FF"},{"label":"Jack Hobbs","color":"#23C8A8"},{"label":"Clem Hill","color":"#FDE68A"},{"label":"Arthur Shrewsbury","color":"#8B5CF6"},{"label":"PS McDonnell","color":"#78D7A8"},{"label":"Billy Murdoch","color":"#FACC15"},{"label":"Joe Root","color":"#F2F4F8"},{"label":"Ricky Ponting","color":"#FFD84D"},{"label":"Geoffrey Boycott","color":"#D4D4D8"}],"frames":[[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,103.24,281.146,372.647,0,0,0],[0,0,0,0,0,0,0,0,709.215,887.907,860,0,0,0],[0,0,0,0,0,0,0,0,989.247,955,901.996,0,0,0],[0,0,0,0,0,0,0,130.41,1277,955,908,0,0,0],[0,0,0,0,0,0,0,1416.218,1277,955,908,0,0,0],[0,0,0,0,0,0,226.448,2575.906,1277,955,908,0,0,0],[0,0,0,0,0,0,2040.369,3412,1277,955,908,0,0,0],[0,0,0,0,0,0,2548.276,3412,1277,955,908,0,0,0],[0,0,0,0,0,0,3203.548,3412,1277,955,908,0,0,0],[0,0,0,0,0,904.466,4658.969,3412,1277,955,908,0,0,0],[0,0,0,0,0,3350.48,5410,3412,1277,955,908,0,0,0],[0,0,0,0,0,6028.911,5410,3412,1277,955,908,0,0,0],[0,0,0,0,0,6883,5410,3412,1277,955,908,0,0,0],[0,0,0,0,0,7249,5410,3412,1277,955,908,0,0,0],[0,0,0,0,0,7249,5410,3412,1277,955,908,0,0,0],[0,0,0,0,2049.919,7249,5410,3412,1277,955,908,0,0,0],[0,0,0,0,4054.96,7249,5410,3412,1277,955,908,0,0,0],[0,0,0,0,6478.887,7249,5410,3412,1277,955,908,0,0,2509.437],[0,0,0,1347.932,7845.695,7249,5410,3412,1277,955,908,0,0,4138.935],[0,0,0,5391.498,8032,7249,5410,3412,1277,955,908,0,0,6690.876],[0,0,5100.104,8811.222,8032,7249,5410,3412,1277,955,908,0,0,8114],[0,0,8630.624,10122,8032,7249,5410,3412,1277,955,908,0,0,8114],[1290.061,1359.839,11174,10122,8032,7249,5410,3412,1277,955,908,0,0,8114],[6413.717,6068.072,11174,10122,8032,7249,5410,3412,1277,955,908,0,0,8114],[10366.733,11326.681,11174,10122,8032,7249,5410,3412,1277,955,908,0,8208.336,8114],[14302.597,11953,11174,10122,8032,7249,5410,3412,1277,955,908,0,12258.914,8114],[15886.286,11953,11174,10122,8032,7249,5410,3412,1277,955,908,4016.186,13378,8114],[15921,11953,11174,10122,8032,7249,5410,3412,1277,955,908,8677.024,13378,8114],[15921,11953,11174,10122,8032,7249,5410,3412,1277,955,908,14278,13378,8114]],"t0":1877,"t1":2026.83,"era":0},"chess-elo":{"entities":[{"label":"Magnus Carlsen","color":"#F43F5E"},{"label":"Viswanathan Anand","color":"#2FB4FF"},{"label":"Bobby Fischer","color":"#4C8DFF"},{"label":"Anatoly Karpov","color":"#FF5C4D"},{"label":"Garry Kasparov","color":"#FFD84D"},{"label":"Veselin Topalov","color":"#A3E635"},{"label":"Fabiano Caruana","color":"#34D399"},{"label":"Ding Liren","color":"#6E7BFF"},{"label":"Mikhail Tal","color":"#E879F9"},{"label":"Viktor Korchnoi","color":"#94A3B8"},{"label":"Vasyl Ivanchuk","color":"#23C8A8"},{"label":"Vladimir Kramnik","color":"#B388FF"},{"label":"Hikaru Nakamura","color":"#FFB020"},{"label":"Ian Nepomniachtchi","color":"#D4D4D8"}],"frames":[[0,0,2760,2540,0,0,0,0,2655,2670,0,0,0,0],[0,0,2780.69,2655.862,0,0,0,0,2657.931,2648.621,0,0,0,0],[0,0,2780,2703.621,0,0,0,0,2649.138,2660.862,0,0,0,0],[0,0,0,2692.069,0,0,0,0,2626.207,2653.276,0,0,0,0],[0,0,0,2716.034,2520.172,0,0,0,2620.517,2678.448,0,0,0,0],[0,0,0,2714.138,2604.31,0,0,0,2705,2695,0,0,0,0],[0,0,0,2718.276,2648.621,0,0,0,2626.724,2663.966,0,0,0,0],[0,0,0,2700.172,2710.172,0,0,0,2630,2634.828,0,0,0,0],[0,0,0,2718.448,2737.414,0,0,0,2612.069,2647.931,0,0,0,0],[0,2541.724,0,2711.379,2746.379,0,0,0,2607.586,2613.621,1938.276,0,0,0],[0,2610,0,2737.586,2790.517,0,0,0,0,0,2655.517,0,0,0],[0,2659.655,0,2725,2790.345,0,0,0,0,0,2727.759,2538.276,0,0],[0,2711.724,0,2730.172,2805,2571.207,0,0,0,0,2701.552,2693.621,0,0],[0,2717.069,0,2767.069,2798.793,2644.483,0,0,0,0,2707.241,2727.414,0,0],[0,2765.345,0,2758.276,2797.069,2726.034,0,0,0,0,2740,2743.448,0,0],[0,2780.241,0,2711.724,2812.897,2702.759,0,0,0,0,2715.793,2753.69,0,0],[0,2785.655,0,2691.862,2849.414,2714.69,0,0,0,0,2715.345,2769.103,0,0],[0,2752.414,0,2689.724,2843.897,2741.621,0,0,0,0,2705.207,2807.69,0,0],[2519.69,2776.345,0,2675.793,2817.034,2746.379,0,0,0,0,2707.724,2765.103,0,0],[2649.655,2787.069,0,0,0,2794.172,0,0,0,0,2736.966,2750.483,0,0],[2743.379,2797.069,0,0,0,2783.862,0,0,0,0,2757.759,2789.345,0,0],[2810.414,2792.069,0,0,0,2801.897,2657.897,0,0,0,2750.552,2787.586,2712.448,0],[2834.276,2799.379,0,0,0,2770.172,2735.069,0,0,0,2765.931,2800.414,2758.724,0],[2870.103,2772.828,0,0,0,2782.586,2781.828,2240.276,0,0,2742.276,2790.966,2785.552,0],[2849.586,2788.034,0,0,0,2786.207,2797.241,2755.448,0,0,842.586,2795.414,2783.586,1864.828],[2836.69,2775.517,0,0,0,1227.828,2818.172,2764.966,0,0,0,2796.862,2782.793,2750.103],[2850.31,2770.31,0,0,0,0,2825.517,2809.69,0,0,0,1627.897,2743.621,2767.552],[2862.828,2752.448,0,0,0,0,2814.448,2793.207,0,0,0,0,2736,2784.586],[2855,2753.586,0,0,0,0,2771.241,2806.724,0,0,0,0,2770.759,2789.69],[2833,2750,0,0,0,0,2803,2734,0,0,0,0,2802,2754]],"t0":1971,"t1":2025,"era":0},"atp-weeks":{"entities":[{"label":"Novak Djokovic","color":"#4C8DFF"},{"label":"Roger Federer","color":"#F43F5E"},{"label":"Pete Sampras","color":"#67E8F9"},{"label":"Ivan Lendl","color":"#B388FF"},{"label":"Jimmy Connors","color":"#34D399"},{"label":"Ilie Nastase","color":"#94A3B8"},{"label":"John McEnroe","color":"#2FB4FF"},{"label":"Bjorn Borg","color":"#FFD84D"},{"label":"Stefan Edberg","color":"#FFB020"}],"frames":[[0,0,0,0,0,1,0,0,0],[0,0,0,0,45.055,40,0,0,0],[0,0,0,0,139.662,40,0,0.248,0],[0,0,0,0,231.159,40,0,3.1,0],[0,0,0,0,246,40,8.966,70.345,0],[0,0,0,0,251.045,40,62.431,109,0],[0,0,0,31.09,268,40,116.241,109,0],[0,0,0,67.186,268,40,170,109,0],[0,0,0,159.145,268,40,170,109,0],[0,0,0,237.569,268,40,170,109,0.345],[0,0,0,270,268,40,170,109,53.655],[0,0,19.3,270,268,40,170,109,72],[0,0,91.772,270,268,40,170,109,72],[0,0,159.317,270,268,40,170,109,72],[0,0,244.586,270,268,40,170,109,72],[0,0,285.279,270,268,40,170,109,72],[0,0,286,270,268,40,170,109,72],[0,29.297,286,270,268,40,170,109,72],[0,122.593,286,270,268,40,170,109,72],[0,212.534,286,270,268,40,170,109,72],[0,264.903,286,270,268,40,170,109,72],[23.579,286,286,270,268,40,170,109,72],[90.241,303,286,270,268,40,170,109,72],[155.869,303,286,270,268,40,170,109,72],[223,303,286,270,268,40,170,109,72],[239.952,310,286,270,268,40,170,109,72],[303.434,310,286,270,268,40,170,109,72],[369.331,310,286,270,268,40,170,109,72],[428,310,286,270,268,40,170,109,72],[428,310,286,270,268,40,170,109,72]],"t0":1973.6,"t1":2026.5,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=0dc17e2e0d"></script>
+</body>
+</html>

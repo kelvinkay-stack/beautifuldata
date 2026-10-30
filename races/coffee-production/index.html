@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Production by Country (1960–2025) — Overtake</title>
+  <meta name="description" content="Green coffee output in millions of 60-kg bags, crop year by crop year since 1960. Animated bar chart race, 1960–2025.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/coffee-production/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Coffee Production by Country (1960–2025) — Overtake">
+  <meta property="og:description" content="Green coffee output in millions of 60-kg bags, crop year by crop year since 1960. Animated bar chart race, 1960–2025.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/coffee-production/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/coffee-production.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Coffee Production by Country (1960–2025) — Overtake">
+  <meta name="twitter:description" content="Green coffee output in millions of 60-kg bags, crop year by crop year since 1960. Animated bar chart race, 1960–2025.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/coffee-production.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=0dc17e2e0d">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=0dc17e2e0d","/js/engine/renderer.js":"/js/engine/renderer.js?v=0dc17e2e0d","/js/engine/format.js":"/js/engine/format.js?v=0dc17e2e0d","/js/engine/controller.js":"/js/engine/controller.js?v=0dc17e2e0d","/js/engine/controls.js":"/js/engine/controls.js?v=0dc17e2e0d","/js/engine/preview.js":"/js/engine/preview.js?v=0dc17e2e0d"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Coffee Production by Country","description":"Green coffee output in millions of 60-kg bags, crop year by crop year since 1960. Brazil never loses the top spot — though the 1975 Black Frost briefly drags it level with Colombia — while Vietnam's robusta boom in the 1990s vaults it past Colombia into a permanent No. 2.","url":"https://beautifuldata.netlify.app/races/coffee-production/","temporalCoverage":"1960/2025","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://apps.fas.usda.gov/psdonline/app/index.html#/app/downloads"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#trade">Trade</a>
+      <a href="/#health" aria-current="true">Food &amp; Health</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="health" data-race-id="coffee-production">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#health">Food &amp; Health</a><span aria-hidden="true">/</span><span class="num">1960–2025</span></p>
+    <h1>Coffee Production by Country</h1>
+    <p class="blurb">Green coffee output in millions of 60-kg bags, crop year by crop year since 1960. Brazil never loses the top spot — though the 1975 Black Frost briefly drags it level with Colombia — while Vietnam's robusta boom in the 1990s vaults it past Colombia into a permanent No. 2.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>17 contenders</span><span>0 lead changes</span><span class="quality-ok">sourced data</span></span>
+    </div>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Coffee Production by Country"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1960" aria-valuemax="2025">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://apps.fas.usda.gov/psdonline/app/index.html#/app/downloads" rel="noopener">USDA Foreign Agricultural Service, PSD Online</a></span>
+    <span>Production in million 60-kg bags by USDA market year (t = start of crop year, e.g. 1999 = 1999/2000). 2025/26 is a USDA estimate.</span>
+    <span>Updated 2026-10-29</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
+  </p>
+
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>One leader, start to finish. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1960" style="left:0.000%;width:100.000%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="Brazil · 1960–2025" aria-label="Brazil led 1960–2025. Jump there."><span>Brazil</span></button></div>
+    <div class="reign-axis num"><span>1960</span><span>2025</span></div>
+    
+  </section>
+
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1964">
+        <span class="m-year num">1964</span>
+        <span class="m-body"><span class="m-title">Brazil's crop collapses</span><span class="m-text">Frost and drought cut Brazil's 1964/65 crop to 11M bags — still No. 1, but barely ahead of Colombia's 8.4M.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1976">
+        <span class="m-year num">1976</span>
+        <span class="m-body"><span class="m-title">The Black Frost</span><span class="m-text">The July 1975 frost wipes out Brazilian trees: its 1976/77 crop falls to 9.3M bags, level with Colombia.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1989">
+        <span class="m-year num">1989</span>
+        <span class="m-body"><span class="m-title">Quota system collapses</span><span class="m-text">The International Coffee Agreement's export quotas end in 1989, unleashing new growers and a price slump.</span></span>
+      </button></li>
+      <li><button type="button" data-t="1999">
+        <span class="m-year num">1999</span>
+        <span class="m-body"><span class="m-title">Vietnam passes Colombia</span><span class="m-text">Vietnam's robusta boom hits 11M bags in 1999/2000, passing Colombia (9.5M) for No. 2 — a spot it has held every year since but 2002/03.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2008">
+        <span class="m-year num">2008</span>
+        <span class="m-body"><span class="m-title">Indonesia edges Colombia</span><span class="m-text">Leaf rust cuts Colombia's harvest; Indonesia moves to No. 3 as Colombia slips to its lowest output in decades.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2020">
+        <span class="m-year num">2020</span>
+        <span class="m-body"><span class="m-title">Brazil's record crop</span><span class="m-text">Brazil harvests nearly 70M bags in 2020/21 — more than Vietnam, Colombia, Indonesia and Ethiopia combined.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2023">
+        <span class="m-year num">2023</span>
+        <span class="m-body"><span class="m-title">Ethiopia rises to No. 4</span><span class="m-text">Africa's largest producer passes Indonesia, with output climbing above 11M bags by 2024/25.</span></span>
+      </button></li>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">0</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">1</b><span>different leader</span></div>
+          <div class="fact"><b class="num">65</b><span>years covered</span></div>
+          <div class="fact"><b class="num">17</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>Brazil</b><span>longest unbroken reign — 65 yrs at #1, wire to wire</span></div>
+          
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2025</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#FFD84D" aria-hidden="true"></span><span class="s-label">Brazil</span><span class="s-val num">63.0M bags</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">Vietnam</span><span class="s-val num">31.7M bags</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="s-label">Colombia</span><span class="s-val num">12.5M bags</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#E879F9" aria-hidden="true"></span><span class="s-label">Indonesia</span><span class="s-val num">12.4M bags</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#34D399" aria-hidden="true"></span><span class="s-label">Ethiopia</span><span class="s-val num">11.6M bags</span></li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Food &amp; Health races</h2><a href="/#health">See all 5 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/fast-food-chains/" style="--accent:#BEF264;--accent-soft:rgba(190,242,100,0.13)">
+      <div class="card-preview"><canvas data-race="fast-food-chains" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Largest Restaurant Chains by Locations</h3>
+        <p class="card-meta"><span>1990–2024</span><span>·</span><span>17 contenders</span><span>·</span><span>3 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#E879F9" aria-hidden="true"></span><span class="cl-name">Mixue Ice Cream &amp; Tea</span><span class="cl-val">46,479</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/best-selling-drugs/" style="--accent:#BEF264;--accent-soft:rgba(190,242,100,0.13)">
+      <div class="card-preview"><canvas data-race="best-selling-drugs" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Best-Selling Drugs</h3>
+        <p class="card-meta"><span>1995–2024</span><span>·</span><span>52 contenders</span><span>·</span><span>5 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#23C8A8" aria-hidden="true"></span><span class="cl-name">Keytruda</span><span class="cl-val">$29.5B</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/causes-of-death/" style="--accent:#BEF264;--accent-soft:rgba(190,242,100,0.13)">
+      <div class="card-preview"><canvas data-race="causes-of-death" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Leading Causes of Death in the US</h3>
+        <p class="card-meta"><span>1950–2023</span><span>·</span><span>19 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Heart disease</span><span class="cl-val">681.0k</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/wine-production/" style="--accent:#BEF264;--accent-soft:rgba(190,242,100,0.13)">
+      <div class="card-preview"><canvas data-race="wine-production" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Wine Production by Country</h3>
+        <p class="card-meta"><span>1961–2023</span><span>·</span><span>18 contenders</span><span>·</span><span>27 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">France</span><span class="cl-val">4.76 Mt</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/wine-production/"><span class="dir">← Previous race</span>Wine Production by Country</a>
+    <a href="/races/fast-food-chains/" class="pg-next"><span class="dir">Next race →</span>Largest Restaurant Chains by Locations</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>93 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">12</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">15</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">10</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">13</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">9</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#trade" style="--c:#E879F9"><span class="fc-dot" aria-hidden="true"></span>Trade<span class="fc-n num">4</span></a>
+      <a href="/#health" style="--c:#BEF264"><span class="fc-dot" aria-hidden="true"></span>Food &amp; Health<span class="fc-n num">5</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
+  </div>
+  <div class="inner">
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="application/json" id="preview-data">{"fast-food-chains":{"entities":[{"label":"Mixue Ice Cream & Tea","color":"#E879F9"},{"label":"McDonald's","color":"#FFD84D"},{"label":"Subway","color":"#A3E635"},{"label":"Starbucks","color":"#23C8A8"},{"label":"KFC","color":"#F43F5E"},{"label":"Pizza Hut","color":"#B45309"},{"label":"Burger King","color":"#FF8C42"},{"label":"Dairy Queen","color":"#6E7BFF"}],"frames":[[0,11803,5000,84,8000,8000,6300,5100],[0,12559.207,6172.414,131.483,8351.724,8779.655,6505.172,5193.793],[0,13457.138,7431.034,209.828,8703.448,9561.034,6710.345,5287.586],[0,14695.207,8896.552,362.241,9055.172,10346.552,6915.517,5381.379],[0,17210.862,10189.655,628.448,9406.897,11128.621,7465.517,5468.276],[0,20620.828,11362.069,974.31,9758.621,11908.276,8256.897,5550.345],[0,22976.138,12431.034,1465.517,10110.345,12000,9048.276,5622.069],[0,25204.172,13444.828,2053.069,10462.069,12000,9834.483,5692.414],[0,27494.483,14265.517,2999.793,10813.793,12000,10596.552,5762.759],[0,29369.345,15472.414,4158.931,11275.862,12066.207,11027.586,5811.034],[0,30776.828,17113.793,5557.034,11862.069,12206.897,11086.207,5834.483],[0,30833.655,19517.241,7088.724,12448.276,12347.586,11144.828,5857.931],[0,30514.621,22155.172,8684.31,13034.483,12488.276,11206.207,5881.379],[0,30833.586,24793.103,10771.793,13644.828,12638.621,11311.724,5904.828],[0,31182.966,27141.379,13503.862,14348.276,12826.207,11413.103,5928.276],[0,31722.862,28958.621,15989.379,15051.724,13013.793,11512.759,5951.724],[0,32354.655,31268.966,16645.862,15755.172,13201.379,11785.172,5975.172],[0,32719.138,33614.586,16842.621,16458.621,13388.966,12152.345,5998.621],[275.862,33610.345,36479.31,17112.966,17261.379,13885.517,12562.172,6176.552],[568.966,34741.793,39644.828,18535.241,18070.345,14401.379,13181.828,6364.138],[862.069,35800.621,42406.897,20483.793,18879.31,14917.241,13983.034,6551.724],[1465.517,36423.724,44290.069,22406.897,19688.276,15433.103,14763.655,6739.31],[2344.828,36821.621,44807.034,24662.517,20306.897,16241.621,15585.931,6831.724],[3465.517,37229.207,43737.931,27261.276,21449.517,16736.31,16731.517,6878.621],[5344.828,37970.862,42275.862,29590.483,22825.552,18468.517,17939.724,6925.517],[9206.897,38851.103,41065.517,31691.724,24441.655,18372.793,18771.897,6972.414],[16379.31,39600.138,38844.828,33226.276,26032.966,17997.207,18925.276,7057.931],[26224.138,40190.862,37172.414,35063.414,27475.172,18655.517,19602.103,7205.172],[36120.69,41555.276,36917.241,37636.793,29531.034,19682.207,19453.828,7357.586],[46479,43477,37000,40199,31981,20200,19732,7500]],"t0":1990,"t1":2024,"era":0},"best-selling-drugs":{"entities":[{"label":"Keytruda","color":"#23C8A8"},{"label":"Humira","color":"#B388FF"},{"label":"Comirnaty (Pfizer)","color":"#3B82F6"},{"label":"Zantac (ranitidine)","color":"#34D399"},{"label":"Losec / Prilosec","color":"#FF6FA5"},{"label":"Lipitor","color":"#4C8DFF"},{"label":"Eliquis","color":"#E879F9"},{"label":"Revlimid","color":"#F97316"},{"label":"Zocor","color":"#FFB020"},{"label":"Plavix","color":"#FF5C4D"},{"label":"Remicade","color":"#E2B93B"},{"label":"Sovaldi","color":"#BEF264"},{"label":"Harvoni","color":"#4ADE80"},{"label":"Ozempic","color":"#10B981"}],"frames":[[0,0,0,3.5,2.8,0,0,0,2.3,0,0,0,0,0],[0,0,0,3.3,3.7,0,0,0,2.8,0,0,0,0,0],[0,0,0,2.4,4.2,0.87,0,0,3.4,0,0,0,0,0],[0,0,0,1.6,5.1,2.2,0,0,3.9,0.2,0.1,0,0,0],[0,0,0,1.2,5.9,3.7,0,0,4.3,0.6,0.4,0,0,0],[0,0,0,0.9,6.26,5.03,0,0,4.9,1.2,0.9,0,0,0],[0,0,0,0.7,5.68,6.45,0,0,5.3,2,1.1,0,0,0],[0,0,0,0,4.62,7.97,0,0,5.6,3.2,1.6,0,0,0],[0,0.28,0,0,2.95,9.23,0,0,5,4,2.3,0,0,0],[0,0.85,0,0,1.95,10.86,0,0,5.2,5,2.8,0,0,0],[0,1.4,0,0,1.65,12.19,0,0.17,4.4,5.9,3.4,0,0,0],[0,2.04,0,0,1.37,12.89,0,0.77,2.8,6.1,4.3,0,0,0],[0,3.06,0,0,0,12.68,0,1.33,0.9,7.3,5,0,0,0],[0,4.52,0,0,0,12.4,0,2.14,0,8.6,5.9,0,0,0],[0,5.49,0,0,0,11.43,0,1.71,0,9.1,6.7,0,0,0],[0,6.55,0,0,0,10.73,0,2.47,0,9.4,7.3,0,0,0],[0,7.93,0,0,0,9.58,0,3.21,0,9.3,8.2,0,0,0],[0,9.27,0,0,0,3.95,0,3.77,0,5.2,8.2,0,0,0],[0,10.66,0,0,0,2.32,0.15,4.28,0,2.7,9,0.14,0,0],[0.06,12.54,0,0,0,2.06,1.04,4.98,0,2.4,9.2,10.28,2.13,0],[0.57,14.01,0,0,0,1.86,2.72,5.8,0,0,8.4,5.28,13.86,0],[1.4,16.08,0,0,0,0,5.05,6.97,0,0,8.2,4,9.08,0],[3.81,18.43,0,0,0,0,7.39,8.19,0,0,7.2,0.97,4.37,0],[7.17,19.94,0,0,0,0,9.87,9.69,0,0,5.9,0,1.4,0.28],[11.08,19.17,0,0,0,0,12.15,10.8,0,0,4.8,0,0,1.7],[14.38,19.83,0.15,0,0,0,14.12,12.1,0,0,4,0,0,3],[17.19,20.69,36.78,0,0,0,16.73,12.8,0,0,3.4,0,0,5.4],[20.94,21.24,37.81,0,0,0,18.27,9.98,0,0,2.4,0,0,8.5],[25.01,14.4,11.22,0,0,0,18.96,6.1,0,0,0,0,0,13.9],[29.48,8.99,5.35,0,0,0,20.7,5.8,0,0,0,0,0,17.5]],"t0":1995,"t1":2024,"era":0},"causes-of-death":{"entities":[{"label":"Heart disease","color":"#F43F5E"},{"label":"Cancer","color":"#B388FF"},{"label":"Unintentional injuries","color":"#FFB020"},{"label":"Stroke","color":"#4C8DFF"},{"label":"Chronic lower respiratory disease","color":"#67E8F9"},{"label":"COVID-19","color":"#E879F9"},{"label":"Influenza & pneumonia","color":"#A3E635"},{"label":"Perinatal & early-infancy conditions","color":"#FDE68A"}],"frames":[[535.7,210.7,91.2,156.8,0,0,47.1,61],[562.962,226.3,95.579,168.11,0,0,49.352,63.545],[585.234,240.931,93.448,174.228,0,0,44.59,64.017],[634.606,255.848,95.024,188.785,0,0,62.067,66.692],[661.817,268.007,93.69,193.559,0,0,66,67.003],[699.607,282.586,99.21,199.669,13.6,0,66.331,63.321],[713.641,298.231,108.579,201.483,26.697,0,62.076,55.007],[735.824,315.655,114.255,207.91,31.697,0,67.203,45.507],[736.59,331.624,114.434,207.462,30.817,0,61.941,42.552],[756.686,349.203,115.662,213.955,30.079,0,62.6,31.638],[717.528,367.7,102.621,193.069,25.507,0,56.769,26.29],[726.21,393.803,104.855,177.555,21.803,0,56.097,22.434],[759.61,417.659,104.666,168.814,56.579,0,54.414,22.631],[766.317,440.462,92.941,156.179,64.462,0,53.969,19.714],[769.824,463.483,93.934,152.255,75.159,0,68.131,19.007],[764.041,483.045,96.593,150.331,81.814,0,75.648,18.2],[720.321,507.893,91.255,143.934,87.803,0,79.059,12.817],[738.162,527.976,89.734,148.797,99.197,0,81.331,0],[736.297,538.81,93.797,158.59,103.862,0,83.148,0],[725.262,541.172,97.421,158.641,111.979,0,90.952,0],[707.11,553.341,99.141,166.252,122.345,0,64.162,0],[686.728,556.955,108.941,158.39,126.179,0,65.269,0],[644.324,559.528,119.241,141.134,128.51,0,60.459,0],[616.728,565.231,122.086,134.297,139.734,0,55.928,0],[597.245,575.528,123.176,129.252,140.086,0,51.631,0],[610.314,584.741,130.407,128.966,148.807,0,56.559,0],[634.472,596.841,153.234,141.107,154.821,0,54.59,0],[655.128,599.293,167.197,147.752,159.524,0,58.983,0],[696.276,603.752,212.538,161.555,147.679,382.71,47.9,0],[681,613.4,222.7,162.6,145.4,49.9,45.2,0]],"t0":1950,"t1":2023,"era":0},"wine-production":{"entities":[{"label":"France","color":"#4C8DFF"},{"label":"Italy","color":"#34D399"},{"label":"Spain","color":"#FF5C4D"},{"label":"Argentina","color":"#67E8F9"},{"label":"Soviet Union","color":"#B45309"},{"label":"United States","color":"#B388FF"},{"label":"China","color":"#FF6FA5"},{"label":"Portugal","color":"#23C8A8"},{"label":"Algeria","color":"#86EFAC"}],"frames":[[4.86,5.25,2.02,1.68,0.85,0.64,0,0.74,1.36],[5.818,5.543,2.679,2.053,1.201,0.73,0,1.308,1.231],[6.672,6.723,2.766,1.929,1.409,0.802,0,1.31,1.201],[6.386,7.081,2.322,2.46,1.846,0.792,0,1.053,0.785],[6.46,7.016,2.515,1.818,2.554,0.992,0,0.987,0.87],[6.034,6.144,2.589,2.056,2.179,1.253,0,0.846,0.686],[7.762,7.687,3.686,2.641,2.649,1.448,0,1.352,0.623],[7.386,6.594,2.458,2.799,3.144,1.44,0,0.948,0.382],[6.154,7.371,3.143,2.092,2.519,1.618,0.012,0.741,0.189],[6.68,8.266,4.03,2.309,3.273,1.759,0.087,1.001,0.278],[7.575,7.666,3.493,2.501,3.498,1.772,0.124,0.956,0.165],[6.736,6.645,3.317,1.72,3.017,1.696,0.196,0.917,0.114],[7.106,7.631,3.831,2.345,1.449,1.91,0.27,0.977,0.09],[5.988,6.044,2.924,2.036,1.899,1.867,0.278,0.679,0.052],[4.427,5.946,3.197,1.447,1.412,1.728,0.297,0.989,0.05],[5.339,6.247,2.611,1.476,0,1.927,0.508,0.482,0.069],[5.651,5.674,2.294,1.563,0,1.874,0.71,0.76,0.056],[5.482,5.284,3.217,1.322,0,2.423,0.955,0.511,0.04],[6.029,5.617,3.717,1.426,0,2.278,1.04,0.77,0.04],[5.129,4.752,3.317,1.388,0,2.332,1.105,0.738,0.046],[5.63,5.093,4.273,1.494,0,2.458,1.276,0.725,0.083],[5.349,4.746,3.864,1.538,0,2.415,1.395,0.728,0.099],[4.284,4.388,3.723,1.461,0,2.537,1.502,0.551,0.05],[4.63,4.399,3.569,1.596,0,2.698,1.452,0.684,0.017],[4.235,4.038,3.576,1.272,0,3.061,1.497,0.627,0.05],[4.762,4.506,3.874,1.439,0,3.287,2.075,0.656,0.01],[3.996,4.703,3.531,1.081,0,2.398,2.123,0.681,0.016],[4.419,5.109,3.679,1.341,0,2.561,2.114,0.619,0.006],[3.906,5.104,3.751,1.227,0,2.044,1.836,0.708,0.009],[4.76,4.25,2.85,0.88,0,2.08,1.76,0.74,0.01]],"t0":1961,"t1":2023,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=0dc17e2e0d"></script>
+</body>
+</html>

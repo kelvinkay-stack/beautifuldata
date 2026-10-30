@@ -64,6 +64,8 @@
 [data-cat="world"]    { --accent: #38bdf8; --accent-soft: rgba(56,189,248,.14); }
 [data-cat="play"]     { --accent: #ff7a45; --accent-soft: rgba(255,122,69,.14); }
 [data-cat="history"]  { --accent: #c77b4a; --accent-soft: rgba(199,123,74,.15); }
+[data-cat="trade"]    { --accent: #e879f9; --accent-soft: rgba(232,121,249,.14); }
+[data-cat="health"]   { --accent: #bef264; --accent-soft: rgba(190,242,100,.13); }
 [data-cat="wildcard"] { --accent: #8b5cf6; --accent-soft: rgba(139,92,246,.14); }
 
 * { box-sizing: border-box; }
