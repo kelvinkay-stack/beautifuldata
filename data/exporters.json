@@ -1,0 +1,1152 @@
+{
+  "id": "exporters",
+  "title": "World's Largest Merchandise Exporters",
+  "shortTitle": "Top Exporters",
+  "category": "trade",
+  "unit": {
+    "label": "Merchandise exports (nominal US$)",
+    "format": "si",
+    "prefix": "$",
+    "suffix": "",
+    "decimals": 1,
+    "multiplier": 1000000000
+  },
+  "scale": "linear",
+  "topN": 10,
+  "timeLabel": "year",
+  "blurb": "Annual goods exports by country in current dollars, from the oil-boom year of 1980 to China's $3.5 trillion juggernaut. West Germany and the United States trade the crown five times between 1986 and 2003, Japan surges through the 1980s, then China climbs from under 1% of world exports to #1 in 2009 and never looks back.",
+  "source": {
+    "name": "WTO Stats via World Bank WDI (TX.VAL.MRCH.CD.WT); UN Comtrade",
+    "url": "https://stats.wto.org/",
+    "note": "Calendar-year goods exports, current US$. Germany = West Germany before 1991; Belgium = Belgium-Luxembourg to 1998 (UN Comtrade). USSR 1980-90 approximated from Soviet ruble totals at the official rate."
+  },
+  "dataQuality": "sourced",
+  "lastUpdated": "2026-10-29",
+  "entities": [
+    {
+      "id": "china",
+      "label": "China",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "usa",
+      "label": "United States",
+      "color": "#4C8DFF"
+    },
+    {
+      "id": "germany",
+      "label": "Germany",
+      "color": "#FFD84D"
+    },
+    {
+      "id": "japan",
+      "label": "Japan",
+      "color": "#FF6FA5"
+    },
+    {
+      "id": "france",
+      "label": "France",
+      "color": "#67E8F9"
+    },
+    {
+      "id": "uk",
+      "label": "United Kingdom",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "italy",
+      "label": "Italy",
+      "color": "#34D399"
+    },
+    {
+      "id": "netherlands",
+      "label": "Netherlands",
+      "color": "#FF8C42"
+    },
+    {
+      "id": "canada",
+      "label": "Canada",
+      "color": "#FF5C4D"
+    },
+    {
+      "id": "saudi",
+      "label": "Saudi Arabia",
+      "color": "#23C8A8"
+    },
+    {
+      "id": "ussr",
+      "label": "Soviet Union",
+      "color": "#B45309"
+    },
+    {
+      "id": "belgium",
+      "label": "Belgium",
+      "color": "#E2B93B"
+    },
+    {
+      "id": "sweden",
+      "label": "Sweden",
+      "color": "#FDE68A"
+    },
+    {
+      "id": "switzerland",
+      "label": "Switzerland",
+      "color": "#FCA5A5"
+    },
+    {
+      "id": "hongkong",
+      "label": "Hong Kong",
+      "color": "#E879F9"
+    },
+    {
+      "id": "korea",
+      "label": "South Korea",
+      "color": "#2FB4FF"
+    },
+    {
+      "id": "russia",
+      "label": "Russia",
+      "color": "#C4B5A0"
+    },
+    {
+      "id": "mexico",
+      "label": "Mexico",
+      "color": "#A3E635"
+    }
+  ],
+  "keyframes": [
+    {
+      "t": 1980,
+      "values": {
+        "usa": 226,
+        "germany": 193,
+        "japan": 130,
+        "france": 116,
+        "uk": 110,
+        "saudi": 109,
+        "italy": 78,
+        "ussr": 76,
+        "netherlands": 74,
+        "canada": 68,
+        "belgium": 64,
+        "sweden": 31,
+        "switzerland": 30,
+        "hongkong": 20,
+        "china": 18,
+        "korea": 18,
+        "mexico": 18
+      }
+    },
+    {
+      "t": 1981,
+      "values": {
+        "usa": 239,
+        "germany": 176,
+        "japan": 151,
+        "saudi": 120,
+        "france": 106,
+        "uk": 102,
+        "ussr": 79,
+        "italy": 77,
+        "canada": 73,
+        "netherlands": 69,
+        "belgium": 55,
+        "sweden": 29,
+        "switzerland": 27,
+        "mexico": 23,
+        "china": 22,
+        "hongkong": 22,
+        "korea": 21
+      }
+    },
+    {
+      "t": 1982,
+      "values": {
+        "usa": 216,
+        "germany": 176,
+        "japan": 138,
+        "france": 97,
+        "uk": 97,
+        "ussr": 87,
+        "saudi": 79,
+        "italy": 74,
+        "canada": 71,
+        "netherlands": 66,
+        "belgium": 52,
+        "sweden": 27,
+        "switzerland": 26,
+        "mexico": 24,
+        "china": 22,
+        "korea": 22,
+        "hongkong": 21
+      }
+    },
+    {
+      "t": 1983,
+      "values": {
+        "usa": 206,
+        "germany": 169,
+        "japan": 147,
+        "france": 95,
+        "uk": 92,
+        "ussr": 92,
+        "canada": 77,
+        "italy": 73,
+        "netherlands": 65,
+        "belgium": 52,
+        "saudi": 46,
+        "sweden": 27,
+        "switzerland": 26,
+        "mexico": 26,
+        "korea": 24,
+        "china": 22,
+        "hongkong": 22
+      }
+    },
+    {
+      "t": 1984,
+      "values": {
+        "usa": 224,
+        "germany": 172,
+        "japan": 170,
+        "france": 98,
+        "uk": 94,
+        "ussr": 92,
+        "canada": 90,
+        "italy": 75,
+        "netherlands": 66,
+        "belgium": 51,
+        "saudi": 38,
+        "sweden": 29,
+        "korea": 29,
+        "mexico": 29,
+        "hongkong": 28,
+        "china": 26,
+        "switzerland": 26
+      }
+    },
+    {
+      "t": 1985,
+      "values": {
+        "usa": 219,
+        "germany": 184,
+        "japan": 177,
+        "france": 102,
+        "uk": 101,
+        "canada": 91,
+        "ussr": 87,
+        "italy": 77,
+        "netherlands": 68,
+        "belgium": 53,
+        "sweden": 30,
+        "hongkong": 30,
+        "korea": 30,
+        "china": 27,
+        "saudi": 27,
+        "switzerland": 27,
+        "mexico": 27
+      }
+    },
+    {
+      "t": 1986,
+      "values": {
+        "germany": 243,
+        "usa": 227,
+        "japan": 211,
+        "france": 125,
+        "uk": 107,
+        "ussr": 98,
+        "italy": 97,
+        "canada": 90,
+        "netherlands": 80,
+        "belgium": 69,
+        "sweden": 37,
+        "switzerland": 37,
+        "hongkong": 36,
+        "korea": 35,
+        "china": 31,
+        "mexico": 22,
+        "saudi": 20
+      }
+    },
+    {
+      "t": 1987,
+      "values": {
+        "germany": 294,
+        "usa": 254,
+        "japan": 231,
+        "france": 148,
+        "uk": 131,
+        "italy": 117,
+        "ussr": 108,
+        "canada": 98,
+        "netherlands": 93,
+        "belgium": 83,
+        "hongkong": 49,
+        "korea": 47,
+        "switzerland": 46,
+        "sweden": 45,
+        "china": 39,
+        "mexico": 28,
+        "saudi": 23
+      }
+    },
+    {
+      "t": 1988,
+      "values": {
+        "germany": 323,
+        "usa": 322,
+        "japan": 265,
+        "france": 168,
+        "uk": 145,
+        "italy": 128,
+        "canada": 117,
+        "ussr": 110,
+        "netherlands": 103,
+        "belgium": 89,
+        "hongkong": 63,
+        "korea": 61,
+        "switzerland": 51,
+        "sweden": 50,
+        "china": 48,
+        "mexico": 31,
+        "saudi": 24
+      }
+    },
+    {
+      "t": 1989,
+      "values": {
+        "usa": 364,
+        "germany": 341,
+        "japan": 274,
+        "france": 179,
+        "uk": 152,
+        "italy": 141,
+        "canada": 122,
+        "ussr": 109,
+        "netherlands": 108,
+        "belgium": 101,
+        "hongkong": 73,
+        "korea": 62,
+        "china": 53,
+        "sweden": 52,
+        "switzerland": 52,
+        "mexico": 35,
+        "saudi": 28
+      }
+    },
+    {
+      "t": 1990,
+      "values": {
+        "germany": 421,
+        "usa": 394,
+        "japan": 288,
+        "france": 217,
+        "uk": 185,
+        "italy": 170,
+        "netherlands": 132,
+        "canada": 128,
+        "belgium": 118,
+        "ussr": 104,
+        "hongkong": 82,
+        "korea": 65,
+        "switzerland": 64,
+        "china": 62,
+        "sweden": 58,
+        "saudi": 44,
+        "mexico": 41
+      }
+    },
+    {
+      "t": 1991,
+      "values": {
+        "usa": 422,
+        "germany": 403,
+        "japan": 315,
+        "france": 217,
+        "uk": 185,
+        "italy": 169,
+        "netherlands": 134,
+        "canada": 127,
+        "belgium": 118,
+        "hongkong": 99,
+        "china": 72,
+        "korea": 72,
+        "switzerland": 62,
+        "sweden": 55,
+        "saudi": 48,
+        "mexico": 43,
+        "ussr": 0,
+        "russia": 0
+      }
+    },
+    {
+      "t": 1992,
+      "values": {
+        "usa": 448,
+        "germany": 430,
+        "japan": 340,
+        "france": 236,
+        "uk": 190,
+        "italy": 178,
+        "netherlands": 140,
+        "canada": 134,
+        "belgium": 123,
+        "hongkong": 120,
+        "china": 85,
+        "korea": 77,
+        "switzerland": 66,
+        "sweden": 56,
+        "saudi": 50,
+        "mexico": 46,
+        "russia": 42
+      }
+    },
+    {
+      "t": 1993,
+      "values": {
+        "usa": 465,
+        "germany": 380,
+        "japan": 362,
+        "france": 222,
+        "uk": 181,
+        "italy": 169,
+        "canada": 145,
+        "netherlands": 140,
+        "hongkong": 135,
+        "belgium": 120,
+        "china": 92,
+        "korea": 82,
+        "switzerland": 63,
+        "mexico": 52,
+        "sweden": 50,
+        "russia": 44,
+        "saudi": 42
+      }
+    },
+    {
+      "t": 1994,
+      "values": {
+        "usa": 513,
+        "germany": 427,
+        "japan": 397,
+        "france": 251,
+        "uk": 205,
+        "italy": 191,
+        "canada": 165,
+        "netherlands": 161,
+        "hongkong": 151,
+        "belgium": 137,
+        "china": 121,
+        "korea": 96,
+        "switzerland": 70,
+        "russia": 67,
+        "sweden": 66,
+        "mexico": 61,
+        "saudi": 43
+      }
+    },
+    {
+      "t": 1995,
+      "values": {
+        "usa": 585,
+        "germany": 523,
+        "japan": 443,
+        "france": 301,
+        "uk": 238,
+        "italy": 234,
+        "netherlands": 203,
+        "canada": 192,
+        "hongkong": 174,
+        "belgium": 168,
+        "china": 149,
+        "korea": 125,
+        "switzerland": 82,
+        "russia": 82,
+        "sweden": 80,
+        "mexico": 80,
+        "saudi": 50
+      }
+    },
+    {
+      "t": 1996,
+      "values": {
+        "usa": 625,
+        "germany": 525,
+        "japan": 411,
+        "france": 306,
+        "uk": 259,
+        "italy": 252,
+        "netherlands": 209,
+        "canada": 202,
+        "hongkong": 181,
+        "belgium": 168,
+        "china": 151,
+        "korea": 130,
+        "mexico": 96,
+        "russia": 90,
+        "sweden": 85,
+        "switzerland": 80,
+        "saudi": 61
+      }
+    },
+    {
+      "t": 1997,
+      "values": {
+        "usa": 689,
+        "germany": 513,
+        "japan": 421,
+        "france": 302,
+        "uk": 280,
+        "italy": 240,
+        "canada": 214,
+        "netherlands": 208,
+        "hongkong": 188,
+        "china": 183,
+        "belgium": 172,
+        "korea": 136,
+        "mexico": 110,
+        "russia": 87,
+        "sweden": 83,
+        "switzerland": 76,
+        "saudi": 61
+      }
+    },
+    {
+      "t": 1998,
+      "values": {
+        "usa": 682,
+        "germany": 544,
+        "japan": 388,
+        "france": 321,
+        "uk": 274,
+        "italy": 246,
+        "netherlands": 214,
+        "canada": 214,
+        "china": 184,
+        "belgium": 178,
+        "hongkong": 175,
+        "korea": 132,
+        "mexico": 117,
+        "sweden": 85,
+        "switzerland": 79,
+        "russia": 74,
+        "saudi": 39
+      }
+    },
+    {
+      "t": 1999,
+      "values": {
+        "usa": 696,
+        "germany": 544,
+        "japan": 418,
+        "france": 326,
+        "uk": 272,
+        "canada": 238,
+        "italy": 236,
+        "netherlands": 219,
+        "china": 195,
+        "belgium": 179,
+        "hongkong": 174,
+        "korea": 144,
+        "mexico": 136,
+        "sweden": 85,
+        "switzerland": 80,
+        "russia": 76,
+        "saudi": 51
+      }
+    },
+    {
+      "t": 2000,
+      "values": {
+        "usa": 782,
+        "germany": 552,
+        "japan": 479,
+        "france": 328,
+        "uk": 283,
+        "canada": 277,
+        "china": 249,
+        "italy": 241,
+        "netherlands": 233,
+        "hongkong": 203,
+        "belgium": 188,
+        "korea": 172,
+        "mexico": 166,
+        "russia": 105,
+        "sweden": 87,
+        "switzerland": 80,
+        "saudi": 78
+      }
+    },
+    {
+      "t": 2001,
+      "values": {
+        "usa": 729,
+        "germany": 572,
+        "japan": 403,
+        "france": 323,
+        "uk": 275,
+        "china": 266,
+        "canada": 260,
+        "italy": 244,
+        "netherlands": 231,
+        "hongkong": 191,
+        "belgium": 190,
+        "mexico": 159,
+        "korea": 150,
+        "russia": 102,
+        "switzerland": 82,
+        "sweden": 76,
+        "saudi": 68
+      }
+    },
+    {
+      "t": 2002,
+      "values": {
+        "usa": 693,
+        "germany": 616,
+        "japan": 417,
+        "france": 332,
+        "china": 326,
+        "uk": 281,
+        "italy": 254,
+        "canada": 252,
+        "netherlands": 244,
+        "belgium": 216,
+        "hongkong": 202,
+        "korea": 162,
+        "mexico": 161,
+        "russia": 107,
+        "switzerland": 92,
+        "sweden": 81,
+        "saudi": 72
+      }
+    },
+    {
+      "t": 2003,
+      "values": {
+        "germany": 752,
+        "usa": 725,
+        "japan": 472,
+        "china": 438,
+        "france": 392,
+        "uk": 309,
+        "italy": 299,
+        "netherlands": 296,
+        "canada": 273,
+        "belgium": 256,
+        "hongkong": 229,
+        "korea": 194,
+        "mexico": 165,
+        "russia": 136,
+        "switzerland": 105,
+        "sweden": 102,
+        "saudi": 93
+      }
+    },
+    {
+      "t": 2004,
+      "values": {
+        "germany": 910,
+        "usa": 815,
+        "china": 593,
+        "japan": 566,
+        "france": 452,
+        "netherlands": 357,
+        "italy": 354,
+        "uk": 350,
+        "canada": 317,
+        "belgium": 307,
+        "hongkong": 266,
+        "korea": 254,
+        "mexico": 188,
+        "russia": 183,
+        "saudi": 126,
+        "sweden": 123,
+        "switzerland": 123
+      }
+    },
+    {
+      "t": 2005,
+      "values": {
+        "germany": 971,
+        "usa": 901,
+        "china": 762,
+        "japan": 595,
+        "france": 463,
+        "netherlands": 406,
+        "uk": 393,
+        "italy": 373,
+        "canada": 360,
+        "belgium": 334,
+        "hongkong": 292,
+        "korea": 284,
+        "russia": 244,
+        "mexico": 214,
+        "saudi": 181,
+        "switzerland": 150,
+        "sweden": 131
+      }
+    },
+    {
+      "t": 2006,
+      "values": {
+        "germany": 1108,
+        "usa": 1026,
+        "china": 969,
+        "japan": 647,
+        "france": 496,
+        "netherlands": 464,
+        "uk": 454,
+        "italy": 417,
+        "canada": 388,
+        "belgium": 367,
+        "korea": 325,
+        "hongkong": 323,
+        "russia": 304,
+        "mexico": 250,
+        "saudi": 211,
+        "switzerland": 166,
+        "sweden": 148
+      }
+    },
+    {
+      "t": 2007,
+      "values": {
+        "germany": 1321,
+        "china": 1220,
+        "usa": 1148,
+        "japan": 714,
+        "france": 560,
+        "netherlands": 551,
+        "italy": 500,
+        "uk": 447,
+        "belgium": 431,
+        "canada": 421,
+        "korea": 371,
+        "russia": 354,
+        "hongkong": 349,
+        "mexico": 272,
+        "saudi": 233,
+        "switzerland": 196,
+        "sweden": 169
+      }
+    },
+    {
+      "t": 2008,
+      "values": {
+        "germany": 1446,
+        "china": 1431,
+        "usa": 1287,
+        "japan": 781,
+        "netherlands": 638,
+        "france": 616,
+        "italy": 543,
+        "uk": 477,
+        "belgium": 472,
+        "russia": 472,
+        "canada": 456,
+        "korea": 422,
+        "hongkong": 370,
+        "saudi": 313,
+        "mexico": 291,
+        "switzerland": 236,
+        "sweden": 183
+      }
+    },
+    {
+      "t": 2009,
+      "values": {
+        "china": 1202,
+        "germany": 1120,
+        "usa": 1056,
+        "japan": 581,
+        "netherlands": 498,
+        "france": 485,
+        "italy": 407,
+        "belgium": 370,
+        "korea": 364,
+        "uk": 358,
+        "hongkong": 329,
+        "canada": 316,
+        "russia": 303,
+        "mexico": 230,
+        "switzerland": 204,
+        "saudi": 192,
+        "sweden": 131
+      }
+    },
+    {
+      "t": 2010,
+      "values": {
+        "china": 1578,
+        "usa": 1278,
+        "germany": 1259,
+        "japan": 770,
+        "netherlands": 574,
+        "france": 524,
+        "korea": 466,
+        "italy": 447,
+        "uk": 420,
+        "belgium": 408,
+        "hongkong": 401,
+        "russia": 401,
+        "canada": 387,
+        "mexico": 298,
+        "saudi": 251,
+        "switzerland": 196,
+        "sweden": 159
+      }
+    },
+    {
+      "t": 2011,
+      "values": {
+        "china": 1898,
+        "usa": 1483,
+        "germany": 1474,
+        "japan": 823,
+        "netherlands": 667,
+        "france": 596,
+        "korea": 555,
+        "italy": 523,
+        "russia": 522,
+        "uk": 510,
+        "belgium": 476,
+        "hongkong": 456,
+        "canada": 451,
+        "saudi": 365,
+        "mexico": 350,
+        "switzerland": 235,
+        "sweden": 187
+      }
+    },
+    {
+      "t": 2012,
+      "values": {
+        "china": 2049,
+        "usa": 1546,
+        "germany": 1401,
+        "japan": 799,
+        "netherlands": 655,
+        "france": 569,
+        "korea": 548,
+        "russia": 529,
+        "italy": 501,
+        "hongkong": 493,
+        "uk": 479,
+        "canada": 456,
+        "belgium": 446,
+        "saudi": 388,
+        "mexico": 371,
+        "switzerland": 312,
+        "sweden": 172
+      }
+    },
+    {
+      "t": 2013,
+      "values": {
+        "china": 2209,
+        "usa": 1580,
+        "germany": 1445,
+        "japan": 715,
+        "netherlands": 672,
+        "france": 581,
+        "korea": 560,
+        "uk": 547,
+        "hongkong": 536,
+        "russia": 522,
+        "italy": 518,
+        "belgium": 469,
+        "canada": 458,
+        "mexico": 380,
+        "saudi": 376,
+        "switzerland": 358,
+        "sweden": 168
+      }
+    },
+    {
+      "t": 2014,
+      "values": {
+        "china": 2342,
+        "usa": 1621,
+        "germany": 1494,
+        "japan": 690,
+        "netherlands": 672,
+        "france": 581,
+        "korea": 573,
+        "italy": 530,
+        "hongkong": 524,
+        "uk": 511,
+        "russia": 497,
+        "canada": 476,
+        "belgium": 472,
+        "mexico": 397,
+        "saudi": 342,
+        "switzerland": 311,
+        "sweden": 165
+      }
+    },
+    {
+      "t": 2015,
+      "values": {
+        "china": 2273,
+        "usa": 1503,
+        "germany": 1326,
+        "japan": 625,
+        "netherlands": 570,
+        "korea": 527,
+        "hongkong": 510,
+        "france": 506,
+        "uk": 466,
+        "italy": 457,
+        "canada": 410,
+        "belgium": 397,
+        "mexico": 381,
+        "russia": 341,
+        "switzerland": 290,
+        "saudi": 204,
+        "sweden": 140
+      }
+    },
+    {
+      "t": 2016,
+      "values": {
+        "china": 2098,
+        "usa": 1451,
+        "germany": 1334,
+        "japan": 645,
+        "netherlands": 571,
+        "hongkong": 517,
+        "france": 501,
+        "korea": 495,
+        "italy": 462,
+        "uk": 411,
+        "belgium": 398,
+        "canada": 390,
+        "mexico": 374,
+        "switzerland": 303,
+        "russia": 282,
+        "saudi": 184,
+        "sweden": 139
+      }
+    },
+    {
+      "t": 2017,
+      "values": {
+        "china": 2263,
+        "usa": 1546,
+        "germany": 1448,
+        "japan": 698,
+        "netherlands": 652,
+        "korea": 574,
+        "hongkong": 550,
+        "france": 535,
+        "italy": 507,
+        "uk": 441,
+        "belgium": 430,
+        "canada": 421,
+        "mexico": 409,
+        "russia": 353,
+        "switzerland": 300,
+        "saudi": 222,
+        "sweden": 153
+      }
+    },
+    {
+      "t": 2018,
+      "values": {
+        "china": 2487,
+        "usa": 1664,
+        "germany": 1561,
+        "japan": 738,
+        "netherlands": 727,
+        "korea": 605,
+        "france": 582,
+        "hongkong": 568,
+        "italy": 550,
+        "uk": 486,
+        "belgium": 468,
+        "canada": 452,
+        "mexico": 451,
+        "russia": 444,
+        "switzerland": 311,
+        "saudi": 294,
+        "sweden": 166
+      }
+    },
+    {
+      "t": 2019,
+      "values": {
+        "china": 2499,
+        "usa": 1643,
+        "germany": 1489,
+        "netherlands": 709,
+        "japan": 706,
+        "france": 571,
+        "korea": 542,
+        "italy": 538,
+        "hongkong": 535,
+        "mexico": 461,
+        "uk": 460,
+        "canada": 449,
+        "belgium": 447,
+        "russia": 420,
+        "switzerland": 314,
+        "saudi": 262,
+        "sweden": 161
+      }
+    },
+    {
+      "t": 2020,
+      "values": {
+        "china": 2590,
+        "usa": 1425,
+        "germany": 1383,
+        "netherlands": 675,
+        "japan": 641,
+        "hongkong": 549,
+        "korea": 512,
+        "italy": 500,
+        "france": 489,
+        "belgium": 423,
+        "mexico": 417,
+        "uk": 400,
+        "canada": 391,
+        "russia": 334,
+        "switzerland": 319,
+        "saudi": 174,
+        "sweden": 155
+      }
+    },
+    {
+      "t": 2021,
+      "values": {
+        "china": 3316,
+        "usa": 1754,
+        "germany": 1627,
+        "netherlands": 840,
+        "japan": 756,
+        "hongkong": 670,
+        "korea": 644,
+        "italy": 616,
+        "france": 585,
+        "belgium": 551,
+        "canada": 509,
+        "mexico": 495,
+        "russia": 494,
+        "uk": 472,
+        "switzerland": 380,
+        "saudi": 276,
+        "sweden": 190
+      }
+    },
+    {
+      "t": 2022,
+      "values": {
+        "china": 3544,
+        "usa": 2065,
+        "germany": 1676,
+        "netherlands": 963,
+        "japan": 747,
+        "korea": 684,
+        "italy": 659,
+        "belgium": 638,
+        "france": 620,
+        "hongkong": 610,
+        "canada": 602,
+        "russia": 592,
+        "mexico": 578,
+        "uk": 546,
+        "saudi": 411,
+        "switzerland": 401,
+        "sweden": 198
+      }
+    },
+    {
+      "t": 2023,
+      "values": {
+        "china": 3379,
+        "usa": 2018,
+        "germany": 1702,
+        "netherlands": 935,
+        "japan": 717,
+        "italy": 677,
+        "france": 651,
+        "korea": 632,
+        "mexico": 593,
+        "belgium": 579,
+        "hongkong": 574,
+        "canada": 570,
+        "uk": 525,
+        "russia": 425,
+        "switzerland": 420,
+        "saudi": 320,
+        "sweden": 197
+      }
+    },
+    {
+      "t": 2024,
+      "values": {
+        "china": 3576,
+        "usa": 2062,
+        "germany": 1676,
+        "netherlands": 921,
+        "japan": 707,
+        "korea": 684,
+        "italy": 673,
+        "hongkong": 646,
+        "france": 641,
+        "mexico": 618,
+        "canada": 568,
+        "belgium": 555,
+        "uk": 524,
+        "switzerland": 447,
+        "russia": 434,
+        "saudi": 305,
+        "sweden": 196
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "t": 1981,
+      "title": "Oil money: Saudi Arabia hits #4",
+      "text": "Riding $35 crude, Saudi Arabia exports $120B of goods in 1981, beating France and the UK. By 1985 the oil glut cuts that by 75%."
+    },
+    {
+      "t": 1984,
+      "title": "Japan draws level with Germany",
+      "text": "Japan's car and electronics boom lifts exports to $170B in 1984, within $2B of West Germany and closing on the United States."
+    },
+    {
+      "t": 1986,
+      "title": "West Germany becomes No. 1",
+      "text": "After the Plaza Accord weakens the dollar, West Germany ($243B) passes the US ($227B) as the world's top merchandise exporter."
+    },
+    {
+      "t": 1991,
+      "title": "US retakes the crown",
+      "text": "Reunification sucks German output into the east while US exports climb past $420B. America leads every year from 1991 to 2002."
+    },
+    {
+      "t": 2003,
+      "title": "Germany's Exportweltmeister run",
+      "text": "A strong euro and booming machinery sales put Germany back on top in 2003 ($752B vs $725B), a title it holds for six straight years."
+    },
+    {
+      "t": 2007,
+      "title": "China passes the United States",
+      "text": "China's exports reach $1.22 trillion in 2007, overtaking the US - just six years after joining the WTO in December 2001."
+    },
+    {
+      "t": 2009,
+      "title": "China becomes world's top exporter",
+      "text": "As the financial crisis crushes trade, China ($1.20T) slips past Germany ($1.12T) for #1. It has led every year since."
+    },
+    {
+      "t": 2021,
+      "title": "China tops $3 trillion",
+      "text": "Pandemic demand for electronics and medical goods lifts China's exports to $3.3T in 2021 - nearly double the second-placed United States."
+    }
+  ]
+}

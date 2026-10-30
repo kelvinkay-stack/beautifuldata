@@ -80,20 +80,30 @@ function statsFor(ds) {
   let leader = null;
   let leadChanges = 0;
   const reigns = [];
-  for (const k of kf) {
+  kf.forEach((k, i) => {
     let top = null, topV = -Infinity;
     for (const [id, v] of Object.entries(k.values)) {
       if (v > topV) { topV = v; top = id; }
     }
+    // a tie isn't an overtake: the reigning leader keeps #1 until passed
+    if (leader !== null && k.values[leader] === topV) top = leader;
     if (top !== null && top !== leader) {
+      // date the overtake where the bars cross, as the animation shows it
+      let at = k.t;
+      const prev = kf[i - 1];
+      if (leader !== null && prev) {
+        const gap0 = (prev.values[leader] || 0) - (prev.values[top] || 0);
+        const gap1 = (k.values[leader] || 0) - topV;
+        if (gap0 > 0 && gap1 < 0) at = prev.t + (k.t - prev.t) * gap0 / (gap0 - gap1);
+      }
       if (leader !== null) {
         leadChanges++;
-        reigns[reigns.length - 1].to = k.t;
+        reigns[reigns.length - 1].to = at;
       }
-      reigns.push({ id: top, from: k.t, to: kf[kf.length - 1].t });
+      reigns.push({ id: top, from: at, to: kf[kf.length - 1].t });
       leader = top;
     }
-  }
+  });
 
   let longest = null;
   for (const r of reigns) {
@@ -129,6 +139,12 @@ function statsFor(ds) {
   }
 
   const win = entById.get(leader) || {};
+  // everyone level with the leader at the finish shares the top spot
+  const coLeaders = Object.entries(finals)
+    .filter(([id, v]) => id !== leader && v === finals[leader] && v > 0)
+    .map(([id]) => (entById.get(id) || {}).label)
+    .filter(Boolean);
+  if (coLeaders.length) rise = null;
   return {
     reigns: reigns.map((r) => ({
       label: (entById.get(r.id) || {}).label || r.id,
@@ -144,7 +160,12 @@ function statsFor(ds) {
     longestReign: longest
       ? { label: (entById.get(longest.id) || {}).label || '', years: Math.max(1, Math.round(longest.len)) }
       : null,
-    finalLeader: { label: win.label || '', color: win.color || '#888', value: fmt(finals[leader] || 0) },
+    finalLeader: {
+      label: [win.label || '', ...coLeaders].join(' & '),
+      color: win.color || '#888',
+      value: fmt(finals[leader] || 0),
+      tied: coLeaders.length > 0,
+    },
     spanYears: Math.round(kf[kf.length - 1].t - kf[0].t),
     standings,
   };
@@ -242,6 +263,8 @@ const ICONS = {
   coin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="6.5" rx="7.5" ry="3.5"/><path d="M4.5 6.5v11c0 1.9 3.4 3.5 7.5 3.5s7.5-1.6 7.5-3.5v-11M4.5 12c0 1.9 3.4 3.5 7.5 3.5s7.5-1.6 7.5-3.5"/></svg>',
   globe: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.4 4 5.6 4 9s-1.4 6.6-4 9c-2.6-2.4-4-5.6-4-9s1.4-6.6 4-9z"/></svg>',
   controller: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 8.5h10a4.5 4.5 0 0 1 4.5 4.5l-.7 3.5a2.5 2.5 0 0 1-4.5.8L15 15H9l-1.3 2.3a2.5 2.5 0 0 1-4.5-.8L2.5 13A4.5 4.5 0 0 1 7 8.5z"/><path d="M6 11.5v2M5 12.5h2M15.5 11.5h.01M18 13h.01" stroke-linecap="round"/></svg>',
+  ship: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 15.5h18l-2.2 4.2a1.5 1.5 0 0 1-1.3.8H6.5a1.5 1.5 0 0 1-1.3-.8z" stroke-linejoin="round"/><rect x="5.5" y="10" width="4" height="5.5" rx=".6"/><rect x="10" y="10" width="4" height="5.5" rx=".6"/><rect x="14.5" y="7" width="4" height="8.5" rx=".6"/></svg>',
+  leaf: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19c0-8 5-13.5 15-14-0.5 10-6 15-14 15" stroke-linejoin="round"/><path d="M4 20c3-4 6.5-7.5 11-10.5" stroke-linecap="round"/></svg>',
   column: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M4.5 6l1-2.5h13l1 2.5M6.5 6v12M11 6v12M13 6v12M17.5 6v12M3.5 18h17l1 2.5H2.5z" stroke-linejoin="round"/></svg>',
 };
 

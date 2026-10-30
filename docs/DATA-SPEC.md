@@ -10,7 +10,7 @@ config: adding or upgrading a dataset must never require a code change.
   "id": "atp-weeks",                  // kebab-case, matches filename
   "title": "Weeks at World No. 1",    // display title, ≤ 40 chars
   "shortTitle": "ATP No. 1",          // for cards / nav, ≤ 18 chars
-  "category": "tech",                 // tech | sports | culture | science | wildcard
+  "category": "tech",                 // any category id in site.config.json (tech, sports, trade, health, …)
   "unit": {
     "label": "Cumulative weeks",      // shown under the clock
     "format": "plain",                // plain | si | percent

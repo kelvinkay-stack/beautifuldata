@@ -1,0 +1,701 @@
+{
+ "id": "car-makers",
+ "title": "World's Largest Automakers",
+ "shortTitle": "Automakers",
+ "category": "trade",
+ "unit": {
+  "label": "Vehicles sold per year (group)",
+  "format": "plain",
+  "prefix": "",
+  "suffix": "M",
+  "decimals": 2
+ },
+ "scale": "linear",
+ "topN": 10,
+ "timeLabel": "year",
+ "blurb": "Annual global vehicle sales by carmaker group, from GM's long reign to Toyota's dominance and China's BYD. Toyota finally ends GM's 77 years as No. 1 in 2008, Volkswagen grabs the crown from 2016 to 2019 despite Dieselgate, and BYD goes from 0.4 million cars in 2020 to 4.3 million in 2024.",
+ "source": {
+  "name": "Company annual reports; OICA World Motor Vehicle Production rankings",
+  "url": "https://www.oica.net/category/production-statistics/",
+  "note": "Group sales/deliveries in millions; 1990s and some Japanese/Korean years estimated from production. Stellantis (2021) replaces PSA and Fiat/FCA; FCA includes Chrysler from 2011. Chrysler excludes Mercedes in 1998-2007."
+ },
+ "dataQuality": "illustrative",
+ "lastUpdated": "2026-10-29",
+ "entities": [
+  {
+   "id": "gm",
+   "label": "General Motors",
+   "color": "#4C8DFF"
+  },
+  {
+   "id": "toyota",
+   "label": "Toyota",
+   "color": "#F43F5E"
+  },
+  {
+   "id": "vw",
+   "label": "Volkswagen Group",
+   "color": "#67E8F9"
+  },
+  {
+   "id": "ford",
+   "label": "Ford",
+   "color": "#B388FF"
+  },
+  {
+   "id": "hyundai",
+   "label": "Hyundai-Kia",
+   "color": "#23C8A8"
+  },
+  {
+   "id": "nissan",
+   "label": "Nissan",
+   "color": "#D4D4D8"
+  },
+  {
+   "id": "honda",
+   "label": "Honda",
+   "color": "#FCA5A5"
+  },
+  {
+   "id": "renault",
+   "label": "Renault",
+   "color": "#FFD84D"
+  },
+  {
+   "id": "psa",
+   "label": "PSA (Peugeot-Citroën)",
+   "color": "#94A3B8"
+  },
+  {
+   "id": "fiat",
+   "label": "Fiat / FCA",
+   "color": "#FF6FA5"
+  },
+  {
+   "id": "chrysler",
+   "label": "Chrysler",
+   "color": "#C4B5A0"
+  },
+  {
+   "id": "stellantis",
+   "label": "Stellantis",
+   "color": "#8B5CF6"
+  },
+  {
+   "id": "suzuki",
+   "label": "Suzuki",
+   "color": "#FFB020"
+  },
+  {
+   "id": "byd",
+   "label": "BYD",
+   "color": "#34D399"
+  },
+  {
+   "id": "geely",
+   "label": "Geely Holding",
+   "color": "#2FB4FF"
+  },
+  {
+   "id": "mitsubishi",
+   "label": "Mitsubishi",
+   "color": "#FDE68A"
+  }
+ ],
+ "keyframes": [
+  {
+   "t": 1990,
+   "values": {
+    "gm": 7.45,
+    "ford": 5.8,
+    "toyota": 4.9,
+    "vw": 3.06,
+    "nissan": 3.0,
+    "fiat": 2.6,
+    "psa": 2.2,
+    "honda": 1.9,
+    "renault": 1.85,
+    "chrysler": 1.6,
+    "mitsubishi": 1.6,
+    "hyundai": 1.0,
+    "suzuki": 0.9
+   }
+  },
+  {
+   "t": 1992,
+   "values": {
+    "gm": 7.2,
+    "ford": 5.8,
+    "toyota": 4.9,
+    "vw": 3.5,
+    "nissan": 2.9,
+    "fiat": 2.2,
+    "psa": 2.1,
+    "honda": 1.9,
+    "renault": 1.9,
+    "chrysler": 1.9,
+    "mitsubishi": 1.8,
+    "hyundai": 1.2,
+    "suzuki": 1.0
+   }
+  },
+  {
+   "t": 1994,
+   "values": {
+    "gm": 8.1,
+    "ford": 6.6,
+    "toyota": 4.7,
+    "vw": 3.13,
+    "chrysler": 2.7,
+    "nissan": 2.6,
+    "fiat": 2.3,
+    "psa": 2.0,
+    "honda": 1.9,
+    "renault": 1.85,
+    "mitsubishi": 1.7,
+    "hyundai": 1.6,
+    "suzuki": 1.2
+   }
+  },
+  {
+   "t": 1996,
+   "values": {
+    "gm": 8.2,
+    "ford": 6.7,
+    "toyota": 5.1,
+    "vw": 3.98,
+    "chrysler": 2.9,
+    "nissan": 2.7,
+    "fiat": 2.5,
+    "honda": 2.1,
+    "hyundai": 2.0,
+    "psa": 1.96,
+    "renault": 1.76,
+    "mitsubishi": 1.6,
+    "suzuki": 1.5
+   }
+  },
+  {
+   "t": 1998,
+   "values": {
+    "gm": 7.5,
+    "ford": 6.8,
+    "toyota": 5.2,
+    "vw": 4.75,
+    "chrysler": 3.2,
+    "nissan": 2.6,
+    "fiat": 2.6,
+    "honda": 2.3,
+    "psa": 2.27,
+    "renault": 2.13,
+    "suzuki": 1.6,
+    "mitsubishi": 1.4,
+    "hyundai": 1.3
+   }
+  },
+  {
+   "t": 2000,
+   "values": {
+    "gm": 8.6,
+    "ford": 7.4,
+    "toyota": 5.95,
+    "vw": 5.16,
+    "chrysler": 3.0,
+    "psa": 2.88,
+    "nissan": 2.63,
+    "fiat": 2.6,
+    "hyundai": 2.5,
+    "honda": 2.5,
+    "renault": 2.4,
+    "suzuki": 1.7,
+    "mitsubishi": 1.6
+   }
+  },
+  {
+   "t": 2001,
+   "values": {
+    "gm": 8.5,
+    "ford": 6.99,
+    "toyota": 6.0,
+    "vw": 5.11,
+    "psa": 3.13,
+    "chrysler": 2.7,
+    "honda": 2.65,
+    "hyundai": 2.6,
+    "nissan": 2.58,
+    "renault": 2.4,
+    "fiat": 2.4,
+    "suzuki": 1.75,
+    "mitsubishi": 1.5
+   }
+  },
+  {
+   "t": 2002,
+   "values": {
+    "gm": 8.6,
+    "ford": 6.97,
+    "toyota": 6.3,
+    "vw": 4.98,
+    "psa": 3.27,
+    "honda": 2.85,
+    "chrysler": 2.8,
+    "nissan": 2.77,
+    "hyundai": 2.7,
+    "renault": 2.4,
+    "fiat": 2.2,
+    "suzuki": 1.85,
+    "mitsubishi": 1.3,
+    "byd": 0
+   }
+  },
+  {
+   "t": 2003,
+   "values": {
+    "gm": 8.6,
+    "toyota": 6.78,
+    "ford": 6.72,
+    "vw": 5.02,
+    "psa": 3.29,
+    "nissan": 3.06,
+    "hyundai": 2.9,
+    "honda": 2.9,
+    "chrysler": 2.7,
+    "renault": 2.39,
+    "fiat": 2.0,
+    "suzuki": 2.0,
+    "mitsubishi": 1.3,
+    "byd": 0.02
+   }
+  },
+  {
+   "t": 2004,
+   "values": {
+    "gm": 9.0,
+    "toyota": 7.52,
+    "ford": 6.8,
+    "vw": 5.08,
+    "nissan": 3.39,
+    "psa": 3.39,
+    "honda": 3.24,
+    "hyundai": 3.2,
+    "chrysler": 2.78,
+    "renault": 2.49,
+    "suzuki": 2.1,
+    "fiat": 1.9,
+    "mitsubishi": 1.3,
+    "byd": 0.07
+   }
+  },
+  {
+   "t": 2005,
+   "values": {
+    "gm": 9.17,
+    "toyota": 7.97,
+    "ford": 6.82,
+    "vw": 5.24,
+    "hyundai": 3.6,
+    "nissan": 3.57,
+    "honda": 3.39,
+    "psa": 3.39,
+    "chrysler": 2.83,
+    "renault": 2.53,
+    "suzuki": 2.3,
+    "fiat": 1.98,
+    "mitsubishi": 1.3,
+    "byd": 0.05
+   }
+  },
+  {
+   "t": 2006,
+   "values": {
+    "gm": 9.09,
+    "toyota": 8.81,
+    "ford": 6.6,
+    "vw": 5.73,
+    "hyundai": 3.85,
+    "honda": 3.67,
+    "nissan": 3.48,
+    "psa": 3.37,
+    "chrysler": 2.7,
+    "renault": 2.43,
+    "suzuki": 2.4,
+    "fiat": 2.3,
+    "mitsubishi": 1.3,
+    "byd": 0.1
+   }
+  },
+  {
+   "t": 2007,
+   "values": {
+    "gm": 9.369,
+    "toyota": 9.366,
+    "ford": 6.55,
+    "vw": 6.19,
+    "hyundai": 3.96,
+    "honda": 3.93,
+    "nissan": 3.68,
+    "psa": 3.43,
+    "chrysler": 2.68,
+    "fiat": 2.6,
+    "suzuki": 2.6,
+    "renault": 2.48,
+    "mitsubishi": 1.4,
+    "byd": 0.17
+   }
+  },
+  {
+   "t": 2008,
+   "values": {
+    "toyota": 8.97,
+    "gm": 8.36,
+    "vw": 6.27,
+    "ford": 5.53,
+    "hyundai": 4.17,
+    "honda": 3.78,
+    "nissan": 3.69,
+    "psa": 3.26,
+    "fiat": 2.5,
+    "suzuki": 2.4,
+    "renault": 2.38,
+    "chrysler": 2.01,
+    "mitsubishi": 1.4,
+    "byd": 0.19
+   }
+  },
+  {
+   "t": 2009,
+   "values": {
+    "toyota": 7.81,
+    "gm": 7.48,
+    "vw": 6.31,
+    "ford": 4.82,
+    "hyundai": 4.64,
+    "honda": 3.39,
+    "nissan": 3.35,
+    "psa": 3.19,
+    "renault": 2.31,
+    "suzuki": 2.3,
+    "fiat": 2.2,
+    "chrysler": 1.32,
+    "mitsubishi": 1.0,
+    "byd": 0.45,
+    "geely": 0.33
+   }
+  },
+  {
+   "t": 2010,
+   "values": {
+    "toyota": 8.42,
+    "gm": 8.39,
+    "vw": 7.2,
+    "hyundai": 5.74,
+    "ford": 5.31,
+    "nissan": 4.08,
+    "honda": 3.64,
+    "psa": 3.6,
+    "renault": 2.63,
+    "suzuki": 2.6,
+    "fiat": 2.3,
+    "chrysler": 1.6,
+    "mitsubishi": 1.1,
+    "geely": 0.79,
+    "byd": 0.52
+   }
+  },
+  {
+   "t": 2011,
+   "values": {
+    "gm": 9.03,
+    "vw": 8.27,
+    "toyota": 7.95,
+    "hyundai": 6.59,
+    "ford": 5.7,
+    "nissan": 4.67,
+    "fiat": 4.0,
+    "psa": 3.55,
+    "honda": 3.1,
+    "renault": 2.72,
+    "suzuki": 2.6,
+    "geely": 0.87,
+    "byd": 0.45,
+    "chrysler": 0
+   }
+  },
+  {
+   "t": 2012,
+   "values": {
+    "toyota": 9.75,
+    "gm": 9.29,
+    "vw": 9.28,
+    "hyundai": 7.12,
+    "ford": 5.67,
+    "nissan": 4.94,
+    "fiat": 4.2,
+    "honda": 4.01,
+    "psa": 2.97,
+    "suzuki": 2.6,
+    "renault": 2.55,
+    "geely": 0.92,
+    "byd": 0.46
+   }
+  },
+  {
+   "t": 2013,
+   "values": {
+    "toyota": 9.98,
+    "vw": 9.73,
+    "gm": 9.71,
+    "hyundai": 7.56,
+    "ford": 6.33,
+    "nissan": 4.91,
+    "fiat": 4.35,
+    "honda": 4.32,
+    "psa": 2.82,
+    "suzuki": 2.7,
+    "renault": 2.63,
+    "geely": 0.97,
+    "byd": 0.51
+   }
+  },
+  {
+   "t": 2014,
+   "values": {
+    "toyota": 10.23,
+    "vw": 10.14,
+    "gm": 9.92,
+    "hyundai": 8.0,
+    "ford": 6.32,
+    "nissan": 5.31,
+    "fiat": 4.6,
+    "honda": 4.36,
+    "psa": 2.94,
+    "suzuki": 2.9,
+    "renault": 2.71,
+    "geely": 0.88,
+    "byd": 0.43
+   }
+  },
+  {
+   "t": 2015,
+   "values": {
+    "toyota": 10.15,
+    "vw": 9.93,
+    "gm": 9.8,
+    "hyundai": 8.01,
+    "ford": 6.64,
+    "nissan": 5.42,
+    "honda": 4.74,
+    "fiat": 4.6,
+    "psa": 2.97,
+    "suzuki": 2.86,
+    "renault": 2.8,
+    "geely": 1.06,
+    "byd": 0.44
+   }
+  },
+  {
+   "t": 2016,
+   "values": {
+    "vw": 10.31,
+    "toyota": 10.175,
+    "gm": 10.0,
+    "hyundai": 7.88,
+    "ford": 6.65,
+    "nissan": 5.56,
+    "honda": 5.0,
+    "fiat": 4.72,
+    "renault": 3.18,
+    "psa": 3.15,
+    "suzuki": 2.92,
+    "geely": 1.33,
+    "byd": 0.5
+   }
+  },
+  {
+   "t": 2017,
+   "values": {
+    "vw": 10.74,
+    "toyota": 10.386,
+    "gm": 9.6,
+    "hyundai": 7.25,
+    "ford": 6.61,
+    "nissan": 5.82,
+    "honda": 5.2,
+    "fiat": 4.74,
+    "renault": 3.76,
+    "psa": 3.63,
+    "suzuki": 3.22,
+    "geely": 1.83,
+    "byd": 0.41
+   }
+  },
+  {
+   "t": 2018,
+   "values": {
+    "vw": 10.83,
+    "toyota": 10.59,
+    "gm": 8.38,
+    "hyundai": 7.4,
+    "ford": 5.98,
+    "nissan": 5.65,
+    "honda": 5.27,
+    "fiat": 4.84,
+    "renault": 3.88,
+    "psa": 3.88,
+    "suzuki": 3.33,
+    "geely": 2.15,
+    "byd": 0.52
+   }
+  },
+  {
+   "t": 2019,
+   "values": {
+    "vw": 10.97,
+    "toyota": 10.74,
+    "gm": 7.72,
+    "hyundai": 7.19,
+    "ford": 5.39,
+    "nissan": 5.18,
+    "honda": 5.17,
+    "fiat": 4.42,
+    "renault": 3.75,
+    "psa": 3.48,
+    "suzuki": 3.0,
+    "geely": 2.18,
+    "byd": 0.46
+   }
+  },
+  {
+   "t": 2020,
+   "values": {
+    "toyota": 9.528,
+    "vw": 9.31,
+    "gm": 6.83,
+    "hyundai": 6.35,
+    "honda": 4.55,
+    "ford": 4.19,
+    "nissan": 4.05,
+    "fiat": 3.5,
+    "renault": 2.95,
+    "suzuki": 2.6,
+    "psa": 2.51,
+    "geely": 2.13,
+    "byd": 0.43,
+    "stellantis": 0
+   }
+  },
+  {
+   "t": 2021,
+   "values": {
+    "toyota": 10.5,
+    "vw": 8.88,
+    "hyundai": 6.67,
+    "gm": 6.29,
+    "stellantis": 6.14,
+    "honda": 4.08,
+    "nissan": 4.07,
+    "ford": 3.94,
+    "suzuki": 2.75,
+    "renault": 2.7,
+    "geely": 2.2,
+    "byd": 0.73,
+    "psa": 0,
+    "fiat": 0
+   }
+  },
+  {
+   "t": 2022,
+   "values": {
+    "toyota": 10.48,
+    "vw": 8.26,
+    "hyundai": 6.85,
+    "stellantis": 6.0,
+    "gm": 5.94,
+    "ford": 4.23,
+    "honda": 3.73,
+    "nissan": 3.35,
+    "suzuki": 2.92,
+    "geely": 2.3,
+    "renault": 2.05,
+    "byd": 1.86
+   }
+  },
+  {
+   "t": 2023,
+   "values": {
+    "toyota": 11.23,
+    "vw": 9.24,
+    "hyundai": 7.3,
+    "gm": 6.19,
+    "stellantis": 6.17,
+    "ford": 4.41,
+    "honda": 4.0,
+    "nissan": 3.37,
+    "suzuki": 3.07,
+    "byd": 3.02,
+    "geely": 2.79,
+    "renault": 2.24
+   }
+  },
+  {
+   "t": 2024,
+   "values": {
+    "toyota": 10.82,
+    "vw": 9.03,
+    "hyundai": 7.23,
+    "gm": 6.0,
+    "stellantis": 5.5,
+    "ford": 4.47,
+    "byd": 4.27,
+    "honda": 3.8,
+    "nissan": 3.35,
+    "geely": 3.34,
+    "suzuki": 3.25,
+    "renault": 2.26
+   }
+  }
+ ],
+ "milestones": [
+  {
+   "t": 1990,
+   "title": "GM's long reign",
+   "text": "General Motors has been the world's biggest carmaker since 1931, selling about 7.5 million vehicles a year, well clear of Ford."
+  },
+  {
+   "t": 2007,
+   "title": "A photo finish",
+   "text": "GM tops 2007 by roughly 3,000 vehicles out of 9.37 million, the narrowest margin of its reign, as Toyota draws level."
+  },
+  {
+   "t": 2008,
+   "title": "Toyota ends GM's 77-year reign",
+   "text": "As the financial crisis hits Detroit, Toyota sells 8.97M vehicles to GM's 8.36M and becomes the world's largest automaker."
+  },
+  {
+   "t": 2011,
+   "title": "Earthquake hands GM the lead",
+   "text": "Japan's March 2011 earthquake and Thai floods cripple Toyota's supply chain; a post-bankruptcy GM briefly retakes No. 1."
+  },
+  {
+   "t": 2016,
+   "title": "Volkswagen takes the crown",
+   "text": "Despite the Dieselgate scandal, VW Group delivers 10.3M vehicles in 2016, edging Toyota. It stays No. 1 through 2019."
+  },
+  {
+   "t": 2020,
+   "title": "Toyota back on top",
+   "text": "Toyota weathers the pandemic and chip shortage better than rivals, retaking No. 1 in 2020 - a lead it has widened since."
+  },
+  {
+   "t": 2021,
+   "title": "Stellantis is born",
+   "text": "PSA and Fiat Chrysler merge in January 2021, creating Stellantis - 14 brands and over 6 million vehicles a year."
+  },
+  {
+   "t": 2024,
+   "title": "BYD's rocket ride",
+   "text": "BYD sells 4.27M plug-in and electric cars in 2024, up from 0.43M in 2020, passing Honda, Nissan and Suzuki."
+  }
+ ]
+}

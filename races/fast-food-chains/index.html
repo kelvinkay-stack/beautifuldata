@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Largest Restaurant Chains by Locations (1990–2024) — Overtake</title>
+  <meta name="description" content="Restaurant counts worldwide for the biggest chains, 1990–2024. Animated bar chart race, 1990–2024.">
+  <meta name="author" content="Kelvin Kay">
+  <link rel="canonical" href="https://beautifuldata.netlify.app/races/fast-food-chains/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Overtake">
+  <meta property="og:title" content="Largest Restaurant Chains by Locations (1990–2024) — Overtake">
+  <meta property="og:description" content="Restaurant counts worldwide for the biggest chains, 1990–2024. Animated bar chart race, 1990–2024.">
+  <meta property="og:url" content="https://beautifuldata.netlify.app/races/fast-food-chains/">
+  <meta property="og:image" content="https://beautifuldata.netlify.app/assets/og/fast-food-chains.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Largest Restaurant Chains by Locations (1990–2024) — Overtake">
+  <meta name="twitter:description" content="Restaurant counts worldwide for the biggest chains, 1990–2024. Animated bar chart race, 1990–2024.">
+  <meta name="twitter:image" content="https://beautifuldata.netlify.app/assets/og/fast-food-chains.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="/css/site.css?v=0dc17e2e0d">
+  <script type="importmap">{"imports":{"/js/engine/model.js":"/js/engine/model.js?v=0dc17e2e0d","/js/engine/renderer.js":"/js/engine/renderer.js?v=0dc17e2e0d","/js/engine/format.js":"/js/engine/format.js?v=0dc17e2e0d","/js/engine/controller.js":"/js/engine/controller.js?v=0dc17e2e0d","/js/engine/controls.js":"/js/engine/controls.js?v=0dc17e2e0d","/js/engine/preview.js":"/js/engine/preview.js?v=0dc17e2e0d"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"Largest Restaurant Chains by Locations","description":"Restaurant counts worldwide for the biggest chains, 1990–2024. McDonald's leads for two decades until Subway's franchise sprint overtakes it in 2010, then Subway shrinks while Starbucks keeps opening. In the 2020s, low-price Chinese chains Mixue and Luckin rise rapidly, and in 2024 Mixue passes McDonald's.","url":"https://beautifuldata.netlify.app/races/fast-food-chains/","temporalCoverage":"1990/2024","creator":{"@type":"Person","name":"Kelvin Kay","url":"https://www.kelvinkay.com"},"isBasedOn":"https://corporate.mcdonalds.com/corpmcd/investors.html"}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/#tech">Tech &amp; Business</a>
+      <a href="/#sports">Sports</a>
+      <a href="/#culture">Entertainment</a>
+      <a href="/#science">Science</a>
+      <a href="/#economy">Money</a>
+      <a href="/#world">World</a>
+      <a href="/#trade">Trade</a>
+      <a href="/#health" aria-current="true">Food &amp; Health</a>
+      <a href="/#play">Games</a>
+      <a href="/#history">History</a>
+      <a href="/#wildcard">Wildcard</a>
+    </nav>
+  </div>
+</header>
+<main class="race-main" data-cat="health" data-race-id="fast-food-chains">
+  <div class="race-head">
+    <p class="crumbs"><a href="/#health">Food &amp; Health</a><span aria-hidden="true">/</span><span class="num">1990–2024</span></p>
+    <h1>Largest Restaurant Chains by Locations</h1>
+    <p class="blurb">Restaurant counts worldwide for the biggest chains, 1990–2024. McDonald's leads for two decades until Subway's franchise sprint overtakes it in 2010, then Subway shrinks while Starbucks keeps opening. In the 2020s, low-price Chinese chains Mixue and Luckin rise rapidly, and in 2024 Mixue passes McDonald's.</p>
+    <div class="race-actions">
+      <button type="button" class="pill-btn" id="btn-share"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" stroke-linecap="round"/></svg><span>Share this moment</span></button>
+      <span class="race-tags num"><span>17 contenders</span><span>3 lead changes</span><span class="quality-flag">illustrative data</span></span>
+    </div>
+  </div>
+
+  <figure class="stage" style="margin:0">
+    <div class="stage-media">
+      <canvas id="race-canvas" aria-label="Animated bar chart race: Largest Restaurant Chains by Locations"></canvas>
+      <div class="callout" id="callout" role="status" aria-live="polite"></div>
+    </div>
+    <div class="transport">
+      <button class="t-btn" id="btn-play" type="button" aria-label="Play"></button>
+      <button class="t-btn secondary" id="btn-restart" type="button" aria-label="Restart"></button>
+      <div class="scrub" id="scrub" role="slider" aria-label="Timeline" aria-valuemin="1990" aria-valuemax="2024">
+        <div class="track"></div><div class="fill"></div><div class="thumb"></div>
+      </div>
+      <div class="speed" title="Playback speed (drag, or press [ and ])">
+        <svg class="speed-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/><path d="M13.8 10.2 18 6M4.2 20a9 9 0 1 1 15.6 0" stroke-linecap="round"/></svg>
+        <input id="speed-range" class="speed-range" type="range" min="0.25" max="3" step="0.05" value="1" aria-label="Playback speed" aria-valuetext="1×">
+        <span class="speed-val num" id="speed-val">1&times;</span>
+      </div>
+    </div>
+    <p class="step-note" id="step-note"></p>
+  </figure>
+
+  <p class="context-strip">
+    <span>Source: <a href="https://corporate.mcdonalds.com/corpmcd/investors.html" rel="noopener">Company annual reports, 10-K filings, IPO prospectuses and press releases</a></span>
+    <span>Illustrative: year-end (or fiscal-year) counts including franchised units. McDonald's, Starbucks, Luckin and recent Yum/RBI/Domino's figures follow filings; private chains (Subway, Dairy Queen, Little Caesars, Wallace, pre-IPO Mixue) and gap years are estimated from press milestones. Chinese snack-kiosk chains with unverified self-reported counts are excluded.</span>
+    <span>Updated 2026-10-29</span>
+    <span class="kbd-hint"><kbd>Space</kbd> play · <kbd>←</kbd><kbd>→</kbd> step · <kbd>[</kbd><kbd>]</kbd> speed</span>
+  </p>
+
+  <section class="reigns" aria-labelledby="rg-head">
+    <div class="sec-head">
+      <h2 id="rg-head">Who held #1</h2>
+      <p>3 different leaders in 34 years. Click a stretch to jump there.</p>
+    </div>
+    <div class="reign-strip"><button type="button" class="reign" data-t="1990" style="left:0.000%;width:57.062%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="McDonald's · 1990–2009" aria-label="McDonald's led 1990–2009. Jump there."><span>McDonald's</span></button><button type="button" class="reign" data-t="2009.4011834319526" style="left:57.062%;width:31.946%;--c:#A3E635;--ink:rgba(11,14,20,0.88)" title="Subway · 2009–2020" aria-label="Subway led 2009–2020. Jump there."><span>Subway</span></button><button type="button" class="reign" data-t="2020.2627439557239" style="left:89.008%;width:9.786%;--c:#FFD84D;--ink:rgba(11,14,20,0.88)" title="McDonald's · 2020–2023" aria-label="McDonald's led 2020–2023. Jump there."></button><button type="button" class="reign" data-t="2023.5901146914255" style="left:98.794%;width:1.206%;--c:#E879F9;--ink:rgba(11,14,20,0.88)" title="Mixue Ice Cream &amp; Tea · 2023–2024" aria-label="Mixue Ice Cream &amp; Tea led 2023–2024. Jump there."></button></div>
+    <div class="reign-axis num"><span>1990</span><span>2024</span></div>
+    <div class="held">
+      <h3>Total time at #1</h3>
+      <ol>
+        <li><span class="h-label">McDonald's</span><span class="h-bar"><i style="width:100.0%;background:#FFD84D"></i></span><span class="h-val num">23 yrs</span></li>
+        <li><span class="h-label">Subway</span><span class="h-bar"><i style="width:47.8%;background:#A3E635"></i></span><span class="h-val num">11 yrs</span></li>
+        <li><span class="h-label">Mixue Ice Cream &amp; Tea</span><span class="h-bar"><i style="width:2.0%;background:#E879F9"></i></span><span class="h-val num">0.4 yrs</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="race-grid">
+    <section class="story" aria-labelledby="st-head">
+      <div class="sec-head"><h2 id="st-head">Key moments</h2><p>Click any moment to replay it.</p></div>
+      <ol class="milestone-list" id="milestone-list">
+      <li><button type="button" data-t="1996">
+        <span class="m-year num">1996</span>
+        <span class="m-body"><span class="m-title">McDonald's passes 20,000</span><span class="m-text">An overseas building boom adds about 2,500 McDonald's a year in the mid-1990s; it ends 1996 with 21,022 restaurants.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2005">
+        <span class="m-year num">2005</span>
+        <span class="m-body"><span class="m-title">Starbucks reaches 10,000</span><span class="m-text">Starbucks goes from 84 stores in 1990 to over 10,000 in 2005, opening several new cafés a day at its peak.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2010">
+        <span class="m-year num">2010</span>
+        <span class="m-body"><span class="m-title">Subway passes McDonald's</span><span class="m-text">Subway ends 2010 with 33,749 restaurants to McDonald's 32,737, becoming the world's largest chain by location count.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2015">
+        <span class="m-year num">2015</span>
+        <span class="m-body"><span class="m-title">Subway peaks</span><span class="m-text">Subway tops out at roughly 44,800 restaurants; years of closures follow as franchisees struggle with sales per store.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2021">
+        <span class="m-year num">2021</span>
+        <span class="m-body"><span class="m-title">McDonald's back on top</span><span class="m-text">With Subway shrinking toward 37,000 and McDonald's passing 40,000, the Golden Arches regain No. 1 by count.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2023">
+        <span class="m-year num">2023</span>
+        <span class="m-body"><span class="m-title">Luckin doubles in a year</span><span class="m-text">Luckin Coffee nearly doubles to 16,248 stores in 2023, five years after opening its first café in Beijing.</span></span>
+      </button></li>
+      <li><button type="button" data-t="2024">
+        <span class="m-year num">2024</span>
+        <span class="m-body"><span class="m-title">Mixue passes McDonald's</span><span class="m-text">The Chinese ice-cream and tea chain ends 2024 with 46,479 stores, more than any other restaurant brand in the world.</span></span>
+      </button></li>
+      </ol>
+    </section>
+    <aside class="race-side">
+      <section class="facts" aria-labelledby="fx-head">
+        <div class="sec-head"><h2 id="fx-head">The race in numbers</h2></div>
+        <div class="fact-grid">
+          <div class="fact"><b class="num">3</b><span>lead changes</span></div>
+          <div class="fact"><b class="num">3</b><span>different leaders</span></div>
+          <div class="fact"><b class="num">34</b><span>years covered</span></div>
+          <div class="fact"><b class="num">17</b><span>contenders</span></div>
+          <div class="fact fact-wide"><b>McDonald's</b><span>longest unbroken reign — 19 yrs at #1</span></div>
+          <div class="fact fact-wide"><b>#16 → #1</b><span>Mixue Ice Cream &amp; Tea ranked #16 when it first appeared in 2011 — and finished on top</span></div>
+        </div>
+      </section>
+      <section class="standings" aria-labelledby="sd-head">
+        <div class="sec-head"><h2 id="sd-head">Final standings · <span class="num">2024</span></h2></div>
+        <ol>
+          <li><span class="s-rank num">1</span><span class="s-dot" style="background:#E879F9" aria-hidden="true"></span><span class="s-label">Mixue Ice Cream &amp; Tea</span><span class="s-val num">46,479</span></li>
+          <li><span class="s-rank num">2</span><span class="s-dot" style="background:#FFD84D" aria-hidden="true"></span><span class="s-label">McDonald's</span><span class="s-val num">43,477</span></li>
+          <li><span class="s-rank num">3</span><span class="s-dot" style="background:#23C8A8" aria-hidden="true"></span><span class="s-label">Starbucks</span><span class="s-val num">40,199</span></li>
+          <li><span class="s-rank num">4</span><span class="s-dot" style="background:#A3E635" aria-hidden="true"></span><span class="s-label">Subway</span><span class="s-val num">37,000</span></li>
+          <li><span class="s-rank num">5</span><span class="s-dot" style="background:#F43F5E" aria-hidden="true"></span><span class="s-label">KFC</span><span class="s-val num">31,981</span></li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+
+  <section class="related" aria-labelledby="rl-head">
+    <div class="sec-head"><h2 id="rl-head">More Food &amp; Health races</h2><a href="/#health">See all 5 →</a></div>
+    <div class="card-grid related-grid">
+    <a class="race-card" href="/races/best-selling-drugs/" style="--accent:#BEF264;--accent-soft:rgba(190,242,100,0.13)">
+      <div class="card-preview"><canvas data-race="best-selling-drugs" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>World's Best-Selling Drugs</h3>
+        <p class="card-meta"><span>1995–2024</span><span>·</span><span>52 contenders</span><span>·</span><span>5 lead changes</span><span class="quality illustrative">illustrative</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#23C8A8" aria-hidden="true"></span><span class="cl-name">Keytruda</span><span class="cl-val">$29.5B</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/causes-of-death/" style="--accent:#BEF264;--accent-soft:rgba(190,242,100,0.13)">
+      <div class="card-preview"><canvas data-race="causes-of-death" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Leading Causes of Death in the US</h3>
+        <p class="card-meta"><span>1950–2023</span><span>·</span><span>19 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#F43F5E" aria-hidden="true"></span><span class="cl-name">Heart disease</span><span class="cl-val">681.0k</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/wine-production/" style="--accent:#BEF264;--accent-soft:rgba(190,242,100,0.13)">
+      <div class="card-preview"><canvas data-race="wine-production" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Wine Production by Country</h3>
+        <p class="card-meta"><span>1961–2023</span><span>·</span><span>18 contenders</span><span>·</span><span>27 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#4C8DFF" aria-hidden="true"></span><span class="cl-name">France</span><span class="cl-val">4.76 Mt</span></p>
+      </div>
+    </a>
+    <a class="race-card" href="/races/coffee-production/" style="--accent:#BEF264;--accent-soft:rgba(190,242,100,0.13)">
+      <div class="card-preview"><canvas data-race="coffee-production" aria-hidden="true"></canvas></div>
+      <div class="card-body">
+        <h3>Coffee Production by Country</h3>
+        <p class="card-meta"><span>1960–2025</span><span>·</span><span>17 contenders</span><span>·</span><span>0 lead changes</span></p>
+        <p class="card-leader num"><span class="dot" style="background:#FFD84D" aria-hidden="true"></span><span class="cl-name">Brazil</span><span class="cl-val">63.0M bags</span></p>
+      </div>
+    </a>
+    </div>
+  </section>
+
+  <nav class="race-pager" aria-label="More races">
+    <a href="/races/coffee-production/"><span class="dir">← Previous race</span>Coffee Production by Country</a>
+    <a href="/races/scientific-papers/" class="pg-next"><span class="dir">Next race →</span>Science &amp; Engineering Articles</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div class="foot-about">
+      
+<a class="wordmark" href="/">
+  <span class="wm-tick" aria-hidden="true"></span>
+  <span>Overtake</span>
+  <span class="wm-sub">rankings over time</span>
+</a>
+      <p>93 rankings, animated. Every race is built from a single dataset with its source cited on the page; sets marked <span class="quality-flag">illustrative</span> are careful reconstructions where no clean public series exists.</p>
+    </div>
+    <nav class="foot-cats" aria-label="Browse categories">
+      <a href="/#tech" style="--c:#4C8DFF"><span class="fc-dot" aria-hidden="true"></span>Tech &amp; Business<span class="fc-n num">12</span></a>
+      <a href="/#sports" style="--c:#FFB020"><span class="fc-dot" aria-hidden="true"></span>Sports<span class="fc-n num">15</span></a>
+      <a href="/#culture" style="--c:#F45CA4"><span class="fc-dot" aria-hidden="true"></span>Entertainment<span class="fc-n num">10</span></a>
+      <a href="/#science" style="--c:#23C8A8"><span class="fc-dot" aria-hidden="true"></span>Science<span class="fc-n num">13</span></a>
+      <a href="/#economy" style="--c:#5FCE7B"><span class="fc-dot" aria-hidden="true"></span>Money<span class="fc-n num">9</span></a>
+      <a href="/#world" style="--c:#38BDF8"><span class="fc-dot" aria-hidden="true"></span>World<span class="fc-n num">7</span></a>
+      <a href="/#trade" style="--c:#E879F9"><span class="fc-dot" aria-hidden="true"></span>Trade<span class="fc-n num">4</span></a>
+      <a href="/#health" style="--c:#BEF264"><span class="fc-dot" aria-hidden="true"></span>Food &amp; Health<span class="fc-n num">5</span></a>
+      <a href="/#play" style="--c:#FF7A45"><span class="fc-dot" aria-hidden="true"></span>Games<span class="fc-n num">6</span></a>
+      <a href="/#history" style="--c:#C77B4A"><span class="fc-dot" aria-hidden="true"></span>History<span class="fc-n num">6</span></a>
+      <a href="/#wildcard" style="--c:#8B5CF6"><span class="fc-dot" aria-hidden="true"></span>Wildcard<span class="fc-n num">6</span></a>
+    </nav>
+  </div>
+  <div class="inner">
+    <span>Overtake · rankings over time</span>
+    <span class="byline">Made by <a href="https://www.kelvinkay.com" rel="author">Kelvin Kay</a></span>
+  </div>
+</footer>
+<script type="application/json" id="preview-data">{"best-selling-drugs":{"entities":[{"label":"Keytruda","color":"#23C8A8"},{"label":"Humira","color":"#B388FF"},{"label":"Comirnaty (Pfizer)","color":"#3B82F6"},{"label":"Zantac (ranitidine)","color":"#34D399"},{"label":"Losec / Prilosec","color":"#FF6FA5"},{"label":"Lipitor","color":"#4C8DFF"},{"label":"Eliquis","color":"#E879F9"},{"label":"Revlimid","color":"#F97316"},{"label":"Zocor","color":"#FFB020"},{"label":"Plavix","color":"#FF5C4D"},{"label":"Remicade","color":"#E2B93B"},{"label":"Sovaldi","color":"#BEF264"},{"label":"Harvoni","color":"#4ADE80"},{"label":"Ozempic","color":"#10B981"}],"frames":[[0,0,0,3.5,2.8,0,0,0,2.3,0,0,0,0,0],[0,0,0,3.3,3.7,0,0,0,2.8,0,0,0,0,0],[0,0,0,2.4,4.2,0.87,0,0,3.4,0,0,0,0,0],[0,0,0,1.6,5.1,2.2,0,0,3.9,0.2,0.1,0,0,0],[0,0,0,1.2,5.9,3.7,0,0,4.3,0.6,0.4,0,0,0],[0,0,0,0.9,6.26,5.03,0,0,4.9,1.2,0.9,0,0,0],[0,0,0,0.7,5.68,6.45,0,0,5.3,2,1.1,0,0,0],[0,0,0,0,4.62,7.97,0,0,5.6,3.2,1.6,0,0,0],[0,0.28,0,0,2.95,9.23,0,0,5,4,2.3,0,0,0],[0,0.85,0,0,1.95,10.86,0,0,5.2,5,2.8,0,0,0],[0,1.4,0,0,1.65,12.19,0,0.17,4.4,5.9,3.4,0,0,0],[0,2.04,0,0,1.37,12.89,0,0.77,2.8,6.1,4.3,0,0,0],[0,3.06,0,0,0,12.68,0,1.33,0.9,7.3,5,0,0,0],[0,4.52,0,0,0,12.4,0,2.14,0,8.6,5.9,0,0,0],[0,5.49,0,0,0,11.43,0,1.71,0,9.1,6.7,0,0,0],[0,6.55,0,0,0,10.73,0,2.47,0,9.4,7.3,0,0,0],[0,7.93,0,0,0,9.58,0,3.21,0,9.3,8.2,0,0,0],[0,9.27,0,0,0,3.95,0,3.77,0,5.2,8.2,0,0,0],[0,10.66,0,0,0,2.32,0.15,4.28,0,2.7,9,0.14,0,0],[0.06,12.54,0,0,0,2.06,1.04,4.98,0,2.4,9.2,10.28,2.13,0],[0.57,14.01,0,0,0,1.86,2.72,5.8,0,0,8.4,5.28,13.86,0],[1.4,16.08,0,0,0,0,5.05,6.97,0,0,8.2,4,9.08,0],[3.81,18.43,0,0,0,0,7.39,8.19,0,0,7.2,0.97,4.37,0],[7.17,19.94,0,0,0,0,9.87,9.69,0,0,5.9,0,1.4,0.28],[11.08,19.17,0,0,0,0,12.15,10.8,0,0,4.8,0,0,1.7],[14.38,19.83,0.15,0,0,0,14.12,12.1,0,0,4,0,0,3],[17.19,20.69,36.78,0,0,0,16.73,12.8,0,0,3.4,0,0,5.4],[20.94,21.24,37.81,0,0,0,18.27,9.98,0,0,2.4,0,0,8.5],[25.01,14.4,11.22,0,0,0,18.96,6.1,0,0,0,0,0,13.9],[29.48,8.99,5.35,0,0,0,20.7,5.8,0,0,0,0,0,17.5]],"t0":1995,"t1":2024,"era":0},"causes-of-death":{"entities":[{"label":"Heart disease","color":"#F43F5E"},{"label":"Cancer","color":"#B388FF"},{"label":"Unintentional injuries","color":"#FFB020"},{"label":"Stroke","color":"#4C8DFF"},{"label":"Chronic lower respiratory disease","color":"#67E8F9"},{"label":"COVID-19","color":"#E879F9"},{"label":"Influenza & pneumonia","color":"#A3E635"},{"label":"Perinatal & early-infancy conditions","color":"#FDE68A"}],"frames":[[535.7,210.7,91.2,156.8,0,0,47.1,61],[562.962,226.3,95.579,168.11,0,0,49.352,63.545],[585.234,240.931,93.448,174.228,0,0,44.59,64.017],[634.606,255.848,95.024,188.785,0,0,62.067,66.692],[661.817,268.007,93.69,193.559,0,0,66,67.003],[699.607,282.586,99.21,199.669,13.6,0,66.331,63.321],[713.641,298.231,108.579,201.483,26.697,0,62.076,55.007],[735.824,315.655,114.255,207.91,31.697,0,67.203,45.507],[736.59,331.624,114.434,207.462,30.817,0,61.941,42.552],[756.686,349.203,115.662,213.955,30.079,0,62.6,31.638],[717.528,367.7,102.621,193.069,25.507,0,56.769,26.29],[726.21,393.803,104.855,177.555,21.803,0,56.097,22.434],[759.61,417.659,104.666,168.814,56.579,0,54.414,22.631],[766.317,440.462,92.941,156.179,64.462,0,53.969,19.714],[769.824,463.483,93.934,152.255,75.159,0,68.131,19.007],[764.041,483.045,96.593,150.331,81.814,0,75.648,18.2],[720.321,507.893,91.255,143.934,87.803,0,79.059,12.817],[738.162,527.976,89.734,148.797,99.197,0,81.331,0],[736.297,538.81,93.797,158.59,103.862,0,83.148,0],[725.262,541.172,97.421,158.641,111.979,0,90.952,0],[707.11,553.341,99.141,166.252,122.345,0,64.162,0],[686.728,556.955,108.941,158.39,126.179,0,65.269,0],[644.324,559.528,119.241,141.134,128.51,0,60.459,0],[616.728,565.231,122.086,134.297,139.734,0,55.928,0],[597.245,575.528,123.176,129.252,140.086,0,51.631,0],[610.314,584.741,130.407,128.966,148.807,0,56.559,0],[634.472,596.841,153.234,141.107,154.821,0,54.59,0],[655.128,599.293,167.197,147.752,159.524,0,58.983,0],[696.276,603.752,212.538,161.555,147.679,382.71,47.9,0],[681,613.4,222.7,162.6,145.4,49.9,45.2,0]],"t0":1950,"t1":2023,"era":0},"wine-production":{"entities":[{"label":"France","color":"#4C8DFF"},{"label":"Italy","color":"#34D399"},{"label":"Spain","color":"#FF5C4D"},{"label":"Argentina","color":"#67E8F9"},{"label":"Soviet Union","color":"#B45309"},{"label":"United States","color":"#B388FF"},{"label":"China","color":"#FF6FA5"},{"label":"Portugal","color":"#23C8A8"},{"label":"Algeria","color":"#86EFAC"}],"frames":[[4.86,5.25,2.02,1.68,0.85,0.64,0,0.74,1.36],[5.818,5.543,2.679,2.053,1.201,0.73,0,1.308,1.231],[6.672,6.723,2.766,1.929,1.409,0.802,0,1.31,1.201],[6.386,7.081,2.322,2.46,1.846,0.792,0,1.053,0.785],[6.46,7.016,2.515,1.818,2.554,0.992,0,0.987,0.87],[6.034,6.144,2.589,2.056,2.179,1.253,0,0.846,0.686],[7.762,7.687,3.686,2.641,2.649,1.448,0,1.352,0.623],[7.386,6.594,2.458,2.799,3.144,1.44,0,0.948,0.382],[6.154,7.371,3.143,2.092,2.519,1.618,0.012,0.741,0.189],[6.68,8.266,4.03,2.309,3.273,1.759,0.087,1.001,0.278],[7.575,7.666,3.493,2.501,3.498,1.772,0.124,0.956,0.165],[6.736,6.645,3.317,1.72,3.017,1.696,0.196,0.917,0.114],[7.106,7.631,3.831,2.345,1.449,1.91,0.27,0.977,0.09],[5.988,6.044,2.924,2.036,1.899,1.867,0.278,0.679,0.052],[4.427,5.946,3.197,1.447,1.412,1.728,0.297,0.989,0.05],[5.339,6.247,2.611,1.476,0,1.927,0.508,0.482,0.069],[5.651,5.674,2.294,1.563,0,1.874,0.71,0.76,0.056],[5.482,5.284,3.217,1.322,0,2.423,0.955,0.511,0.04],[6.029,5.617,3.717,1.426,0,2.278,1.04,0.77,0.04],[5.129,4.752,3.317,1.388,0,2.332,1.105,0.738,0.046],[5.63,5.093,4.273,1.494,0,2.458,1.276,0.725,0.083],[5.349,4.746,3.864,1.538,0,2.415,1.395,0.728,0.099],[4.284,4.388,3.723,1.461,0,2.537,1.502,0.551,0.05],[4.63,4.399,3.569,1.596,0,2.698,1.452,0.684,0.017],[4.235,4.038,3.576,1.272,0,3.061,1.497,0.627,0.05],[4.762,4.506,3.874,1.439,0,3.287,2.075,0.656,0.01],[3.996,4.703,3.531,1.081,0,2.398,2.123,0.681,0.016],[4.419,5.109,3.679,1.341,0,2.561,2.114,0.619,0.006],[3.906,5.104,3.751,1.227,0,2.044,1.836,0.708,0.009],[4.76,4.25,2.85,0.88,0,2.08,1.76,0.74,0.01]],"t0":1961,"t1":2023,"era":0},"coffee-production":{"entities":[{"label":"Brazil","color":"#FFD84D"},{"label":"Vietnam","color":"#F43F5E"},{"label":"Colombia","color":"#4C8DFF"},{"label":"Indonesia","color":"#E879F9"},{"label":"Côte d'Ivoire","color":"#FFB020"},{"label":"Uganda","color":"#A3E635"},{"label":"Mexico","color":"#8B5CF6"},{"label":"Angola","color":"#B45309"},{"label":"Ethiopia","color":"#34D399"},{"label":"India","color":"#FF8C42"},{"label":"Honduras","color":"#2FB4FF"},{"label":"Guatemala","color":"#67E8F9"}],"frames":[[29.8,0.1,7.3,1.3,3.1,1.9,2.1,2.5,1.7,1.2,0.3,1.5],[27.524,0.1,7.297,1.921,3.39,2.879,2.369,2.548,2.124,1.048,0.4,1.852],[23.89,0.1,8.303,2.097,3.783,2.548,2.793,2.79,2.303,1.097,0.5,1.893],[23.534,0.1,7.89,2.834,3.955,2.41,2.845,3.555,2.255,1.11,0.472,1.772],[20.862,0.1,8.383,2.597,4.362,3.328,3.093,3.403,2.966,1.107,0.403,1.893],[24.579,0.1,7.49,2.279,4.397,3.169,3.503,3.941,2.362,1.283,0.641,2.1],[20.217,0.1,8.338,2.645,4.445,3.3,3.724,3.366,2.334,1.59,0.834,2.4],[13.552,0.1,9.052,3.276,5.024,2.545,3.617,1.031,2.738,1.707,0.731,2.138],[19.828,0.1,12.497,4.738,4.59,1.9,3.952,0.621,3.1,1.814,1.093,2.779],[23.483,0.1,13.638,5.469,5.772,2.238,3.9,0.566,3.283,2.086,1.283,2.7],[22.848,0.1,13.176,5.09,3.217,2.876,4.5,0.3,3.359,1.993,1.417,2.417],[30.931,0.266,11.655,5.731,4.469,2.734,4.593,0.2,2.731,2.414,1.203,2.634],[35.507,0.59,12.793,5.99,3.234,2.61,4.762,0.29,3.148,2.145,1.59,2.979],[26.69,1.028,13.466,7.155,4.507,2.528,5.017,0.186,3.414,2.224,1.872,3.472],[26.793,2.076,16.824,7.176,3.431,2.862,4.448,0.1,3.19,3.01,2.186,3.538],[28.19,3.121,12.393,6.779,3.321,2.948,4.076,0.062,3.762,3.252,2.224,3.348],[26.455,5.538,11.09,7.61,4.969,4.286,5.314,0.1,3.8,3.441,2.3,4.059],[35.103,7.862,10.755,6.969,2.562,3.61,5.124,0.1,3.859,4.452,2.562,4.31],[34.445,14.438,10.983,6.397,4.583,3.169,4.593,0.066,3.145,5,2.903,4.221],[41.641,13.428,11.348,7.034,2.328,2.741,4.3,0.041,3.817,4.541,2.793,3.741],[37.393,15.99,11.914,9.228,2.048,2.286,4.166,0,4.431,4.6,3.097,3.717],[40.079,17.931,12.238,8.138,2.086,3.486,4.314,0,5.034,4.4,3.572,4.093],[47.81,18.779,8.224,10.128,2.152,2.993,4.138,0,6.031,4.862,3.655,4],[53.834,26.276,8.914,10.152,1.71,3.376,4.521,0,6.41,5.255,5.103,4.179],[54.9,27.897,13.052,10.79,1.462,3.583,3.366,0,6.459,5.338,4.955,3.262],[55.962,26.79,14.572,10.593,1.103,4.89,3.324,0,6.907,5.203,7.503,3.607],[64.845,30.648,13.955,10.628,1.945,4.921,3.555,0,7.355,5.217,6.576,3.745],[63.797,30.345,12.572,10.648,1.003,6.29,3.603,0,7.91,5.652,5.621,3.693],[65.407,27.769,12.293,8.803,1.228,6.448,3.803,0,8.666,6.431,5.169,3.452],[63,31.7,12.5,12.4,1.3,7.1,4.1,0,11.6,6.4,5.5,3.2]],"t0":1960,"t1":2025,"era":0}}</script>
+<script type="module" src="/js/race-page.js?v=0dc17e2e0d"></script>
+</body>
+</html>
